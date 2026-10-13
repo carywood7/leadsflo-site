@@ -1,0 +1,65 @@
+---
+const journeys = [
+  {title:'New lead response',category:'CAPTURE',trigger:'A new inquiry arrives',steps:['Form or ad lead received','Create or update CRM contact','Assign owner and priority','Send approved acknowledgement'],benefit:'New inquiries enter a consistent follow-up process.'},
+  {title:'Lead nurturing',category:'NURTURE',trigger:'A lead needs more time',steps:['Apply interest and consent rules','Send relevant follow-up content','Wait for response or engagement','Create a task for the sales team'],benefit:'Stay useful and relevant without repeatedly chasing prospects.'},
+  {title:'Appointments & reminders',category:'BOOK',trigger:'A prospect books a call',steps:['Confirm booking','Update CRM opportunity','Send calendar confirmation','Send timely reminder'],benefit:'Make appointments easier to attend and manage.'},
+  {title:'Missed inquiry recovery',category:'RECOVER',trigger:'A call or inquiry goes unanswered',steps:['Log unanswered inquiry','Check contact preferences','Notify assigned team member','Schedule a follow-up task'],benefit:'Reduce the chance that interested prospects slip through the cracks.'},
+  {title:'Database reactivation',category:'RE-ENGAGE',trigger:'An eligible older contact segment is selected',steps:['Filter by consent and relevance','Create a targeted reactivation offer','Send through approved channel','Route replies to the right person'],benefit:'Reconnect with older contacts when there is a legitimate reason to do so.'},
+  {title:'Team notifications & routing',category:'ROUTE',trigger:'A lead reaches a defined condition',steps:['Check source and qualification','Route to the appropriate owner','Send an internal alert','Track acceptance and next action'],benefit:'Get the right information to the right person sooner.'},
+];
+---
+<section class="lf-auto-gallery" aria-labelledby="lf-auto-title">
+  <div class="container">
+    <div class="lf-auto-heading">
+      <div><p class="section-kicker">AUTOMATION PLAYBOOK / INTERACTIVE EXAMPLES</p><h2 id="lf-auto-title">Automations that keep <span>opportunities moving.</span></h2></div>
+      <p>Hover or select a workflow to explore how common lead-generation tasks connect. Examples are illustrative, not live automations.</p>
+    </div>
+    <div class="lf-auto-layout">
+      <div class="lf-auto-list" role="group" aria-label="Choose an automation workflow">
+        {journeys.map((flow,i)=><button type="button" class:list={['lf-auto-option',{'is-active':i===0}]} data-lf-auto-option={i} aria-pressed={i===0?'true':'false'}>
+          <span class="lf-auto-index">{String(i+1).padStart(2,'0')}</span><span class="lf-auto-name"><strong>{flow.title}</strong><small>{flow.category}</small></span><span class="lf-auto-arrow" aria-hidden="true">↗</span>
+        </button>)}
+      </div>
+      <div class="lf-auto-canvas">
+        <div class="lf-auto-canvas-top"><span>WORKFLOW PREVIEW</span><span>DEMONSTRATION ONLY <span class="lf-auto-live">●</span></span></div>
+        <div class="lf-auto-flow-heading"><span data-lf-auto-category>CAPTURE</span><h3 data-lf-auto-title>New lead response</h3><p data-lf-auto-trigger>Trigger: A new inquiry arrives</p></div>
+        <!-- LF_WORKFLOW_GRAPH_V2 -->
+        <div class="lf-auto-graph" aria-label="Selected workflow diagram">
+          <div class="lf-auto-graph-trigger"><span class="lf-graph-dot" aria-hidden="true"></span><div><small>TRIGGER</small><strong data-lf-auto-trigger-node>A new inquiry arrives</strong></div></div>
+          <div class="lf-auto-graph-connector" aria-hidden="true"></div>
+          <ol class="lf-auto-nodes" aria-live="polite">{journeys[0].steps.map((step,i)=><li class="lf-auto-graph-node"><span class="lf-graph-node-number">{String(i+1).padStart(2,'0')}</span><div class="lf-graph-node-content"><small>{i===0?'INPUT':i===3?'HANDOFF':'ACTION'}</small><strong>{step}</strong></div><span class="lf-graph-node-status" aria-hidden="true">✓</span></li>)}</ol>
+          <div class="lf-auto-graph-connector" aria-hidden="true"></div>
+          <div class="lf-auto-graph-complete"><span class="lf-graph-dot" aria-hidden="true"></span><div><strong>Workflow complete</strong><small>Illustrative execution path</small></div></div>
+        </div>
+        <div class="lf-auto-outcome"><small>WHY IT MATTERS</small><p data-lf-auto-benefit>{journeys[0].benefit}</p></div>
+      </div>
+    </div>
+    <p class="lf-auto-note">Illustrative workflows. Actual integrations, messages, consent handling, platform limitations and approvals are configured per project.</p>
+  </div>
+</section>
+<script define:vars={{journeys}}>
+  const root=document.querySelector('.lf-auto-gallery');
+  if(root){
+    const buttons=[...root.querySelectorAll('[data-lf-auto-option]')];
+    const setText=(selector,value)=>{const el=root.querySelector(selector);if(el)el.textContent=value;};
+    function select(i){const flow=journeys[i];if(!flow)return;
+      buttons.forEach((button,index)=>{button.classList.toggle('is-active',index===i);button.setAttribute('aria-pressed',String(index===i));});
+      setText('[data-lf-auto-category]',flow.category);
+      setText('[data-lf-auto-title]',flow.title);
+      setText('[data-lf-auto-trigger]',`Trigger: ${flow.trigger}`);
+      setText('[data-lf-auto-trigger-node]',flow.trigger);
+      setText('[data-lf-auto-benefit]',flow.benefit);
+      const list=root.querySelector('.lf-auto-nodes');
+      if(list){list.replaceChildren();flow.steps.forEach((step,index)=>{
+        const li=document.createElement('li');li.className='lf-auto-graph-node';
+        const n=document.createElement('span');n.className='lf-graph-node-number';n.textContent=String(index+1).padStart(2,'0');
+        const body=document.createElement('div');body.className='lf-graph-node-content';
+        const kind=document.createElement('small');kind.textContent=index===0?'INPUT':index===flow.steps.length-1?'HANDOFF':'ACTION';
+        const title=document.createElement('strong');title.textContent=step;body.append(kind,title);
+        const tick=document.createElement('span');tick.className='lf-graph-node-status';tick.setAttribute('aria-hidden','true');tick.textContent='✓';
+        li.append(n,body,tick);list.append(li);
+      });}
+    }
+    buttons.forEach((b)=>b.addEventListener('click',()=>select(Number(b.dataset.lfAutoOption))));
+  }
+</script>

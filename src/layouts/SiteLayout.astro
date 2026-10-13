@@ -1,0 +1,97 @@
+---
+import "../styles/global.css";
+import "../styles/workflow-canvas.css";
+import "../styles/lead-automation-gallery.css";
+import "../styles/interaction-polish.css";
+import "../styles/navigation.css";
+import Header from "../components/Header.astro";
+import "../styles/interior.css";
+import "../styles/footer-refresh.css";
+
+const { title, description, path } = Astro.props;
+
+const links = [
+  ["Home", "/"],
+  ["Performance Marketing", "/performance-marketing/"],
+  ["CRM & Automation", "/crm-automation/"],
+  ["Appointment Setting", "/appointment-setting/"],
+  ["Our Approach", "/our-approach/"],
+  ["About", "/about/"],
+  ["Insights", "/insights/"]
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#F7F7F2" />
+  <meta name="description" content={description} />
+  <!-- LEADSFLO_INTERIOR_SEO_V1 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LeadsFlo" />
+  <meta property="og:title" content={`${title} | LeadsFlo`} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={new URL(path, "https://leadsflo.co").href} />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={`${title} | LeadsFlo`} />
+  <meta name="twitter:description" content={description} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: `${title} | LeadsFlo`,
+    description,
+    url: new URL(path, "https://leadsflo.co").href,
+    isPartOf: { "@type": "WebSite", name: "LeadsFlo", url: "https://leadsflo.co/" }
+  })} />
+  <!-- /LEADSFLO_INTERIOR_SEO_V1 -->
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href={new URL(path, "https://leadsflo.co").href} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <title>{title} | LeadsFlo</title>
+</head>
+<body id="top">
+  <Header currentPath={path} />
+
+  <main><slot /></main>
+
+    <footer class="lf-footer" aria-label="Site footer">
+    <div class="container lf-footer-top">
+      <div class="lf-footer-intro">
+        <a class="lf-footer-logo" href="/" aria-label="LeadsFlo home">leads<span>flo</span><i>.</i></a>
+        <h2>Better leads.<br /><em>Better follow-through.</em></h2>
+        <p>Paid advertising, creative, websites, connected systems and appointment setting—working together to help businesses turn interest into conversations.</p>
+        <a class="lf-footer-cta" href="/contact/">Let's talk about your goals <span aria-hidden="true">↗</span></a>
+      </div>
+      <nav class="lf-footer-col" aria-label="Footer services">
+        <h3>Services</h3>
+        <a href="/performance-marketing/">Performance Marketing</a>
+        <a href="/ad-creatives-content/">Ad Creatives &amp; Content</a>
+        <a href="/websites-funnels/">Websites &amp; Funnels</a>
+        <a href="/crm-automation/">Systems &amp; AI Automation</a>
+        <a href="/appointment-setting/">Appointment Setting</a>
+      </nav>
+      <nav class="lf-footer-col" aria-label="Footer company">
+        <h3>Explore</h3>
+        <a href="/our-approach/">Our Approach</a>
+        <a href="/about/">About LeadsFlo</a>
+        <a href="/insights/">Insights</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="lf-footer-col lf-footer-contact">
+        <h3>Get in touch</h3>
+        <p>Have a project in mind? Tell us what you're trying to improve.</p>
+        <a href="mailto:cary.wood.777@gmail.com">cary.wood.777@gmail.com</a>
+        <a class="lf-footer-secondary" href="/contact/">Send an inquiry ↗</a>
+      </div>
+    </div>
+    <div class="container lf-footer-bottom">
+      <span>© {new Date().getFullYear()} LeadsFlo. All rights reserved.</span>
+      <span>More leads. Less guesswork.</span>
+      <a href="#top" class="lf-footer-back">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

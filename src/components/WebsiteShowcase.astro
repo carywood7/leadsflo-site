@@ -1,0 +1,50 @@
+---
+import '../styles/website-showcase.css';
+const steps = [
+ {name:'Ad or search',eyebrow:'01 / ARRIVE',heading:'A relevant click',copy:'A prospective customer sees an offer that matches what they are looking for.',mini:'Campaign entry'},
+ {name:'Landing page',eyebrow:'02 / UNDERSTAND',heading:'A clear reason to act',copy:'The landing page presents the offer, who it helps, and one straightforward next step.',mini:'Offer & proof'},
+ {name:'Lead form',eyebrow:'03 / ENQUIRE',heading:'Capture the inquiry',copy:'A concise form asks for necessary information, with clear expectations about follow-up.',mini:'Consent-aware form'},
+ {name:'Thank-you',eyebrow:'04 / CONFIRM',heading:'Confirm the next step',copy:'The confirmation page reassures the prospect that their inquiry was received.',mini:'Confirmation'},
+ {name:'Booking',eyebrow:'05 / CONNECT',heading:'Make a conversation easy',copy:'When appropriate, qualified leads can schedule a consultation with the right team.',mini:'Appointment flow'}
+];
+---
+<section class="lweb" aria-labelledby="lweb-title">
+ <div class="container">
+  <div class="lweb-heading"><div><p class="section-kicker">INTERACTIVE WEB EXPERIENCE / SAMPLE DESIGN</p><h2 id="lweb-title">Built for people. <span>Designed for action.</span></h2></div><p>Switch devices and explore a sample customer journey. This is an illustrative prototype, not a live client site.</p></div>
+  <div class="lweb-shell">
+   <div class="lweb-toolbar"><div class="lweb-toolbar-label"><span class="lweb-live-dot"></span> RESPONSIVE WEBSITE PREVIEW</div><div class="lweb-devices" role="group" aria-label="Preview screen size"><button type="button" class="is-active" data-lweb-device="desktop" aria-pressed="true">Desktop</button><button type="button" data-lweb-device="tablet" aria-pressed="false">Tablet</button><button type="button" data-lweb-device="mobile" aria-pressed="false">Mobile</button></div></div>
+   <div class="lweb-preview-space"><div class="lweb-device lweb-desktop" data-lweb-frame><div class="lweb-browser-bar"><span class="lweb-traffic"><i></i><i></i><i></i></span><span class="lweb-url">example-business.com / consultation</span><span>↗</span></div>
+     <div class="lweb-site"><div class="lweb-site-nav"><strong>north<span>side.</span></strong><span class="lweb-site-links">Services &nbsp;&nbsp; How it works &nbsp;&nbsp; Reviews</span><span class="lweb-site-call">Get a quote ↗</span></div>
+      <div class="lweb-site-hero"><div class="lweb-site-text"><small>LOCAL SERVICE / DEMONSTRATION</small><h3>Good service starts with a simple conversation.</h3><p>Make your next project easier with a clear plan, a responsive team and a straightforward quote.</p><button type="button" class="lweb-sample-cta" data-lweb-cta>Request a quote ↗</button><span class="lweb-micro">No commitment. Clear next steps.</span></div><div class="lweb-site-art" aria-hidden="true"><div class="lweb-circle lweb-circle-a"></div><div class="lweb-circle lweb-circle-b"></div><div class="lweb-art-sheet"><small>YOUR PROJECT</small><strong>One clear<br/>next step.</strong><span>01 — REACH OUT</span></div></div></div>
+      <div class="lweb-site-proof"><span>✓ Clear services</span><span>✓ Mobile-friendly</span><span>✓ Easy to contact</span></div>
+     </div></div></div>
+   <div class="lweb-demo-footer"><span>Fictional business and sample design — for demonstration only</span><span data-lweb-device-status aria-live="polite">Desktop preview</span></div>
+  </div>
+  <div class="lweb-funnel"><div class="lweb-funnel-heading"><div><p class="section-kicker">THE CONVERSION JOURNEY</p><h3>What happens <span>after the click?</span></h3></div><p>Choose a stage to explore how a visitor becomes a potential customer.</p></div>
+   <div class="lweb-stages" role="group" aria-label="Explore conversion journey">{steps.map((step,i)=><button type="button" class:list={['lweb-stage',{'is-active':i===0}]} data-lweb-stage={i} aria-pressed={i===0?'true':'false'}><small>{String(i+1).padStart(2,'0')}</small><strong>{step.name}</strong><span aria-hidden="true">↗</span></button>)}</div>
+   <div class="lweb-funnel-detail" aria-live="polite"><div><small data-lweb-step-label>01 / ARRIVE</small><h4 data-lweb-step-title>A relevant click</h4><p data-lweb-step-copy>A prospective customer sees an offer that matches what they are looking for.</p></div><div class="lweb-mini-screen"><span>LEAD JOURNEY / LIVE PREVIEW</span><strong data-lweb-mini>Campaign entry</strong><div class="lweb-progress"><i data-lweb-progress style="width:20%"></i></div></div></div>
+  </div>
+  <div class="lweb-capabilities"><span>NOT TIED TO ONE PLATFORM</span><strong>Custom Websites & Web Apps</strong><strong>WordPress & Other CMS</strong><strong>Shopify & E-commerce</strong><strong>Webflow & GoHighLevel</strong><strong>APIs & Integrations</strong></div>
+ </div>
+</section>
+<script>
+ const web = document.querySelector<HTMLElement>('.lweb');
+ if(web){
+  const frame=web.querySelector<HTMLElement>('[data-lweb-frame]');
+  const status=web.querySelector<HTMLElement>('[data-lweb-device-status]');
+  const buttons=web.querySelectorAll<HTMLButtonElement>('[data-lweb-device]');
+  const chooseDevice=(name:string)=>{if(!frame)return;frame.classList.remove('lweb-desktop','lweb-tablet','lweb-mobile');frame.classList.add(`lweb-${name}`);buttons.forEach(b=>{const active=b.dataset.lwebDevice===name;b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active));});if(status)status.textContent=`${name[0].toUpperCase()+name.slice(1)} preview`;};
+  buttons.forEach(button=>button.addEventListener('click',()=>chooseDevice(button.dataset.lwebDevice||'desktop')));
+  const steps = [
+   ['01 / ARRIVE','A relevant click','A prospective customer sees an offer that matches what they are looking for.','Campaign entry'],
+   ['02 / UNDERSTAND','A clear reason to act','The landing page presents the offer, who it helps, and one straightforward next step.','Offer & proof'],
+   ['03 / ENQUIRE','Capture the inquiry','A concise form asks for necessary information, with clear expectations about follow-up.','Consent-aware form'],
+   ['04 / CONFIRM','Confirm the next step','The confirmation page reassures the prospect that their inquiry was received.','Confirmation'],
+   ['05 / CONNECT','Make a conversation easy','When appropriate, qualified leads can schedule a consultation with the right team.','Appointment flow']
+  ];
+  const stageButtons=web.querySelectorAll<HTMLButtonElement>('[data-lweb-stage]');
+  const chooseStage=(i:number)=>{if(!steps[i])return;stageButtons.forEach(b=>{const active=Number(b.dataset.lwebStage)===i;b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active));});const fields:[string,string][]=[['[data-lweb-step-label]',steps[i][0]],['[data-lweb-step-title]',steps[i][1]],['[data-lweb-step-copy]',steps[i][2]],['[data-lweb-mini]',steps[i][3]]];fields.forEach(([selector,value])=>{const target=web.querySelector<HTMLElement>(selector);if(target)target.textContent=value;});const progress=web.querySelector<HTMLElement>('[data-lweb-progress]');if(progress)progress.style.width=`${(i+1)*20}%`;};
+  stageButtons.forEach(b=>b.addEventListener('click',()=>chooseStage(Number(b.dataset.lwebStage))));
+  web.querySelector('[data-lweb-cta]')?.addEventListener('click',()=>{chooseStage(2);web.querySelector('.lweb-funnel')?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'});});
+ }
+</script>

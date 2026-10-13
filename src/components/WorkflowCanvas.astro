@@ -1,0 +1,206 @@
+---
+// LEADSFLO_CANVAS_V4: each scenario has distinct nodes and paths.
+const scenarios = [
+  {name:'New lead response',tag:'CAPTURE',sub:'Form → qualification → routing',nodes:[
+    ['start','New form inquiry','TRIGGER',100,125,'A lead submits a form, including captured source and consent preferences.'],
+    ['validate','Validate fields','CHECK',325,125,'Verify required fields and flag duplicate or incomplete records.'],
+    ['crm','Upsert CRM contact','ACTION',550,125,'Create or update the contact while keeping the original lead source.'],
+    ['qualify','Qualified?','DECISION',775,125,'Evaluate the lead against agreed qualification criteria.'],
+    ['sales','Assign sales owner','ACTION',775,330,'Route qualified leads to the appropriate owner and alert them.'],
+    ['review','Review queue','REVIEW',550,330,'Send incomplete or unqualified inquiries to a review queue.']],
+    edges:[['start','validate'],['validate','crm'],['crm','qualify'],['qualify','sales','YES'],['qualify','review','REVIEW']]},
+  {name:'Lead nurturing',tag:'NURTURE',sub:'Segment → sequence → engagement',nodes:[
+    ['start','New prospect','TRIGGER',100,125,'A contact joins a nurture sequence with a valid consent basis.'],
+    ['segment','Interest segment','DECISION',325,125,'Segment the prospect by service interest and stage.'],
+    ['guide','Send useful guide','ACTION',550,60,'Send relevant content to interested prospects using approved channels.'],
+    ['consult','Send comparison','ACTION',550,240,'Offer a comparison or next-step guide to prospects still evaluating.'],
+    ['wait','Wait for response','WAIT',775,125,'Wait for engagement or a defined follow-up interval.'],
+    ['task','Create sales task','ACTION',775,330,'Create a task for engaged leads or a review after an agreed cadence.']],
+    edges:[['start','segment'],['segment','guide','READY'],['segment','consult','RESEARCH'],['guide','wait'],['consult','wait'],['wait','task','ENGAGED']]},
+  {name:'Appointments & reminders',tag:'BOOK',sub:'Booking → timed reminders',nodes:[
+    ['start','Appointment booked','TRIGGER',100,125,'A booking is created in the connected calendar.'],
+    ['sync','Sync calendar + CRM','ACTION',325,125,'Update the contact and appointment records.'],
+    ['confirm','Send confirmation','ACTION',550,125,'Send the agreed booking confirmation details.'],
+    ['wait','Wait until reminder','WAIT',775,125,'Pause until the approved reminder time.'],
+    ['remind','Send reminder','ACTION',775,330,'Send an appointment reminder based on channel preferences.'],
+    ['owner','Notify meeting owner','ACTION',550,330,'Alert the assigned owner with the appointment context.']],
+    edges:[['start','sync'],['sync','confirm'],['confirm','wait'],['wait','remind','TIME'],['remind','owner']]},
+  {name:'Missed inquiry recovery',tag:'RECOVER',sub:'Missed contact → callback',nodes:[
+    ['start','Missed inquiry','TRIGGER',100,125,'Detect an unanswered inquiry or missed call.'],
+    ['find','Match CRM contact','ACTION',325,125,'Find or create the contact record and preserve the inquiry context.'],
+    ['owner','Owner available?','DECISION',550,125,'Check owner assignment and follow-up availability.'],
+    ['alert','Immediate alert','ACTION',775,60,'Notify the available team member to respond.'],
+    ['queue','Callback queue','ACTION',775,240,'Queue the callback if no owner is available.'],
+    ['audit','Log resolution','ACTION',550,330,'Record the response outcome for reporting and further follow-up.']],
+    edges:[['start','find'],['find','owner'],['owner','alert','YES'],['owner','queue','NO'],['alert','audit'],['queue','audit']]},
+  {name:'Database reactivation',tag:'RE-ENGAGE',sub:'Eligibility → outreach → replies',nodes:[
+    ['start','Existing contacts','TRIGGER',100,125,'Select an existing contact segment for potential reactivation.'],
+    ['eligible','Eligible to contact?','DECISION',325,125,'Confirm permission, exclusions and suppression rules.'],
+    ['exclude','Suppress contacts','STOP',550,60,'Exclude contacts without the required permissions.'],
+    ['offer','Relevant offer','ACTION',550,240,'Send tailored outreach to eligible contacts only.'],
+    ['reply','Response received?','DECISION',775,240,'Check the response and its intent.'],
+    ['sales','Route interested lead','ACTION',775,410,'Notify sales and move interested contacts into a follow-up pipeline.']],
+    edges:[['start','eligible'],['eligible','exclude','NO'],['eligible','offer','YES'],['offer','reply'],['reply','sales','INTERESTED']]},
+  {name:'Notifications & routing',tag:'ROUTE',sub:'Source → rules → team',nodes:[
+    ['start','New lead event','TRIGGER',100,125,'Receive a form, call or advertising-platform lead event.'],
+    ['source','Identify source','ACTION',325,125,'Read the channel, location and submitted lead properties.'],
+    ['rule','Evaluate routing rule','DECISION',550,125,'Apply territory, service and availability rules.'],
+    ['teamA','Assign specialist','ACTION',775,60,'Route matching leads to the relevant specialist.'],
+    ['teamB','Queue for review','REVIEW',775,240,'Queue exceptions or unmatched records.'],
+    ['log','Write audit trail','ACTION',550,330,'Record the routing decision and team notification.']],
+    edges:[['start','source'],['source','rule'],['rule','teamA','MATCH'],['rule','teamB','OTHER'],['teamA','log'],['teamB','log']]}
+];
+---
+<section class="lf-v4" aria-labelledby="lf-v4-title">
+  <div class="container">
+    <div class="lf-v4-intro"><div><p class="section-kicker">AUTOMATION PLAYBOOK / INTERACTIVE</p><h2 id="lf-v4-title">Different workflows.<br /><span>Purpose-built paths.</span></h2></div><p>Explore six common lead operations. Hover over a workflow or node to inspect its logic. Each diagram is a simulated example—not a live automation.</p></div>
+    <div class="lf-v4-layout">
+      <div class="lf-v4-selector" role="group" aria-label="Choose an automation workflow">
+        {scenarios.map((flow,i)=><button type="button" class:list={['lf-v4-option',{'is-active':i===0}]} data-v4-flow={i} aria-pressed={i===0?'true':'false'}><span class="lf-v4-num">{String(i+1).padStart(2,'0')}</span><span><strong>{flow.name}</strong><small>{flow.sub}</small></span><span aria-hidden="true">↗</span></button>)}
+      </div>
+      <div class="lf-v4-demo">
+        <div class="lf-v4-bar"><div><span class="lf-v4-led"></span> FLOW DESIGN / EXAMPLE</div><span data-v4-counter>01 / 06</span></div>
+        <!-- LEADSFLO_MOBILE_WORKFLOW_V1 -->
+        <div class="lf-v4-mobile-nav" aria-label="Workflow diagram navigation">
+          <span class="lf-v4-swipe-hint" data-v4-fit-status>Full workflow · fit view</span>
+          <div class="lf-v4-mobile-actions" aria-label="Workflow zoom controls">
+            <button type="button" data-v4-zoom="out" aria-label="Zoom out">−</button>
+            <button type="button" data-v4-zoom="in" aria-label="Zoom in">+</button>
+            <button type="button" data-v4-zoom="fit" aria-label="Fit entire workflow" class="lf-v4-fit-btn">Fit</button>
+          </div>
+        </div>
+        <div class="lf-v4-scroll" tabindex="0" aria-label="Workflow diagram; horizontal scrolling available on small screens"><div class="lf-v4-fit-stage" data-v4-fit-stage>
+          <div class="lf-v4-canvas" data-v4-canvas><svg class="lf-v4-lines" viewBox="0 0 1000 525" preserveAspectRatio="none" aria-hidden="true" data-v4-lines></svg><div class="lf-v4-nodes" data-v4-nodes></div></div></div></div>
+        <div class="lf-v4-inspector" aria-live="polite"><div><small data-v4-type>TRIGGER / SELECTED NODE</small><strong data-v4-name>New form inquiry</strong><p data-v4-copy>A lead submits a form, including captured source and consent preferences.</p></div><span class="lf-v4-inspector-mark">EXPLORE NODES ↗</span></div>
+      </div>
+    </div>
+    <p class="lf-v4-note">Illustrative systems only. Live workflow design depends on each client's software, permissions, consent requirements and implementation scope.</p>
+  </div>
+</section>
+<script define:vars={{scenarios}}>
+  const section=document.querySelector('.lf-v4');
+  if(section){
+    const optionButtons=[...section.querySelectorAll('[data-v4-flow]')];
+    const nodesRoot=section.querySelector('[data-v4-nodes]');
+    const svg=section.querySelector('[data-v4-lines]');
+    const put=(sel,value)=>{const el=section.querySelector(sel);if(el)el.textContent=value;};
+    let current=0;
+    const NS='http://www.w3.org/2000/svg';
+    const el=(tag,attrs={})=>{const x=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>x.setAttribute(k,String(v)));return x;};
+    const pos=(node)=>({x:node[3],y:node[4]});
+    function inspect(node){
+      nodesRoot.querySelectorAll('.lf-v4-node').forEach(x=>{const on=x.dataset.node===node[0];x.classList.toggle('is-current',on);x.setAttribute('aria-pressed',String(on));});
+      put('[data-v4-type]',node[2]+' / SELECTED NODE');put('[data-v4-name]',node[1]);put('[data-v4-copy]',node[5]);
+    }
+    function draw(i){
+      const flow=scenarios[i];if(!flow)return;current=i;
+      optionButtons.forEach((b,j)=>{b.classList.toggle('is-active',i===j);b.setAttribute('aria-pressed',String(i===j));});
+      put('[data-v4-counter]',`${String(i+1).padStart(2,'0')} / 06`);nodesRoot.replaceChildren();svg.replaceChildren();
+      const byId=Object.fromEntries(flow.nodes.map(n=>[n[0],n]));
+      const defs=el('defs');const marker=el('marker',{id:'lf-v4-arrow',markerWidth:7,markerHeight:7,refX:5,refY:3,orient:'auto'});marker.append(el('path',{d:'M0 0 L6 3 L0 6',fill:'none',stroke:'#6880a9','stroke-width':1.2}));defs.append(marker);svg.append(defs);
+      flow.edges.forEach(([from,to,label])=>{const a=byId[from],b=byId[to];if(!a||!b)return;const ap=pos(a),bp=pos(b);let x1=ap.x+160,y1=ap.y+34,x2=bp.x,y2=bp.y+34;
+        // Downward and return paths connect via bottom/top ports.
+        if(bp.x<=ap.x || Math.abs(bp.x-ap.x)<80){x1=ap.x+80;y1=ap.y+68;x2=bp.x+80;y2=bp.y;}
+        const diff=Math.max(35,Math.abs(x2-x1)*.48);const d=(y2>y1+70 || x2<x1)?`M${x1} ${y1} C${x1} ${y1+28}, ${x2} ${y2-28}, ${x2} ${y2}`:`M${x1} ${y1} C${x1+diff} ${y1}, ${x2-diff} ${y2}, ${x2} ${y2}`;
+        const path=el('path',{d,fill:'none',stroke:'#6880a9','stroke-width':2,'marker-end':'url(#lf-v4-arrow)'});svg.append(path);
+        if(label){const midx=(x1+x2)/2,midy=(y1+y2)/2;const t=el('text',{x:midx,y:midy-11,'text-anchor':'middle',fill:'#3757a5','font-size':10,'font-weight':700});t.textContent=label;svg.append(t);}
+      });
+      flow.nodes.forEach(n=>{const b=document.createElement('button');b.type='button';b.className='lf-v4-node';b.dataset.node=n[0];b.style.left=(n[3]/1000*100)+'%';b.style.top=(n[4]/525*100)+'%';b.innerHTML='<span class="lf-v4-type"></span><strong></strong><span class="lf-v4-dot" aria-hidden="true"></span>';b.querySelector('.lf-v4-type').textContent=n[2];b.querySelector('strong').textContent=n[1];b.addEventListener('click',()=>inspect(n));b.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')inspect(n)});nodesRoot.append(b);});
+      inspect(flow.nodes[0]);
+    }
+    optionButtons.forEach((b,i)=>{b.addEventListener('click',()=>draw(i));b.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')draw(i)});});
+    draw(0);
+  }
+
+
+  // LEADSFLO_MOBILE_FIT_V1: original workflow drawing, responsive viewport transform.
+  const fitStage = document.querySelector('[data-v4-fit-stage]');
+  const workflowCanvas = document.querySelector('[data-v4-canvas]');
+  const workflowScroll = document.querySelector('.lf-v4-scroll');
+  const fitStatus = document.querySelector('[data-v4-fit-status]');
+  const zoomButtons = document.querySelectorAll('[data-v4-zoom]');
+  let zoomMultiplier = 1;
+  let panX = 0;
+  let panY = 0;
+  let drag = null;
+  const narrow = () => window.matchMedia('(max-width:620px)').matches;
+  function fitScale() {
+    if (!fitStage || !workflowCanvas) return 1;
+    return Math.min(1, fitStage.clientWidth / 1000);
+  }
+  function applyCanvasTransform() {
+    if (!fitStage || !workflowCanvas) return;
+    if (!narrow()) {
+      workflowCanvas.style.removeProperty('transform');
+      workflowCanvas.style.removeProperty('width');
+      workflowCanvas.style.removeProperty('height');
+      fitStage.style.removeProperty('height');
+      if (fitStatus) fitStatus.textContent = 'Swipe to explore';
+      return;
+    }
+    const base = fitScale();
+    const scale = base * zoomMultiplier;
+    // Preserve the same 1000x525 coordinate space used by the original node diagrams.
+    workflowCanvas.style.width = '1000px';
+    workflowCanvas.style.height = '525px';
+    fitStage.style.height = Math.round(525*base+14) + 'px';
+    const maxX = Math.max(0, (1000*scale - fitStage.clientWidth)/2);
+    const maxY = Math.max(0, (525*scale - 525*base)/2);
+    panX = Math.max(-maxX, Math.min(maxX, panX));
+    panY = Math.max(-maxY, Math.min(maxY, panY));
+    const originX = (fitStage.clientWidth - 1000*scale)/2;
+    workflowCanvas.style.transform = `translate(${originX+panX}px, ${7+panY}px) scale(${scale})`;
+    if (fitStatus) fitStatus.textContent = zoomMultiplier===1 ? 'Full workflow · fit view' : `${Math.round(zoomMultiplier*100)}% · drag to explore`;
+  }
+  function changeZoom(kind) {
+    if (!narrow()) return;
+    if (kind==='fit') { zoomMultiplier=1; panX=0; panY=0; }
+    else zoomMultiplier=Math.max(1,Math.min(3.5,zoomMultiplier*(kind==='in'?1.35:1/1.35)));
+    if (zoomMultiplier===1) {panX=0;panY=0;}
+    applyCanvasTransform();
+  }
+  zoomButtons.forEach(button=>button.addEventListener('click',()=>changeZoom(button.dataset.v4Zoom)));
+  const activePointers = new Map();
+  let lastPinchDistance = null;
+  if (fitStage) {
+    fitStage.addEventListener('pointerdown', e => {
+      if (!narrow() || e.target.closest('button')) return;
+      activePointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
+      if (activePointers.size===1) drag={x:e.clientX,y:e.clientY};
+      if (activePointers.size===2) {
+        const a=[...activePointers.values()];
+        lastPinchDistance=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);
+        drag=null;
+      }
+    });
+    fitStage.addEventListener('pointermove', e => {
+      if (!activePointers.has(e.pointerId)||!narrow()) return;
+      const old=activePointers.get(e.pointerId);
+      activePointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
+      if (activePointers.size===2) {
+        const a=[...activePointers.values()];
+        const distance=Math.hypot(a[0].x-a[1].x,a[0].y-a[1].y);
+        if (lastPinchDistance) zoomMultiplier=Math.max(1,Math.min(3.5,zoomMultiplier*distance/lastPinchDistance));
+        lastPinchDistance=distance;
+        applyCanvasTransform();
+      } else if (drag && zoomMultiplier>1) {
+        panX+=e.clientX-old.x;
+        panY+=e.clientY-old.y;
+        applyCanvasTransform();
+      }
+    });
+    const finishPointer=e=>{activePointers.delete(e.pointerId);drag=null;lastPinchDistance=null;};
+    fitStage.addEventListener('pointerup',finishPointer);
+    fitStage.addEventListener('pointercancel',finishPointer);
+    fitStage.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse')finishPointer(e)});
+  }
+  // Reset the viewport whenever a different scenario is selected.
+  document.querySelectorAll('[data-v4-flow]').forEach(button=>{
+    const reset=()=>{zoomMultiplier=1;panX=0;panY=0;requestAnimationFrame(applyCanvasTransform)};
+    button.addEventListener('click',reset);
+    button.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')reset()});
+  });
+  window.addEventListener('resize',applyCanvasTransform);
+  requestAnimationFrame(applyCanvasTransform);
+
+</script>

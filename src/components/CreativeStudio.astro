@@ -1,0 +1,153 @@
+---
+import '../styles/creative-studio.css';
+const formats = [
+  {id:'square',title:'Square image ads',sub:'Feed-first visual concepts'},
+  {id:'video',title:'Reels & short-form',sub:'Motion-first storytelling'},
+  {id:'carousel',title:'Carousel campaigns',sub:'Sequential creative cards'},
+  {id:'testing',title:'Creative testing',sub:'Hooks, offers & CTAs'},
+];
+---
+<section class="lcs" aria-labelledby="lcs-title" data-creative-studio>
+  <div class="container">
+    <div class="lcs-intro">
+      <div><p class="section-kicker">THE CREATIVE STUDIO / INTERACTIVE</p><h2 id="lcs-title">Content made to <span>move people.</span></h2></div>
+      <p>Explore how image ads, short videos, carousels and creative testing can make a clear offer more compelling. Sample ad concepts for creative illustration.</p>
+    </div>
+    <div class="lcs-grid">
+      <div class="lcs-menu" role="group" aria-label="Choose a creative format">
+        {formats.map((format,i)=><button type="button" class:list={['lcs-format',{'is-active':i===0}]} data-lcs-format={format.id} aria-pressed={i===0?'true':'false'}><span>0{i+1}</span><span><strong>{format.title}</strong><small>{format.sub}</small></span><span aria-hidden="true">↗</span></button>)}
+        <div class="lcs-note"><span class="lcs-live"></span> Concept studio <strong>— illustrative only</strong></div>
+      </div>
+      <div class="lcs-stage">
+        <div class="lcs-toolbar"><span><i></i> PREVIEW STUDIO</span><span data-lcs-status>01 / IMAGE ADS</span></div>
+        <div class="lcs-panel" data-lcs-panel="square">
+          <!-- LEADSFLO_REAL_CREATIVE_ASSETS_V1 -->
+          <div class="lcs-photo-head">
+            <div><span class="lcs-eyebrow">AD DESIGN SHOWCASE / SAMPLE WORK</span><h3>Made to stop the scroll.</h3></div>
+            <span class="lcs-photo-count" data-lcs-photo-count>01 / 10</span>
+          </div>
+          <div class="lcs-photo-layout">
+            <div class="lcs-real-social">
+              <div class="lcs-social-head"><span class="lcs-avatar">LF</span><div><strong>Concept campaign</strong><small>Sponsored · Ad design sample</small></div><span aria-hidden="true">•••</span></div>
+              <div class="lcs-real-photo-stage">
+                <img src="/images/creative-gallery/concept-01.jpg" alt="Social media ad design sample 1" data-lcs-main-photo width="941" height="1672" loading="lazy" decoding="async" />
+              </div>
+              <div class="lcs-ad-bottom"><div><small>CREATIVE EXAMPLE</small><strong data-lcs-photo-label>Creative concept 01</strong></div><span class="lcs-cta">Learn more ↗</span></div>
+            </div>
+            <div class="lcs-photo-browser"><p>Explore the creative concepts. Hover to preview or tap to select.</p><div class="lcs-photo-thumbs" data-lcs-photo-thumbs></div><small>Sample designs for portfolio presentation. Offers and business details are examples.</small></div>
+          </div>
+        </div>
+        <div class="lcs-panel" data-lcs-panel="video" hidden>
+          <div class="lcs-motion-wrap"><div class="lcs-phone"><div class="lcs-phone-top">● <span>STORY / CONCEPT</span> ◦◦◦</div><div class="lcs-motion-screen" data-lcs-motion><span class="lcs-motion-tiny">NORTHSIDE / IN MOTION</span><div class="lcs-motion-ring"></div><strong>Less friction.<br/><em>More momentum.</em></strong><p>Bold hooks. Clear benefits. One next step.</p><span class="lcs-motion-button">Learn more ↗</span></div><div class="lcs-phone-bottom">◉　⌕　▣　♡</div></div><div class="lcs-motion-details"><span class="lcs-eyebrow">SHORT-FORM CREATIVE / CONCEPT</span><h3>A Reel that feels alive.</h3><p>Subtle scene changes, animated typography and motion patterns illustrate how a vertical video can grab attention—without pretending this is filmed client footage.</p><button type="button" data-lcs-play aria-pressed="false">Pause motion <span aria-hidden="true">Ⅱ</span></button><small>No sound, external video or autoplaying media download.</small></div></div>
+        </div>
+        <div class="lcs-panel" data-lcs-panel="carousel" hidden>
+          <div class="lcs-carousel-intro"><div><span class="lcs-eyebrow">AD CONCEPT CAROUSEL / 10 DESIGNS</span><h3>Swipe through the ideas.</h3></div><span data-lcs-count>01 / 10</span></div>
+          <div class="lcs-real-carousel" aria-label="Browse advertising concepts">
+            <button type="button" class="lcs-real-carousel-nav" data-lcs-prev aria-label="Previous creative">←</button>
+            <div class="lcs-real-carousel-image"><img src="/images/creative-gallery/concept-01.jpg" data-lcs-carousel-photo alt="Fictional ad concept 1" width="941" height="1672" loading="lazy" decoding="async" /></div>
+            <button type="button" class="lcs-real-carousel-nav" data-lcs-next aria-label="Next creative">→</button>
+          </div>
+          <p class="lcs-carousel-caption">Ad design gallery · Examples of creative styles and formats.</p>
+        </div>
+        <div class="lcs-panel" data-lcs-panel="testing" hidden>
+          <div class="lcs-test-layout"><div class="lcs-test-options"><span class="lcs-eyebrow">SELECT A HOOK TO PREVIEW</span><button type="button" data-lcs-test="0" aria-pressed="true" class="is-active"><small>CONCEPT A / OUTCOME</small><strong>Less noise. More growth.</strong></button><button type="button" data-lcs-test="1" aria-pressed="false"><small>CONCEPT B / PROBLEM</small><strong>Leads slipping through the cracks?</strong></button><button type="button" data-lcs-test="2" aria-pressed="false"><small>CONCEPT C / CLARITY</small><strong>Know what happens after the click.</strong></button></div><div class="lcs-test-output"><span class="lcs-eyebrow">LIVE CREATIVE PREVIEW</span><div class="lcs-test-art"><small>LEADSFLO / SAMPLE CREATIVE</small><strong data-lcs-test-title>Less noise.<br/>More growth.</strong><span data-lcs-test-cta>Discover a better way ↗</span></div><p data-lcs-test-explain>Outcome-led message: concentrate on the result the buyer wants.</p><span class="lcs-test-disclaimer">Concept variations only — not tested performance results.</span></div></div>
+        </div>
+        <div class="lcs-foot"><span>IDEAS → CREATIVE → TESTING → LEADS</span><a href="/contact/">Discuss your next campaign ↗</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const studios=document.querySelectorAll('[data-creative-studio]');
+  studios.forEach(studio=>{
+    const panels=[...studio.querySelectorAll('[data-lcs-panel]')];
+    const formatButtons=[...studio.querySelectorAll('[data-lcs-format]')];
+    const status=studio.querySelector('[data-lcs-status]');
+    const statuses={square:'01 / IMAGE ADS',video:'02 / MOTION REELS',carousel:'03 / CAROUSEL ADS',testing:'04 / CREATIVE TESTING'};
+    const activate=(b,buttons,attr,fn)=>{buttons.forEach(item=>{const active=item===b;item.classList.toggle('is-active',active);item.setAttribute('aria-pressed',String(active));});fn(b.getAttribute(attr));};
+    // LEADSFLO_GALLERY_STABLE_V2: switch main formats on activation, not hover.
+    // Image thumbnails retain hover previews independently.
+    // LEADSFLO_COMPACT_STUDIO_V1: hover and click use ONE local activation function.
+    // Shared header must leave [data-creative-studio] controls alone.
+    let formatHoverTimer;
+    const selectFormat = b => {
+      clearTimeout(formatHoverTimer);
+      activate(b,formatButtons,'data-lcs-format',value=>{
+        panels.forEach(p=>p.hidden=p.getAttribute('data-lcs-panel')!==value);
+        if(status) status.textContent=statuses[value]||'';
+      });
+    };
+    formatButtons.forEach(b=>{
+      b.addEventListener('click',()=>selectFormat(b));
+      b.addEventListener('pointerenter',event=>{
+        if(event.pointerType!=='mouse')return;
+        clearTimeout(formatHoverTimer);
+        formatHoverTimer=setTimeout(()=>{
+          if(b.matches(':hover') && !b.classList.contains('is-active'))selectFormat(b);
+        },120);
+      });
+      b.addEventListener('pointerleave',()=>clearTimeout(formatHoverTimer));
+    });
+    const creativeAssets = [{src:'/images/creative-gallery/concept-01.jpg',label:'Creative concept 01'},{src:'/images/creative-gallery/concept-02.jpg',label:'Creative concept 02'},{src:'/images/creative-gallery/concept-03.jpg',label:'Creative concept 03'},{src:'/images/creative-gallery/concept-04.jpg',label:'Creative concept 04'},{src:'/images/creative-gallery/concept-05.jpg',label:'Creative concept 05'},{src:'/images/creative-gallery/concept-06.jpg',label:'Creative concept 06'},{src:'/images/creative-gallery/concept-07.jpg',label:'Creative concept 07'},{src:'/images/creative-gallery/concept-08.jpg',label:'Creative concept 08'},{src:'/images/creative-gallery/concept-09.jpg',label:'Creative concept 09'},{src:'/images/creative-gallery/concept-10.jpg',label:'Creative concept 10'}];
+    const mainPhoto = studio.querySelector('[data-lcs-main-photo]');
+    const photoCount = studio.querySelector('[data-lcs-photo-count]');
+    const photoLabel = studio.querySelector('[data-lcs-photo-label]');
+    const photoThumbs = studio.querySelector('[data-lcs-photo-thumbs]');
+    const carouselPhoto = studio.querySelector('[data-lcs-carousel-photo]');
+    const carouselCount = studio.querySelector('[data-lcs-count]');
+    let selectedPhoto = 0;
+    let current = 0;
+    function showPhoto(index) {
+      selectedPhoto = (index + creativeAssets.length) % creativeAssets.length;
+      const item = creativeAssets[selectedPhoto];
+      if (mainPhoto) {mainPhoto.src = item.src;mainPhoto.alt = item.label + ', social media ad design sample';}
+      if (photoCount) photoCount.textContent = String(selectedPhoto + 1).padStart(2,'0') + ' / ' + creativeAssets.length;
+      if (photoLabel) photoLabel.textContent = item.label;
+      photoThumbs?.querySelectorAll('button').forEach((button,i) => {
+        const active = i === selectedPhoto;
+        button.classList.toggle('is-active', active);
+        button.setAttribute('aria-pressed',String(active));
+      });
+    }
+    creativeAssets.forEach((item,i) => {
+      if (!photoThumbs) return;
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'lcs-photo-thumb';
+      button.setAttribute('aria-label','Preview ' + item.label);
+      button.setAttribute('aria-pressed',String(i === 0));
+      const img = document.createElement('img');
+      img.src = item.src; img.alt = ''; img.loading = 'lazy'; img.decoding = 'async';
+      const caption = document.createElement('span'); caption.textContent = String(i+1).padStart(2,'0');
+      button.append(img,caption);
+      button.addEventListener('click',() => showPhoto(i));
+      let previewTimer;
+      button.addEventListener('pointerenter',event => {
+        if(event.pointerType !== 'mouse') return;
+        clearTimeout(previewTimer);
+        previewTimer = setTimeout(() => { if(button.matches(':hover')) showPhoto(i); }, 140);
+      });
+      button.addEventListener('pointerleave',() => clearTimeout(previewTimer));
+      photoThumbs.append(button);
+    });
+    function showSlide(index) {
+      current = (index + creativeAssets.length) % creativeAssets.length;
+      if (carouselPhoto) {carouselPhoto.src = creativeAssets[current].src;carouselPhoto.alt = creativeAssets[current].label + ', ad design sample';}
+      if (carouselCount) carouselCount.textContent = String(current+1).padStart(2,'0') + ' / ' + creativeAssets.length;
+    }
+    studio.querySelector('[data-lcs-prev]')?.addEventListener('click',() => showSlide(current-1));
+    studio.querySelector('[data-lcs-next]')?.addEventListener('click',() => showSlide(current+1));
+    const carouselViewport = studio.querySelector('.lcs-real-carousel-image');
+    let startX = null;
+    carouselViewport?.addEventListener('touchstart', e => {startX = e.touches[0]?.clientX ?? null;}, {passive:true});
+    carouselViewport?.addEventListener('touchend', e => {
+      if (startX === null || !e.changedTouches[0]) return;
+      const delta = e.changedTouches[0].clientX - startX;startX = null;
+      if (Math.abs(delta) > 40) showSlide(current + (delta < 0 ? 1 : -1));
+    }, {passive:true});
+    const motion=studio.querySelector('[data-lcs-motion]');const play=studio.querySelector('[data-lcs-play]');
+    play?.addEventListener('click',()=>{const paused=motion.classList.toggle('is-paused');play.setAttribute('aria-pressed',String(paused));play.innerHTML=paused?'Play motion <span aria-hidden="true">▷</span>':'Pause motion <span aria-hidden="true">Ⅱ</span>';});
+    const testButtons=[...studio.querySelectorAll('[data-lcs-test]')];const tests=[['Less noise.<br/>More growth.','Discover a better way ↗','Outcome-led message: concentrate on the result the buyer wants.'],['Leads slipping<br/>through the cracks?','See a smarter follow-up ↗','Problem-led message: acknowledge a familiar operational frustration.'],['Know what happens<br/>after the click.','Explore the process ↗','Clarity-led message: make the path from inquiry to customer tangible.']];
+    testButtons.forEach(b=>{const update=()=>activate(b,testButtons,'data-lcs-test',key=>{const t=tests[Number(key)];if(!t)return;studio.querySelector('[data-lcs-test-title]').innerHTML=t[0];studio.querySelector('[data-lcs-test-cta]').textContent=t[1];studio.querySelector('[data-lcs-test-explain]').textContent=t[2];});b.addEventListener('click',update);b.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')update()});});
+  });
+</script>

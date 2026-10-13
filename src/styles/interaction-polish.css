@@ -1,0 +1,10 @@
+/* LeadsFlo — subtle page-wide tactile feedback, not hover-only content */
+@media(hover:hover) and (pointer:fine){
+  .lf-process li,.lf-detail-card,.lf-faq-list details,.lf-related-links a,.interior-card,
+  .process-step,.service-card,.lf-auto-option{transition:background-color .22s ease,box-shadow .22s ease,transform .22s ease,border-color .22s ease}
+  .lf-process li:hover,.lf-detail-card:hover,.interior-card:hover{background:#fff;transform:translateY(-3px);box-shadow:0 10px 25px rgba(23,35,61,.055)}
+  .lf-faq-list details:hover{background:rgba(49,91,250,.045)}
+  .lf-related-links a:hover{background:#e0e7ff;transform:translateY(-2px)}
+  .lf-process li:hover h3,.lf-related-links a:hover{color:#315bfa}
+}
+@media(prefers-reduced-motion:reduce){.lf-process li,.lf-detail-card,.lf-faq-list details,.lf-related-links a{transition:none!important;transform:none!important}}

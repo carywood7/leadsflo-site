@@ -1,0 +1,124 @@
+---
+import "../styles/performance-showcase.css";
+---
+<section class="lpm" aria-labelledby="lpm-title">
+  <div class="container">
+    <div class="lpm-head">
+      <div><p class="section-kicker">CAMPAIGN STRATEGY / INTERACTIVE EXAMPLE</p><h2 id="lpm-title">Different channels. <span>One clear objective.</span></h2></div>
+      <p>Explore how search intent and social discovery inform campaign strategy. The example below is illustrative, not live client performance.</p>
+    </div>
+    <div class="lpm-lab" data-lpm>
+      <div class="lpm-toolbar">
+        <span class="lpm-labname"><span class="lpm-live" aria-hidden="true"></span> THE CAMPAIGN LAB</span>
+        <div class="lpm-switch" role="group" aria-label="Advertising channel">
+          <button type="button" class="is-active" data-lpm-channel="google" aria-pressed="true">Google Search</button>
+          <button type="button" data-lpm-channel="meta" aria-pressed="false">Meta Ads</button>
+        </div>
+      </div>
+      <div class="lpm-grid">
+        <div class="lpm-creative">
+          <div class="lpm-overline"><span data-lpm-label>SEARCH CAMPAIGN / EXAMPLE</span><span>01 — REACH</span></div>
+          <!-- LF_REALISTIC_AD_PREVIEWS_V1: illustrative UIs, not live platform screenshots -->
+          <div class="lpm-platform-previews" aria-label="Illustrative advertising platform previews">
+            <div class="lpm-google-preview" aria-label="Example Google Search sponsored results">
+              <div class="lpm-searchtop"><span class="lpm-google-g" aria-label="Google">G</span><div class="lpm-searchquery">local home renovation contractors <span aria-hidden="true">⌕</span></div></div>
+              <div class="lpm-searchfilter"><strong>All</strong><span>Images</span><span>Maps</span><span>Videos</span></div>
+              <div class="lpm-result-card">
+                <div class="lpm-result-identity"><span class="lpm-result-favicon">N</span><span><strong>Northside Renovations</strong><small>northside.example / get-a-quote</small></span></div>
+                <div class="lpm-sponsored">Sponsored · Example advertisement</div>
+                <h3>Home Renovation Contractors | Request a Free Quote</h3>
+                <p>Bring your renovation ideas to life. Explore the process, view project options, and request a consultation.</p>
+                <div class="lpm-sitelinks"><span>Our Services <i>↗</i></span><span>Recent Projects <i>↗</i></span><span>Get a Quote <i>↗</i></span></div>
+              </div>
+              <div class="lpm-search-foot">Illustrative search ad · Not affiliated with Google</div>
+            </div>
+            <div class="lpm-meta-preview" aria-label="Example Facebook and Instagram sponsored creative">
+              <div class="lpm-meta-platforms" role="group" aria-label="Social ad preview format">
+                <button type="button" data-lpm-social="facebook" class="is-active" aria-pressed="true"><span class="lpm-facebook-brand">f</span> Facebook feed</button>
+                <button type="button" data-lpm-social="instagram" aria-pressed="false"><span class="lpm-instagram-brand">◎</span> Instagram feed</button>
+              </div>
+              <div class="lpm-social-post">
+                <div class="lpm-social-header"><div class="lpm-social-avatar">N</div><div><strong>Northside Renovations</strong><small>Sponsored · Example advertisement</small></div><span class="lpm-social-more" aria-hidden="true">···</span></div>
+                <div class="lpm-social-caption">Planning a home refresh? A clear process starts with a conversation. Explore what's possible with Northside.</div>
+                <div class="lpm-social-visual"><div class="lpm-social-art-top">NORTHSIDE / HOME PROJECTS</div><div class="lpm-social-art-center"><span>Make room for<br/><em>what's next.</em></span><div class="lpm-art-shapes"><div></div><div></div><div></div></div></div><div class="lpm-social-art-bottom">DESIGNED FOR BETTER LIVING <span>↗</span></div></div>
+                <div class="lpm-social-adfooter"><div><small>northside.example</small><strong>Start your next project.</strong></div><span class="lpm-social-adcta">Get quote ↗</span></div>
+                <div class="lpm-social-engagement" aria-hidden="true">♡ &nbsp; ◯ &nbsp; ↗ <span>◯</span></div>
+              </div>
+              <div class="lpm-search-foot">Illustrative social ad · Not affiliated with Meta</div>
+            </div>
+          </div>
+          <div class="lpm-note"><span class="lpm-dot"></span><span data-lpm-takeaway>Search ads can capture demand from people already looking for a solution.</span></div>
+        </div>
+        <div class="lpm-side">
+          <div class="lpm-side-title"><span>02 — QUALIFY</span><strong data-lpm-strategy>High-intent search</strong></div>
+          <div class="lpm-factors" role="group" aria-label="Explore campaign priorities">
+            <button type="button" class="is-active" data-lpm-factor="0" aria-pressed="true"><span>01</span> Audience</button>
+            <button type="button" data-lpm-factor="1" aria-pressed="false"><span>02</span> Message</button>
+            <button type="button" data-lpm-factor="2" aria-pressed="false"><span>03</span> Conversion</button>
+          </div>
+          <div class="lpm-factor-detail" aria-live="polite"><small data-lpm-factor-eyebrow>AUDIENCE / SEARCH INTENT</small><h3 data-lpm-factor-title>Reach people asking for a solution.</h3><p data-lpm-factor-body>Relevant search terms and geographic targeting help align campaigns with the services being offered.</p></div>
+        </div>
+      </div>
+      <div class="lpm-bottom">
+        <div class="lpm-stages" aria-label="Campaign measurement stages">
+          <div><span>01</span><strong>Reach</strong><small>Relevant audience</small></div>
+          <div><span>02</span><strong>Engage</strong><small>Offer & creative</small></div>
+          <div><span>03</span><strong>Convert</strong><small>Qualified inquiry</small></div>
+          <div><span>04</span><strong>Optimize</strong><small>Lead quality feedback</small></div>
+        </div>
+        <div class="lpm-footer"><span>Sample campaign concepts only — no fabricated results or performance claims.</span><a href="/contact/">Discuss your campaign <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const root = document.querySelector<HTMLElement>('[data-lpm]');
+  if (root) {
+    type Factor = {eyebrow:string,title:string,body:string};
+    type Campaign = {label:string,mark:string,adLabel:string,url:string,headline:string,adText:string,cta:string,takeaway:string,strategy:string,factors:Factor[]};
+    const data:Record<string,Campaign> = {
+      google: {
+        label:'SEARCH CAMPAIGN / EXAMPLE',mark:'G',adLabel:'Sponsored search result',url:'example-service.com / consultation',headline:'Need a reliable local service?',adText:'Make it simple to compare options, request a quote and take the next step.',cta:'Request a quote ↗',takeaway:'Search ads can capture demand from people already looking for a solution.',strategy:'High-intent search',
+        factors:[
+          {eyebrow:'AUDIENCE / SEARCH INTENT',title:'Reach people asking for a solution.',body:'Relevant search terms and geographic targeting help align campaigns with the services being offered.'},
+          {eyebrow:'MESSAGE / OFFER MATCH',title:'Answer the question behind the search.',body:'Useful ad copy reflects the service, location and next step. The landing page should match what the advertisement promises.'},
+          {eyebrow:'CONVERSION / QUALITY',title:'Measure inquiries beyond the click.',body:'Track form submissions and calls, then evaluate which inquiries become qualified opportunities and appointments.'}
+        ]
+      },
+      meta: {
+        label:'SOCIAL CAMPAIGN / EXAMPLE',mark:'M',adLabel:'Sponsored social creative',url:'Example Service · Sponsored',headline:'Make your next project easier.',adText:'An engaging offer introduces the service, builds interest and invites the right audience to enquire.',cta:'Learn more ↗',takeaway:'Social advertising can create awareness and interest before someone actively searches.',strategy:'Creative-led discovery',
+        factors:[
+          {eyebrow:'AUDIENCE / DISCOVERY',title:'Find people likely to care.',body:'Audience signals, geography and creative testing help reach prospects who may be interested but have not searched yet.'},
+          {eyebrow:'MESSAGE / CREATIVE',title:'Make the value clear in seconds.',body:'A strong hook, understandable offer and relevant image or video help earn attention without relying on hype.'},
+          {eyebrow:'CONVERSION / FOLLOW-UP',title:'Turn interest into real conversations.',body:'Use relevant landing pages or lead forms, followed by timely qualification and CRM-assisted follow-up.'}
+        ]
+      }
+    };
+    let channel:'google'|'meta'='google'; let factor=0;
+    const text=(selector:string,value:string)=>{const el=root.querySelector<HTMLElement>(selector);if(el)el.textContent=value};
+    const render=()=>{
+      const c=data[channel];
+      text('[data-lpm-label]',c.label);text('[data-lpm-mark]',c.mark);text('[data-lpm-ad-label]',c.adLabel);
+      text('[data-lpm-url]',c.url);text('[data-lpm-ad-headline]',c.headline);text('[data-lpm-ad-text]',c.adText);
+      text('[data-lpm-ad-cta]',c.cta);text('[data-lpm-takeaway]',c.takeaway);text('[data-lpm-strategy]',c.strategy);
+      root.classList.toggle('lpm-is-meta',channel==='meta');
+      root.querySelectorAll<HTMLButtonElement>('[data-lpm-channel]').forEach(b=>{const selected=b.dataset.lpmChannel===channel;b.classList.toggle('is-active',selected);b.setAttribute('aria-pressed',String(selected))});
+      const f=c.factors[factor];text('[data-lpm-factor-eyebrow]',f.eyebrow);text('[data-lpm-factor-title]',f.title);text('[data-lpm-factor-body]',f.body);
+      root.querySelectorAll<HTMLButtonElement>('[data-lpm-factor]').forEach(b=>{const selected=Number(b.dataset.lpmFactor)===factor;b.classList.toggle('is-active',selected);b.setAttribute('aria-pressed',String(selected))});
+    };
+    root.querySelectorAll<HTMLButtonElement>('[data-lpm-channel]').forEach(b=>b.addEventListener('click',()=>{channel=b.dataset.lpmChannel==='meta'?'meta':'google';factor=0;render()}));
+    root.querySelectorAll<HTMLButtonElement>('[data-lpm-factor]').forEach(b=>b.addEventListener('click',()=>{factor=Number(b.dataset.lpmFactor)||0;render()}));
+    root.querySelectorAll<HTMLButtonElement>('[data-lpm-social]').forEach(button => {
+      button.addEventListener('click', () => {
+        const instagram = button.dataset.lpmSocial === 'instagram';
+        root.classList.toggle('lpm-social-instagram', instagram);
+        root.querySelectorAll<HTMLButtonElement>('[data-lpm-social]').forEach(b => {
+          const chosen = b === button;
+          b.classList.toggle('is-active', chosen);
+          b.setAttribute('aria-pressed', String(chosen));
+        });
+      });
+    });
+    render();
+  }
+</script>

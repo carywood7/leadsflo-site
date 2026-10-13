@@ -1,0 +1,66 @@
+---
+import '../styles/crm-showcase.css';
+const stages = [
+  { label:'New', number:12, percent:100, desc:'Incoming inquiries captured from forms or campaigns.' },
+  { label:'Contacted', number:9, percent:75, desc:'Leads who received an initial response.' },
+  { label:'Qualified', number:6, percent:50, desc:'Prospects meeting the business’s qualification criteria.' },
+  { label:'Booked', number:4, percent:33, desc:'Qualified prospects who scheduled a meeting.' }
+];
+const actions = [
+ {title:'Lead received',sub:'Form or advertising inquiry',detail:'A prospect submits an inquiry and the data is captured.'},
+ {title:'Create CRM contact',sub:'Match or update contact',detail:'The CRM checks for an existing record before creating a new lead.'},
+ {title:'Assign and notify',sub:'Route to the right owner',detail:'The lead is routed to a team member and a notification is prepared.'},
+ {title:'Follow up',sub:'Email, SMS or task',detail:'Approved follow-up steps run based on status and consent.'},
+ {title:'Book appointment',sub:'Move to booked stage',detail:'A confirmed booking updates the pipeline and triggers reminders.'}
+];
+---
+<section class="lcrm" aria-labelledby="lcrm-heading">
+ <div class="container">
+  <div class="lcrm-heading"><div><p class="section-kicker">INTERACTIVE SERVICE DEMO / SAMPLE DATA</p><h2 id="lcrm-heading">See what happens <span>after the lead.</span></h2></div><p>Explore a connected lead pipeline and the automation behind it. This is an illustrative workspace, not a live customer account.</p></div>
+  <div class="lcrm-shell">
+   <div class="lcrm-appbar"><div class="lcrm-appmark">lf<span>.</span></div><span>LeadsFlo / Sample workspace</span><span class="lcrm-demo-tag">INTERACTIVE DEMO</span></div>
+   <div class="lcrm-main">
+    <div class="lcrm-dash">
+     <div class="lcrm-eyebrow">01 / CRM DASHBOARD</div>
+     <div class="lcrm-sectionhead"><div><h3>Lead pipeline</h3><p>Explore the status of a typical inquiry.</p></div><div class="lcrm-period">Illustrative month</div></div>
+     <div class="lcrm-stats"><div><small>New leads</small><strong>12</strong></div><div><small>Contacted</small><strong>9</strong></div><div><small>Qualified</small><strong>6</strong></div><div><small>Booked</small><strong>4</strong></div></div>
+     <div class="lcrm-graph" aria-label="Illustrative sample lead pipeline chart"><div class="lcrm-graph-top"><span>Pipeline overview</span><span>Sample values</span></div><div class="lcrm-chart" role="group" aria-label="Select a CRM pipeline stage">{stages.map((s,i)=><button type="button" class:list={['lcrm-bar-button',{'is-active':i===0}]} data-lcrm-stage={i} aria-pressed={i===0?'true':'false'} aria-label={`${s.label}: ${s.number} sample leads`}><span class="lcrm-bar-zone"><span class="lcrm-bar" style={`--bar-h:${s.percent}%`}></span></span><strong>{s.number}</strong><small>{s.label}</small></button>)}</div></div>
+     <div class="lcrm-selected" aria-live="polite"><span class="lcrm-selected-dot"></span><div><strong data-stage-title>New · 12 leads</strong><p data-stage-description>Incoming inquiries captured from forms or campaigns.</p></div></div>
+    </div>
+    <div class="lcrm-automation"><div class="lcrm-eyebrow">02 / AUTOMATION WORKFLOW</div><div class="lcrm-sectionhead"><div><h3>Inquiry → appointment</h3><p>Select a node to see its action.</p></div></div>
+      <div class="lcrm-workflow" role="group" aria-label="Explore automation steps">{actions.map((a,i)=><div class="lcrm-workflow-item"><button type="button" class:list={['lcrm-workflow-node',{'is-active':i===0}]} data-lcrm-action={i} aria-pressed={i===0?'true':'false'}><span class="lcrm-node-icon">{String(i+1).padStart(2,'0')}</span><span class="lcrm-node-text"><strong>{a.title}</strong><small>{a.sub}</small></span><span class="lcrm-node-arrow" aria-hidden="true">↗</span></button>{i!==actions.length-1&&<span class="lcrm-connector" aria-hidden="true"><span></span></span>}</div>)}</div>
+      <div class="lcrm-explainer" aria-live="polite"><small>SELECTED ACTION</small><strong data-action-title>Lead received</strong><p data-action-description>A prospect submits an inquiry and the data is captured.</p></div>
+    </div>
+   </div>
+   <div class="lcrm-footer"><span><span class="lcrm-foot-dot"></span> Demonstration only — no live CRM, messages or customer information</span><span>Built to connect, not just collect.</span></div>
+  </div>
+ </div>
+</section>
+<script>
+ const stages = [
+  ['New · 12 leads','Incoming inquiries captured from forms or campaigns.'],
+  ['Contacted · 9 leads','Leads who received an initial response.'],
+  ['Qualified · 6 leads','Prospects meeting the business’s qualification criteria.'],
+  ['Booked · 4 leads','Qualified prospects who scheduled a meeting.']
+ ];
+ const actions = [
+  ['Lead received','A prospect submits an inquiry and the data is captured.'],
+  ['Create CRM contact','The CRM checks for an existing record before creating a new lead.'],
+  ['Assign and notify','The lead is routed to a team member and a notification is prepared.'],
+  ['Follow up','Approved follow-up steps run based on status and consent.'],
+  ['Book appointment','A confirmed booking updates the pipeline and triggers reminders.']
+ ];
+ const root = document.querySelector('.lcrm');
+ root?.querySelectorAll<HTMLButtonElement>('[data-lcrm-stage]').forEach(b=>b.addEventListener('click',()=>{
+  const i=Number(b.dataset.lcrmStage);
+  root.querySelectorAll<HTMLButtonElement>('[data-lcrm-stage]').forEach(x=>{let active=x===b;x.classList.toggle('is-active',active);x.setAttribute('aria-pressed',String(active));});
+  const title=root.querySelector('[data-stage-title]');const desc=root.querySelector('[data-stage-description]');
+  if(title)title.textContent=stages[i][0];if(desc)desc.textContent=stages[i][1];
+ }));
+ root?.querySelectorAll<HTMLButtonElement>('[data-lcrm-action]').forEach(b=>b.addEventListener('click',()=>{
+  const i=Number(b.dataset.lcrmAction);
+  root.querySelectorAll<HTMLButtonElement>('[data-lcrm-action]').forEach(x=>{let active=x===b;x.classList.toggle('is-active',active);x.setAttribute('aria-pressed',String(active));});
+  const title=root.querySelector('[data-action-title]');const desc=root.querySelector('[data-action-description]');
+  if(title)title.textContent=actions[i][0];if(desc)desc.textContent=actions[i][1];
+ }));
+</script>

@@ -1,0 +1,41 @@
+---
+import '../styles/about-contact.css';
+const strengths = [
+  { name:'Strategy & acquisition', label:'01 / ATTRACT', title:'Find the right audience.', detail:'Align paid campaigns, offers and creative with the people most likely to need your services.', services:['Google Ads','Meta Ads','Creative strategy'] },
+  { name:'Web & conversion', label:'02 / CONVERT', title:'Make the next step easy.', detail:'Design custom websites, landing pages and funnels that give visitors a clear reason to enquire.', services:['Custom development','WordPress & Shopify','Conversion funnels'] },
+  { name:'Systems & AI', label:'03 / CONNECT', title:'No leads lost between tools.', detail:'Connect CRMs, routing, follow-up and AI-assisted workflows with the platforms appropriate to each business.', services:['HubSpot & GoHighLevel','n8n, Make & Zapier','Custom APIs & applications'] },
+  { name:'Human follow-through', label:'04 / BOOK', title:'Turn interest into conversations.', detail:'Where included, appointment setters call enquiries, qualify prospects and book suitable appointments for the client.', services:['Lead qualification','Phone follow-up','Appointment setting'] },
+];
+---
+<section class="lac-about" aria-labelledby="lac-about-heading" data-lac-about>
+  <div class="container">
+    <div class="lac-intro"><div><p class="section-kicker">HOW WE THINK / WHAT WE BUILD</p><h2 id="lac-about-heading">One growth goal.<br /><span>Connected capabilities.</span></h2></div><p>Great lead generation depends on more than ads. Explore the capabilities we connect across the customer journey.</p></div>
+    <div class="lac-about-layout">
+      <div class="lac-tabs" role="group" aria-label="Explore our capabilities">
+        {strengths.map((item,i)=><button class:list={['lac-tab',{'is-active':i===0}]} type="button" data-lac-tab={i} aria-pressed={i===0?'true':'false'}><span>{String(i+1).padStart(2,'0')}</span><strong>{item.name}</strong><span aria-hidden="true">↗</span></button>)}
+      </div>
+      <div class="lac-display">
+        <div class="lac-display-top"><span><i></i> LEADSFLO / CAPABILITIES</span><span data-lac-counter>01 / 04</span></div>
+        <div class="lac-path" aria-hidden="true"><span class="is-active"></span><span></span><span></span><span></span></div>
+        <div class="lac-display-body" aria-live="polite"><small data-lac-label>{strengths[0].label}</small><h3 data-lac-title>{strengths[0].title}</h3><p data-lac-detail>{strengths[0].detail}</p><div class="lac-tags" data-lac-tags>{strengths[0].services.map(s=><span>{s}</span>)}</div></div>
+        <a href="/contact/" class="lac-display-link">Discuss your growth goals <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+<script define:vars={{ strengths }}>
+  document.querySelectorAll('[data-lac-about]').forEach(root => {
+    const buttons=[...root.querySelectorAll('[data-lac-tab]')];
+    const dots=[...root.querySelectorAll('.lac-path span')];
+    const assign=(selector,value)=>{const node=root.querySelector(selector);if(node)node.textContent=value;};
+    const choose=(index)=>{
+      const item=strengths[index];if(!item)return;
+      buttons.forEach((b,i)=>{const active=i===index;b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active));});
+      dots.forEach((d,i)=>d.classList.toggle('is-active',i===index));
+      assign('[data-lac-counter]',String(index+1).padStart(2,'0')+' / 04');
+      assign('[data-lac-label]',item.label);assign('[data-lac-title]',item.title);assign('[data-lac-detail]',item.detail);
+      const tags=root.querySelector('[data-lac-tags]');if(tags){tags.replaceChildren();item.services.forEach(label=>{const span=document.createElement('span');span.textContent=label;tags.append(span);});}
+    };
+    buttons.forEach((b,i)=>{b.addEventListener('click',()=>choose(i));b.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')choose(i);});});
+  });
+</script>

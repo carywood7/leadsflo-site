@@ -1,0 +1,27 @@
+---
+import '../styles/about-contact.css';
+const goals = [
+  { title:'Generate more leads', label:'PERFORMANCE MARKETING', detail:'Tell us your services, target locations and approximate monthly advertising budget.', bullets:['Google & Meta acquisition','Campaign strategy and measurement','Lead quality'] },
+  { title:'Improve conversions', label:'WEBSITES & FUNNELS', detail:'Share your current website or funnel and what visitors should do next.', bullets:['Landing pages','Custom websites & web apps','Conversion optimization'] },
+  { title:'Connect my systems', label:'SYSTEMS & AI AUTOMATION', detail:'Tell us where enquiries arrive, which tools you use and where follow-up breaks down.', bullets:['CRM setup and integrations','Workflow automation','Custom AI-assisted systems'] },
+  { title:'Book more appointments', label:'APPOINTMENT SETTING', detail:'Tell us how many enquiries you receive, who needs to be called and what qualifies a booking.', bullets:['Human lead calling','Qualification and follow-up','Booked conversations'] },
+  { title:'Create better ads', label:'CREATIVE & CONTENT', detail:'Tell us about your offer, brand assets, ad platforms and the creative formats you need.', bullets:['Image and carousel ads','Video and Reels','Creative testing'] },
+];
+---
+<section class="lac-contact" aria-labelledby="lac-contact-heading" data-lac-contact>
+  <div class="container">
+    <div class="lac-intro"><div><p class="section-kicker">START WITH YOUR GOAL</p><h2 id="lac-contact-heading">What are you looking<br /><span>to improve?</span></h2></div><p>Choose a goal to see the information that would make our first conversation productive.</p></div>
+    <div class="lac-contact-layout">
+      <div class="lac-goals" role="group" aria-label="Choose a project goal">{goals.map((goal,i)=><button type="button" class:list={['lac-goal',{'is-active':i===0}]} data-lac-goal={i} aria-pressed={i===0?'true':'false'}><span>{String(i+1).padStart(2,'0')}</span><strong>{goal.title}</strong><span aria-hidden="true">↗</span></button>)}</div>
+      <div class="lac-brief"><span class="lac-brief-kicker" data-lac-goal-label>{goals[0].label}</span><h3 data-lac-goal-title>{goals[0].title}</h3><p data-lac-goal-detail>{goals[0].detail}</p><div class="lac-brief-divider"></div><span class="lac-brief-kicker">WHAT WE CAN HELP WITH</span><ul data-lac-goal-list>{goals[0].bullets.map(b=><li>{b}</li>)}</ul><p class="lac-contact-note">The consultation form and booking calendar are being connected. This is an interactive guide only; it does not send your information.</p></div>
+    </div>
+  </div>
+</section>
+<script define:vars={{ goals }}>
+  document.querySelectorAll('[data-lac-contact]').forEach(root=>{
+    const buttons=[...root.querySelectorAll('[data-lac-goal]')];
+    const set=(selector,value)=>{const e=root.querySelector(selector);if(e)e.textContent=value;};
+    const choose=(i)=>{const g=goals[i];if(!g)return;buttons.forEach((b,n)=>{const on=n===i;b.classList.toggle('is-active',on);b.setAttribute('aria-pressed',String(on));});set('[data-lac-goal-label]',g.label);set('[data-lac-goal-title]',g.title);set('[data-lac-goal-detail]',g.detail);const list=root.querySelector('[data-lac-goal-list]');if(list){list.replaceChildren();g.bullets.forEach(t=>{const li=document.createElement('li');li.textContent=t;list.append(li);});}};
+    buttons.forEach((b,i)=>{b.addEventListener('click',()=>choose(i));b.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')choose(i);});});
+  });
+</script>

@@ -1,0 +1,29 @@
+/* Site-wide LeadsFlo footer — scoped to avoid existing site-footer overrides. */
+.lf-footer{background:#142039;color:#eaf0ff;padding:76px 0 0;overflow:hidden}
+.lf-footer *{box-sizing:border-box}
+.lf-footer-top{display:grid;grid-template-columns:minmax(250px,1.55fr) minmax(150px,.85fr) minmax(120px,.72fr) minmax(190px,1fr);gap:clamp(24px,4vw,64px);padding-bottom:64px}
+.lf-footer-logo{display:inline-block;color:#fff!important;font-size:clamp(30px,3vw,43px);font-weight:800;letter-spacing:-.07em;line-height:1;text-decoration:none!important;margin-bottom:33px}
+.lf-footer-logo span{color:#c9f36b}.lf-footer-logo i{font-style:normal;color:#315bfa}
+.lf-footer-intro h2{color:#fff;font-size:clamp(29px,3.2vw,46px);line-height:1.13;letter-spacing:-.05em;margin:0 0 18px}
+.lf-footer-intro h2 em{font-style:normal;color:#c9f36b}
+.lf-footer-intro p{max-width:380px;line-height:1.75;color:#b7c3dc;margin:0 0 25px}
+.lf-footer-cta{display:inline-flex;align-items:center;gap:22px;max-width:100%;background:#c9f36b;color:#142039!important;padding:14px 19px;border-radius:9px;text-decoration:none!important;font-weight:800;transition:background .18s ease,transform .18s ease}
+.lf-footer-cta:hover{background:#e0ffa5;transform:translateY(-2px)}
+.lf-footer-col h3{color:#fff;font-size:13px;text-transform:uppercase;letter-spacing:.13em;margin:7px 0 22px}
+.lf-footer-col a{display:block;width:fit-content;max-width:100%;overflow-wrap:anywhere;color:#b9c5dd!important;text-decoration:none!important;font-size:14px;line-height:1.5;margin-bottom:16px;transition:color .16s ease}
+.lf-footer-col a:hover,.lf-footer-col a:focus-visible{color:#c9f36b!important}
+.lf-footer-col p{color:#b9c5dd;font-size:14px;line-height:1.7;margin:0 0 20px}
+.lf-footer-col .lf-footer-secondary{color:#c9f36b!important;font-weight:700}
+.lf-footer-bottom{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.15);padding-top:23px;padding-bottom:25px;color:#a7b5d1;font-size:12px}
+.lf-footer-back{color:#c9f36b!important;text-decoration:none!important}
+.lf-setting-models .lf-section-head>p:last-child{max-width:780px;line-height:1.7}
+.lf-setting-model-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:28px 0 20px}
+.lf-setting-model-card{background:#fff;border:1px solid #dce3e9;border-radius:13px;padding:clamp(21px,2.5vw,33px);display:flex;flex-direction:column;align-items:flex-start;min-height:285px}
+.lf-setting-model-no{font-size:11px;font-weight:800;letter-spacing:.14em;color:#315bfa}
+.lf-setting-model-card h3{color:#17233d;font-size:clamp(21px,2vw,27px);letter-spacing:-.035em;line-height:1.2;margin:21px 0 12px}
+.lf-setting-model-card p{line-height:1.7;color:#526077;margin:0 0 24px;font-size:14px}
+.lf-setting-model-tag{margin-top:auto;background:#edf4e5;border-radius:30px;padding:7px 12px;color:#243e29;font-size:11px;font-weight:700}
+.lf-setting-model-note{color:#657088;font-size:12px;line-height:1.6;max-width:850px}
+@media(max-width:1050px){.lf-footer-top{grid-template-columns:repeat(2,minmax(0,1fr));gap:38px}.lf-setting-model-grid{gap:10px}}
+@media(max-width:680px){.lf-footer{padding-top:50px}.lf-footer-top{grid-template-columns:1fr 1fr;gap:32px 20px;padding-bottom:40px}.lf-footer-intro{grid-column:1/-1}.lf-footer-contact{grid-column:1/-1}.lf-footer-intro h2{font-size:36px}.lf-footer-bottom{align-items:flex-start;flex-direction:column}.lf-setting-model-grid{grid-template-columns:1fr}.lf-setting-model-card{min-height:0}}
+@media(prefers-reduced-motion:reduce){.lf-footer-cta,.lf-footer-col a{transition:none}}

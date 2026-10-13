@@ -22,3 +22,11 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# LeadsFlo local-only files
+.local-backups/
+*.backup-*
+.DS_Store
+dist/
+.astro/
+node_modules/

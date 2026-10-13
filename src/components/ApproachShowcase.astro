@@ -1,0 +1,54 @@
+---
+import '../styles/approach-showcase.css';
+const stages = [
+  {no:'01', name:'Discover', label:'Understand the business', desc:'Clarify the offer, ideal customer, qualification criteria, sales process and the next action that matters.', signal:'Strategy & qualification', detail:'A campaign is only as useful as the opportunities it creates.'},
+  {no:'02', name:'Attract', label:'Reach qualified prospects', desc:'Use appropriate channels, creative and messaging to reach people with a relevant reason to enquire.', signal:'Google Ads · Meta Ads', detail:'Search captures intent; social helps create demand.'},
+  {no:'03', name:'Convert', label:'Turn interest into enquiries', desc:'Connect each campaign to a clear landing page, lead form or website experience built for action.', signal:'Websites · Landing pages', detail:'Reduce friction between curiosity and the first conversation.'},
+  {no:'04', name:'Connect', label:'Respond and organize', desc:'Route enquiries into the right CRM or system. Confirm receipt, assign ownership and support timely follow-up.', signal:'CRM · Systems · Automation', detail:'A lead should never disappear between tools.'},
+  {no:'05', name:'Book', label:'Create sales conversations', desc:'Where appointment setting is included, a real person calls the interested lead, qualifies them and books with the client.', signal:'Human-led appointment setting', detail:'The goal is a qualified conversation, not merely a form submission.'},
+  {no:'06', name:'Improve', label:'Learn from lead quality', desc:'Review source, qualification, response and booked-conversation signals to improve the full journey over time.', signal:'Lead quality · Conversion feedback', detail:'Optimization works best when the feedback reaches the campaign.'},
+];
+---
+<section class="lap" aria-labelledby="lap-heading">
+  <div class="container">
+    <div class="lap-intro">
+      <div><p class="section-kicker">THE LEADSFLO METHOD / INTERACTIVE</p><h2 id="lap-heading">One connected system.<br /><span>Six clear stages.</span></h2></div>
+      <p>Explore how we connect campaigns, conversion, follow-up and sales conversations. Hover, click or tap a stage to see what happens.</p>
+    </div>
+    <div class="lap-shell" data-lap>
+      <div class="lap-topline"><span><i aria-hidden="true"></i> FROM FIRST IMPRESSION TO REAL CONVERSATIONS</span><span data-lap-counter>01 / 06</span></div>
+      <div class="lap-track" role="group" aria-label="Explore the six-stage lead generation process">
+        {stages.map((step,i)=><button type="button" class:list={['lap-stage',{'is-active':i===0}]} data-lap-index={i} aria-pressed={i===0?'true':'false'}><span class="lap-number">{step.no}</span><span class="lap-name">{step.name}</span><span class="lap-arrow" aria-hidden="true">↗</span></button>)}
+      </div>
+      <div class="lap-detail" aria-live="polite">
+        <div class="lap-copy"><p class="lap-eyebrow" data-lap-signal>{stages[0].signal}</p><h3 data-lap-title>{stages[0].label}</h3><p data-lap-desc>{stages[0].desc}</p><a href="/contact/">Talk about your growth goals <span aria-hidden="true">↗</span></a></div>
+        <div class="lap-diagram" aria-label="Illustrative lead journey"><div class="lap-diagram-top">LEAD JOURNEY / STEP <span data-lap-step>01</span></div><div class="lap-path"><span>Interest</span><span class="lap-path-line"><i data-lap-progress style="width:16.67%"></i></span><span>Customer conversation</span></div><div class="lap-highlight" data-lap-detail>{stages[0].detail}</div></div>
+      </div>
+      <div class="lap-footer"><span>BUILT AROUND LEAD QUALITY, NOT VANITY METRICS</span><span>HOVER • CLICK • TAP</span></div>
+    </div>
+  </div>
+</section>
+<script define:vars={{stages}}>
+  const root = document.querySelector('[data-lap]');
+  if (root) {
+    const buttons = [...root.querySelectorAll('[data-lap-index]')];
+    const put = (selector, value) => { const node=root.querySelector(selector); if(node) node.textContent=value; };
+    const activate = (i) => {
+      if(!stages[i]) return;
+      const s=stages[i];
+      buttons.forEach((button,j)=>{ const on=i===j; button.classList.toggle('is-active',on); button.setAttribute('aria-pressed',String(on)); });
+      put('[data-lap-counter]', `${s.no} / 06`);
+      put('[data-lap-step]', s.no);
+      put('[data-lap-signal]', s.signal);
+      put('[data-lap-title]', s.label);
+      put('[data-lap-desc]', s.desc);
+      put('[data-lap-detail]', s.detail);
+      const progress=root.querySelector('[data-lap-progress]'); if(progress) progress.style.width=`${((i+1)/stages.length)*100}%`;
+    };
+    buttons.forEach((button,i)=>{
+      button.addEventListener('click',()=>activate(i));
+      button.addEventListener('pointerenter',(event)=>{if(event.pointerType==='mouse') activate(i);});
+      button.addEventListener('focus',()=>activate(i));
+    });
+  }
+</script>

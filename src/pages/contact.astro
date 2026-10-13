@@ -1,0 +1,58 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import ContactBrief from "../components/ContactBrief.astro";
+---
+<SiteLayout title="Contact LeadsFlo" description="Discuss lead generation, Google and Meta advertising, website development, CRM automation and appointment setting with LeadsFlo." path="/contact/">
+<section class="lf-page-hero"><div class="container lf-hero-inner"><div class="lf-hero-copy"><p class="section-kicker">LET'S TALK</p><h1>Tell us what growth should look like for you.</h1><p class="lf-lede">Are you trying to attract more qualified inquiries, improve your conversion rate or close the gaps in your lead follow-up? Start with the problem you want to solve.</p></div><aside class="lf-hero-aside"><span>GOOD STARTING POINTS</span><strong>Your offer. Your audience. Your current results. Your next goal.</strong><span class="lf-aside-mark">↗</span></aside></div></section>
+<ContactBrief />
+<section class="lf-page-section lf-section-muted"><div class="container lf-split"><div class="lf-sticky-head"><p class="section-kicker">PREPARE YOUR BRIEF</p><h2>A useful first conversation.</h2><p>Tell us what you are working on using the inquiry form. We will review your details and respond by email. No booking calendar is required to get started.</p></div><div class="lf-prose"><h3>01 / Tell us about your business</h3><p>What do you sell, who is your ideal customer, and where do you serve them?</p><h3>02 / Share your current setup</h3><p>Which advertising platforms, website, CRM or scheduling tools do you already use?</p><h3>03 / Describe the outcome you want</h3><p>Are you trying to improve lead quality, volume, conversion rate, appointment booking or response time?</p><div class="lf-contact-form-wrap" id="contact-inquiry">
+  <div class="lf-contact-form-heading"><span class="section-kicker">SEND AN INQUIRY</span><h3>Start a conversation with LeadsFlo.</h3><p>Share a few details so we can understand your project and get back to you.</p></div>
+  <form class="lf-contact-form" action="https://formsubmit.co/cary.wood.777@gmail.com" method="POST" accept-charset="UTF-8">
+    <input type="hidden" name="_subject" value="New LeadsFlo Website Inquiry" />
+    <input type="hidden" name="_template" value="table" />
+    <input type="hidden" name="_captcha" value="true" />
+    <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="lf-contact-honey" aria-hidden="true" />
+    <div class="lf-contact-form-row">
+      <label>Full name <span aria-hidden="true">*</span><input type="text" name="name" autocomplete="name" maxlength="100" required /></label>
+      <label>Email address <span aria-hidden="true">*</span><input type="email" name="email" autocomplete="email" maxlength="150" required /></label>
+    </div>
+    <div class="lf-contact-form-row">
+      <label>Phone number <input type="tel" name="phone" autocomplete="tel" maxlength="40" /></label>
+      <label>Business / website <input type="text" name="business" maxlength="180" placeholder="Company or website (optional)" /></label>
+    </div>
+    <label>What do you need help with? <span aria-hidden="true">*</span>
+      <select name="service" required>
+        <option value="" selected disabled>Choose a service</option>
+        <option>Performance Marketing</option>
+        <option>Ad Creatives &amp; Content</option>
+        <option>Websites &amp; Funnels</option>
+        <option>Systems &amp; AI Automation</option>
+        <option>Appointment Setting (Human Calling)</option>
+        <option>Multiple Services / Not Sure Yet</option>
+      </select>
+    </label>
+    <label>Tell us about your goals <span aria-hidden="true">*</span><textarea name="message" rows="5" minlength="15" maxlength="3000" required placeholder="What does your business do, and what would you like to improve?"></textarea></label>
+    <label class="lf-contact-consent"><input type="checkbox" name="consent" value="I agree to be contacted about my inquiry" required /> <span>I agree to be contacted by LeadsFlo about my inquiry using the information provided. <span aria-hidden="true">*</span></span></label>
+    <button class="button button-primary" type="submit">Send inquiry <span aria-hidden="true">↗</span></button>
+    <p class="lf-contact-form-note">Your submission is processed by FormSubmit and forwarded to our inbox. Do not include passwords, payment information or other sensitive details. You may be asked to complete an anti-spam verification.</p>
+  </form>
+</div></div></div></section>
+</SiteLayout>
+
+<style>
+  .lf-contact-form-wrap{margin-top:30px;padding:clamp(20px,3vw,36px);background:#fff;border:1px solid #dbe2ed;border-radius:18px;box-shadow:0 14px 42px rgba(23,35,61,.06)}
+  .lf-contact-form-heading h3{margin:8px 0 7px;font-size:clamp(23px,2.4vw,32px);line-height:1.18;color:#17233d}
+  .lf-contact-form-heading p{margin:0 0 22px;color:#526076}
+  .lf-contact-form{display:grid;gap:16px}
+  .lf-contact-form-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .lf-contact-form label:not(.lf-contact-consent){display:grid;gap:7px;font-size:14px;font-weight:650;color:#17233d}
+  .lf-contact-form input:not([type=checkbox]),.lf-contact-form select,.lf-contact-form textarea{width:100%;min-width:0;padding:13px 14px;border:1px solid #cfd8e6;border-radius:9px;background:#f9fbfe;color:#17233d;font:inherit;font-size:15px;outline-offset:2px}
+  .lf-contact-form textarea{resize:vertical;min-height:120px}
+  .lf-contact-form :is(input,select,textarea):focus-visible{outline:2px solid #315bfa}
+  .lf-contact-consent{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#526076;line-height:1.55;cursor:pointer}
+  .lf-contact-consent input{margin-top:4px;accent-color:#315bfa}
+  .lf-contact-form button{justify-self:start;cursor:pointer}
+  .lf-contact-form-note{margin:0;font-size:12px;line-height:1.65;color:#637083}
+  .lf-contact-form .lf-contact-honey{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important}
+  @media(max-width:640px){.lf-contact-form-row{grid-template-columns:1fr}.lf-contact-form-wrap{padding:18px}.lf-contact-form button{width:100%;justify-content:center}}
+</style>

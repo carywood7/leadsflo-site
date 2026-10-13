@@ -1,0 +1,79 @@
+---
+const stages = [
+  {label:'Lead received', tag:'CAPTURE', headline:'A new inquiry is ready for a call.', body:'The setter reviews the lead’s details, source and contact preferences before calling.'},
+  {label:'Call', tag:'DIAL', headline:'A real person calls the lead.', body:'The appointment setter introduces the business, learns what the prospect needs and handles initial questions.'},
+  {label:'Qualify & follow up', tag:'QUALIFY', headline:'Qualify the opportunity and follow through.', body:'Ask about fit, needs, timing and interest. When a call is unanswered, follow an agreed callback process.'},
+  {label:'Book', tag:'HANDOFF', headline:'The setter books the appointment.', body:'Agree on a suitable time, add the booking to the client’s calendar and pass the call notes to the team.'}
+];
+---
+<section class="as-showcase" aria-labelledby="as-showcase-title" data-as-showcase>
+  <div class="container">
+    <div class="as-intro">
+      <div><p class="section-kicker">INTERACTIVE APPOINTMENT-SETTING JOURNEY</p><h2 id="as-showcase-title">From a new lead to <span>a booked conversation.</span></h2></div>
+      <p>See how a human appointment setter calls incoming leads, qualifies the opportunity and books a meeting for the client. Illustrative call and calendar; no real calls or bookings.</p>
+    </div>
+    <div class="as-shell">
+      <div class="as-bar"><span><i aria-hidden="true"></i> HUMAN CALLING → QUALIFICATION → BOOKING</span><span>01 — 04</span></div>
+      <div class="as-steps" role="group" aria-label="Explore lead-to-appointment stages">
+        {stages.map((stage,i) => <button type="button" class:list={['as-step',{'is-active':i===0}]} data-as-step={i} aria-pressed={i===0?'true':'false'}><small>{String(i+1).padStart(2,'0')} / {stage.tag}</small><strong>{stage.label}</strong><span aria-hidden="true">↗</span></button>)}
+      </div>
+      <div class="as-main">
+        <div class="as-story" aria-live="polite">
+          <p class="as-eyebrow" data-as-tag>01 / CAPTURE</p><h3 data-as-heading>An inquiry enters the pipeline.</h3><p data-as-body>Form details, campaign source and consent preferences are captured so the team has context.</p>
+          <div class="as-mini-flow" aria-label="Lead progression"><span>New lead</span><b aria-hidden="true">→</b><span>Called</span><b aria-hidden="true">→</b><span>Booked</span></div>
+          <div class="as-messages"><span class="as-mini-label">SAMPLE PHONE CONVERSATION</span><div class="as-call-status">● Outbound lead call <span>Example call</span></div><div class="as-bubble as-bubble-out"><b>Setter:</b> Hi, I’m calling about the inquiry you sent in. Is now a good time to talk?</div><div class="as-bubble as-bubble-in"><b>Lead:</b> Yes, I’d like to know what happens next.</div><div class="as-bubble as-bubble-out"><b>Setter:</b> Great. I’ll ask two quick questions, then help schedule a consultation.</div><small>Illustrative calling script · No phone call is placed</small></div>
+        </div>
+        <div class="as-booking">
+          <div class="as-booking-head"><div><small>SETTER BOOKING PREVIEW</small><h3>Booking on behalf of the lead.</h3></div><span class="as-status">Sample</span></div>
+          <div class="as-calendar"><div class="as-calendar-top"><strong>October 2026</strong><span>MON — FRI</span></div><div class="as-date-grid"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><button type="button" data-as-day="19" aria-pressed="false">19</button><button type="button" data-as-day="20" aria-pressed="false">20</button><button type="button" data-as-day="21" aria-pressed="true" class="is-picked">21</button><button type="button" data-as-day="22" aria-pressed="false">22</button><button type="button" data-as-day="23" aria-pressed="false">23</button></div></div>
+          <div class="as-times" role="group" aria-label="Example appointment times"><button type="button" data-as-time="10:00 AM" aria-pressed="false">10:00 AM</button><button type="button" data-as-time="11:30 AM" aria-pressed="true" class="is-picked">11:30 AM</button><button type="button" data-as-time="2:00 PM" aria-pressed="false">2:00 PM</button></div>
+          <div class="as-confirm" aria-live="polite"><span class="as-confirm-mark" aria-hidden="true">✓</span><div><strong data-as-confirm>Wed, Oct 21 · 11:30 AM</strong><small>Setter-selected time · Sample appointment only</small></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-as-showcase]').forEach(root => {
+    const buttons = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-as-step]'));
+    const stages = [
+      ['CAPTURE','A new inquiry is ready for a call.','The setter reviews the lead’s details, source and contact preferences before calling.'],
+      ['DIAL','A real person calls the lead.','The appointment setter introduces the business, learns what the prospect needs and handles initial questions.'],
+      ['QUALIFY','Qualify the opportunity and follow through.','Ask about fit, needs, timing and interest. When a call is unanswered, follow an agreed callback process.'],
+      ['HANDOFF','The setter books the appointment.','Agree on a suitable time, add the booking to the client’s calendar and pass the call notes to the team.']
+    ];
+    let timer: number | undefined;
+    const select = (i:number) => {
+      const stage=stages[i]; if(!stage)return;
+      buttons.forEach((b,j)=>{b.classList.toggle('is-active',j===i);b.setAttribute('aria-pressed',String(j===i));});
+      const tag=root.querySelector<HTMLElement>('[data-as-tag]');if(tag)tag.textContent=`0${i+1} / ${stage[0]}`;
+      const heading=root.querySelector<HTMLElement>('[data-as-heading]');if(heading)heading.textContent=stage[1];
+      const body=root.querySelector<HTMLElement>('[data-as-body]');if(body)body.textContent=stage[2];
+    };
+    buttons.forEach((button,i)=>{
+      button.addEventListener('click',()=>{window.clearTimeout(timer);select(i)});
+      button.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'){window.clearTimeout(timer);timer=window.setTimeout(()=>select(i),100)}});
+      button.addEventListener('pointerleave',()=>window.clearTimeout(timer));
+      button.addEventListener('focus',()=>select(i));
+    });
+    const dates=root.querySelectorAll<HTMLButtonElement>('[data-as-day]');
+    const times=root.querySelectorAll<HTMLButtonElement>('[data-as-time]');
+    let date='21';let time='11:30 AM';
+    const update=()=>{const target=root.querySelector<HTMLElement>('[data-as-confirm]');if(target)target.textContent=`${({19:'Mon',20:'Tue',21:'Wed',22:'Thu',23:'Fri'} as Record<string,string>)[date]}, Oct ${date} · ${time}`};
+    dates.forEach(b=>b.addEventListener('click',()=>{date=b.dataset.asDay||'21';dates.forEach(n=>{const active=n===b;n.classList.toggle('is-picked',active);n.setAttribute('aria-pressed',String(active))});update()}));
+    times.forEach(b=>b.addEventListener('click',()=>{time=b.dataset.asTime||'11:30 AM';times.forEach(n=>{const active=n===b;n.classList.toggle('is-picked',active);n.setAttribute('aria-pressed',String(active))});update()}));
+  });
+</script>
+<style>
+  .as-showcase{background:#edf0ed;padding:82px 0 88px;color:#17233d}.as-showcase *{box-sizing:border-box}.as-intro{display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:end;margin-bottom:26px}.as-intro h2{font:700 clamp(32px,4vw,56px)/1.13 var(--font-head, sans-serif);letter-spacing:-.035em;margin:12px 0 0;max-width:840px}.as-intro h2 span{color:#315bfa}.as-intro>p{font-size:14px;line-height:1.75;color:#58667c;max-width:390px}.as-shell{background:#fff;border:1px solid #dce2e9}.as-bar{background:#17233d;color:#edf2ff;display:flex;justify-content:space-between;gap:15px;padding:16px 23px;font-size:10px;letter-spacing:.12em;font-weight:800}.as-bar i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#c9f36b;margin-right:9px}.as-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid #dce2e9}.as-step{position:relative;appearance:none;border:0;border-right:1px solid #e0e5ed;background:#f8f9fa;text-align:left;padding:20px 20px 22px;display:flex;flex-direction:column;gap:8px;min-height:98px;color:#17233d;cursor:pointer;transition:background .18s,box-shadow .18s}.as-step:last-child{border-right:0}.as-step small{font-size:10px;letter-spacing:.1em;color:#315bfa;font-weight:750}.as-step strong{font-size:16px}.as-step>span{position:absolute;right:17px;bottom:18px;color:#315bfa}.as-step:hover,.as-step:focus-visible{background:#eaf0ff;outline:2px solid #315bfa;outline-offset:-2px}.as-step.is-active{background:#17233d;color:#fff}.as-step.is-active small,.as-step.is-active>span{color:#c9f36b}.as-main{display:grid;grid-template-columns:1fr 1fr}.as-story,.as-booking{padding:32px}.as-story{border-right:1px solid #dce2e9}.as-eyebrow,.as-mini-label{color:#315bfa;font-size:10px;font-weight:800;letter-spacing:.11em}.as-story h3,.as-booking h3{font:700 clamp(23px,2.4vw,32px)/1.22 var(--font-head,sans-serif);letter-spacing:-.025em;margin:13px 0}.as-story>p:not(.as-eyebrow){max-width:450px;line-height:1.7;color:#58667c;font-size:14px;min-height:72px}.as-mini-flow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:25px 0 27px;border-top:1px solid #e0e5ed;padding-top:20px}.as-mini-flow span{padding:10px 12px;background:#f0f3f7;font-size:11px;font-weight:700}.as-mini-flow b{color:#315bfa}.as-messages{border:1px solid #dce2e9;background:#f7f9fc;padding:17px}.as-bubble{font-size:12px;line-height:1.5;padding:13px 15px;max-width:85%;margin-top:14px}.as-bubble-in{background:#fff;border:1px solid #dce2e9}.as-bubble-out{background:#e4ecff;margin-left:auto}.as-messages>small{display:block;margin-top:12px;color:#68758b;font-size:10px}.as-booking-head{display:flex;justify-content:space-between;align-items:start}.as-booking-head small,.as-calendar-top span{color:#5c6a83;font-size:10px;letter-spacing:.1em;font-weight:800}.as-status{font-size:10px;color:#315bfa;border:1px solid #d2dcf2;padding:6px 9px}.as-calendar{border:1px solid #dce2e9;padding:20px;margin:12px 0 15px}.as-calendar-top{display:flex;justify-content:space-between;gap:10px;margin-bottom:20px;font-size:14px}.as-date-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px;text-align:center}.as-date-grid>span{font-size:10px;color:#7a879a;margin-bottom:6px}.as-date-grid button,.as-times button{background:#f6f7fa;border:1px solid #dce2e9;min-height:43px;color:#17233d;font:700 12px var(--font-head,sans-serif);cursor:pointer;transition:background .18s,border-color .18s}.as-date-grid button:hover,.as-times button:hover,.as-date-grid button:focus-visible,.as-times button:focus-visible{background:#eaf0ff;border-color:#315bfa}.as-date-grid button.is-picked,.as-times button.is-picked{background:#315bfa;color:#fff;border-color:#315bfa}.as-times{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.as-confirm{margin-top:20px;display:flex;align-items:center;gap:12px;padding:16px;background:#17233d;color:white}.as-confirm-mark{background:#c9f36b;border-radius:50%;width:29px;height:29px;display:grid;place-items:center;color:#17233d;font-weight:800}.as-confirm strong,.as-confirm small{display:block}.as-confirm strong{font-size:13px}.as-confirm small{font-size:10px;color:#b6c4de;margin-top:5px}
+  @media(max-width:900px){.as-intro{grid-template-columns:1fr;gap:15px}.as-main{grid-template-columns:1fr}.as-story{border-right:0;border-bottom:1px solid #dce2e9}.as-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.as-step:nth-child(2){border-right:0}.as-step:nth-child(-n+2){border-bottom:1px solid #dce2e9}}
+  @media(max-width:560px){.as-showcase{padding:56px 0}.as-intro h2{font-size:35px}.as-intro>p{font-size:13px}.as-bar{padding:14px;font-size:9px}.as-steps{grid-template-columns:repeat(2,minmax(0,1fr))}.as-step{min-height:85px;padding:15px 12px}.as-step strong{font-size:13px}.as-step>span{right:10px;bottom:12px}.as-story,.as-booking{padding:19px}.as-mini-flow{gap:7px}.as-mini-flow span{font-size:10px;padding:8px}.as-calendar{padding:12px}.as-date-grid{gap:3px}.as-date-grid button{min-height:39px}.as-times{gap:5px}.as-times button{font-size:11px}.as-bubble{max-width:94%}}
+  @media(prefers-reduced-motion:reduce){.as-step,.as-date-grid button,.as-times button{transition:none}}
+</style>
+
+<style>
+/* Human appointment-setting conversation and call status */
+.as-call-status{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:12px;padding:11px 13px;background:#17233d;color:#c9f36b;font-size:11px;font-weight:750}
+.as-call-status span{color:#b6c4de;font-size:10px;font-weight:500}
+.as-bubble b{font-weight:800}
+</style>

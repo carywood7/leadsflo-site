@@ -1,0 +1,32 @@
+/* LeadsFlo visual prototype — non-client sample data, accessible progressive enhancement */
+.lf-visual-section{padding:88px 0 96px;background:#F2F3EF}.lf-visual-heading{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:30px}.lf-visual-heading h2{font-size:clamp(33px,3.8vw,56px);line-height:1.18;letter-spacing:-.025em;margin:10px 0}.lf-visual-heading>p{max-width:390px;color:#576174;font-size:14px;line-height:1.8}.lf-demo-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px}.lf-demo-panel{padding:25px;background:#fff;border:1px solid #e0e4e4;min-width:0}.lf-flow-panel{grid-column:1 / -1;background:#17233D;color:white}.lf-demo-label{display:flex;justify-content:space-between;gap:12px;font-size:10px;letter-spacing:.13em;font-weight:800;color:#315BFA}.lf-flow-panel .lf-demo-label{color:#c9f36b}.lf-demo-live{color:#c9f36b}.lf-demo-live i{display:inline-block;width:7px;height:7px;background:#c9f36b;border-radius:50%;margin-right:5px}.lf-flow-visual{position:relative;min-height:180px;margin:12px 0 5px;display:flex;align-items:center}.lf-flow-curve{position:absolute;inset:15px 0 0;width:100%;height:118px;overflow:visible}.lf-flow-track,.lf-flow-active{fill:none;stroke-width:2}.lf-flow-track{stroke:#475772}.lf-flow-active{stroke:#c9f36b;stroke-dasharray:9 16;animation:lf-flow 9s linear infinite}@keyframes lf-flow{to{stroke-dashoffset:-260}}.lf-flow-steps{width:100%;display:grid;grid-template-columns:repeat(4,1fr);position:relative;z-index:1;gap:12px}.lf-flow-step{border:0;cursor:pointer;background:transparent;color:white;text-align:center;font:inherit}.lf-flow-bubble{display:grid;place-items:center;margin:0 auto 12px;border-radius:50%;width:52px;height:52px;background:#25426d;border:1px solid #6382c0;color:#fff;font-size:12px;font-weight:800;transition:transform .2s,background .2s,color .2s}.lf-flow-step:hover .lf-flow-bubble,.lf-flow-step.is-selected .lf-flow-bubble{background:#c9f36b;color:#17233D;transform:scale(1.1)}.lf-flow-step strong{font-size:14px}.lf-demo-detail{border-top:1px solid #3d4a65;padding-top:20px;display:grid;grid-template-columns:125px 1fr;gap:5px 25px}.lf-detail-number{grid-row:span 2;color:#c9f36b;font-size:11px;letter-spacing:.1em;font-weight:800}.lf-demo-detail strong{font-size:20px}.lf-demo-detail p{color:#bec7d6;font-size:13px;line-height:1.6;margin:0}.lf-crm-top{display:flex;justify-content:space-between;gap:12px;align-items:start;margin-top:35px}.lf-small-label{font-size:12px;color:#576174}.lf-crm-top h3,.lf-auto-header h3{font-size:23px;letter-spacing:-.02em;margin:5px 0 0}.lf-demo-pill{font-size:10px;padding:7px 9px;background:#eff2f6;color:#576174;white-space:nowrap}.lf-crm-metric{display:flex;align-items:baseline;gap:12px;margin:25px 0}.lf-crm-metric strong{font-size:56px;letter-spacing:-.06em;line-height:1}.lf-crm-metric>span:nth-child(2){font-size:14px;font-weight:600}.lf-crm-tip{font-size:11px;color:#576174;margin-left:auto}.lf-crm-pipeline{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;min-height:146px;align-items:end}.lf-crm-stage{cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:7px;border:0;background:#f7f8f5;padding:10px 3px;color:#17233D}.lf-crm-stage .lf-crm-bar{background:var(--stage-color);height:var(--stage-height);min-height:24px;width:min(50%,40px);transition:transform .2s}.lf-crm-stage:hover .lf-crm-bar,.lf-crm-stage.is-selected .lf-crm-bar{transform:scaleX(1.3)}.lf-crm-stage strong{font-size:16px}.lf-crm-stage small{font-size:11px}.lf-crm-stage.is-selected{outline:2px solid #315BFA;outline-offset:-2px}.lf-demo-caption{font-size:11px;color:#576174;margin:17px 0 0}.lf-auto-header{margin:35px 0 20px}.lf-auto-header p{font-size:12px;color:#576174}.lf-auto-track{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.lf-auto-node{display:flex;gap:10px;align-items:center;text-align:left;background:#f7f8f5;padding:14px 10px;border:1px solid #e1e4e4;cursor:pointer;font:inherit;min-width:0;transition:border .2s,transform .2s}.lf-auto-node:hover{transform:translateY(-3px)}.lf-auto-node.is-selected{border-color:#315BFA;background:#f3f6ff}.lf-auto-dot{width:16px;height:16px;flex-shrink:0;border:4px solid #315BFA;border-radius:50%}.lf-auto-copy{display:flex;flex-direction:column;gap:4px;min-width:0}.lf-auto-copy strong{font-size:12px}.lf-auto-copy small{font-size:10px;line-height:1.35;color:#576174}.lf-auto-arrow{margin-left:auto;color:#315BFA}.lf-auto-result{min-height:42px;margin:16px 0 0;background:#17233D;color:#fff;font-size:12px;line-height:1.5;padding:13px}.lf-visual-section button:focus-visible{outline:3px solid #315BFA;outline-offset:3px}.wordmark i{display:inline-block;transition:transform .35s cubic-bezier(.2,.8,.2,1),color .2s}.wordmark:hover i{transform:translateX(5px) scale(1.45);color:#315BFA}
+@media(max-width:850px){.lf-visual-heading{display:block}.lf-demo-grid{grid-template-columns:1fr}.lf-flow-panel{grid-column:auto}.lf-visual-section{padding:65px 0}.lf-demo-detail{grid-template-columns:1fr}.lf-detail-number{grid-row:auto}.lf-flow-curve{opacity:.65}}@media(max-width:520px){.lf-flow-bubble{width:42px;height:42px}.lf-flow-step strong{font-size:11px}.lf-flow-steps{gap:2px}.lf-demo-panel{padding:17px}.lf-crm-top{flex-wrap:wrap}.lf-crm-tip{display:none}.lf-auto-track{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.lf-flow-active{animation:none}.lf-flow-bubble,.lf-auto-node,.lf-crm-bar,.wordmark i{transition:none}}
+
+
+/* LEADSFLO_PAGE_SPECIFIC_VISUALS */
+
+/* Homepage: animated lead journey only */
+.lf-visual-section[data-demo-mode="overview"] .lf-crm-panel,
+.lf-visual-section[data-demo-mode="overview"] .lf-automation-panel {
+  display: none;
+}
+
+/* CRM page: pipeline and automation only */
+.lf-visual-section[data-demo-mode="crm"] .lf-flow-panel {
+  display: none;
+}
+
+.lf-visual-section[data-demo-mode="overview"] .lf-demo-grid {
+  grid-template-columns: 1fr;
+}
+
+.lf-visual-section[data-demo-mode="crm"] .lf-demo-grid {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+}
+
+@media (max-width: 850px) {
+  .lf-visual-section[data-demo-mode="crm"] .lf-demo-grid {
+    grid-template-columns: 1fr;
+  }
+}

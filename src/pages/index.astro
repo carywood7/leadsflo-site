@@ -1,16 +1,251 @@
 ---
+import "../styles/global.css";
+import "../styles/navigation.css";
+import VisualDemos from "../components/VisualDemos.astro";
+import Header from "../components/Header.astro";
+
+const services = [
+  {
+    number: "01",
+    category: "ATTRACT",
+    title: "Performance Marketing",
+    href: "/performance-marketing/",
+    description: "Google Ads and Meta Ads campaigns designed to reach the right people and turn advertising spend into qualified opportunities.",
+    items: ["Google Ads", "Meta Ads", "Campaign Optimization"],
+    symbol: "↗"
+  },
+  {
+    number: "02",
+    category: "CREATE",
+    title: "Ad Creatives & Content",
+    href: "/ad-creatives-content/",
+    description: "Scroll-stopping image ads, short-form videos, Reels and social creatives built to support campaigns and attract qualified prospects.",
+    items: ["Image Ads", "Video Ads & Reels", "Creative Testing"],
+    symbol: "✳"
+  },
+  {
+    number: "03",
+    category: "CONVERT",
+    title: "Websites & Funnels",
+    href: "/websites-funnels/",
+    description: "Custom-coded websites, landing pages and conversion funnels built to turn visitors into qualified inquiries.",
+    items: ["Custom Websites", "Landing Pages", "Conversion Funnels"],
+    symbol: "◎"
+  },
+  {
+    number: "04",
+    category: "AUTOMATE",
+    title: "Systems & AI Automation",
+    href: "/crm-automation/",
+    description: "CRM implementation, lead nurturing, API integrations and custom workflows that connect your marketing with your sales process.",
+    items: ["CRM Systems", "AI Workflows", "Integrations"],
+    symbol: "↗"
+  },
+  {
+    number: "05",
+    category: "BOOK",
+    title: "Appointment Setting",
+    href: "/appointment-setting/",
+    description: "Optional appointment-setting support to help turn interested prospects into meaningful sales conversations.",
+    items: ["Lead Qualification", "Follow-up", "Appointment Booking"],
+    symbol: "↗"
+  }
+];
+
+const steps = [
+  { n: "01", title: "Attract", description: "Reach people actively looking for what you offer." },
+  { n: "02", title: "Capture", description: "Convert visitors into inquiries through focused landing pages." },
+  { n: "03", title: "Nurture", description: "Follow up automatically and consistently." },
+  { n: "04", title: "Book", description: "Move qualified opportunities into conversations." }
+];
+import "../styles/footer-refresh.css";
 ---
 
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#F7F7F2" />
+  <meta name="description" content="LeadsFlo is a lead generation agency helping businesses attract qualified leads and book more appointments with Google Ads, Meta Ads, conversion funnels and CRM automation." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://leadsflo.co/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <title>LeadsFlo | Lead Generation & Performance Marketing Agency</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="LeadsFlo | More Leads. Less Guesswork." />
+  <meta property="og:description" content="Performance marketing, conversion funnels, CRM automation and appointment setting for growth-focused businesses." />
+  <meta property="og:url" content="https://leadsflo.co/" />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "LeadsFlo",
+    url: "https://leadsflo.co/",
+    description: "Lead generation, performance marketing, CRM automation and appointment setting services."
+  })} />
+</head>
+<body id="top">
+  <Header currentPath="/" />
+
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> PERFORMANCE-DRIVEN LEAD GENERATION</div>
+          <h1 id="hero-heading">More leads.<br /><span>Less guesswork.</span></h1>
+          <p class="hero-description">We turn clicks into conversations and conversations into customers. From paid ads to booked appointments, we build the systems that move your business forward.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="/contact/">Let's grow your business <span>↗</span></a>
+            <a class="text-link" href="#services">Explore what we do <span>↗</span></a>
+          </div>
+          <div class="hero-footnote"><span class="footnote-line"></span> STRATEGY. EXECUTION. MEASURABLE GROWTH.</div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of the lead generation process">
+          <div class="art-top"><span>THE GROWTH PROCESS</span><span>LF—001</span></div>
+          <div class="art-center">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="flow-node node-one"><small>01 / ATTRACT</small><strong>Clicks</strong></div>
+            <div class="flow-node node-two"><small>02 / CONVERT</small><strong>Leads</strong></div>
+            <div class="flow-node node-three"><small>03 / GROW</small><strong>Bookings</strong></div>
+            <div class="flow-line line-one"></div>
+            <div class="flow-line line-two"></div>
+            <div class="growth-mark">↗</div>
+          </div>
+          <div class="art-bottom"><span>REAL SYSTEMS. REAL MOMENTUM.</span><span class="live-dot"></span></div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>GROWTH ISN'T GUESSWORK.</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="intro-section section-pad" id="why-leadsflo">
+      <div class="container intro-grid reveal">
+        <p class="section-kicker">01 / THE BIGGER PICTURE</p>
+        <div>
+          <h2>Getting clicks is easy.<br /><span>Turning them into customers?</span><br />That's where we come in.</h2>
+          <p>Marketing shouldn't stop when someone fills out a form. We connect acquisition, conversion and follow-up so every opportunity has a clearer path to becoming a customer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section section-pad" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="section-kicker">02 / WHAT WE DO</p><h2>One goal.<br />Five ways to grow.</h2></div>
+          <p>Five connected capabilities. One focus: turning attention into customers.</p>
+        </div>
+        <div class="services-grid">
+          {services.map((service) => (
+            <article class="service-card reveal">
+              <div class="service-top"><span>{service.number} / {service.category}</span><span class="service-symbol" aria-hidden="true">{service.symbol}</span></div>
+              <div class="service-body">
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
+              <div class="service-tags">{service.items.map((item) => <span>{item}</span>)}</div>
+              <a class="service-link" href={service.href} aria-label={`Explore ${service.title}`}>Explore service <span>↗</span></a>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section section-pad" id="approach">
+      <div class="container">
+        <div class="section-heading process-header reveal">
+          <div><p class="section-kicker">03 / HOW IT WORKS</p><h2>From first click<br />to booked call.</h2></div>
+          <p>A connected growth process, not a collection of disconnected marketing tools.</p>
+        </div>
+        <div class="process-grid">
+          {steps.map(step => (
+            <div class="process-step reveal">
+              <div class="process-number">{step.n}<span aria-hidden="true">↗</span></div>
+              <h3>{step.title}</h3>
+              <p>{step.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="statement-section">
+      <div class="container statement-wrap reveal">
+        <p class="section-kicker">BUILT FOR THE NEXT STAGE OF GROWTH</p>
+        <h2>Less noise.<br />More <em>momentum.</em></h2>
+        <p>Clear strategy. Connected systems. A relentless focus on better opportunities.</p>
+      </div>
+      <div class="statement-decor" aria-hidden="true">↗</div>
+    </section>
+
+    <section class="contact-section section-pad" id="contact">
+      <div class="container contact-grid reveal">
+        <div>
+          <p class="section-kicker">04 / LET'S GET STARTED</p>
+          <h2>Ready to get<br /><span>things flowing?</span></h2>
+        </div>
+        <div class="contact-copy">
+          <p>Tell us what you're trying to achieve. We'll explore how smarter campaigns, conversion systems and follow-up can help.</p>
+          <a class="button button-primary" href="mailto:hello@leadsflo.co?subject=Let's%20talk%20growth">Start a conversation <span>↗</span></a>
+          <small>Contact email is a placeholder until the mailbox is configured.</small>
+        </div>
+      </div>
+    </section>
+    <VisualDemos mode="overview" />
+  </main>
+
+    <footer class="lf-footer" aria-label="Site footer">
+    <div class="container lf-footer-top">
+      <div class="lf-footer-intro">
+        <a class="lf-footer-logo" href="/" aria-label="LeadsFlo home">leads<span>flo</span><i>.</i></a>
+        <h2>Better leads.<br /><em>Better follow-through.</em></h2>
+        <p>Paid advertising, creative, websites, connected systems and appointment setting—working together to help businesses turn interest into conversations.</p>
+        <a class="lf-footer-cta" href="/contact/">Let's talk about your goals <span aria-hidden="true">↗</span></a>
+      </div>
+      <nav class="lf-footer-col" aria-label="Footer services">
+        <h3>Services</h3>
+        <a href="/performance-marketing/">Performance Marketing</a>
+        <a href="/ad-creatives-content/">Ad Creatives &amp; Content</a>
+        <a href="/websites-funnels/">Websites &amp; Funnels</a>
+        <a href="/crm-automation/">Systems &amp; AI Automation</a>
+        <a href="/appointment-setting/">Appointment Setting</a>
+      </nav>
+      <nav class="lf-footer-col" aria-label="Footer company">
+        <h3>Explore</h3>
+        <a href="/our-approach/">Our Approach</a>
+        <a href="/about/">About LeadsFlo</a>
+        <a href="/insights/">Insights</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+      <div class="lf-footer-col lf-footer-contact">
+        <h3>Get in touch</h3>
+        <p>Have a project in mind? Tell us what you're trying to improve.</p>
+        <a href="mailto:cary.wood.777@gmail.com">cary.wood.777@gmail.com</a>
+        <a class="lf-footer-secondary" href="/contact/">Send an inquiry ↗</a>
+      </div>
+    </div>
+    <div class="container lf-footer-bottom">
+      <span>© {new Date().getFullYear()} LeadsFlo. All rights reserved.</span>
+      <span>More leads. Less guesswork.</span>
+      <a href="#top" class="lf-footer-back">Back to top ↑</a>
+    </div>
+  </footer>
+  <script>
+    const revealElements = document.querySelectorAll(".reveal");
+    if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08 });
+      revealElements.forEach(el => observer.observe(el));
+    } else {
+      revealElements.forEach(el => el.classList.add("visible"));
+    }
+  </script>
+</body>
 </html>

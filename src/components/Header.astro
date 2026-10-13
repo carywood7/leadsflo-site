@@ -1,0 +1,200 @@
+---
+const { currentPath = "/" } = Astro.props;
+
+const services = [
+  {
+    name: "Performance Marketing",
+    detail: "Google Ads & Meta Ads",
+    url: "/performance-marketing/"
+  },
+  {
+    name: "Ad Creatives & Content",
+    detail: "Image ads, video ads & social creatives",
+    url: "/ad-creatives-content/"
+  },
+  {
+    name: "Websites & Funnels",
+    detail: "Custom websites & conversion funnels",
+    url: "/websites-funnels/"
+  },
+  {
+    name: "Systems & AI Automation",
+    detail: "CRM, workflows, AI agents & integrations",
+    url: "/crm-automation/"
+  },
+  {
+    name: "Appointment Setting",
+    detail: "Qualification, follow-up & bookings",
+    url: "/appointment-setting/"
+  }
+];
+---
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="/" class="wordmark" aria-label="LeadsFlo homepage">
+      leads<span>flo</span><i>.</i>
+    </a>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Open navigation"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+    >
+      <span></span><span></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="/" aria-current={currentPath === "/" ? "page" : undefined}>
+        Home
+      </a>
+
+      <details class="services-dropdown">
+        <summary>
+          Services
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m6 9 6 6 6-6"></path>
+          </svg>
+        </summary>
+
+        <div class="services-panel">
+          <p class="dropdown-label">WHAT WE DO</p>
+
+          {services.map((service, index) => (
+            <a href={service.url} class="services-option"
+               aria-current={currentPath === service.url ? "page" : undefined}>
+              <span class="option-number">0{index + 1}</span>
+              <span class="option-body">
+                <strong>{service.name}</strong>
+                <small>{service.detail}</small>
+              </span>
+              <span class="option-arrow" aria-hidden="true">↗</span>
+            </a>
+          ))}
+        </div>
+      </details>
+
+      <a href="/our-approach/"
+         aria-current={currentPath === "/our-approach/" ? "page" : undefined}>
+        Our Approach
+      </a>
+
+      <a href="/about/"
+         aria-current={currentPath === "/about/" ? "page" : undefined}>
+        About
+      </a>
+
+      <a href="/insights/"
+         aria-current={currentPath === "/insights/" ? "page" : undefined}>
+        Insights
+      </a>
+
+      <a href="/contact/" class="nav-cta">
+        Let's Talk <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuButton = document.querySelector(".menu-toggle");
+  const primaryNav = document.querySelector(".primary-nav");
+  const dropdown = document.querySelector(".services-dropdown");
+  const dropdownSummary = dropdown?.querySelector("summary");
+
+  function closeDropdown() {
+    if (dropdown) dropdown.open = false;
+  }
+
+  function closeMobileMenu() {
+    primaryNav?.classList.remove("is-open");
+    menuButton?.setAttribute("aria-expanded", "false");
+    menuButton?.setAttribute("aria-label", "Open navigation");
+  }
+
+  menuButton?.addEventListener("click", () => {
+    const willOpen = !primaryNav?.classList.contains("is-open");
+    primaryNav?.classList.toggle("is-open", willOpen);
+    menuButton.setAttribute("aria-expanded", String(willOpen));
+    menuButton.setAttribute(
+      "aria-label",
+      willOpen ? "Close navigation" : "Open navigation"
+    );
+    if (!willOpen) closeDropdown();
+  });
+
+  dropdown?.addEventListener("mouseenter", () => {
+    if (window.matchMedia("(min-width: 801px) and (hover: hover)").matches) {
+      dropdown.open = true;
+    }
+  });
+
+  dropdown?.addEventListener("mouseleave", () => {
+    if (window.matchMedia("(min-width: 801px) and (hover: hover)").matches &&
+        !dropdown.contains(document.activeElement)) {
+      closeDropdown();
+    }
+  });
+
+  dropdown?.addEventListener("focusout", (event) => {
+    if (!dropdown.contains(event.relatedTarget)) closeDropdown();
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!dropdown?.contains(event.target)) closeDropdown();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape") return;
+
+    const wasOpen = dropdown?.open;
+    closeDropdown();
+
+    if (primaryNav?.classList.contains("is-open")) {
+      closeMobileMenu();
+      menuButton?.focus();
+    } else if (wasOpen) {
+      dropdownSummary?.focus();
+    }
+  });
+
+  primaryNav?.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      closeDropdown();
+      closeMobileMenu();
+    });
+  });
+
+  // LEADSFLO_HOVER_PREVIEW_V1
+  // Mouse hover previews existing interactive demo selections.
+  // Touch and keyboard interactions retain their native behavior.
+  document.addEventListener("pointerover", (event) => {
+    if (event.pointerType !== "mouse") return;
+
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+
+    const button = target.closest("main button[aria-pressed]");
+    if (!(button instanceof HTMLButtonElement)) return;
+
+    // LEADSFLO_CREATIVE_EVENT_ISOLATION_V1
+    // Creative Studio manages its own thumbnail hover and tab selection.
+    if (button.closest("[data-creative-studio]")) return;
+
+    // Ignore movement between child elements within one button.
+    if (
+      event.relatedTarget instanceof Node &&
+      button.contains(event.relatedTarget)
+    ) return;
+
+    if (button.disabled) return;
+    if (button.getAttribute("aria-pressed") === "true") return;
+
+    // Activate the component's existing handler rather than
+    // implementing separate or inconsistent hover logic.
+    button.click();
+  });
+
+</script>

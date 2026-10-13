@@ -1,0 +1,98 @@
+---
+import '../styles/visual-demos.css';
+interface Props { mode?: 'overview' | 'crm' | 'approach'; }
+const { mode = 'overview' } = Astro.props;
+const steps = [
+  {n:'01', name:'Attract', detail:'Google Ads, Meta Ads and creative'},
+  {n:'02', name:'Capture', detail:'Websites, forms and conversion funnels'},
+  {n:'03', name:'Nurture', detail:'CRM, routing and follow-up'},
+  {n:'04', name:'Book', detail:'Qualified conversations'}
+];
+const pipeline = [
+  {name:'New', count:12, color:'#315BFA'},
+  {name:'Contacted', count:9, color:'#6694FC'},
+  {name:'Qualified', count:6, color:'#94BD66'},
+  {name:'Booked', count:4, color:'#C9F36B'}
+];
+---
+<section class="lf-visual-section" aria-label="Interactive LeadsFlo demonstration" data-demo-mode={mode}>
+  <div class="container">
+    <div class="lf-visual-heading">
+      <div><p class="section-kicker">THE SYSTEM IN MOTION / INTERACTIVE DEMOS</p><h2>{mode === 'crm' ? 'Follow every lead. Visually.' : mode === 'approach' ? 'Explore the path from click to customer.' : 'See how it all connects.'}</h2></div>
+      <p>These are illustrative demos using sample data, not client results. Select a step to see what happens next.</p>
+    </div>
+    <div class="lf-demo-grid">
+      <div class="lf-demo-panel lf-flow-panel">
+        <div class="lf-demo-label"><span>01 / THE LEAD FLOW</span><span class="lf-demo-live"><i></i> INTERACTIVE</span></div>
+        <div class="lf-flow-visual">
+          <svg class="lf-flow-curve" viewBox="0 0 640 130" role="img" aria-label="One connected line passing through four stages: attract, capture, nurture and book" preserveAspectRatio="none">
+            <path class="lf-flow-track" d="M20 73 C105 73 102 21 180 65 S285 115 340 65 S450 15 505 65 S590 73 620 40" />
+            <path class="lf-flow-active" d="M20 73 C105 73 102 21 180 65 S285 115 340 65 S450 15 505 65 S590 73 620 40" />
+          </svg>
+          <div class="lf-flow-steps">
+            {steps.map((step,index) => <button type="button" class:list={['lf-flow-step', {'is-selected':index===0}]} data-flow-step={index} aria-pressed={index===0}>
+              <span class="lf-flow-bubble">{step.n}</span><strong>{step.name}</strong>
+            </button>)}
+          </div>
+        </div>
+        <div class="lf-demo-detail" aria-live="polite"><span class="lf-detail-number" data-flow-number>01 / ATTRACT</span><strong data-flow-heading>Find the right audience.</strong><p data-flow-description>Paid campaigns and creative bring relevant people into your funnel.</p></div>
+      </div>
+      <div class="lf-demo-panel lf-crm-panel">
+        <div class="lf-demo-label"><span>02 / CRM PIPELINE</span><span>DEMO DATA</span></div>
+        <div class="lf-crm-top"><div><span class="lf-small-label">Pipeline overview</span><h3>Lead opportunities</h3></div><span class="lf-demo-pill">Sample workspace</span></div>
+        <div class="lf-crm-metric"><strong data-crm-number>12</strong><span data-crm-name>New leads</span><span class="lf-crm-tip">Choose a stage below ↓</span></div>
+        <div class="lf-crm-pipeline" role="group" aria-label="Sample CRM pipeline stages">
+          {pipeline.map((stage,index) => <button type="button" class:list={['lf-crm-stage', {'is-selected':index===0}]} data-crm-stage={index} data-count={stage.count} data-stage-name={stage.name} aria-pressed={index===0}>
+            <span class="lf-crm-bar" style={`--stage-color:${stage.color};--stage-height:${Math.max(25,stage.count/12*100)}%`}></span><strong>{stage.count}</strong><small>{stage.name}</small>
+          </button>)}
+        </div>
+        <p class="lf-demo-caption">Illustrative pipeline • no customer information</p>
+      </div>
+      <div class="lf-demo-panel lf-automation-panel">
+        <div class="lf-demo-label"><span>03 / AUTOMATION WORKFLOW</span><span>INTERACTIVE</span></div>
+        <div class="lf-auto-header"><h3>From inquiry to appointment</h3><p>Select a node to see the action.</p></div>
+        <div class="lf-auto-track">
+          {[
+            ['Lead captured','Website form'],['CRM updated','Create or update contact'],['Follow-up','Send approved message'],['Booking','Calendar invitation']
+          ].map(([name,sub],index) => <button type="button" class:list={['lf-auto-node', {'is-selected':index===0}]} data-auto-node={index} aria-pressed={index===0}>
+              <span class="lf-auto-dot"></span><span class="lf-auto-copy"><strong>{name}</strong><small>{sub}</small></span><span class="lf-auto-arrow" aria-hidden="true">↗</span>
+            </button>)}
+        </div>
+        <p class="lf-auto-result" aria-live="polite"><span data-auto-output>Trigger: a prospect submits an inquiry form.</span></p>
+        <p class="lf-demo-caption">Example only. No messages are sent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const details = [
+    ['01 / ATTRACT','Find the right audience.','Paid campaigns and creative bring relevant people into your funnel.'],
+    ['02 / CAPTURE','Turn visits into inquiries.','An accessible landing page gives visitors a clear next step.'],
+    ['03 / NURTURE','Respond and follow up.','Lead routing and consent-aware follow-up keep opportunities moving.'],
+    ['04 / BOOK','Connect with qualified prospects.','A scheduling flow helps interested people book the next conversation.']
+  ];
+  const outputs = [
+    'Trigger: a prospect submits an inquiry form.',
+    'Action: create or update a CRM contact and assign an owner.',
+    'Action: queue a consent-aware response and alert the team.',
+    'Outcome: offer an appointment and record its status.'
+  ];
+  document.querySelectorAll('.lf-visual-section').forEach(section => {
+    section.querySelectorAll('[data-flow-step]').forEach(button => button.addEventListener('click', () => {
+      const i = Number(button.dataset.flowStep);
+      section.querySelectorAll('[data-flow-step]').forEach(b => { b.classList.toggle('is-selected',b===button); b.setAttribute('aria-pressed',String(b===button)); });
+      section.querySelector('[data-flow-number]').textContent=details[i][0];
+      section.querySelector('[data-flow-heading]').textContent=details[i][1];
+      section.querySelector('[data-flow-description]').textContent=details[i][2];
+    }));
+    section.querySelectorAll('[data-crm-stage]').forEach(button => button.addEventListener('click', () => {
+      section.querySelectorAll('[data-crm-stage]').forEach(b => { b.classList.toggle('is-selected',b===button);b.setAttribute('aria-pressed',String(b===button)); });
+      section.querySelector('[data-crm-number]').textContent=button.dataset.count;
+      section.querySelector('[data-crm-name]').textContent=button.dataset.stageName+' leads';
+    }));
+    section.querySelectorAll('[data-auto-node]').forEach(button => button.addEventListener('click', () => {
+      section.querySelectorAll('[data-auto-node]').forEach(b => { b.classList.toggle('is-selected',b===button);b.setAttribute('aria-pressed',String(b===button)); });
+      section.querySelector('[data-auto-output]').textContent=outputs[Number(button.dataset.autoNode)];
+    }));
+  });
+</script>
