@@ -27,3 +27,10 @@
 @media(max-width:1050px){.lf-footer-top{grid-template-columns:repeat(2,minmax(0,1fr));gap:38px}.lf-setting-model-grid{gap:10px}}
 @media(max-width:680px){.lf-footer{padding-top:50px}.lf-footer-top{grid-template-columns:1fr 1fr;gap:32px 20px;padding-bottom:40px}.lf-footer-intro{grid-column:1/-1}.lf-footer-contact{grid-column:1/-1}.lf-footer-intro h2{font-size:36px}.lf-footer-bottom{align-items:flex-start;flex-direction:column}.lf-setting-model-grid{grid-template-columns:1fr}.lf-setting-model-card{min-height:0}}
 @media(prefers-reduced-motion:reduce){.lf-footer-cta,.lf-footer-col a{transition:none}}
+
+
+/* LEADSFLO_BRAND_MARK_V1 — scalable symbol with original wordmark */
+.wordmark,.lf-footer-logo{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;vertical-align:middle}
+.wordmark .lf-brand-symbol{width:31px;height:31px;display:block;flex:none}
+.lf-footer-logo .lf-brand-symbol{width:39px;height:39px;display:block;flex:none}
+@media(max-width:600px){.wordmark .lf-brand-symbol{width:27px;height:27px}.lf-footer-logo .lf-brand-symbol{width:34px;height:34px}}

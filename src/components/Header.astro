@@ -1,4 +1,6 @@
 ---
+import BrandMark from "../components/BrandMark.astro";
+import "../styles/connected-flowmark.css";
 const { currentPath = "/" } = Astro.props;
 
 const services = [
@@ -32,9 +34,7 @@ const services = [
 
 <header class="site-header">
   <div class="container nav-wrap">
-    <a href="/" class="wordmark" aria-label="LeadsFlo homepage">
-      leads<span>flo</span><i>.</i>
-    </a>
+    <a href="/" class="wordmark" aria-label="LeadsFlo homepage"><BrandMark theme="light" /></a>
 
     <button
       class="menu-toggle"

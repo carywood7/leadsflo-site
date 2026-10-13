@@ -1,0 +1,38 @@
+---
+interface Props { theme?: "light" | "dark"; }
+const { theme = "light" } = Astro.props;
+---
+<span class:list={["lf-brand-v4", `lf-brand-v4--${theme}`]} aria-label="LeadsFlo">
+  <span class="lf-brand-v4__text" aria-hidden="true">leads<span>flo</span><b>.</b></span>
+  <svg class="lf-brand-v4__river" viewBox="0 0 232 38" preserveAspectRatio="xMinYMid meet" aria-hidden="true" focusable="false">
+    <path class="lf-brand-v4__current1" d="M4 21 C43 -2 75 42 118 22 S171 16 193 18" />
+    <path class="lf-brand-v4__current2" d="M4 29 C45 7 76 48 118 30 S172 24 194 24" />
+    <path class="lf-brand-v4__pulse" d="M4 21 C43 -2 75 42 118 22 S171 16 193 18" />
+    <g class="lf-brand-v4__plane">
+      <!-- Custom paper fold, angled upward-right; shared on every page. -->
+      <path class="lf-brand-v4__plane-fill" d="M186 14 L229 1 L216 36 L205 22 L194 30 L199 17 Z" />
+      <path class="lf-brand-v4__plane-fold" d="M199 17 L229 1 L205 22 M205 22 L216 36" />
+    </g>
+  </svg>
+</span>
+<style>
+  .lf-brand-v4{--brand-text:#17233d;--brand-flo:#315bfa;--brand-period:#c9f36b;--brand-plane:#315bfa;display:inline-flex;flex-direction:column;align-items:flex-start;vertical-align:middle;line-height:1!important;white-space:nowrap;text-decoration:none!important;font-family:"Plus Jakarta Sans",Inter,sans-serif;font-weight:800;letter-spacing:-.07em;font-size:35px}
+  .lf-brand-v4--dark{--brand-text:#fff;--brand-flo:#c9f36b;--brand-period:#315bfa;--brand-plane:#c9f36b;font-size:43px}
+  .lf-brand-v4__text{display:block;color:var(--brand-text)!important;font-size:1em;font-weight:800;letter-spacing:-.07em;line-height:1!important}
+  .lf-brand-v4__text span{color:var(--brand-flo)!important}
+  .lf-brand-v4__text b{color:var(--brand-period)!important;font-weight:800}
+  .lf-brand-v4__river{display:block;width:3.85em;height:0.63em;margin-top:-1px;overflow:visible}
+  .lf-brand-v4__current1,.lf-brand-v4__current2{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:3}
+  .lf-brand-v4__current1{stroke:#315bfa}
+  .lf-brand-v4__current2{stroke:#10bcb2;stroke-width:2.25}
+  .lf-brand-v4__pulse{fill:none;stroke:#c9f36b;stroke-width:3;stroke-linecap:round;stroke-dasharray:10 300;stroke-dashoffset:300;opacity:0}
+  .lf-brand-v4__plane{transform-origin:208px 18px;transition:transform .4s cubic-bezier(.2,.8,.3,1)}
+  .lf-brand-v4__plane-fill{fill:var(--brand-plane);stroke:#17233d;stroke-width:1.7;stroke-linejoin:round}
+  .lf-brand-v4__plane-fold{fill:none;stroke:#f4f9ff;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+  .lf-brand-v4--dark .lf-brand-v4__plane-fold{stroke:#17233d}
+  :global(a:hover) > .lf-brand-v4 .lf-brand-v4__plane,:global(a:focus-visible) > .lf-brand-v4 .lf-brand-v4__plane{transform:translate(4px,-3px) rotate(-5deg)}
+  :global(a:hover) > .lf-brand-v4 .lf-brand-v4__pulse,:global(a:focus-visible) > .lf-brand-v4 .lf-brand-v4__pulse{opacity:1;animation:lf-brand-flow-v4 1.2s ease-out 1}
+  @keyframes lf-brand-flow-v4{from{stroke-dashoffset:300}to{stroke-dashoffset:0}}
+  @media(max-width:680px){.lf-brand-v4{font-size:30px}.lf-brand-v4--dark{font-size:37px}}
+  @media(prefers-reduced-motion:reduce){.lf-brand-v4__plane{transition:none}:global(a:hover) > .lf-brand-v4 .lf-brand-v4__pulse,:global(a:focus-visible) > .lf-brand-v4 .lf-brand-v4__pulse{animation:none;opacity:0}}
+</style>

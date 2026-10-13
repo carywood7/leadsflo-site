@@ -328,3 +328,10 @@ html{scroll-behavior:auto}
     transition: none;
   }
 }
+
+
+/* LEADSFLO_BRAND_MARK_V1 — scalable symbol with original wordmark */
+.wordmark,.lf-footer-logo{display:inline-flex;align-items:center;gap:9px;white-space:nowrap;vertical-align:middle}
+.wordmark .lf-brand-symbol{width:31px;height:31px;display:block;flex:none}
+.lf-footer-logo .lf-brand-symbol{width:39px;height:39px;display:block;flex:none}
+@media(max-width:600px){.wordmark .lf-brand-symbol{width:27px;height:27px}.lf-footer-logo .lf-brand-symbol{width:34px;height:34px}}

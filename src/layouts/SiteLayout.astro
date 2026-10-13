@@ -1,4 +1,5 @@
 ---
+import BrandMark from "../components/BrandMark.astro";
 import "../styles/global.css";
 import "../styles/workflow-canvas.css";
 import "../styles/lead-automation-gallery.css";
@@ -23,7 +24,9 @@ const links = [
 <!doctype html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=river1" />
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#F7F7F2" />
   <meta name="description" content={description} />
@@ -60,7 +63,7 @@ const links = [
     <footer class="lf-footer" aria-label="Site footer">
     <div class="container lf-footer-top">
       <div class="lf-footer-intro">
-        <a class="lf-footer-logo" href="/" aria-label="LeadsFlo home">leads<span>flo</span><i>.</i></a>
+        <a class="lf-footer-logo" href="/" aria-label="LeadsFlo home"><BrandMark theme="dark" /></a>
         <h2>Better leads.<br /><em>Better follow-through.</em></h2>
         <p>Paid advertising, creative, websites, connected systems and appointment setting—working together to help businesses turn interest into conversations.</p>
         <a class="lf-footer-cta" href="/contact/">Let's talk about your goals <span aria-hidden="true">↗</span></a>
