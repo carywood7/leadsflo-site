@@ -141,7 +141,10 @@ const services = [
   });
 
   dropdown?.addEventListener("focusout", (event) => {
-    if (!dropdown.contains(event.relatedTarget)) closeDropdown();
+    // On touch/mobile, focus changes between summary and links must not
+    // collapse a menu before the link click is delivered.
+    if (window.matchMedia("(max-width: 800px)").matches) return;
+    if (!dropdown.contains(event.relatedTarget)) dropdown.open = false;
   });
 
   exploreDropdown?.addEventListener("mouseenter", () => {
@@ -151,9 +154,12 @@ const services = [
     if (window.matchMedia("(min-width: 801px) and (hover: hover)").matches && !exploreDropdown.contains(document.activeElement)) exploreDropdown.open = false;
   });
   exploreDropdown?.addEventListener("focusout", (event) => {
+    if (window.matchMedia("(max-width: 800px)").matches) return;
     if (!exploreDropdown.contains(event.relatedTarget)) exploreDropdown.open = false;
   });
   document.addEventListener("click", (event) => {
+    // A mobile tap outside the dropdown should not disrupt a navigation tap.
+    if (window.matchMedia("(max-width: 800px)").matches) return;
     if (!dropdown?.contains(event.target) && !exploreDropdown?.contains(event.target)) closeDropdown();
   });
 
@@ -173,8 +179,12 @@ const services = [
 
   primaryNav?.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
-      closeDropdown();
-      closeMobileMenu();
+      // Allow the anchor navigation to complete before collapsing the menu.
+      // On mobile this also prevents a premature layout change during taps.
+      if (!window.matchMedia("(max-width: 800px)").matches) {
+        closeDropdown();
+        closeMobileMenu();
+      }
     });
   });
 

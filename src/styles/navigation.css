@@ -122,6 +122,8 @@
     border-bottom:1px solid var(--border);
   }
   .services-dropdown>summary{justify-content:space-between}
+  .services-dropdown[open]{isolation:isolate}
+  .services-dropdown[open] .services-panel{display:block;pointer-events:auto}
   .services-panel{
     position:static;
     width:100%;
