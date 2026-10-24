@@ -105,6 +105,37 @@ const services = [
   const exploreDropdown = document.querySelector(".lf-explore-dropdown");
   const dropdownSummary = dropdown?.querySelector("summary");
 
+  // LEADSFLO_MOBILE_BACKDROP_V1
+  // Backdrop sits below sticky header but above page content, including when
+  // the page has no visible content beside an expanded full-width menu.
+  const mobileBackdrop = document.createElement('div');
+  mobileBackdrop.className = 'lf-mobile-nav-backdrop';
+  mobileBackdrop.setAttribute('aria-hidden', 'true');
+  mobileBackdrop.style.cssText = 'position:fixed;inset:0;background:rgba(12,23,43,.34);z-index:99;display:none;';
+  document.body.appendChild(mobileBackdrop);
+  function syncMobileBackdrop() {
+    const active = Boolean(primaryNav?.classList.contains('is-open')) && window.matchMedia('(max-width: 800px)').matches;
+    mobileBackdrop.style.display = active ? 'block' : 'none';
+  }
+  mobileBackdrop.addEventListener('pointerdown', () => {
+    closeDropdown();
+    closeMobileMenu();
+  });
+  window.addEventListener('resize', syncMobileBackdrop);
+  // Capture current and future hamburger clicks after the original handler runs.
+  menuButton?.addEventListener('click', syncMobileBackdrop);
+  // The existing link handler should close the menu on navigation. Also cover
+  // click targets nested within links, without interfering with <summary>.
+  primaryNav?.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!(target instanceof Element)) return;
+    const link = target.closest('a[href]');
+    if (!link || !primaryNav.contains(link)) return;
+    closeDropdown();
+    closeMobileMenu();
+  });
+
+
   function closeDropdown() {
     if (dropdown) dropdown.open = false;
     if (exploreDropdown) exploreDropdown.open = false;
@@ -114,6 +145,7 @@ const services = [
     primaryNav?.classList.remove("is-open");
     menuButton?.setAttribute("aria-expanded", "false");
     menuButton?.setAttribute("aria-label", "Open navigation");
+    syncMobileBackdrop();
   }
 
   menuButton?.addEventListener("click", () => {
@@ -217,5 +249,21 @@ const services = [
     // implementing separate or inconsistent hover logic.
     button.click();
   });
+
+  // LEADSFLO_MOBILE_OUTSIDE_CLICK_FINAL
+  // Close the mobile navigation when tapping outside it.
+  document.addEventListener("pointerdown", (event) => {
+    if (window.innerWidth > 800) return;
+    if (!primaryNav?.classList.contains("is-open")) return;
+
+    const target = event.target;
+    if (!(target instanceof Node)) return;
+
+    if (primaryNav.contains(target)) return;
+    if (menuButton?.contains(target)) return;
+
+    closeDropdown();
+    closeMobileMenu();
+  }, true);
 
 </script>
