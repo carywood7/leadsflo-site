@@ -8,6 +8,8 @@ import "../styles/navigation.css";
 import Header from "../components/Header.astro";
 import "../styles/interior.css";
 import "../styles/footer-refresh.css";
+import "../styles/approved-work-gallery.css";
+import "../styles/content-upgrade.css";
 
 const { title, description, path } = Astro.props;
 
@@ -48,7 +50,7 @@ const links = [
     isPartOf: { "@type": "WebSite", name: "LeadsFlo", url: "https://leadsflo.co/" }
   })} />
   <!-- /LEADSFLO_INTERIOR_SEO_V1 -->
-  <meta name="robots" content="index,follow" />
+  <meta name="robots" content={path === "/thank-you/" ? "noindex,nofollow" : "index,follow"} />
   <link rel="canonical" href={new URL(path, "https://leadsflo.co").href} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -80,21 +82,25 @@ const links = [
         <h3>Explore</h3>
         <a href="/our-approach/">Our Approach</a>
         <a href="/about/">About LeadsFlo</a>
+        <a href="/work/">Selected Work</a>
+        <a href="/industries/">Industries</a>
         <a href="/insights/">Insights</a>
         <a href="/contact/">Contact</a>
       </nav>
       <div class="lf-footer-col lf-footer-contact">
         <h3>Get in touch</h3>
         <p>Have a project in mind? Tell us what you're trying to improve.</p>
-        <a href="mailto:cary.wood.777@gmail.com">cary.wood.777@gmail.com</a>
+        
         <a class="lf-footer-secondary" href="/contact/">Send an inquiry ↗</a>
       </div>
     </div>
     <div class="container lf-footer-bottom">
       <span>© {new Date().getFullYear()} LeadsFlo. All rights reserved.</span>
       <span>More leads. Less guesswork.</span>
+      <nav class="lf-footer-legal" aria-label="Legal information"><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-and-conditions/">Terms &amp; Conditions</a></nav>
       <a href="#top" class="lf-footer-back">Back to top ↑</a>
     </div>
+  <style>.lf-footer-legal{display:flex;gap:16px;flex-wrap:wrap;align-items:center}.lf-footer-legal a{font-size:12px;color:#aebbd2;text-decoration:none}.lf-footer-legal a:hover{text-decoration:underline;color:#c9f36b}@media(max-width:700px){.lf-footer-legal{justify-content:flex-start}}</style>
   </footer>
 </body>
 </html>

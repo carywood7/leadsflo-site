@@ -1,0 +1,24 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+---
+<SiteLayout
+  title="Thank You for Contacting LeadsFlo"
+  description="Your inquiry has been submitted to LeadsFlo."
+  path="/thank-you/"
+>
+  <section class="lf-page-section" style="min-height:65vh;display:flex;align-items:center;">
+    <div class="container" style="max-width:760px;text-align:center;padding-top:60px;padding-bottom:60px;">
+      <p class="section-kicker">MESSAGE RECEIVED</p>
+      <div aria-hidden="true" style="font-size:46px;color:#315bfa;margin:22px auto;">✓</div>
+      <h1 style="font-size:clamp(36px,5vw,64px);line-height:1.1;color:#17233d;margin:0 0 22px;">
+        Thanks for reaching out.
+      </h1>
+      <p style="font-size:clamp(17px,2vw,20px);line-height:1.75;color:#526076;max-width:550px;margin:0 auto 36px;">
+        We've received your inquiry. We'll review your message and get back to you by email.
+      </p>
+      <a href="/" class="button button-primary">
+        Back to homepage <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </section>
+</SiteLayout>

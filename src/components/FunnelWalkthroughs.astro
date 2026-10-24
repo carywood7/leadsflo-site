@@ -1,0 +1,123 @@
+---
+interface Props { compact?: boolean; }
+const { compact = false } = Astro.props;
+const projects = [
+  { title:"Le Wagon Bangalore", category:"Education · Bootcamp", description:"A campaign landing page designed to introduce the bootcamp and capture prospective-student inquiries.", image:"https://cary-portfolio-res.s3.ap-south-1.amazonaws.com/portfolio/le-wagon.webp", video:"https://cary-portfolio-res.s3.ap-south-1.amazonaws.com/portfolio/le-wagon.mp4" },
+  { title:"XAFE Ads", category:"Advertising · Lead Generation", description:"A focused advertising landing page built around a clear campaign message and lead-capture journey.", image:"https://cary-portfolio-res.s3.ap-south-1.amazonaws.com/portfolio/XAFEADS.webp", video:"https://cary-portfolio-res.s3.ap-south-1.amazonaws.com/portfolio/XAFEADS.mp4" },
+  { title:"Sonya Hair Braiding", category:"Beauty · Local Services", description:"A salon landing page presenting hair-braiding services and encouraging appointment inquiries.", image:"https://cary-portfolio-res.s3.ap-south-1.amazonaws.com/portfolio/sonya.webp", video:"https://cary-portfolio-res.s3.ap-south-1.amazonaws.com/portfolio/sonya.mp4" },
+  { title:"AR Homes Rise", category:"Real Estate", description:"A campaign landing page presenting a property opportunity and inviting buyer inquiries.", image:"https://cary-portfolio-res.s3.ap-south-1.amazonaws.com/portfolio/homesrise.webp", video:"https://cary-portfolio-res.s3.ap-south-1.amazonaws.com/portfolio/homesrise.mp4" },
+  { title:"Bull Investors", category:"Financial Services", description:"An investment-focused landing page designed to introduce the offer and capture interest.", image:"https://cary-portfolio-res.s3.ap-south-1.amazonaws.com/portfolio/Bull+Investors.webp", video:"https://cary-portfolio-res.s3.ap-south-1.amazonaws.com/portfolio/Bull+Investors.mp4" },
+  { title:"MAAC", category:"Education · Courses", description:"A course-enquiry page supporting advertising campaigns and prospective-student lead capture.", image:"https://cary-portfolio-res.s3.ap-south-1.amazonaws.com/portfolio/Maac.webp", video:"https://cary-portfolio-res.s3.ap-south-1.amazonaws.com/portfolio/Maac.mp4" },
+];
+const shown = compact ? [projects[0], projects[2], projects[5]] : projects;
+---
+<section class="lf-fw-section" id="funnel-walkthroughs" aria-labelledby={compact ? "lf-fw-heading-service" : "lf-fw-heading-work"}>
+  <div class="container">
+    <div class="lf-fw-head">
+      <div class="lf-fw-head-copy">
+        <p class="section-kicker">REAL FUNNEL WALKTHROUGHS / {compact ? "FEATURED" : "ALL SIX PROJECTS"}</p>
+        <h2 id={compact ? "lf-fw-heading-service" : "lf-fw-heading-work"}>Built to turn interest into action.</h2>
+        <p>Explore campaign landing pages in motion—from the opening offer and supporting proof to the inquiry form. Hover over a preview to watch the actual funnel scroll.</p>
+      </div>
+      {compact && <a class="lf-fw-all" href="/work/#funnel-walkthroughs">See all six funnels <span aria-hidden="true">↗</span></a>}
+    </div>
+    <div class="lf-fw-grid">
+      {shown.map((project, index) => (
+        <article class="lf-fw-card">
+          <div class="lf-fw-preview" data-fw-preview data-video={project.video}>
+            <img class="lf-fw-poster" src={project.image} alt={`${project.title} funnel landing page screenshot`} loading="lazy" decoding="async" />
+            <video class="lf-fw-inline-video" muted playsinline loop preload="none" aria-label={`${project.title} landing page walkthrough`}></video>
+            <span class="lf-fw-indicator" aria-hidden="true"><span class="lf-fw-play-symbol">▶</span> <span class="lf-fw-indicator-text">HOVER TO WATCH</span></span>
+            <button class="lf-fw-mobile-toggle" type="button" aria-label={`Play ${project.title} funnel walkthrough`} aria-pressed="false">Play walkthrough ▶</button>
+          </div>
+          <div class="lf-fw-info">
+            <span class="lf-fw-index">{String(index + 1).padStart(2, "0")} / FUNNEL WALKTHROUGH</span>
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <span class="lf-fw-category">{project.category}</span>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+<style>
+  .lf-fw-section{padding:96px 0;background:#f1f4f9;color:#17233d}
+  .lf-fw-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:36px}
+  .lf-fw-head-copy{max-width:780px}
+  .lf-fw-head h2{font:800 clamp(34px,4.4vw,58px)/1.12 "Plus Jakarta Sans",sans-serif;letter-spacing:-.052em;margin:12px 0 14px}
+  .lf-fw-head p:not(.section-kicker){color:#56647e;line-height:1.8;margin:0;max-width:675px}
+  .lf-fw-all{color:#315bfa;font-weight:800;font-size:13px;white-space:nowrap;text-decoration:none;padding-bottom:8px}
+  .lf-fw-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+  .lf-fw-card{min-width:0;background:#fff;border:1px solid #d9e2ef;border-radius:12px;overflow:hidden;box-shadow:0 12px 35px #17233d09;transition:transform .22s,box-shadow .22s}
+  .lf-fw-card:hover{transform:translateY(-4px);box-shadow:0 18px 42px #17233d17}
+  .lf-fw-preview{position:relative;aspect-ratio:16/10;background:#101d34;overflow:hidden;isolation:isolate}
+  .lf-fw-poster,.lf-fw-inline-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center}
+  .lf-fw-poster{opacity:1;transition:opacity .2s}
+  .lf-fw-inline-video{opacity:0;pointer-events:none;transition:opacity .2s}
+  .lf-fw-preview.is-playing .lf-fw-inline-video{opacity:1}
+  .lf-fw-preview.is-playing .lf-fw-poster{opacity:0}
+  .lf-fw-indicator{position:absolute;left:16px;bottom:16px;z-index:2;display:flex;gap:9px;align-items:center;background:#17233df0;color:#fff;padding:11px 13px;border-radius:4px;font-size:10px;font-weight:800;letter-spacing:.09em}
+  .lf-fw-play-symbol{color:#c9f36b}
+  .lf-fw-preview.is-playing .lf-fw-indicator{opacity:0}
+  .lf-fw-mobile-toggle{display:none}
+  .lf-fw-info{padding:23px 24px 25px}
+  .lf-fw-index{color:#315bfa;font-size:10px;font-weight:800;letter-spacing:.11em}
+  .lf-fw-info h3{font:800 22px/1.25 "Plus Jakarta Sans",sans-serif;margin:9px 0 10px;letter-spacing:-.025em}
+  .lf-fw-info p{font-size:13px;line-height:1.75;color:#56647e;margin:0 0 17px}
+  .lf-fw-category{font-size:11px;font-weight:700;color:#647188}
+  .lf-fw-mobile-toggle:focus-visible,.lf-fw-all:focus-visible{outline:3px solid #315bfa;outline-offset:3px}
+  @media(max-width:960px){.lf-fw-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lf-fw-head{align-items:start;flex-direction:column}}
+  @media(max-width:650px){.lf-fw-section{padding:64px 0}.lf-fw-grid{grid-template-columns:1fr;gap:17px}.lf-fw-head h2{font-size:38px}.lf-fw-card:hover{transform:none}.lf-fw-indicator{display:none}.lf-fw-mobile-toggle{display:block;position:absolute;z-index:3;bottom:12px;left:12px;right:12px;width:calc(100% - 24px);border:0;border-radius:4px;background:#c9f36b;color:#17233d;padding:13px;font:800 12px "Plus Jakarta Sans",sans-serif;cursor:pointer}.lf-fw-inline-video{object-fit:contain}.lf-fw-info{padding:20px}}
+  @media(hover:none){.lf-fw-indicator{display:none}.lf-fw-mobile-toggle{display:block;position:absolute;z-index:3;bottom:12px;left:12px;right:12px;border:0;border-radius:4px;background:#c9f36b;color:#17233d;padding:13px;font:800 12px "Plus Jakarta Sans",sans-serif}}
+  @media(prefers-reduced-motion:reduce){.lf-fw-card,.lf-fw-poster,.lf-fw-inline-video{transition:none}.lf-fw-card:hover{transform:none}}
+</style>
+<script>
+  document.querySelectorAll('[data-fw-preview]').forEach((preview) => {
+    if (!(preview instanceof HTMLElement) || preview.dataset.fwReady === '1') return;
+    preview.dataset.fwReady = '1';
+    const video = preview.querySelector('video');
+    const button = preview.querySelector('button');
+    if (!(video instanceof HTMLVideoElement) || !(button instanceof HTMLButtonElement)) return;
+    const src = preview.dataset.video;
+    if (!src || !src.startsWith('https://')) return;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const canHover = window.matchMedia('(hover: hover) and (pointer: fine)');
+    const stop = () => {
+      video.pause();
+      preview.classList.remove('is-playing');
+      button.setAttribute('aria-pressed', 'false');
+      button.textContent = 'Play walkthrough ▶';
+      video.removeAttribute('src');
+      video.load();
+    };
+    const start = async () => {
+      if (!video.getAttribute('src')) { video.src = src; video.load(); }
+      video.muted = true;
+      video.playsInline = true;
+      try {
+        await video.play();
+        if (canHover.matches && !preview.matches(':hover') && button.getAttribute('aria-pressed') !== 'true') {
+          video.pause();
+          return;
+        }
+        preview.classList.add('is-playing');
+        button.setAttribute('aria-pressed', 'true');
+        button.textContent = 'Pause walkthrough ‖';
+      } catch {
+        preview.classList.remove('is-playing');
+      }
+    };
+    preview.addEventListener('pointerenter', (event) => {
+      if (event.pointerType === 'mouse' && canHover.matches && !reducedMotion) void start();
+    });
+    preview.addEventListener('pointerleave', (event) => {
+      if (event.pointerType === 'mouse') stop();
+    });
+    button.addEventListener('click', () => {
+      if (preview.classList.contains('is-playing')) stop(); else void start();
+    });
+    video.addEventListener('error', () => { preview.classList.remove('is-playing'); });
+    document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
+  });
+</script>

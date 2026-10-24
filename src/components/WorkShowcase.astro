@@ -1,0 +1,23 @@
+---
+interface Props { variant?: "home" | "service"; }
+const { variant = "home" } = Astro.props;
+---
+<section class="lf-rework" aria-labelledby="lf-feature-work"><div class="container"><div class="lf-rework__intro"><div><p class="section-kicker">SELECTED WORK</p><h2 id="lf-feature-work">Real projects. Built for real businesses.</h2><p>Explore recent website and lead-generation work, from service-business funnels to appointment-focused experiences.</p></div><a href="/work/" class="lf-rework__browse">See all projects ↗</a></div><div class="lf-rework__grid"><article class="lf-rework__card"><a class="lf-rework__picture" href="/work/cypress-christmas-lights/"><img src="/work/cypress-christmas-lights.webp" loading="lazy" decoding="async" alt="Cypress Christmas Lights website screenshot" /></a><div class="lf-rework__body"><p class="lf-rework__type">LEAD-GENERATION FUNNEL</p><h3>Cypress Christmas Lights</h3><p>Seasonal lighting website built around inquiries, qualification and booking.</p><a class="lf-rework__go" href="/work/cypress-christmas-lights/">View project ↗</a></div></article><article class="lf-rework__card"><a class="lf-rework__picture" href="/work/sonya-hair-braiding/"><img src="/work/sonya-hair-braiding.webp" loading="lazy" decoding="async" alt="Sonya Hair Braiding website screenshot" /></a><div class="lf-rework__body"><p class="lf-rework__type">SALON WEBSITE & BOOKING</p><h3>Sonya Hair Braiding</h3><p>A salon experience connecting service discovery with appointment inquiries.</p><a class="lf-rework__go" href="/work/sonya-hair-braiding/">View project ↗</a></div></article></div></div></section>
+<style>
+.lf-rework{padding:clamp(64px,8vw,110px) 0;background:#f5f7fc;color:#17233d}
+.lf-rework__intro{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:32px}
+.lf-rework__intro h2{font-family:'Plus Jakarta Sans',Inter,sans-serif;letter-spacing:-.05em;font-size:clamp(32px,4vw,50px);line-height:1.1;margin:12px 0}
+.lf-rework__intro p:not(.section-kicker){max-width:660px;color:#56647b;line-height:1.7}
+.lf-rework__browse,.lf-rework__go{color:#315bfa;font-weight:750;text-decoration:none}
+.lf-rework__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}
+.lf-rework__card{background:white;border:1px solid #dbe3ed;border-radius:18px;overflow:hidden;box-shadow:0 16px 36px rgba(18,32,60,.05)}
+.lf-rework__picture{display:block;aspect-ratio:16/9;overflow:hidden;background:#e7edf3}
+.lf-rework__picture img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .3s ease}
+.lf-rework__card:hover img{transform:scale(1.025)}
+.lf-rework__body{padding:25px}
+.lf-rework__type{font-size:11px!important;color:#315bfa!important;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+.lf-rework__body h3{font-family:'Plus Jakarta Sans',Inter,sans-serif;font-size:clamp(22px,2.2vw,28px);margin:10px 0;letter-spacing:-.035em}
+.lf-rework__body>p:not(.lf-rework__type){color:#56647b;line-height:1.65;margin-bottom:18px}
+@media(max-width:690px){.lf-rework__grid{grid-template-columns:1fr}.lf-rework__intro{align-items:start;flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.lf-rework__picture img{transition:none}}
+</style>

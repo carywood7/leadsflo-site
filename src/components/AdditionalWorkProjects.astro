@@ -1,0 +1,49 @@
+---
+interface Props { mode?: "homepage" | "full"; }
+const { mode = "full" } = Astro.props;
+const projects = [
+  {title: "Cypress Christmas Lights", type: "Lead-generation website & booking funnel", image: "/work/cypress-christmas-lights.webp", url: "https://cypresschristmaslight.com/", alt: "Screenshot of the Cypress Christmas Lights website"},
+  {title: "Sonya Hair Braiding", type: "Salon website & appointment funnel", image: "/work/sonya-hair-braiding.webp", url: "https://sonyahairbraiding.com/", alt: "Screenshot of the Sonya Hair Braiding website"},
+  {title: "MSP Automations", type: "Automation services website", image: "/work/msp-automations.webp", url: "https://mspautomations.co/", alt: "Screenshot of the MSP Automations website"},
+  {title: "Who Changed the Church", type: "Editorial & book website", image: "/work/who-changed-the-church.webp", url: "https://www.whochangedthechurch.com/", alt: "Screenshot of the Who Changed the Church website"}
+];
+const shown = mode === "homepage" ? projects.slice(0, 2) : projects;
+---
+<section class="lf-extra-work" aria-labelledby={mode === "homepage" ? "lf-recent-work-home" : "lf-recent-work-full"}>
+  <div class="lf-extra-work__container">
+    <div class="lf-extra-work__heading">
+      <div><p class="lf-extra-work__kicker">SELECTED WEBSITE PROJECTS</p><h2 id={mode === "homepage" ? "lf-recent-work-home" : "lf-recent-work-full"}>Recent work, real websites.</h2></div>
+      {mode === "homepage" && <a class="lf-extra-work__all" href="/work/">View all selected work ↗</a>}
+    </div>
+    <div class="lf-extra-work__grid">
+      {shown.map(project => (
+        <article class="lf-extra-work__card">
+          <a href={project.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${project.title} website (opens in new tab)`}>
+            <div class="lf-extra-work__shot"><img src={project.image} alt={project.alt} loading="lazy" decoding="async" width="1600" height="900" /></div>
+            <div class="lf-extra-work__meta"><div><h3>{project.title}</h3><p>{project.type}</p></div><span aria-hidden="true">↗</span></div>
+          </a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+<style>
+  .lf-extra-work{padding:clamp(68px,8vw,112px) 0;background:#f6f8fb;color:#17233d}
+  .lf-extra-work__container{width:min(1180px,calc(100% - 40px));margin:auto}
+  .lf-extra-work__heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}
+  .lf-extra-work__kicker{font-size:12px;letter-spacing:.13em;font-weight:800;color:#315bfa;margin:0 0 14px}
+  .lf-extra-work h2{font-family:"Plus Jakarta Sans",Inter,sans-serif;font-weight:800;font-size:clamp(30px,4vw,48px);line-height:1.15;letter-spacing:-.045em;margin:0}
+  .lf-extra-work__all{font-weight:700;color:#315bfa;text-decoration:none;white-space:nowrap}
+  .lf-extra-work__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+  .lf-extra-work__card{overflow:hidden;border:1px solid #dfe6f0;background:#fff;border-radius:16px;box-shadow:0 14px 40px rgba(23,35,61,.05)}
+  .lf-extra-work__card a{display:block;color:inherit;text-decoration:none}
+  .lf-extra-work__shot{height:clamp(210px,27vw,325px);overflow:hidden;background:#e8edf5;position:relative}
+  .lf-extra-work__shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .35s ease}
+  .lf-extra-work__card:hover img,.lf-extra-work__card:focus-within img{transform:scale(1.025)}
+  .lf-extra-work__meta{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:22px}
+  .lf-extra-work__meta h3{font-size:21px;font-weight:800;letter-spacing:-.03em;margin:0 0 6px}
+  .lf-extra-work__meta p{font-size:14px;color:#586780;margin:0}
+  .lf-extra-work__meta span{font-size:25px;color:#315bfa}
+  @media(max-width:650px){.lf-extra-work__grid{grid-template-columns:1fr}.lf-extra-work__heading{align-items:start;flex-direction:column}.lf-extra-work__all{white-space:normal}.lf-extra-work__shot{height:230px}}
+  @media(prefers-reduced-motion:reduce){.lf-extra-work__shot img{transition:none}}
+</style>

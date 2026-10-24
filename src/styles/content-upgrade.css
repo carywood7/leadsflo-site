@@ -1,0 +1,28 @@
+
+/* LEADSFLO_CONTENT_UPGRADE_2026_V1: additive editorial components */
+.lf-editorial-section{padding:clamp(54px,7vw,100px) 0;background:#fff;color:#17233d}
+.lf-editorial-section:nth-of-type(even){background:#f5f8fd}
+.lf-editorial-head{max-width:850px;margin:0 0 32px}
+.lf-editorial-head h2{font-size:clamp(29px,4vw,52px);line-height:1.12;letter-spacing:-.045em;margin:9px 0 14px}
+.lf-editorial-head>p:last-child{max-width:730px;color:#536179;font-size:17px;line-height:1.7}
+.lf-editorial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.lf-editorial-tile{padding:clamp(21px,2.4vw,33px);border:1px solid #dce4ef;border-radius:19px;background:white;box-shadow:0 12px 32px rgba(23,35,61,.035)}
+.lf-editorial-tile>span{display:inline-block;font-size:12px;font-weight:750;letter-spacing:.12em;color:#315bfa;margin-bottom:20px}
+.lf-editorial-tile h3{font-size:clamp(20px,2.1vw,25px);letter-spacing:-.025em;line-height:1.25;margin:0 0 12px}
+.lf-editorial-tile p{font-size:15px;line-height:1.75;color:#526076;margin:0}
+.lf-editorial-note{max-width:830px;margin:24px 0 0;line-height:1.75;color:#526076}
+.lf-editorial-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:30px}
+.lf-editorial-link{display:inline-flex;gap:10px;align-items:center;color:#315bfa;font-weight:750;text-decoration:none}
+.lf-founder{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(240px,.6fr);gap:clamp(24px,5vw,76px);align-items:center}
+.lf-founder-copy p{line-height:1.75;color:#526076;max-width:750px}
+.lf-founder-aside{padding:35px;border-radius:21px;background:#17233d;color:#fff}
+.lf-founder-aside strong{font-size:23px;line-height:1.35;letter-spacing:-.025em;display:block}
+.lf-founder-aside p{color:#d9e1ed;line-height:1.7}
+.lf-editorial-steps{display:grid;gap:14px;max-width:960px}
+.lf-editorial-step{display:grid;grid-template-columns:70px 1fr;gap:16px;padding:20px;border-bottom:1px solid #dae2ef}
+.lf-editorial-step>strong{color:#315bfa}
+.lf-editorial-step h3{margin:0 0 8px}.lf-editorial-step p{margin:0;color:#526076;line-height:1.7}
+.lf-editorial-section a:focus-visible{outline:3px solid #315bfa;outline-offset:4px}
+.lf-article-extra h2{margin-top:38px}.lf-article-extra p,.lf-article-extra li{line-height:1.85;color:#43536c}
+.lf-article-extra ul{padding-left:22px}.lf-article-extra a{color:#315bfa}
+@media(max-width:780px){.lf-editorial-grid{grid-template-columns:1fr}.lf-founder{grid-template-columns:1fr}.lf-editorial-step{grid-template-columns:44px 1fr}.lf-editorial-section{padding:52px 0}}

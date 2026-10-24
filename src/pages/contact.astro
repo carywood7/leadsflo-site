@@ -8,9 +8,10 @@ import ContactBrief from "../components/ContactBrief.astro";
 <section class="lf-page-section lf-section-muted"><div class="container lf-split"><div class="lf-sticky-head"><p class="section-kicker">PREPARE YOUR BRIEF</p><h2>A useful first conversation.</h2><p>Tell us what you are working on using the inquiry form. We will review your details and respond by email. No booking calendar is required to get started.</p></div><div class="lf-prose"><h3>01 / Tell us about your business</h3><p>What do you sell, who is your ideal customer, and where do you serve them?</p><h3>02 / Share your current setup</h3><p>Which advertising platforms, website, CRM or scheduling tools do you already use?</p><h3>03 / Describe the outcome you want</h3><p>Are you trying to improve lead quality, volume, conversion rate, appointment booking or response time?</p><div class="lf-contact-form-wrap" id="contact-inquiry">
   <div class="lf-contact-form-heading"><span class="section-kicker">SEND AN INQUIRY</span><h3>Start a conversation with LeadsFlo.</h3><p>Share a few details so we can understand your project and get back to you.</p></div>
   <form class="lf-contact-form" action="https://formsubmit.co/cary.wood.777@gmail.com" method="POST" accept-charset="UTF-8">
+    <input type="hidden" name="_next" value="https://leadsflo.co/thank-you/" />
     <input type="hidden" name="_subject" value="New LeadsFlo Website Inquiry" />
     <input type="hidden" name="_template" value="table" />
-    <input type="hidden" name="_captcha" value="true" />
+    <input type="hidden" name="_captcha" value="false" />
     <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="lf-contact-honey" aria-hidden="true" />
     <div class="lf-contact-form-row">
       <label>Full name <span aria-hidden="true">*</span><input type="text" name="name" autocomplete="name" maxlength="100" required /></label>
@@ -27,7 +28,8 @@ import ContactBrief from "../components/ContactBrief.astro";
         <option>Ad Creatives &amp; Content</option>
         <option>Websites &amp; Funnels</option>
         <option>Systems &amp; AI Automation</option>
-        <option>Appointment Setting (Human Calling)</option>
+        <option>Appointment Setting — Human Callers</option>
+        <option>Appointment Setting — AI Voice / Hybrid</option>
         <option>Multiple Services / Not Sure Yet</option>
       </select>
     </label>

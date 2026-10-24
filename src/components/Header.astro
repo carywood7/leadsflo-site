@@ -81,15 +81,15 @@ const services = [
         Our Approach
       </a>
 
-      <a href="/about/"
-         aria-current={currentPath === "/about/" ? "page" : undefined}>
-        About
-      </a>
-
-      <a href="/insights/"
-         aria-current={currentPath === "/insights/" ? "page" : undefined}>
-        Insights
-      </a>
+      <details class="services-dropdown lf-explore-dropdown">
+        <summary>Explore <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
+        <div class="services-panel">
+          <p class="dropdown-label">DISCOVER LEADSFLO</p>
+          <a class="services-option" href="/work/"><span class="option-number">01</span><span class="option-body"><strong>Our Work</strong><small>Projects and case studies</small></span><span class="option-arrow">↗</span></a>
+          <a class="services-option" href="/about/"><span class="option-number">02</span><span class="option-body"><strong>About</strong><small>Meet the founder</small></span><span class="option-arrow">↗</span></a>
+          <a class="services-option" href="/insights/"><span class="option-number">03</span><span class="option-body"><strong>Insights</strong><small>Guides and ideas</small></span><span class="option-arrow">↗</span></a>
+        </div>
+      </details>
 
       <a href="/contact/" class="nav-cta">
         Let's Talk <span aria-hidden="true">↗</span>
@@ -102,10 +102,12 @@ const services = [
   const menuButton = document.querySelector(".menu-toggle");
   const primaryNav = document.querySelector(".primary-nav");
   const dropdown = document.querySelector(".services-dropdown");
+  const exploreDropdown = document.querySelector(".lf-explore-dropdown");
   const dropdownSummary = dropdown?.querySelector("summary");
 
   function closeDropdown() {
     if (dropdown) dropdown.open = false;
+    if (exploreDropdown) exploreDropdown.open = false;
   }
 
   function closeMobileMenu() {
@@ -142,8 +144,17 @@ const services = [
     if (!dropdown.contains(event.relatedTarget)) closeDropdown();
   });
 
+  exploreDropdown?.addEventListener("mouseenter", () => {
+    if (window.matchMedia("(min-width: 801px) and (hover: hover)").matches) exploreDropdown.open = true;
+  });
+  exploreDropdown?.addEventListener("mouseleave", () => {
+    if (window.matchMedia("(min-width: 801px) and (hover: hover)").matches && !exploreDropdown.contains(document.activeElement)) exploreDropdown.open = false;
+  });
+  exploreDropdown?.addEventListener("focusout", (event) => {
+    if (!exploreDropdown.contains(event.relatedTarget)) exploreDropdown.open = false;
+  });
   document.addEventListener("click", (event) => {
-    if (!dropdown?.contains(event.target)) closeDropdown();
+    if (!dropdown?.contains(event.target) && !exploreDropdown?.contains(event.target)) closeDropdown();
   });
 
   document.addEventListener("keydown", (event) => {

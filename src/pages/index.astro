@@ -1,5 +1,6 @@
 ---
 import BrandMark from "../components/BrandMark.astro";
+import WorkShowcase from "../components/WorkShowcase.astro";
 import "../styles/global.css";
 import "../styles/navigation.css";
 import VisualDemos from "../components/VisualDemos.astro";
@@ -60,6 +61,8 @@ const steps = [
   { n: "04", title: "Book", description: "Move qualified opportunities into conversations." }
 ];
 import "../styles/footer-refresh.css";
+import "../styles/approved-work-gallery.css";
+import "../styles/content-upgrade.css";
 ---
 
 <!doctype html>
@@ -123,7 +126,7 @@ import "../styles/footer-refresh.css";
       <div class="container hero-bottom"><span>GROWTH ISN'T GUESSWORK.</span><span>SCROLL TO EXPLORE ↓</span></div>
     </section>
 
-    <section class="intro-section section-pad" id="why-leadsflo">
+<section class="intro-section section-pad" id="why-leadsflo">
       <div class="container intro-grid reveal">
         <p class="section-kicker">01 / THE BIGGER PICTURE</p>
         <div>
@@ -133,7 +136,7 @@ import "../styles/footer-refresh.css";
       </div>
     </section>
 
-    <section class="services-section section-pad" id="services">
+<section class="services-section section-pad" id="services">
       <div class="container">
         <div class="section-heading reveal">
           <div><p class="section-kicker">02 / WHAT WE DO</p><h2>One goal.<br />Five ways to grow.</h2></div>
@@ -155,10 +158,12 @@ import "../styles/footer-refresh.css";
       </div>
     </section>
 
-    <section class="process-section section-pad" id="approach">
+<WorkShowcase variant="home" />
+
+<section class="process-section section-pad" id="approach">
       <div class="container">
         <div class="section-heading process-header reveal">
-          <div><p class="section-kicker">03 / HOW IT WORKS</p><h2>From first click<br />to booked call.</h2></div>
+          <div><p class="section-kicker">04 / HOW IT WORKS</p><h2>From first click<br />to booked call.</h2></div>
           <p>A connected growth process, not a collection of disconnected marketing tools.</p>
         </div>
         <div class="process-grid">
@@ -173,29 +178,23 @@ import "../styles/footer-refresh.css";
       </div>
     </section>
 
-    <section class="statement-section">
-      <div class="container statement-wrap reveal">
-        <p class="section-kicker">BUILT FOR THE NEXT STAGE OF GROWTH</p>
-        <h2>Less noise.<br />More <em>momentum.</em></h2>
-        <p>Clear strategy. Connected systems. A relentless focus on better opportunities.</p>
-      </div>
-      <div class="statement-decor" aria-hidden="true">↗</div>
-    </section>
+<section class="lf-editorial-section" aria-label="Marketing and engineering, working together."><div class="container"><div class="lf-editorial-head"><p class="section-kicker">THE PEOPLE BEHIND THE PROCESS</p><h2>Marketing and engineering, working together.</h2></div><div class="lf-editorial-grid"><article class="lf-editorial-tile"><span>01 / FIELD NOTES</span><h3>Experience across the journey</h3><p>Founder Cary Wood brings more than 13 years across sales and marketing, alongside hands-on development and automation work.</p></article><article class="lf-editorial-tile"><span>02 / FIELD NOTES</span><h3>No forced software stack</h3><p>We work with suitable existing platforms and build custom integrations when they solve an actual operational problem.</p></article><article class="lf-editorial-tile"><span>03 / FIELD NOTES</span><h3>Follow-through matters</h3><p>We look at what happens to inquiries after an ad click or form submission: routing, response, qualification and appointment outcomes.</p></article></div><p class="lf-editorial-note">Learn more about the founder and the way LeadsFlo approaches real business challenges.</p><div class="lf-editorial-actions"><a class="lf-editorial-link" href="/about/#founder">Meet Cary and the agency ↗</a><a class="lf-editorial-link" href="/work/">Explore selected work ↗</a></div></div></section>
 
-    <section class="contact-section section-pad" id="contact">
+<VisualDemos mode="overview" />
+
+<section class="contact-section section-pad" id="contact">
       <div class="container contact-grid reveal">
         <div>
-          <p class="section-kicker">04 / LET'S GET STARTED</p>
+          <p class="section-kicker">07 / LET'S GET STARTED</p>
           <h2>Ready to get<br /><span>things flowing?</span></h2>
         </div>
         <div class="contact-copy">
           <p>Tell us what you're trying to achieve. We'll explore how smarter campaigns, conversion systems and follow-up can help.</p>
-          <a class="button button-primary" href="mailto:hello@leadsflo.co?subject=Let's%20talk%20growth">Start a conversation <span>↗</span></a>
-          <small>Contact email is a placeholder until the mailbox is configured.</small>
+          <a class="button button-primary" href="/contact/">Start a conversation <span>↗</span></a>
+          <small>Tell us about your business and what you want to improve.</small>
         </div>
       </div>
     </section>
-    <VisualDemos mode="overview" />
   </main>
 
     <footer class="lf-footer" aria-label="Site footer">
@@ -218,21 +217,25 @@ import "../styles/footer-refresh.css";
         <h3>Explore</h3>
         <a href="/our-approach/">Our Approach</a>
         <a href="/about/">About LeadsFlo</a>
+        <a href="/work/">Selected Work</a>
+        <a href="/industries/">Industries</a>
         <a href="/insights/">Insights</a>
         <a href="/contact/">Contact</a>
       </nav>
       <div class="lf-footer-col lf-footer-contact">
         <h3>Get in touch</h3>
         <p>Have a project in mind? Tell us what you're trying to improve.</p>
-        <a href="mailto:cary.wood.777@gmail.com">cary.wood.777@gmail.com</a>
+        
         <a class="lf-footer-secondary" href="/contact/">Send an inquiry ↗</a>
       </div>
     </div>
     <div class="container lf-footer-bottom">
       <span>© {new Date().getFullYear()} LeadsFlo. All rights reserved.</span>
       <span>More leads. Less guesswork.</span>
+      <nav class="lf-footer-legal" aria-label="Legal information"><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-and-conditions/">Terms &amp; Conditions</a></nav>
       <a href="#top" class="lf-footer-back">Back to top ↑</a>
     </div>
+  <style>.lf-footer-legal{display:flex;gap:16px;flex-wrap:wrap;align-items:center}.lf-footer-legal a{font-size:12px;color:#aebbd2;text-decoration:none}.lf-footer-legal a:hover{text-decoration:underline;color:#c9f36b}@media(max-width:700px){.lf-footer-legal{justify-content:flex-start}}</style>
   </footer>
   <script>
     const revealElements = document.querySelectorAll(".reveal");
