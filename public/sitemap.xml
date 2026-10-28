@@ -1,6 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://leadsflo.co/</loc>
+  </url>
+  <url>
     <loc>https://leadsflo.co/about/</loc>
   </url>
   <url>
@@ -10,16 +13,19 @@
     <loc>https://leadsflo.co/appointment-setting/</loc>
   </url>
   <url>
+    <loc>https://leadsflo.co/christmas-lighting-leads/</loc>
+  </url>
+  <url>
     <loc>https://leadsflo.co/contact/</loc>
   </url>
   <url>
     <loc>https://leadsflo.co/crm-automation/</loc>
   </url>
   <url>
-    <loc>https://leadsflo.co/</loc>
+    <loc>https://leadsflo.co/industries/</loc>
   </url>
   <url>
-    <loc>https://leadsflo.co/industries/</loc>
+    <loc>https://leadsflo.co/insights/</loc>
   </url>
   <url>
     <loc>https://leadsflo.co/insights/crm-follow-up-for-new-leads/</loc>
@@ -31,16 +37,22 @@
     <loc>https://leadsflo.co/insights/why-your-lead-generation-landing-page-is-not-converting/</loc>
   </url>
   <url>
-    <loc>https://leadsflo.co/insights/</loc>
-  </url>
-  <url>
     <loc>https://leadsflo.co/our-approach/</loc>
   </url>
   <url>
     <loc>https://leadsflo.co/performance-marketing/</loc>
   </url>
   <url>
+    <loc>https://leadsflo.co/privacy-policy/</loc>
+  </url>
+  <url>
+    <loc>https://leadsflo.co/terms-and-conditions/</loc>
+  </url>
+  <url>
     <loc>https://leadsflo.co/websites-funnels/</loc>
+  </url>
+  <url>
+    <loc>https://leadsflo.co/work/</loc>
   </url>
   <url>
     <loc>https://leadsflo.co/work/cypress-christmas-lights/</loc>
@@ -48,10 +60,4 @@
   <url>
     <loc>https://leadsflo.co/work/sonya-hair-braiding/</loc>
   </url>
-  <url>
-    <loc>https://leadsflo.co/work/</loc>
-  </url>
-  <url><loc>https://leadsflo.co/privacy-policy/</loc></url>
-  <url><loc>https://leadsflo.co/terms-and-conditions/</loc></url>
-  <url><loc>https://leadsflo.co/christmas-lighting-leads/</loc></url>
 </urlset>
