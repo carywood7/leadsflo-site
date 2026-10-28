@@ -25,6 +25,16 @@ const features = [
 <!doctype html>
 <html lang="en">
 <head>
+
+  <!-- LeadsFlo Google Analytics 4 -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QE382W17N6"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){window.dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QE382W17N6');
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#F7F7F2" />
@@ -1011,6 +1021,23 @@ body .lp-footer-logo-link.lp-brand:focus-visible::after {
   }
 }
 </style>
+
+
+  <!-- Christmas landing page demo click tracking -->
+  <script is:inline>
+    document.addEventListener('click', function(event) {
+      const link = event.target instanceof Element
+        ? event.target.closest('a.lp-track-demo')
+        : null;
+
+      if (!link || typeof window.gtag !== 'function') return;
+
+      window.gtag('event', 'demo_booking_click', {
+        booking_provider: 'google_calendar',
+        page_location: window.location.href
+      });
+    }, true);
+  </script>
 
 </body>
 </html>
