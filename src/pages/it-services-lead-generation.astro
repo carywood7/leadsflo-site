@@ -1,0 +1,1201 @@
+---
+import BrandMark from "../components/BrandMark.astro";
+import "../styles/global.css";
+
+const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const canonical = "https://leadsflo.co/it-services-lead-generation/";
+
+const services = [{"num": "01", "title": "IT services demand generation", "tag": "Google, LinkedIn & targeted campaigns", "description": "Reach businesses planning IT consulting, cloud migrations, infrastructure modernization and systems integration projects."}, {"num": "02", "title": "IT SEO, websites & funnels", "tag": "Search intent & conversion", "description": "Create focused service pages and landing experiences explaining your capabilities, target customers and discovery process."}, {"num": "03", "title": "Project qualification & CRM", "tag": "Scope, budget & follow-up", "description": "Capture high-level project needs, company fit, expected budget, timing and decision-maker information before assigning an opportunity."}, {"num": "04", "title": "Discovery & appointment setting", "tag": "Consultation to proposal", "description": "Turn suitable inquiries into prepared discovery meetings, proposal follow-up and structured sales-to-delivery handoffs."}];
+
+const stages = [{"name": "Attract", "heading": "Reach businesses planning IT projects.", "eyebrow": "01 / ACQUISITION", "description": "Connect with organizations searching for consulting, cloud modernization, systems integration or infrastructure expertise.", "signal": "Campaign source, company profile, geography and service interest.", "next": "Qualify the project"}, {"name": "Qualify", "heading": "Understand what needs to be delivered.", "eyebrow": "02 / PROJECT QUALIFICATION", "description": "Capture the service required, business size, indicative budget, project timeline and buying responsibilities.", "signal": "Project type, scope, budget range and decision window.", "next": "Arrange consultation"}, {"name": "Consult", "heading": "Book a relevant technical conversation.", "eyebrow": "03 / DISCOVERY", "description": "Connect suitable prospects with the appropriate consultant or sales engineer. Confirm goals and expectations for the meeting.", "signal": "Assigned consultant, buyer roles and meeting status.", "next": "Define project scope"}, {"name": "Scope", "heading": "Translate requirements into a clear scope.", "eyebrow": "04 / SOLUTION PLANNING", "description": "Track project requirements, dependencies, technical discovery and assumptions before preparing a commercial proposal.", "signal": "Scope review, technical owner and dependencies.", "next": "Prepare proposal"}, {"name": "Propose", "heading": "Keep commercial decisions moving.", "eyebrow": "05 / SALES PIPELINE", "description": "Follow proposal status, procurement requirements, stakeholder questions and the agreed next steps.", "signal": "Proposal status, estimated value and buying timeline.", "next": "Coordinate the kickoff"}, {"name": "Onboard", "heading": "Hand the project to delivery.", "eyebrow": "06 / PROJECT HANDOFF", "description": "Coordinate approved sales-to-delivery tasks when the deal closes. Technical access and implementation decisions remain with authorized personnel.", "signal": "Agreement status, project owner and kickoff checklist.", "next": "Develop the client relationship"}];
+
+const questions = [{"q": "Which IT service providers do you work with?", "a": "IT consulting firms, cloud service providers, systems integrators, infrastructure specialists and other B2B technology companies."}, {"q": "Can you help generate cloud migration leads?", "a": "We can create campaigns, landing pages and qualification processes around genuine cloud migration and modernization services."}, {"q": "How do you qualify IT project leads?", "a": "We can assess service requirements, company fit, approximate scope, budget expectations, buying roles and implementation timing."}, {"q": "Do you work with project-based and recurring services?", "a": "Yes. The sales process can be adapted to consulting projects, implementations and recurring technology services."}, {"q": "Can you connect our CRM and booking system?", "a": "We assess supported integrations, permissions and current workflows before defining CRM routing, follow-up and scheduling."}, {"q": "Do you guarantee signed IT projects?", "a": "No. Outcomes depend on demand, positioning, budget, lead quality and sales execution. We focus on measurable, suitable opportunities."}];
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#101e32" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href={canonical} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>IT Services Lead Generation Agency | LeadsFlo</title>
+  <meta name="description" content="IT services lead generation for IT consulting firms, cloud providers and systems integrators. Google Ads, SEO, project qualification, CRM follow-up and appointment setting." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="IT Services Lead Generation Agency | LeadsFlo" />
+  <meta property="og:description" content="Lead generation, qualification and connected follow-up for B2B IT service providers." />
+  <meta property="og:url" content={canonical} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context":"https://schema.org",
+    "@type":"Service",
+    name:"IT Services Lead Generation and Marketing",
+    serviceType:"IT consulting, cloud and technology services lead generation and appointment setting",
+    provider:{"@type":"Organization",name:"LeadsFlo",url:"https://leadsflo.co/"},
+    areaServed:{"@type":"Country",name:"United States"},
+    audience:{"@type":"BusinessAudience",audienceType:"IT consulting firms, cloud service providers, systems integrators and B2B IT companies"},
+    url:canonical
+  })} />
+</head>
+<body class="it-page">
+  <header class="mp-header" id="top">
+    <div class="mp-container mp-header-inner">
+      <a class="mp-logo" href="/" aria-label="LeadsFlo homepage">
+        <BrandMark />
+
+
+
+<svg class="mp-node-mark mp-network-shield"
+     viewBox="13 0 38 51" preserveAspectRatio="none"
+     xmlns="http://www.w3.org/2000/svg"
+     fill="none"
+     aria-hidden="true"
+     focusable="false">
+  <!-- MSP_SHIELD_REFINED_V4 -->
+
+  <!-- Strong, single-contour enterprise shield -->
+  <path class="mp-shield-outline"
+        d="M32 2.5
+           L47.5 9.5
+           V27
+           C47.5 38 41.5 44.5 32 48.5
+           C22.5 44.5 16.5 38 16.5 27
+           V9.5
+           Z"/>
+
+  <!-- Connected IT network -->
+  <g class="mp-network-lines">
+    <path d="M32 18 L24 31"/>
+    <path d="M32 18 L40 31"/>
+    <path d="M24 31 L40 31"/>
+  </g>
+
+  <g class="mp-network-nodes">
+    <circle class="mp-node mp-node-one"
+            cx="32" cy="18" r="3.8"/>
+    <circle class="mp-node mp-node-two"
+            cx="24" cy="31" r="3.8"/>
+    <circle class="mp-node mp-node-three"
+            cx="40" cy="31" r="3.8"/>
+  </g>
+</svg>
+
+
+
+      </a>
+      <button class="mp-menu" id="mp-menu" aria-controls="mp-nav" aria-expanded="false" type="button">Menu <span aria-hidden="true">☰</span></button>
+      <nav class="mp-nav" id="mp-nav" aria-label="IT Services page navigation">
+        <a href="#approach">Our approach</a>
+        <a href="#workflow">Buyer journey</a>
+        <a href="#founder">Who you work with</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+      <a class="mp-header-cta" href={booking} target="_blank" rel="noopener noreferrer">Book a strategy call ↗</a>
+    </div>
+  </header>
+
+  <main>
+
+
+<section class="mp-hero">
+  <div class="mp-container mp-hero-grid">
+    <div class="mp-hero-copy">
+      <p class="mp-kicker"><span class="mp-dot"></span> LEAD GENERATION FOR B2B IT SERVICE PROVIDERS</p>
+      <h1>More qualified IT projects.<br /><em>From inquiry to agreement.</em></h1>
+      <p class="mp-lede">Reach businesses looking for IT consulting, cloud solutions and infrastructure expertise. Qualify relevant projects, book discovery meetings and keep opportunities moving.</p>
+      <div class="mp-actions">
+        <a class="mp-button mp-button-primary" href={booking} target="_blank" rel="noopener noreferrer">Discuss your IT business ↗</a>
+        <a class="mp-text-link" href="#workflow">Explore the project journey ↓</a>
+      </div>
+      <div class="mp-proof">
+        <span>IT CONSULTING</span>
+        <span>CLOUD & INFRASTRUCTURE</span>
+        <span>PROJECT QUALIFICATION</span>
+      </div>
+    </div>
+    <div class="mp-hero-visual">
+      <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=85"
+           alt="Modern workplace representing business technology services"
+           width="1000" height="1200" fetchpriority="high"/>
+      <div class="mp-hero-shade"></div>
+      <div class="mp-visual-top"><span class="mp-live-dot"></span> IT SERVICES / PROJECT PIPELINE</div>
+      <div class="mp-visual-bottom">
+        <span>01 / RELEVANT BUSINESS DEMAND</span>
+        <strong>Better-fit projects. Better-prepared conversations.</strong>
+        <small>ATTRACT → QUALIFY → CONSULT → PROPOSE</small>
+      </div>
+      <div class="mp-signal"><span>↗</span><div>
+        <strong>New project inquiry</strong>
+        <small>Scope. Budget. Timeline.</small>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="mp-marquee" aria-label="IT services marketing capabilities">
+  <div class="mp-marquee-label">IT GROWTH SYSTEMS <span aria-hidden="true">✳</span></div>
+  <div class="mp-marquee-window"><div class="mp-marquee-track">
+    {Array.from({length:2},(_,i)=><div class="mp-marquee-group" aria-hidden={i===1 ? "true" : undefined}>
+      <span>✦ IT Services Lead Generation</span>
+      <span>◈ IT Consulting Marketing</span>
+      <span>◎ Cloud Project Leads</span>
+      <span>◇ Google Ads & SEO</span>
+      <span>▣ Infrastructure Projects</span>
+      <span>↗ Technical Discovery</span>
+      <span>⌁ CRM Follow-up</span>
+      <span>▦ Proposal Handoffs</span>
+      <span>✳ Systems Integration</span>
+    </div>)}
+  </div></div>
+</section>
+
+
+
+
+
+<section class="mp-intro mp-container">
+  <p class="mp-kicker">THE IT SERVICES SALES CHALLENGE</p>
+  <div>
+    <h2>Complex projects.<br /><em>Clear buying conversations.</em></h2>
+    <p>IT buyers need a provider who understands their business goals, technical requirements and delivery constraints. Marketing should attract suitable organizations and help your team evaluate project fit before committing sales time.</p>
+  </div>
+</section>
+
+
+
+
+
+<section class="mp-services" id="approach">
+  <div class="mp-container">
+    <div class="mp-heading">
+      <div><p class="mp-kicker">CONNECTED IT SERVICES MARKETING</p><h2>Find the right projects.<br />Build a stronger pipeline.</h2></div>
+      <p>Combine search visibility, qualified inquiries, discovery meetings and connected follow-up.</p>
+    </div>
+    <div class="mp-service-grid">
+      {services.map(item=><article class="mp-service">
+        <span class="mp-service-num">{item.num} / {item.tag}</span>
+        <h3>{item.title}</h3>
+        <p>{item.description}</p>
+        <span class="mp-service-arrow" aria-hidden="true">↗</span>
+      </article>)}
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="mp-gallery">
+  <div class="mp-container">
+    <div class="mp-heading">
+      <div><p class="mp-kicker">DIFFERENT SERVICES / DIFFERENT BUYERS</p><h2>Built for the projects<br />your business delivers.</h2></div>
+      <p>Consulting, cloud modernization and infrastructure work require different messaging and qualification.</p>
+    </div>
+    <div class="mp-gallery-grid">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1497366858526-0766cadbe8fa?auto=format&fit=crop&w=1000&q=85"
+             alt="Office environment representing IT consulting"
+             loading="lazy" width="750" height="900"/>
+        <figcaption><span>01 / ADVISORY</span><strong>IT consulting</strong></figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=85"
+             alt="Data center representing cloud and infrastructure services"
+             loading="lazy" width="750" height="900"/>
+        <figcaption><span>02 / MODERNIZATION</span><strong>Cloud & infrastructure</strong></figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=85"
+             alt="Technology hardware representing systems integration"
+             loading="lazy" width="750" height="900"/>
+        <figcaption><span>03 / DELIVERY</span><strong>Systems integration</strong></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="mp-workflow" id="workflow">
+  <div class="mp-container">
+    <div class="mp-heading">
+      <div><p class="mp-kicker">INTERACTIVE / IT PROJECT BUYER JOURNEY</p><h2>From project interest<br />to signed agreement.</h2></div>
+      <p>Hover or select a stage to explore the path from IT service inquiry to discovery, scoping and onboarding.</p>
+    </div>
+    <div class="mp-workflow-layout">
+      <div class="mp-stage-list" role="group" aria-label="Explore IT project buyer journey">
+        {stages.map((stage,i)=><button class:list={["mp-stage",{"is-active":i===0}]} type="button" data-stage={i} aria-pressed={i===0 ? "true" : "false"}>
+          <span>{String(i+1).padStart(2,"0")}</span>
+          <strong>{stage.name}</strong>
+          <b aria-hidden="true">↗</b>
+        </button>)}
+      </div>
+      <div class="mp-stage-detail" aria-live="polite">
+        <span id="mp-stage-eyebrow">{stages[0].eyebrow}</span>
+        <h3 id="mp-stage-heading">{stages[0].heading}</h3>
+        <p id="mp-stage-description">{stages[0].description}</p>
+        <div class="mp-stage-signal">
+          <small>PROJECT CONTEXT</small>
+          <strong id="mp-stage-signal">{stages[0].signal}</strong>
+        </div>
+        <div class="mp-stage-next">
+          <span>NEXT STEP</span>
+          <strong id="mp-stage-next">{stages[0].next}</strong>
+        </div>
+        <small class="mp-demo-disclaimer">Illustrative process, not a live CRM integration.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="mp-fit mp-container">
+  <div>
+    <p class="mp-kicker">BETTER IT PROJECT QUALIFICATION</p>
+    <h2>More than a form.<br />A clearer project opportunity.</h2>
+    <p>Understand what a business wants to accomplish before filling your team's calendar with calls.</p>
+  </div>
+  <div class="mp-fit-list">
+    <article><span>01</span><div><h3>Business and service fit</h3><p>Company size, geography, consulting needs, cloud requirements and infrastructure scope.</p></div></article>
+    <article><span>02</span><div><h3>Project scope and budget</h3><p>High-level requirements, approximate budget and delivery expectations.</p></div></article>
+    <article><span>03</span><div><h3>Stakeholders and timing</h3><p>Decision-makers, procurement process, project urgency and next discovery step.</p></div></article>
+  </div>
+</section>
+
+
+
+
+<section class="mp-calc" id="calculator">
+  <div class="mp-container mp-calc-grid">
+    <div>
+      <p class="mp-kicker">IT SERVICES PIPELINE SCENARIO</p>
+      <h2>What could more qualified project conversations mean?</h2>
+      <p>Change the assumptions to explore an illustrative value of new IT project opportunities. This is not a campaign forecast.</p>
+      <p class="mp-calc-note">IT project revenue may be one-time rather than monthly recurring. Actual revenue depends on scope, sales timing, costs and execution.</p>
+    </div>
+    <div class="mp-calc-card">
+      <label for="mp-leads">Monthly qualified inquiries <strong id="mp-leads-value">30</strong></label>
+      <input type="range" id="mp-leads" min="5" max="200" step="5" value="30"/>
+      <label for="mp-meetings">Meetings booked <strong id="mp-meetings-value">40%</strong></label>
+      <input type="range" id="mp-meetings" min="5" max="90" step="5" value="40"/>
+      <label for="mp-close">Closed-won from booked meetings <strong id="mp-close-value">20%</strong></label>
+      <input type="range" id="mp-close" min="5" max="70" step="5" value="20"/>
+      <label for="mp-mrr">Average project contract value <strong id="mp-mrr-value">$2,500</strong></label>
+      <input type="range" id="mp-mrr" min="500" max="15000" step="250" value="2500"/>
+      <div class="mp-calc-result">
+        <span>ILLUSTRATIVE PROJECT CONTRACT VALUE</span>
+        <strong id="mp-result">$6,000</strong>
+        <small>Expected-value calculation only. Excludes acquisition and delivery costs, contract timing and sales cycle length.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="mp-founder" id="founder">
+  <div class="mp-container mp-founder-grid">
+    <div class="mp-founder-art">
+      <img class="mp-founder-photo"
+           src="https://carywood.co/img/person/avtar.png"
+           alt="Cary Wood, founder of LeadsFlo"
+           loading="lazy" decoding="async"/>
+      <div class="mp-founder-photo-shade"></div>
+      <div class="mp-founder-photo-caption">
+        <span>FOUNDER / LEADSFLO</span>
+        <strong>Cary Wood</strong>
+        <small>Sales · Marketing · Full-stack Development</small>
+      </div>
+    </div>
+    <div class="mp-founder-copy">
+      <p class="mp-kicker">MARKETING MEETS TECHNICAL EXPERIENCE</p>
+      <h2>Work with a marketer who also <em>builds software.</em></h2>
+      <p>I'm Cary Wood. My background combines more than 13 years of sales and marketing with full-stack development, CRM and automation work.</p>
+      <p>I've built MSP-focused tools and workflows, including MSP Automate and MSP VOC. That hands-on experience helps me understand the technical work and buying process behind B2B IT services.</p>
+      <p>At LeadsFlo, we translate that understanding into clearer marketing, better-fit project inquiries and an organized path from discovery to proposal.</p>
+      <div class="mp-founder-links">
+        <a href="https://mspautomations.co/" target="_blank" rel="noopener noreferrer">Explore MSP Automations ↗</a>
+        <a href="/our-approach/">Our approach ↗</a>
+        <a href={booking} target="_blank" rel="noopener noreferrer">Speak with me ↗</a>
+      </div>
+      <p class="mp-founder-footnote">MSP Automations products are separate from LeadsFlo and are not included by default in marketing engagements.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="mp-resources" id="resources">
+  <div class="mp-container">
+    <p class="mp-kicker">IT SERVICES MARKETING INSIGHTS</p>
+    <div class="mp-heading">
+      <h2>Practical guides for IT service providers.</h2>
+      <p>Explore guides to IT services lead generation, marketing strategy and paid search for B2B technology companies.</p>
+    </div>
+    <div class="mp-resource-grid"><article><span>01 / CLIENT ACQUISITION</span><h3><a href="/insights/it-services-lead-generation/">IT Services Lead Generation</a></h3><p>Attract and qualify relevant IT project inquiries.</p></article>
+<article><span>02 / MARKETING STRATEGY</span><h3><a href="/insights/marketing-strategies-for-it-companies/">Marketing Strategies for IT Companies</a></h3><p>Position consulting, cloud and infrastructure services to business buyers.</p></article>
+<article><span>03 / PAID SEARCH</span><h3><a href="/insights/google-ads-for-it-services/">Google Ads for IT Services</a></h3><p>Capture commercial demand and improve project lead quality.</p></article></div>
+  </div>
+</section>
+
+
+
+
+<section class="mp-faq mp-container" id="faq">
+  <div class="mp-heading">
+    <div><p class="mp-kicker">COMMON QUESTIONS</p><h2>Clear answers.<br />Better project fit.</h2></div>
+  </div>
+  <div class="mp-faq-list">
+    {questions.map(item=><details><summary>{item.q}<span aria-hidden="true">+</span></summary><p>{item.a}</p></details>)}
+  </div>
+</section>
+
+
+
+
+<section class="mp-final">
+  <div class="mp-container">
+    <p class="mp-kicker">LET'S TALK ABOUT YOUR IT PROJECT PIPELINE</p>
+    <h2>Find better-fit IT projects. Turn interest into opportunity.</h2>
+    <p>Tell us which services you deliver and who you want to reach. We'll discuss where your marketing and sales process can improve.</p>
+    <a class="mp-button mp-button-light" href={booking} target="_blank" rel="noopener noreferrer">Book an IT services strategy call ↗</a>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer class="mp-footer">
+    <div class="mp-container">
+      <div class="mp-footer-grid">
+        <div class="mp-footer-brand">
+          <a href="#top" class="mp-logo" aria-label="LeadsFlo — back to top"><BrandMark />
+
+
+<svg class="mp-node-mark mp-network-shield"
+     viewBox="13 0 38 51" preserveAspectRatio="none"
+     xmlns="http://www.w3.org/2000/svg"
+     fill="none"
+     aria-hidden="true"
+     focusable="false">
+  <!-- MSP_SHIELD_REFINED_V4 -->
+
+  <!-- Strong, single-contour enterprise shield -->
+  <path class="mp-shield-outline"
+        d="M32 2.5
+           L47.5 9.5
+           V27
+           C47.5 38 41.5 44.5 32 48.5
+           C22.5 44.5 16.5 38 16.5 27
+           V9.5
+           Z"/>
+
+  <!-- Connected IT network -->
+  <g class="mp-network-lines">
+    <path d="M32 18 L24 31"/>
+    <path d="M32 18 L40 31"/>
+    <path d="M24 31 L40 31"/>
+  </g>
+
+  <g class="mp-network-nodes">
+    <circle class="mp-node mp-node-one"
+            cx="32" cy="18" r="3.8"/>
+    <circle class="mp-node mp-node-two"
+            cx="24" cy="31" r="3.8"/>
+    <circle class="mp-node mp-node-three"
+            cx="40" cy="31" r="3.8"/>
+  </g>
+</svg>
+
+
+</a>
+          <p>Lead generation, qualification and connected follow-up for B2B IT service providers.</p>
+        </div>
+        <nav aria-label="Explore IT Services page"><h3>Explore</h3><a href="#approach">Our approach</a><a href="#workflow">Buyer journey</a><a href="#founder">Meet the founder</a><a href="#calculator">Project calculator</a><a href="#faq">FAQs</a></nav>
+        <nav aria-label="Related services"><h3>Services</h3><a href="/performance-marketing/">Performance marketing</a><a href="/websites-funnels/">Websites & funnels</a><a href="/crm-automation/">CRM & automation</a><a href="/appointment-setting/">Appointment setting</a><a href="https://mspautomations.co/" target="_blank" rel="noopener noreferrer">MSP Automations ↗</a></nav>
+        <div class="mp-footer-contact"><h3>Get started</h3><p>Want more qualified IT project opportunities?</p><a class="mp-footer-button" href={booking} target="_blank" rel="noopener noreferrer">Book a call ↗</a><a href="/contact/">Contact LeadsFlo</a></div>
+      </div>
+
+
+
+
+<div class="it-footer-resources">
+  <strong>IT Services resources</strong>
+  <a href="/insights/it-services-lead-generation/">Lead Generation</a>
+  <a href="/insights/marketing-strategies-for-it-companies/">Marketing Strategy</a>
+  <a href="/insights/google-ads-for-it-services/">Google Ads</a>
+</div>
+
+<div class="mp-footer-bottom"><span>© {new Date().getFullYear()} LeadsFlo</span><div><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-and-conditions/">Terms & Conditions</a><a href="#top">Back to top ↑</a></div></div>
+    </div>
+  </footer>
+  <div class="mp-mobile-cta"><a href={booking} target="_blank" rel="noopener noreferrer">Book a cybersecurity strategy call ↗</a></div>
+
+  <script define:vars={{stages}} is:inline>
+    (() => {
+      const header = document.querySelector(".mp-header");
+      const menu = document.getElementById("mp-menu");
+      const nav = document.getElementById("mp-nav");
+      let lastScroll = window.scrollY;
+      menu.addEventListener("click", () => {
+        const opened = header.classList.toggle("is-open");
+        menu.setAttribute("aria-expanded", String(opened));
+        header.classList.remove("is-hidden");
+      });
+      nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+        header.classList.remove("is-open");
+        menu.setAttribute("aria-expanded", "false");
+      }));
+      window.addEventListener("scroll", () => {
+        const current = window.scrollY;
+        if (Math.abs(current-lastScroll) < 6) return;
+        if (current < 90 || current < lastScroll) header.classList.remove("is-hidden");
+        else if (!header.classList.contains("is-open")) header.classList.add("is-hidden");
+        lastScroll = current;
+      }, {passive:true});
+
+      const stageButtons = [...document.querySelectorAll(".mp-stage")];
+      stageButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          const index = Number(button.dataset.stage);
+          const stage = stages[index];
+          if (!stage) return;
+          stageButtons.forEach(b => {
+            const active = b === button;
+            b.classList.toggle("is-active", active);
+            b.setAttribute("aria-pressed", String(active));
+          });
+          const values = {
+            "mp-stage-eyebrow":stage.eyebrow,
+            "mp-stage-heading":stage.heading,
+            "mp-stage-description":stage.description,
+            "mp-stage-signal":stage.signal,
+            "mp-stage-next":stage.next
+          };
+          Object.entries(values).forEach(([id,value]) => {
+            document.getElementById(id).textContent = value;
+          });
+        });
+      });
+
+
+      // MSP_HOVER_POLISH_V2
+      // Hover previews stages; click remains the touch fallback.
+      stageButtons.forEach(button => {
+        button.addEventListener("mouseenter", () => {
+          button.click();
+        });
+
+        button.addEventListener("focus", () => {
+          button.click();
+        });
+      });
+
+      // Desktop hover FAQs; native details still work by click,
+      // keyboard and touch.
+      const hoverFAQs = document.querySelectorAll(
+        ".mp-faq-list details"
+      );
+
+      const desktopHover = window.matchMedia(
+        "(hover: hover) and (pointer: fine)"
+      );
+
+      hoverFAQs.forEach(details => {
+        details.addEventListener("mouseenter", () => {
+          if (desktopHover.matches) details.open = true;
+        });
+
+        details.addEventListener("mouseleave", () => {
+          if (desktopHover.matches) details.open = false;
+        });
+      });
+
+      const inputs = ["mp-leads","mp-meetings","mp-close","mp-mrr"]
+        .map(id => document.getElementById(id));
+      const dollars = new Intl.NumberFormat("en-US", {
+        style:"currency",currency:"USD",maximumFractionDigits:0
+      });
+      function calculate() {
+        const [leads, meetings, closeRate, mrr] = inputs.map(x => Number(x.value));
+        document.getElementById("mp-leads-value").textContent = leads;
+        document.getElementById("mp-meetings-value").textContent = meetings+"%";
+        document.getElementById("mp-close-value").textContent = closeRate+"%";
+        document.getElementById("mp-mrr-value").textContent = dollars.format(mrr);
+        document.getElementById("mp-result").textContent =
+          dollars.format(leads*meetings/100*closeRate/100*mrr);
+      }
+      inputs.forEach(input => input.addEventListener("input",calculate));
+      calculate();
+    })();
+  </script>
+</body>
+</html>
+
+<style is:global>
+  :root{scroll-behavior:smooth}
+  body.it-page{margin:0;background:#f5f8fb;color:#10263a;font:16px/1.6 "DM Sans",sans-serif}
+  body.it-page *{box-sizing:border-box}
+  body.it-page a{text-decoration:none}
+  body.it-page button{font:inherit}
+  body.it-page h1,body.it-page h2,body.it-page h3{font-family:Manrope,sans-serif;letter-spacing:-.055em}
+  body.it-page h2{font-size:clamp(36px,3.8vw,57px);line-height:1.12;margin:0}
+  body.it-page em{font-style:normal;color:#2563eb}
+  body.it-page .mp-container{width:min(1180px,calc(100% - 52px));margin:auto}
+  body.it-page .mp-kicker{display:flex;align-items:center;gap:10px;font:800 12px Manrope,sans-serif;letter-spacing:.12em;color:#36778e;text-transform:uppercase;margin:0 0 25px}
+  body.it-page .mp-dot,body.it-page .mp-live-dot{display:inline-block;background:#10b8a7;width:9px;height:9px;border-radius:50%;box-shadow:0 0 0 5px #10b8a725}
+  body.it-page .mp-header{position:sticky;top:0;z-index:70;background:#f8fbfdee;border-bottom:1px solid #dde7ed;backdrop-filter:blur(18px);transition:transform .25s ease}
+  body.it-page .mp-header.is-hidden{transform:translateY(-105%)}
+  body.it-page .mp-header-inner{display:flex;align-items:center;min-height:91px;gap:30px}
+  body.it-page .mp-logo{
+      display:inline-flex;
+      position:relative;
+      align-items:center;
+      flex-shrink:0;
+      margin-right:auto;
+      gap:6px;
+      font-size:35px;
+      overflow:visible;
+    }
+  body.it-page .mp-logo .lf-brand-v4{font-size:35px;--brand-text:#10263a;--brand-flo:#2563eb;--brand-period:#10b8a7;--brand-plane:#2563eb}
+  body.it-page .mp-node-mark{
+      position:static;
+      display:block;
+      order:-1;
+      width:1.14em;
+      height:1.45em;
+      flex:0 0 1.14em;
+      align-self:center;
+      overflow:visible;
+      pointer-events:none;
+      transform-origin:center;
+      transition:transform .35s ease;
+    }
+  body.it-page .mp-logo:hover .mp-node-mark,
+    body.it-page .mp-logo:focus-visible .mp-node-mark{
+      transform:translateY(-2px);
+    }
+  body.it-page .mp-nav{display:flex;gap:25px;align-items:center}
+  body.it-page .mp-nav a{font-size:16px;font-weight:750;color:#183c55;white-space:nowrap}
+  body.it-page .mp-nav a:hover{color:#2563eb}
+  body.it-page .mp-header-cta{background:#2563eb;color:white;padding:16px 20px;font-weight:800;font-size:15px;white-space:nowrap}
+  body.it-page .mp-header-cta:hover{background:#164dc3}
+  body.it-page .mp-menu{display:none}
+  body.it-page .mp-hero{padding:88px 0 95px;background:linear-gradient(115deg,#f5f8fb,#e9f1f7)}
+  body.it-page .mp-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:7%;align-items:center}
+  body.it-page .mp-hero-copy{padding:12px 0}
+  body.it-page h1{font-size:clamp(49px,5.4vw,80px);line-height:1.065;letter-spacing:-.072em;font-weight:800;margin:34px 0 28px}
+  body.it-page .mp-lede{font-size:19px;line-height:1.8;color:#496378;max-width:630px}
+  body.it-page .mp-actions{display:flex;flex-wrap:wrap;align-items:center;gap:24px;margin:34px 0 39px}
+  body.it-page .mp-button{display:inline-flex;gap:25px;justify-content:space-between;align-items:center;padding:19px 23px;font-size:16px;font-weight:800;transition:transform .2s ease}
+  body.it-page .mp-button:hover{transform:translateY(-3px)}
+  body.it-page .mp-button-primary{background:#2563eb;color:#fff}
+  body.it-page .mp-text-link{color:#174963;font-weight:800;font-size:15px}
+  body.it-page .mp-proof{display:flex;flex-wrap:wrap;gap:17px;border-top:1px solid #cbdde6;padding-top:24px}
+  body.it-page .mp-proof span{color:#49667c;font:800 11px Manrope,sans-serif;letter-spacing:.065em}
+  body.it-page .mp-hero-visual{height:610px;position:relative;background:#15283d;box-shadow:0 35px 65px #10263a21;isolation:isolate}
+  body.it-page .mp-hero-visual img{height:100%;width:100%;object-fit:cover;display:block}
+  body.it-page .mp-hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,#081d3125 10%,#081d31cd 100%)}
+  body.it-page .mp-visual-top{position:absolute;top:24px;left:24px;color:white;background:#10263ac9;padding:12px 15px;font:800 11px Manrope,sans-serif;letter-spacing:.08em;display:flex;gap:14px;align-items:center}
+  body.it-page .mp-visual-bottom{position:absolute;bottom:45px;left:35px;right:30px;color:white;display:flex;flex-direction:column;gap:13px}
+  body.it-page .mp-visual-bottom span,body.it-page .mp-visual-bottom small{font:800 11px Manrope,sans-serif;letter-spacing:.06em}
+  body.it-page .mp-visual-bottom strong{font:800 clamp(26px,2.6vw,38px)/1.18 Manrope,sans-serif;letter-spacing:-.05em;max-width:490px}
+  body.it-page .mp-signal{position:absolute;right:-25px;top:46%;background:white;padding:16px 20px;box-shadow:0 15px 40px #0b223558;display:flex;gap:12px;align-items:center;color:#10263a}
+  body.it-page .mp-signal>span{background:#10b8a7;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:25px}
+  body.it-page .mp-signal strong,body.it-page .mp-signal small{display:block}
+  body.it-page .mp-signal small{font-size:12px;color:#657f8b}
+  body.it-page .mp-marquee{display:grid;grid-template-columns:auto minmax(0,1fr);background:#10263a;color:white;min-height:124px;overflow:hidden}
+  body.it-page .mp-marquee-label{padding:20px 34px;display:flex;align-items:center;gap:15px;border-right:1px solid #44647b;max-width:300px;font:800 12px/1.5 Manrope,sans-serif;letter-spacing:.08em}
+  body.it-page .mp-marquee-label span{color:#10b8a7;font-size:26px}
+  body.it-page .mp-marquee-window{overflow:hidden;display:flex;align-items:center;mask-image:linear-gradient(90deg,transparent,black 5%,black 95%,transparent)}
+  body.it-page .mp-marquee-track{display:flex;width:max-content;animation:mpMarquee 47s linear infinite}
+  body.it-page .mp-marquee-group{display:flex;gap:12px;padding-right:12px;flex-shrink:0;align-items:center}
+  body.it-page .mp-marquee-group span{min-width:190px;display:grid;place-items:center;background:#1c3e57;color:#e8f6fb;height:72px;padding:12px 25px;white-space:nowrap;font-size:16px;font-weight:750;border:1px solid #31566e}
+  body.it-page .mp-marquee:hover .mp-marquee-track{animation-play-state:paused}
+  @keyframes mpMarquee{to{transform:translateX(-50%)}}
+  body.it-page .mp-intro{display:grid;grid-template-columns:.28fr 1fr;gap:6%;padding-top:115px;padding-bottom:115px}
+  body.it-page .mp-intro p:not(.mp-kicker){font-size:18px;color:#4f687a;max-width:850px;line-height:1.85}
+  body.it-page .mp-services{padding:110px 0;background:#10263a;color:white}
+  body.it-page .mp-heading{display:flex;justify-content:space-between;gap:60px;align-items:end;margin-bottom:48px}
+  body.it-page .mp-heading>p{max-width:360px;font-size:17px;line-height:1.8;color:#61798a;margin:0}
+  body.it-page .mp-services .mp-heading>p,body.it-page .mp-workflow .mp-heading>p{color:#b5cfdd}
+  body.it-page .mp-services .mp-kicker,body.it-page .mp-workflow .mp-kicker,body.it-page .mp-final .mp-kicker{color:#74e5d7}
+  body.it-page .mp-service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid #476178}
+  body.it-page .mp-service{min-height:350px;border-right:1px solid #476178;padding:30px 24px;position:relative;transition:background .25s ease}
+  body.it-page .mp-service:last-child{border-right:0}
+  body.it-page .mp-service:hover{background:#1b3d56}
+  body.it-page .mp-service-num{display:block;color:#7ce1d6;font:700 11px Manrope,sans-serif;letter-spacing:.05em}
+  body.it-page .mp-service h3{font-size:25px;line-height:1.23;margin:48px 0 16px}
+  body.it-page .mp-service p{font-size:16px;line-height:1.75;color:#c8dce5}
+  body.it-page .mp-service-arrow{position:absolute;bottom:22px;right:24px;color:#7ce1d6;font-size:23px}
+  body.it-page .mp-gallery{padding:110px 0;background:#e9f1f7}
+  body.it-page .mp-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  body.it-page .mp-gallery figure{margin:0;min-width:0;position:relative;overflow:hidden;background:#b4c9d7}
+  body.it-page .mp-gallery img{width:100%;height:420px;object-fit:cover;display:block;transition:transform .5s ease}
+  body.it-page .mp-gallery figure:hover img{transform:scale(1.035)}
+  body.it-page .mp-gallery figcaption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(0deg,#071828e8,transparent);display:flex;flex-direction:column;gap:8px;padding:55px 25px 23px;color:white}
+  body.it-page .mp-gallery figcaption span{font:800 11px Manrope,sans-serif;letter-spacing:.07em;color:#97f5e5}
+  body.it-page .mp-gallery figcaption strong{font-size:21px}
+  body.it-page .mp-workflow{padding:112px 0;background:#10263a;color:white}
+  body.it-page .mp-workflow-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:28px}
+  body.it-page .mp-stage-list{display:flex;flex-direction:column;gap:8px}
+  body.it-page .mp-stage{border:1px solid #345670;background:#1b3952;color:#eaf5fb;display:flex;align-items:center;gap:18px;text-align:left;padding:19px 24px;cursor:pointer;transition:background .2s,border-color .2stransform:translateX(0);transition:background .2s,border-color .2s,transform .2s;}
+  body.it-page .mp-stage span{color:#91b2ca;font-size:13px}
+  body.it-page .mp-stage strong{font-size:18px}
+  body.it-page .mp-stage b{margin-left:auto;color:#74e5d7;font-size:21px}
+  body.it-page .mp-stage:hover,body.it-page .mp-stage.is-active{border-color:#10b8a7;background:#23516b}
+  body.it-page .mp-stage-detail{background:#eaf3f8;color:#10263a;padding:clamp(28px,4vw,54px);display:flex;flex-direction:column;justify-content:center;min-height:470px}
+  body.it-page .mp-stage-detail>span{font:800 12px Manrope,sans-serif;letter-spacing:.08em;color:#36778e}
+  body.it-page .mp-stage-detail h3{font-size:clamp(29px,3vw,44px);line-height:1.15;margin:22px 0}
+  body.it-page .mp-stage-detail>p{font-size:18px;line-height:1.75;color:#4b6477}
+  body.it-page .mp-stage-signal{padding:22px 0;border-top:1px solid #c6d8e2;border-bottom:1px solid #c6d8e2;display:flex;flex-direction:column;gap:8px}
+  body.it-page .mp-stage-signal small,body.it-page .mp-stage-next span{font-size:11px;font-weight:800;letter-spacing:.1em;color:#36778e}
+  body.it-page .mp-stage-signal strong{font-size:16px;font-weight:650}
+  body.it-page .mp-stage-next{display:flex;align-items:center;gap:20px;margin-top:24px}
+  body.it-page .mp-stage-next strong{font-size:17px;color:#2563eb}
+  body.it-page .mp-demo-disclaimer{font-size:12px;color:#678394;margin-top:26px}
+  body.it-page .mp-fit{display:grid;grid-template-columns:.9fr 1.1fr;gap:9%;padding-top:115px;padding-bottom:115px}
+  body.it-page .mp-fit>div>p:not(.mp-kicker){font-size:18px;color:#4f687a;line-height:1.8}
+  body.it-page .mp-fit-list article{display:flex;gap:20px;border-bottom:1px solid #d4e0e7;padding:20px 0position:relative;border-left:3px solid transparent;padding-left:12px;transition:background .22s,transform .22s,border-color .22s,padding .22s;}
+  body.it-page .mp-fit-list article>span{color:#2563eb;font-weight:800}
+  body.it-page .mp-fit-list h3{font-size:23px;margin:0 0 10px}
+  body.it-page .mp-fit-list p{font-size:16px;line-height:1.8;color:#587084;margin:0}
+  body.it-page .mp-calc{background:#dfeaf2;padding:112px 0}
+  body.it-page .mp-calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10%;align-items:center}
+  body.it-page .mp-calc-grid>div:first-child>p:not(.mp-kicker){font-size:18px;line-height:1.8;color:#4d6879}
+  body.it-page .mp-calc-grid .mp-calc-note{font-size:14px!important;color:#678293!important}
+  body.it-page .mp-calc-card{background:white;padding:36px;box-shadow:0 23px 55px #10263a1c}
+  body.it-page .mp-calc-card label{display:flex;justify-content:space-between;gap:15px;font-size:16px;font-weight:750;margin:16px 0}
+  body.it-page .mp-calc-card input{width:100%;accent-color:#2563eb;margin:0 0 17px}
+  body.it-page .mp-calc-result{padding:27px;margin-top:15px;background:#10263a;color:white;display:flex;flex-direction:column;gap:12px}
+  body.it-page .mp-calc-result span{font-size:12px;font-weight:800;letter-spacing:.06em;color:#8de8dc}
+  body.it-page .mp-calc-result strong{font:800 clamp(32px,4vw,48px) Manrope,sans-serif}
+  body.it-page .mp-calc-result small{font-size:13px;line-height:1.6;color:#c1d4de}
+  body.it-page .mp-founder{background:#edf3f7;padding:112px 0}
+  body.it-page .mp-founder-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:9%;align-items:center}
+  body.it-page .mp-founder-art{min-height:550px;background:radial-gradient(circle at 50% 42%,#2c5a7d,#101e32 72%);color:white;position:relative;overflow:hidden;display:grid;place-items:center}
+  body.it-page .mp-founder-copy h2{margin-bottom:28px}
+  body.it-page .mp-founder-copy>p:not(.mp-kicker){font-size:17px;line-height:1.82;color:#4b6578}
+  body.it-page .mp-founder-links{display:flex;gap:25px;flex-wrap:wrap;margin:28px 0}
+  body.it-page .mp-founder-links a{color:#1955bc;font-size:16px;font-weight:800}
+  body.it-page .mp-founder-links a:hover{text-decoration:underline}
+  body.it-page .mp-founder-copy .mp-founder-footnote{font-size:13px!important;color:#6f8292!important}
+  body.it-page .mp-resources{padding:112px 0;background:white}
+  body.it-page .mp-resource-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+  body.it-page .mp-resource-grid article{background:#eef4f8;padding:30px;display:flex;flex-direction:column;min-height:250px;border:1px solid #dbe7edposition:relative;overflow:hidden;transition:transform .23s,background .23s,box-shadow .23s,border-color .23s;}
+  body.it-page .mp-resource-grid article span{font:800 11px Manrope,sans-serif;color:#2463b6;letter-spacing:.07em}
+  body.it-page .mp-resource-grid article h3{font-size:23px;line-height:1.3;margin:24px 0 12px}
+  body.it-page .mp-resource-grid article p{font-size:16px;color:#557186;line-height:1.7;margin:0}
+  body.it-page .mp-faq{padding-top:112px;padding-bottom:112px}
+  body.it-page .mp-faq-list{border-top:1px solid #d2e0e8}
+  body.it-page .mp-faq details{border-bottom:1px solid #d2e0e8}
+  body.it-page .mp-faq summary{padding:27px 0;list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:center;cursor:pointer;font-size:19px;font-weight:800}
+  body.it-page .mp-faq summary::-webkit-details-marker{display:none}
+  body.it-page .mp-faq summary span{font-size:28px;color:#2563eb}
+  body.it-page .mp-faq details[open] summary span{transform:rotate(45deg)}
+  body.it-page .mp-faq details p{font-size:17px;line-height:1.85;max-width:890px;color:#536e82;padding-bottom:25px;margin:0}
+  body.it-page .mp-final{background:#10263a;color:white;text-align:center;padding:115px 20px}
+  body.it-page .mp-final h2{max-width:900px;margin:auto}
+  body.it-page .mp-final>div>p:not(.mp-kicker){font-size:18px;line-height:1.8;color:#bfd6e2;max-width:700px;margin:25px auto}
+  body.it-page .mp-final .mp-kicker{justify-content:center}
+  body.it-page .mp-button-light{background:#eaf3f8;color:#10263a;margin-top:12px}
+  body.it-page .mp-footer{padding:75px 0 30px;background:#edf3f7;border-top:1px solid #d6e3eb}
+  body.it-page .mp-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:65px}
+  body.it-page .mp-footer-brand .mp-logo .lf-brand-v4{font-size:36px}
+  body.it-page .mp-footer-brand p,body.it-page .mp-footer-contact p{font-size:16px;line-height:1.8;color:#597285}
+  body.it-page .mp-footer-brand p{max-width:310px;margin-top:28px}
+  body.it-page .mp-footer-grid nav,body.it-page .mp-footer-contact{display:flex;flex-direction:column;align-items:flex-start;gap:15px}
+  body.it-page .mp-footer-grid h3{font:800 13px Manrope,sans-serif;letter-spacing:.08em;color:#2463b6;text-transform:uppercase;margin:0 0 10px}
+  body.it-page .mp-footer-grid nav a,body.it-page .mp-footer-contact a{font-size:15px;font-weight:650;color:#183b53;line-height:1.6}
+  body.it-page .mp-footer-grid a:hover{color:#2563eb}
+  body.it-page .mp-footer-contact .mp-footer-button{display:inline-block;background:#2563eb;color:white;padding:13px 17px;font-weight:800}
+  body.it-page .mp-footer-contact .mp-footer-button:hover{color:white;background:#164dc3}
+  body.it-page .mp-footer-bottom{border-top:1px solid #cadbe5;padding-top:25px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;font-size:14px;color:#617b8c}
+  body.it-page .mp-footer-bottom>div{display:flex;gap:25px;flex-wrap:wrap}
+  body.it-page .mp-footer-bottom a{color:#617b8c}
+  body.it-page .mp-mobile-cta{display:none}
+  body.it-page [id]{scroll-margin-top:105px}
+  body.it-page a:focus-visible,body.it-page button:focus-visible,body.it-page summary:focus-visible,body.it-page input:focus-visible{outline:3px solid #10b8a7;outline-offset:4px}
+  @media(max-width:1100px){
+    body.it-page .mp-header-inner{gap:18px}
+    body.it-page .mp-nav{gap:15px}
+    body.it-page .mp-nav a{font-size:14px}
+    body.it-page .mp-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    body.it-page .mp-service:nth-child(2){border-right:0}
+    body.it-page .mp-service:nth-child(-n+2){border-bottom:1px solid #476178}
+    body.it-page .mp-footer-grid{gap:24px}
+    body.it-page .mp-signal{right:0}
+  }
+  @media(max-width:790px){
+    body.it-page .mp-container{width:min(100% - 34px,620px)}
+    body.it-page .mp-header-inner{flex-wrap:wrap;gap:12px;min-height:76px;padding:10px 0}
+    body.it-page .mp-logo .lf-brand-v4{font-size:30px}
+    body.it-page .mp-menu{display:block;background:transparent;border:1px solid #c2d6e1;color:#10263a;padding:11px 14px;font-weight:800;font-size:15px}
+    body.it-page .mp-menu span{padding-left:8px}
+    body.it-page .mp-header-cta{display:none}
+    body.it-page .mp-nav{display:none;flex-basis:100%;width:100%;flex-direction:column;align-items:stretch;gap:0;border-top:1px solid #d2e1e9;padding:7px 0}
+    body.it-page .mp-header.is-open .mp-nav{display:flex}
+    body.it-page .mp-nav a{font-size:16px;padding:13px 0;border-bottom:1px solid #dce7ee}
+    body.it-page .mp-hero{padding:48px 0 70px}
+    body.it-page .mp-hero-grid,body.it-page .mp-calc-grid,body.it-page .mp-founder-grid,body.it-page .mp-workflow-layout{grid-template-columns:1fr;gap:40px}
+    body.it-page h1{font-size:clamp(42px,10.5vw,64px)}
+    body.it-page h2{font-size:clamp(34px,8vw,47px)}
+    body.it-page .mp-lede{font-size:18px}
+    body.it-page .mp-hero-visual{height:480px}
+    body.it-page .mp-signal{right:9px;top:40%}
+    body.it-page .mp-intro,body.it-page .mp-fit{grid-template-columns:1fr;gap:24px;padding-top:75px;padding-bottom:75px}
+    body.it-page .mp-heading{display:block;margin-bottom:35px}
+    body.it-page .mp-heading>p{margin-top:22px}
+    body.it-page .mp-services,body.it-page .mp-gallery,body.it-page .mp-workflow,body.it-page .mp-calc,body.it-page .mp-founder,body.it-page .mp-resources{padding:78px 0}
+    body.it-page .mp-gallery-grid{grid-template-columns:1fr}
+    body.it-page .mp-gallery img{height:330px}
+    body.it-page .mp-stage-detail{min-height:0}
+    body.it-page .mp-resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    body.it-page .mp-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    body.it-page .mp-marquee{grid-template-columns:1fr}
+    body.it-page .mp-marquee-label{max-width:none;border-right:0;border-bottom:1px solid #44647b}
+    body.it-page .mp-faq{padding-top:80px;padding-bottom:95px}
+    body.it-page .mp-footer{padding-bottom:110px}
+    body.it-page .mp-mobile-cta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:100;background:#edf3f7;padding:12px 16px max(12px,env(safe-area-inset-bottom));border-top:1px solid #c9dce8}
+    body.it-page .mp-mobile-cta a{display:block;padding:16px;background:#2563eb;color:white;text-align:center;font-weight:800;font-size:16px}
+  }
+  @media(max-width:540px){
+    body.it-page .mp-hero-visual{height:410px}
+    body.it-page .mp-visual-bottom{left:20px;right:20px;bottom:25px}
+    body.it-page .mp-visual-bottom strong{font-size:28px}
+    body.it-page .mp-signal{transform:scale(.85);transform-origin:right center;right:-5px}
+    body.it-page .mp-service-grid,body.it-page .mp-resource-grid,body.it-page .mp-footer-grid{grid-template-columns:1fr}
+    body.it-page .mp-service{border-right:0;border-bottom:1px solid #476178;min-height:260px}
+    body.it-page .mp-service h3{margin-top:28px}
+    body.it-page .mp-calc-card{padding:23px}
+    body.it-page .mp-founder-art{min-height:400px}
+    body.it-page .mp-faq summary{font-size:17pxtransition:color .2s,padding .2s,background .2s;}
+    body.it-page .mp-footer-grid{gap:34px}
+    body.it-page .mp-footer{padding-top:55px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    :root{scroll-behavior:auto}
+    body.it-page .mp-header,body.it-page .mp-button,body.it-page .mp-node-mark,body.it-page .mp-gallery img{transition:none}
+    body.it-page .mp-marquee-track{animation:none}
+  }
+
+  /* MSP_HOVER_POLISH_V2 */
+
+  /* Workflow stages: hover previews the linked explanation. */
+  body.it-page .mp-stage:hover,
+  body.it-page .mp-stage:focus-visible {
+    background:#286481;
+    border-color:#68e9dc;
+    transform:translateX(5px);
+  }
+
+  body.it-page .mp-stage.is-active {
+    border-color:#10b8a7;
+    background:#23516b;
+  }
+
+  body.it-page .mp-stage.is-active:hover {
+    background:#286481;
+  }
+
+  /* Qualification: active movement and accent. */
+  body.it-page .mp-fit-list article:hover,
+  body.it-page .mp-fit-list article:focus-within {
+    background:#e3f1f9;
+    border-left-color:#2563eb;
+    padding-left:23px;
+    transform:translateX(5px);
+  }
+
+  body.it-page .mp-fit-list article:hover h3 {
+    color:#2563eb;
+  }
+
+  /* Real founder photo. */
+  body.it-page .mp-founder-art {
+    display:block;
+    overflow:hidden;
+    isolation:isolate;
+    background:#10263a;
+  }
+
+  body.it-page .mp-founder-photo {
+    display:block;
+    width:100%;
+    height:100%;
+    min-height:550px;
+    object-fit:cover;
+    object-position:center 24%;
+    transition:transform .45s ease;
+  }
+
+  body.it-page .mp-founder-art:hover .mp-founder-photo {
+    transform:scale(1.035);
+  }
+
+  body.it-page .mp-founder-photo-shade {
+    position:absolute;
+    inset:45% 0 0;
+    background:linear-gradient(
+      0deg,
+      rgba(10,27,45,.83),
+      transparent
+    );
+    pointer-events:none;
+  }
+
+  body.it-page .mp-founder-photo-caption {
+    position:absolute;
+    left:30px;
+    right:30px;
+    bottom:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:5px;
+    color:#fff;
+  }
+
+  body.it-page .mp-founder-photo-caption span {
+    font:800 11px Manrope,sans-serif;
+    letter-spacing:.12em;
+    color:#8ff2df;
+    margin-bottom:8px;
+  }
+
+  body.it-page .mp-founder-photo-caption strong {
+    font:800 29px Manrope,sans-serif;
+    letter-spacing:-.035em;
+  }
+
+  body.it-page .mp-founder-photo-caption small {
+    font-size:14px;
+    color:#dae9f2;
+  }
+
+  /* Resource cards: clear hover feedback without dead links. */
+  body.it-page .mp-resource-grid article:hover {
+    transform:translateY(-8px);
+    background:#e1eff9;
+    border-color:#67a3e8;
+    box-shadow:0 20px 38px rgba(16,38,58,.13);
+  }
+
+  body.it-page .mp-resource-grid article::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:4px;
+    background:#2563eb;
+    transition:width .3s ease;
+  }
+
+  body.it-page .mp-resource-grid article:hover::before {
+    width:100%;
+  }
+
+  body.it-page .mp-resource-grid article::after {
+    content:"↗";
+    position:absolute;
+    bottom:20px;
+    right:24px;
+    font-size:23px;
+    color:#2563eb;
+    opacity:0;
+    transform:translate(-6px,6px);
+    transition:opacity .2s,transform .2s;
+  }
+
+  body.it-page .mp-resource-grid article:hover::after {
+    opacity:1;
+    transform:translate(0,0);
+  }
+
+  /* FAQ: visual feedback and native open-state indicator. */
+  body.it-page .mp-faq summary:hover,
+  body.it-page .mp-faq summary:focus-visible {
+    color:#2563eb;
+    padding-left:12px;
+    padding-right:12px;
+    background:#e9f2fa;
+  }
+
+  body.it-page .mp-faq details[open] {
+    background:#edf5fb;
+  }
+
+  body.it-page .mp-faq details[open] p {
+    padding-left:12px;
+    padding-right:12px;
+  }
+
+  @media(max-width:790px) {
+    body.it-page .mp-founder-photo {
+      min-height:460px;
+      max-height:600px;
+      object-position:center 20%;
+    }
+  }
+
+  @media(max-width:540px) {
+    body.it-page .mp-founder-photo {
+      min-height:400px;
+    }
+  }
+
+  @media(prefers-reduced-motion:reduce) {
+    body.it-page .mp-stage,
+    body.it-page .mp-fit-list article,
+    body.it-page .mp-resource-grid article,
+    body.it-page .mp-resource-grid article::before,
+    body.it-page .mp-resource-grid article::after,
+    body.it-page .mp-founder-photo,
+    body.it-page .mp-faq summary {
+      transition:none;
+    }
+    body.it-page .mp-stage:hover,
+    body.it-page .mp-fit-list article:hover,
+    body.it-page .mp-resource-grid article:hover,
+    body.it-page .mp-founder-art:hover .mp-founder-photo {
+      transform:none;
+    }
+  }
+
+
+/* MSP_NETWORK_SHIELD_V1 — page-local logo decoration */
+body.it-page .mp-shield-outline{
+      fill:#edf7ff;
+      stroke:#2563eb;
+      stroke-width:2.6;
+      stroke-linejoin:round;
+    }
+
+
+
+body.it-page .mp-network-lines{
+      fill:none;
+      stroke:#10a99c;
+      stroke-width:2.3;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+      stroke-dasharray:40;
+      stroke-dashoffset:0;
+    }
+
+body.it-page .mp-node{
+      stroke:#edf7ff;
+      stroke-width:1.2;
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+
+body.it-page .mp-node-one{
+      fill:#10b8a7;
+    }
+
+body.it-page .mp-node-two,
+body.it-page .mp-node-three{
+      fill:#2563eb;
+    }
+
+body.it-page .mp-logo:hover .mp-network-lines,
+body.it-page .mp-logo:focus-visible .mp-network-lines{
+  animation:mp-network-flow .8s ease-out;
+}
+
+body.it-page .mp-logo:hover .mp-node,
+body.it-page .mp-logo:focus-visible .mp-node{
+  animation:mp-network-pulse .8s ease-out;
+}
+
+body.it-page .mp-logo:hover .mp-node-two,
+body.it-page .mp-logo:focus-visible .mp-node-two{
+  animation-delay:.1s;
+}
+
+body.it-page .mp-logo:hover .mp-node-three,
+body.it-page .mp-logo:focus-visible .mp-node-three{
+  animation-delay:.2s;
+}
+
+@keyframes mp-network-flow{
+  0%{stroke-dashoffset:40;opacity:.4}
+  100%{stroke-dashoffset:0;opacity:1}
+}
+
+@keyframes mp-network-pulse{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.25)}
+}
+
+@media(max-width:790px){
+
+}
+
+@media(prefers-reduced-motion:reduce){
+  body.it-page .mp-logo .mp-network-lines,
+  body.it-page .mp-logo .mp-node{
+    animation:none!important;
+  }
+  body.it-page .mp-logo .mp-node-mark{
+    transition:none;
+  }
+}
+
+
+/* MSP_SHIELD_LEFT_V2 — shared technology-page logo direction */
+
+/* Original artwork remains unchanged. */
+body.it-page .mp-footer-brand .mp-logo{
+  font-size:36px;
+}
+
+/* Keep the two pieces vertically centered as one lockup. */
+body.it-page .mp-logo > .lf-brand-v4{
+  flex-shrink:0;
+}
+
+/* A restrained hover movement on the SVG. */
+body.it-page .mp-logo:hover .mp-network-shield,
+body.it-page .mp-logo:focus-visible .mp-network-shield{
+  transform:translateY(-2px);
+}
+
+/* Tablet/mobile: scale the entire lockup consistently. */
+@media(max-width:790px){
+  body.it-page .mp-logo,
+  body.it-page .mp-footer-brand .mp-logo{
+    font-size:30px;
+    gap:5px;
+  }
+
+  body.it-page .mp-logo .lf-brand-v4,
+  body.it-page .mp-footer-brand .mp-logo .lf-brand-v4{
+    font-size:30px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  body.it-page .mp-network-shield{
+    transition:none;
+  }
+}
+
+
+  /* MSP_SEO_CLUSTER_V1 — clickable resource cards */
+  body.it-page .mp-resource-grid article a{
+    color:inherit;
+    text-decoration:none;
+    outline-offset:5px;
+  }
+  body.it-page .mp-resource-grid article a::after{
+    content:"";
+    position:absolute;
+    inset:0;
+  }
+  body.it-page .mp-resource-grid article:focus-within{
+    border-color:#2563eb;
+    background:#e1eff9;
+    box-shadow:0 20px 38px rgba(16,38,58,.13);
+  }
+  body.it-page .mp-resource-grid article a:focus-visible{
+    outline:3px solid #10b8a7;
+  }
+
+
+/* IT_SERVICES_PREVIEW_V3 */
+body.it-page {
+  background:#f4f8fc;
+  color:#172d42;
+}
+body.it-page .mp-hero {
+  background:linear-gradient(115deg,#f4f8fc,#e7f2ff);
+}
+body.it-page .mp-services,
+body.it-page .mp-workflow,
+body.it-page .mp-final,
+body.it-page .mp-marquee {
+  background:#112b49;
+}
+body.it-page .mp-gallery {
+  background:#edf4fa;
+}
+body.it-page .mp-founder {
+  background:#eaf1f8;
+}
+body.it-page .mp-calc {
+  background:#e3edf8;
+}
+body.it-page .mp-resource-grid {
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+body.it-page .mp-resource-grid article::after {
+  content:none;
+}
+@media(max-width:800px) {
+  body.it-page .mp-resource-grid {
+    grid-template-columns:1fr;
+  }
+}
+
+/* IT_SERVICES_SEO_CLUSTER_V1 */
+body.it-page .mp-resource-grid article a{
+  color:inherit;
+  text-decoration:none;
+}
+body.it-page .mp-resource-grid article a::after{
+  content:"";
+  position:absolute;
+  inset:0;
+}
+body.it-page .mp-resource-grid article:focus-within{
+  border-color:#2563eb;
+  background:#e1effa;
+  box-shadow:0 20px 38px rgba(17,43,73,.13);
+}
+body.it-page .mp-resource-grid article a:focus-visible{
+  outline:3px solid #0ba89e;
+  outline-offset:5px;
+}
+body.it-page .it-footer-resources{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:12px 24px;
+  padding:24px 0;
+  border-top:1px solid #cadbe8;
+}
+body.it-page .it-footer-resources strong{
+  font-size:15px;
+  color:#123f69;
+}
+body.it-page .it-footer-resources a{
+  font-size:15px;
+  color:#244d75;
+  font-weight:650;
+}
+body.it-page .it-footer-resources a:hover{
+  color:#1469bd;
+  text-decoration:underline;
+}
+
+</style>
