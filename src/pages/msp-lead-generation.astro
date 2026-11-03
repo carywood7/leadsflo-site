@@ -1,0 +1,1015 @@
+---
+import BrandMark from "../components/BrandMark.astro";
+import "../styles/global.css";
+
+const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const canonical = "https://leadsflo.co/msp-lead-generation/";
+
+const services = [
+  {num:"01",title:"MSP demand generation",tag:"Google, LinkedIn & paid search",description:"Reach business decision-makers looking for managed IT support, cybersecurity, cloud solutions and a reliable technology partner."},
+  {num:"02",title:"Websites that qualify",tag:"SEO, content & conversion funnels",description:"Build search-focused pages around your services, geographic coverage, ideal customer profile and sales qualification process."},
+  {num:"03",title:"CRM & follow-up",tag:"Lead routing & sales automation",description:"Bring new inquiries into an organized pipeline, trigger appropriate follow-up, and give sales teams visibility into every opportunity."},
+  {num:"04",title:"Qualified sales meetings",tag:"Appointment setting",description:"Move suitable prospects from first conversation into discovery calls, with meeting reminders and a clear sales handoff."}
+];
+
+const stages = [
+  {name:"Capture",heading:"Turn the right traffic into inquiries.",eyebrow:"01 / ACQUISITION",description:"Campaigns and SEO attract prospective business clients. A focused form or call experience captures what brought them in.",signal:"Example data: campaign source, company, location, service interest.",next:"Qualify the opportunity"},
+  {name:"Qualify",heading:"Understand the business before booking.",eyebrow:"02 / QUALIFICATION",description:"Ask about employee or endpoint count, current IT coverage, service requirements, locations and buying timeframe. Keep the process short and useful.",signal:"Example data: users, locations, decision-maker, contract review window.",next:"Route to the sales owner"},
+  {name:"Respond",heading:"Follow up while the conversation is relevant.",eyebrow:"03 / FOLLOW-UP",description:"Route inquiries to an owner, trigger appropriate notifications, record the response and provide a clear path to a human conversation.",signal:"Example data: assigned owner, first response, follow-up status.",next:"Book discovery"},
+  {name:"Book",heading:"Convert interest into a real sales meeting.",eyebrow:"04 / BOOKING",description:"Connect a qualified prospect to the right calendar. Confirm meeting details, keep context visible and handle rescheduling.",signal:"Example data: meeting booked, attended, rescheduled, no-show.",next:"Move into a proposal"},
+  {name:"Propose",heading:"Don't lose momentum after discovery.",eyebrow:"05 / PROPOSAL",description:"Support the sales team with proposal tracking, approved follow-ups and visibility into the opportunities needing attention.",signal:"Example data: opportunity stage, proposal sent, next action.",next:"Coordinate onboarding"},
+  {name:"Onboard",heading:"Connect the closed deal to delivery.",eyebrow:"06 / HANDOFF",description:"Where the client's systems support it, coordinate the handoff from CRM to PSA and onboarding workflows, retaining human approval for sensitive actions.",signal:"Example data: closed-won status, service owner, onboarding checklist.",next:"Build the next opportunity"}
+];
+
+const questions = [
+  {q:"Do you sell lists of MSP leads?",a:"Our focus is building dedicated client-acquisition systems for your business. We do not position shared contact lists as the same thing as qualified sales opportunities."},
+  {q:"Do you work with cybersecurity providers and MSSPs?",a:"Yes. Messaging, qualification and campaigns need to reflect the actual security services, certifications, buyer concerns and sales process of each provider."},
+  {q:"Can you work with our PSA and CRM?",a:"We assess your actual stack, access permissions, data-handling rules and supported integrations before specifying what can be connected. PSA tools can include HaloPSA, ConnectWise and Autotask."},
+  {q:"Do you guarantee meetings or managed-services contracts?",a:"No. Results depend on market demand, geography, offer, advertising budget, targeting, qualifications, follow-up and sales execution. We focus on measurable opportunities rather than inflated promises."},
+  {q:"Is this different from MSP Automations?",a:"Yes. LeadsFlo is the marketing and customer-acquisition service. MSP Automations is separate product and technical expertise that informs our understanding of MSP operations."},
+  {q:"Can you run our entire sales process?",a:"We can design lead capture, routing, appropriate automation and appointment-setting workflows. Your sales team remains responsible for technical discovery, pricing, contractual commitments and closing decisions."}
+];
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#101e32" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href={canonical} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>MSP Lead Generation & Marketing Agency | LeadsFlo</title>
+  <meta name="description" content="Lead generation and marketing for MSPs. Google Ads, SEO, conversion funnels, CRM automation, appointment setting and qualified managed IT sales opportunities." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MSP Lead Generation & Marketing Agency | LeadsFlo" />
+  <meta property="og:description" content="A connected MSP growth system, from qualified inquiry to sales meeting and handoff." />
+  <meta property="og:url" content={canonical} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context":"https://schema.org",
+    "@type":"Service",
+    name:"MSP Lead Generation and Marketing",
+    serviceType:"Managed service provider marketing, lead generation and appointment setting",
+    provider:{"@type":"Organization",name:"LeadsFlo",url:"https://leadsflo.co/"},
+    areaServed:{"@type":"Country",name:"United States"},
+    audience:{"@type":"BusinessAudience",audienceType:"Managed IT service providers and MSP owners"},
+    url:canonical
+  })} />
+</head>
+<body class="msp-page">
+  <header class="mp-header" id="top">
+    <div class="mp-container mp-header-inner">
+      <a class="mp-logo" href="/" aria-label="LeadsFlo homepage">
+        <BrandMark />
+
+
+
+<svg class="mp-node-mark mp-network-shield"
+     viewBox="13 0 38 51" preserveAspectRatio="none"
+     xmlns="http://www.w3.org/2000/svg"
+     fill="none"
+     aria-hidden="true"
+     focusable="false">
+  <!-- MSP_SHIELD_REFINED_V4 -->
+
+  <!-- Strong, single-contour enterprise shield -->
+  <path class="mp-shield-outline"
+        d="M32 2.5
+           L47.5 9.5
+           V27
+           C47.5 38 41.5 44.5 32 48.5
+           C22.5 44.5 16.5 38 16.5 27
+           V9.5
+           Z"/>
+
+  <!-- Connected IT network -->
+  <g class="mp-network-lines">
+    <path d="M32 18 L24 31"/>
+    <path d="M32 18 L40 31"/>
+    <path d="M24 31 L40 31"/>
+  </g>
+
+  <g class="mp-network-nodes">
+    <circle class="mp-node mp-node-one"
+            cx="32" cy="18" r="3.8"/>
+    <circle class="mp-node mp-node-two"
+            cx="24" cy="31" r="3.8"/>
+    <circle class="mp-node mp-node-three"
+            cx="40" cy="31" r="3.8"/>
+  </g>
+</svg>
+
+
+
+      </a>
+      <button class="mp-menu" id="mp-menu" aria-controls="mp-nav" aria-expanded="false" type="button">Menu <span aria-hidden="true">☰</span></button>
+      <nav class="mp-nav" id="mp-nav" aria-label="MSP page navigation">
+        <a href="#approach">Our approach</a>
+        <a href="#workflow">Revenue workflow</a>
+        <a href="#founder">Who you work with</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+      <a class="mp-header-cta" href={booking} target="_blank" rel="noopener noreferrer">Book a strategy call ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="mp-hero">
+      <div class="mp-container mp-hero-grid">
+        <div class="mp-hero-copy">
+          <p class="mp-kicker"><span class="mp-dot"></span> MARKETING & REVENUE SYSTEMS FOR MSPs</p>
+          <h1>More MSP sales meetings.<br /><em>Less chasing leads.</em></h1>
+          <p class="mp-lede">Win the right business conversations with targeted marketing, better lead qualification and a connected follow-up process designed around how managed IT providers actually sell.</p>
+          <div class="mp-actions">
+            <a class="mp-button mp-button-primary" href={booking} target="_blank" rel="noopener noreferrer">Talk about your MSP <span aria-hidden="true">↗</span></a>
+            <a class="mp-text-link" href="#workflow">Explore the revenue workflow ↓</a>
+          </div>
+          <div class="mp-proof"><span>GOOGLE & LINKEDIN</span><span>CRM & PSA AWARE</span><span>APPOINTMENT SETTING</span></div>
+        </div>
+        <div class="mp-hero-visual">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1400&q=85" alt="Data center infrastructure representing managed IT operations" width="1000" height="1200" fetchpriority="high" />
+          <div class="mp-hero-shade"></div>
+          <div class="mp-visual-top"><span class="mp-live-dot"></span> REVENUE OPERATIONS / MSP</div>
+          <div class="mp-visual-bottom">
+            <span>01 / FROM INQUIRY TO OPPORTUNITY</span>
+            <strong>Your marketing should connect to your sales process.</strong>
+            <small>ACQUIRE → QUALIFY → BOOK → FOLLOW THROUGH</small>
+          </div>
+          <div class="mp-signal"><span>↗</span><div><strong>New opportunity</strong><small>Route. Qualify. Respond.</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mp-marquee" aria-label="MSP marketing and revenue services">
+      <div class="mp-marquee-label">BUILT FOR MSP GROWTH <span aria-hidden="true">✳</span></div>
+      <div class="mp-marquee-window"><div class="mp-marquee-track">
+        {Array.from({length:2},(_,i)=><div class="mp-marquee-group" aria-hidden={i===1 ? "true" : undefined}>
+          <span>✦ MSP Lead Generation</span><span>◈ Google Ads</span><span>◎ LinkedIn Campaigns</span>
+          <span>◇ MSP SEO</span><span>▣ Website Funnels</span><span>↗ Appointment Setting</span>
+          <span>⌁ CRM Automation</span><span>▦ PSA Handoffs</span><span>✳ Lead Qualification</span>
+        </div>)}
+      </div></div>
+    </section>
+
+    <section class="mp-intro mp-container">
+      <p class="mp-kicker">THE REAL OPPORTUNITY</p>
+      <div><h2>More leads aren't the goal.<br /><em>Better managed-services opportunities are.</em></h2>
+        <p>MSP growth depends on reaching businesses that fit your services, understanding what they need and moving the right prospects into actual sales conversations. An inquiry is the beginning of that journey—not the result.</p>
+      </div>
+    </section>
+
+    <section class="mp-services" id="approach">
+      <div class="mp-container">
+        <div class="mp-heading"><div><p class="mp-kicker">A CONNECTED GROWTH SYSTEM</p><h2>Build demand.<br />Then follow through.</h2></div><p>Designed around your ideal customer profile, service area, contract economics and sales process.</p></div>
+        <div class="mp-service-grid">{services.map(item=><article class="mp-service">
+          <span class="mp-service-num">{item.num} / {item.tag}</span>
+          <h3>{item.title}</h3><p>{item.description}</p>
+          <span class="mp-service-arrow" aria-hidden="true">↗</span>
+        </article>)}</div>
+      </div>
+    </section>
+
+    <section class="mp-gallery">
+      <div class="mp-container">
+        <div class="mp-heading"><div><p class="mp-kicker">YOUR BUYER'S WORLD</p><h2>Marketing that speaks IT.<br />Not just marketing.</h2></div><p>Managed IT, cloud services, cybersecurity and strategic IT consulting each need a different promise and buying conversation.</p></div>
+        <div class="mp-gallery-grid">
+          <figure><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85" alt="Business professionals discussing a service requirement" loading="lazy" width="750" height="900"/><figcaption><span>01 / BUSINESS FIT</span><strong>Decision-maker conversations</strong></figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=85" alt="Technology infrastructure and electronic circuitry" loading="lazy" width="750" height="900"/><figcaption><span>02 / TECHNICAL DEPTH</span><strong>Services buyers understand</strong></figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1000&q=85" alt="Cybersecurity technology and operational context" loading="lazy" width="750" height="900"/><figcaption><span>03 / SALES FOLLOW-THROUGH</span><strong>Opportunity visibility</strong></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="mp-workflow" id="workflow">
+      <div class="mp-container">
+        <div class="mp-heading"><div><p class="mp-kicker">INTERACTIVE / MSP REVENUE JOURNEY</p><h2>See what happens<br />after the click.</h2></div><p>Select a stage. Follow a potential MSP client from acquisition through the sales process and onboarding handoff.</p></div>
+        <div class="mp-workflow-layout">
+          <div class="mp-stage-list" role="group" aria-label="Explore MSP revenue workflow">
+            {stages.map((stage,i)=><button class:list={["mp-stage",{"is-active":i===0}]} type="button" data-stage={i} aria-pressed={i===0 ? "true" : "false"}>
+              <span>{String(i+1).padStart(2,"0")}</span><strong>{stage.name}</strong><b aria-hidden="true">↗</b>
+            </button>)}
+          </div>
+          <div class="mp-stage-detail" aria-live="polite">
+            <span id="mp-stage-eyebrow">{stages[0].eyebrow}</span>
+            <h3 id="mp-stage-heading">{stages[0].heading}</h3>
+            <p id="mp-stage-description">{stages[0].description}</p>
+            <div class="mp-stage-signal"><small>WORKFLOW CONTEXT</small><strong id="mp-stage-signal">{stages[0].signal}</strong></div>
+            <div class="mp-stage-next"><span>NEXT STEP</span><strong id="mp-stage-next">{stages[0].next}</strong></div>
+            <small class="mp-demo-disclaimer">Illustrative process, not a live CRM or PSA integration.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mp-fit mp-container">
+      <div><p class="mp-kicker">QUALIFICATION THAT MATTERS</p><h2>Not every IT lead is a good MSP prospect.</h2><p>We design the intake around your actual services and the businesses you want to support—not a generic form that counts every submission as success.</p></div>
+      <div class="mp-fit-list">
+        <article><span>01</span><div><h3>Company size and service fit</h3><p>Employee count, endpoints, locations, and required managed services.</p></div></article>
+        <article><span>02</span><div><h3>Buying timeline</h3><p>Current IT provider, renewal window, urgency and next decision date.</p></div></article>
+        <article><span>03</span><div><h3>Sales readiness</h3><p>Decision-maker participation, budget expectations and discovery requirements.</p></div></article>
+      </div>
+    </section>
+
+    <section class="mp-calc" id="calculator">
+      <div class="mp-container mp-calc-grid">
+        <div><p class="mp-kicker">PIPELINE PLANNING TOOL</p><h2>What could better qualification and booking mean?</h2><p>Change the assumptions to model potential monthly recurring revenue from new MSP agreements. This is an illustration, not a prediction of campaign outcomes.</p><p class="mp-calc-note">Use your own deal values and realistic close rates. No results are guaranteed.</p></div>
+        <div class="mp-calc-card">
+          <label for="mp-leads">Monthly qualified inquiries <strong id="mp-leads-value">30</strong></label>
+          <input type="range" id="mp-leads" min="5" max="200" step="5" value="30"/>
+          <label for="mp-meetings">Meetings booked <strong id="mp-meetings-value">40%</strong></label>
+          <input type="range" id="mp-meetings" min="5" max="90" step="5" value="40"/>
+          <label for="mp-close">Closed-won from booked meetings <strong id="mp-close-value">20%</strong></label>
+          <input type="range" id="mp-close" min="5" max="70" step="5" value="20"/>
+          <label for="mp-mrr">Average MRR per new agreement <strong id="mp-mrr-value">$2,500</strong></label>
+          <input type="range" id="mp-mrr" min="500" max="15000" step="250" value="2500"/>
+          <div class="mp-calc-result"><span>ILLUSTRATIVE NEW MONTHLY RECURRING REVENUE</span><strong id="mp-result">$6,000</strong><small>Based on expected deal equivalents. Excludes churn, costs, contract timing and sales cycle length. Not a forecast.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mp-founder" id="founder">
+      <div class="mp-container mp-founder-grid">
+
+        <div class="mp-founder-art">
+          <img
+            class="mp-founder-photo"
+            src="https://carywood.co/img/person/avtar.png"
+            alt="Cary Wood, founder of LeadsFlo and MSP Automations"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="mp-founder-photo-shade"></div>
+          <div class="mp-founder-photo-caption">
+            <span>FOUNDER / LEADSFLO</span>
+            <strong>Cary Wood</strong>
+            <small>Marketing · Development · MSP Automation</small>
+          </div>
+        </div>
+        <div class="mp-founder-copy">
+
+          <p class="mp-kicker">WHO YOU'RE WORKING WITH</p>
+          <h2>Built by someone who understands the sales process <em>and the systems behind it.</em></h2>
+          <p>I'm Cary Wood. My background spans more than 13 years in sales and marketing, alongside full-stack development, CRM integrations and MSP-specific automation.</p>
+          <p>I've worked on lead-generation campaigns, conversion funnels and sales workflows, and built MSP-focused software—including MSP VOC and MSP Automate, with more than 100 prebuilt automations and Ansible-related capabilities.</p>
+          <p>That mix matters. MSP marketing isn't just about clicks. It's about qualified opportunities, sales handoffs, operational context and what happens after a prospect says yes.</p>
+          <div class="mp-founder-links"><a href="https://mspautomations.co/" target="_blank" rel="noopener noreferrer">Explore MSP Automations ↗</a><a href={booking} target="_blank" rel="noopener noreferrer">Speak with me ↗</a></div>
+          <p class="mp-founder-footnote">MSP Automations is separate from LeadsFlo. Product capabilities are not presented as included in every marketing engagement.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mp-resources" id="resources">
+      <div class="mp-container">
+        <p class="mp-kicker">MSP MARKETING INSIGHTS</p>
+        <div class="mp-heading"><h2>Useful answers for MSP owners.</h2><p>Explore practical guides to MSP client acquisition, marketing, paid search, local SEO and pipeline measurement.</p></div>
+        <div class="mp-resource-grid"><article><span>01 / CLIENT ACQUISITION</span><h3><a href="/insights/how-to-get-more-msp-clients/">How to Get More MSP Clients</a></h3><p>Better fit, better targeting, better follow-up.</p></article>
+<article><span>02 / MARKETING STRATEGY</span><h3><a href="/insights/msp-marketing-strategies/">MSP Marketing Strategies</a></h3><p>Build a plan around real managed-services buyers.</p></article>
+<article><span>03 / LEAD GENERATION</span><h3><a href="/insights/msp-inbound-vs-outbound/">Inbound vs. Outbound for MSPs</a></h3><p>Compare channels and understand trade-offs.</p></article>
+<article><span>04 / PAID SEARCH</span><h3><a href="/insights/google-ads-for-msps/">Google Ads for MSPs</a></h3><p>Search intent, qualification and conversion tracking.</p></article>
+<article><span>05 / ORGANIC SEARCH</span><h3><a href="/insights/local-seo-for-msps/">Local SEO for MSPs</a></h3><p>Show up for relevant businesses in your service area.</p></article>
+<article><span>06 / BUDGETING</span><h3><a href="/insights/msp-lead-generation-costs/">MSP Lead Generation Costs</a></h3><p>Measure qualified meetings, pipeline and acquisition cost.</p></article></div>
+      </div>
+    </section>
+
+    <section class="mp-faq mp-container" id="faq">
+      <div class="mp-heading"><div><p class="mp-kicker">COMMON QUESTIONS</p><h2>Clear answers.<br />No inflated promises.</h2></div></div>
+      <div class="mp-faq-list">{questions.map(item=><details><summary>{item.q}<span aria-hidden="true">+</span></summary><p>{item.a}</p></details>)}</div>
+    </section>
+
+    <section class="mp-final">
+      <div class="mp-container"><p class="mp-kicker">LET'S TALK ABOUT YOUR PIPELINE</p><h2>Build the system that turns interest into opportunity.</h2><p>Bring your current marketing, sales process and MSP tech stack. We'll identify the gaps worth fixing.</p><a class="mp-button mp-button-light" href={booking} target="_blank" rel="noopener noreferrer">Book an MSP strategy call ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="mp-footer">
+    <div class="mp-container">
+      <div class="mp-footer-grid">
+        <div class="mp-footer-brand">
+          <a href="#top" class="mp-logo" aria-label="LeadsFlo — back to top"><BrandMark />
+
+
+<svg class="mp-node-mark mp-network-shield"
+     viewBox="13 0 38 51" preserveAspectRatio="none"
+     xmlns="http://www.w3.org/2000/svg"
+     fill="none"
+     aria-hidden="true"
+     focusable="false">
+  <!-- MSP_SHIELD_REFINED_V4 -->
+
+  <!-- Strong, single-contour enterprise shield -->
+  <path class="mp-shield-outline"
+        d="M32 2.5
+           L47.5 9.5
+           V27
+           C47.5 38 41.5 44.5 32 48.5
+           C22.5 44.5 16.5 38 16.5 27
+           V9.5
+           Z"/>
+
+  <!-- Connected IT network -->
+  <g class="mp-network-lines">
+    <path d="M32 18 L24 31"/>
+    <path d="M32 18 L40 31"/>
+    <path d="M24 31 L40 31"/>
+  </g>
+
+  <g class="mp-network-nodes">
+    <circle class="mp-node mp-node-one"
+            cx="32" cy="18" r="3.8"/>
+    <circle class="mp-node mp-node-two"
+            cx="24" cy="31" r="3.8"/>
+    <circle class="mp-node mp-node-three"
+            cx="40" cy="31" r="3.8"/>
+  </g>
+</svg>
+
+
+</a>
+          <p>Marketing, qualification and revenue workflows designed around how managed IT providers grow.</p>
+        </div>
+        <nav aria-label="Explore MSP page"><h3>Explore</h3><a href="#approach">Our approach</a><a href="#workflow">Revenue workflow</a><a href="#founder">Meet the founder</a><a href="#calculator">MRR calculator</a><a href="#faq">FAQs</a></nav>
+        <nav aria-label="Related services"><h3>Services</h3><a href="/performance-marketing/">Performance marketing</a><a href="/websites-funnels/">Websites & funnels</a><a href="/crm-automation/">CRM & automation</a><a href="/appointment-setting/">Appointment setting</a><a href="https://mspautomations.co/" target="_blank" rel="noopener noreferrer">MSP Automations ↗</a></nav>
+        <div class="mp-footer-contact"><h3>Get started</h3><p>Want a more connected MSP sales pipeline?</p><a class="mp-footer-button" href={booking} target="_blank" rel="noopener noreferrer">Book a call ↗</a><a href="/contact/">Contact LeadsFlo</a></div>
+      </div>
+      <div class="mp-footer-bottom"><span>© {new Date().getFullYear()} LeadsFlo</span><div><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-and-conditions/">Terms & Conditions</a><a href="#top">Back to top ↑</a></div></div>
+    </div>
+  </footer>
+  <div class="mp-mobile-cta"><a href={booking} target="_blank" rel="noopener noreferrer">Book an MSP strategy call ↗</a></div>
+
+  <script define:vars={{stages}} is:inline>
+    (() => {
+      const header = document.querySelector(".mp-header");
+      const menu = document.getElementById("mp-menu");
+      const nav = document.getElementById("mp-nav");
+      let lastScroll = window.scrollY;
+      menu.addEventListener("click", () => {
+        const opened = header.classList.toggle("is-open");
+        menu.setAttribute("aria-expanded", String(opened));
+        header.classList.remove("is-hidden");
+      });
+      nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+        header.classList.remove("is-open");
+        menu.setAttribute("aria-expanded", "false");
+      }));
+      window.addEventListener("scroll", () => {
+        const current = window.scrollY;
+        if (Math.abs(current-lastScroll) < 6) return;
+        if (current < 90 || current < lastScroll) header.classList.remove("is-hidden");
+        else if (!header.classList.contains("is-open")) header.classList.add("is-hidden");
+        lastScroll = current;
+      }, {passive:true});
+
+      const stageButtons = [...document.querySelectorAll(".mp-stage")];
+      stageButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          const index = Number(button.dataset.stage);
+          const stage = stages[index];
+          if (!stage) return;
+          stageButtons.forEach(b => {
+            const active = b === button;
+            b.classList.toggle("is-active", active);
+            b.setAttribute("aria-pressed", String(active));
+          });
+          const values = {
+            "mp-stage-eyebrow":stage.eyebrow,
+            "mp-stage-heading":stage.heading,
+            "mp-stage-description":stage.description,
+            "mp-stage-signal":stage.signal,
+            "mp-stage-next":stage.next
+          };
+          Object.entries(values).forEach(([id,value]) => {
+            document.getElementById(id).textContent = value;
+          });
+        });
+      });
+
+
+      // MSP_HOVER_POLISH_V2
+      // Hover previews stages; click remains the touch fallback.
+      stageButtons.forEach(button => {
+        button.addEventListener("mouseenter", () => {
+          button.click();
+        });
+
+        button.addEventListener("focus", () => {
+          button.click();
+        });
+      });
+
+      // Desktop hover FAQs; native details still work by click,
+      // keyboard and touch.
+      const hoverFAQs = document.querySelectorAll(
+        ".mp-faq-list details"
+      );
+
+      const desktopHover = window.matchMedia(
+        "(hover: hover) and (pointer: fine)"
+      );
+
+      hoverFAQs.forEach(details => {
+        details.addEventListener("mouseenter", () => {
+          if (desktopHover.matches) details.open = true;
+        });
+
+        details.addEventListener("mouseleave", () => {
+          if (desktopHover.matches) details.open = false;
+        });
+      });
+
+      const inputs = ["mp-leads","mp-meetings","mp-close","mp-mrr"]
+        .map(id => document.getElementById(id));
+      const dollars = new Intl.NumberFormat("en-US", {
+        style:"currency",currency:"USD",maximumFractionDigits:0
+      });
+      function calculate() {
+        const [leads, meetings, closeRate, mrr] = inputs.map(x => Number(x.value));
+        document.getElementById("mp-leads-value").textContent = leads;
+        document.getElementById("mp-meetings-value").textContent = meetings+"%";
+        document.getElementById("mp-close-value").textContent = closeRate+"%";
+        document.getElementById("mp-mrr-value").textContent = dollars.format(mrr);
+        document.getElementById("mp-result").textContent =
+          dollars.format(leads*meetings/100*closeRate/100*mrr);
+      }
+      inputs.forEach(input => input.addEventListener("input",calculate));
+      calculate();
+    })();
+  </script>
+</body>
+</html>
+
+<style is:global>
+  :root{scroll-behavior:smooth}
+  body.msp-page{margin:0;background:#f5f8fb;color:#10263a;font:16px/1.6 "DM Sans",sans-serif}
+  body.msp-page *{box-sizing:border-box}
+  body.msp-page a{text-decoration:none}
+  body.msp-page button{font:inherit}
+  body.msp-page h1,body.msp-page h2,body.msp-page h3{font-family:Manrope,sans-serif;letter-spacing:-.055em}
+  body.msp-page h2{font-size:clamp(36px,3.8vw,57px);line-height:1.12;margin:0}
+  body.msp-page em{font-style:normal;color:#2563eb}
+  body.msp-page .mp-container{width:min(1180px,calc(100% - 52px));margin:auto}
+  body.msp-page .mp-kicker{display:flex;align-items:center;gap:10px;font:800 12px Manrope,sans-serif;letter-spacing:.12em;color:#36778e;text-transform:uppercase;margin:0 0 25px}
+  body.msp-page .mp-dot,body.msp-page .mp-live-dot{display:inline-block;background:#10b8a7;width:9px;height:9px;border-radius:50%;box-shadow:0 0 0 5px #10b8a725}
+  body.msp-page .mp-header{position:sticky;top:0;z-index:70;background:#f8fbfdee;border-bottom:1px solid #dde7ed;backdrop-filter:blur(18px);transition:transform .25s ease}
+  body.msp-page .mp-header.is-hidden{transform:translateY(-105%)}
+  body.msp-page .mp-header-inner{display:flex;align-items:center;min-height:91px;gap:30px}
+  body.msp-page .mp-logo{
+      display:inline-flex;
+      position:relative;
+      align-items:center;
+      flex-shrink:0;
+      margin-right:auto;
+      gap:6px;
+      font-size:35px;
+      overflow:visible;
+    }
+  body.msp-page .mp-logo .lf-brand-v4{font-size:35px;--brand-text:#10263a;--brand-flo:#2563eb;--brand-period:#10b8a7;--brand-plane:#2563eb}
+  body.msp-page .mp-node-mark{
+      position:static;
+      display:block;
+      order:-1;
+      width:1.14em;
+      height:1.45em;
+      flex:0 0 1.14em;
+      align-self:center;
+      overflow:visible;
+      pointer-events:none;
+      transform-origin:center;
+      transition:transform .35s ease;
+    }
+  body.msp-page .mp-logo:hover .mp-node-mark,
+    body.msp-page .mp-logo:focus-visible .mp-node-mark{
+      transform:translateY(-2px);
+    }
+  body.msp-page .mp-nav{display:flex;gap:25px;align-items:center}
+  body.msp-page .mp-nav a{font-size:16px;font-weight:750;color:#183c55;white-space:nowrap}
+  body.msp-page .mp-nav a:hover{color:#2563eb}
+  body.msp-page .mp-header-cta{background:#2563eb;color:white;padding:16px 20px;font-weight:800;font-size:15px;white-space:nowrap}
+  body.msp-page .mp-header-cta:hover{background:#164dc3}
+  body.msp-page .mp-menu{display:none}
+  body.msp-page .mp-hero{padding:88px 0 95px;background:linear-gradient(115deg,#f5f8fb,#e9f1f7)}
+  body.msp-page .mp-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:7%;align-items:center}
+  body.msp-page .mp-hero-copy{padding:12px 0}
+  body.msp-page h1{font-size:clamp(49px,5.4vw,80px);line-height:1.065;letter-spacing:-.072em;font-weight:800;margin:34px 0 28px}
+  body.msp-page .mp-lede{font-size:19px;line-height:1.8;color:#496378;max-width:630px}
+  body.msp-page .mp-actions{display:flex;flex-wrap:wrap;align-items:center;gap:24px;margin:34px 0 39px}
+  body.msp-page .mp-button{display:inline-flex;gap:25px;justify-content:space-between;align-items:center;padding:19px 23px;font-size:16px;font-weight:800;transition:transform .2s ease}
+  body.msp-page .mp-button:hover{transform:translateY(-3px)}
+  body.msp-page .mp-button-primary{background:#2563eb;color:#fff}
+  body.msp-page .mp-text-link{color:#174963;font-weight:800;font-size:15px}
+  body.msp-page .mp-proof{display:flex;flex-wrap:wrap;gap:17px;border-top:1px solid #cbdde6;padding-top:24px}
+  body.msp-page .mp-proof span{color:#49667c;font:800 11px Manrope,sans-serif;letter-spacing:.065em}
+  body.msp-page .mp-hero-visual{height:610px;position:relative;background:#15283d;box-shadow:0 35px 65px #10263a21;isolation:isolate}
+  body.msp-page .mp-hero-visual img{height:100%;width:100%;object-fit:cover;display:block}
+  body.msp-page .mp-hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,#081d3125 10%,#081d31cd 100%)}
+  body.msp-page .mp-visual-top{position:absolute;top:24px;left:24px;color:white;background:#10263ac9;padding:12px 15px;font:800 11px Manrope,sans-serif;letter-spacing:.08em;display:flex;gap:14px;align-items:center}
+  body.msp-page .mp-visual-bottom{position:absolute;bottom:45px;left:35px;right:30px;color:white;display:flex;flex-direction:column;gap:13px}
+  body.msp-page .mp-visual-bottom span,body.msp-page .mp-visual-bottom small{font:800 11px Manrope,sans-serif;letter-spacing:.06em}
+  body.msp-page .mp-visual-bottom strong{font:800 clamp(26px,2.6vw,38px)/1.18 Manrope,sans-serif;letter-spacing:-.05em;max-width:490px}
+  body.msp-page .mp-signal{position:absolute;right:-25px;top:46%;background:white;padding:16px 20px;box-shadow:0 15px 40px #0b223558;display:flex;gap:12px;align-items:center;color:#10263a}
+  body.msp-page .mp-signal>span{background:#10b8a7;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:25px}
+  body.msp-page .mp-signal strong,body.msp-page .mp-signal small{display:block}
+  body.msp-page .mp-signal small{font-size:12px;color:#657f8b}
+  body.msp-page .mp-marquee{display:grid;grid-template-columns:auto minmax(0,1fr);background:#10263a;color:white;min-height:124px;overflow:hidden}
+  body.msp-page .mp-marquee-label{padding:20px 34px;display:flex;align-items:center;gap:15px;border-right:1px solid #44647b;max-width:300px;font:800 12px/1.5 Manrope,sans-serif;letter-spacing:.08em}
+  body.msp-page .mp-marquee-label span{color:#10b8a7;font-size:26px}
+  body.msp-page .mp-marquee-window{overflow:hidden;display:flex;align-items:center;mask-image:linear-gradient(90deg,transparent,black 5%,black 95%,transparent)}
+  body.msp-page .mp-marquee-track{display:flex;width:max-content;animation:mpMarquee 47s linear infinite}
+  body.msp-page .mp-marquee-group{display:flex;gap:12px;padding-right:12px;flex-shrink:0;align-items:center}
+  body.msp-page .mp-marquee-group span{min-width:190px;display:grid;place-items:center;background:#1c3e57;color:#e8f6fb;height:72px;padding:12px 25px;white-space:nowrap;font-size:16px;font-weight:750;border:1px solid #31566e}
+  body.msp-page .mp-marquee:hover .mp-marquee-track{animation-play-state:paused}
+  @keyframes mpMarquee{to{transform:translateX(-50%)}}
+  body.msp-page .mp-intro{display:grid;grid-template-columns:.28fr 1fr;gap:6%;padding-top:115px;padding-bottom:115px}
+  body.msp-page .mp-intro p:not(.mp-kicker){font-size:18px;color:#4f687a;max-width:850px;line-height:1.85}
+  body.msp-page .mp-services{padding:110px 0;background:#10263a;color:white}
+  body.msp-page .mp-heading{display:flex;justify-content:space-between;gap:60px;align-items:end;margin-bottom:48px}
+  body.msp-page .mp-heading>p{max-width:360px;font-size:17px;line-height:1.8;color:#61798a;margin:0}
+  body.msp-page .mp-services .mp-heading>p,body.msp-page .mp-workflow .mp-heading>p{color:#b5cfdd}
+  body.msp-page .mp-services .mp-kicker,body.msp-page .mp-workflow .mp-kicker,body.msp-page .mp-final .mp-kicker{color:#74e5d7}
+  body.msp-page .mp-service-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid #476178}
+  body.msp-page .mp-service{min-height:350px;border-right:1px solid #476178;padding:30px 24px;position:relative;transition:background .25s ease}
+  body.msp-page .mp-service:last-child{border-right:0}
+  body.msp-page .mp-service:hover{background:#1b3d56}
+  body.msp-page .mp-service-num{display:block;color:#7ce1d6;font:700 11px Manrope,sans-serif;letter-spacing:.05em}
+  body.msp-page .mp-service h3{font-size:25px;line-height:1.23;margin:48px 0 16px}
+  body.msp-page .mp-service p{font-size:16px;line-height:1.75;color:#c8dce5}
+  body.msp-page .mp-service-arrow{position:absolute;bottom:22px;right:24px;color:#7ce1d6;font-size:23px}
+  body.msp-page .mp-gallery{padding:110px 0;background:#e9f1f7}
+  body.msp-page .mp-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  body.msp-page .mp-gallery figure{margin:0;min-width:0;position:relative;overflow:hidden;background:#b4c9d7}
+  body.msp-page .mp-gallery img{width:100%;height:420px;object-fit:cover;display:block;transition:transform .5s ease}
+  body.msp-page .mp-gallery figure:hover img{transform:scale(1.035)}
+  body.msp-page .mp-gallery figcaption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(0deg,#071828e8,transparent);display:flex;flex-direction:column;gap:8px;padding:55px 25px 23px;color:white}
+  body.msp-page .mp-gallery figcaption span{font:800 11px Manrope,sans-serif;letter-spacing:.07em;color:#97f5e5}
+  body.msp-page .mp-gallery figcaption strong{font-size:21px}
+  body.msp-page .mp-workflow{padding:112px 0;background:#10263a;color:white}
+  body.msp-page .mp-workflow-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:28px}
+  body.msp-page .mp-stage-list{display:flex;flex-direction:column;gap:8px}
+  body.msp-page .mp-stage{border:1px solid #345670;background:#1b3952;color:#eaf5fb;display:flex;align-items:center;gap:18px;text-align:left;padding:19px 24px;cursor:pointer;transition:background .2s,border-color .2stransform:translateX(0);transition:background .2s,border-color .2s,transform .2s;}
+  body.msp-page .mp-stage span{color:#91b2ca;font-size:13px}
+  body.msp-page .mp-stage strong{font-size:18px}
+  body.msp-page .mp-stage b{margin-left:auto;color:#74e5d7;font-size:21px}
+  body.msp-page .mp-stage:hover,body.msp-page .mp-stage.is-active{border-color:#10b8a7;background:#23516b}
+  body.msp-page .mp-stage-detail{background:#eaf3f8;color:#10263a;padding:clamp(28px,4vw,54px);display:flex;flex-direction:column;justify-content:center;min-height:470px}
+  body.msp-page .mp-stage-detail>span{font:800 12px Manrope,sans-serif;letter-spacing:.08em;color:#36778e}
+  body.msp-page .mp-stage-detail h3{font-size:clamp(29px,3vw,44px);line-height:1.15;margin:22px 0}
+  body.msp-page .mp-stage-detail>p{font-size:18px;line-height:1.75;color:#4b6477}
+  body.msp-page .mp-stage-signal{padding:22px 0;border-top:1px solid #c6d8e2;border-bottom:1px solid #c6d8e2;display:flex;flex-direction:column;gap:8px}
+  body.msp-page .mp-stage-signal small,body.msp-page .mp-stage-next span{font-size:11px;font-weight:800;letter-spacing:.1em;color:#36778e}
+  body.msp-page .mp-stage-signal strong{font-size:16px;font-weight:650}
+  body.msp-page .mp-stage-next{display:flex;align-items:center;gap:20px;margin-top:24px}
+  body.msp-page .mp-stage-next strong{font-size:17px;color:#2563eb}
+  body.msp-page .mp-demo-disclaimer{font-size:12px;color:#678394;margin-top:26px}
+  body.msp-page .mp-fit{display:grid;grid-template-columns:.9fr 1.1fr;gap:9%;padding-top:115px;padding-bottom:115px}
+  body.msp-page .mp-fit>div>p:not(.mp-kicker){font-size:18px;color:#4f687a;line-height:1.8}
+  body.msp-page .mp-fit-list article{display:flex;gap:20px;border-bottom:1px solid #d4e0e7;padding:20px 0position:relative;border-left:3px solid transparent;padding-left:12px;transition:background .22s,transform .22s,border-color .22s,padding .22s;}
+  body.msp-page .mp-fit-list article>span{color:#2563eb;font-weight:800}
+  body.msp-page .mp-fit-list h3{font-size:23px;margin:0 0 10px}
+  body.msp-page .mp-fit-list p{font-size:16px;line-height:1.8;color:#587084;margin:0}
+  body.msp-page .mp-calc{background:#dfeaf2;padding:112px 0}
+  body.msp-page .mp-calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10%;align-items:center}
+  body.msp-page .mp-calc-grid>div:first-child>p:not(.mp-kicker){font-size:18px;line-height:1.8;color:#4d6879}
+  body.msp-page .mp-calc-grid .mp-calc-note{font-size:14px!important;color:#678293!important}
+  body.msp-page .mp-calc-card{background:white;padding:36px;box-shadow:0 23px 55px #10263a1c}
+  body.msp-page .mp-calc-card label{display:flex;justify-content:space-between;gap:15px;font-size:16px;font-weight:750;margin:16px 0}
+  body.msp-page .mp-calc-card input{width:100%;accent-color:#2563eb;margin:0 0 17px}
+  body.msp-page .mp-calc-result{padding:27px;margin-top:15px;background:#10263a;color:white;display:flex;flex-direction:column;gap:12px}
+  body.msp-page .mp-calc-result span{font-size:12px;font-weight:800;letter-spacing:.06em;color:#8de8dc}
+  body.msp-page .mp-calc-result strong{font:800 clamp(32px,4vw,48px) Manrope,sans-serif}
+  body.msp-page .mp-calc-result small{font-size:13px;line-height:1.6;color:#c1d4de}
+  body.msp-page .mp-founder{background:#edf3f7;padding:112px 0}
+  body.msp-page .mp-founder-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:9%;align-items:center}
+  body.msp-page .mp-founder-art{min-height:550px;background:radial-gradient(circle at 50% 42%,#2c5a7d,#101e32 72%);color:white;position:relative;overflow:hidden;display:grid;place-items:center}
+  body.msp-page .mp-founder-copy h2{margin-bottom:28px}
+  body.msp-page .mp-founder-copy>p:not(.mp-kicker){font-size:17px;line-height:1.82;color:#4b6578}
+  body.msp-page .mp-founder-links{display:flex;gap:25px;flex-wrap:wrap;margin:28px 0}
+  body.msp-page .mp-founder-links a{color:#1955bc;font-size:16px;font-weight:800}
+  body.msp-page .mp-founder-links a:hover{text-decoration:underline}
+  body.msp-page .mp-founder-copy .mp-founder-footnote{font-size:13px!important;color:#6f8292!important}
+  body.msp-page .mp-resources{padding:112px 0;background:white}
+  body.msp-page .mp-resource-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+  body.msp-page .mp-resource-grid article{background:#eef4f8;padding:30px;display:flex;flex-direction:column;min-height:250px;border:1px solid #dbe7edposition:relative;overflow:hidden;transition:transform .23s,background .23s,box-shadow .23s,border-color .23s;}
+  body.msp-page .mp-resource-grid article span{font:800 11px Manrope,sans-serif;color:#2463b6;letter-spacing:.07em}
+  body.msp-page .mp-resource-grid article h3{font-size:23px;line-height:1.3;margin:24px 0 12px}
+  body.msp-page .mp-resource-grid article p{font-size:16px;color:#557186;line-height:1.7;margin:0}
+  body.msp-page .mp-faq{padding-top:112px;padding-bottom:112px}
+  body.msp-page .mp-faq-list{border-top:1px solid #d2e0e8}
+  body.msp-page .mp-faq details{border-bottom:1px solid #d2e0e8}
+  body.msp-page .mp-faq summary{padding:27px 0;list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:center;cursor:pointer;font-size:19px;font-weight:800}
+  body.msp-page .mp-faq summary::-webkit-details-marker{display:none}
+  body.msp-page .mp-faq summary span{font-size:28px;color:#2563eb}
+  body.msp-page .mp-faq details[open] summary span{transform:rotate(45deg)}
+  body.msp-page .mp-faq details p{font-size:17px;line-height:1.85;max-width:890px;color:#536e82;padding-bottom:25px;margin:0}
+  body.msp-page .mp-final{background:#10263a;color:white;text-align:center;padding:115px 20px}
+  body.msp-page .mp-final h2{max-width:900px;margin:auto}
+  body.msp-page .mp-final>div>p:not(.mp-kicker){font-size:18px;line-height:1.8;color:#bfd6e2;max-width:700px;margin:25px auto}
+  body.msp-page .mp-final .mp-kicker{justify-content:center}
+  body.msp-page .mp-button-light{background:#eaf3f8;color:#10263a;margin-top:12px}
+  body.msp-page .mp-footer{padding:75px 0 30px;background:#edf3f7;border-top:1px solid #d6e3eb}
+  body.msp-page .mp-footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:65px}
+  body.msp-page .mp-footer-brand .mp-logo .lf-brand-v4{font-size:36px}
+  body.msp-page .mp-footer-brand p,body.msp-page .mp-footer-contact p{font-size:16px;line-height:1.8;color:#597285}
+  body.msp-page .mp-footer-brand p{max-width:310px;margin-top:28px}
+  body.msp-page .mp-footer-grid nav,body.msp-page .mp-footer-contact{display:flex;flex-direction:column;align-items:flex-start;gap:15px}
+  body.msp-page .mp-footer-grid h3{font:800 13px Manrope,sans-serif;letter-spacing:.08em;color:#2463b6;text-transform:uppercase;margin:0 0 10px}
+  body.msp-page .mp-footer-grid nav a,body.msp-page .mp-footer-contact a{font-size:15px;font-weight:650;color:#183b53;line-height:1.6}
+  body.msp-page .mp-footer-grid a:hover{color:#2563eb}
+  body.msp-page .mp-footer-contact .mp-footer-button{display:inline-block;background:#2563eb;color:white;padding:13px 17px;font-weight:800}
+  body.msp-page .mp-footer-contact .mp-footer-button:hover{color:white;background:#164dc3}
+  body.msp-page .mp-footer-bottom{border-top:1px solid #cadbe5;padding-top:25px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;font-size:14px;color:#617b8c}
+  body.msp-page .mp-footer-bottom>div{display:flex;gap:25px;flex-wrap:wrap}
+  body.msp-page .mp-footer-bottom a{color:#617b8c}
+  body.msp-page .mp-mobile-cta{display:none}
+  body.msp-page [id]{scroll-margin-top:105px}
+  body.msp-page a:focus-visible,body.msp-page button:focus-visible,body.msp-page summary:focus-visible,body.msp-page input:focus-visible{outline:3px solid #10b8a7;outline-offset:4px}
+  @media(max-width:1100px){
+    body.msp-page .mp-header-inner{gap:18px}
+    body.msp-page .mp-nav{gap:15px}
+    body.msp-page .mp-nav a{font-size:14px}
+    body.msp-page .mp-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    body.msp-page .mp-service:nth-child(2){border-right:0}
+    body.msp-page .mp-service:nth-child(-n+2){border-bottom:1px solid #476178}
+    body.msp-page .mp-footer-grid{gap:24px}
+    body.msp-page .mp-signal{right:0}
+  }
+  @media(max-width:790px){
+    body.msp-page .mp-container{width:min(100% - 34px,620px)}
+    body.msp-page .mp-header-inner{flex-wrap:wrap;gap:12px;min-height:76px;padding:10px 0}
+    body.msp-page .mp-logo .lf-brand-v4{font-size:30px}
+    body.msp-page .mp-menu{display:block;background:transparent;border:1px solid #c2d6e1;color:#10263a;padding:11px 14px;font-weight:800;font-size:15px}
+    body.msp-page .mp-menu span{padding-left:8px}
+    body.msp-page .mp-header-cta{display:none}
+    body.msp-page .mp-nav{display:none;flex-basis:100%;width:100%;flex-direction:column;align-items:stretch;gap:0;border-top:1px solid #d2e1e9;padding:7px 0}
+    body.msp-page .mp-header.is-open .mp-nav{display:flex}
+    body.msp-page .mp-nav a{font-size:16px;padding:13px 0;border-bottom:1px solid #dce7ee}
+    body.msp-page .mp-hero{padding:48px 0 70px}
+    body.msp-page .mp-hero-grid,body.msp-page .mp-calc-grid,body.msp-page .mp-founder-grid,body.msp-page .mp-workflow-layout{grid-template-columns:1fr;gap:40px}
+    body.msp-page h1{font-size:clamp(42px,10.5vw,64px)}
+    body.msp-page h2{font-size:clamp(34px,8vw,47px)}
+    body.msp-page .mp-lede{font-size:18px}
+    body.msp-page .mp-hero-visual{height:480px}
+    body.msp-page .mp-signal{right:9px;top:40%}
+    body.msp-page .mp-intro,body.msp-page .mp-fit{grid-template-columns:1fr;gap:24px;padding-top:75px;padding-bottom:75px}
+    body.msp-page .mp-heading{display:block;margin-bottom:35px}
+    body.msp-page .mp-heading>p{margin-top:22px}
+    body.msp-page .mp-services,body.msp-page .mp-gallery,body.msp-page .mp-workflow,body.msp-page .mp-calc,body.msp-page .mp-founder,body.msp-page .mp-resources{padding:78px 0}
+    body.msp-page .mp-gallery-grid{grid-template-columns:1fr}
+    body.msp-page .mp-gallery img{height:330px}
+    body.msp-page .mp-stage-detail{min-height:0}
+    body.msp-page .mp-resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    body.msp-page .mp-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    body.msp-page .mp-marquee{grid-template-columns:1fr}
+    body.msp-page .mp-marquee-label{max-width:none;border-right:0;border-bottom:1px solid #44647b}
+    body.msp-page .mp-faq{padding-top:80px;padding-bottom:95px}
+    body.msp-page .mp-footer{padding-bottom:110px}
+    body.msp-page .mp-mobile-cta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:100;background:#edf3f7;padding:12px 16px max(12px,env(safe-area-inset-bottom));border-top:1px solid #c9dce8}
+    body.msp-page .mp-mobile-cta a{display:block;padding:16px;background:#2563eb;color:white;text-align:center;font-weight:800;font-size:16px}
+  }
+  @media(max-width:540px){
+    body.msp-page .mp-hero-visual{height:410px}
+    body.msp-page .mp-visual-bottom{left:20px;right:20px;bottom:25px}
+    body.msp-page .mp-visual-bottom strong{font-size:28px}
+    body.msp-page .mp-signal{transform:scale(.85);transform-origin:right center;right:-5px}
+    body.msp-page .mp-service-grid,body.msp-page .mp-resource-grid,body.msp-page .mp-footer-grid{grid-template-columns:1fr}
+    body.msp-page .mp-service{border-right:0;border-bottom:1px solid #476178;min-height:260px}
+    body.msp-page .mp-service h3{margin-top:28px}
+    body.msp-page .mp-calc-card{padding:23px}
+    body.msp-page .mp-founder-art{min-height:400px}
+    body.msp-page .mp-faq summary{font-size:17pxtransition:color .2s,padding .2s,background .2s;}
+    body.msp-page .mp-footer-grid{gap:34px}
+    body.msp-page .mp-footer{padding-top:55px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    :root{scroll-behavior:auto}
+    body.msp-page .mp-header,body.msp-page .mp-button,body.msp-page .mp-node-mark,body.msp-page .mp-gallery img{transition:none}
+    body.msp-page .mp-marquee-track{animation:none}
+  }
+
+  /* MSP_HOVER_POLISH_V2 */
+
+  /* Workflow stages: hover previews the linked explanation. */
+  body.msp-page .mp-stage:hover,
+  body.msp-page .mp-stage:focus-visible {
+    background:#286481;
+    border-color:#68e9dc;
+    transform:translateX(5px);
+  }
+
+  body.msp-page .mp-stage.is-active {
+    border-color:#10b8a7;
+    background:#23516b;
+  }
+
+  body.msp-page .mp-stage.is-active:hover {
+    background:#286481;
+  }
+
+  /* Qualification: active movement and accent. */
+  body.msp-page .mp-fit-list article:hover,
+  body.msp-page .mp-fit-list article:focus-within {
+    background:#e3f1f9;
+    border-left-color:#2563eb;
+    padding-left:23px;
+    transform:translateX(5px);
+  }
+
+  body.msp-page .mp-fit-list article:hover h3 {
+    color:#2563eb;
+  }
+
+  /* Real founder photo. */
+  body.msp-page .mp-founder-art {
+    display:block;
+    overflow:hidden;
+    isolation:isolate;
+    background:#10263a;
+  }
+
+  body.msp-page .mp-founder-photo {
+    display:block;
+    width:100%;
+    height:100%;
+    min-height:550px;
+    object-fit:cover;
+    object-position:center 24%;
+    transition:transform .45s ease;
+  }
+
+  body.msp-page .mp-founder-art:hover .mp-founder-photo {
+    transform:scale(1.035);
+  }
+
+  body.msp-page .mp-founder-photo-shade {
+    position:absolute;
+    inset:45% 0 0;
+    background:linear-gradient(
+      0deg,
+      rgba(10,27,45,.83),
+      transparent
+    );
+    pointer-events:none;
+  }
+
+  body.msp-page .mp-founder-photo-caption {
+    position:absolute;
+    left:30px;
+    right:30px;
+    bottom:30px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:5px;
+    color:#fff;
+  }
+
+  body.msp-page .mp-founder-photo-caption span {
+    font:800 11px Manrope,sans-serif;
+    letter-spacing:.12em;
+    color:#8ff2df;
+    margin-bottom:8px;
+  }
+
+  body.msp-page .mp-founder-photo-caption strong {
+    font:800 29px Manrope,sans-serif;
+    letter-spacing:-.035em;
+  }
+
+  body.msp-page .mp-founder-photo-caption small {
+    font-size:14px;
+    color:#dae9f2;
+  }
+
+  /* Resource cards: clear hover feedback without dead links. */
+  body.msp-page .mp-resource-grid article:hover {
+    transform:translateY(-8px);
+    background:#e1eff9;
+    border-color:#67a3e8;
+    box-shadow:0 20px 38px rgba(16,38,58,.13);
+  }
+
+  body.msp-page .mp-resource-grid article::before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:4px;
+    background:#2563eb;
+    transition:width .3s ease;
+  }
+
+  body.msp-page .mp-resource-grid article:hover::before {
+    width:100%;
+  }
+
+  body.msp-page .mp-resource-grid article::after {
+    content:"↗";
+    position:absolute;
+    bottom:20px;
+    right:24px;
+    font-size:23px;
+    color:#2563eb;
+    opacity:0;
+    transform:translate(-6px,6px);
+    transition:opacity .2s,transform .2s;
+  }
+
+  body.msp-page .mp-resource-grid article:hover::after {
+    opacity:1;
+    transform:translate(0,0);
+  }
+
+  /* FAQ: visual feedback and native open-state indicator. */
+  body.msp-page .mp-faq summary:hover,
+  body.msp-page .mp-faq summary:focus-visible {
+    color:#2563eb;
+    padding-left:12px;
+    padding-right:12px;
+    background:#e9f2fa;
+  }
+
+  body.msp-page .mp-faq details[open] {
+    background:#edf5fb;
+  }
+
+  body.msp-page .mp-faq details[open] p {
+    padding-left:12px;
+    padding-right:12px;
+  }
+
+  @media(max-width:790px) {
+    body.msp-page .mp-founder-photo {
+      min-height:460px;
+      max-height:600px;
+      object-position:center 20%;
+    }
+  }
+
+  @media(max-width:540px) {
+    body.msp-page .mp-founder-photo {
+      min-height:400px;
+    }
+  }
+
+  @media(prefers-reduced-motion:reduce) {
+    body.msp-page .mp-stage,
+    body.msp-page .mp-fit-list article,
+    body.msp-page .mp-resource-grid article,
+    body.msp-page .mp-resource-grid article::before,
+    body.msp-page .mp-resource-grid article::after,
+    body.msp-page .mp-founder-photo,
+    body.msp-page .mp-faq summary {
+      transition:none;
+    }
+    body.msp-page .mp-stage:hover,
+    body.msp-page .mp-fit-list article:hover,
+    body.msp-page .mp-resource-grid article:hover,
+    body.msp-page .mp-founder-art:hover .mp-founder-photo {
+      transform:none;
+    }
+  }
+
+
+/* MSP_NETWORK_SHIELD_V1 — page-local logo decoration */
+body.msp-page .mp-shield-outline{
+      fill:#edf7ff;
+      stroke:#2563eb;
+      stroke-width:2.6;
+      stroke-linejoin:round;
+    }
+
+
+
+body.msp-page .mp-network-lines{
+      fill:none;
+      stroke:#10a99c;
+      stroke-width:2.3;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+      stroke-dasharray:40;
+      stroke-dashoffset:0;
+    }
+
+body.msp-page .mp-node{
+      stroke:#edf7ff;
+      stroke-width:1.2;
+      transform-box:fill-box;
+      transform-origin:center;
+    }
+
+body.msp-page .mp-node-one{
+      fill:#10b8a7;
+    }
+
+body.msp-page .mp-node-two,
+body.msp-page .mp-node-three{
+      fill:#2563eb;
+    }
+
+body.msp-page .mp-logo:hover .mp-network-lines,
+body.msp-page .mp-logo:focus-visible .mp-network-lines{
+  animation:mp-network-flow .8s ease-out;
+}
+
+body.msp-page .mp-logo:hover .mp-node,
+body.msp-page .mp-logo:focus-visible .mp-node{
+  animation:mp-network-pulse .8s ease-out;
+}
+
+body.msp-page .mp-logo:hover .mp-node-two,
+body.msp-page .mp-logo:focus-visible .mp-node-two{
+  animation-delay:.1s;
+}
+
+body.msp-page .mp-logo:hover .mp-node-three,
+body.msp-page .mp-logo:focus-visible .mp-node-three{
+  animation-delay:.2s;
+}
+
+@keyframes mp-network-flow{
+  0%{stroke-dashoffset:40;opacity:.4}
+  100%{stroke-dashoffset:0;opacity:1}
+}
+
+@keyframes mp-network-pulse{
+  0%,100%{transform:scale(1)}
+  50%{transform:scale(1.25)}
+}
+
+@media(max-width:790px){
+
+}
+
+@media(prefers-reduced-motion:reduce){
+  body.msp-page .mp-logo .mp-network-lines,
+  body.msp-page .mp-logo .mp-node{
+    animation:none!important;
+  }
+  body.msp-page .mp-logo .mp-node-mark{
+    transition:none;
+  }
+}
+
+
+/* MSP_SHIELD_LEFT_V2 — shared technology-page logo direction */
+
+/* Original artwork remains unchanged. */
+body.msp-page .mp-footer-brand .mp-logo{
+  font-size:36px;
+}
+
+/* Keep the two pieces vertically centered as one lockup. */
+body.msp-page .mp-logo > .lf-brand-v4{
+  flex-shrink:0;
+}
+
+/* A restrained hover movement on the SVG. */
+body.msp-page .mp-logo:hover .mp-network-shield,
+body.msp-page .mp-logo:focus-visible .mp-network-shield{
+  transform:translateY(-2px);
+}
+
+/* Tablet/mobile: scale the entire lockup consistently. */
+@media(max-width:790px){
+  body.msp-page .mp-logo,
+  body.msp-page .mp-footer-brand .mp-logo{
+    font-size:30px;
+    gap:5px;
+  }
+
+  body.msp-page .mp-logo .lf-brand-v4,
+  body.msp-page .mp-footer-brand .mp-logo .lf-brand-v4{
+    font-size:30px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  body.msp-page .mp-network-shield{
+    transition:none;
+  }
+}
+
+
+  /* MSP_SEO_CLUSTER_V1 — clickable resource cards */
+  body.msp-page .mp-resource-grid article a{
+    color:inherit;
+    text-decoration:none;
+    outline-offset:5px;
+  }
+  body.msp-page .mp-resource-grid article a::after{
+    content:"";
+    position:absolute;
+    inset:0;
+  }
+  body.msp-page .mp-resource-grid article:focus-within{
+    border-color:#2563eb;
+    background:#e1eff9;
+    box-shadow:0 20px 38px rgba(16,38,58,.13);
+  }
+  body.msp-page .mp-resource-grid article a:focus-visible{
+    outline:3px solid #10b8a7;
+  }
+</style>
