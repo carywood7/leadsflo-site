@@ -1,0 +1,2418 @@
+---
+import BrandMark from "../components/BrandMark.astro";
+import "../styles/global.css";
+
+const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const canonical = "https://leadsflo.co/plumbing-lead-generation/";
+const offerings = [
+      {n:"01",tag:"SEARCH",name:"Google Ads for Plumbers",
+       desc:"Reach homeowners looking for drain cleaning, leak repairs, water heaters and professional plumbing service."},
+      {n:"02",tag:"DEMAND",name:"Meta Ads & Creative",
+       desc:"Promote maintenance offers, water heater consultations and other relevant services with strong local creative."},
+      {n:"03",tag:"CONVERSION",name:"Websites & Funnels",
+       desc:"Turn visits into real plumbing inquiries with mobile-friendly service pages, calls and clear qualification."},
+      {n:"04",tag:"FOLLOW-UP",name:"CRM & Appointment Setting",
+       desc:"Organize incoming requests, route urgent inquiries appropriately and support booking and follow-through."},
+    ];
+const stages = [
+      {n:"01",label:"Attract",tag:"LOCAL SEARCH",
+       title:"Reach customers when plumbing problems become urgent.",
+       body:"Target the right local intent, whether it is a blocked drain, water leak, water heater issue or planned plumbing work.",
+       points:["Service-specific search themes","Local coverage and intent","Relevant messages and offers"],
+       outcome:"RELEVANT TRAFFIC"},
+      {n:"02",label:"Capture",tag:"CONVERSION",
+       title:"Make the next step easy for the customer.",
+       body:"A mobile-first service page offers a simple path to call, request plumbing service or ask for a project estimate.",
+       points:["Clear contact options","Service-specific landing pages","Usable mobile experience"],
+       outcome:"NEW INQUIRY"},
+      {n:"03",label:"Qualify",tag:"JOB CONTEXT",
+       title:"Understand the request before dispatch or follow-up.",
+       body:"Capture address or ZIP code, property type, service requested and urgency without asking customers to diagnose a dangerous situation.",
+       points:["Service area verification","Repair or installation request","Urgency and timing"],
+       outcome:"QUALIFIED REQUEST"},
+      {n:"04",label:"Follow up",tag:"CRM OPERATIONS",
+       title:"Keep every inquiry visible to the right team.",
+       body:"Route requests, record lead sources and help staff respond appropriately to service needs, estimates and follow-up opportunities.",
+       points:["Lead assignment","Calls and reminders","Status and source visibility"],
+       outcome:"ACTIVE OPPORTUNITY"},
+      {n:"05",label:"Book",tag:"SALES HANDOFF",
+       title:"Move suitable inquiries to scheduled service.",
+       body:"Support the transition to a service appointment, site inspection or estimate while keeping responsibility and next steps clear.",
+       points:["Scheduling coordination","Confirmed next steps","Appointment follow-through"],
+       outcome:"BOOKED CONVERSATION"},
+    ];
+const faqs = [
+      {q:"How does plumbing lead generation work?",
+       a:"We combine local search and advertising with service-specific landing pages, qualification and CRM follow-up to help plumbing companies turn inquiries into booked opportunities."},
+      {q:"Can you target emergency repairs separately?",
+       a:"Yes. Urgent leak and drain requests need different messaging, routing and customer expectations from planned installations or water heater replacements."},
+      {q:"Do you work with commercial plumbing companies?",
+       a:"Yes. Commercial plumbing projects can require longer sales cycles and more detailed qualification than residential service calls."},
+      {q:"Do we need to replace our current software?",
+       a:"Not necessarily. We review the CRM, scheduling and job-management systems already in use before recommending integrations or changes."},
+      {q:"Can you guarantee a number of booked jobs?",
+       a:"No. Outcomes depend on demand, service area, competition, budget, capacity and response quality. The goal is a measurable process."},
+    ];
+---
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#0d2435" />
+ <meta name="robots" content="index,follow" />
+ <link rel="canonical" href={canonical} />
+ <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+ <title>Plumbing Lead Generation & Marketing Agency | LeadsFlo</title>
+ <meta name="description" content="Plumbing lead generation for US contractors. Google Ads, Meta Ads, service funnels, CRM automation and appointment setting for repairs and installations." />
+ <meta property="og:type" content="website" />
+ <meta property="og:site_name" content="LeadsFlo" />
+ <meta property="og:title" content="Plumbing Lead Generation & Marketing Agency | LeadsFlo" />
+ <meta property="og:description" content="Connect local plumbing searches with qualified service inquiries, estimates and booked conversations." />
+ <meta property="og:url" content={canonical} />
+ <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QE382W17N6"></script>
+ <script is:inline>
+   window.dataLayer=window.dataLayer||[];
+   function gtag(){window.dataLayer.push(arguments);}
+   gtag('js',new Date());
+   gtag('config','G-QE382W17N6');
+ </script>
+ <script is:inline defer src="/js/leadsflo-conversions.js"></script>
+ <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"Service",name:"Plumbing Lead Generation and Marketing",description:"Google Ads, Meta Ads, conversion funnels, CRM follow-up and appointment setting for Plumbing contractors.",provider:{"@type":"Organization",name:"LeadsFlo",url:"https://leadsflo.co/"},areaServed:{"@type":"Country",name:"United States"},audience:{"@type":"BusinessAudience",audienceType:"Residential and commercial plumbing contractors"},url:canonical})} />
+ <style>
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body.hv-page{margin:0;background:#f7fafc;color:#152d40;font-family:Inter,'Helvetica Neue',Arial,sans-serif}
+  .hv-page a{text-decoration:none}
+  .hv-page button,.hv-page input{font:inherit}
+  .hv-page button{cursor:pointer}
+  .hv-page .wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+  .hv-page .eyebrow{font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+  .hv-page .section{padding:105px 0}
+  .hv-page .heading{font-size:clamp(34px,5vw,64px);line-height:1.08;letter-spacing:-.05em;font-weight:800;margin:16px 0 20px}
+  .hv-page .bodycopy{font-size:17px;line-height:1.8;color:#526f80;max-width:690px}
+  .hv-page .cta{display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:17px 23px;background:#f2a56f;color:#132737;border-radius:6px;font-size:14px;font-weight:800;transition:transform .2s,background .2s}
+  .hv-page .cta:hover{transform:translateY(-2px);background:#ffc18c}
+  .hv-page .cta.alt{border:1px solid #759aaf;background:transparent;color:#fff}
+  .hv-page .cta.alt:hover{background:#24495e}
+  .hv-page :is(a,button,input,summary):focus-visible{outline:3px solid #ed9959;outline-offset:4px}
+  .hv-page .top{background:#0d2435;color:#fff}
+  .hv-page .nav{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:84px;border-bottom:1px solid #ffffff25}
+  .hv-page .brand{color:#fff;display:inline-flex;align-items:center}
+  .hv-page .navlinks{display:flex;align-items:center;gap:25px}
+  .hv-page .navlinks a{color:#c6dce6;font-size:13px;font-weight:700}
+  .hv-page .navlinks a:hover{color:white}
+  .hv-page .navlinks .navcta{border:1px solid #7391a2;border-radius:5px;padding:12px 14px;color:#fff}
+  .hv-page .hero{padding:100px 0 110px;overflow:hidden;background:radial-gradient(ellipse at 79% 37%,#28516c 0%,#132e44 52%,#0c2030 100%)}
+  .hv-page .herogrid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .hv-page .hero .eyebrow{color:#9de0f0}
+  .hv-page h1{font-size:clamp(45px,5.8vw,77px);line-height:1.035;letter-spacing:-.06em;margin:22px 0;font-weight:800}
+  .hv-page h1 em{font-style:normal;color:#a3def0}
+  .hv-page .hero p{font-size:17px;line-height:1.85;color:#c5dbe5;max-width:550px}
+  .hv-page .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .hv-page .trust{margin-top:30px;display:flex;gap:10px 20px;flex-wrap:wrap;font-size:12px;font-weight:700;color:#a9cddd}
+  .hv-page .trust span::before{content:'✓ ';color:#ffbe83}
+  .hv-page .visual{border:1px solid #567e94;border-radius:21px;padding:26px;background:linear-gradient(150deg,#244c65,#10283c);box-shadow:0 32px 65px #0004;min-height:462px;overflow:hidden}
+  .hv-page .visualhead{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10px;letter-spacing:.12em;font-weight:800;color:#b4d0df}
+  .hv-page .status{color:#a4e6c1}
+  .hv-page .status::before{content:'';display:inline-block;background:#8cdeb3;border-radius:50%;width:7px;height:7px;margin-right:7px}
+  .hv-page .unit{position:relative;width:min(280px,84%);aspect-ratio:1;margin:33px auto 21px;background:linear-gradient(140deg,#346681,#17364a);border:1px solid #5e8ca1;border-radius:18px;display:grid;place-items:center;box-shadow:0 23px 35px #0003}
+  .hv-page .fan{width:73%;aspect-ratio:1;position:relative;border:12px solid #89bbce;border-radius:50%;background:#183a50;display:grid;place-items:center}
+  .hv-page .blades{position:absolute;inset:8%;border-radius:50%;background:conic-gradient(#a9d9e7 0deg 39deg,transparent 39deg 90deg,#a9d9e7 90deg 129deg,transparent 129deg 180deg,#a9d9e7 180deg 219deg,transparent 219deg 270deg,#a9d9e7 270deg 309deg,transparent 309deg);animation:hvfan 17s linear infinite}
+  .hv-page .hub{position:relative;width:30px;aspect-ratio:1;background:#285873;border:5px solid #a9d9e7;border-radius:50%}
+  .hv-page .unitlabel{position:absolute;bottom:12px;font-size:10px;letter-spacing:.12em;color:#bfdae7;font-weight:800}
+  .hv-page .flowmeters{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+  .hv-page .meter{padding:15px 11px;border:1px solid #ffffff19;background:#ffffff0b;border-radius:7px}
+  .hv-page .meter small{display:block;font-size:10px;color:#a9cbdb}
+  .hv-page .meter strong{display:block;margin-top:7px;font-size:12px;color:#fff}
+  .hv-page .band{background:#dceef8;border-bottom:1px solid #bfdbe9}
+  .hv-page .bandgrid{display:grid;grid-template-columns:repeat(4,1fr)}
+  .hv-page .bandgrid span{padding:25px 8px;text-align:center;border-right:1px solid #bfdbe9;font-size:11px;letter-spacing:.1em;font-weight:800;color:#3b6a85}
+  .hv-page .bandgrid span:last-child{border-right:0}
+  .hv-page .introgrid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px}
+  .hv-page .blue{color:#1877a2}
+  .hv-page .dark{background:#102c42;color:#fff}
+  .hv-page .dark .bodycopy{color:#b3cfde}
+  .hv-page .sectop{display:flex;justify-content:space-between;align-items:end;gap:38px;margin-bottom:38px}
+  .hv-page .sectop .bodycopy{max-width:390px}
+  .hv-page .servicegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+  .hv-page .service{min-height:315px;padding:24px 21px;background:#ffffff0b;border:1px solid #ffffff22;display:flex;flex-direction:column;transition:transform .2s,background .2s}
+  .hv-page .service:hover{transform:translateY(-4px);background:#ffffff18}
+  .hv-page .service .index{font-size:11px;color:#9bc2d5;letter-spacing:.08em;font-weight:800}
+  .hv-page .service h3{font-size:23px;line-height:1.2;letter-spacing:-.04em;margin:36px 0 14px}
+  .hv-page .service p{font-size:14px;line-height:1.8;color:#c0d3df;margin:0}
+  .hv-page .service small{margin-top:auto;padding-top:22px;color:#ffc08c;letter-spacing:.11em;font-weight:800;font-size:10px}
+  .hv-page .journey{background:#eaf4fa}
+  .hv-page .journeygrid{display:grid;grid-template-columns:280px 1fr;gap:24px}
+  .hv-page .steps{display:grid;align-content:start;gap:8px}
+  .hv-page .step{padding:18px 16px;width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:12px;background:#fff;border:1px solid #c8deeb;border-radius:6px;color:#315a74;font-weight:800}
+  .hv-page .step .num{font-size:11px;color:#7394a8}
+  .hv-page .step[aria-pressed='true']{background:#165578;color:#fff;border-color:#165578}
+  .hv-page .step[aria-pressed='true'] .num{color:#bedde9}
+  .hv-page .stagepanel{background:#fff;border:1px solid #cfe2ed;border-radius:10px;min-height:367px;padding:clamp(24px,4vw,46px);box-shadow:0 20px 30px #0d30400b}
+  .hv-page .stagelabel{font-size:11px;letter-spacing:.12em;font-weight:800;color:#26769e}
+  .hv-page .stagepanel h3{font-size:clamp(27px,3.3vw,42px);line-height:1.15;letter-spacing:-.045em;margin:20px 0}
+  .hv-page .stagepanel p{font-size:16px;line-height:1.8;color:#5e7787}
+  .hv-page .stagebottom{display:grid;grid-template-columns:1fr 1fr;gap:26px;border-top:1px solid #e1edf2;margin-top:30px;padding-top:20px}
+  .hv-page .stagebottom ul{margin:13px 0;padding-left:20px;font-size:14px;line-height:1.8;color:#48677a}
+  .hv-page .output{display:grid;place-items:center;text-align:center;padding:19px;border:1px solid #c6e0ed;border-radius:6px;background:#e9f7fd;color:#16608a;font-size:12px;letter-spacing:.08em;font-weight:800}
+  .hv-page .qualgrid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+  .hv-page .qualcard{background:#f1f8fc;border:1px solid #cce2ee;border-radius:11px;padding:29px;box-shadow:12px 12px 0 #e1eff5}
+  .hv-page .qualrow{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #d7e6ed;padding:18px 0;font-size:14px}
+  .hv-page .qualrow span{color:#667f90}
+  .hv-page .qualrow strong{text-align:right}
+  .hv-page .qualrow:last-child{border-bottom:0}
+  .hv-page .calculator{background:#dfedf7}
+  .hv-page .calcgrid{display:grid;grid-template-columns:1fr 1fr;gap:65px}
+  .hv-page .calcbox{padding:30px;background:#fff;border:1px solid #c5dce9;border-radius:11px}
+  .hv-page .range{display:block;padding:11px 0}
+  .hv-page .rangetitle{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:14px;font-weight:700;margin-bottom:12px}
+  .hv-page .rangetitle output{color:#156da0}
+  .hv-page .range input{width:100%;accent-color:#176eaa}
+  .hv-page .result{padding:25px;background:#112e44;border-radius:7px;color:white;margin-top:21px}
+  .hv-page .result small{font-size:10px;letter-spacing:.12em;color:#a9d4e7}
+  .hv-page .result strong{display:block;font-size:clamp(32px,3vw,46px);letter-spacing:-.04em;margin:9px 0}
+  .hv-page .result p{color:#c2d5e0;font-size:12px;line-height:1.7}
+  .hv-page .faqgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:75px}
+  .hv-page .faqlist details{padding:21px 0;border-bottom:1px solid #d5e5ed}
+  .hv-page .faqlist summary{font-size:17px;line-height:1.5;font-weight:750;cursor:pointer}
+  .hv-page .faqlist p{font-size:15px;line-height:1.8;color:#587282}
+  .hv-page .resources{background:#eaf4fa}
+  .hv-page .resourcegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+  .hv-page .resource{min-height:185px;padding:24px;background:#fff;border:1px solid #c9deeb;display:flex;flex-direction:column}
+  .hv-page .resource small{font-size:10px;letter-spacing:.12em;font-weight:800;color:#5685a2}
+  .hv-page .resource h3{font-size:20px;line-height:1.25;margin:auto 0 0;letter-spacing:-.03em}
+  .hv-page .closing{padding:100px 0;background:linear-gradient(125deg,#0d2436,#1b516b);text-align:center;color:#fff}
+  .hv-page .closing .heading{max-width:840px;margin:16px auto}
+  .hv-page .closing p{max-width:640px;margin:0 auto 33px;color:#c4d9e4;line-height:1.8}
+  .hv-page footer{background:#0a1d2a;color:#b4cad5;padding:40px 0}
+  .hv-page .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+  .hv-page .footnav{display:flex;flex-wrap:wrap;gap:17px;font-size:13px}
+  .hv-page .footnav a{color:#dae9ee}
+  .hv-page .footnav a:hover{text-decoration:underline}
+  .hv-page [id]{scroll-margin-top:30px}
+  @keyframes hvfan{to{transform:rotate(360deg)}}
+  @media(max-width:1000px){.hv-page .herogrid,.hv-page .introgrid,.hv-page .qualgrid,.hv-page .calcgrid,.hv-page .faqgrid{grid-template-columns:1fr;gap:36px}.hv-page .servicegrid,.hv-page .resourcegrid{grid-template-columns:repeat(2,1fr)}.hv-page .visual{max-width:590px}.hv-page .sectop{display:block}}
+  @media(max-width:700px){.hv-page .wrap{width:min(100% - 32px,1180px)}.hv-page .section{padding:68px 0}.hv-page .navlinks a:not(.navcta){display:none}.hv-page .nav{min-height:74px}.hv-page .hero{padding:63px 0}.hv-page h1{font-size:clamp(42px,11vw,64px)}.hv-page .actions .cta{width:100%}.hv-page .visual{min-height:390px;padding:18px}.hv-page .unit{margin:26px auto 18px}.hv-page .flowmeters{gap:5px}.hv-page .meter{padding:10px 7px}.hv-page .meter strong{font-size:11px}.hv-page .bandgrid{grid-template-columns:1fr 1fr}.hv-page .bandgrid span{border-bottom:1px solid #bfdbe9}.hv-page .servicegrid,.hv-page .resourcegrid{grid-template-columns:1fr}.hv-page .service{min-height:240px}.hv-page .service h3{margin:23px 0 10px}.hv-page .journeygrid{grid-template-columns:1fr}.hv-page .steps{grid-template-columns:repeat(2,1fr)}.hv-page .step{padding:14px;font-size:13px}.hv-page .stagebottom{grid-template-columns:1fr}.hv-page .calcbox,.hv-page .qualcard{padding:20px}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hv-page .blades{animation:none}.hv-page .cta,.hv-page .service{transition:none}}
+
+/* Plumbing_HOVER_V3 */
+
+.hv-page .brand{
+  gap:12px;
+  overflow:visible;
+}
+
+.hv-page .hv-air-badge{
+  width:76px;
+  flex:0 0 76px;
+  display:inline-flex;
+  align-items:center;
+}
+
+.hv-page .hv-air-badge svg{
+  width:100%;
+  overflow:visible;
+}
+
+.hv-page .hv-air-rotor{
+  transform-origin:82px 26px;
+  animation:hvAirSpin 6s linear infinite;
+}
+
+.hv-page .hv-air-trails{
+  animation:hvAirDrift 2s ease-in-out infinite alternate;
+}
+
+.hv-page .brand:hover .hv-air-rotor{
+  animation-duration:1.4s;
+}
+
+@keyframes hvAirSpin{
+  to{transform:rotate(360deg)}
+}
+
+@keyframes hvAirDrift{
+  to{transform:translateX(5px);opacity:.55}
+}
+
+.hv-page .visual{
+  transition:transform .35s,box-shadow .35s;
+}
+
+.hv-page .visual:hover{
+  transform:translateY(-5px);
+  box-shadow:0 40px 75px #0005;
+}
+
+.hv-page .visual:hover .blades{
+  animation-duration:3s;
+}
+
+.hv-page .meter{
+  transition:transform .2s,background .2s;
+}
+
+.hv-page .meter:hover{
+  transform:translateY(-4px);
+  background:#ffffff1c;
+}
+
+/* Continuous scrolling services */
+.hv-page .hv-marquee{
+  overflow:hidden;
+  background:#d9edf7;
+  border-block:1px solid #b7d7e7;
+}
+
+.hv-page .hv-marquee-window{
+  overflow:hidden;
+  outline-offset:-3px;
+}
+
+.hv-page .hv-marquee-track{
+  display:flex;
+  width:max-content;
+  animation:hvMarquee 30s linear infinite;
+}
+
+.hv-page .hv-marquee-group{
+  display:flex;
+  flex:0 0 auto;
+}
+
+.hv-page .hv-ticker-item{
+  white-space:nowrap;
+  padding:24px 32px;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.06em;
+  color:#265d7d;
+  border-right:1px solid #b7d7e7;
+  transition:background .2s;
+}
+
+.hv-page .hv-ticker-item:hover{
+  background:#bee5f4;
+}
+
+.hv-page .hv-marquee-window:hover .hv-marquee-track,
+.hv-page .hv-marquee-window:focus-within .hv-marquee-track{
+  animation-play-state:paused;
+}
+
+@keyframes hvMarquee{
+  to{transform:translateX(-50%)}
+}
+
+/* Interactive services */
+.hv-page .service{
+  cursor:pointer;
+  outline-offset:4px;
+}
+
+.hv-page .service.is-active{
+  border-color:#92d9ed;
+  background:#ffffff1e;
+  transform:translateY(-5px);
+}
+
+.hv-page .hv-service-preview{
+  margin:18px auto 0;
+  width:min(1180px,calc(100% - 48px));
+  padding:28px 35px;
+  border:1px solid #547b94;
+  background:#183e58;
+  border-radius:12px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 220px;
+  align-items:center;
+  gap:30px;
+  color:#fff;
+}
+
+.hv-page .hv-preview-copy .eyebrow{
+  color:#eeac7a;
+}
+
+.hv-page .hv-preview-copy h3{
+  font-size:clamp(25px,3vw,38px);
+  line-height:1.2;
+  margin:13px 0;
+  letter-spacing:-.04em;
+}
+
+.hv-page .hv-preview-copy p{
+  color:#c4dce7;
+  font-size:15px;
+  line-height:1.8;
+  max-width:700px;
+  margin:0;
+}
+
+.hv-page .hv-preview-graphic{
+  position:relative;
+  min-height:160px;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+}
+
+.hv-page .hv-preview-center{
+  position:relative;
+  z-index:1;
+  width:60px;
+  height:60px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#2b6581;
+  color:#d6f6ff;
+  border:1px solid #90d8ec;
+  font-size:30px;
+}
+
+.hv-page .hv-preview-pulse{
+  position:absolute;
+  width:85px;
+  height:85px;
+  border:1px solid #9dddea;
+  border-radius:50%;
+  animation:hvPulse 3s ease-out infinite;
+}
+
+.hv-page .hv-preview-pulse-alt{
+  animation-delay:1.5s;
+}
+
+.hv-page .hv-preview-graphic small{
+  position:absolute;
+  bottom:0;
+  letter-spacing:.13em;
+  font-size:10px;
+  color:#9cc6d8;
+}
+
+@keyframes hvPulse{
+  from{transform:scale(.75);opacity:.8}
+  to{transform:scale(2);opacity:0}
+}
+
+/* Journey hover */
+.hv-page .step{
+  transition:transform .2s,border-color .2s;
+}
+
+.hv-page .step:hover,
+.hv-page .step:focus-visible{
+  transform:translateX(4px);
+  border-color:#3986b2;
+}
+
+.hv-page .step[aria-pressed="true"]{
+  box-shadow:inset 4px 0 #eea876;
+}
+
+/* FAQ hover */
+.hv-page .faqlist details{
+  transition:background .2s,padding .2s;
+  padding-inline:12px;
+  border-radius:6px;
+}
+
+.hv-page .faqlist details:hover,
+.hv-page .faqlist details[open]{
+  background:#edf7fd;
+}
+
+.hv-page .faqlist details[open]{
+  padding-block:23px;
+}
+
+@media(max-width:700px){
+  .hv-page .hv-air-badge{
+    width:55px;
+    flex-basis:55px;
+  }
+
+  .hv-page .hv-service-preview{
+    width:calc(100% - 32px);
+    grid-template-columns:1fr;
+    padding:22px;
+  }
+
+  .hv-page .hv-preview-graphic{
+    min-height:125px;
+  }
+
+  .hv-page .hv-ticker-item{
+    padding:18px 24px;
+  }
+
+  .hv-page .step:hover{
+    transform:none;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .hv-page .hv-air-rotor,
+  .hv-page .hv-air-trails,
+  .hv-page .hv-marquee-track,
+  .hv-page .hv-preview-pulse{
+    animation:none!important;
+  }
+
+  .hv-page .visual:hover .blades{
+    animation-duration:17s;
+  }
+
+  .hv-page .step,
+  .hv-page .service{
+    transition:none;
+  }
+}
+
+</style>
+
+<style is:global>
+/* Plumbing_LOGO_V4_FIXED */
+
+body.hv-page .brand {
+  gap: 0;
+}
+
+body.hv-page .brand .hv-logo-o {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+}
+
+body.hv-page .brand .hv-logo-fan {
+  position: absolute;
+  left: 50%;
+  top: 54%;
+  width: .34em;
+  height: .34em;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  border-radius: 50%;
+  background: #17384c;
+}
+
+body.hv-page .brand .hv-logo-fan svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+body.hv-page .brand .hv-logo-rotor {
+  transform-origin: 16px 16px;
+  animation: hvFanInsideO 4s linear infinite;
+}
+
+body.hv-page .brand:hover .hv-logo-rotor,
+body.hv-page .brand:focus-visible .hv-logo-rotor {
+  animation-duration: .8s;
+}
+
+/* Animate airflow along the original blue/teal logo lines. */
+body.hv-page .brand .lf-brand-v4__pulse {
+  opacity: 1;
+  stroke: #a6f1f0;
+  stroke-width: 3;
+  stroke-dasharray: 20 300;
+  animation: hvAirflowCurrent 3.5s linear infinite;
+}
+
+body.hv-page .brand:hover .lf-brand-v4__pulse,
+body.hv-page .brand:focus-visible .lf-brand-v4__pulse {
+  animation-duration: 1.1s;
+}
+
+@keyframes hvFanInsideO {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes hvAirflowCurrent {
+  from { stroke-dashoffset: 300; }
+  to { stroke-dashoffset: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.hv-page .brand .hv-logo-rotor,
+  body.hv-page .brand .lf-brand-v4__pulse {
+    animation: none !important;
+  }
+
+  body.hv-page .brand .lf-brand-v4__pulse {
+    opacity: 0;
+  }
+}
+</style>
+
+
+<style is:global>
+/* Plumbing_LOGO_POLISH_V5 */
+
+/* Recolor the original LeadsFlo logo to match the Plumbing page. */
+body.hv-page .brand .lf-brand-v4--dark {
+  --brand-text: #f7fbff;
+  --brand-flo: #a6deef;
+  --brand-period: #efa772;
+  --brand-plane: #a6deef;
+}
+
+/* Coordinate the original swish with the Plumbing color scheme. */
+body.hv-page .brand .lf-brand-v4__current1 {
+  stroke: #78c5e6;
+}
+
+body.hv-page .brand .lf-brand-v4__current2 {
+  stroke: #44b6c4;
+}
+
+body.hv-page .brand .lf-brand-v4__pulse {
+  stroke: #ddf9ff;
+  stroke-width: 2.8;
+}
+
+/* Optical centering of the miniature fan inside the final o. */
+body.hv-page .brand .hv-logo-o {
+  position: relative;
+}
+
+body.hv-page .brand .hv-logo-fan {
+  left: calc(50% + 2px);
+  top: calc(54% + 2px);
+  width: .32em;
+  height: .32em;
+  background: #173b52;
+  box-shadow: 0 0 0 1px rgba(166,222,239,.18);
+}
+
+body.hv-page .brand .hv-logo-rotor {
+  fill: #b4e9f3;
+}
+
+body.hv-page .brand:hover .hv-logo-fan,
+body.hv-page .brand:focus-visible .hv-logo-fan {
+  background: #24536d;
+  box-shadow: 0 0 8px rgba(166,222,239,.35);
+}
+
+body.hv-page .brand:hover .lf-brand-v4__current1,
+body.hv-page .brand:hover .lf-brand-v4__current2 {
+  filter: drop-shadow(0 0 3px rgba(166,222,239,.4));
+}
+</style>
+
+
+<style is:global>
+/* Plumbing_DESIGN_V6 */
+
+/* Christmas-page-level navigation readability */
+body.hv-page .navlinks {
+  gap: clamp(18px, 2vw, 32px);
+}
+
+body.hv-page .navlinks a {
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 750;
+  letter-spacing: -.015em;
+}
+
+body.hv-page .navlinks .navcta {
+  padding: 13px 20px;
+  border-color: #89b8d1;
+  transition: background .2s, border-color .2s;
+}
+
+body.hv-page .navlinks .navcta:hover {
+  background: #214963;
+  border-color: #b5e4f1;
+}
+
+@media(max-width:1000px) {
+  body.hv-page .navlinks a {
+    font-size: 14px;
+  }
+}
+
+/* Stronger premium scrolling capabilities strip */
+body.hv-page .hv-marquee {
+  background: #112c42;
+  border-top: 1px solid #456b85;
+  border-bottom: 1px solid #456b85;
+  box-shadow: inset 0 1px 0 #ffffff12;
+}
+
+body.hv-page .hv-ticker-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 80px;
+  padding: 21px 36px;
+  color: #f2faff;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: .015em;
+  border-right: 1px solid #46667b;
+  background: transparent;
+}
+
+body.hv-page .hv-ticker-item::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f0a46c;
+  margin-right: 15px;
+  box-shadow: 0 0 0 4px #f0a46c18;
+}
+
+body.hv-page .hv-ticker-item:hover {
+  background: #225270;
+  color: #fff;
+}
+
+body.hv-page .hv-marquee-track {
+  animation-duration: 36s;
+}
+
+body.hv-page .hv-marquee-window {
+  mask-image: linear-gradient(
+    90deg, transparent, black 4%, black 96%, transparent
+  );
+}
+
+/* Editorial photography */
+body.hv-page .hv-photo-section {
+  padding: 110px 0;
+  background: #f7fafc;
+}
+
+body.hv-page .hv-photo-heading {
+  display: grid;
+  grid-template-columns: 1.12fr .88fr;
+  gap: 70px;
+  align-items: end;
+  margin-bottom: 40px;
+}
+
+body.hv-page .hv-photo-heading .bodycopy {
+  margin-bottom: 14px;
+}
+
+body.hv-page .hv-photo-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  gap: 17px;
+}
+
+body.hv-page .hv-photo-card {
+  min-width: 0;
+  margin: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 1px solid #d0e1eb;
+  border-radius: 10px;
+  transition: transform .3s, box-shadow .3s, border-color .3s;
+}
+
+body.hv-page .hv-photo-card:hover {
+  transform: translateY(-6px);
+  border-color: #91bed4;
+  box-shadow: 0 20px 45px #102c4218;
+}
+
+body.hv-page .hv-photo-image {
+  aspect-ratio: 1.18;
+  overflow: hidden;
+  background: #dbeaf2;
+}
+
+body.hv-page .hv-photo-feature .hv-photo-image {
+  aspect-ratio: 1.04;
+}
+
+body.hv-page .hv-photo-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform .65s ease;
+}
+
+body.hv-page .hv-photo-card:hover img {
+  transform: scale(1.055);
+}
+
+body.hv-page .hv-photo-card figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px 24px 30px;
+}
+
+body.hv-page .hv-photo-card small {
+  font-size: 11px;
+  letter-spacing: .12em;
+  font-weight: 800;
+  color: #176d9b;
+}
+
+body.hv-page .hv-photo-card strong {
+  font-size: clamp(20px, 2vw, 29px);
+  line-height: 1.2;
+  letter-spacing: -.04em;
+  color: #132e43;
+}
+
+body.hv-page .hv-photo-card figcaption span {
+  color: #5b7586;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+body.hv-page .hv-photo-credit {
+  margin: 18px 0 0;
+  font-size: 11px;
+  color: #718898;
+}
+
+/* Premium four-column footer */
+body.hv-page .hv-footer-v6 {
+  background: #091e2f;
+  padding: 0;
+  color: #cfdfeb;
+}
+
+body.hv-page .hv-footer-main {
+  display: grid;
+  grid-template-columns: minmax(0,1.7fr) repeat(3,minmax(0,1fr));
+  gap: clamp(28px, 4vw, 65px);
+  padding-top: 85px;
+  padding-bottom: 77px;
+}
+
+body.hv-page .hv-footer-brand {
+  display: inline-flex;
+  width: max-content;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+body.hv-page .hv-footer-intro h2 {
+  margin: 0 0 17px;
+  color: #fff;
+  font-size: clamp(26px, 3vw, 39px);
+  line-height: 1.17;
+  letter-spacing: -.045em;
+}
+
+body.hv-page .hv-footer-intro h2 em {
+  font-style: normal;
+  color: #9ed9eb;
+}
+
+body.hv-page .hv-footer-intro p,
+body.hv-page .hv-footer-contact p {
+  font-size: 14px;
+  line-height: 1.85;
+  color: #a9c1d0;
+  margin-bottom: 23px;
+}
+
+body.hv-page .hv-footer-cta {
+  display: inline-flex;
+  align-items: center;
+  background: #efa773;
+  color: #142d3f;
+  border-radius: 6px;
+  padding: 15px 19px;
+  font-weight: 800;
+  font-size: 14px;
+  transition: background .2s, transform .2s;
+}
+
+body.hv-page .hv-footer-cta:hover {
+  background: #ffc291;
+  transform: translateY(-2px);
+}
+
+body.hv-page .hv-footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+body.hv-page .hv-footer-column h3 {
+  color: #9ed9eb;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 6px 0 12px;
+}
+
+body.hv-page .hv-footer-column a {
+  color: #e2edf4;
+  font-size: 14px;
+  line-height: 1.6;
+  transition: color .2s, transform .2s;
+}
+
+body.hv-page .hv-footer-column a:hover {
+  color: #efa773;
+  transform: translateX(3px);
+}
+
+body.hv-page .hv-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 17px 30px;
+  padding-top: 24px;
+  padding-bottom: 26px;
+  border-top: 1px solid #ffffff23;
+  color: #93aebf;
+  font-size: 12px;
+}
+
+body.hv-page .hv-footer-bottom nav {
+  display: flex;
+  gap: 20px;
+}
+
+body.hv-page .hv-footer-bottom a {
+  color: #bed1dd;
+  font-size: 12px;
+}
+
+body.hv-page .hv-footer-bottom a:hover {
+  color: #fff;
+}
+
+@media(max-width:1050px) {
+  body.hv-page .hv-footer-main {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  body.hv-page .hv-photo-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  body.hv-page .hv-photo-feature {
+    grid-column: 1 / -1;
+  }
+
+  body.hv-page .hv-photo-feature .hv-photo-image {
+    aspect-ratio: 2;
+  }
+}
+
+@media(max-width:700px) {
+  body.hv-page .hv-ticker-item {
+    font-size: 14px;
+    min-height: 65px;
+    padding: 16px 23px;
+  }
+
+  body.hv-page .hv-photo-section {
+    padding: 72px 0;
+  }
+
+  body.hv-page .hv-photo-heading,
+  body.hv-page .hv-photo-grid,
+  body.hv-page .hv-footer-main {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  body.hv-page .hv-photo-feature {
+    grid-column: auto;
+  }
+
+  body.hv-page .hv-photo-feature .hv-photo-image {
+    aspect-ratio: 1.18;
+  }
+
+  body.hv-page .hv-footer-main {
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+
+  body.hv-page .hv-footer-column {
+    padding-top: 15px;
+    border-top: 1px solid #ffffff17;
+  }
+
+  body.hv-page .hv-footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  body.hv-page .hv-photo-card,
+  body.hv-page .hv-photo-card img,
+  body.hv-page .hv-footer-cta,
+  body.hv-page .hv-footer-column a {
+    transition: none !important;
+  }
+}
+</style>
+
+
+<style is:global>
+/* Plumbing_NAV_TICKER_V7 */
+
+/* Desktop navigation — substantial, readable typography. */
+body.hv-page header nav a,
+body.hv-page .navlinks a {
+  font-size: 18px !important;
+  font-weight: 750 !important;
+  line-height: 1.35 !important;
+  letter-spacing: -.02em !important;
+  color: #e3f2fa;
+}
+
+body.hv-page header nav a:hover,
+body.hv-page header nav a:focus-visible {
+  color: #ffffff !important;
+}
+
+body.hv-page .navlinks {
+  gap: 31px !important;
+}
+
+body.hv-page .navlinks .navcta {
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  padding: 15px 22px !important;
+  border-radius: 6px;
+  border: 1px solid #89b8d1 !important;
+  color: #ffffff !important;
+}
+
+body.hv-page .navlinks .navcta:hover {
+  background: #22516f !important;
+  border-color: #b7e6f1 !important;
+}
+
+/* Christmas-style card marquee with Plumbing branding. */
+body.hv-page .hv-marquee {
+  display: block;
+  overflow: hidden;
+  background: #0d3248 !important;
+  border-top: 1px solid #527b92 !important;
+  border-bottom: 3px solid #eea570 !important;
+}
+
+body.hv-page .hv-marquee-heading {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  padding: 17px 20px 14px;
+  color: #f5b78d;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: .14em;
+  font-weight: 850;
+  border-bottom: 1px solid #ffffff20;
+}
+
+body.hv-page .hv-marquee-heading span {
+  color: #b7deec;
+}
+
+body.hv-page .hv-marquee-window {
+  overflow: hidden;
+  padding: 12px 0 17px;
+  background: transparent !important;
+  mask-image: none !important;
+}
+
+body.hv-page .hv-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 0;
+  animation: hvMarquee 37s linear infinite;
+}
+
+body.hv-page .hv-marquee-group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: stretch;
+}
+
+body.hv-page .hv-ticker-item {
+  position: relative;
+  display: inline-flex !important;
+  flex: 0 0 auto;
+  align-items: center !important;
+  justify-content: center;
+  gap: 12px !important;
+  min-height: 59px !important;
+  margin: 0 6px !important;
+  padding: 13px 19px !important;
+  border: 1px solid #d9e7eb !important;
+  border-radius: 9px !important;
+  background: #fff8ee !important;
+  color: #123b50 !important;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px #061b2b21;
+  transition: background .2s, transform .2s,
+              border-color .2s, box-shadow .2s;
+}
+
+/* Remove the tiny decorative bullets from V6. */
+body.hv-page .hv-ticker-item::before,
+body.hv-page .hv-ticker-item::after {
+  content: none !important;
+  display: none !important;
+}
+
+body.hv-page .hv-ticker-icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  color: #e17750 !important;
+  font-size: 23px !important;
+  line-height: 1;
+  font-weight: 800;
+}
+
+body.hv-page .hv-ticker-label {
+  font-size: 16px !important;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -.025em;
+  color: #163b50;
+}
+
+body.hv-page .hv-ticker-item:hover {
+  background: #ffffff !important;
+  border-color: #89d4e6 !important;
+  box-shadow: 0 8px 20px #0003;
+  transform: translateY(-3px);
+}
+
+body.hv-page .hv-marquee-window:hover .hv-marquee-track,
+body.hv-page .hv-marquee-window:focus-within .hv-marquee-track {
+  animation-play-state: paused;
+}
+
+@media(max-width:1050px) {
+  body.hv-page header nav a,
+  body.hv-page .navlinks a {
+    font-size: 15px !important;
+  }
+
+  body.hv-page .navlinks {
+    gap: 17px !important;
+  }
+}
+
+@media(max-width:700px) {
+  body.hv-page .hv-marquee-heading {
+    flex-direction: column;
+    font-size: 10px;
+    gap: 3px;
+    padding: 13px 12px;
+  }
+
+  body.hv-page .hv-marquee-window {
+    padding: 10px 0 13px;
+  }
+
+  body.hv-page .hv-ticker-item {
+    min-height: 52px !important;
+    padding: 11px 15px !important;
+    margin: 0 5px !important;
+  }
+
+  body.hv-page .hv-ticker-label {
+    font-size: 14px !important;
+  }
+
+  body.hv-page .hv-ticker-icon {
+    font-size: 20px !important;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  body.hv-page .hv-marquee-track {
+    animation: none !important;
+  }
+
+  body.hv-page .hv-marquee-window {
+    overflow-x: auto;
+  }
+}
+</style>
+
+
+<style is:global>
+/* Plumbing_SEO_CLUSTER_V1 */
+body.hv-page .resource h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body.hv-page .resource:has(h3 a) {
+  position: relative;
+}
+
+body.hv-page .resource h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+body.hv-page .resource:focus-within {
+  outline: 3px solid #f0aa77;
+  outline-offset: 3px;
+}
+
+body.hv-page .resource:hover h3 a,
+body.hv-page .resource:focus-within h3 a {
+  color: #1474a2;
+}
+</style>
+
+
+<style is:global>
+/* PLUMBING_LANDING_V1 */
+body.hv-page .top,
+body.hv-page .hv-footer-v6 {background:#082c30}
+body.hv-page .hero {
+  background:radial-gradient(ellipse at 75% 32%,
+    #21685e 0%,#103f43 49%,#082c30 100%);
+}
+body.hv-page .hero h1 em,
+body.hv-page .hv-footer-intro h2 em {color:#a5e9d6}
+body.hv-page .cta,
+body.hv-page .hv-footer-cta {background:#e9a875;color:#17342f}
+body.hv-page .cta:hover,
+body.hv-page .hv-footer-cta:hover {background:#f6c69c}
+body.hv-page .hv-marquee {background:#082d30!important}
+body.hv-page .hv-marquee-heading {color:#eeb288}
+body.hv-page .hv-ticker-item {background:#fff7ee!important}
+body.hv-page .hv-ticker-icon {color:#bd7750!important}
+body.hv-page .hv-ticker-label {color:#12443f}
+body.hv-page .brand .lf-brand-v4--dark {
+  --brand-text:#f5fffc;
+  --brand-flo:#9fe6d5;
+  --brand-period:#e7a875;
+  --brand-plane:#a1e9dc;
+}
+body.hv-page .brand .lf-brand-v4__current1 {stroke:#79d5c4}
+body.hv-page .brand .lf-brand-v4__current2 {stroke:#e1aa80}
+body.hv-page .brand .lf-brand-v4__pulse {stroke:#d9fff0}
+body.hv-page .brand .hv-logo-fan {
+  background:#174d4a;
+  box-shadow:none;
+}
+body.hv-page .pl-logo-drop {
+  transform-origin:16px 17px;
+  animation:plDrop 2.5s ease-in-out infinite;
+}
+body.hv-page .brand:hover .pl-logo-drop {
+  animation-duration:.9s;
+}
+@keyframes plDrop {
+  0%,100% {transform:translateY(-1px) scale(.94)}
+  50% {transform:translateY(1px) scale(1.05)}
+}
+body.hv-page .pl-visual {
+  background:linear-gradient(145deg,#1d5b5c,#0a3035);
+}
+body.hv-page .pl-pipe-scene {
+  position:relative;
+  margin:26px auto 12px;
+  width:min(100%,410px);
+}
+body.hv-page .pl-pipe-scene svg {width:100%;display:block;overflow:visible}
+body.hv-page .pl-pipe-shadow {
+  stroke:#0b242b;stroke-width:36;stroke-linecap:round;
+}
+body.hv-page .pl-pipe-body {
+  stroke:url(#pl-copper);stroke-width:27;stroke-linecap:round;
+}
+body.hv-page .pl-water {
+  stroke:#a8f5e2;
+  stroke-width:5;
+  stroke-dasharray:12 30;
+  stroke-linecap:round;
+  animation:plWater 2s linear infinite;
+}
+@keyframes plWater {to{stroke-dashoffset:-84}}
+body.hv-page .pl-water-dot {fill:#e2fffa;filter:drop-shadow(0 0 5px #8ef7d2)}
+body.hv-page .pl-valve {
+  fill:#bf7a51;stroke:#f2c3a1;stroke-width:5;
+  transform-box:fill-box;
+  transform-origin:center;
+  transition:transform .6s ease;
+}
+body.hv-page .pl-visual:hover .pl-valve {transform:rotate(90deg)}
+body.hv-page .pl-svg-label {
+  fill:#b7ded7;font-size:11px;font-weight:800;letter-spacing:2px;
+}
+body.hv-page .pl-pipe-caption {
+  color:#b7e8d9;text-align:center;
+  font-size:10px;letter-spacing:.09em;font-weight:800;
+}
+@media(prefers-reduced-motion:reduce) {
+  body.hv-page .pl-water,
+  body.hv-page .pl-logo-drop {animation:none!important}
+  body.hv-page .pl-water-dot {display:none}
+}
+</style>
+
+
+<style is:global>
+/* PLUMBING_MOBILE_V2 */
+
+body.hv-page .pl-mobile-shortcuts,
+body.hv-page .pl-sticky-booking {
+  display: none;
+}
+
+body.hv-page {
+  overflow-x: clip;
+}
+
+body.hv-page #services,
+body.hv-page #process,
+body.hv-page #calculator,
+body.hv-page #plumbing-work {
+  scroll-margin-top: 20px;
+}
+
+/* Tablet layout */
+@media (max-width: 900px) {
+  body.hv-page .herogrid,
+  body.hv-page .introgrid,
+  body.hv-page .qualgrid,
+  body.hv-page .calcgrid,
+  body.hv-page .faqgrid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  body.hv-page .herogrid > *,
+  body.hv-page .introgrid > *,
+  body.hv-page .qualgrid > *,
+  body.hv-page .calcgrid > *,
+  body.hv-page .faqgrid > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  body.hv-page .hero h1 {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: normal;
+  }
+}
+
+/* Phones */
+@media (max-width: 700px) {
+  body.hv-page {
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+  }
+
+  body.hv-page .wrap {
+    width: calc(100% - 36px) !important;
+    max-width: 100%;
+  }
+
+  /* Header */
+  body.hv-page .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 76px;
+  }
+
+  body.hv-page .nav .brand {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+
+  body.hv-page .nav .lf-brand-v4--dark {
+    font-size: clamp(28px, 8vw, 36px);
+  }
+
+  body.hv-page .navlinks {
+    display: flex !important;
+    flex: 0 0 auto;
+    gap: 0 !important;
+    align-items: center;
+  }
+
+  body.hv-page .navlinks > a:not(.navcta) {
+    display: none !important;
+  }
+
+  body.hv-page .navlinks .navcta {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px !important;
+    padding: 11px 12px !important;
+    min-height: 43px;
+    white-space: nowrap;
+  }
+
+  /* Compact page-section navigation */
+  body.hv-page .pl-mobile-shortcuts {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 18px 13px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    background: #082c30;
+    border-bottom: 1px solid #ffffff25;
+  }
+
+  body.hv-page .pl-mobile-shortcuts::-webkit-scrollbar {
+    display: none;
+  }
+
+  body.hv-page .pl-mobile-shortcuts a {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 13px;
+    min-height: 40px;
+    color: #d6f4eb;
+    border: 1px solid #ffffff30;
+    border-radius: 999px;
+    font-size: 12px;
+    line-height: 1.25;
+    font-weight: 750;
+    white-space: nowrap;
+  }
+
+  body.hv-page .pl-mobile-shortcuts a:focus-visible,
+  body.hv-page .pl-mobile-shortcuts a:hover {
+    border-color: #b0eedc;
+    background: #ffffff18;
+    color: #fff;
+  }
+
+  /* Hero: prevent clipped headings and oversized columns */
+  body.hv-page .hero {
+    padding: 50px 0 70px !important;
+  }
+
+  body.hv-page .herogrid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 45px !important;
+  }
+
+  body.hv-page .hero .eyebrow {
+    font-size: 11px;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    max-width: 100%;
+  }
+
+  body.hv-page .hero h1 {
+    font-size: clamp(32px, 8.5vw, 43px) !important;
+    line-height: 1.12 !important;
+    letter-spacing: -.055em;
+    max-width: 100%;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    text-wrap: balance;
+    margin: 23px 0 20px;
+  }
+
+  body.hv-page .hero h1 em {
+    display: block;
+    margin-top: 4px;
+  }
+
+  body.hv-page .hero p:not(.eyebrow) {
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 100%;
+  }
+
+  body.hv-page .hero .actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 11px;
+    margin-top: 28px;
+  }
+
+  body.hv-page .hero .actions .cta {
+    width: 100%;
+    min-width: 0;
+    min-height: 53px;
+    padding: 14px 16px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  body.hv-page .hero .trust {
+    gap: 9px 15px;
+    margin-top: 24px;
+    font-size: 11px;
+  }
+
+  /* Animated plumbing visual */
+  body.hv-page .pl-visual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0;
+    padding: 18px 14px 20px !important;
+    border-radius: 15px;
+  }
+
+  body.hv-page .pl-pipe-scene {
+    width: 100%;
+    margin: 19px auto 14px;
+    overflow: hidden;
+  }
+
+  body.hv-page .pl-pipe-scene svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body.hv-page .visualhead {
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 9px;
+  }
+
+  body.hv-page .flowmeters {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+  }
+
+  body.hv-page .meter {
+    min-width: 0;
+    padding: 10px 6px;
+  }
+
+  body.hv-page .meter small {
+    font-size: 8px;
+    overflow-wrap: anywhere;
+  }
+
+  body.hv-page .meter strong {
+    font-size: 10px;
+    overflow-wrap: anywhere;
+  }
+
+  /* All content sections should fit narrow screens */
+  body.hv-page .section {
+    padding: 70px 0;
+  }
+
+  body.hv-page .heading {
+    font-size: clamp(30px, 8vw, 42px) !important;
+    line-height: 1.12;
+    overflow-wrap: break-word;
+  }
+
+  body.hv-page .bodycopy {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  body.hv-page .servicegrid,
+  body.hv-page .resourcegrid,
+  body.hv-page .journeygrid,
+  body.hv-page .hv-photo-grid,
+  body.hv-page .hv-photo-heading,
+  body.hv-page .hv-footer-main {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  body.hv-page .service,
+  body.hv-page .stagepanel,
+  body.hv-page .qualcard,
+  body.hv-page .calcbox,
+  body.hv-page .resource,
+  body.hv-page .hv-photo-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  body.hv-page .hv-service-preview {
+    width: calc(100% - 36px);
+    grid-template-columns: minmax(0, 1fr);
+    padding: 23px 20px;
+  }
+
+  body.hv-page .hv-preview-copy h3 {
+    font-size: clamp(23px, 7vw, 30px);
+  }
+
+  body.hv-page .stagepanel {
+    padding: 25px 20px;
+  }
+
+  body.hv-page .steps {
+    min-width: 0;
+  }
+
+  body.hv-page .hv-photo-section {
+    padding: 70px 0;
+  }
+
+  body.hv-page .hv-photo-feature {
+    grid-column: auto;
+  }
+
+  body.hv-page .hv-photo-feature .hv-photo-image {
+    aspect-ratio: 1.18;
+  }
+
+  body.hv-page .range,
+  body.hv-page .range input,
+  body.hv-page .calcbox {
+    max-width: 100%;
+  }
+
+  body.hv-page .result strong {
+    overflow-wrap: anywhere;
+  }
+
+  body.hv-page .hv-footer-main {
+    gap: 28px;
+  }
+
+  /* Persistent mobile-only CTA */
+  body.hv-page .pl-sticky-booking {
+    position: fixed;
+    display: block !important;
+    inset: auto 0 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 14px
+      calc(10px + env(safe-area-inset-bottom, 0px));
+    background: rgba(8, 36, 39, .97);
+    border-top: 1px solid rgba(169, 241, 220, .35);
+    box-shadow: 0 -12px 32px rgba(0, 0, 0, .18);
+  }
+
+  body.hv-page .pl-sticky-inner {
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+  body.hv-page .pl-sticky-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    min-height: 56px;
+    border-radius: 8px;
+    background: #eda976;
+    color: #17342f;
+    padding: 10px 17px;
+    text-decoration: none;
+    box-shadow: inset 0 1px 0 #ffffff4d;
+  }
+
+  body.hv-page .pl-sticky-cta-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+  }
+
+  body.hv-page .pl-sticky-cta strong {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 850;
+  }
+
+  body.hv-page .pl-sticky-cta small {
+    font-size: 10px;
+    line-height: 1.35;
+    opacity: .8;
+  }
+
+  body.hv-page .pl-sticky-arrow {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  body.hv-page .pl-sticky-cta:active {
+    transform: scale(.99);
+  }
+
+  body.hv-page .pl-sticky-cta:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+  }
+}
+
+@media (max-width: 370px) {
+  body.hv-page .nav .lf-brand-v4--dark {
+    font-size: 27px;
+  }
+
+  body.hv-page .navlinks .navcta {
+    font-size: 11px !important;
+    padding-inline: 9px !important;
+  }
+
+  body.hv-page .hero h1 {
+    font-size: 31px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.hv-page .pl-sticky-cta {
+    transition: none !important;
+  }
+
+  body.hv-page .pl-mobile-shortcuts {
+    scroll-behavior: auto;
+  }
+}
+</style>
+
+
+<style is:global>
+/* PLUMBING_HEADER_V3 */
+
+/* The entire header, including mobile shortcuts,
+   participates in the hide/reveal behavior. */
+body.hv-page .pl-scroll-header {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  width: 100%;
+  background: #0b263a;
+  box-shadow: 0 1px 0 rgba(171, 218, 237, .2);
+  transform: translateY(0);
+  transition: transform .27s ease,
+              box-shadow .27s ease;
+  will-change: transform;
+}
+
+body.hv-page .pl-scroll-header.pl-header-hidden {
+  transform: translateY(calc(-100% - 2px));
+  box-shadow: none;
+}
+
+body.hv-page .pl-scroll-header .nav {
+  background: #0b263a;
+}
+
+body.hv-page .pl-scroll-header .navlinks a {
+  color: #dcecf5;
+}
+
+body.hv-page .pl-scroll-header .navlinks a:hover,
+body.hv-page .pl-scroll-header .navlinks a:focus-visible {
+  color: #fff;
+}
+
+body.hv-page .pl-scroll-header .navlinks .navcta {
+  border-color: #81aeca !important;
+}
+
+body.hv-page .pl-scroll-header .navlinks .navcta:hover {
+  background: #1a4660 !important;
+  border-color: #b4e2f2 !important;
+}
+
+/* Rich navy services marquee — same visual family as HVAC,
+   with cream cards and warm copper icon accents. */
+body.hv-page .hv-marquee {
+  background: #0c2d43 !important;
+  border-top: 1px solid #52768e !important;
+  border-bottom: 3px solid #e5a16f !important;
+}
+
+body.hv-page .hv-marquee-heading {
+  color: #f4bc94 !important;
+  background: #0c2d43 !important;
+  border-bottom-color: #ffffff25 !important;
+}
+
+body.hv-page .hv-marquee-heading span {
+  color: #c0e0ed !important;
+}
+
+body.hv-page .hv-marquee-window {
+  background: #0c2d43 !important;
+}
+
+body.hv-page .hv-ticker-item {
+  background: #fff8ef !important;
+  border-color: #e8ddd2 !important;
+  color: #153f56 !important;
+}
+
+body.hv-page .hv-ticker-label {
+  color: #153f56 !important;
+}
+
+body.hv-page .hv-ticker-icon {
+  color: #c37c52 !important;
+}
+
+/* When returning to a section, account for the visible header. */
+body.hv-page #services,
+body.hv-page #process,
+body.hv-page #calculator,
+body.hv-page #plumbing-work,
+body.hv-page #contact,
+body.hv-page #qualification {
+  scroll-margin-top: 115px;
+}
+
+@media (max-width: 700px) {
+  /* Mobile shortcut strip uses navy rather than green. */
+  body.hv-page .pl-mobile-shortcuts {
+    background: #103149 !important;
+    border-top: 1px solid #ffffff14;
+    border-bottom: 1px solid #ffffff29 !important;
+  }
+
+  body.hv-page .pl-mobile-shortcuts a {
+    background: #173e56 !important;
+    color: #e9f5fc !important;
+    border-color: #557b91 !important;
+    border-radius: 999px;
+  }
+
+  body.hv-page .pl-mobile-shortcuts a:hover,
+  body.hv-page .pl-mobile-shortcuts a:focus-visible {
+    background: #285b75 !important;
+    color: white !important;
+    border-color: #a8d9ea !important;
+  }
+
+  body.hv-page .pl-scroll-header {
+    box-shadow: 0 3px 16px #071c2a2e;
+  }
+
+  body.hv-page #services,
+  body.hv-page #process,
+  body.hv-page #calculator,
+  body.hv-page #plumbing-work,
+  body.hv-page #contact,
+  body.hv-page #qualification {
+    scroll-margin-top: 155px;
+  }
+
+  /* Keep independent mobile booking bar above the header layer. */
+  body.hv-page .pl-sticky-booking {
+    z-index: 1000;
+    background: rgba(11, 38, 58, .98) !important;
+    border-top-color: #91bfd8 !important;
+  }
+
+  body.hv-page .pl-sticky-cta {
+    background: #efa773 !important;
+    color: #183447 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.hv-page .pl-scroll-header {
+    transition: none !important;
+    will-change: auto;
+  }
+}
+</style>
+
+
+<style is:global>
+/* PLUMBING_SEO_CLUSTER_V2 */
+body.hv-page .resource {
+  position: relative;
+}
+
+body.hv-page .resource h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body.hv-page .resource h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+body.hv-page .resource:hover h3 a,
+body.hv-page .resource:focus-within h3 a {
+  color: #168b82;
+}
+
+body.hv-page .resource:focus-within {
+  outline: 3px solid #efa773;
+  outline-offset: 3px;
+}
+</style>
+
+</head>
+<body class="hv-page" id="top">
+ <div class="pl-scroll-header" data-pl-scroll-header>
+<header class="wrap nav">
+   <a class="brand" href="/" aria-label="LeadsFlo home"><BrandMark theme="dark" />
+
+</a>
+   <nav class="navlinks" aria-label="Plumbing landing page">
+    <a href="#services">Services</a><a href="#process">How it works</a><a href="#calculator">Estimator</a><a class="navcta" href={booking}>Book a Call ↗</a>
+   </nav>
+  </header>
+
+<nav class="pl-mobile-shortcuts"
+     aria-label="Plumbing page sections">
+  <a href="#services">Services</a>
+  <a href="#process">How it works</a>
+  <a href="#plumbing-work">Our approach</a>
+  <a href="#calculator">Estimator</a>
+</nav>
+</div>
+<div class="top">
+
+  <section class="hero">
+   <div class="wrap herogrid">
+    <div>
+     <p class="eyebrow">PLUMBING MARKETING / LEAD GENERATION</p>
+     <h1>More plumbing calls.<br/><em>More booked jobs.</em></h1>
+     <p>Google Ads, Meta Ads, service-specific landing pages and connected follow-up for plumbing companies that want qualified inquiries and scheduled jobs—not just more clicks.</p>
+     <div class="actions"><a class="cta" href={booking}>Book a Strategy Call ↗</a><a class="cta alt" href="#process">See How It Works ↓</a></div>
+     <div class="trust"><span>Local service demand</span><span>Lead qualification</span><span>Appointment follow-up</span></div>
+    </div>
+
+    <div class="visual pl-visual"
+         role="img"
+         aria-label="Animated plumbing pipe and water flow connecting a lead generation system">
+      <div class="visualhead">
+        <span>PLUMBING / GROWTH SYSTEM</span>
+        <span class="status">FLOW CONNECTED</span>
+      </div>
+      <div class="pl-pipe-scene" aria-hidden="true">
+        <svg viewBox="0 0 420 290" fill="none">
+          <defs>
+            <linearGradient id="pl-copper" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#efc5a1"/>
+              <stop offset=".5" stop-color="#bd754b"/>
+              <stop offset="1" stop-color="#e9aa7c"/>
+            </linearGradient>
+          </defs>
+          <path class="pl-pipe-shadow"
+                d="M40 65 H220 Q270 65 270 115 V178 Q270 214 308 214 H380"/>
+          <path class="pl-pipe-body"
+                d="M40 65 H220 Q270 65 270 115 V178 Q270 214 308 214 H380"/>
+          <path class="pl-water"
+                d="M40 65 H220 Q270 65 270 115 V178 Q270 214 308 214 H380"/>
+          <circle cx="105" cy="65" r="27" class="pl-valve"/>
+          <path d="M89 65 H121 M105 49 V81"
+                stroke="#ecf8f7" stroke-width="8" stroke-linecap="round"/>
+          <circle class="pl-water-dot" r="6">
+            <animateMotion dur="5s" repeatCount="indefinite"
+              path="M40 65 H220 Q270 65 270 115 V178 Q270 214 308 214 H380"/>
+          </circle>
+          <text x="40" y="132" class="pl-svg-label">INQUIRY</text>
+          <text x="294" y="177" class="pl-svg-label">BOOKING</text>
+        </svg>
+        <div class="pl-pipe-caption">LOCAL DEMAND → QUALIFIED JOB → APPOINTMENT</div>
+      </div>
+      <div class="flowmeters">
+        <div class="meter"><small>01 / ATTRACT</small><strong>Local search</strong></div>
+        <div class="meter"><small>02 / CAPTURE</small><strong>Service request</strong></div>
+        <div class="meter"><small>03 / BOOK</small><strong>Next action</strong></div>
+      </div>
+    </div>
+
+   </div>
+  </section>
+ </div>
+ <div class="hv-marquee" aria-label="Plumbing marketing capabilities">
+  <div class="hv-marquee-heading">
+    FROM FIRST SEARCH TO BOOKED SERVICE
+    <span>ONE CONNECTED PLUMBING GROWTH SYSTEM</span>
+  </div>
+<div class="hv-marquee-window" tabindex="0"><div class="hv-marquee-track"><div class="hv-marquee-group"><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◉</span><strong class="hv-ticker-label">Google Ads</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">∞</span><strong class="hv-ticker-label">Meta Ads</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◎</span><strong class="hv-ticker-label">Plumbing Landing Pages</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">↗</span><strong class="hv-ticker-label">Lead Qualification</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">✳</span><strong class="hv-ticker-label">CRM Automation</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◈</span><strong class="hv-ticker-label">Appointment Setting</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">❄</span><strong class="hv-ticker-label">Plumbing Repair Campaigns</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◌</span><strong class="hv-ticker-label">Installation Estimates</strong></span></div><div class="hv-marquee-group" aria-hidden="true"><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◉</span><strong class="hv-ticker-label">Google Ads</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">∞</span><strong class="hv-ticker-label">Meta Ads</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◎</span><strong class="hv-ticker-label">Plumbing Landing Pages</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">↗</span><strong class="hv-ticker-label">Lead Qualification</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">✳</span><strong class="hv-ticker-label">CRM Automation</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◈</span><strong class="hv-ticker-label">Appointment Setting</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">❄</span><strong class="hv-ticker-label">Plumbing Repair Campaigns</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◌</span><strong class="hv-ticker-label">Installation Estimates</strong></span></div></div></div></div>
+ <main>
+
+    <section class="section" id="challenge">
+      <div class="wrap introgrid">
+        <div>
+          <span class="eyebrow blue">THE REAL CHALLENGE</span>
+          <h2 class="heading">Not every plumbing inquiry is the same.</h2>
+        </div>
+        <div>
+          <p class="bodycopy">A burst pipe, clogged drain, water heater replacement and commercial installation involve different levels of urgency, qualification and service capacity.</p>
+          <p class="bodycopy">Your marketing should help customers find the right service and give your team enough information to respond appropriately.</p>
+          <p class="bodycopy">LeadsFlo connects advertising, service pages, CRM routing and appointment follow-up into one process.</p>
+        </div>
+      </div>
+    </section>
+  <section class="section dark" id="services"><div class="wrap"><div class="sectop"><div><span class="eyebrow" style="color:#9bd7e9">WHAT WE BUILD</span><h2 class="heading">From search to scheduled service.</h2></div><p class="bodycopy">Four connected capabilities for local plumbing demand, useful qualification and timely follow-up.</p></div><div class="servicegrid">{offerings.map(item=><article class="service" tabindex="0" role="button" data-hv-service={item.n} aria-label={`Explore ${item.name}`}><span class="index">{item.n} / {item.tag}</span><h3>{item.name}</h3><p>{item.desc}</p><small>LEADSFLO / Plumbing</small></article>)}</div></div>
+<div class="hv-service-preview" data-hv-preview aria-live="polite">
+  <div class="hv-preview-copy">
+    <span class="eyebrow">
+      HOVER TO EXPLORE /
+      <span data-hv-preview-number>01</span>
+    </span>
+    <h3 data-hv-preview-name>Google Ads for Plumbers</h3>
+    <p data-hv-preview-desc>
+      Reach local searches for leak repairs, drain cleaning,
+      water heaters and installation estimates.
+    </p>
+  </div>
+  <div class="hv-preview-graphic" aria-hidden="true">
+    <span class="hv-preview-pulse"></span>
+    <span class="hv-preview-pulse hv-preview-pulse-alt"></span>
+    <span class="hv-preview-center">↗</span>
+    <small>LEAD FLOW / ACTIVE</small>
+  </div>
+</div>
+</section>
+  <section class="section journey" id="process"><div class="wrap"><span class="eyebrow blue">THE INTERACTIVE PROCESS</span><h2 class="heading">Five steps. One connected journey.</h2><p class="bodycopy" style="margin-bottom:33px">Select each stage to see how a plumbing inquiry moves from search to a scheduled conversation.</p><div class="journeygrid" data-hv-journey><div class="steps" role="group" aria-label="Plumbing lead journey">{stages.map((stage,index)=><button class="step" type="button" data-hv-step={index} aria-pressed={index===0?'true':'false'}><span class="num">{stage.n}</span><span>{stage.label}</span><span aria-hidden="true">↗</span></button>)}</div><div class="stagepanel" aria-live="polite"><span class="stagelabel" data-hv-tag>{stages[0].tag}</span><h3 data-hv-title>{stages[0].title}</h3><p data-hv-body>{stages[0].body}</p><div class="stagebottom"><div><span class="eyebrow blue">WHAT HAPPENS HERE</span><ul data-hv-points>{stages[0].points.map(point=><li>{point}</li>)}</ul></div><div class="output" data-hv-outcome>{stages[0].outcome}</div></div></div></div></div></section>
+
+    <section class="section" id="qualification">
+      <div class="wrap qualgrid">
+        <div>
+          <span class="eyebrow blue">QUALIFICATION MATTERS</span>
+          <h2 class="heading">Know the job before the next call.</h2>
+          <p class="bodycopy">An urgent water leak needs different routing from a water heater installation estimate or a commercial maintenance inquiry.</p>
+          <p class="bodycopy">Gather useful information without asking customers to handle unsafe plumbing or electrical conditions themselves.</p>
+        </div>
+        <div class="qualcard">
+          <div class="qualrow"><span>ILLUSTRATIVE LEAD PROFILE</span><strong>01 / 05</strong></div>
+          <div class="qualrow"><span>Service</span><strong>Water Heater Replacement</strong></div>
+          <div class="qualrow"><span>Property</span><strong>Residential</strong></div>
+          <div class="qualrow"><span>Service area</span><strong>Within coverage</strong></div>
+          <div class="qualrow"><span>Timing</span><strong>Within two weeks</strong></div>
+          <div class="qualrow"><span>Next step</span><strong>Estimate consultation</strong></div>
+          <p style="font-size:12px;line-height:1.7;color:#617f92">Illustration only; not a real customer inquiry.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="hv-photo-section" id="plumbing-work">
+      <div class="wrap">
+        <div class="hv-photo-heading">
+          <div>
+            <span class="eyebrow blue">BUILT AROUND REAL PLUMBING WORK</span>
+            <h2 class="heading">Different calls.<br/>Different customer needs.</h2>
+          </div>
+          <p class="bodycopy">Emergency repairs, drain services and installation inquiries require different offers and follow-up. Your campaigns should reflect how plumbing companies actually operate.</p>
+        </div>
+        <div class="hv-photo-grid">
+          <figure class="hv-photo-card hv-photo-feature">
+            <div class="hv-photo-image">
+              <img src="/images/plumbing/plumbing-repair.jpg"
+                   alt="Plumber working on a pipe with a wrench"
+                   loading="lazy" decoding="async" width="1200" height="800"/>
+            </div>
+            <figcaption>
+              <small>01 / PIPE REPAIR</small>
+              <strong>Reach customers looking for professional repairs.</strong>
+              <span>Service-focused search campaigns and clear next steps.</span>
+            </figcaption>
+          </figure>
+          <figure class="hv-photo-card">
+            <div class="hv-photo-image">
+              <img src="/images/plumbing/plumbing-installation.jpg"
+                   alt="Plumbing tools and repair work near a sink"
+                   loading="lazy" decoding="async" width="1200" height="800"/>
+            </div>
+            <figcaption>
+              <small>02 / DRAINS & FIXTURES</small>
+              <strong>Capture specific service requests.</strong>
+              <span>Qualify plumbing inquiries by job type and location.</span>
+            </figcaption>
+          </figure>
+          <figure class="hv-photo-card">
+            <div class="hv-photo-image">
+              <img src="/images/plumbing/plumbing-maintenance.jpg"
+                   alt="Plumbing professional working in a residential setting"
+                   loading="lazy" decoding="async" width="1200" height="800"/>
+            </div>
+            <figcaption>
+              <small>03 / SERVICE & MAINTENANCE</small>
+              <strong>Build an organized follow-up process.</strong>
+              <span>Make scheduling and customer communication easier.</span>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="hv-photo-credit">Illustrative plumbing stock photography, not LeadsFlo client projects.</p>
+      </div>
+    </section>
+
+<section class="section calculator" id="calculator"><div class="wrap calcgrid"><div><span class="eyebrow blue">CAMPAIGN SCENARIO TOOL</span><h2 class="heading">What could more booked plumbing jobs mean?</h2><p class="bodycopy">Adjust the sliders to explore a hypothetical scenario based on monthly inquiries, appointment rate, close rate and average completed plumbing-job revenue.</p><p class="bodycopy"><strong>Important:</strong> These are assumptions, not LeadsFlo results, forecasts or guarantees. Revenue is not profit and excludes marketing and delivery costs.</p></div><div class="calcbox" data-hv-calc><label class="range"><span class="rangetitle">Monthly inquiries <output data-hv-value="leads">60</output></span><input data-hv-range="leads" type="range" min="10" max="250" step="10" value="60" /></label><label class="range"><span class="rangetitle">Appointment booking rate <output data-hv-value="book">35%</output></span><input data-hv-range="book" type="range" min="5" max="90" step="5" value="35" /></label><label class="range"><span class="rangetitle">Close rate <output data-hv-value="close">25%</output></span><input data-hv-range="close" type="range" min="5" max="80" step="5" value="25" /></label><label class="range"><span class="rangetitle">Average completed-job revenue <output data-hv-value="job">$3,500</output></span><input data-hv-range="job" type="range" min="250" max="15000" step="250" value="3500" /></label><div class="result"><small>ILLUSTRATIVE MONTHLY GROSS REVENUE</small><strong data-hv-revenue>$18,375</strong><p data-hv-breakdown>21.0 potential bookings · 5.3 expected jobs</p><p>Scenario only. Not a revenue prediction or performance claim.</p></div></div></div></section>
+  <section class="section" id="faq"><div class="wrap faqgrid"><div><span class="eyebrow blue">COMMON QUESTIONS</span><h2 class="heading">Before we get started.</h2><p class="bodycopy">Common questions about plumbing campaigns, appointment setting and qualification.</p></div><div class="faqlist">{faqs.map((item,index)=><details open={index===0}><summary>{item.q}</summary><p>{item.a}</p></details>)}</div></div></section>
+
+    <section class="section resources" id="resources">
+      <div class="wrap">
+        <span class="eyebrow blue">PLUMBING MARKETING INSIGHTS</span>
+        <h2 class="heading">Learn what brings in better jobs.</h2>
+        <p class="bodycopy" style="margin-bottom:34px">Four planned guides for plumbing contractors.</p>
+        <div class="resourcegrid">
+          <article class="resource"><small>GUIDE / 01</small><h3><a href="/insights/plumbing-lead-generation/">Plumbing Lead Generation</a></h3></article>
+          <article class="resource"><small>GUIDE / 02</small><h3><a href="/insights/google-ads-for-plumbers/">Google Ads for Plumbers</a></h3></article>
+          <article class="resource"><small>GUIDE / 03</small><h3><a href="/insights/plumbing-marketing-strategies/">Plumbing Marketing Strategies</a></h3></article>
+          <article class="resource"><small>GUIDE / 04</small><h3><a href="/insights/plumbing-lead-costs/">Plumbing Lead Costs</a></h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" id="contact">
+      <div class="wrap">
+        <span class="eyebrow" style="color:#ade6d6">LET'S TALK ABOUT YOUR MARKET</span>
+        <h2 class="heading">Turn plumbing inquiries into booked opportunities.</h2>
+        <p>Let's look at the services you offer, your coverage area and how you currently respond to new requests.</p>
+        <a class="cta" href={booking}>Book a Strategy Call ↗</a>
+      </div>
+    </section>
+ </main>
+
+<footer class="hv-footer-v6">
+  <div class="wrap hv-footer-main">
+    <div class="hv-footer-intro">
+      <a class="brand hv-footer-brand" href="/"
+         aria-label="LeadsFlo home">
+        <BrandMark theme="dark" />
+      </a>
+
+      <h2>Better plumbing leads.<br />
+        <em>Better follow-through.</em>
+      </h2>
+
+      <p>
+        Advertising, conversion funnels, qualification and
+        appointment setting working together to help plumbing
+        businesses turn inquiries into conversations.
+      </p>
+
+      <a class="hv-footer-cta" href={booking}>
+        Discuss Your Plumbing Growth ↗
+      </a>
+    </div>
+
+    <nav class="hv-footer-column"
+         aria-label="Plumbing marketing services">
+      <h3>What we do</h3>
+      <a href="#services">Google & Meta Ads</a>
+      <a href="#services">Plumbing Landing Pages</a>
+      <a href="#qualification">Lead Qualification</a>
+      <a href="#process">CRM & Follow-up</a>
+      <a href="#calculator">Revenue Scenario</a>
+    </nav>
+
+    <nav class="hv-footer-column"
+         aria-label="Explore LeadsFlo">
+      <h3>Explore</h3>
+      <a href="/">Home</a>
+      <a href="/industries/">Industries</a>
+      <a href="/insights/">Insights</a>
+      <a href="/work/">Our Work</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+
+    <div class="hv-footer-column hv-footer-contact">
+      <h3>Ready to grow?</h3>
+      <p>
+        Tell us what you offer, where you operate
+        and what you want to improve.
+      </p>
+      <a href={booking}>Book a Strategy Call ↗</a>
+    </div>
+  </div>
+
+  <div class="wrap hv-footer-bottom">
+    <span>© {new Date().getFullYear()} LeadsFlo</span>
+    <span>More leads. Less guesswork.</span>
+    <nav aria-label="Legal information">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms-and-conditions/">Terms & Conditions</a>
+    </nav>
+    <a href="#top" class="hv-back-top">Back to top ↑</a>
+  </div>
+</footer>
+
+ <script define:vars={{stages,offerings}}>
+  const root=document.querySelector('[data-hv-journey]');
+  if(root){
+   const buttons=[...root.querySelectorAll('[data-hv-step]')];
+   function choose(index){
+    const s=stages[index];if(!s)return;
+    buttons.forEach((b,i)=>b.setAttribute('aria-pressed',String(i===index)));
+    function put(sel,text){const el=root.querySelector(sel);if(el)el.textContent=text;}
+    put('[data-hv-tag]',s.tag);put('[data-hv-title]',s.title);put('[data-hv-body]',s.body);put('[data-hv-outcome]',s.outcome);
+    const list=root.querySelector('[data-hv-points]');
+    if(list){list.replaceChildren();s.points.forEach(p=>{const li=document.createElement('li');li.textContent=p;list.append(li);});}
+   }
+
+   buttons.forEach((b,i)=>{
+    b.addEventListener('click',()=>choose(i));
+    b.addEventListener('focus',()=>choose(i));
+    b.addEventListener('pointerenter',e=>{
+      if(e.pointerType==='mouse'||e.pointerType==='pen'){
+        choose(i);
+      }
+    });
+   });
+
+  }
+
+  // Interactive service cards.
+  const cards = [
+    ...document.querySelectorAll('[data-hv-service]')
+  ];
+
+  const preview = document.querySelector('[data-hv-preview]');
+
+  if (preview && cards.length === offerings.length) {
+    function pick(index) {
+      const item = offerings[index];
+      if (!item) return;
+
+      cards.forEach((card, i) => {
+        card.classList.toggle('is-active', i === index);
+        card.setAttribute('aria-pressed', String(i === index));
+      });
+
+      preview.querySelector(
+        '[data-hv-preview-number]'
+      ).textContent = item.n;
+
+      preview.querySelector(
+        '[data-hv-preview-name]'
+      ).textContent = item.name;
+
+      preview.querySelector(
+        '[data-hv-preview-desc]'
+      ).textContent = item.desc;
+    }
+
+    cards.forEach((card, index) => {
+      card.addEventListener('click', () => pick(index));
+      card.addEventListener('focus', () => pick(index));
+
+      card.addEventListener('pointerenter', event => {
+        if (event.pointerType === 'mouse' ||
+            event.pointerType === 'pen') {
+          pick(index);
+        }
+      });
+
+      card.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          pick(index);
+        }
+      });
+    });
+
+    pick(0);
+  }
+
+  // Native tap and keyboard support remains intact.
+  // Mouse hover opens the relevant FAQ.
+  const faq = [
+    ...document.querySelectorAll('.faqlist details')
+  ];
+
+  faq.forEach(item => {
+    item.addEventListener('pointerenter', event => {
+      if (event.pointerType !== 'mouse' &&
+          event.pointerType !== 'pen') return;
+
+      faq.forEach(other => {
+        other.open = (other === item);
+      });
+    });
+  });
+
+  const box=document.querySelector('[data-hv-calc]');
+  if(box){
+   const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
+   const get=k=>Number(box.querySelector(`[data-hv-range="${k}"]`)?.value||0);
+   function calc(){
+    const leads=get('leads'),book=get('book'),close=get('close'),job=get('job');
+    const bookings=leads*book/100,won=bookings*close/100;
+    const outputs={leads:String(leads),book:book+'%',close:close+'%',job:money(job)};
+    Object.entries(outputs).forEach(([key,val])=>{const el=box.querySelector(`[data-hv-value="${key}"]`);if(el)el.textContent=val;});
+    box.querySelector('[data-hv-revenue]').textContent=money(won*job);
+    box.querySelector('[data-hv-breakdown]').textContent=bookings.toFixed(1)+' potential bookings · '+won.toFixed(1)+' expected jobs';
+   }
+   box.querySelectorAll('[data-hv-range]').forEach(input=>input.addEventListener('input',calc));calc();
+  }
+ </script>
+
+
+<script is:inline>
+/* Plumbing_LOGO_V4_FIXED — header and footer */
+(function () {
+  const logos = document.querySelectorAll(
+    'body.hv-page .brand .lf-brand-v4__text > span'
+  );
+
+  logos.forEach(word => {
+    if (word.textContent.trim() !== 'flo') return;
+    if (word.querySelector('.hv-logo-o')) return;
+
+    const letter = document.createElement('span');
+    letter.className = 'hv-logo-o';
+    letter.textContent = 'o';
+
+    const fan = document.createElement('span');
+    fan.className = 'hv-logo-fan';
+    fan.setAttribute('aria-hidden', 'true');
+
+    fan.innerHTML = `
+      <svg viewBox="0 0 32 32" fill="none"
+           xmlns="http://www.w3.org/2000/svg" focusable="false">
+        <path class="pl-logo-drop" d="M16 3 C11 10 6 15 6 20
+          A10 10 0 0 0 26 20 C26 15 21 10 16 3Z"
+          fill="#a9f1dc"/>
+        <path d="M11 19 Q11 14 15 11"
+          stroke="#fff" stroke-width="2.4"
+          stroke-linecap="round" opacity=".75"/>
+      </svg>
+    `;
+
+    letter.appendChild(fan);
+    word.textContent = 'fl';
+    word.appendChild(letter);
+  });
+})();
+</script>
+
+
+
+<div class="pl-sticky-booking"
+     aria-label="Book a plumbing marketing consultation">
+  <div class="pl-sticky-inner">
+    <a href={booking}
+       class="pl-sticky-cta"
+       aria-label="Book a strategy call with LeadsFlo">
+      <span class="pl-sticky-cta-copy">
+        <strong>Book a Strategy Call</strong>
+        <small>Discuss your plumbing lead generation</small>
+      </span>
+      <span class="pl-sticky-arrow" aria-hidden="true">↗</span>
+    </a>
+  </div>
+</div>
+
+
+<script is:inline>
+/* PLUMBING_HEADER_V3 */
+(() => {
+  const header = document.querySelector(
+    '[data-pl-scroll-header]'
+  );
+
+  if (!header) return;
+
+  let previousY = Math.max(0, window.scrollY);
+  let directionDistance = 0;
+  let lastDirection = 0;
+  let ticking = false;
+
+  const reveal = () => {
+    header.classList.remove('pl-header-hidden');
+  };
+
+  function update() {
+    const y = Math.max(0, window.scrollY);
+    const difference = y - previousY;
+
+    previousY = y;
+    ticking = false;
+
+    if (
+      y <= 100 ||
+      document.activeElement &&
+      header.contains(document.activeElement)
+    ) {
+      reveal();
+      directionDistance = 0;
+      lastDirection = 0;
+      return;
+    }
+
+    // Ignore small scroll jitter and rubber-band bounce.
+    if (Math.abs(difference) < 2) return;
+
+    const direction = difference > 0 ? 1 : -1;
+
+    if (direction !== lastDirection) {
+      directionDistance = 0;
+      lastDirection = direction;
+    }
+
+    directionDistance += Math.abs(difference);
+
+    if (directionDistance < 16) return;
+
+    if (direction > 0) {
+      header.classList.add('pl-header-hidden');
+    } else {
+      reveal();
+    }
+
+    directionDistance = 0;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(update);
+  }, { passive: true });
+
+  header.addEventListener('focusin', reveal);
+
+  // Anchor navigation should reveal its destination cleanly.
+  header.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', reveal);
+  });
+
+  window.addEventListener('pageshow', () => {
+    previousY = Math.max(0, window.scrollY);
+    reveal();
+  });
+
+  reveal();
+})();
+</script>
+
+</body>
+</html>

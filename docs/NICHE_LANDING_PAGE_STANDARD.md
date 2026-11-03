@@ -157,3 +157,47 @@ not optional features to add after the first review.
 - [ ] Do not modify existing niche pages without approval.
 - [ ] Do not deploy until the user approves the release.
 - [ ] Use one copy/pasteable terminal code block; never ZIP downloads.
+
+## Mobile V2 standard — required for every future niche
+
+Approved Plumbing mobile requirements, November 4, 2026.
+
+- [ ] Review desktop, tablet and mobile before landing page approval.
+- [ ] Test viewport widths of 320, 375, 390, 430 and 768 pixels.
+- [ ] No clipped headlines, horizontal page overflow or oversized grids.
+- [ ] Mobile H1 wraps cleanly inside the viewport.
+- [ ] Mobile header has a properly scaled niche logo and usable CTA.
+- [ ] Provide accessible mobile section navigation.
+- [ ] Stack hero CTAs with comfortable touch targets.
+- [ ] Keep the industry animation responsive on narrow screens.
+- [ ] Service cards, journey, calculator, photos and footer stack properly.
+- [ ] Mobile users can tap all interactions; hover is only an enhancement.
+- [ ] Add a persistent bottom booking CTA on mobile.
+- [ ] Sticky CTA must use the same configured booking destination.
+- [ ] Account for iPhone safe-area insets in the sticky CTA.
+- [ ] Reserve page-bottom padding so the sticky CTA hides no content.
+- [ ] Sticky CTA must not obscure calculator controls or FAQ interactions.
+- [ ] Do not count CTA clicks as confirmed bookings.
+- [ ] Respect keyboard focus and reduced-motion preferences.
+- [ ] Inspect the real mobile browser, not only a successful Astro build.
+
+## Scroll-aware header and color consistency — V3
+
+Required for every new niche landing page:
+
+- [ ] Header works consistently on desktop, tablet and mobile.
+- [ ] Header remains available at the top of the viewport.
+- [ ] Scrolling down hides the entire header smoothly.
+- [ ] Scrolling up reveals the header smoothly.
+- [ ] Returning near the top always reveals the header.
+- [ ] Ignore small scroll movements to avoid header jitter.
+- [ ] Keyboard focus inside the header keeps it visible.
+- [ ] Mobile section shortcuts move together with the header.
+- [ ] Anchor links account for the visible header height.
+- [ ] Respect reduced-motion preferences.
+- [ ] The mobile bottom booking CTA remains independently fixed.
+- [ ] Header and scrolling services share a coherent color palette.
+- [ ] The scrolling marquee uses high-contrast cream cards.
+- [ ] Avoid unrelated green bands on navy/slate designs.
+- [ ] Test header behavior on desktop, tablet and mobile.
+- [ ] Check scroll direction, page top, keyboard and anchor navigation.
