@@ -1,0 +1,453 @@
+---
+import BrandMark from "../components/BrandMark.astro";
+import "../styles/global.css";
+const booking = "https:" + "//calendar.app.google/1fpawLr6fgP7Hmoi7";
+const canonical = "https:" + "//leadsflo.co/med-spa-lead-generation/";
+const services = [
+  {id:"acquire",num:"01",title:"Bring in the right inquiries",name:"Google & Meta advertising",desc:"Build focused campaigns around the treatments, service area, consultation process and capacity of the practice."},
+  {id:"qualify",num:"02",title:"Understand the request",name:"Consultation funnels",desc:"Capture the service of interest, preferred location and appointment window without asking for sensitive clinical information."},
+  {id:"respond",num:"03",title:"Answer before interest fades",name:"AI reception & chatbot",desc:"Handle routine questions, missed-call coverage, consultation routing and staff handoffs using approved information."},
+  {id:"book",num:"04",title:"Turn interest into appointments",name:"CRM & booking automation",desc:"Coordinate appointments, reminders and consent-based follow-up while tracking each lead's source and status."}
+];
+const faqs = [
+  {q:"Do you sell lists of med spa leads?",a:"No. We build marketing and conversion systems for individual practices, with campaigns, landing pages, qualification and follow-up connected to their booking workflow."},
+  {q:"Can an AI receptionist book consultations?",a:"It can help handle routine inquiries and booking requests when connected to a supported calendar. Actual capabilities depend on the chosen phone, scheduling and CRM systems."},
+  {q:"What can the AI chatbot answer?",a:"Approved questions about services, hours, locations, consultation availability and next steps. Medical advice, suitability decisions and sensitive concerns should go to qualified staff."},
+  {q:"Can you make outbound AI follow-up calls?",a:"Where consent and applicable laws permit, an AI-assisted workflow can follow up on inquiries, confirm consultation details and assist with scheduling. We do not position unsolicited AI robocalling as a service."},
+  {q:"Do you guarantee booked patients or revenue?",a:"No. Results depend on demand, service mix, budget, campaign performance, staff response, availability and conversion rates. We measure the funnel and optimize what we can verify."},
+  {q:"Can this connect to our current CRM and calendar?",a:"Often, yes. We assess existing platforms, permissions, scheduling and data-handling requirements before specifying integrations or migrations."}
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#28352F" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href={canonical} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>Med Spa Marketing Agency | Lead Generation & AI – LeadsFlo</title>
+  <meta name="description" content="Med spa marketing for U.S. practices. Google Ads, Meta Ads, consultation funnels, AI receptionists, website chatbots and automated follow-up." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Med Spa Marketing Agency | Lead Generation & AI – LeadsFlo" />
+  <meta property="og:description" content="A connected med spa marketing system, from qualified inquiry to booked consultation." />
+  <meta property="og:url" content={canonical} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context":"https://schema.org","@type":"Service","name":"Med Spa Marketing & Lead Generation",
+    "serviceType":"Med spa advertising, consultation funnels, CRM automation and AI reception",
+    "provider":{"@type":"Organization","name":"LeadsFlo","url":"https://leadsflo.co/"},
+    "areaServed":{"@type":"Country","name":"United States"},
+    "audience":{"@type":"BusinessAudience","audienceType":"Medical spa owners and operators"},
+    "url":canonical
+  })} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body class="ms-page">
+  <header class="ms-header" id="top">
+    <div class="ms-shell ms-topbar">
+      <a class="ms-brand" href="/" aria-label="LeadsFlo home"><BrandMark /></a>
+      <button class="ms-menu" type="button" aria-expanded="false" aria-controls="ms-links">Menu <span aria-hidden="true">☰</span></button>
+      <nav class="ms-nav" id="ms-links" aria-label="Med spa landing page navigation">
+        <a href="#approach">Our system</a><a href="#ai-front-desk">AI front desk</a><a href="#calculator">Revenue model</a><a href="#faq">FAQs</a>
+      </nav>
+      <a class="ms-top-cta" href={booking} target="_blank" rel="noopener noreferrer">Book a strategy call <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main>
+    <section class="ms-hero">
+      <div class="ms-shell ms-hero-grid">
+        <div class="ms-hero-copy">
+          <p class="ms-eyebrow"><span class="ms-spark"></span> MARKETING & AI SYSTEMS FOR MED SPAS</p>
+          <h1>More booked consultations.<br/><em>Less missed opportunity.</em></h1>
+          <p class="ms-lede">Attract the right inquiries. Answer faster. Make booking easier. One connected marketing and AI front-desk system for growing medical spas.</p>
+          <div class="ms-actions"><a class="ms-btn ms-btn-dark" href={booking} target="_blank" rel="noopener noreferrer">Let's talk about your med spa <span aria-hidden="true">↗</span></a><a class="ms-quiet" href="#ai-front-desk">Explore the AI front desk ↓</a></div>
+          <div class="ms-proof"><span>GOOGLE & META ADS</span><span>AI RECEPTIONIST</span><span>CRM & BOOKING</span></div>
+        </div>
+        <!-- MS_VISUAL_REDESIGN_V2: editorial med-spa hero -->
+        <div class="ms-hero-photo" aria-label="Professional facial treatment in a medical aesthetics setting">
+          <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1500&q=85" alt="Skincare professional applying a facial treatment during an aesthetics appointment" width="1000" height="1220" fetchpriority="high" decoding="async" />
+          <div class="ms-photo-mark"><span class="ms-photo-mark-star" aria-hidden="true">✧</span> BEAUTY MEETS BETTER SYSTEMS</div>
+          <div class="ms-photo-overlay">
+            <span class="ms-photo-num">01 / A BETTER CLIENT JOURNEY</span>
+            <strong>From first interest<br/>to booked consultation.</strong>
+            <span class="ms-photo-small">ADVERTISE &nbsp;→&nbsp; RESPOND &nbsp;→&nbsp; BOOK</span>
+          </div>
+          <div class="ms-photo-float"><span class="ms-float-circle" aria-hidden="true">↗</span><div><strong>Inquiry received</strong><span>Next step: front-desk follow-up</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ms-ticker" aria-label="Med spa marketing and automation services">
+      <div class="ms-ticker-label">THE CONNECTED GROWTH SYSTEM <span aria-hidden="true">✳</span></div>
+      <div class="ms-ticker-viewport"><div class="ms-ticker-track">
+        {Array.from({length:2},(_,i)=><div class="ms-ticker-group" aria-hidden={i===1 ? "true" : undefined}>
+          <span><b>✦</b> Google Ads</span><span><b>◎</b> Meta Advertising</span>
+          <span><b>✳</b> Med Spa Lead Generation</span><span><b>⌁</b> Consultation Funnels</span>
+          <span><b>◈</b> AI Receptionist</span><span><b>↗</b> Outbound AI Calls</span>
+          <span><b>◇</b> Website Chatbot</span><span><b>▦</b> CRM &amp; Booking</span>
+          <span><b>✧</b> Creative &amp; Reels</span>
+        </div>)}
+      </div></div>
+    </section>
+    <section class="ms-intro ms-shell">
+      <p class="ms-kicker">THE OPPORTUNITY</p>
+      <div><h2>Interest is only useful when your team can <em>turn it into a conversation.</em></h2><p>Med spa owners don't need more disconnected marketing tools. They need qualified consultations, a responsive front desk and clear visibility into what happens after someone submits a form or makes a call.</p></div>
+    </section>
+
+    <section class="ms-treatment" id="treatments" aria-labelledby="ms-treatment-title">
+      <div class="ms-shell">
+        <div class="ms-treatment-top">
+          <div><p class="ms-kicker">DESIGNED AROUND YOUR PRACTICE</p><h2 id="ms-treatment-title">Marketing that feels as considered<br/>as the care you deliver.</h2></div>
+          <p>Different services attract different clients. We adapt the campaigns, creative, qualification questions and booking journey to your practice—not the other way around.</p>
+        </div>
+        <div class="ms-treatment-layout">
+          <div class="ms-treatment-visual">
+            <img id="ms-treatment-image" src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=1100&q=85" alt="Skincare and facial service illustration" loading="lazy" width="900" height="850" />
+            <div class="ms-treatment-img-label"><small id="ms-treatment-count">01 / 03</small><strong id="ms-treatment-visual-label">Skin &amp; facial services</strong></div>
+          </div>
+          <div class="ms-treatment-select" role="group" aria-label="Explore med spa marketing examples">
+            <button type="button" class="ms-treatment-choice is-active" data-treat="0" aria-pressed="true"><span>01 / SKIN</span><strong>Facials &amp; skin services</strong><small>Service-led campaigns, consultation questions and repeat-visit pathways.</small><i aria-hidden="true">↗</i></button>
+            <button type="button" class="ms-treatment-choice" data-treat="1" aria-pressed="false"><span>02 / AESTHETICS</span><strong>Aesthetic consultations</strong><small>Trust-first creative and clear handoff to licensed medical staff.</small><i aria-hidden="true">↗</i></button>
+            <button type="button" class="ms-treatment-choice" data-treat="2" aria-pressed="false"><span>03 / RETENTION</span><strong>Follow-up &amp; rebooking</strong><small>Prompt responses, consent-based reminders and a more connected client experience.</small><i aria-hidden="true">↗</i></button>
+            <p class="ms-treatment-note">Illustrative service journeys—not claims about treatment outcomes or patient results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ms-system" id="approach"><div class="ms-shell"><div class="ms-section-head"><div><p class="ms-kicker">THE ACQUISITION SYSTEM</p><h2>From first impression<br/>to first consultation.</h2></div><p>Built around your services, team capacity and the real booking journey.</p></div><div class="ms-steps">{services.map(item=><article class="ms-step"><span class="ms-step-num">{item.num} / {item.name}</span><h3>{item.title}</h3><p>{item.desc}</p><span class="ms-step-arrow" aria-hidden="true">↗</span></article>)}</div></div></section>
+
+    <!-- MS_POLISH_V3: Separate visual contexts, not repeated treatment photography. -->
+    <section class="ms-photo-gallery" aria-labelledby="ms-gallery-heading">
+      <div class="ms-shell">
+        <div class="ms-gallery-heading">
+          <div><p class="ms-kicker">EVERY TOUCHPOINT COUNTS</p>
+          <h2 id="ms-gallery-heading">From first impression to a welcoming front desk.</h2></div>
+          <p>A strong med spa brand connects the first ad with the consultation, the reception experience and the next appointment.</p>
+        </div>
+        <div class="ms-gallery-grid">
+          <figure><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1100&q=85" alt="Beauty and spa reception environment" loading="lazy" width="700" height="850"/><figcaption><span>01 / FIRST IMPRESSION</span><strong>Reception &amp; arrival</strong></figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1100&q=85" alt="Consultation conversation and client service" loading="lazy" width="700" height="850"/><figcaption><span>02 / HUMAN CONNECTION</span><strong>Consultations &amp; questions</strong></figcaption></figure>
+          <figure><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1100&q=85" alt="Modern clinical and professional service environment" loading="lazy" width="700" height="850"/><figcaption><span>03 / FOLLOW-THROUGH</span><strong>Practice &amp; front desk</strong></figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <section class="ms-ai" id="ai-front-desk"><div class="ms-shell ms-ai-grid"><div><p class="ms-kicker">THE AI FRONT DESK</p><h2>When the phone rings,<br/><em>the journey continues.</em></h2><p>Routine calls, questions and booking requests shouldn't disappear because the front desk is busy. AI can support the team without pretending to be a clinician.</p><ul class="ms-benefits"><li><strong>AI receptionist</strong><span>Inbound call handling, hours, consultation requests and staff handoff.</span></li><li><strong>Website AI chatbot</strong><span>Answers to approved FAQs, new inquiry capture and booking guidance.</span></li><li><strong>Outbound AI calls</strong><span>Consent-based follow-up and appointment coordination, with identification and opt-out safeguards.</span></li><li><strong>CRM & follow-through</strong><span>Routing, reminders, attribution and human escalation.</span></li></ul></div><div class="ms-demo"><div class="ms-demo-bar"><span><i></i> DEMONSTRATION ONLY</span><span>AI FRONT DESK</span></div><div class="ms-demo-body"><div class="ms-chat ms-chat-visitor">Hi, I'd like to book a consultation. Do you have appointments this week?</div><div class="ms-chat ms-chat-ai" id="ms-ai-reply">Hello! I can help with general scheduling information. Which location are you interested in?</div><div class="ms-demo-choices"><button type="button" data-reply="location">Choose a location</button><button type="button" data-reply="staff">Speak with staff</button><button type="button" data-reply="call">How do AI calls work?</button></div></div><div class="ms-demo-foot"><span class="ms-status-dot"></span> Interactive sample — no patient data collected</div></div></div></section>
+    <section class="ms-qual ms-shell"><div><p class="ms-kicker">DESIGNED FOR THE RIGHT FIT</p><h2>Your service mix changes<br/>the marketing strategy.</h2></div><div class="ms-qual-grid"><article><span>01</span><h3>Service-specific campaigns</h3><p>Different offers and consultation journeys for aesthetic services, subject to applicable advertising rules.</p></article><article><span>02</span><h3>Consultation-first qualification</h3><p>Ask useful scheduling and service-interest questions. Keep clinical assessments with qualified providers.</p></article><article><span>03</span><h3>Capacity-aware automation</h3><p>Route inquiries according to locations, calendars, appointment types and staff availability.</p></article></div></section>
+
+    <section class="ms-editorial" aria-label="Front desk experience and marketing support">
+      <div class="ms-editorial-photo"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1100&q=85" alt="Close-up of a skincare oil being applied during a wellness service" loading="lazy" width="1100" height="720" /></div>
+      <div class="ms-editorial-content"><p class="ms-kicker">MORE THAN AN AD CAMPAIGN</p><h2>Good marketing creates interest.<br/><em>A better system follows through.</em></h2><p>Ads, landing pages, conversations, qualification, and scheduling should feel like one experience. Our AI workflows support your team with approved information—not diagnosis or treatment recommendations.</p><a href="#ai-front-desk">See the AI front desk <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section class="ms-calc" id="calculator"><div class="ms-shell ms-calc-grid"><div><p class="ms-kicker">THE REVENUE MODEL</p><h2>What could a stronger booking process mean?</h2><p>Use your own assumptions to explore the effect of converting more inquiries into completed consultations. This is a planning calculator, not a forecast or guarantee.</p></div><div class="ms-calc-card"><label for="ms-inquiries">Monthly inquiries <strong id="ms-inquiries-value">100</strong></label><input id="ms-inquiries" type="range" min="20" max="500" value="100" step="10"/><label for="ms-booking">Consultations booked <strong id="ms-booking-value">35%</strong></label><input id="ms-booking" type="range" min="5" max="90" value="35" step="5"/><label for="ms-show">Consultation show rate <strong id="ms-show-value">75%</strong></label><input id="ms-show" type="range" min="20" max="100" value="75" step="5"/><label for="ms-value">Average realized revenue per completed consultation <strong id="ms-value-value">$400</strong></label><input id="ms-value" type="range" min="50" max="2500" value="400" step="50"/><div class="ms-calc-result"><span>Illustrative monthly revenue from completed consultations</span><strong id="ms-result">$10,500</strong><small>Excludes ad spend, operating costs and cancellations after attendance; not a profit estimate.</small></div></div></div></section>
+    
+<!-- MS_SEO_CLUSTER_V2 -->
+<section class="ms-resources" id="resources">
+  <div class="ms-shell">
+    <p class="ms-kicker">MED SPA GROWTH RESOURCES</p>
+    <div class="ms-resource-heading">
+      <h2>Better marketing starts with better decisions.</h2>
+      <p>Explore advertising, lead generation, AI reception
+      and consultation-booking strategies.</p>
+    </div>
+    <div class="ms-resource-grid">
+      <a class="ms-resource-card"
+         href="/insights/med-spa-marketing-strategy/">
+      <span>MED SPA / MARKETING STRATEGY</span>
+      <h3>Med Spa Marketing Strategy: How to Grow a Medical Spa</h3>
+      <p>A practical med spa marketing strategy covering local SEO, Google Ads, Meta Ads, consultation booking, AI receptionists and CRM follow-up.</p>
+      <strong>Read guide ↗</strong>
+    </a>
+<a class="ms-resource-card"
+         href="/insights/google-ads-for-med-spas/">
+      <span>MED SPA / GOOGLE ADS</span>
+      <h3>Google Ads for Med Spas: PPC &amp; Qualified Consultations</h3>
+      <p>A practical guide to Google Ads for med spas covering PPC keywords, search intent, landing pages, sensitive health advertising and booked consultations.</p>
+      <strong>Read guide ↗</strong>
+    </a>
+<a class="ms-resource-card"
+         href="/insights/facebook-ads-for-med-spas/">
+      <span>MED SPA / FACEBOOK ADS</span>
+      <h3>Facebook Ads for Med Spas: Creative, Leads &amp; Booking</h3>
+      <p>How to approach Facebook and Instagram ads for med spas using authentic creative, consultation funnels, lead qualification and CRM follow-up.</p>
+      <strong>Read guide ↗</strong>
+    </a>
+<a class="ms-resource-card"
+         href="/insights/med-spa-lead-generation/">
+      <span>MED SPA / LEAD GENERATION</span>
+      <h3>Med Spa Lead Generation: From Inquiry to Consultation</h3>
+      <p>Med spa lead generation explained: Google Ads, Meta Ads, consultation funnels, lead qualification, AI receptionists and appointment booking.</p>
+      <strong>Read guide ↗</strong>
+    </a>
+<a class="ms-resource-card"
+         href="/insights/ai-receptionist-for-med-spas/">
+      <span>MED SPA / AI &amp; AUTOMATION</span>
+      <h3>AI Receptionists for Med Spas: Calls, Chatbots &amp; Booking</h3>
+      <p>AI receptionists for med spas, website chatbots, consent-based outbound AI calls, missed-call recovery, appointment booking and human handoff.</p>
+      <strong>Read guide ↗</strong>
+    </a>
+    </div>
+  </div>
+</section>
+
+<section class="ms-faq ms-shell" id="faq"><div class="ms-section-head"><div><p class="ms-kicker">COMMON QUESTIONS</p><h2>Clear answers.<br/>No inflated promises.</h2></div></div><div class="ms-faq-list">{faqs.map(item=><details><summary>{item.q}<span aria-hidden="true">+</span></summary><p>{item.a}</p></details>)}</div></section>
+    <section class="ms-final"><div class="ms-shell"><p class="ms-kicker">YOUR NEXT STEP</p><h2>A better front desk starts<br/>before the phone rings.</h2><p>Let's examine your acquisition, booking and follow-up process and find the gaps worth fixing.</p><a class="ms-btn ms-btn-light" href={booking} target="_blank" rel="noopener noreferrer">Book a strategy call <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="ms-footer"><div class="ms-shell ms-footer-content"><a href="/" class="ms-footer-logo" aria-label="LeadsFlo home"><BrandMark /></a><p>Marketing, automation and AI-powered front-desk systems for med spas.</p><span>© {new Date().getFullYear()} LeadsFlo</span></div></footer>
+  <div class="ms-mobile-book"><a href={booking} target="_blank" rel="noopener noreferrer">Book a strategy call ↗</a></div>
+  <script is:inline>
+    (()=>{
+      const header=document.querySelector('.ms-header');const menu=document.querySelector('.ms-menu');const nav=document.querySelector('.ms-nav');let prev=window.scrollY;
+      function closeMenu(){header.classList.remove('ms-open');menu.setAttribute('aria-expanded','false');}
+      menu.addEventListener('click',()=>{const open=header.classList.toggle('ms-open');menu.setAttribute('aria-expanded',String(open));header.classList.remove('ms-hidden');});
+      nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+      window.addEventListener('scroll',()=>{const now=window.scrollY;if(Math.abs(now-prev)<5)return;if(now<75||now<prev){header.classList.remove('ms-hidden')}else if(!header.classList.contains('ms-open')){header.classList.add('ms-hidden')}prev=now;},{passive:true});
+
+      // MS_VISUAL_REDESIGN_V2: accessible treatment-journey selector
+      const treatmentImage = document.getElementById('ms-treatment-image');
+      const treatmentLabel = document.getElementById('ms-treatment-visual-label');
+      const treatmentCount = document.getElementById('ms-treatment-count');
+      const treatmentChoices = [...document.querySelectorAll('[data-treat]')];
+      const treatmentStates = [
+        {image:'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=1100&q=85',alt:'Skincare and facial service illustration',label:'Skin & facial services'},
+        {image:'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1100&q=85',alt:'Professional medical consultation illustration',label:'Aesthetic consultations'},
+        {image:'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1100&q=85',alt:'Relaxing spa setting representing returning clients',label:'Client follow-up & rebooking'}
+      ];
+      // MS_POLISH_V3: Hover previews on desktop; click and focus also work.
+      const activateTreatment=(index)=>{
+        const state=treatmentStates[index];
+        if(!state || !treatmentImage)return;
+        treatmentChoices.forEach((choice,j)=>{
+          choice.classList.toggle('is-active',j===index);
+          choice.setAttribute('aria-pressed',String(j===index));
+        });
+        if(treatmentImage.src!==state.image)treatmentImage.src=state.image;
+        treatmentImage.alt=state.alt;
+        treatmentLabel.textContent=state.label;
+        treatmentCount.textContent=String(index+1).padStart(2,'0')+' / 03';
+      };
+      treatmentChoices.forEach((button,index)=>{
+        button.addEventListener('pointerenter',event=>{
+          if(event.pointerType==='mouse'||event.pointerType==='pen')activateTreatment(index);
+        });
+        button.addEventListener('focus',()=>activateTreatment(index));
+        button.addEventListener('click',()=>activateTreatment(index));
+      });
+
+      // Hover-to-open FAQ, with click-to-pin and keyboard access.
+      const faqItems=[...document.querySelectorAll('.ms-faq-list details')];
+      faqItems.forEach((item)=>{
+        const summary=item.querySelector('summary');
+        if(!summary)return;
+        let pinned=false;
+        item.addEventListener('pointerenter',event=>{
+          if(event.pointerType!=='mouse'&&event.pointerType!=='pen')return;
+          faqItems.forEach(other=>{if(other!==item&&!other.dataset.pinned)other.open=false;});
+          item.open=true;
+        });
+        item.addEventListener('pointerleave',event=>{
+          if((event.pointerType==='mouse'||event.pointerType==='pen')&&!pinned)item.open=false;
+        });
+        summary.addEventListener('click',event=>{
+          event.preventDefault();
+          pinned=!pinned;
+          item.dataset.pinned=pinned?'true':'';
+          item.open=pinned;
+        });
+      });
+      const replies={location:'Of course. Please select your preferred clinic location and a team member can help confirm the available consultations.',staff:'Absolutely. I can route your question to the front-desk team for a personal response.',call:'With appropriate consent, AI-assisted calling can help confirm appointments or follow up on a consultation request. Clinical questions go to your team.'};
+      document.querySelectorAll('[data-reply]').forEach(btn=>btn.addEventListener('click',()=>{document.getElementById('ms-ai-reply').textContent=replies[btn.dataset.reply];}));
+      const ids=['ms-inquiries','ms-booking','ms-show','ms-value'];const fmt=new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0});
+      function update(){const n=Number(document.getElementById(ids[0]).value),b=Number(document.getElementById(ids[1]).value),s=Number(document.getElementById(ids[2]).value),v=Number(document.getElementById(ids[3]).value);document.getElementById('ms-inquiries-value').textContent=n;document.getElementById('ms-booking-value').textContent=b+'%';document.getElementById('ms-show-value').textContent=s+'%';document.getElementById('ms-value-value').textContent=fmt.format(v);document.getElementById('ms-result').textContent=fmt.format(Math.round(n*b/100*s/100*v));}
+      ids.forEach(id=>document.getElementById(id).addEventListener('input',update));update();
+    })();
+  </script>
+</body>
+</html>
+<style is:global>
+  :root{scroll-behavior:smooth}body.ms-page{margin:0;background:#f4f0e9;color:#28352f;font-family:'DM Sans',sans-serif}body.ms-page *{box-sizing:border-box}body.ms-page a{text-decoration:none}body.ms-page button{font:inherit}body.ms-page h1,body.ms-page h2,body.ms-page h3{font-family:Manrope,sans-serif;letter-spacing:-.055em}body.ms-page em{font-style:normal;color:#9b8066}body.ms-page .ms-shell{width:min(1160px,calc(100% - 52px));margin:auto}body.ms-page .ms-kicker,body.ms-page .ms-eyebrow{font:800 11px Manrope,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:#79877b}body.ms-page .ms-kicker{margin:0 0 23px}body.ms-page .ms-header{position:sticky;top:0;z-index:40;background:#f4f0e9eF;border-bottom:1px solid #dcded4;backdrop-filter:blur(16px);transition:transform .25s ease}body.ms-page .ms-header.ms-hidden{transform:translateY(-102%)}body.ms-page .ms-topbar{display:flex;align-items:center;min-height:91px;gap:30px}body.ms-page .ms-brand{display:flex;align-items:center;margin-right:auto}body.ms-page .ms-brand .lf-brand-v4{font-size:28px}body.ms-page .ms-nav{display:flex;align-items:center;gap:27px}body.ms-page .ms-nav a{font-weight:700;font-size:12px;color:#28352f}body.ms-page .ms-nav a:hover{color:#9b8066}body.ms-page .ms-top-cta{padding:17px 20px;background:#28352f;color:#fff;font-size:12px;font-weight:800;white-space:nowrap}body.ms-page .ms-top-cta span{padding-left:18px}body.ms-page .ms-menu{display:none}body.ms-page .ms-hero{padding:87px 0 92px;background:#f4f0e9}body.ms-page .ms-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:7%;align-items:stretch}body.ms-page .ms-hero-copy{padding:30px 0}body.ms-page .ms-eyebrow{display:flex;align-items:center;gap:12px}body.ms-page .ms-spark{width:9px;height:9px;background:#b89c80;border-radius:50%;box-shadow:0 0 0 6px #b89c802c}body.ms-page h1{font-size:clamp(48px,5.4vw,79px);line-height:1.07;margin:35px 0 27px;font-weight:800;max-width:750px}body.ms-page .ms-lede{max-width:565px;font-size:18px;line-height:1.85;color:#647069}body.ms-page .ms-actions{display:flex;gap:27px;align-items:center;flex-wrap:wrap;margin:33px 0 38px}body.ms-page .ms-btn{display:inline-flex;align-items:center;justify-content:space-between;gap:25px;padding:19px 23px;font-weight:800;font-size:13px;transition:transform .2s ease}body.ms-page .ms-btn:hover{transform:translateY(-3px)}body.ms-page .ms-btn-dark{background:#28352f;color:#fff}body.ms-page .ms-quiet{font-size:13px;font-weight:800;color:#435a4b}body.ms-page .ms-proof{display:flex;gap:18px;flex-wrap:wrap;border-top:1px solid #d6d8cd;padding-top:27px}body.ms-page .ms-proof span{color:#7c877f;letter-spacing:.11em;font:700 10px Manrope,sans-serif}body.ms-page .ms-hero-art{min-height:560px;background:linear-gradient(145deg,#ccd6c8,#718e7f);padding:30px;display:flex;flex-direction:column;overflow:hidden;position:relative}body.ms-page .ms-hero-art:before{content:'';position:absolute;width:490px;height:490px;border-radius:50%;border:1px solid #e9f4e766;top:9%;left:10%;box-shadow:0 0 0 40px #ffffff12,0 0 0 100px #ffffff0f}body.ms-page .ms-art-caption,body.ms-page .ms-art-bottom{display:flex;justify-content:space-between;align-items:center;color:#f8faf4;letter-spacing:.13em;font:800 10px Manrope,sans-serif;position:relative;z-index:1}body.ms-page .ms-art-orb{display:grid;place-items:center;flex:1;position:relative;z-index:1}body.ms-page .ms-orb-inner{width:300px;height:300px;border:1px solid #e9f4e7bb;border-radius:50%;background:#f7f9f344;display:flex;align-items:center;justify-content:center;gap:8px;flex-direction:column;box-shadow:inset 0 0 80px #f5fff325;color:#253e31;transform:rotate(-8deg)}body.ms-page .ms-orb-inner span{font-size:14px}body.ms-page .ms-orb-inner strong{font:800 27px Manrope,sans-serif;letter-spacing:-.06em}body.ms-page .ms-orb-inner b{font-size:23px;font-weight:400}body.ms-page .ms-art-bottom{gap:15px;letter-spacing:0;font-size:12px}body.ms-page .ms-art-bottom p{flex:1;margin:0}body.ms-page .ms-pulse{width:8px;height:8px;background:#f9f9ea;border-radius:50%;box-shadow:0 0 0 6px #ffffff2f}body.ms-page .ms-intro{display:grid;grid-template-columns:.27fr 1fr;gap:7%;padding-top:100px;padding-bottom:110px}body.ms-page .ms-intro h2{font-size:clamp(35px,4vw,53px);line-height:1.18;margin:0 0 25px}body.ms-page .ms-intro p:not(.ms-kicker){font-size:17px;line-height:1.9;max-width:810px;color:#617068}body.ms-page .ms-system{background:#28352f;color:#f4f0e9;padding:110px 0}body.ms-page .ms-section-head{display:flex;justify-content:space-between;gap:60px;align-items:end;margin-bottom:49px}body.ms-page .ms-section-head h2,body.ms-page .ms-ai h2,body.ms-page .ms-qual h2,body.ms-page .ms-calc h2,body.ms-page .ms-faq h2,body.ms-page .ms-final h2{font-size:clamp(36px,4vw,57px);line-height:1.12;margin:0}body.ms-page .ms-section-head>p{max-width:280px;font-size:15px;line-height:1.8;color:#b6c3b8}body.ms-page .ms-steps{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #6a796b}body.ms-page .ms-step{padding:34px 25px;min-height:330px;border-right:1px solid #6a796b;position:relative;transition:background .2s ease}body.ms-page .ms-step:last-child{border:0}body.ms-page .ms-step:hover{background:#35493f}body.ms-page .ms-step-num{font:700 10px Manrope,sans-serif;letter-spacing:.09em;color:#b9cfbf}body.ms-page .ms-step h3{font-size:26px;line-height:1.2;margin:50px 0 17px}body.ms-page .ms-step p{font-size:13px;line-height:1.75;color:#c1cec3}body.ms-page .ms-step-arrow{position:absolute;bottom:25px;right:27px;color:#d7b694}body.ms-page .ms-ai{padding:112px 0;background:#e7e9df}body.ms-page .ms-ai-grid{display:grid;grid-template-columns:1fr .95fr;gap:10%;align-items:center}body.ms-page .ms-ai h2{margin-bottom:27px}body.ms-page .ms-ai-grid>div:first-child>p:not(.ms-kicker){line-height:1.8;color:#5b6c60}body.ms-page .ms-benefits{padding:0;margin:29px 0 0;list-style:none}body.ms-page .ms-benefits li{display:flex;flex-direction:column;gap:6px;padding:17px 0;border-bottom:1px solid #c4cbc0}body.ms-page .ms-benefits strong{font-size:15px}body.ms-page .ms-benefits span{color:#67786b;font-size:13px;line-height:1.6}body.ms-page .ms-demo{background:#fafaf6;box-shadow:0 25px 70px #28352f16;border:1px solid #d6ded2}body.ms-page .ms-demo-bar{padding:22px 25px;border-bottom:1px solid #e0e5dc;display:flex;justify-content:space-between;gap:10px;color:#516b57;font:800 10px Manrope,sans-serif;letter-spacing:.06em}body.ms-page .ms-demo-bar i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#8ca48d;margin-right:7px}body.ms-page .ms-demo-body{padding:35px 29px;display:flex;flex-direction:column;gap:20px}body.ms-page .ms-chat{max-width:90%;padding:17px 20px;font-size:14px;line-height:1.7}body.ms-page .ms-chat-visitor{align-self:flex-end;background:#e9eae3;color:#3e5344;border-radius:18px 18px 3px 18px}body.ms-page .ms-chat-ai{align-self:flex-start;background:#30483b;color:#fff;border-radius:18px 18px 18px 3px;min-height:100px}body.ms-page .ms-demo-choices{display:flex;flex-wrap:wrap;gap:8px}body.ms-page .ms-demo-choices button{border:1px solid #9baa9e;color:#30483b;background:transparent;padding:10px 13px;font-size:11px;font-weight:800;cursor:pointer}body.ms-page .ms-demo-choices button:hover{background:#dbe3d9}body.ms-page .ms-demo-foot{padding:17px 25px;border-top:1px solid #e0e5dc;font-size:11px;color:#708276}body.ms-page .ms-status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#80a28b;margin-right:8px}body.ms-page .ms-qual{display:grid;grid-template-columns:.7fr 1.3fr;gap:6%;padding-top:112px;padding-bottom:112px}body.ms-page .ms-qual-grid{display:grid;gap:15px}body.ms-page .ms-qual article{padding:25px 0;border-bottom:1px solid #cdd4c9}body.ms-page .ms-qual article span{color:#9b8066;font-weight:800;font-size:12px}body.ms-page .ms-qual h3{font-size:23px;margin:10px 0}body.ms-page .ms-qual article p{font-size:14px;line-height:1.7;color:#6f7e72}body.ms-page .ms-calc{background:#d7dfd2;padding:110px 0}body.ms-page .ms-calc-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:12%}body.ms-page .ms-calc-grid>div:first-child p:not(.ms-kicker){color:#66786a;line-height:1.85}body.ms-page .ms-calc-card{background:#fafaf6;padding:35px;box-shadow:0 20px 50px #2b3e2e14}body.ms-page .ms-calc-card label{display:flex;justify-content:space-between;gap:10px;margin:14px 0;font-size:13px;font-weight:700}body.ms-page .ms-calc-card input{width:100%;accent-color:#778e7d;margin-bottom:16px}body.ms-page .ms-calc-result{padding:25px;margin-top:15px;background:#28352f;color:#fff;display:flex;flex-direction:column;gap:9px}body.ms-page .ms-calc-result span{font-size:11px;letter-spacing:.04em;color:#b6d2bb}body.ms-page .ms-calc-result strong{font:800 43px Manrope,sans-serif}body.ms-page .ms-calc-result small{font-size:10px;color:#b9c7bd;line-height:1.7}body.ms-page .ms-faq{padding-top:112px;padding-bottom:112px}body.ms-page .ms-faq-list{border-top:1px solid #c8cec3}body.ms-page .ms-faq details{border-bottom:1px solid #c8cec3}body.ms-page .ms-faq summary{padding:26px 0;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;font-size:17px;font-weight:800}body.ms-page .ms-faq summary::-webkit-details-marker{display:none}body.ms-page .ms-faq summary span{font-size:25px;color:#9b8066}body.ms-page .ms-faq details[open] summary span{transform:rotate(45deg)}body.ms-page .ms-faq details p{color:#66756a;font-size:14px;line-height:1.9;max-width:850px;padding-bottom:25px;margin:0}body.ms-page .ms-final{background:#28352f;color:#f9faf3;text-align:center;padding:110px 20px}body.ms-page .ms-final h2{margin:0 auto 27px}body.ms-page .ms-final p:not(.ms-kicker){color:#b9c8bd;line-height:1.8}body.ms-page .ms-btn-light{background:#f4f0e9;color:#28352f;margin-top:25px}body.ms-page .ms-footer{background:#f4f0e9;padding:55px 0}body.ms-page .ms-footer-content{display:flex;align-items:center;gap:28px;flex-wrap:wrap}body.ms-page .ms-footer-logo .lf-brand-v4{font-size:36px}body.ms-page .ms-footer p{color:#68796c;font-size:12px;margin-right:auto}body.ms-page .ms-footer-content > span{color:#718074;font-size:12px}body.ms-page .ms-mobile-book{display:none}body.ms-page [id]{scroll-margin-top:100px}
+  @media(max-width:1050px){body.ms-page .ms-hero-grid{gap:30px}body.ms-page .ms-hero-art{min-height:480px}body.ms-page .ms-nav{gap:15px}body.ms-page .ms-steps{grid-template-columns:repeat(2,1fr)}body.ms-page .ms-step:nth-child(2){border-right:0}body.ms-page .ms-step:nth-child(-n+2){border-bottom:1px solid #6a796b}}
+  @media(max-width:760px){body.ms-page .ms-shell{width:min(100% - 34px,560px)}body.ms-page .ms-topbar{min-height:72px;flex-wrap:wrap;gap:12px;padding:10px 0}body.ms-page .ms-brand .lf-brand-v4{font-size:24px}body.ms-page .ms-menu{display:block;border:1px solid #c6d0c3;background:none;color:#28352f;padding:11px 13px;font-weight:800;font-size:12px}body.ms-page .ms-menu span{margin-left:10px}body.ms-page .ms-top-cta{display:none}body.ms-page .ms-nav{display:none;flex-basis:100%;width:100%;border-top:1px solid #c8d0c4;padding:12px 0;flex-direction:column;align-items:stretch;gap:0}body.ms-page .ms-header.ms-open .ms-nav{display:flex}body.ms-page .ms-nav a{display:block;padding:13px 0;border-bottom:1px solid #e0e4da}body.ms-page .ms-hero{padding:40px 0 65px}body.ms-page .ms-hero-grid,body.ms-page .ms-ai-grid,body.ms-page .ms-calc-grid{grid-template-columns:1fr;gap:40px}body.ms-page .ms-hero-copy{padding:0}body.ms-page h1{font-size:clamp(43px,10vw,58px)}body.ms-page .ms-lede{font-size:16px}body.ms-page .ms-hero-art{min-height:390px}body.ms-page .ms-art-orb .ms-orb-inner{width:260px;height:260px}body.ms-page .ms-intro,body.ms-page .ms-qual{grid-template-columns:1fr;gap:25px;padding-top:70px;padding-bottom:70px}body.ms-page .ms-intro h2{font-size:35px}body.ms-page .ms-system,body.ms-page .ms-ai,body.ms-page .ms-calc{padding:75px 0}body.ms-page .ms-section-head{display:block;margin-bottom:30px}body.ms-page .ms-section-head>p{margin-top:22px}body.ms-page .ms-steps{grid-template-columns:1fr}body.ms-page .ms-step{min-height:220px;border-right:none!important;border-bottom:1px solid #6a796b;padding:25px}body.ms-page .ms-step h3{margin:25px 0 12px}body.ms-page .ms-qual h2,body.ms-page .ms-ai h2,body.ms-page .ms-calc h2,body.ms-page .ms-faq h2,body.ms-page .ms-final h2{font-size:37px}body.ms-page .ms-faq{padding-top:75px;padding-bottom:95px}body.ms-page .ms-footer{padding-bottom:108px}body.ms-page .ms-footer-content{display:block}body.ms-page .ms-footer-content>*{margin:15px 0}body.ms-page .ms-mobile-book{display:block;position:fixed;bottom:0;left:0;width:100%;z-index:50;background:#f4f0e9;border-top:1px solid #c8d0c4;padding:13px 17px max(13px,env(safe-area-inset-bottom))}body.ms-page .ms-mobile-book a{display:block;text-align:center;padding:16px 14px;color:#fff;background:#28352f;font-size:14px;font-weight:800}body.ms-page .ms-proof{gap:12px}}
+  @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}body.ms-page .ms-header,body.ms-page .ms-btn{transition:none}}
+</style>
+
+<style is:global>
+/* MS_VISUAL_REDESIGN_V2 — site-scoped editorial redesign */
+body.ms-page{background:#f5f0eb;color:#263a35;}
+body.ms-page .ms-header{background:rgba(250,247,242,.96);border-bottom:1px solid #dfd8cf;backdrop-filter:blur(16px);}
+body.ms-page .ms-topbar{min-height:96px;}
+body.ms-page .ms-brand,body.ms-page .ms-footer-logo{position:relative;display:inline-flex;align-items:center;}
+body.ms-page .ms-brand .lf-brand-v4{font-size:36px;--brand-text:#263a35;--brand-flo:#b17d69;--brand-period:#809b87;--brand-plane:#b17d69;}
+body.ms-page .ms-brand .lf-brand-v4__current1,body.ms-page .ms-footer-logo .lf-brand-v4__current1{stroke:#b17d69;}
+body.ms-page .ms-brand .lf-brand-v4__current2,body.ms-page .ms-footer-logo .lf-brand-v4__current2{stroke:#748a79;}
+body.ms-page .ms-brand::after{content:'✧';position:absolute;color:#b17d69;font-size:23px;top:-8px;right:-16px;pointer-events:none;}
+body.ms-page .ms-footer-logo .lf-brand-v4{--brand-text:#263a35;--brand-flo:#b17d69;--brand-period:#809b87;--brand-plane:#b17d69;}
+body.ms-page .ms-top-cta,body.ms-page .ms-btn-dark,body.ms-page .ms-mobile-book a{background:#324b40;color:#fff;border:1px solid #324b40;}
+body.ms-page .ms-top-cta:hover,body.ms-page .ms-btn-dark:hover{background:#b17d69;border-color:#b17d69;color:#fff;}
+body.ms-page .ms-hero{background:#f5f0eb;padding:82px 0 72px;overflow:hidden;}
+body.ms-page .ms-hero-grid{grid-template-columns:1.08fr .92fr;gap:clamp(50px,6vw,112px);align-items:center;}
+body.ms-page .ms-hero-copy{padding:18px 0;}
+body.ms-page .ms-eyebrow{color:#738477;letter-spacing:.17em;}
+body.ms-page .ms-spark{background:#b17d69;}
+body.ms-page h1{font-size:clamp(58px,5.4vw,92px);letter-spacing:-.073em;line-height:1.055;}
+body.ms-page h1 em{color:#af806a;}
+body.ms-page .ms-lede{max-width:590px;color:#607169;}
+body.ms-page .ms-proof{border-top:1px solid #d7ccc2;}
+body.ms-page .ms-proof span{color:#607169;}
+body.ms-page .ms-hero-photo{height:620px;min-height:540px;position:relative;isolation:isolate;background:#b3afa7;overflow:visible;box-shadow:0 35px 70px rgba(48,54,45,.13);}
+body.ms-page .ms-hero-photo>img{width:100%;height:100%;object-fit:cover;object-position:center center;display:block;}
+body.ms-page .ms-hero-photo::after{content:'';position:absolute;inset:35% 0 0;pointer-events:none;background:linear-gradient(0deg,rgba(17,31,25,.79),transparent);z-index:1;}
+body.ms-page .ms-photo-mark{position:absolute;top:24px;left:24px;z-index:2;background:#f7f1e9;color:#31443a;font-size:10px;font-weight:800;letter-spacing:.1em;padding:11px 15px;box-shadow:0 10px 24px #14271819;}
+body.ms-page .ms-photo-mark-star{font-size:17px;color:#a4755e;padding-right:6px;}
+body.ms-page .ms-photo-overlay{position:absolute;bottom:45px;left:40px;right:36px;color:#fff;z-index:2;display:flex;flex-direction:column;gap:14px;}
+body.ms-page .ms-photo-num,body.ms-page .ms-photo-small{font-size:10px;letter-spacing:.14em;font-weight:800;}
+body.ms-page .ms-photo-overlay strong{font-family:Manrope,sans-serif;font-size:clamp(27px,2.6vw,39px);font-weight:750;line-height:1.18;letter-spacing:-.055em;}
+body.ms-page .ms-photo-float{position:absolute;right:-25px;top:44%;z-index:3;background:#f9f6f1;color:#243e33;display:flex;gap:12px;align-items:center;padding:15px 19px;box-shadow:0 18px 40px #13271e28;max-width:260px;}
+body.ms-page .ms-float-circle{background:#a77a62;color:white;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:19px;flex-shrink:0;}
+body.ms-page .ms-photo-float strong{display:block;font-size:12px;}
+body.ms-page .ms-photo-float div span{font-size:10px;line-height:1.5;display:block;margin-top:3px;color:#65766d;}
+body.ms-page .ms-ticker{background:#2f453b;color:#fff;display:grid;grid-template-columns:auto minmax(0,1fr);min-height:124px;overflow:hidden;}
+body.ms-page .ms-ticker-label{padding:30px 30px 30px max(26px,calc((100vw - 1250px)/2));display:flex;align-items:center;gap:16px;max-width:350px;border-right:1px solid #587163;font-size:10px;letter-spacing:.13em;font-weight:850;line-height:1.6;}
+body.ms-page .ms-ticker-label span{color:#ddaa8a;font-size:20px;}
+body.ms-page .ms-ticker-viewport{overflow:hidden;display:flex;align-items:center;mask-image:linear-gradient(to right,transparent,#000 4%,#000 96%,transparent);}
+body.ms-page .ms-ticker-track{display:flex;width:max-content;animation:msSlide 48s linear infinite;}
+body.ms-page .ms-ticker:hover .ms-ticker-track,body.ms-page .ms-ticker:focus-within .ms-ticker-track{animation-play-state:paused;}
+body.ms-page .ms-ticker-group{display:flex;align-items:center;flex-shrink:0;gap:14px;padding-right:14px;}
+body.ms-page .ms-ticker-group span{height:76px;min-width:190px;padding:12px 24px;display:flex;align-items:center;justify-content:center;gap:15px;white-space:nowrap;font-weight:780;font-size:14px;background:#f7f2e9;color:#2f453b;border:1px solid #dfd6ca;}
+body.ms-page .ms-ticker-group b{color:#b57e60;font-size:22px;}
+@keyframes msSlide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+body.ms-page .ms-intro{padding-top:115px;padding-bottom:105px;}
+body.ms-page .ms-treatment{background:#e8e9e2;padding:112px 0 122px;}
+body.ms-page .ms-treatment-top{display:grid;grid-template-columns:1.3fr .7fr;gap:6%;align-items:end;margin-bottom:44px;}
+body.ms-page .ms-treatment h2{font-size:clamp(34px,4.2vw,60px);line-height:1.13;letter-spacing:-.06em;margin:0;}
+body.ms-page .ms-treatment-top>p{max-width:380px;color:#5b6f64;line-height:1.85;margin:0;}
+body.ms-page .ms-treatment-layout{display:grid;grid-template-columns:1fr .9fr;gap:45px;align-items:stretch;}
+body.ms-page .ms-treatment-visual{position:relative;min-height:490px;overflow:hidden;background:#a5ada4;}
+body.ms-page .ms-treatment-visual>img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;transition:transform .4s ease,opacity .2s ease;}
+body.ms-page .ms-treatment-visual:hover img{transform:scale(1.035);}
+body.ms-page .ms-treatment-img-label{position:absolute;bottom:20px;left:20px;right:20px;background:#f5f1e9;color:#273e33;padding:18px 23px;display:flex;align-items:center;justify-content:space-between;gap:15px;box-shadow:0 10px 35px #263a351a;}
+body.ms-page .ms-treatment-img-label small{font-size:10px;font-weight:800;color:#9e7f70;letter-spacing:.11em;}
+body.ms-page .ms-treatment-img-label strong{font-size:16px;}
+body.ms-page .ms-treatment-select{display:flex;flex-direction:column;}
+body.ms-page .ms-treatment-choice{appearance:none;border:0;background:transparent;border-top:1px solid #bfc9bd;padding:28px 42px 29px 8px;color:#314b3d;text-align:left;cursor:pointer;position:relative;transition:background .2s,padding .2s;}
+body.ms-page .ms-treatment-choice:last-of-type{border-bottom:1px solid #bfc9bd;}
+body.ms-page .ms-treatment-choice:hover,body.ms-page .ms-treatment-choice.is-active{background:#f6f3ee;padding-left:22px;}
+body.ms-page .ms-treatment-choice>span{display:block;color:#a07966;font-size:10px;letter-spacing:.12em;font-weight:800;margin-bottom:12px;}
+body.ms-page .ms-treatment-choice strong{display:block;font-size:clamp(20px,2vw,27px);line-height:1.3;letter-spacing:-.04em;}
+body.ms-page .ms-treatment-choice small{display:block;color:#6d7f72;font-size:13px;line-height:1.7;max-width:370px;margin-top:8px;}
+body.ms-page .ms-treatment-choice i{position:absolute;top:48px;right:14px;font-size:24px;font-style:normal;color:#b17d69;transition:transform .2s;}
+body.ms-page .ms-treatment-choice:hover i,body.ms-page .ms-treatment-choice.is-active i{transform:translate(4px,-4px);}
+body.ms-page .ms-treatment-note{font-size:11px;color:#7b897c;line-height:1.6;margin-top:20px;}
+body.ms-page .ms-editorial{display:grid;grid-template-columns:1fr 1fr;min-height:510px;background:#e2d8ce;}
+body.ms-page .ms-editorial-photo{min-height:430px;overflow:hidden;}
+body.ms-page .ms-editorial-photo img{height:100%;width:100%;object-fit:cover;display:block;}
+body.ms-page .ms-editorial-content{padding:clamp(55px,7vw,110px);display:flex;flex-direction:column;justify-content:center;}
+body.ms-page .ms-editorial-content h2{font-size:clamp(32px,3.4vw,53px);letter-spacing:-.06em;line-height:1.14;margin:18px 0;}
+body.ms-page .ms-editorial-content em{color:#98715f;font-style:normal;}
+body.ms-page .ms-editorial-content p:not(.ms-kicker){font-size:15px;line-height:1.85;color:#667166;}
+body.ms-page .ms-editorial-content a{margin-top:22px;color:#304c3e;font-weight:800;text-decoration:underline;text-underline-offset:5px;}
+body.ms-page .ms-ai{background:#eef0e9;}
+body.ms-page .ms-system,body.ms-page .ms-final{background:#30483d;}
+body.ms-page .ms-step:hover{background:#3b5849;}
+body.ms-page .ms-demo{border:1px solid #c9d2c8;box-shadow:0 30px 65px #2c453b18;}
+body.ms-page .ms-qual{padding-top:112px;padding-bottom:112px;}
+body.ms-page .ms-calc{background:#dce6dc;}
+body.ms-page .ms-footer{background:#f5f0eb;}
+body.ms-page .ms-nav a:focus-visible,body.ms-page .ms-treatment-choice:focus-visible,body.ms-page .ms-btn:focus-visible,body.ms-page .ms-menu:focus-visible{outline:3px solid #b17d69;outline-offset:3px;}
+@media(max-width:1050px){body.ms-page .ms-hero-grid{gap:32px;}body.ms-page .ms-hero-photo{height:550px;min-height:520px;}body.ms-page .ms-photo-float{right:10px;}body.ms-page .ms-treatment-layout{gap:25px;}}
+@media(max-width:760px){body.ms-page .ms-topbar{min-height:72px;}body.ms-page .ms-brand .lf-brand-v4{font-size:29px;}body.ms-page .ms-brand::after{font-size:18px;right:-12px;top:-5px;}body.ms-page .ms-hero{padding:52px 0 65px;}body.ms-page .ms-hero-grid{grid-template-columns:1fr;}body.ms-page h1{font-size:clamp(42px,11vw,60px);}body.ms-page .ms-hero-photo{height:490px;min-height:420px;}body.ms-page .ms-photo-overlay{left:23px;bottom:26px;right:20px;}body.ms-page .ms-photo-float{top:35%;right:-5px;transform:scale(.88);transform-origin:right center;}body.ms-page .ms-photo-mark{top:14px;left:14px;font-size:9px;}body.ms-page .ms-ticker{grid-template-columns:1fr;min-height:0;}body.ms-page .ms-ticker-label{max-width:none;border-right:0;border-bottom:1px solid #587163;padding:18px 20px;font-size:10px;}body.ms-page .ms-ticker-viewport{padding:13px 0;}body.ms-page .ms-ticker-group span{min-width:160px;height:64px;font-size:12px;padding:10px 17px;}body.ms-page .ms-treatment{padding:72px 0 80px;}body.ms-page .ms-treatment-top,body.ms-page .ms-treatment-layout{grid-template-columns:1fr;gap:25px;}body.ms-page .ms-treatment-top>p{max-width:unset;}body.ms-page .ms-treatment h2{font-size:38px;}body.ms-page .ms-treatment-visual{min-height:365px;}body.ms-page .ms-treatment-choice{padding:20px 36px 20px 9px;}body.ms-page .ms-treatment-choice strong{font-size:23px;}body.ms-page .ms-treatment-choice i{top:36px;}body.ms-page .ms-editorial{grid-template-columns:1fr;}body.ms-page .ms-editorial-photo{min-height:320px;max-height:420px;}body.ms-page .ms-editorial-content{padding:55px 25px 70px;}body.ms-page .ms-editorial-content h2{font-size:37px;}body.ms-page .ms-intro{padding-top:75px;padding-bottom:80px;}}
+@media(prefers-reduced-motion:reduce){body.ms-page .ms-ticker-track{animation:none;}body.ms-page .ms-treatment-visual>img,body.ms-page .ms-treatment-choice{transition:none;}}
+
+/* MS_POLISH_V3: Gallery and interactive FAQ refinements */
+body.ms-page .ms-photo-gallery{padding:108px 0 116px;background:#f5f0eb;}
+body.ms-page .ms-gallery-heading{display:grid;grid-template-columns:1.2fr .7fr;gap:7%;align-items:end;margin-bottom:36px;}
+body.ms-page .ms-gallery-heading h2{font-size:clamp(36px,4vw,58px);line-height:1.13;letter-spacing:-.06em;max-width:680px;margin:0;}
+body.ms-page .ms-gallery-heading>p{font-size:15px;line-height:1.8;color:#627469;max-width:380px;margin:0;}
+body.ms-page .ms-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
+body.ms-page .ms-gallery-grid figure{margin:0;position:relative;overflow:hidden;background:#d4d8ce;min-height:370px;}
+body.ms-page .ms-gallery-grid img{display:block;width:100%;height:420px;object-fit:cover;transition:transform .55s ease;}
+body.ms-page .ms-gallery-grid figure:hover img{transform:scale(1.035);}
+body.ms-page .ms-gallery-grid figcaption{position:absolute;inset:auto 0 0;background:linear-gradient(transparent,rgba(21,37,29,.8));display:flex;flex-direction:column;gap:8px;padding:48px 22px 22px;color:white;}
+body.ms-page .ms-gallery-grid figcaption span{font-size:10px;letter-spacing:.13em;font-weight:800;}
+body.ms-page .ms-gallery-grid figcaption strong{font-size:20px;letter-spacing:-.025em;}
+body.ms-page .ms-treatment-choice{cursor:pointer;}
+body.ms-page .ms-faq details:hover,body.ms-page .ms-faq details:focus-within{background:rgba(220,227,217,.46);}
+body.ms-page .ms-faq details{transition:background .2s ease;}
+body.ms-page .ms-faq summary{padding-left:12px;padding-right:12px;}
+body.ms-page .ms-faq details p{padding-left:12px;padding-right:12px;}
+body.ms-page .ms-footer-logo{flex-shrink:0;min-width:170px;}
+body.ms-page .ms-footer-logo .lf-brand-v4__text{font-size:1em;}
+@media(max-width:760px){
+ body.ms-page .ms-photo-gallery{padding:70px 0 80px;}
+ body.ms-page .ms-gallery-heading{grid-template-columns:1fr;gap:20px;}
+ body.ms-page .ms-gallery-heading h2{font-size:36px;}
+ body.ms-page .ms-gallery-grid{grid-template-columns:1fr;gap:13px;}
+ body.ms-page .ms-gallery-grid img{height:310px;}
+ body.ms-page .ms-footer-logo .lf-brand-v4{font-size:32px;}
+}
+@media(prefers-reduced-motion:reduce){body.ms-page .ms-gallery-grid img{transition:none;}}
+
+/* MS_SEO_CLUSTER_V2 */
+body.ms-page .ms-resources{
+  background:#e7ebe4;padding:100px 0
+}
+body.ms-page .ms-resource-heading{
+  display:flex;justify-content:space-between;
+  align-items:end;gap:40px;margin:0 0 36px
+}
+body.ms-page .ms-resource-heading h2{
+  font-size:clamp(34px,4vw,54px);
+  line-height:1.1;max-width:690px;margin:0
+}
+body.ms-page .ms-resource-heading p{
+  max-width:340px;line-height:1.8;color:#647267
+}
+body.ms-page .ms-resource-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px
+}
+body.ms-page .ms-resource-card{
+  display:flex;flex-direction:column;min-height:265px;
+  padding:28px;background:#f8f7f2;
+  border:1px solid #d4ddd2;color:#28352f;
+  text-decoration:none;
+  transition:transform .25s ease,border-color .25s ease
+}
+body.ms-page .ms-resource-card:hover,
+body.ms-page .ms-resource-card:focus-visible{
+  transform:translateY(-5px);border-color:#9b8066
+}
+body.ms-page .ms-resource-card span{
+  color:#9b8066;font-size:10px;
+  font-weight:800;letter-spacing:.1em
+}
+body.ms-page .ms-resource-card h3{
+  font-size:22px;line-height:1.3;margin:18px 0 12px
+}
+body.ms-page .ms-resource-card p{
+  font-size:13px;line-height:1.7;
+  color:#657268;margin:0 0 22px
+}
+body.ms-page .ms-resource-card strong{
+  margin-top:auto;font-size:12px
+}
+@media(max-width:900px){
+  body.ms-page .ms-resource-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr))
+  }
+}
+@media(max-width:640px){
+  body.ms-page .ms-resources{padding:65px 0}
+  body.ms-page .ms-resource-heading{display:block}
+  body.ms-page .ms-resource-grid{grid-template-columns:1fr}
+  body.ms-page .ms-resource-card{min-height:210px}
+}
+@media(prefers-reduced-motion:reduce){
+  body.ms-page .ms-resource-card{transition:none}
+}
+
+</style>
+
