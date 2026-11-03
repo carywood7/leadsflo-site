@@ -48,7 +48,45 @@ const faqs = [
 <body class="ms-page">
   <header class="ms-header" id="top">
     <div class="ms-shell ms-topbar">
-      <a class="ms-brand" href="/" aria-label="LeadsFlo home"><BrandMark /></a>
+      <a class="ms-brand" href="/" aria-label="LeadsFlo home"><BrandMark />
+        <!-- MS_BOTANICAL_LOGO_V1 -->
+        <svg
+          class="ms-logo-botanical"
+          viewBox="0 0 54 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            d="M5 27 C17 24 21 10 45 7"
+            stroke="#829985"
+            stroke-width="1.7"
+            stroke-linecap="round"
+          />
+          <path
+            d="M19 19 C11 16 12 9 14 7 C22 9 24 14 19 19Z"
+            stroke="#829985"
+            stroke-width="1.45"
+            fill="#829985"
+            fill-opacity=".10"
+          />
+          <path
+            d="M31 12 C29 5 34 2 39 2 C40 8 37 12 31 12Z"
+            stroke="#829985"
+            stroke-width="1.45"
+            fill="#829985"
+            fill-opacity=".10"
+          />
+          <path
+            d="M38 9 C45 10 49 16 47 20 C40 19 37 15 38 9Z"
+            stroke="#829985"
+            stroke-width="1.45"
+            fill="#829985"
+            fill-opacity=".10"
+          />
+        </svg>
+</a>
       <button class="ms-menu" type="button" aria-expanded="false" aria-controls="ms-links">Menu <span aria-hidden="true">☰</span></button>
       <nav class="ms-nav" id="ms-links" aria-label="Med spa landing page navigation">
         <a href="#approach">Our system</a><a href="#ai-front-desk">AI front desk</a><a href="#calculator">Revenue model</a><a href="#faq">FAQs</a>
@@ -142,7 +180,7 @@ const faqs = [
       <div class="ms-editorial-content"><p class="ms-kicker">MORE THAN AN AD CAMPAIGN</p><h2>Good marketing creates interest.<br/><em>A better system follows through.</em></h2><p>Ads, landing pages, conversations, qualification, and scheduling should feel like one experience. Our AI workflows support your team with approved information—not diagnosis or treatment recommendations.</p><a href="#ai-front-desk">See the AI front desk <span aria-hidden="true">↗</span></a></div>
     </section>
     <section class="ms-calc" id="calculator"><div class="ms-shell ms-calc-grid"><div><p class="ms-kicker">THE REVENUE MODEL</p><h2>What could a stronger booking process mean?</h2><p>Use your own assumptions to explore the effect of converting more inquiries into completed consultations. This is a planning calculator, not a forecast or guarantee.</p></div><div class="ms-calc-card"><label for="ms-inquiries">Monthly inquiries <strong id="ms-inquiries-value">100</strong></label><input id="ms-inquiries" type="range" min="20" max="500" value="100" step="10"/><label for="ms-booking">Consultations booked <strong id="ms-booking-value">35%</strong></label><input id="ms-booking" type="range" min="5" max="90" value="35" step="5"/><label for="ms-show">Consultation show rate <strong id="ms-show-value">75%</strong></label><input id="ms-show" type="range" min="20" max="100" value="75" step="5"/><label for="ms-value">Average realized revenue per completed consultation <strong id="ms-value-value">$400</strong></label><input id="ms-value" type="range" min="50" max="2500" value="400" step="50"/><div class="ms-calc-result"><span>Illustrative monthly revenue from completed consultations</span><strong id="ms-result">$10,500</strong><small>Excludes ad spend, operating costs and cancellations after attendance; not a profit estimate.</small></div></div></div></section>
-    
+
 <!-- MS_SEO_CLUSTER_V2 -->
 <section class="ms-resources" id="resources">
   <div class="ms-shell">
@@ -195,7 +233,117 @@ const faqs = [
 <section class="ms-faq ms-shell" id="faq"><div class="ms-section-head"><div><p class="ms-kicker">COMMON QUESTIONS</p><h2>Clear answers.<br/>No inflated promises.</h2></div></div><div class="ms-faq-list">{faqs.map(item=><details><summary>{item.q}<span aria-hidden="true">+</span></summary><p>{item.a}</p></details>)}</div></section>
     <section class="ms-final"><div class="ms-shell"><p class="ms-kicker">YOUR NEXT STEP</p><h2>A better front desk starts<br/>before the phone rings.</h2><p>Let's examine your acquisition, booking and follow-up process and find the gaps worth fixing.</p><a class="ms-btn ms-btn-light" href={booking} target="_blank" rel="noopener noreferrer">Book a strategy call <span aria-hidden="true">↗</span></a></div></section>
   </main>
-  <footer class="ms-footer"><div class="ms-shell ms-footer-content"><a href="/" class="ms-footer-logo" aria-label="LeadsFlo home"><BrandMark /></a><p>Marketing, automation and AI-powered front-desk systems for med spas.</p><span>© {new Date().getFullYear()} LeadsFlo</span></div></footer>
+
+<!-- MS_FOOTER_V1 -->
+<footer class="ms-footer" aria-label="Med Spa page footer">
+  <div class="ms-shell ms-footer-content">
+
+    <div class="ms-footer-main">
+
+      <div class="ms-footer-brand">
+        <a href="#top" class="ms-footer-logo"
+           aria-label="LeadsFlo — back to top">
+          <BrandMark />
+        <!-- MS_BOTANICAL_LOGO_V1 -->
+        <svg
+          class="ms-logo-botanical"
+          viewBox="0 0 54 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            d="M5 27 C17 24 21 10 45 7"
+            stroke="#829985"
+            stroke-width="1.7"
+            stroke-linecap="round"
+          />
+          <path
+            d="M19 19 C11 16 12 9 14 7 C22 9 24 14 19 19Z"
+            stroke="#829985"
+            stroke-width="1.45"
+            fill="#829985"
+            fill-opacity=".10"
+          />
+          <path
+            d="M31 12 C29 5 34 2 39 2 C40 8 37 12 31 12Z"
+            stroke="#829985"
+            stroke-width="1.45"
+            fill="#829985"
+            fill-opacity=".10"
+          />
+          <path
+            d="M38 9 C45 10 49 16 47 20 C40 19 37 15 38 9Z"
+            stroke="#829985"
+            stroke-width="1.45"
+            fill="#829985"
+            fill-opacity=".10"
+          />
+        </svg>
+
+        </a>
+        <p class="ms-footer-description">
+          Marketing, AI reception and consultation
+          booking systems for growing medical spas.
+        </p>
+        <p class="ms-footer-note">
+          Built around your practice. Not another
+          generic lead list.
+        </p>
+      </div>
+
+      <nav class="ms-footer-column" aria-label="Explore Med Spa">
+        <h3>Explore</h3>
+        <a href="#approach">Our system</a>
+        <a href="#ai-front-desk">AI front desk</a>
+        <a href="#calculator">Revenue calculator</a>
+        <a href="#faq">FAQs</a>
+        <a href="#top">Back to top ↑</a>
+      </nav>
+
+      <nav class="ms-footer-column" aria-label="Med Spa resources">
+        <h3>Med Spa Resources</h3>
+        <a href="/insights/med-spa-marketing-strategy/">
+          Marketing strategy
+        </a>
+        <a href="/insights/google-ads-for-med-spas/">
+          Google Ads
+        </a>
+        <a href="/insights/facebook-ads-for-med-spas/">
+          Facebook Ads
+        </a>
+        <a href="/insights/med-spa-lead-generation/">
+          Lead generation
+        </a>
+        <a href="/insights/ai-receptionist-for-med-spas/">
+          AI receptionists
+        </a>
+      </nav>
+
+      <div class="ms-footer-column">
+        <h3>Get Started</h3>
+        <p>Ready to improve your consultation pipeline?</p>
+        <a class="ms-footer-cta" href={booking}
+           target="_blank" rel="noopener noreferrer">
+          Book a strategy call ↗
+        </a>
+        <a href="/contact/">Contact LeadsFlo</a>
+      </div>
+
+    </div>
+
+    <div class="ms-footer-bottom">
+      <span>© {new Date().getFullYear()} LeadsFlo</span>
+      <div class="ms-footer-legal">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
   <div class="ms-mobile-book"><a href={booking} target="_blank" rel="noopener noreferrer">Book a strategy call ↗</a></div>
   <script is:inline>
     (()=>{
@@ -267,10 +415,10 @@ const faqs = [
 </body>
 </html>
 <style is:global>
-  :root{scroll-behavior:smooth}body.ms-page{margin:0;background:#f4f0e9;color:#28352f;font-family:'DM Sans',sans-serif}body.ms-page *{box-sizing:border-box}body.ms-page a{text-decoration:none}body.ms-page button{font:inherit}body.ms-page h1,body.ms-page h2,body.ms-page h3{font-family:Manrope,sans-serif;letter-spacing:-.055em}body.ms-page em{font-style:normal;color:#9b8066}body.ms-page .ms-shell{width:min(1160px,calc(100% - 52px));margin:auto}body.ms-page .ms-kicker,body.ms-page .ms-eyebrow{font:800 11px Manrope,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:#79877b}body.ms-page .ms-kicker{margin:0 0 23px}body.ms-page .ms-header{position:sticky;top:0;z-index:40;background:#f4f0e9eF;border-bottom:1px solid #dcded4;backdrop-filter:blur(16px);transition:transform .25s ease}body.ms-page .ms-header.ms-hidden{transform:translateY(-102%)}body.ms-page .ms-topbar{display:flex;align-items:center;min-height:91px;gap:30px}body.ms-page .ms-brand{display:flex;align-items:center;margin-right:auto}body.ms-page .ms-brand .lf-brand-v4{font-size:28px}body.ms-page .ms-nav{display:flex;align-items:center;gap:27px}body.ms-page .ms-nav a{font-weight:700;font-size:12px;color:#28352f}body.ms-page .ms-nav a:hover{color:#9b8066}body.ms-page .ms-top-cta{padding:17px 20px;background:#28352f;color:#fff;font-size:12px;font-weight:800;white-space:nowrap}body.ms-page .ms-top-cta span{padding-left:18px}body.ms-page .ms-menu{display:none}body.ms-page .ms-hero{padding:87px 0 92px;background:#f4f0e9}body.ms-page .ms-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:7%;align-items:stretch}body.ms-page .ms-hero-copy{padding:30px 0}body.ms-page .ms-eyebrow{display:flex;align-items:center;gap:12px}body.ms-page .ms-spark{width:9px;height:9px;background:#b89c80;border-radius:50%;box-shadow:0 0 0 6px #b89c802c}body.ms-page h1{font-size:clamp(48px,5.4vw,79px);line-height:1.07;margin:35px 0 27px;font-weight:800;max-width:750px}body.ms-page .ms-lede{max-width:565px;font-size:18px;line-height:1.85;color:#647069}body.ms-page .ms-actions{display:flex;gap:27px;align-items:center;flex-wrap:wrap;margin:33px 0 38px}body.ms-page .ms-btn{display:inline-flex;align-items:center;justify-content:space-between;gap:25px;padding:19px 23px;font-weight:800;font-size:13px;transition:transform .2s ease}body.ms-page .ms-btn:hover{transform:translateY(-3px)}body.ms-page .ms-btn-dark{background:#28352f;color:#fff}body.ms-page .ms-quiet{font-size:13px;font-weight:800;color:#435a4b}body.ms-page .ms-proof{display:flex;gap:18px;flex-wrap:wrap;border-top:1px solid #d6d8cd;padding-top:27px}body.ms-page .ms-proof span{color:#7c877f;letter-spacing:.11em;font:700 10px Manrope,sans-serif}body.ms-page .ms-hero-art{min-height:560px;background:linear-gradient(145deg,#ccd6c8,#718e7f);padding:30px;display:flex;flex-direction:column;overflow:hidden;position:relative}body.ms-page .ms-hero-art:before{content:'';position:absolute;width:490px;height:490px;border-radius:50%;border:1px solid #e9f4e766;top:9%;left:10%;box-shadow:0 0 0 40px #ffffff12,0 0 0 100px #ffffff0f}body.ms-page .ms-art-caption,body.ms-page .ms-art-bottom{display:flex;justify-content:space-between;align-items:center;color:#f8faf4;letter-spacing:.13em;font:800 10px Manrope,sans-serif;position:relative;z-index:1}body.ms-page .ms-art-orb{display:grid;place-items:center;flex:1;position:relative;z-index:1}body.ms-page .ms-orb-inner{width:300px;height:300px;border:1px solid #e9f4e7bb;border-radius:50%;background:#f7f9f344;display:flex;align-items:center;justify-content:center;gap:8px;flex-direction:column;box-shadow:inset 0 0 80px #f5fff325;color:#253e31;transform:rotate(-8deg)}body.ms-page .ms-orb-inner span{font-size:14px}body.ms-page .ms-orb-inner strong{font:800 27px Manrope,sans-serif;letter-spacing:-.06em}body.ms-page .ms-orb-inner b{font-size:23px;font-weight:400}body.ms-page .ms-art-bottom{gap:15px;letter-spacing:0;font-size:12px}body.ms-page .ms-art-bottom p{flex:1;margin:0}body.ms-page .ms-pulse{width:8px;height:8px;background:#f9f9ea;border-radius:50%;box-shadow:0 0 0 6px #ffffff2f}body.ms-page .ms-intro{display:grid;grid-template-columns:.27fr 1fr;gap:7%;padding-top:100px;padding-bottom:110px}body.ms-page .ms-intro h2{font-size:clamp(35px,4vw,53px);line-height:1.18;margin:0 0 25px}body.ms-page .ms-intro p:not(.ms-kicker){font-size:17px;line-height:1.9;max-width:810px;color:#617068}body.ms-page .ms-system{background:#28352f;color:#f4f0e9;padding:110px 0}body.ms-page .ms-section-head{display:flex;justify-content:space-between;gap:60px;align-items:end;margin-bottom:49px}body.ms-page .ms-section-head h2,body.ms-page .ms-ai h2,body.ms-page .ms-qual h2,body.ms-page .ms-calc h2,body.ms-page .ms-faq h2,body.ms-page .ms-final h2{font-size:clamp(36px,4vw,57px);line-height:1.12;margin:0}body.ms-page .ms-section-head>p{max-width:280px;font-size:15px;line-height:1.8;color:#b6c3b8}body.ms-page .ms-steps{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #6a796b}body.ms-page .ms-step{padding:34px 25px;min-height:330px;border-right:1px solid #6a796b;position:relative;transition:background .2s ease}body.ms-page .ms-step:last-child{border:0}body.ms-page .ms-step:hover{background:#35493f}body.ms-page .ms-step-num{font:700 10px Manrope,sans-serif;letter-spacing:.09em;color:#b9cfbf}body.ms-page .ms-step h3{font-size:26px;line-height:1.2;margin:50px 0 17px}body.ms-page .ms-step p{font-size:13px;line-height:1.75;color:#c1cec3}body.ms-page .ms-step-arrow{position:absolute;bottom:25px;right:27px;color:#d7b694}body.ms-page .ms-ai{padding:112px 0;background:#e7e9df}body.ms-page .ms-ai-grid{display:grid;grid-template-columns:1fr .95fr;gap:10%;align-items:center}body.ms-page .ms-ai h2{margin-bottom:27px}body.ms-page .ms-ai-grid>div:first-child>p:not(.ms-kicker){line-height:1.8;color:#5b6c60}body.ms-page .ms-benefits{padding:0;margin:29px 0 0;list-style:none}body.ms-page .ms-benefits li{display:flex;flex-direction:column;gap:6px;padding:17px 0;border-bottom:1px solid #c4cbc0}body.ms-page .ms-benefits strong{font-size:15px}body.ms-page .ms-benefits span{color:#67786b;font-size:13px;line-height:1.6}body.ms-page .ms-demo{background:#fafaf6;box-shadow:0 25px 70px #28352f16;border:1px solid #d6ded2}body.ms-page .ms-demo-bar{padding:22px 25px;border-bottom:1px solid #e0e5dc;display:flex;justify-content:space-between;gap:10px;color:#516b57;font:800 10px Manrope,sans-serif;letter-spacing:.06em}body.ms-page .ms-demo-bar i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#8ca48d;margin-right:7px}body.ms-page .ms-demo-body{padding:35px 29px;display:flex;flex-direction:column;gap:20px}body.ms-page .ms-chat{max-width:90%;padding:17px 20px;font-size:14px;line-height:1.7}body.ms-page .ms-chat-visitor{align-self:flex-end;background:#e9eae3;color:#3e5344;border-radius:18px 18px 3px 18px}body.ms-page .ms-chat-ai{align-self:flex-start;background:#30483b;color:#fff;border-radius:18px 18px 18px 3px;min-height:100px}body.ms-page .ms-demo-choices{display:flex;flex-wrap:wrap;gap:8px}body.ms-page .ms-demo-choices button{border:1px solid #9baa9e;color:#30483b;background:transparent;padding:10px 13px;font-size:11px;font-weight:800;cursor:pointer}body.ms-page .ms-demo-choices button:hover{background:#dbe3d9}body.ms-page .ms-demo-foot{padding:17px 25px;border-top:1px solid #e0e5dc;font-size:11px;color:#708276}body.ms-page .ms-status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#80a28b;margin-right:8px}body.ms-page .ms-qual{display:grid;grid-template-columns:.7fr 1.3fr;gap:6%;padding-top:112px;padding-bottom:112px}body.ms-page .ms-qual-grid{display:grid;gap:15px}body.ms-page .ms-qual article{padding:25px 0;border-bottom:1px solid #cdd4c9}body.ms-page .ms-qual article span{color:#9b8066;font-weight:800;font-size:12px}body.ms-page .ms-qual h3{font-size:23px;margin:10px 0}body.ms-page .ms-qual article p{font-size:14px;line-height:1.7;color:#6f7e72}body.ms-page .ms-calc{background:#d7dfd2;padding:110px 0}body.ms-page .ms-calc-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:12%}body.ms-page .ms-calc-grid>div:first-child p:not(.ms-kicker){color:#66786a;line-height:1.85}body.ms-page .ms-calc-card{background:#fafaf6;padding:35px;box-shadow:0 20px 50px #2b3e2e14}body.ms-page .ms-calc-card label{display:flex;justify-content:space-between;gap:10px;margin:14px 0;font-size:13px;font-weight:700}body.ms-page .ms-calc-card input{width:100%;accent-color:#778e7d;margin-bottom:16px}body.ms-page .ms-calc-result{padding:25px;margin-top:15px;background:#28352f;color:#fff;display:flex;flex-direction:column;gap:9px}body.ms-page .ms-calc-result span{font-size:11px;letter-spacing:.04em;color:#b6d2bb}body.ms-page .ms-calc-result strong{font:800 43px Manrope,sans-serif}body.ms-page .ms-calc-result small{font-size:10px;color:#b9c7bd;line-height:1.7}body.ms-page .ms-faq{padding-top:112px;padding-bottom:112px}body.ms-page .ms-faq-list{border-top:1px solid #c8cec3}body.ms-page .ms-faq details{border-bottom:1px solid #c8cec3}body.ms-page .ms-faq summary{padding:26px 0;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;font-size:17px;font-weight:800}body.ms-page .ms-faq summary::-webkit-details-marker{display:none}body.ms-page .ms-faq summary span{font-size:25px;color:#9b8066}body.ms-page .ms-faq details[open] summary span{transform:rotate(45deg)}body.ms-page .ms-faq details p{color:#66756a;font-size:14px;line-height:1.9;max-width:850px;padding-bottom:25px;margin:0}body.ms-page .ms-final{background:#28352f;color:#f9faf3;text-align:center;padding:110px 20px}body.ms-page .ms-final h2{margin:0 auto 27px}body.ms-page .ms-final p:not(.ms-kicker){color:#b9c8bd;line-height:1.8}body.ms-page .ms-btn-light{background:#f4f0e9;color:#28352f;margin-top:25px}body.ms-page .ms-footer{background:#f4f0e9;padding:55px 0}body.ms-page .ms-footer-content{display:flex;align-items:center;gap:28px;flex-wrap:wrap}body.ms-page .ms-footer-logo .lf-brand-v4{font-size:36px}body.ms-page .ms-footer p{color:#68796c;font-size:12px;margin-right:auto}body.ms-page .ms-footer-content > span{color:#718074;font-size:12px}body.ms-page .ms-mobile-book{display:none}body.ms-page [id]{scroll-margin-top:100px}
+  :root{scroll-behavior:smooth}body.ms-page{font-size:16px;margin:0;background:#f4f0e9;color:#28352f;font-family:'DM Sans',sans-serif}body.ms-page *{box-sizing:border-box}body.ms-page a{text-decoration:none}body.ms-page button{font:inherit}body.ms-page h1,body.ms-page h2,body.ms-page h3{font-family:Manrope,sans-serif;letter-spacing:-.055em}body.ms-page em{font-style:normal;color:#9b8066}body.ms-page .ms-shell{width:min(1160px,calc(100% - 52px));margin:auto}body.ms-page .ms-kicker,body.ms-page .ms-eyebrow{font:800 11px Manrope,sans-serif;letter-spacing:.17em;text-transform:uppercase;color:#79877b}body.ms-page .ms-kicker{margin:0 0 23px}body.ms-page .ms-header{position:sticky;top:0;z-index:40;background:#f4f0e9eF;border-bottom:1px solid #dcded4;backdrop-filter:blur(16px);transition:transform .25s ease}body.ms-page .ms-header.ms-hidden{transform:translateY(-102%)}body.ms-page .ms-topbar{display:flex;align-items:center;min-height:91px;gap:30px}body.ms-page .ms-brand{display:flex;align-items:center;margin-right:auto}body.ms-page .ms-brand .lf-brand-v4{font-size:28px}body.ms-page .ms-nav{display:flex;align-items:center;gap:27px}body.ms-page .ms-nav a{font-weight:700;font-size:17px;color:#28352f}body.ms-page .ms-nav a:hover{color:#9b8066}body.ms-page .ms-top-cta{padding:17px 20px;background:#28352f;color:#fff;font-size:16px;font-weight:800;white-space:nowrap}body.ms-page .ms-top-cta span{padding-left:18px}body.ms-page .ms-menu{font-size:16px;display:none}body.ms-page .ms-hero{padding:87px 0 92px;background:#f4f0e9}body.ms-page .ms-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:7%;align-items:stretch}body.ms-page .ms-hero-copy{padding:30px 0}body.ms-page .ms-eyebrow{display:flex;align-items:center;gap:12px}body.ms-page .ms-spark{width:9px;height:9px;background:#b89c80;border-radius:50%;box-shadow:0 0 0 6px #b89c802c}body.ms-page h1{font-size:clamp(48px,5.4vw,79px);line-height:1.07;margin:35px 0 27px;font-weight:800;max-width:750px}body.ms-page .ms-lede{max-width:565px;font-size:19px;line-height:1.85;color:#647069}body.ms-page .ms-actions{display:flex;gap:27px;align-items:center;flex-wrap:wrap;margin:33px 0 38px}body.ms-page .ms-btn{display:inline-flex;align-items:center;justify-content:space-between;gap:25px;padding:19px 23px;font-weight:800;font-size:16px;transition:transform .2s ease}body.ms-page .ms-btn:hover{transform:translateY(-3px)}body.ms-page .ms-btn-dark{background:#28352f;color:#fff}body.ms-page .ms-quiet{font-size:16px;font-weight:800;color:#435a4b}body.ms-page .ms-proof{display:flex;gap:18px;flex-wrap:wrap;border-top:1px solid #d6d8cd;padding-top:27px}body.ms-page .ms-proof span{color:#7c877f;letter-spacing:.11em;font:700 10px Manrope,sans-serif}body.ms-page .ms-hero-art{min-height:560px;background:linear-gradient(145deg,#ccd6c8,#718e7f);padding:30px;display:flex;flex-direction:column;overflow:hidden;position:relative}body.ms-page .ms-hero-art:before{content:'';position:absolute;width:490px;height:490px;border-radius:50%;border:1px solid #e9f4e766;top:9%;left:10%;box-shadow:0 0 0 40px #ffffff12,0 0 0 100px #ffffff0f}body.ms-page .ms-art-caption,body.ms-page .ms-art-bottom{display:flex;justify-content:space-between;align-items:center;color:#f8faf4;letter-spacing:.13em;font:800 10px Manrope,sans-serif;position:relative;z-index:1}body.ms-page .ms-art-orb{display:grid;place-items:center;flex:1;position:relative;z-index:1}body.ms-page .ms-orb-inner{width:300px;height:300px;border:1px solid #e9f4e7bb;border-radius:50%;background:#f7f9f344;display:flex;align-items:center;justify-content:center;gap:8px;flex-direction:column;box-shadow:inset 0 0 80px #f5fff325;color:#253e31;transform:rotate(-8deg)}body.ms-page .ms-orb-inner span{font-size:14px}body.ms-page .ms-orb-inner strong{font:800 27px Manrope,sans-serif;letter-spacing:-.06em}body.ms-page .ms-orb-inner b{font-size:23px;font-weight:400}body.ms-page .ms-art-bottom{gap:15px;letter-spacing:0;font-size:12px}body.ms-page .ms-art-bottom p{flex:1;margin:0}body.ms-page .ms-pulse{width:8px;height:8px;background:#f9f9ea;border-radius:50%;box-shadow:0 0 0 6px #ffffff2f}body.ms-page .ms-intro{display:grid;grid-template-columns:.27fr 1fr;gap:7%;padding-top:100px;padding-bottom:110px}body.ms-page .ms-intro h2{font-size:clamp(35px,4vw,53px);line-height:1.18;margin:0 0 25px}body.ms-page .ms-intro p:not(.ms-kicker){font-size:18px;line-height:1.9;max-width:810px;color:#617068}body.ms-page .ms-system{background:#28352f;color:#f4f0e9;padding:110px 0}body.ms-page .ms-section-head{display:flex;justify-content:space-between;gap:60px;align-items:end;margin-bottom:49px}body.ms-page .ms-section-head h2,body.ms-page .ms-ai h2,body.ms-page .ms-qual h2,body.ms-page .ms-calc h2,body.ms-page .ms-faq h2,body.ms-page .ms-final h2{font-size:clamp(36px,4vw,57px);line-height:1.12;margin:0}body.ms-page .ms-section-head>p{max-width:280px;font-size:17px;line-height:1.8;color:#b6c3b8}body.ms-page .ms-steps{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #6a796b}body.ms-page .ms-step{padding:34px 25px;min-height:330px;border-right:1px solid #6a796b;position:relative;transition:background .2s ease}body.ms-page .ms-step:last-child{border:0}body.ms-page .ms-step:hover{background:#35493f}body.ms-page .ms-step-num{font:700 10px Manrope,sans-serif;letter-spacing:.09em;color:#b9cfbf}body.ms-page .ms-step h3{font-size:26px;line-height:1.2;margin:50px 0 17px}body.ms-page .ms-step p{font-size:17px;line-height:1.75;color:#c1cec3}body.ms-page .ms-step-arrow{position:absolute;bottom:25px;right:27px;color:#d7b694}body.ms-page .ms-ai{padding:112px 0;background:#e7e9df}body.ms-page .ms-ai-grid{display:grid;grid-template-columns:1fr .95fr;gap:10%;align-items:center}body.ms-page .ms-ai h2{margin-bottom:27px}body.ms-page .ms-ai-grid>div:first-child>p:not(.ms-kicker){font-size:18px;line-height:1.8;color:#5b6c60}body.ms-page .ms-benefits{padding:0;margin:29px 0 0;list-style:none}body.ms-page .ms-benefits li{display:flex;flex-direction:column;gap:6px;padding:17px 0;border-bottom:1px solid #c4cbc0}body.ms-page .ms-benefits strong{font-size:17px}body.ms-page .ms-benefits span{color:#67786b;font-size:16px;line-height:1.6}body.ms-page .ms-demo{background:#fafaf6;box-shadow:0 25px 70px #28352f16;border:1px solid #d6ded2}body.ms-page .ms-demo-bar{padding:22px 25px;border-bottom:1px solid #e0e5dc;display:flex;justify-content:space-between;gap:10px;color:#516b57;font:800 10px Manrope,sans-serif;letter-spacing:.06em}body.ms-page .ms-demo-bar i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#8ca48d;margin-right:7px}body.ms-page .ms-demo-body{padding:35px 29px;display:flex;flex-direction:column;gap:20px}body.ms-page .ms-chat{max-width:90%;padding:17px 20px;font-size:16px;line-height:1.7}body.ms-page .ms-chat-visitor{align-self:flex-end;background:#e9eae3;color:#3e5344;border-radius:18px 18px 3px 18px}body.ms-page .ms-chat-ai{align-self:flex-start;background:#30483b;color:#fff;border-radius:18px 18px 18px 3px;min-height:100px}body.ms-page .ms-demo-choices{display:flex;flex-wrap:wrap;gap:8px}body.ms-page .ms-demo-choices button{border:1px solid #9baa9e;color:#30483b;background:transparent;padding:10px 13px;font-size:14px;font-weight:800;cursor:pointer}body.ms-page .ms-demo-choices button:hover{background:#dbe3d9}body.ms-page .ms-demo-foot{padding:17px 25px;border-top:1px solid #e0e5dc;font-size:13px;color:#708276}body.ms-page .ms-status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#80a28b;margin-right:8px}body.ms-page .ms-qual{display:grid;grid-template-columns:.7fr 1.3fr;gap:6%;padding-top:112px;padding-bottom:112px}body.ms-page .ms-qual-grid{display:grid;gap:15px}body.ms-page .ms-qual article{padding:25px 0;border-bottom:1px solid #cdd4c9}body.ms-page .ms-qual article span{color:#9b8066;font-weight:800;font-size:12px}body.ms-page .ms-qual h3{font-size:23px;margin:10px 0}body.ms-page .ms-qual article p{font-size:17px;line-height:1.7;color:#6f7e72}body.ms-page .ms-calc{background:#d7dfd2;padding:110px 0}body.ms-page .ms-calc-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:12%}body.ms-page .ms-calc-grid>div:first-child p:not(.ms-kicker){font-size:18px;color:#66786a;line-height:1.85}body.ms-page .ms-calc-card{background:#fafaf6;padding:35px;box-shadow:0 20px 50px #2b3e2e14}body.ms-page .ms-calc-card label{display:flex;justify-content:space-between;gap:10px;margin:14px 0;font-size:16px;font-weight:700}body.ms-page .ms-calc-card input{width:100%;accent-color:#778e7d;margin-bottom:16px}body.ms-page .ms-calc-result{padding:25px;margin-top:15px;background:#28352f;color:#fff;display:flex;flex-direction:column;gap:9px}body.ms-page .ms-calc-result span{font-size:11px;letter-spacing:.04em;color:#b6d2bb}body.ms-page .ms-calc-result strong{font:800 43px Manrope,sans-serif}body.ms-page .ms-calc-result small{font-size:13px;color:#b9c7bd;line-height:1.7}body.ms-page .ms-faq{padding-top:112px;padding-bottom:112px}body.ms-page .ms-faq-list{border-top:1px solid #c8cec3}body.ms-page .ms-faq details{border-bottom:1px solid #c8cec3}body.ms-page .ms-faq summary{padding:26px 0;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;font-size:18px;font-weight:800}body.ms-page .ms-faq summary::-webkit-details-marker{display:none}body.ms-page .ms-faq summary span{font-size:25px;color:#9b8066}body.ms-page .ms-faq details[open] summary span{transform:rotate(45deg)}body.ms-page .ms-faq details p{color:#66756a;font-size:17px;line-height:1.9;max-width:850px;padding-bottom:25px;margin:0}body.ms-page .ms-final{background:#28352f;color:#f9faf3;text-align:center;padding:110px 20px}body.ms-page .ms-final h2{margin:0 auto 27px}body.ms-page .ms-final p:not(.ms-kicker){font-size:18px;color:#b9c8bd;line-height:1.8}body.ms-page .ms-btn-light{background:#f4f0e9;color:#28352f;margin-top:25px}body.ms-page .ms-footer{background:#f4f0e9;padding:55px 0}body.ms-page .ms-footer-content{display:flex;align-items:center;gap:28px;flex-wrap:wrap}body.ms-page .ms-footer-logo .lf-brand-v4{font-size:36px}body.ms-page .ms-footer p{color:#68796c;font-size:16px;margin-right:auto}body.ms-page .ms-footer-content > span{color:#718074;font-size:14px}body.ms-page .ms-mobile-book{display:none}body.ms-page [id]{scroll-margin-top:100px}
   @media(max-width:1050px){body.ms-page .ms-hero-grid{gap:30px}body.ms-page .ms-hero-art{min-height:480px}body.ms-page .ms-nav{gap:15px}body.ms-page .ms-steps{grid-template-columns:repeat(2,1fr)}body.ms-page .ms-step:nth-child(2){border-right:0}body.ms-page .ms-step:nth-child(-n+2){border-bottom:1px solid #6a796b}}
-  @media(max-width:760px){body.ms-page .ms-shell{width:min(100% - 34px,560px)}body.ms-page .ms-topbar{min-height:72px;flex-wrap:wrap;gap:12px;padding:10px 0}body.ms-page .ms-brand .lf-brand-v4{font-size:24px}body.ms-page .ms-menu{display:block;border:1px solid #c6d0c3;background:none;color:#28352f;padding:11px 13px;font-weight:800;font-size:12px}body.ms-page .ms-menu span{margin-left:10px}body.ms-page .ms-top-cta{display:none}body.ms-page .ms-nav{display:none;flex-basis:100%;width:100%;border-top:1px solid #c8d0c4;padding:12px 0;flex-direction:column;align-items:stretch;gap:0}body.ms-page .ms-header.ms-open .ms-nav{display:flex}body.ms-page .ms-nav a{display:block;padding:13px 0;border-bottom:1px solid #e0e4da}body.ms-page .ms-hero{padding:40px 0 65px}body.ms-page .ms-hero-grid,body.ms-page .ms-ai-grid,body.ms-page .ms-calc-grid{grid-template-columns:1fr;gap:40px}body.ms-page .ms-hero-copy{padding:0}body.ms-page h1{font-size:clamp(43px,10vw,58px)}body.ms-page .ms-lede{font-size:16px}body.ms-page .ms-hero-art{min-height:390px}body.ms-page .ms-art-orb .ms-orb-inner{width:260px;height:260px}body.ms-page .ms-intro,body.ms-page .ms-qual{grid-template-columns:1fr;gap:25px;padding-top:70px;padding-bottom:70px}body.ms-page .ms-intro h2{font-size:35px}body.ms-page .ms-system,body.ms-page .ms-ai,body.ms-page .ms-calc{padding:75px 0}body.ms-page .ms-section-head{display:block;margin-bottom:30px}body.ms-page .ms-section-head>p{margin-top:22px}body.ms-page .ms-steps{grid-template-columns:1fr}body.ms-page .ms-step{min-height:220px;border-right:none!important;border-bottom:1px solid #6a796b;padding:25px}body.ms-page .ms-step h3{margin:25px 0 12px}body.ms-page .ms-qual h2,body.ms-page .ms-ai h2,body.ms-page .ms-calc h2,body.ms-page .ms-faq h2,body.ms-page .ms-final h2{font-size:37px}body.ms-page .ms-faq{padding-top:75px;padding-bottom:95px}body.ms-page .ms-footer{padding-bottom:108px}body.ms-page .ms-footer-content{display:block}body.ms-page .ms-footer-content>*{margin:15px 0}body.ms-page .ms-mobile-book{display:block;position:fixed;bottom:0;left:0;width:100%;z-index:50;background:#f4f0e9;border-top:1px solid #c8d0c4;padding:13px 17px max(13px,env(safe-area-inset-bottom))}body.ms-page .ms-mobile-book a{display:block;text-align:center;padding:16px 14px;color:#fff;background:#28352f;font-size:14px;font-weight:800}body.ms-page .ms-proof{gap:12px}}
-  @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}body.ms-page .ms-header,body.ms-page .ms-btn{transition:none}}
+  @media(max-width:760px){body.ms-page .ms-shell{width:min(100% - 34px,560px)}body.ms-page .ms-topbar{min-height:72px;flex-wrap:wrap;gap:12px;padding:10px 0}body.ms-page .ms-brand .lf-brand-v4{font-size:24px}body.ms-page .ms-menu{display:block;border:1px solid #c6d0c3;background:none;color:#28352f;padding:11px 13px;font-weight:800;font-size:16px}body.ms-page .ms-menu span{margin-left:10px}body.ms-page .ms-top-cta{font-size:16px;display:none}body.ms-page .ms-nav{display:none;flex-basis:100%;width:100%;border-top:1px solid #c8d0c4;padding:12px 0;flex-direction:column;align-items:stretch;gap:0}body.ms-page .ms-header.ms-open .ms-nav{display:flex}body.ms-page .ms-nav a{font-size:17px;display:block;padding:13px 0;border-bottom:1px solid #e0e4da}body.ms-page .ms-hero{padding:40px 0 65px}body.ms-page .ms-hero-grid,body.ms-page .ms-ai-grid,body.ms-page .ms-calc-grid{grid-template-columns:1fr;gap:40px}body.ms-page .ms-hero-copy{padding:0}body.ms-page h1{font-size:clamp(43px,10vw,58px)}body.ms-page .ms-lede{font-size:19px}body.ms-page .ms-hero-art{min-height:390px}body.ms-page .ms-art-orb .ms-orb-inner{width:260px;height:260px}body.ms-page .ms-intro,body.ms-page .ms-qual{grid-template-columns:1fr;gap:25px;padding-top:70px;padding-bottom:70px}body.ms-page .ms-intro h2{font-size:35px}body.ms-page .ms-system,body.ms-page .ms-ai,body.ms-page .ms-calc{padding:75px 0}body.ms-page .ms-section-head{display:block;margin-bottom:30px}body.ms-page .ms-section-head>p{font-size:17px;margin-top:22px}body.ms-page .ms-steps{grid-template-columns:1fr}body.ms-page .ms-step{min-height:220px;border-right:none!important;border-bottom:1px solid #6a796b;padding:25px}body.ms-page .ms-step h3{margin:25px 0 12px}body.ms-page .ms-qual h2,body.ms-page .ms-ai h2,body.ms-page .ms-calc h2,body.ms-page .ms-faq h2,body.ms-page .ms-final h2{font-size:37px}body.ms-page .ms-faq{padding-top:75px;padding-bottom:95px}body.ms-page .ms-footer{padding-bottom:108px}body.ms-page .ms-footer-content{display:block}body.ms-page .ms-footer-content>*{margin:15px 0}body.ms-page .ms-mobile-book{display:block;position:fixed;bottom:0;left:0;width:100%;z-index:50;background:#f4f0e9;border-top:1px solid #c8d0c4;padding:13px 17px max(13px,env(safe-area-inset-bottom))}body.ms-page .ms-mobile-book a{display:block;text-align:center;padding:16px 14px;color:#fff;background:#28352f;font-size:16px;font-weight:800}body.ms-page .ms-proof{gap:12px}}
+  @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}body.ms-page .ms-header,body.ms-page .ms-btn{font-size:16px;transition:none}}
 </style>
 
 <style is:global>
@@ -284,7 +432,7 @@ body.ms-page .ms-brand .lf-brand-v4__current1,body.ms-page .ms-footer-logo .lf-b
 body.ms-page .ms-brand .lf-brand-v4__current2,body.ms-page .ms-footer-logo .lf-brand-v4__current2{stroke:#748a79;}
 body.ms-page .ms-brand::after{content:'✧';position:absolute;color:#b17d69;font-size:23px;top:-8px;right:-16px;pointer-events:none;}
 body.ms-page .ms-footer-logo .lf-brand-v4{--brand-text:#263a35;--brand-flo:#b17d69;--brand-period:#809b87;--brand-plane:#b17d69;}
-body.ms-page .ms-top-cta,body.ms-page .ms-btn-dark,body.ms-page .ms-mobile-book a{background:#324b40;color:#fff;border:1px solid #324b40;}
+body.ms-page .ms-top-cta,body.ms-page .ms-btn-dark,body.ms-page .ms-mobile-book a{font-size:16px;background:#324b40;color:#fff;border:1px solid #324b40;}
 body.ms-page .ms-top-cta:hover,body.ms-page .ms-btn-dark:hover{background:#b17d69;border-color:#b17d69;color:#fff;}
 body.ms-page .ms-hero{background:#f5f0eb;padding:82px 0 72px;overflow:hidden;}
 body.ms-page .ms-hero-grid{grid-template-columns:1.08fr .92fr;gap:clamp(50px,6vw,112px);align-items:center;}
@@ -293,7 +441,7 @@ body.ms-page .ms-eyebrow{color:#738477;letter-spacing:.17em;}
 body.ms-page .ms-spark{background:#b17d69;}
 body.ms-page h1{font-size:clamp(58px,5.4vw,92px);letter-spacing:-.073em;line-height:1.055;}
 body.ms-page h1 em{color:#af806a;}
-body.ms-page .ms-lede{max-width:590px;color:#607169;}
+body.ms-page .ms-lede{font-size:19px;max-width:590px;color:#607169;}
 body.ms-page .ms-proof{border-top:1px solid #d7ccc2;}
 body.ms-page .ms-proof span{color:#607169;}
 body.ms-page .ms-hero-photo{height:620px;min-height:540px;position:relative;isolation:isolate;background:#b3afa7;overflow:visible;box-shadow:0 35px 70px rgba(48,54,45,.13);}
@@ -315,38 +463,38 @@ body.ms-page .ms-ticker-viewport{overflow:hidden;display:flex;align-items:center
 body.ms-page .ms-ticker-track{display:flex;width:max-content;animation:msSlide 48s linear infinite;}
 body.ms-page .ms-ticker:hover .ms-ticker-track,body.ms-page .ms-ticker:focus-within .ms-ticker-track{animation-play-state:paused;}
 body.ms-page .ms-ticker-group{display:flex;align-items:center;flex-shrink:0;gap:14px;padding-right:14px;}
-body.ms-page .ms-ticker-group span{height:76px;min-width:190px;padding:12px 24px;display:flex;align-items:center;justify-content:center;gap:15px;white-space:nowrap;font-weight:780;font-size:14px;background:#f7f2e9;color:#2f453b;border:1px solid #dfd6ca;}
+body.ms-page .ms-ticker-group span{height:76px;min-width:190px;padding:12px 24px;display:flex;align-items:center;justify-content:center;gap:15px;white-space:nowrap;font-weight:780;font-size:16px;background:#f7f2e9;color:#2f453b;border:1px solid #dfd6ca;}
 body.ms-page .ms-ticker-group b{color:#b57e60;font-size:22px;}
 @keyframes msSlide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 body.ms-page .ms-intro{padding-top:115px;padding-bottom:105px;}
 body.ms-page .ms-treatment{background:#e8e9e2;padding:112px 0 122px;}
 body.ms-page .ms-treatment-top{display:grid;grid-template-columns:1.3fr .7fr;gap:6%;align-items:end;margin-bottom:44px;}
 body.ms-page .ms-treatment h2{font-size:clamp(34px,4.2vw,60px);line-height:1.13;letter-spacing:-.06em;margin:0;}
-body.ms-page .ms-treatment-top>p{max-width:380px;color:#5b6f64;line-height:1.85;margin:0;}
+body.ms-page .ms-treatment-top>p{font-size:18px;max-width:380px;color:#5b6f64;line-height:1.85;margin:0;}
 body.ms-page .ms-treatment-layout{display:grid;grid-template-columns:1fr .9fr;gap:45px;align-items:stretch;}
 body.ms-page .ms-treatment-visual{position:relative;min-height:490px;overflow:hidden;background:#a5ada4;}
 body.ms-page .ms-treatment-visual>img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;transition:transform .4s ease,opacity .2s ease;}
 body.ms-page .ms-treatment-visual:hover img{transform:scale(1.035);}
 body.ms-page .ms-treatment-img-label{position:absolute;bottom:20px;left:20px;right:20px;background:#f5f1e9;color:#273e33;padding:18px 23px;display:flex;align-items:center;justify-content:space-between;gap:15px;box-shadow:0 10px 35px #263a351a;}
 body.ms-page .ms-treatment-img-label small{font-size:10px;font-weight:800;color:#9e7f70;letter-spacing:.11em;}
-body.ms-page .ms-treatment-img-label strong{font-size:16px;}
+body.ms-page .ms-treatment-img-label strong{font-size:18px;}
 body.ms-page .ms-treatment-select{display:flex;flex-direction:column;}
 body.ms-page .ms-treatment-choice{appearance:none;border:0;background:transparent;border-top:1px solid #bfc9bd;padding:28px 42px 29px 8px;color:#314b3d;text-align:left;cursor:pointer;position:relative;transition:background .2s,padding .2s;}
 body.ms-page .ms-treatment-choice:last-of-type{border-bottom:1px solid #bfc9bd;}
 body.ms-page .ms-treatment-choice:hover,body.ms-page .ms-treatment-choice.is-active{background:#f6f3ee;padding-left:22px;}
 body.ms-page .ms-treatment-choice>span{display:block;color:#a07966;font-size:10px;letter-spacing:.12em;font-weight:800;margin-bottom:12px;}
 body.ms-page .ms-treatment-choice strong{display:block;font-size:clamp(20px,2vw,27px);line-height:1.3;letter-spacing:-.04em;}
-body.ms-page .ms-treatment-choice small{display:block;color:#6d7f72;font-size:13px;line-height:1.7;max-width:370px;margin-top:8px;}
+body.ms-page .ms-treatment-choice small{display:block;color:#6d7f72;font-size:16px;line-height:1.7;max-width:370px;margin-top:8px;}
 body.ms-page .ms-treatment-choice i{position:absolute;top:48px;right:14px;font-size:24px;font-style:normal;color:#b17d69;transition:transform .2s;}
 body.ms-page .ms-treatment-choice:hover i,body.ms-page .ms-treatment-choice.is-active i{transform:translate(4px,-4px);}
-body.ms-page .ms-treatment-note{font-size:11px;color:#7b897c;line-height:1.6;margin-top:20px;}
+body.ms-page .ms-treatment-note{font-size:13px;color:#7b897c;line-height:1.6;margin-top:20px;}
 body.ms-page .ms-editorial{display:grid;grid-template-columns:1fr 1fr;min-height:510px;background:#e2d8ce;}
 body.ms-page .ms-editorial-photo{min-height:430px;overflow:hidden;}
 body.ms-page .ms-editorial-photo img{height:100%;width:100%;object-fit:cover;display:block;}
 body.ms-page .ms-editorial-content{padding:clamp(55px,7vw,110px);display:flex;flex-direction:column;justify-content:center;}
 body.ms-page .ms-editorial-content h2{font-size:clamp(32px,3.4vw,53px);letter-spacing:-.06em;line-height:1.14;margin:18px 0;}
 body.ms-page .ms-editorial-content em{color:#98715f;font-style:normal;}
-body.ms-page .ms-editorial-content p:not(.ms-kicker){font-size:15px;line-height:1.85;color:#667166;}
+body.ms-page .ms-editorial-content p:not(.ms-kicker){font-size:18px;line-height:1.85;color:#667166;}
 body.ms-page .ms-editorial-content a{margin-top:22px;color:#304c3e;font-weight:800;text-decoration:underline;text-underline-offset:5px;}
 body.ms-page .ms-ai{background:#eef0e9;}
 body.ms-page .ms-system,body.ms-page .ms-final{background:#30483d;}
@@ -357,14 +505,14 @@ body.ms-page .ms-calc{background:#dce6dc;}
 body.ms-page .ms-footer{background:#f5f0eb;}
 body.ms-page .ms-nav a:focus-visible,body.ms-page .ms-treatment-choice:focus-visible,body.ms-page .ms-btn:focus-visible,body.ms-page .ms-menu:focus-visible{outline:3px solid #b17d69;outline-offset:3px;}
 @media(max-width:1050px){body.ms-page .ms-hero-grid{gap:32px;}body.ms-page .ms-hero-photo{height:550px;min-height:520px;}body.ms-page .ms-photo-float{right:10px;}body.ms-page .ms-treatment-layout{gap:25px;}}
-@media(max-width:760px){body.ms-page .ms-topbar{min-height:72px;}body.ms-page .ms-brand .lf-brand-v4{font-size:29px;}body.ms-page .ms-brand::after{font-size:18px;right:-12px;top:-5px;}body.ms-page .ms-hero{padding:52px 0 65px;}body.ms-page .ms-hero-grid{grid-template-columns:1fr;}body.ms-page h1{font-size:clamp(42px,11vw,60px);}body.ms-page .ms-hero-photo{height:490px;min-height:420px;}body.ms-page .ms-photo-overlay{left:23px;bottom:26px;right:20px;}body.ms-page .ms-photo-float{top:35%;right:-5px;transform:scale(.88);transform-origin:right center;}body.ms-page .ms-photo-mark{top:14px;left:14px;font-size:9px;}body.ms-page .ms-ticker{grid-template-columns:1fr;min-height:0;}body.ms-page .ms-ticker-label{max-width:none;border-right:0;border-bottom:1px solid #587163;padding:18px 20px;font-size:10px;}body.ms-page .ms-ticker-viewport{padding:13px 0;}body.ms-page .ms-ticker-group span{min-width:160px;height:64px;font-size:12px;padding:10px 17px;}body.ms-page .ms-treatment{padding:72px 0 80px;}body.ms-page .ms-treatment-top,body.ms-page .ms-treatment-layout{grid-template-columns:1fr;gap:25px;}body.ms-page .ms-treatment-top>p{max-width:unset;}body.ms-page .ms-treatment h2{font-size:38px;}body.ms-page .ms-treatment-visual{min-height:365px;}body.ms-page .ms-treatment-choice{padding:20px 36px 20px 9px;}body.ms-page .ms-treatment-choice strong{font-size:23px;}body.ms-page .ms-treatment-choice i{top:36px;}body.ms-page .ms-editorial{grid-template-columns:1fr;}body.ms-page .ms-editorial-photo{min-height:320px;max-height:420px;}body.ms-page .ms-editorial-content{padding:55px 25px 70px;}body.ms-page .ms-editorial-content h2{font-size:37px;}body.ms-page .ms-intro{padding-top:75px;padding-bottom:80px;}}
+@media(max-width:760px){body.ms-page .ms-topbar{min-height:72px;}body.ms-page .ms-brand .lf-brand-v4{font-size:29px;}body.ms-page .ms-brand::after{font-size:18px;right:-12px;top:-5px;}body.ms-page .ms-hero{padding:52px 0 65px;}body.ms-page .ms-hero-grid{grid-template-columns:1fr;}body.ms-page h1{font-size:clamp(42px,11vw,60px);}body.ms-page .ms-hero-photo{height:490px;min-height:420px;}body.ms-page .ms-photo-overlay{left:23px;bottom:26px;right:20px;}body.ms-page .ms-photo-float{top:35%;right:-5px;transform:scale(.88);transform-origin:right center;}body.ms-page .ms-photo-mark{top:14px;left:14px;font-size:9px;}body.ms-page .ms-ticker{grid-template-columns:1fr;min-height:0;}body.ms-page .ms-ticker-label{max-width:none;border-right:0;border-bottom:1px solid #587163;padding:18px 20px;font-size:10px;}body.ms-page .ms-ticker-viewport{padding:13px 0;}body.ms-page .ms-ticker-group span{min-width:160px;height:64px;font-size:16px;padding:10px 17px;}body.ms-page .ms-treatment{padding:72px 0 80px;}body.ms-page .ms-treatment-top,body.ms-page .ms-treatment-layout{grid-template-columns:1fr;gap:25px;}body.ms-page .ms-treatment-top>p{font-size:18px;max-width:unset;}body.ms-page .ms-treatment h2{font-size:38px;}body.ms-page .ms-treatment-visual{min-height:365px;}body.ms-page .ms-treatment-choice{padding:20px 36px 20px 9px;}body.ms-page .ms-treatment-choice strong{font-size:23px;}body.ms-page .ms-treatment-choice i{top:36px;}body.ms-page .ms-editorial{grid-template-columns:1fr;}body.ms-page .ms-editorial-photo{min-height:320px;max-height:420px;}body.ms-page .ms-editorial-content{padding:55px 25px 70px;}body.ms-page .ms-editorial-content h2{font-size:37px;}body.ms-page .ms-intro{padding-top:75px;padding-bottom:80px;}}
 @media(prefers-reduced-motion:reduce){body.ms-page .ms-ticker-track{animation:none;}body.ms-page .ms-treatment-visual>img,body.ms-page .ms-treatment-choice{transition:none;}}
 
 /* MS_POLISH_V3: Gallery and interactive FAQ refinements */
 body.ms-page .ms-photo-gallery{padding:108px 0 116px;background:#f5f0eb;}
 body.ms-page .ms-gallery-heading{display:grid;grid-template-columns:1.2fr .7fr;gap:7%;align-items:end;margin-bottom:36px;}
 body.ms-page .ms-gallery-heading h2{font-size:clamp(36px,4vw,58px);line-height:1.13;letter-spacing:-.06em;max-width:680px;margin:0;}
-body.ms-page .ms-gallery-heading>p{font-size:15px;line-height:1.8;color:#627469;max-width:380px;margin:0;}
+body.ms-page .ms-gallery-heading>p{font-size:18px;line-height:1.8;color:#627469;max-width:380px;margin:0;}
 body.ms-page .ms-gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;}
 body.ms-page .ms-gallery-grid figure{margin:0;position:relative;overflow:hidden;background:#d4d8ce;min-height:370px;}
 body.ms-page .ms-gallery-grid img{display:block;width:100%;height:420px;object-fit:cover;transition:transform .55s ease;}
@@ -375,8 +523,8 @@ body.ms-page .ms-gallery-grid figcaption strong{font-size:20px;letter-spacing:-.
 body.ms-page .ms-treatment-choice{cursor:pointer;}
 body.ms-page .ms-faq details:hover,body.ms-page .ms-faq details:focus-within{background:rgba(220,227,217,.46);}
 body.ms-page .ms-faq details{transition:background .2s ease;}
-body.ms-page .ms-faq summary{padding-left:12px;padding-right:12px;}
-body.ms-page .ms-faq details p{padding-left:12px;padding-right:12px;}
+body.ms-page .ms-faq summary{font-size:18px;padding-left:12px;padding-right:12px;}
+body.ms-page .ms-faq details p{font-size:17px;padding-left:12px;padding-right:12px;}
 body.ms-page .ms-footer-logo{flex-shrink:0;min-width:170px;}
 body.ms-page .ms-footer-logo .lf-brand-v4__text{font-size:1em;}
 @media(max-width:760px){
@@ -428,11 +576,11 @@ body.ms-page .ms-resource-card h3{
   font-size:22px;line-height:1.3;margin:18px 0 12px
 }
 body.ms-page .ms-resource-card p{
-  font-size:13px;line-height:1.7;
+  font-size:16px;line-height:1.7;
   color:#657268;margin:0 0 22px
 }
 body.ms-page .ms-resource-card strong{
-  margin-top:auto;font-size:12px
+  margin-top:auto;font-size:14px
 }
 @media(max-width:900px){
   body.ms-page .ms-resource-grid{
@@ -447,6 +595,246 @@ body.ms-page .ms-resource-card strong{
 }
 @media(prefers-reduced-motion:reduce){
   body.ms-page .ms-resource-card{transition:none}
+}
+
+
+/* MS_FOOTER_V1 — independent Med Spa footer */
+body.ms-page .ms-footer {
+  background:#f5f0eb;
+  border-top:1px solid #dcd5c9;
+  padding:72px 0 30px;
+}
+
+body.ms-page .ms-footer .ms-footer-content {
+  display:block;
+}
+
+body.ms-page .ms-footer .ms-footer-content > * {
+  margin:0;
+}
+
+body.ms-page .ms-footer-main {
+  display:grid;
+  grid-template-columns:1.55fr 1fr 1.1fr 1.1fr;
+  gap:clamp(22px,3.5vw,55px);
+  padding-bottom:65px;
+}
+
+body.ms-page .ms-footer-brand {
+  min-width:0;
+}
+
+body.ms-page .ms-footer-brand .ms-footer-logo {
+  display:inline-flex;
+  margin-bottom:22px;
+  min-width:0;
+}
+
+body.ms-page .ms-footer-brand .lf-brand-v4 {
+  font-size:36px;
+}
+
+body.ms-page .ms-footer .ms-footer-description {
+  margin:0 0 14px;
+  font-size:16px;
+  line-height:1.75;
+  color:#50675b;
+  max-width:300px;
+}
+
+body.ms-page .ms-footer .ms-footer-note {
+  margin:0;
+  font-size:14px;
+  line-height:1.7;
+  color:#8a7568;
+  max-width:300px;
+}
+
+body.ms-page .ms-footer-column {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:15px;
+  min-width:0;
+}
+
+body.ms-page .ms-footer-column h3 {
+  margin:0 0 12px;
+  color:#ad806b;
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+
+body.ms-page .ms-footer-column > a {
+  color:#2f453b;
+  font-size:15px;
+  font-weight:650;
+  line-height:1.55;
+  transition:color .2s ease;
+}
+
+body.ms-page .ms-footer-column > a:hover,
+body.ms-page .ms-footer-column > a:focus-visible,
+body.ms-page .ms-footer-legal a:hover {
+  color:#ad806b;
+}
+
+body.ms-page .ms-footer .ms-footer-column > p {
+  font-size:15px;
+  line-height:1.75;
+  color:#607469;
+  margin:0;
+}
+
+body.ms-page .ms-footer-column > .ms-footer-cta {
+  display:inline-flex;
+  padding:15px 18px;
+  background:#30483d;
+  color:#fff;
+  font-size:14px;
+  font-weight:800;
+  margin:6px 0 4px;
+}
+
+body.ms-page .ms-footer-column > .ms-footer-cta:hover,
+body.ms-page .ms-footer-column > .ms-footer-cta:focus-visible {
+  background:#ad806b;
+  color:#fff;
+}
+
+body.ms-page .ms-footer-bottom {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:20px;
+  border-top:1px solid #d8d0c5;
+  padding-top:28px;
+}
+
+body.ms-page .ms-footer-bottom > span,
+body.ms-page .ms-footer-legal a {
+  color:#68796c;
+  font-size:14px;
+  line-height:1.5;
+}
+
+body.ms-page .ms-footer-legal {
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+}
+
+body.ms-page .ms-footer a:focus-visible {
+  outline:2px solid #ad806b;
+  outline-offset:4px;
+}
+
+@media(max-width:1000px) {
+  body.ms-page .ms-footer-main {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:42px;
+  }
+}
+
+@media(max-width:640px) {
+  body.ms-page .ms-footer {
+    padding:55px 0 115px;
+  }
+  body.ms-page .ms-footer-main {
+    grid-template-columns:1fr;
+    gap:36px;
+    padding-bottom:44px;
+  }
+  body.ms-page .ms-footer-column {
+    gap:13px;
+  }
+  body.ms-page .ms-footer-bottom {
+    align-items:flex-start;
+    flex-direction:column;
+    gap:16px;
+  }
+  body.ms-page .ms-footer-legal {
+    gap:18px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  body.ms-page .ms-footer-column > a {
+    transition:none;
+  }
+}
+
+
+/* MS_BOTANICAL_LOGO_V1 — Med Spa logo embellishment only */
+body.ms-page .ms-brand,
+body.ms-page .ms-footer-logo {
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+}
+
+body.ms-page .ms-logo-botanical {
+  position: absolute;
+  top: -17px;
+  right: 15px;
+  width: 42px;
+  height: 27px;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 2;
+  transform-origin: 80% 80%;
+  transition: transform .35s ease;
+}
+
+/* Keep the existing champagne sparkle on the header. */
+body.ms-page .ms-brand::after {
+  right: -19px;
+  top: -9px;
+}
+
+/* Give the footer the same sparkle. */
+body.ms-page .ms-footer-logo::after {
+  content: "✧";
+  position: absolute;
+  top: -9px;
+  right: -19px;
+  font-size: 23px;
+  line-height: 1;
+  color: #b17d69;
+  pointer-events: none;
+}
+
+/* Gentle botanical motion, no change to BrandMark itself. */
+body.ms-page .ms-brand:hover .ms-logo-botanical,
+body.ms-page .ms-brand:focus-visible .ms-logo-botanical,
+body.ms-page .ms-footer-logo:hover .ms-logo-botanical,
+body.ms-page .ms-footer-logo:focus-visible .ms-logo-botanical {
+  transform: translateY(-2px) rotate(-4deg);
+}
+
+@media (max-width: 760px) {
+  body.ms-page .ms-logo-botanical {
+    width: 33px;
+    height: 23px;
+    top: -13px;
+    right: 12px;
+  }
+
+  body.ms-page .ms-brand::after,
+  body.ms-page .ms-footer-logo::after {
+    top: -7px;
+    right: -13px;
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.ms-page .ms-logo-botanical {
+    transition: none;
+  }
 }
 
 </style>
