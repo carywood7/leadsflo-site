@@ -201,3 +201,89 @@ Required for every new niche landing page:
 - [ ] Avoid unrelated green bands on navy/slate designs.
 - [ ] Test header behavior on desktop, tablet and mobile.
 - [ ] Check scroll direction, page top, keyboard and anchor navigation.
+
+### Niche-specific logo palette — approved requirement
+
+Required for every new niche page:
+
+- [ ] Preserve the official LeadsFlo wordmark, river and paper-plane geometry.
+- [ ] Choose niche-specific logo colors matching the approved page palette.
+- [ ] Recolor the header logo for contrast against its background.
+- [ ] Recolor the footer logo for contrast against its dark background.
+- [ ] Match the river currents, pulse, paper plane and wordmark accent.
+- [ ] Preserve the existing interactive logo animation and reduced-motion support.
+- [ ] Use page-scoped CSS; never recolor the global BrandMark for one niche.
+- [ ] Confirm alignment, spacing and visibility on desktop, tablet and mobile.
+- [ ] Obtain approval for both logo treatments before final release.
+
+Landscaping reference: forest/sage/leaf-green header,
+ivory/lime/sage-green footer, approved November 4, 2026.
+
+## Industry atmosphere — visual and interaction standard
+
+- [ ] Use an industry-specific environmental treatment.
+- [ ] Keep animated decoration behind content.
+- [ ] Use lightweight SVG and CSS.
+- [ ] Do not interfere with navigation, forms or sliders.
+- [ ] Preserve text contrast and readability.
+- [ ] Reduce decorative intensity on tablet and mobile.
+- [ ] Respect prefers-reduced-motion.
+- [ ] Visually test desktop, tablet and mobile.
+- [ ] Obtain approval before release.
+
+Landscaping approved direction: slowly moving botanical
+leaf shadows with understated grass accents at selected
+section edges. Preserve the approved V5 planner and V4 logo.
+
+## Mobile hamburger and niche logo integration — V7
+
+- [ ] Keep a prominent mobile hamburger in the header.
+- [ ] Use three clear lines and a minimum 44px tap target.
+- [ ] Retain accessible aria-expanded and keyboard behavior.
+
+
+- [ ] Allow subtle industry-specific logo enhancements.
+- [ ] Integrate accents with the existing river/flow where suitable.
+- [ ] Never obscure the official wordmark or paper plane.
+- [ ] Match header and footer accent colors to their backgrounds.
+- [ ] Scope logo changes to the niche, not shared BrandMark.
+- [ ] Verify both 320px mobile and desktop layouts.
+- [ ] Respect reduced-motion preferences.
+
+Landscaping approved treatment: fine ornamental grass
+slightly overlapping the river/flow beneath the wordmark,
+and a larger three-line mobile hamburger.
+
+## Mobile navigation — single-menu rule (V8)
+
+- [ ] Show ONE primary navigation system on mobile.
+- [ ] Use the hamburger menu, not a second shortcut bar.
+- [ ] Keep the hamburger icon clearly visible with three lines.
+- [ ] Provide at least a 44px accessible touch target.
+- [ ] Ensure the menu opens and closes correctly.
+- [ ] Include navigation links inside the hamburger menu.
+- [ ] Preserve visible keyboard focus and aria-expanded state.
+- [ ] Avoid horizontal overflow at 320px through 430px.
+- [ ] Keep the hero visible immediately below the header.
+- [ ] Preserve the scroll-aware header behavior.
+- [ ] Test the hamburger on a real mobile browser.
+
+Landscaping V8: the secondary horizontal shortcut bar
+was removed. Only the larger hamburger is retained.
+
+## Release QA — tracking and navigation
+
+- [ ] Verify one GA4 library loader and one config call.
+- [ ] Do not mistake two measurement-ID references
+      (loader and config) for duplicate GA4 initialization.
+- [ ] Include /js/leadsflo-conversions.js once on niche pages.
+- [ ] Track calendar CTA clicks as intent, not confirmed bookings.
+- [ ] Do not manufacture generate_lead or purchase events
+      from calendar-link clicks.
+- [ ] Use a single mobile hamburger navigation.
+- [ ] Never add a duplicate horizontal shortcut menu.
+- [ ] Keep the approved niche-specific header and footer logo.
+- [ ] Preserve the approved industry atmosphere and reduced motion.
+- [ ] Reuse approved Industries screenshots.
+- [ ] Remove temporary assets only after a reference check.
+- [ ] Require final visual approval before deployment.

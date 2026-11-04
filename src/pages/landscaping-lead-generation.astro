@@ -1,0 +1,1914 @@
+---
+import BrandMark from "../components/BrandMark.astro";
+import "../styles/global.css";
+const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const faqs = [
+  ["How do you generate landscaping leads?", "We connect service-specific Google Ads and Meta Ads to focused landing pages, lead qualification and CRM follow-up. The campaign should distinguish routine lawn maintenance from landscaping installations and commercial contracts."],
+  ["Can you help with both lawn care and landscape installation?", "Yes. These services have different buyer intent, timelines and economics, so we recommend separating campaigns, offers, forms and follow-up where appropriate."],
+  ["Do you work with commercial landscaping companies?", "We can build campaigns and qualification flows for commercial grounds maintenance, property managers and larger contract opportunities, depending on your market and service capacity."],
+  ["How much should a landscaping business spend on advertising?", "That depends on your local competition, service area, average job value, margins and available capacity. We work from your business economics rather than publishing one universal budget recommendation."],
+  ["Can we use our existing CRM?", "Often, yes. We can connect suitable existing CRM and scheduling platforms instead of requiring you to replace everything. The aim is to make follow-up and booking reliable."],
+  ["What makes a landscaping lead qualified?", "Qualification can include ZIP code, residential or commercial property, service type, project scope, timeline and relevant budget expectations. It should fit how your team estimates and books work."]
+];
+const schema = {"@context":"https://schema.org","@type":"Service","serviceType":"Landscaping marketing and lead generation","provider":{"@type":"Organization","name":"LeadsFlo","url":"https://leadsflo.co/"},"areaServed":{"@type":"Country","name":"United States"},"url":"https://leadsflo.co/landscaping-lead-generation/","description":"Landscaping and lawn care marketing through Google Ads, Meta Ads, conversion funnels, CRM follow-up and appointment setting."};
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#113629" />
+  <link rel="canonical" href="https://leadsflo.co/landscaping-lead-generation/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <title>Landscaping Marketing & Lead Generation | LeadsFlo</title>
+  <meta name="description" content="Landscaping marketing and lawn care lead generation with Google Ads, Meta Ads, conversion-focused landing pages, CRM follow-up and booked estimates." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Landscaping Marketing & Lead Generation | LeadsFlo" />
+  <meta property="og:description" content="Turn local landscaping demand into qualified inquiries and booked estimates with connected marketing and follow-up." />
+  <meta property="og:url" content="https://leadsflo.co/landscaping-lead-generation/" />
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QE382W17N6"></script>
+  <script is:inline>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-QE382W17N6');</script>
+  <style is:global>
+    :root{--g:#143e30;--dark:#102920;--lime:#d2ee80;--cream:#f7f7ed;--muted:#607567;--line:#d8e3d8}
+    *,*:before,*:after{box-sizing:border-box}html{scroll-behavior:smooth}body.ls{margin:0;background:var(--cream);color:#183a2c;font-family:var(--font-body,Arial,sans-serif);-webkit-font-smoothing:antialiased}
+    body.ls a{color:inherit}body.ls button,body.ls input,body.ls select{font:inherit}body.ls button{cursor:pointer}body.ls :focus-visible{outline:3px solid #83b45a;outline-offset:4px}
+    .ls-wrap{width:min(1190px,calc(100% - 44px));margin:auto}.ls-top{position:sticky;top:0;z-index:80;background:rgba(247,247,237,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .ls-nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:84px}.ls-brand{display:flex;align-items:center;max-width:150px}.ls-brand svg{max-width:145px;height:auto}.ls-menu{display:flex;gap:28px;align-items:center}.ls-menu a{font-size:13px;font-weight:750;text-decoration:none;white-space:nowrap}.ls-menu a:hover{color:#4b7750}.ls-cta{display:inline-flex;align-items:center;justify-content:center;gap:16px;border-radius:6px;background:var(--dark);color:#fff!important;text-decoration:none;padding:15px 22px;font-size:13px;font-weight:800;border:1px solid var(--dark);transition:transform .2s,background .2s}.ls-cta:hover{transform:translateY(-2px);background:#28674a}.ls-cta.light{background:var(--lime);border-color:var(--lime);color:var(--dark)!important}.ls-hamb{display:none;border:0;background:transparent;padding:14px;color:var(--g)}
+    .ls-hero{background:linear-gradient(120deg,#f7f7ed 0%,#eaf0df 100%);overflow:hidden;padding:78px 0 86px}.ls-hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:60px}.ls-kicker{font-size:11px;font-weight:850;letter-spacing:.18em;text-transform:uppercase;color:#457858}.ls-hero h1{font-size:clamp(42px,5.8vw,78px);line-height:1.04;letter-spacing:-.064em;margin:21px 0 24px;max-width:690px;color:var(--dark)}.ls-hero h1 em{font-style:normal;color:#668b43}.ls-intro{font-size:clamp(16px,1.7vw,19px);line-height:1.75;color:#52685a;max-width:580px}.ls-actions{display:flex;gap:15px;flex-wrap:wrap;margin:34px 0 28px}.ls-link{display:inline-flex;align-items:center;gap:10px;color:#28573d!important;text-decoration:none;font-weight:800;font-size:13px;border-bottom:1px solid #86a48d;padding:12px 0}.ls-proof{display:flex;flex-wrap:wrap;gap:18px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;font-weight:750;color:#54705f}.ls-proof span:before{content:'✓';margin-right:8px;color:#427b4b}
+    .ls-landscape{background:#113b2c;border:10px solid #fff;border-radius:22px;overflow:hidden;box-shadow:0 34px 60px rgba(11,48,31,.17);position:relative;min-height:490px}.ls-scene{position:absolute;inset:0;background:linear-gradient(180deg,#c3e1d3 0 35%,#9fc58f 36% 54%,#4b8b56 55% 100%)}.ls-scene:before{content:'';position:absolute;left:-20%;right:-20%;bottom:-18%;height:70%;background:repeating-linear-gradient(97deg,#55955c 0 27px,#609e65 28px 57px);transform:rotate(-7deg);border-radius:50% 50% 0 0}.ls-scene:after{content:'';position:absolute;left:20%;top:43%;width:92%;height:34%;transform:rotate(-23deg);background:repeating-linear-gradient(90deg,#e6dfcc 0 35px,#cac4b3 36px 40px);clip-path:polygon(0 0,100% 20%,100% 79%,0 100%);border:8px solid #ddd9c6;box-shadow:0 16px 18px #18432c30}.ls-leaf{position:absolute;border-radius:100% 6% 100% 8%;background:#326b40;box-shadow:18px 14px 0 #467e4d,-9px 18px 0 #2f6738;transform:rotate(-28deg);animation:ls-sway 6s ease-in-out infinite alternate}.ls-leaf.l1{left:9%;top:28%;width:82px;height:160px}.ls-leaf.l2{right:8%;top:10%;width:95px;height:175px;animation-delay:-3s}.ls-leaf.l3{right:16%;bottom:10%;width:67px;height:105px;animation-delay:-1s}.ls-scene-label{position:absolute;top:22px;left:22px;z-index:2;color:#fff;background:#11382be6;padding:10px 14px;font-size:11px;letter-spacing:.12em;font-weight:800;border-radius:5px}.ls-floating{position:absolute;z-index:4;background:#fff;box-shadow:0 12px 30px #0f352647;border:1px solid #dce8da;border-radius:10px;padding:15px 17px;max-width:225px}.ls-floating small{display:block;color:#698477;font-size:10px;font-weight:800;letter-spacing:.09em}.ls-floating strong{display:block;font-size:15px;line-height:1.35;margin:5px 0;color:#17392a}.ls-floating p{font-size:11px;color:#56805a;margin:0}.ls-floating.a{left:20px;bottom:45px}.ls-floating.b{right:15px;top:95px}.ls-pulse{display:inline-block;width:7px;height:7px;background:#8bc667;border-radius:50%;margin-right:6px;animation:ls-pulse 2s infinite}
+    .ls-strip{background:var(--dark);color:#d9e7d6;padding:21px 0}.ls-strip-inner{display:flex;gap:22px;justify-content:space-between;flex-wrap:wrap;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.ls-section{padding:90px 0}.ls-section.alt{background:#eaf1e8}.ls-section.dark{background:var(--dark);color:#f6f8ee}.ls-head{max-width:790px;margin-bottom:38px}.ls-head h2{font-size:clamp(34px,4.4vw,56px);line-height:1.1;letter-spacing:-.055em;margin:13px 0;color:inherit}.ls-head p{color:#597367;font-size:16px;line-height:1.8;max-width:750px}.ls-section.dark .ls-head p{color:#c0d1c5}.ls-grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.ls-card{border:1px solid var(--line);background:#fff;border-radius:13px;padding:27px;min-width:0}.ls-card h3{font-size:22px;letter-spacing:-.025em;line-height:1.2;margin:15px 0}.ls-card p{color:#5d7365;font-size:14px;line-height:1.75}.ls-card span{font-size:11px;font-weight:850;letter-spacing:.1em;color:#65875d}.ls-card a{color:#286344!important;font-weight:800;text-decoration:none;font-size:13px}.ls-card:hover{border-color:#8bb595;box-shadow:0 14px 30px #17412f12}
+    .ls-demo{display:grid;grid-template-columns:.95fr 1.05fr;gap:22px;align-items:stretch}.ls-selector{background:#fff;border:1px solid #d4e3d3;border-radius:15px;padding:30px}.ls-service{display:block;width:100%;text-align:left;border:1px solid #d7e4d5;background:#f7faf4;color:#1b4935;padding:17px 18px;border-radius:8px;margin-top:11px;font-weight:750}.ls-service[aria-pressed=true]{border-color:#245f3e;background:#dfefd3;box-shadow:inset 4px 0 #37734c}.ls-demo-board{background:#123e2e;color:#fff;border-radius:15px;padding:30px;min-height:350px}.ls-demo-board .ls-small{color:#b7d6ba;font-size:11px;font-weight:800;letter-spacing:.1em}.ls-demo-board h3{font-size:29px;margin:15px 0;letter-spacing:-.04em}.ls-pipeline{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:34px 0}.ls-node{border:1px solid #6e9676;border-radius:7px;padding:16px 10px;background:#214e3d;min-height:95px}.ls-node b{font-size:11px;display:block;color:#d3ee81}.ls-node span{font-size:12px;line-height:1.4;display:block;margin-top:9px}.ls-result{border-top:1px solid #5a8063;padding-top:16px;font-size:15px;line-height:1.65;color:#e3efd9}.ls-disclaimer{color:#8aa798;font-size:12px;line-height:1.6}
+    .ls-calc{background:#fff;border:1px solid #d5e5d5;border-radius:18px;padding:34px;display:grid;grid-template-columns:.95fr 1.05fr;gap:35px}.ls-fields{display:grid;grid-template-columns:1fr 1fr;gap:18px}.ls-fields label{display:flex;flex-direction:column;gap:8px;font-size:12px;color:#395d45;font-weight:800}.ls-fields input{padding:13px;width:100%;border-radius:6px;border:1px solid #c6d7c9;background:#fcfdfb}.ls-metrics{background:#eaf3e3;border-radius:12px;padding:27px;display:grid;grid-template-columns:1fr 1fr;gap:20px}.ls-metrics div{border-bottom:1px solid #bfd5c0;padding-bottom:14px}.ls-metrics b{display:block;font-size:clamp(30px,3.2vw,47px);color:#185136;letter-spacing:-.06em}.ls-metrics span{font-size:11px;color:#587565;font-weight:750}.ls-method{margin-top:17px;color:#607968;font-size:12px;line-height:1.8}
+    .ls-method span{color:#317345;font-weight:800}.ls-step{background:#fff;border-left:4px solid #8bb75b;padding:25px;margin-bottom:12px}.ls-step strong{font-size:18px}.ls-step p{color:#607766;line-height:1.8;margin-bottom:0}.ls-faq{display:grid;grid-template-columns:1fr 1fr;gap:14px}.ls-faq details{background:#fff;border:1px solid #d5e3d5;padding:21px;border-radius:9px}.ls-faq summary{font-weight:800;cursor:pointer}.ls-faq p{font-size:14px;color:#5b7364;line-height:1.8}.ls-article{display:block;background:#fff;border:1px solid #d1dfd0;border-radius:10px;padding:24px;text-decoration:none;transition:transform .2s}.ls-article:hover{transform:translateY(-4px)}.ls-article small{font-size:10px;font-weight:850;letter-spacing:.12em;color:#6c8e69}.ls-article h3{font-size:21px;margin:14px 0;line-height:1.3}.ls-article p{font-size:13px;line-height:1.7;color:#647d6a}.ls-article b{font-size:12px;color:#277248}
+    .ls-close{background:#cde881;padding:75px 0}.ls-close-grid{display:flex;align-items:center;justify-content:space-between;gap:25px}.ls-close h2{font-size:clamp(36px,4.5vw,57px);letter-spacing:-.06em;line-height:1.08;margin:12px 0}.ls-close p{color:#34543a;max-width:620px;line-height:1.75}.ls-footer{background:#102920;color:#d3e5d4;padding:38px 0}.ls-footer .ls-wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.ls-footer a{color:#d3e5d4!important;font-size:12px;text-decoration:none;margin-right:15px}
+    @keyframes ls-sway{to{transform:rotate(-20deg) translateY(7px)}}@keyframes ls-pulse{50%{opacity:.2;transform:scale(1.3)}}
+    @media(max-width:950px){.ls-hero-grid{grid-template-columns:1fr;gap:35px}.ls-landscape{min-height:370px}.ls-grid3{grid-template-columns:1fr 1fr}.ls-menu{gap:16px}.ls-menu a{font-size:12px}.ls-pipeline{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:720px){.ls-nav{min-height:72px}.ls-hamb{display:block}.ls-menu{display:none;position:absolute;top:72px;left:0;right:0;background:var(--cream);border-bottom:1px solid var(--line);padding:18px 24px 26px;flex-direction:column;align-items:stretch}.ls-menu.open{display:flex}.ls-menu a{padding:10px;font-size:15px}.ls-hero{padding:46px 0 55px}.ls-hero h1{font-size:clamp(40px,11vw,58px)}.ls-landscape{min-height:330px}.ls-floating{max-width:180px}.ls-floating.a{bottom:20px}.ls-floating.b{top:80px}.ls-section{padding:60px 0}.ls-grid3,.ls-demo,.ls-calc,.ls-faq{grid-template-columns:1fr}.ls-fields{grid-template-columns:1fr 1fr}.ls-close-grid{align-items:flex-start;flex-direction:column}.ls-menu .ls-cta{display:flex}.ls-strip-inner{gap:12px}.ls-pipeline{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:420px){.ls-wrap{width:min(100% - 32px,1190px)}.ls-fields{grid-template-columns:1fr}.ls-landscape{min-height:290px}.ls-floating.b{right:8px}.ls-floating.a{left:8px}.ls-floating{padding:9px;max-width:153px}.ls-hero .ls-cta{width:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ls-leaf,.ls-pulse{animation:none}.ls-card,.ls-article,.ls-cta{transition:none}}
+
+/* LEADSFLO_LANDSCAPING_FINISH_V2 */
+
+.ls-brand{position:relative}
+
+.ls-brand-leaf{
+  position:absolute;
+  right:-16px;
+  top:-9px;
+  width:21px;
+  height:29px;
+  color:#6c984c;
+  transform-origin:bottom center;
+  animation:ls-bloom 4s ease-in-out infinite alternate;
+  pointer-events:none;
+}
+
+@keyframes ls-bloom{
+  from{transform:rotate(-8deg) scale(.93)}
+  to{transform:rotate(7deg) scale(1.05)}
+}
+
+.ls-gallery{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.ls-photo{
+  min-width:0;
+  overflow:hidden;
+  border:1px solid #d7e4d5;
+  border-radius:14px;
+  background:#fff;
+  transition:transform .25s,box-shadow .25s;
+}
+
+.ls-photo:hover{
+  transform:translateY(-5px);
+  box-shadow:0 18px 30px rgba(22,57,35,.10);
+}
+
+.ls-photo img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  display:block;
+}
+
+.ls-photo-body{padding:22px}
+
+.ls-photo-body span{
+  color:#507e59;
+  font-size:11px;
+  font-weight:850;
+  letter-spacing:.09em;
+}
+
+.ls-photo-body h3{
+  font-size:22px;
+  letter-spacing:-.04em;
+  margin:10px 0;
+}
+
+.ls-photo-body p{
+  color:#5b7164;
+  font-size:14px;
+  line-height:1.7;
+  margin:0;
+}
+
+.ls-photo-credit{
+  margin-top:18px;
+  font-size:12px;
+  line-height:1.7;
+  color:#718477;
+}
+
+.ls-photo-credit a{color:#275d41!important}
+
+.ls-qualify{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+
+.ls-qual-form,
+.ls-qual-board{
+  padding:29px;
+  border-radius:15px;
+  min-width:0;
+}
+
+.ls-qual-form{
+  background:#fff;
+  border:1px solid #d3e1d1;
+}
+
+.ls-qual-form label{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-bottom:17px;
+  font-weight:750;
+  color:#31573e;
+  font-size:13px;
+}
+
+.ls-qual-form input,
+.ls-qual-form select{
+  width:100%;
+  padding:12px;
+  min-height:46px;
+  border:1px solid #c2d3c2;
+  border-radius:7px;
+  background:#fcfefa;
+  color:#1d3f2e;
+}
+
+.ls-qual-board{
+  display:flex;
+  flex-direction:column;
+  gap:17px;
+  background:#113a2c;
+  color:#e9f4ea;
+}
+
+.ls-qual-board .ls-kicker{color:#bade8e}
+
+.ls-qual-board h3{
+  font-size:29px;
+  line-height:1.15;
+  letter-spacing:-.04em;
+  margin:0;
+}
+
+.ls-qual-board dl{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  margin:0;
+}
+
+.ls-qual-board dt{
+  color:#b1cab9;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.ls-qual-board dd{
+  margin:6px 0 0;
+  font-size:15px;
+  font-weight:750;
+  overflow-wrap:anywhere;
+}
+
+.ls-qual-next{
+  background:#254f3e;
+  border:1px solid #5c8965;
+  border-radius:9px;
+  padding:17px;
+  line-height:1.65;
+}
+
+.ls-qual-board .ls-disclaimer{
+  color:#b8cfc0;
+  margin-top:auto;
+}
+
+@media(max-width:900px){
+  .ls-gallery{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .ls-photo:last-child{grid-column:span 2}
+  .ls-qualify{grid-template-columns:1fr}
+}
+
+@media(max-width:650px){
+  .ls-gallery{grid-template-columns:1fr}
+  .ls-photo:last-child{grid-column:auto}
+  .ls-photo img{height:230px}
+  .ls-qual-form,.ls-qual-board{padding:22px}
+  .ls-photo:hover{transform:none}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .ls-brand-leaf{animation:none}
+  .ls-photo{transition:none}
+  .ls-photo:hover{transform:none}
+}
+
+
+/* LEADSFLO LANDSCAPING V3 */
+
+.ls-section.dark .ls-card {
+  color:#163b2b;
+  background:#fff;
+}
+.ls-section.dark .ls-card h3 {
+  color:#163b2b !important;
+  opacity:1;
+}
+.ls-section.dark .ls-card p {color:#526b5a}
+.ls-section.dark .ls-card span {color:#477a55}
+
+.ls-marquee {
+  background:#103528;
+  padding:15px 0 24px;
+  overflow:hidden;
+}
+.ls-marquee-label {
+  color:#d0ed92;
+  font-size:11px;
+  font-weight:850;
+  letter-spacing:.14em;
+}
+.ls-marquee-viewport {
+  overflow:hidden;
+}
+.ls-marquee-track {
+  display:flex;
+  width:max-content;
+  animation:ls-marquee-scroll 32s linear infinite;
+}
+.ls-marquee-group {
+  display:flex;
+  gap:12px;
+  flex-shrink:0;
+  padding-right:12px;
+}
+.ls-ticker-card {
+  display:flex;
+  align-items:center;
+  gap:13px;
+  padding:17px 23px;
+  background:#f9f8ed;
+  color:#183d2b;
+  border:1px solid #b7cba9;
+  border-radius:8px;
+  font-size:16px;
+  font-weight:800;
+  white-space:nowrap;
+}
+.ls-ticker-card span {color:#579052}
+.ls-marquee-viewport:hover .ls-marquee-track,
+.ls-marquee-viewport:focus .ls-marquee-track {
+  animation-play-state:paused;
+}
+@keyframes ls-marquee-scroll {
+  to {transform:translateX(-50%)}
+}
+
+.ls-capability {
+  cursor:pointer;
+  transition:border-color .2s,box-shadow .2s;
+}
+.ls-capability:hover,
+.ls-capability:focus-visible,
+.ls-capability[aria-pressed="true"] {
+  border-color:#75ae70;
+  box-shadow:0 10px 24px #071f161e;
+}
+.ls-capability[aria-pressed="true"] {
+  border-left:5px solid #78ab5d;
+}
+.ls-capability-panel {
+  margin-top:24px;
+  padding:28px;
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  gap:24px;
+  background:#244c39;
+  border:1px solid #648469;
+  color:#f8faef;
+  border-radius:13px;
+}
+.ls-capability-panel .ls-kicker {color:#d1ed98}
+.ls-capability-panel h3 {
+  font-size:clamp(25px,3vw,37px);
+  color:#fff;
+  line-height:1.17;
+  margin:15px 0;
+}
+.ls-capability-panel p {
+  color:#d3e4d4;
+  line-height:1.75;
+}
+.ls-capability-panel-side {
+  background:#123829;
+  border:1px solid #648469;
+  border-radius:9px;
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:12px;
+}
+.ls-capability-panel-side small {color:#d0ec92}
+.ls-capability-panel-side strong {
+  color:white;
+  font-size:18px;
+}
+.ls-capability-panel-side p {
+  font-size:12px;
+  margin:0;
+}
+.ls-mobile-shortcuts,
+.ls-mobile-booking {display:none}
+
+.ls-top {
+  position:sticky;
+  top:0;
+  z-index:100;
+  transition:transform .25s ease;
+}
+.ls-top.ls-header-hidden {transform:translateY(-105%)}
+body.ls section[id] {scroll-margin-top:115px}
+
+.ls-footer-v3 {
+  padding:62px 0 25px;
+  background:#0e2b20;
+  color:#e5f0e3;
+}
+.ls-footer-v3 .ls-footer-grid {
+  display:grid;
+  grid-template-columns:1.45fr 1fr 1fr 1.1fr;
+  align-items:start;
+  gap:35px;
+}
+.ls-footer-grid nav {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:13px;
+}
+.ls-footer-grid nav strong {
+  color:#cce98d;
+  font-size:11px;
+  letter-spacing:.12em;
+  margin-bottom:10px;
+}
+.ls-footer-grid nav a,
+.ls-footer-bottom a {
+  margin:0;
+  color:#d5e6d4 !important;
+  text-decoration:none;
+  line-height:1.6;
+}
+.ls-footer-grid nav a:hover,
+.ls-footer-bottom a:hover {
+  color:#d3ee94 !important;
+}
+.ls-footer-intro .ls-brand {margin-bottom:20px}
+.ls-footer-intro p {
+  max-width:300px;
+  line-height:1.8;
+  font-size:14px;
+}
+.ls-footer-cta {
+  display:inline-block;
+  margin-top:15px !important;
+  padding:14px;
+  border:1px solid #9aba77;
+  border-radius:6px;
+}
+.ls-footer-bottom {
+  display:flex !important;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  margin-top:45px !important;
+  padding-top:22px;
+  border-top:1px solid #42624c;
+  font-size:12px;
+}
+.ls-footer-bottom div {display:flex;gap:16px;flex-wrap:wrap}
+
+@media(max-width:1050px) {
+  .ls-footer-v3 .ls-footer-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:720px) {
+  .ls-mobile-shortcuts {
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    padding:10px 16px 13px;
+    background:#f7f7ed;
+    border-top:1px solid #d6e2d5;
+    scrollbar-width:none;
+  }
+  .ls-mobile-shortcuts a {
+    flex:none;
+    background:#fff;
+    padding:10px 13px;
+    border:1px solid #c7d8c6;
+    border-radius:6px;
+    font-size:12px;
+    font-weight:800;
+    text-decoration:none;
+    color:#1e4934;
+  }
+  .ls-capability-panel {grid-template-columns:1fr}
+  .ls-mobile-booking {
+    display:block;
+    position:fixed;
+    z-index:150;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+    background:#103426;
+    box-shadow:0 -7px 20px #10251d30;
+  }
+  .ls-mobile-booking a {
+    display:block;
+    border-radius:7px;
+    padding:15px;
+    background:#d3eb93;
+    color:#133a2b !important;
+    text-align:center;
+    font-size:14px;
+    font-weight:850;
+    text-decoration:none;
+  }
+  body.ls {
+    padding-bottom:calc(85px + env(safe-area-inset-bottom));
+  }
+  body.ls section[id] {scroll-margin-top:145px}
+}
+@media(max-width:480px) {
+  .ls-footer-v3 .ls-footer-grid {grid-template-columns:1fr}
+  .ls-ticker-card {font-size:14px;padding:13px 18px}
+  .ls-hero h1 {
+    font-size:clamp(35px,10vw,50px);
+    overflow-wrap:break-word;
+  }
+}
+@media(max-width:340px) {
+  .ls-wrap {width:calc(100% - 28px)}
+  .ls-hero h1 {font-size:34px}
+}
+@media(prefers-reduced-motion:reduce) {
+  .ls-marquee-track {animation:none}
+  .ls-top,.ls-capability {transition:none}
+}
+
+
+/* LEADSFLO_LANDSCAPING_BRAND_PALETTE_V4 */
+
+/* Header: warm forest-green LeadsFlo identity */
+body.ls .ls-top .lf-brand-v4 {
+  --brand-text:#173F2D;
+  --brand-flo:#54895B;
+  --brand-period:#A9CA69;
+  --brand-plane:#54895B;
+}
+
+body.ls .ls-top .lf-brand-v4__current1 {
+  stroke:#54895B;
+}
+
+body.ls .ls-top .lf-brand-v4__current2 {
+  stroke:#A9CA69;
+}
+
+body.ls .ls-top .lf-brand-v4__pulse {
+  stroke:#D0EA91;
+}
+
+body.ls .ls-top .lf-brand-v4__plane-fill {
+  stroke:#173F2D;
+}
+
+body.ls .ls-top .lf-brand-v4__plane-fold {
+  stroke:#F7F7ED;
+}
+
+/* Footer: matching, high-contrast nighttime palette */
+body.ls .ls-footer-v3 .lf-brand-v4 {
+  --brand-text:#F6F5E8;
+  --brand-flo:#CDE990;
+  --brand-period:#79AA7A;
+  --brand-plane:#CDE990;
+}
+
+body.ls .ls-footer-v3 .lf-brand-v4__current1 {
+  stroke:#CDE990;
+}
+
+body.ls .ls-footer-v3 .lf-brand-v4__current2 {
+  stroke:#79AA7A;
+}
+
+body.ls .ls-footer-v3 .lf-brand-v4__pulse {
+  stroke:#F6F5E8;
+}
+
+body.ls .ls-footer-v3 .lf-brand-v4__plane-fill {
+  stroke:#173F2D;
+}
+
+body.ls .ls-footer-v3 .lf-brand-v4__plane-fold {
+  stroke:#173F2D;
+}
+
+/* Match logo proportions in both placements */
+body.ls .ls-top .ls-brand,
+body.ls .ls-footer-v3 .ls-brand {
+  display:inline-flex;
+  width:max-content;
+  max-width:100%;
+}
+
+body.ls .ls-footer-v3 .ls-brand {
+  margin-right:0;
+}
+
+@media (prefers-reduced-motion:reduce) {
+  body.ls .lf-brand-v4__pulse {
+    animation:none !important;
+  }
+}
+
+
+/* LEADSFLO_GROWTH_PLANNER_V5 */
+.ls-planner{padding:100px 0;background:#e9f1e7;color:#173b2c}
+.ls-planner-head{display:flex;justify-content:space-between;
+ align-items:end;gap:25px;margin-bottom:32px}
+.ls-planner-head h2{font-size:clamp(38px,4.5vw,62px);
+ letter-spacing:-.055em;line-height:1.08;max-width:780px;
+ margin:15px 0;color:#153829}
+.ls-planner-head p{font-size:16px;line-height:1.75;
+ max-width:700px;color:#587464}
+.ls-planner-status{background:white;border:1px solid #c9dbc3;
+ padding:13px 16px;border-radius:25px;font-size:11px;
+ color:#39794f;white-space:nowrap;font-weight:800}
+.ls-planner-layout{display:grid;grid-template-columns:1fr 1fr;
+ border:1px solid #cbdcc9;border-radius:18px;overflow:hidden;
+ background:white;box-shadow:0 22px 60px #23432b18}
+.ls-planner-controls,.ls-planner-dashboard{padding:35px;min-width:0}
+.ls-planner-eyebrow{font-size:11px;font-weight:850;
+ color:#4d7952;letter-spacing:.09em}
+.ls-planner-presets{display:grid;grid-template-columns:repeat(3,1fr);
+ gap:9px;margin:18px 0 35px}
+.ls-planner-presets button{background:#f7faf5;
+ border:1px solid #d7e4d4;border-radius:10px;padding:17px 10px;
+ display:flex;flex-direction:column;align-items:flex-start;
+ gap:7px;color:#17412c;cursor:pointer;text-align:left;
+ transition:transform .2s,border-color .2s,background .2s}
+.ls-planner-presets button:hover{transform:translateY(-3px)}
+.ls-planner-presets button[aria-pressed=true]{background:#e8f3df;
+ border-color:#65a35b;box-shadow:inset 0 0 0 1px #65a35b}
+.ls-planner-presets b{font-size:24px;color:#679d60}
+.ls-planner-presets strong{font-size:13px;line-height:1.35}
+.ls-planner-presets small{font-size:10px;color:#708476;line-height:1.5}
+.ls-planner-control-heading{display:flex;align-items:center;
+ justify-content:space-between;gap:10px;margin-bottom:22px}
+#lp-reset{border:0;background:none;color:#367b49;
+ font-size:12px;font-weight:800;cursor:pointer}
+.ls-planner-sliders{display:grid;grid-template-columns:1fr 1fr;
+ gap:26px 23px}
+.ls-planner-sliders label{display:block;min-width:0}
+.ls-planner-sliders label>span{display:flex;
+ justify-content:space-between;gap:8px;align-items:center;
+ font-size:12px;font-weight:750;color:#28503a;min-height:35px}
+.ls-planner-sliders output{color:#1b7041;font-size:14px;
+ font-weight:850;white-space:nowrap}
+.ls-planner-sliders input[type=range]{width:100%;
+ height:7px;border-radius:20px;appearance:none;
+ -webkit-appearance:none;cursor:pointer;margin:12px 0;
+ background:linear-gradient(90deg,#5e965f var(--progress,30%),
+ #e0e9df var(--progress,30%))}
+.ls-planner-sliders input::-webkit-slider-thumb{
+ appearance:none;-webkit-appearance:none;width:19px;height:19px;
+ border-radius:50%;background:#407d49;border:3px solid white;
+ box-shadow:0 1px 6px #163e2840}
+.ls-planner-sliders input::-moz-range-thumb{width:15px;height:15px;
+ border:3px solid white;border-radius:50%;background:#407d49}
+.ls-planner-value{margin-top:30px;padding:19px;
+ display:flex;align-items:center;justify-content:space-between;
+ gap:14px;border-radius:10px;background:#f1f7ed;
+ border:1px solid #d7e4d1}
+.ls-planner-value>span:first-child{display:flex;
+ flex-direction:column;gap:6px}
+.ls-planner-value strong{font-size:12px;color:#214e32}
+.ls-planner-value small{font-size:11px;line-height:1.55;
+ color:#6c846d}
+.ls-planner-money{display:flex;align-items:center;
+ gap:5px;background:white;border:1px solid #bbd1bb;
+ border-radius:7px;padding:6px 10px;font-weight:850}
+.ls-planner-money input{width:100px;min-width:0;
+ font-size:20px;font-weight:850;color:#1e623c;
+ border:0;background:transparent;padding:7px 2px}
+.ls-planner-dashboard{background:#123729;color:#f5f8ef}
+.ls-planner-dashboard-top{display:flex;justify-content:space-between;
+ align-items:center;gap:12px;font-size:10px;letter-spacing:.08em;
+ color:#c8e3b8;font-weight:800}
+.ls-planner-dashboard-top small{color:#b7cdb8;font-size:10px}
+.ls-planner-revenue{background:linear-gradient(135deg,#286044,#1d4934);
+ border:1px solid #5a8b66;border-radius:12px;
+ padding:25px;margin:24px 0}
+.ls-planner-revenue>span{font-size:10px;color:#d1e9a5;
+ font-weight:850;letter-spacing:.1em}
+.ls-planner-revenue strong{display:block;
+ font-size:clamp(44px,5vw,70px);letter-spacing:-.06em;
+ margin:13px 0;color:#f8ffeb;overflow-wrap:anywhere}
+.ls-planner-revenue p{font-size:12px;color:#c0d7c2;margin:0}
+.ls-planner-metrics{display:grid;grid-template-columns:repeat(4,1fr);
+ gap:9px}
+.ls-planner-metrics>div{border:1px solid #456b51;border-radius:9px;
+ padding:14px 10px;min-width:0}
+.ls-planner-metrics b{display:block;font-size:clamp(22px,2.6vw,34px);
+ color:#d7edac;letter-spacing:-.05em}
+.ls-planner-metrics span{display:block;font-size:9px;
+ color:#b8d3bd;margin-top:9px;line-height:1.4}
+.ls-planner-funnel{border:1px solid #416b50;border-radius:11px;
+ padding:22px;margin-top:25px}
+.ls-planner-funnel-title{display:flex;
+ justify-content:space-between;gap:10px;align-items:center;
+ margin-bottom:22px}
+.ls-planner-funnel-title strong{font-size:15px}
+.ls-planner-funnel-title small{font-size:9px;color:#b0cdb3}
+.ls-planner-funnel-rows>div{display:grid;
+ grid-template-columns:73px minmax(0,1fr) 43px;
+ gap:11px;align-items:center;margin:13px 0}
+.ls-planner-funnel-rows span{font-size:11px;color:#c5dbcb}
+.ls-planner-funnel-rows i{display:block;height:9px;
+ background:#3b604a;border-radius:20px;overflow:hidden}
+.ls-planner-funnel-rows em{display:block;height:100%;width:0;
+ background:linear-gradient(90deg,#69a56c,#cae68e);
+ border-radius:20px;transition:width .25s}
+.ls-planner-funnel-rows b{font-size:12px;text-align:right;
+ color:#ecf6e4;font-variant-numeric:tabular-nums}
+.ls-planner-costs{display:grid;grid-template-columns:1fr 1fr;
+ gap:12px;margin-top:22px}
+.ls-planner-costs>div{background:#244b36;
+ border-radius:9px;padding:19px}
+.ls-planner-costs span{display:block;color:#b6d0b6;
+ font-size:10px;line-height:1.5}
+.ls-planner-costs strong{display:block;font-size:25px;
+ color:#edf8d7;margin-top:9px}
+.ls-planner-note{font-size:11px;line-height:1.8;
+ color:#bad0bc;margin:22px 0 0}
+.ls-planner button:focus-visible,.ls-planner input:focus-visible{
+ outline:3px solid #99bf67;outline-offset:3px}
+@media(max-width:1050px){
+ .ls-planner-layout{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+ .ls-planner{padding:65px 0}
+ .ls-planner-head{flex-direction:column;align-items:flex-start}
+ .ls-planner-controls,.ls-planner-dashboard{padding:23px 19px}
+ .ls-planner-metrics{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:430px){
+ .ls-planner-presets{gap:6px}
+ .ls-planner-presets button{padding:12px 8px}
+ .ls-planner-presets strong{font-size:11px}
+ .ls-planner-presets small{font-size:9px}
+ .ls-planner-sliders{grid-template-columns:1fr}
+ .ls-planner-value{flex-direction:column;align-items:stretch}
+ .ls-planner-money input{width:100%}
+ .ls-planner-funnel{padding:16px 12px}
+ .ls-planner-funnel-rows>div{
+ grid-template-columns:65px minmax(0,1fr) 33px;gap:8px}
+}
+@media(prefers-reduced-motion:reduce){
+ .ls-planner-presets button,.ls-planner-funnel-rows em{
+ transition:none}
+ .ls-planner-presets button:hover{transform:none}
+}
+
+
+/* LEADSFLO LANDSCAPING ATMOSPHERE V6 */
+
+body.ls section[data-ls-atmosphere] {
+  position:relative;
+  isolation:isolate;
+}
+
+body.ls section[data-ls-atmosphere] > .ls-wrap {
+  position:relative;
+  z-index:2;
+}
+
+body.ls .ls-atmo-shadow,
+body.ls .ls-atmo-grass {
+  position:absolute;
+  z-index:0;
+  pointer-events:none !important;
+  user-select:none;
+}
+
+body.ls .ls-atmo-shadow {
+  inset:0;
+  overflow:hidden;
+  background:
+    url("/images/landscaping/leaf-shadows.svg")
+    center top / cover no-repeat;
+  opacity:.12;
+  filter:blur(11px);
+  transform-origin:85% 5%;
+  animation:ls-leaf-breeze 13s ease-in-out infinite alternate;
+}
+
+body.ls [data-ls-atmosphere="hero"] .ls-atmo-shadow {
+  opacity:.18;
+}
+
+body.ls [data-ls-atmosphere="planner"] .ls-atmo-shadow {
+  opacity:.10;
+  filter:blur(14px);
+}
+
+body.ls [data-ls-atmosphere="services"] .ls-atmo-shadow,
+body.ls [data-ls-atmosphere="lead-flow"] .ls-atmo-shadow {
+  opacity:.07;
+}
+
+body.ls [data-ls-atmosphere="faqs"] .ls-atmo-shadow {
+  opacity:.11;
+}
+
+body.ls [data-ls-atmosphere="closing"] .ls-atmo-shadow {
+  opacity:.12;
+}
+
+@keyframes ls-leaf-breeze {
+  0% {
+    transform:translate3d(-7px,0,0) rotate(-1.5deg)
+      scale(1.02);
+  }
+  100% {
+    transform:translate3d(9px,3px,0) rotate(2deg)
+      scale(1.03);
+  }
+}
+
+body.ls .ls-atmo-grass {
+  left:0;
+  right:0;
+  bottom:-1px;
+  height:45px;
+  overflow:hidden;
+  background:
+    url("/images/landscaping/grass-edge.svg")
+    center bottom / auto 45px repeat-x;
+  opacity:.32;
+}
+
+body.ls [data-ls-atmosphere="planner"] .ls-atmo-grass {
+  opacity:.25;
+}
+
+body.ls [data-ls-atmosphere="closing"] .ls-atmo-grass {
+  opacity:.20;
+}
+
+/* Final planner surface refinements. */
+body.ls .ls-planner-controls {
+  background:linear-gradient(
+    160deg,#ffffff 0%,#f8fbf6 100%
+  );
+}
+
+body.ls .ls-planner-dashboard {
+  background:
+    radial-gradient(
+      ellipse at 98% 0%,
+      rgba(138,185,112,.12),
+      transparent 46%
+    ),
+    linear-gradient(155deg,#143c2c,#0f2e23);
+}
+
+body.ls .ls-planner-presets button[aria-pressed="true"] {
+  background:linear-gradient(
+    160deg,#e9f5df,#dceecf
+  );
+  box-shadow:
+    inset 0 0 0 1px #6b9c5d,
+    0 8px 18px rgba(35,82,43,.09);
+}
+
+body.ls .ls-planner-revenue {
+  box-shadow:0 14px 30px rgba(5,29,15,.15);
+}
+
+@media(max-width:900px) {
+  body.ls .ls-atmo-shadow {
+    opacity:.07;
+    filter:blur(13px);
+  }
+
+  body.ls .ls-atmo-grass {
+    height:32px;
+    background-size:auto 32px;
+    opacity:.20;
+  }
+}
+
+@media(max-width:600px) {
+  body.ls .ls-atmo-shadow {
+    opacity:.04;
+    filter:blur(16px);
+    animation-duration:20s;
+  }
+
+  body.ls .ls-atmo-grass {
+    height:22px;
+    background-size:auto 22px;
+    opacity:.15;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  body.ls .ls-atmo-shadow {
+    animation:none !important;
+    transform:none !important;
+  }
+}
+
+
+/* LEADSFLO_LANDSCAPING_MOBILE_LOGO_V7 */
+
+/* Three clear hamburger lines with an accessible touch target. */
+body.ls .ls-hamb {
+  align-items:center;
+  justify-content:center;
+  width:52px;
+  height:52px;
+  min-width:52px;
+  min-height:52px;
+  padding:9px;
+  border-radius:9px;
+  color:#173f2d;
+  background:transparent;
+  transition:background .18s ease;
+}
+
+body.ls .ls-hamb:hover,
+body.ls .ls-hamb[aria-expanded="true"] {
+  background:#e6efdf;
+}
+
+body.ls .ls-hamb-lines {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width:30px;
+  height:24px;
+}
+
+body.ls .ls-hamb-lines > span {
+  display:block;
+  flex:none;
+  width:100%;
+  height:3px;
+  background:currentColor;
+  border-radius:3px;
+  transition:transform .2s ease,opacity .2s ease;
+}
+
+body.ls .ls-hamb[aria-expanded="true"]
+  .ls-hamb-lines > span:nth-child(1) {
+  transform:translateY(10.5px) rotate(45deg);
+}
+
+body.ls .ls-hamb[aria-expanded="true"]
+  .ls-hamb-lines > span:nth-child(2) {
+  opacity:0;
+}
+
+body.ls .ls-hamb[aria-expanded="true"]
+  .ls-hamb-lines > span:nth-child(3) {
+  transform:translateY(-10.5px) rotate(-45deg);
+}
+
+/* Landscaping-only grass integrated with the river logo. */
+body.ls .ls-brand {
+  position:relative;
+  isolation:isolate;
+}
+
+body.ls .ls-logo-grass {
+  position:absolute;
+  left:7%;
+  right:17%;
+  bottom:-3px;
+  height:13px;
+  display:block;
+  z-index:2;
+  color:#659653;
+  opacity:.80;
+  pointer-events:none;
+  user-select:none;
+  overflow:visible;
+}
+
+body.ls .ls-logo-grass svg {
+  display:block;
+  width:100%;
+  height:100%;
+  max-width:none;
+  overflow:visible;
+}
+
+/* Slightly brighter grass on the dark footer. */
+body.ls .ls-footer-v3 .ls-logo-grass {
+  color:#b3d58b;
+  opacity:.75;
+  bottom:-4px;
+}
+
+/* Keep the actual wordmark visually dominant. */
+body.ls .ls-brand .lf-brand-v4 {
+  position:relative;
+  z-index:1;
+}
+
+/* Hamburger is visible only at mobile navigation widths. */
+@media(min-width:721px) {
+  body.ls .ls-hamb {
+    display:none;
+  }
+}
+
+@media(max-width:720px) {
+  body.ls .ls-hamb {
+    display:inline-flex;
+    flex:none;
+  }
+
+  body.ls .ls-logo-grass {
+    height:11px;
+    bottom:-2px;
+  }
+
+  body.ls .ls-footer-v3 .ls-logo-grass {
+    height:12px;
+  }
+
+  /* Preserve the mobile shortcut navigation below the header. */
+  body.ls .ls-mobile-shortcuts {
+    display:flex;
+  }
+}
+
+@media(max-width:360px) {
+  body.ls .ls-hamb {
+    width:48px;
+    min-width:48px;
+  }
+
+  body.ls .ls-hamb-lines {
+    width:28px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  body.ls .ls-hamb-lines > span,
+  body.ls .ls-hamb {
+    transition:none !important;
+  }
+}
+
+
+/* LEADSFLO_LANDSCAPING_SINGLE_MOBILE_MENU_V8 */
+
+/* The hamburger is the ONLY mobile navigation control.
+   The duplicate horizontal shortcut strip is removed. */
+
+body.ls .ls-mobile-shortcuts {
+  display:none !important;
+}
+
+/* Give the header a clean single-row mobile layout. */
+@media(max-width:720px) {
+  body.ls .ls-top {
+    border-bottom:1px solid #d4dfcf;
+  }
+
+  body.ls .ls-hamb {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    flex:none;
+  }
+
+  body.ls .ls-hamb-lines {
+    width:30px;
+    height:24px;
+  }
+
+  body.ls .ls-hamb-lines > span {
+    height:3px;
+  }
+
+  /* No extra space reserved for the removed shortcut bar. */
+  body.ls .ls-mobile-shortcuts {
+    display:none !important;
+  }
+
+  /* Keep anchor targets clear of the sticky header. */
+  body.ls section[id] {
+    scroll-margin-top:100px;
+  }
+}
+
+</style>
+<script is:inline defer src="/js/leadsflo-conversions.js"></script>
+<!-- LEADSFLO_LANDSCAPING_TRACKING_V9 -->
+</head>
+<body class="ls" id="top">
+  <header class="ls-top"><div class="ls-wrap ls-nav">
+<a href="/" class="ls-brand" aria-label="LeadsFlo home">
+  <BrandMark theme="light" />
+  <svg class="ls-brand-leaf" aria-hidden="true"
+       viewBox="0 0 28 34" fill="none">
+    <path d="M13 30C13 18 16 11 23 4
+             M13 18C5 18 2 13 3 7
+             c7-1 12 3 13 9
+             M15 11c0-7 5-10 11-10
+             2 7-2 12-10 13"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </svg>
+
+<span class="ls-logo-grass" aria-hidden="true">
+  <svg viewBox="0 0 150 24" preserveAspectRatio="none"
+       focusable="false">
+    <g fill="none" stroke="currentColor"
+       stroke-width="1.7" stroke-linecap="round">
+      <path d="M7 23 Q5 14 1 9"/>
+      <path d="M7 23 Q9 12 13 5"/>
+      <path d="M19 23 Q18 14 15 10"/>
+      <path d="M19 23 Q22 12 27 8"/>
+      <path d="M34 23 Q33 13 30 7"/>
+      <path d="M34 23 Q37 14 41 10"/>
+      <path d="M50 23 Q48 16 45 13"/>
+      <path d="M50 23 Q52 11 57 5"/>
+      <path d="M66 23 Q64 15 61 10"/>
+      <path d="M66 23 Q70 11 73 8"/>
+      <path d="M83 23 Q81 15 77 10"/>
+      <path d="M83 23 Q86 12 91 6"/>
+      <path d="M99 23 Q97 13 94 9"/>
+      <path d="M99 23 Q103 15 107 10"/>
+      <path d="M116 23 Q114 16 111 12"/>
+      <path d="M116 23 Q119 14 124 8"/>
+      <path d="M132 23 Q130 15 127 12"/>
+      <path d="M132 23 Q136 13 141 7"/>
+    </g>
+  </svg>
+</span>
+</a>
+<button class="ls-hamb" aria-label="Open navigation" aria-controls="ls-menu" aria-expanded="false" type="button"><span class="ls-hamb-lines" aria-hidden="true"><span></span><span></span><span></span></span></button><nav class="ls-menu" id="ls-menu" aria-label="Landscaping page navigation"><a href="#services">Services</a><a href="#lead-flow">Lead Flow</a><a href="#calculator">Estimator</a><a href="#insights">Guides</a><a href="#faqs">FAQs</a><a class="ls-cta" href={booking} target="_blank" rel="noopener noreferrer">Book a strategy call ↗</a></nav></div>
+
+</header>
+  <main>
+    <section class="ls-hero" data-ls-atmosphere="hero"><!-- LEADSFLO_LANDSCAPE_ATMOSPHERE_V6 -->
+<div class="ls-atmo-shadow" aria-hidden="true"></div><div class="ls-atmo-grass" aria-hidden="true"></div><div class="ls-wrap ls-hero-grid"><div><span class="ls-kicker">LANDSCAPING MARKETING / LAWN CARE LEAD GENERATION</span><h1>Better landscaping leads. <em>More booked estimates.</em></h1><p class="ls-intro">Google Ads, Meta Ads, landing pages and connected follow-up built for landscaping contractors and lawn care companies. Attract the right local inquiries, qualify the job and make the next conversation easy to book.</p><div class="ls-actions"><a class="ls-cta" href={booking} target="_blank" rel="noopener noreferrer">Book a growth strategy call ↗</a><a class="ls-link" href="#lead-flow">See the lead flow ↘</a></div><div class="ls-proof"><span>Local service targeting</span><span>Job-specific funnels</span><span>CRM follow-up</span></div></div><div class="ls-landscape" role="img" aria-label="Stylized aerial landscaping scene with lawn, paver walkway and sample lead cards"><div class="ls-scene"></div><div class="ls-leaf l1"></div><div class="ls-leaf l2"></div><div class="ls-leaf l3"></div><div class="ls-scene-label">THE LANDSCAPE PIPELINE / LIVE DEMO</div><div class="ls-floating a"><small>01 / NEW INQUIRY</small><strong>Backyard renovation</strong><p><span class="ls-pulse"></span>Project details captured</p></div><div class="ls-floating b"><small>03 / READY FOR NEXT STEP</small><strong>Estimate requested</strong><p>Service area + project type matched</p></div></div></div></section>
+
+<!-- LEADSFLO_LANDSCAPING_STANDARD_V3 -->
+<div class="ls-marquee" aria-label="Marketing capabilities">
+  <p class="ls-marquee-label ls-wrap">
+    A CONNECTED GROWTH SYSTEM
+  </p>
+  <div class="ls-marquee-viewport" tabindex="0">
+    <div class="ls-marquee-track">
+      <div class="ls-marquee-group"><span class="ls-ticker-card"><span aria-hidden="true">✳</span>Google Search Ads</span><span class="ls-ticker-card"><span aria-hidden="true">✳</span>Meta Ads &amp; Creative</span><span class="ls-ticker-card"><span aria-hidden="true">✳</span>Websites &amp; Funnels</span><span class="ls-ticker-card"><span aria-hidden="true">✳</span>CRM &amp; Automation</span><span class="ls-ticker-card"><span aria-hidden="true">✳</span>Appointment Setting</span><span class="ls-ticker-card"><span aria-hidden="true">✳</span>Local SEO</span></div>
+      <div class="ls-marquee-group" aria-hidden="true"><span class="ls-ticker-card"><span aria-hidden="true">✳</span>Google Search Ads</span><span class="ls-ticker-card"><span aria-hidden="true">✳</span>Meta Ads &amp; Creative</span><span class="ls-ticker-card"><span aria-hidden="true">✳</span>Websites &amp; Funnels</span><span class="ls-ticker-card"><span aria-hidden="true">✳</span>CRM &amp; Automation</span><span class="ls-ticker-card"><span aria-hidden="true">✳</span>Appointment Setting</span><span class="ls-ticker-card"><span aria-hidden="true">✳</span>Local SEO</span></div>
+    </div>
+  </div>
+</div>
+
+    <section class="ls-section" id="services" data-ls-atmosphere="services"><div class="ls-atmo-shadow" aria-hidden="true"></div><div class="ls-wrap"><div class="ls-head"><span class="ls-kicker">BUILT FOR YOUR KIND OF WORK</span><h2>Not every landscaping lead is the same.</h2><p>A recurring mowing route, a $30,000 outdoor renovation and a commercial maintenance contract need different messaging, forms and follow-up. We build around the work you want more of.</p></div><div class="ls-grid3"><article class="ls-card"><span>01 / RECURRING REVENUE</span><h3>Lawn care &amp; maintenance</h3><p>Target local homeowners seeking routine mowing, fertilization, seasonal cleanups and property maintenance, with ZIP code and frequency qualification.</p><a href="#lead-flow">Explore the process ↗</a></article><article class="ls-card"><span>02 / HIGHER-VALUE PROJECTS</span><h3>Landscape design &amp; hardscaping</h3><p>Reach homeowners planning patios, planting, retaining walls and outdoor transformations. Screen for project type, approximate budget and desired timing.</p><a href="#lead-flow">Explore the process ↗</a></article><article class="ls-card"><span>03 / COMMERCIAL CONTRACTS</span><h3>Commercial landscaping</h3><p>Help property managers and facility owners request quotes for grounds maintenance with property size, coverage and contract requirements.</p><a href="#lead-flow">Explore the process ↗</a></article></div></div></section>
+    <section class="ls-section alt" id="lead-flow" data-ls-atmosphere="lead-flow"><div class="ls-atmo-shadow" aria-hidden="true"></div><div class="ls-wrap"><div class="ls-head"><span class="ls-kicker">INTERACTIVE / HOW LEADS MOVE</span><h2>From local search to the right appointment.</h2><p>Choose a service below. Watch how the source, qualification questions and booking handoff change for each type of landscaping work.</p></div><div class="ls-demo"><div class="ls-selector"><span class="ls-kicker">01 / SELECT A SERVICE</span><h3>What kind of job do you want more of?</h3><button class="ls-service" data-service="design" aria-pressed="true" type="button">Landscape design &amp; installation ↗</button><button class="ls-service" data-service="lawn" aria-pressed="false" type="button">Recurring lawn maintenance ↗</button><button class="ls-service" data-service="commercial" aria-pressed="false" type="button">Commercial grounds contracts ↗</button><p style="color:#617c69;font-size:13px;line-height:1.75;margin-top:23px">Every path is an illustrative workflow. Real campaigns, CRM integrations and qualification fields are tailored to the business.</p></div><div class="ls-demo-board" aria-live="polite"><span class="ls-small">02 / ACTIVE LEAD JOURNEY</span><h3 id="ls-demo-title">Landscape installation</h3><div class="ls-pipeline"><div class="ls-node"><b>01 / ATTRACT</b><span id="ls-source">Local Google Search</span></div><div class="ls-node"><b>02 / CAPTURE</b><span id="ls-request">Backyard project inquiry</span></div><div class="ls-node"><b>03 / QUALIFY</b><span id="ls-qualify">ZIP · Scope · Budget</span></div><div class="ls-node"><b>04 / BOOK</b><span id="ls-book">Design consultation</span></div></div><div class="ls-result"><strong>Next step:</strong> <span id="ls-outcome">Route to an estimator for a scoped design consultation.</span></div><p class="ls-disclaimer">Simulated customer journey, not real incoming leads or a performance claim.</p></div></div></div></section>
+
+<!-- LEADSFLO_LANDSCAPING_FINISH_V2 -->
+<section class="ls-section" id="field-work"
+         aria-labelledby="ls-field-heading">
+  <div class="ls-wrap">
+    <div class="ls-head">
+      <span class="ls-kicker">THE WORK BEHIND THE LEAD</span>
+      <h2 id="ls-field-heading">
+        Different jobs. Different customer journeys.
+      </h2>
+      <p>
+        From weekly maintenance to a backyard transformation,
+        the strongest campaigns start with the actual service
+        customers need.
+      </p>
+    </div>
+
+    <div class="ls-gallery">
+      <article class="ls-photo">
+        <img src="/images/landscaping/lawn-care.jpg"
+             alt="Professional lawn mowing and maintenance"
+             loading="lazy" decoding="async" />
+        <div class="ls-photo-body">
+          <span>01 / RECURRING SERVICE</span>
+          <h3>Lawn care & maintenance</h3>
+          <p>
+            Build dense local routes with ZIP code,
+            lawn size and service frequency qualification.
+          </p>
+        </div>
+      </article>
+
+      <article class="ls-photo">
+        <img src="/images/landscaping/backyard-design.jpg"
+             alt="Landscaped backyard and outdoor patio"
+             loading="lazy" decoding="async" />
+        <div class="ls-photo-body">
+          <span>02 / DESIGN & INSTALLATION</span>
+          <h3>Landscape transformations</h3>
+          <p>
+            Reach homeowners planning patios, planting,
+            hardscaping and outdoor living improvements.
+          </p>
+        </div>
+      </article>
+
+      <article class="ls-photo">
+        <img src="/images/landscaping/grounds-care.jpg"
+             alt="Gardener maintaining shrubs and plants"
+             loading="lazy" decoding="async" />
+        <div class="ls-photo-body">
+          <span>03 / GROUNDS MANAGEMENT</span>
+          <h3>Property maintenance</h3>
+          <p>
+            Qualify recurring maintenance work by
+            property type, scope and service territory.
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <p class="ls-photo-credit">
+      Illustrative stock photography from Pexels.
+      These are not LeadsFlo client projects or campaign results.
+      Photo sources:
+      <a href="https://www.pexels.com/photo/lawn-mower-on-grass-4162011/">Lawn care</a>,
+      <a href="https://www.pexels.com/photo/charming-backyard-with-patio-and-lush-greenery-35289470/">Landscape design</a>,
+      <a href="https://www.pexels.com/photo/man-trimming-the-leaves-5027602/">Garden maintenance</a>.
+    </p>
+  </div>
+</section>
+
+<section class="ls-section alt" id="qualification"
+         aria-labelledby="ls-qualification-heading">
+  <div class="ls-wrap">
+    <div class="ls-head">
+      <span class="ls-kicker">
+        INTERACTIVE / LEAD QUALIFICATION
+      </span>
+      <h2 id="ls-qualification-heading">
+        Not every inquiry should follow the same path.
+      </h2>
+      <p>
+        Try a sample landscaping inquiry and see how
+        qualification changes the CRM handoff.
+        This is an interactive demonstration only.
+      </p>
+    </div>
+
+    <div class="ls-qualify">
+      <form class="ls-qual-form" id="ls-qual-form">
+        <label for="ls-q-service">
+          Service requested
+          <select id="ls-q-service">
+            <option value="design">
+              Landscape design & installation
+            </option>
+            <option value="lawn">
+              Recurring lawn care
+            </option>
+            <option value="commercial">
+              Commercial grounds maintenance
+            </option>
+          </select>
+        </label>
+
+        <label for="ls-q-zip">
+          Sample ZIP code
+          <input id="ls-q-zip" type="text"
+                 value="10001"
+                 inputmode="numeric"
+                 maxlength="5"
+                 pattern="[0-9]{5}"
+                 placeholder="Enter 5-digit ZIP"
+                 autocomplete="off" />
+        </label>
+
+        <label for="ls-q-budget">
+          Project budget or monthly service range
+          <select id="ls-q-budget">
+            <option>Not sure yet</option>
+            <option>Under $1,000</option>
+            <option>$1,000–$10,000</option>
+            <option>$10,000+</option>
+          </select>
+        </label>
+
+        <label for="ls-q-time">
+          Preferred timeline
+          <select id="ls-q-time">
+            <option>As soon as practical</option>
+            <option>Within 30 days</option>
+            <option>Planning ahead</option>
+          </select>
+        </label>
+
+        <button class="ls-cta" type="submit">
+          Preview CRM routing ↗
+        </button>
+      </form>
+
+      <div class="ls-qual-board"
+           aria-live="polite" aria-atomic="true">
+        <span class="ls-kicker">
+          SAMPLE CRM / SIMULATED
+        </span>
+
+        <h3 id="ls-q-status">
+          Design consultation request
+        </h3>
+
+        <dl>
+          <div>
+            <dt>Inquiry type</dt>
+            <dd id="ls-q-type">Landscape installation</dd>
+          </div>
+
+          <div>
+            <dt>Location</dt>
+            <dd id="ls-q-area">
+              Coverage check required
+            </dd>
+          </div>
+
+          <div>
+            <dt>Budget signal</dt>
+            <dd id="ls-q-budget-out">
+              Not sure yet
+            </dd>
+          </div>
+
+          <div>
+            <dt>Timeline</dt>
+            <dd id="ls-q-time-out">
+              As soon as practical
+            </dd>
+          </div>
+        </dl>
+
+        <div class="ls-qual-next">
+          <strong>Recommended next step</strong>
+          <p id="ls-q-next">
+            Check territory and project details,
+            then assign the estimating team.
+          </p>
+        </div>
+
+        <p class="ls-disclaimer">
+          Demonstration only. No data is submitted or stored.
+          ZIP codes are not checked against a real service area,
+          and this simulator does not create CRM records.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ls-section dark"><div class="ls-wrap"><div class="ls-head"><span class="ls-kicker" style="color:#b8df85">WHAT WE BUILD</span><h2>One connected system. Not five disconnected tools.</h2><p>The goal is to make campaigns, lead capture, qualification and booked appointments work together—with visibility into where each lead came from.</p></div><div class="ls-grid3"><article class="ls-card ls-capability" data-ls-capability="0" tabindex="0" role="button" aria-pressed="true" aria-controls="ls-capability-panel"><span>01 / ATTRACT</span><h3>Google Search &amp; local visibility</h3><p>Match keywords and service areas to actual offerings, from hardscape installation to maintenance routes. Separate high-intent categories where the buyer need differs.</p></article><article class="ls-card ls-capability" data-ls-capability="1" tabindex="0" role="button" aria-pressed="false" aria-controls="ls-capability-panel"><span>02 / CREATE</span><h3>Meta Ads &amp; visual creative</h3><p>Use project imagery, seasonal offers and relevant local messaging to reach homeowners and property decision-makers without promising arbitrary lead counts.</p></article><article class="ls-card ls-capability" data-ls-capability="2" tabindex="0" role="button" aria-pressed="false" aria-controls="ls-capability-panel"><span>03 / CONVERT</span><h3>Landing pages &amp; qualification</h3><p>Build mobile-first offers, clear forms, calls and project-specific questions. A patio inquiry should not be handled like a weekly mowing request.</p></article><article class="ls-card ls-capability" data-ls-capability="3" tabindex="0" role="button" aria-pressed="false" aria-controls="ls-capability-panel"><span>04 / FOLLOW UP</span><h3>CRM &amp; automation</h3><p>Route leads by service and location, notify the right team and keep follow-up visible. Integrate suitable existing tools rather than replacing working systems without reason.</p></article><article class="ls-card ls-capability" data-ls-capability="4" tabindex="0" role="button" aria-pressed="false" aria-controls="ls-capability-panel"><span>05 / BOOK</span><h3>Appointment setting</h3><p>Organize callbacks, site visits, estimates and design consultations with the context the sales or estimating team needs.</p></article><article class="ls-card ls-capability" data-ls-capability="5" tabindex="0" role="button" aria-pressed="false" aria-controls="ls-capability-panel"><span>06 / IMPROVE</span><h3>Measurement beyond CPL</h3><p>Compare inquiry volume with qualified leads, booked estimates, show rates and the jobs actually won, where the business tracks those outcomes.</p></article></div></div>
+<div id="ls-capability-panel" class="ls-capability-panel"
+     aria-live="polite" aria-atomic="true">
+  <div>
+    <span class="ls-kicker">ACTIVE CAMPAIGN DETAIL</span>
+    <h3 id="ls-capability-title"></h3>
+    <p id="ls-capability-description"></p>
+  </div>
+  <div class="ls-capability-panel-side">
+    <small>THE CONNECTED JOURNEY</small>
+    <strong>Attract → Capture → Qualify → Book</strong>
+    <p>Illustrative process. No claimed campaign results.</p>
+  </div>
+</div>
+</section>
+
+<!-- LEADSFLO_GROWTH_PLANNER_V5 -->
+<section class="ls-planner" id="calculator" data-ls-atmosphere="planner"><div class="ls-atmo-shadow" aria-hidden="true"></div><div class="ls-atmo-grass" aria-hidden="true"></div>
+  <div class="ls-wrap">
+    <div class="ls-planner-head">
+      <div>
+        <span class="ls-kicker">INTERACTIVE / GROWTH PLANNER</span>
+        <h2>Explore your landscaping growth potential.</h2>
+        <p>Model how advertising inquiries could turn into
+        qualified leads, booked estimates and won jobs.
+        Change the assumptions to fit your business.</p>
+      </div>
+      <span class="ls-planner-status">● LIVE SCENARIO</span>
+    </div>
+
+    <div class="ls-planner-layout">
+      <div class="ls-planner-controls">
+        <div class="ls-planner-eyebrow">01 / CHOOSE A BUSINESS MODEL</div>
+
+        <div class="ls-planner-presets" role="group"
+             aria-label="Landscaping business model">
+          <button type="button" data-lp-preset="lawn"
+                  aria-pressed="true">
+            <b>✳</b><strong>Lawn Care</strong>
+            <small>Recurring maintenance</small>
+          </button>
+          <button type="button" data-lp-preset="design"
+                  aria-pressed="false">
+            <b>◇</b><strong>Design &amp; Build</strong>
+            <small>Landscape projects</small>
+          </button>
+          <button type="button" data-lp-preset="commercial"
+                  aria-pressed="false">
+            <b>▦</b><strong>Commercial</strong>
+            <small>Grounds contracts</small>
+          </button>
+        </div>
+
+        <div class="ls-planner-control-heading">
+          <span class="ls-planner-eyebrow">
+            02 / ADJUST YOUR ASSUMPTIONS
+          </span>
+          <button type="button" id="lp-reset">Reset ↺</button>
+        </div>
+
+        <div class="ls-planner-sliders">
+          <label>
+            <span>Monthly ad budget
+              <output id="lp-o-budget">$2,500</output>
+            </span>
+            <input id="lp-budget" type="range"
+                   min="500" max="20000" step="100" value="2500">
+          </label>
+          <label>
+            <span>Cost per inquiry
+              <output id="lp-o-cpl">$85</output>
+            </span>
+            <input id="lp-cpl" type="range"
+                   min="20" max="500" step="5" value="85">
+          </label>
+          <label>
+            <span>Qualified lead rate
+              <output id="lp-o-qualified">60%</output>
+            </span>
+            <input id="lp-qualified" type="range"
+                   min="5" max="100" step="5" value="60">
+          </label>
+          <label>
+            <span>Qualified-to-booked rate
+              <output id="lp-o-booked">45%</output>
+            </span>
+            <input id="lp-booked" type="range"
+                   min="5" max="100" step="5" value="45">
+          </label>
+          <label>
+            <span>Appointment show rate
+              <output id="lp-o-show">80%</output>
+            </span>
+            <input id="lp-show" type="range"
+                   min="5" max="100" step="5" value="80">
+          </label>
+          <label>
+            <span>Estimate close rate
+              <output id="lp-o-close">30%</output>
+            </span>
+            <input id="lp-close" type="range"
+                   min="5" max="100" step="5" value="30">
+          </label>
+        </div>
+
+        <label class="ls-planner-value">
+          <span>
+            <strong>Average initial job / contract value</strong>
+            <small>Enter the initial job or defined contract
+            period, not unlimited lifetime revenue.</small>
+          </span>
+          <span class="ls-planner-money">
+            $ <input id="lp-value" type="number"
+                     min="0" max="1000000"
+                     step="50" value="600">
+          </span>
+        </label>
+      </div>
+
+      <div class="ls-planner-dashboard">
+        <div class="ls-planner-dashboard-top">
+          <span>YOUR MODELED PIPELINE</span>
+          <small id="lp-model">LAWN CARE</small>
+        </div>
+
+        <div class="ls-planner-revenue">
+          <span>ILLUSTRATIVE MONTHLY GROSS REVENUE</span>
+          <strong id="lp-revenue" aria-live="polite">$0</strong>
+          <p>Estimated won jobs × initial job value</p>
+        </div>
+
+        <div class="ls-planner-metrics">
+          <div><b id="lp-leads">—</b><span>INQUIRIES</span></div>
+          <div><b id="lp-qual">—</b><span>QUALIFIED</span></div>
+          <div><b id="lp-books">—</b><span>BOOKED</span></div>
+          <div><b id="lp-won">—</b><span>WON JOBS</span></div>
+        </div>
+
+        <div class="ls-planner-funnel">
+          <div class="ls-planner-funnel-title">
+            <strong>From inquiry to customer</strong>
+            <small>MODELLED FUNNEL</small>
+          </div>
+
+          <div class="ls-planner-funnel-rows">
+            <div data-lp-stage="leads">
+              <span>Inquiries</span><i><em></em></i><b>—</b>
+            </div>
+            <div data-lp-stage="qualified">
+              <span>Qualified</span><i><em></em></i><b>—</b>
+            </div>
+            <div data-lp-stage="booked">
+              <span>Booked</span><i><em></em></i><b>—</b>
+            </div>
+            <div data-lp-stage="shows">
+              <span>Attended</span><i><em></em></i><b>—</b>
+            </div>
+            <div data-lp-stage="won">
+              <span>Won jobs</span><i><em></em></i><b>—</b>
+            </div>
+          </div>
+        </div>
+
+        <div class="ls-planner-costs">
+          <div>
+            <span>AD SPEND / BOOKING</span>
+            <strong id="lp-cpb">—</strong>
+          </div>
+          <div>
+            <span>AD SPEND / WON JOB</span>
+            <strong id="lp-cpa">—</strong>
+          </div>
+        </div>
+
+        <p class="ls-planner-note">
+          Illustrative scenario only. Preset values are
+          editable examples, not industry benchmarks,
+          forecasts or LeadsFlo results. Gross revenue
+          is not profit. Agency fees, operating costs
+          and future recurring revenue are excluded.
+          Funnel values represent mathematical expectations,
+          not guaranteed whole customers.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="ls-section alt"><div class="ls-wrap"><div class="ls-head"><span class="ls-kicker">A PRACTICAL ROADMAP</span><h2>Build demand. Then make it count.</h2><p>Better lead generation starts with the economics of your service mix and follows the inquiry all the way to the estimate.</p></div><div class="ls-grid3"><div class="ls-step"><strong>01 — Define the right work</strong><p>Prioritize profitable services, service areas, route density, job size and schedule capacity before setting up campaigns.</p></div><div class="ls-step"><strong>02 — Match intent and creative</strong><p>Separate lawn care, landscape installation and commercial searches. Build ads and pages that reflect the actual service requested.</p></div><div class="ls-step"><strong>03 — Qualify and route</strong><p>Ask only what is needed to confirm fit, then connect the inquiry to a responsible person, CRM stage or booking step.</p></div></div></div></section>
+    <section class="ls-section" id="insights"><div class="ls-wrap"><div class="ls-head"><span class="ls-kicker">LANDSCAPING MARKETING INSIGHTS</span><h2>Useful guides for growing a landscaping company.</h2><p>Practical reading on lead quality, search campaigns and building a repeatable local marketing process.</p></div><div class="ls-grid3"><a class="ls-article" href="/insights/landscaping-lead-generation/"><small>LEAD GENERATION / GUIDE 01</small><h3>How to Get More Landscaping Leads</h3><p>Service-specific lead strategies, forms, qualification and follow-up.</p><b>Read guide ↗</b></a><a class="ls-article" href="/insights/google-ads-for-landscapers/"><small>GOOGLE ADS / GUIDE 02</small><h3>Google Ads for Landscaping Companies</h3><p>Campaign structure, search intent, negative keywords and conversions.</p><b>Read guide ↗</b></a><a class="ls-article" href="/insights/landscaping-marketing-strategies/"><small>MARKETING / GUIDE 03</small><h3>Landscaping &amp; Lawn Care Marketing Strategies</h3><p>SEO, paid channels, seasonality, referrals and CRM follow-up.</p><b>Read guide ↗</b></a></div></div></section>
+    <section class="ls-section alt" id="faqs" data-ls-atmosphere="faqs"><div class="ls-atmo-shadow" aria-hidden="true"></div><div class="ls-wrap"><div class="ls-head"><span class="ls-kicker">COMMON QUESTIONS</span><h2>Landscaping marketing FAQs.</h2></div><div class="ls-faq">{faqs.map(([question,answer])=><details><summary>{question}</summary><p>{answer}</p></details>)}</div></div></section>
+    <section class="ls-close" data-ls-atmosphere="closing"><div class="ls-atmo-shadow" aria-hidden="true"></div><div class="ls-atmo-grass" aria-hidden="true"></div><div class="ls-wrap ls-close-grid"><div><span class="ls-kicker">GROW WITH A CLEARER PLAN</span><h2>Good leads. Better jobs.<br />A more reliable pipeline.</h2><p>Tell us what kind of landscaping projects you want to win. We'll discuss the right campaigns, qualification steps and follow-up for your market.</p></div><a class="ls-cta" href={booking} target="_blank" rel="noopener noreferrer">Book a strategy call ↗</a></div></section>
+  </main>
+
+<footer class="ls-footer ls-footer-v3">
+  <div class="ls-wrap ls-footer-grid">
+    <div class="ls-footer-intro">
+      <a href="/" class="ls-brand" aria-label="LeadsFlo home">
+  <BrandMark theme="dark" />
+  <svg class="ls-brand-leaf" aria-hidden="true"
+       viewBox="0 0 28 34" fill="none">
+    <path d="M13 30C13 18 16 11 23 4
+             M13 18C5 18 2 13 3 7
+             c7-1 12 3 13 9
+             M15 11c0-7 5-10 11-10
+             2 7-2 12-10 13"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </svg>
+
+<span class="ls-logo-grass" aria-hidden="true">
+  <svg viewBox="0 0 150 24" preserveAspectRatio="none"
+       focusable="false">
+    <g fill="none" stroke="currentColor"
+       stroke-width="1.7" stroke-linecap="round">
+      <path d="M7 23 Q5 14 1 9"/>
+      <path d="M7 23 Q9 12 13 5"/>
+      <path d="M19 23 Q18 14 15 10"/>
+      <path d="M19 23 Q22 12 27 8"/>
+      <path d="M34 23 Q33 13 30 7"/>
+      <path d="M34 23 Q37 14 41 10"/>
+      <path d="M50 23 Q48 16 45 13"/>
+      <path d="M50 23 Q52 11 57 5"/>
+      <path d="M66 23 Q64 15 61 10"/>
+      <path d="M66 23 Q70 11 73 8"/>
+      <path d="M83 23 Q81 15 77 10"/>
+      <path d="M83 23 Q86 12 91 6"/>
+      <path d="M99 23 Q97 13 94 9"/>
+      <path d="M99 23 Q103 15 107 10"/>
+      <path d="M116 23 Q114 16 111 12"/>
+      <path d="M116 23 Q119 14 124 8"/>
+      <path d="M132 23 Q130 15 127 12"/>
+      <path d="M132 23 Q136 13 141 7"/>
+    </g>
+  </svg>
+</span>
+</a>
+      <p>Landscaping marketing, connected from the
+      first inquiry to the next booked conversation.</p>
+      <a class="ls-footer-cta" href={booking}
+         target="_blank" rel="noopener noreferrer">
+        Book a strategy call ↗
+      </a>
+    </div>
+    <nav aria-label="Our services">
+      <strong>SERVICES</strong>
+      <a href="/performance-marketing/">Performance Marketing</a>
+      <a href="/ad-creatives-content/">Ad Creatives &amp; Content</a>
+      <a href="/websites-funnels/">Websites &amp; Funnels</a>
+      <a href="/crm-automation/">CRM &amp; Automation</a>
+      <a href="/appointment-setting/">Appointment Setting</a>
+    </nav>
+    <nav aria-label="Explore LeadsFlo">
+      <strong>EXPLORE</strong>
+      <a href="/">Home</a>
+      <a href="/industries/">Industries</a>
+      <a href="/about/">About</a>
+      <a href="/work/">Our Work</a>
+      <a href="/insights/">Insights</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+    <nav aria-label="Landscaping guides">
+      <strong>LANDSCAPING GUIDES</strong>
+      <a href="/insights/landscaping-lead-generation/">
+        Lead Generation
+      </a>
+      <a href="/insights/google-ads-for-landscapers/">
+        Google Ads
+      </a>
+      <a href="/insights/landscaping-marketing-strategies/">
+        Marketing Strategies
+      </a>
+    </nav>
+  </div>
+  <div class="ls-wrap ls-footer-bottom">
+    <span>© {new Date().getFullYear()} LeadsFlo</span>
+    <div>
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+  <script is:inline>
+  (()=>{
+    const toggle=document.querySelector('.ls-hamb'),menu=document.querySelector('.ls-menu');
+    toggle?.addEventListener('click',()=>{const open=menu.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close navigation':'Open navigation')});
+    menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{menu.classList.remove('open');toggle?.setAttribute('aria-expanded','false')}));
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'){menu?.classList.remove('open');toggle?.setAttribute('aria-expanded','false')}});
+    const services={design:['Landscape installation','Local Google Search','Backyard project inquiry','ZIP · Scope · Budget','Design consultation','Route to an estimator for a scoped design consultation.'],lawn:['Recurring lawn care','Local search / seasonal ads','Weekly lawn care request','ZIP · Lawn size · Frequency','Service estimate','Check service area and route capacity before quoting.'],commercial:['Commercial landscaping','Search / property management','Grounds maintenance request','Location · Acres · Contract scope','Site walkthrough','Route to the commercial estimator for a property review.']};
+    document.querySelectorAll('[data-service]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-service]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));let s=services[b.dataset.service];['ls-demo-title','ls-source','ls-request','ls-qualify','ls-book','ls-outcome'].forEach((id,i)=>{document.getElementById(id).textContent=s[i]})}));
+
+// Landscaping sample CRM qualification.
+// Demonstration only: no network calls or storage.
+const qualifier = document.getElementById('ls-qual-form');
+
+if (qualifier) {
+  const put = (id, value) => {
+    const node = document.getElementById(id);
+    if (node) node.textContent = value;
+  };
+
+  const routes = {
+    design: [
+      'Landscape installation',
+      'Design consultation request',
+      'Review project scope and budget, check territory, '
+        + 'then route to the design estimator.'
+    ],
+    lawn: [
+      'Recurring lawn care',
+      'Maintenance quote request',
+      'Check service area, property size and route '
+        + 'capacity before preparing a quote.'
+    ],
+    commercial: [
+      'Commercial grounds care',
+      'Commercial site assessment',
+      'Assign a commercial estimator to confirm property '
+        + 'size, contract terms and site-visit requirements.'
+    ]
+  };
+
+  qualifier.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const service = document.getElementById('ls-q-service').value;
+    const zip = document.getElementById('ls-q-zip').value.trim();
+    const budget = document.getElementById('ls-q-budget');
+    const timeline = document.getElementById('ls-q-time');
+    const validZip = /^[0-9]{5}$/.test(zip);
+    const selected = routes[service];
+
+    put('ls-q-type', selected[0]);
+    put('ls-q-status', selected[1]);
+    put('ls-q-area',
+        validZip ? zip + ' · coverage review required'
+                 : 'Enter a valid 5-digit ZIP');
+    put('ls-q-budget-out',
+        budget.selectedOptions[0].textContent);
+    put('ls-q-time-out',
+        timeline.selectedOptions[0].textContent);
+    put('ls-q-next',
+        validZip ? selected[2]
+                 : 'Confirm the ZIP code before routing '
+                   + 'the sample request.');
+  });
+}
+
+
+  })();
+  </script>
+
+<div class="ls-mobile-booking">
+  <a href={booking} target="_blank"
+     rel="noopener noreferrer">
+    Book a growth strategy call ↗
+  </a>
+</div>
+
+<script is:inline>
+(() => {
+  const data = [{"title": "Google Search & local visibility", "desc": "Match keywords and service areas to actual offerings, from hardscape installation to maintenance routes. Separate high-intent categories where the buyer need differs."}, {"title": "Meta Ads & visual creative", "desc": "Use project imagery, seasonal offers and relevant local messaging to reach homeowners and property decision-makers without promising arbitrary lead counts."}, {"title": "Landing pages & qualification", "desc": "Build mobile-first offers, clear forms, calls and project-specific questions. A patio inquiry should not be handled like a weekly mowing request."}, {"title": "CRM & automation", "desc": "Route leads by service and location, notify the right team and keep follow-up visible. Integrate suitable existing tools rather than replacing working systems without reason."}, {"title": "Appointment setting", "desc": "Organize callbacks, site visits, estimates and design consultations with the context the sales or estimating team needs."}, {"title": "Measurement beyond CPL", "desc": "Compare inquiry volume with qualified leads, booked estimates, show rates and the jobs actually won, where the business tracks those outcomes."}];
+  const cards = [...document.querySelectorAll(
+    '[data-ls-capability]'
+  )];
+
+  function choose(index) {
+    const entry = data[index];
+    if (!entry) return;
+
+    cards.forEach((card, i) => {
+      card.setAttribute('aria-pressed', String(i === index));
+    });
+
+    document.getElementById('ls-capability-title').textContent =
+      entry.title;
+    document.getElementById('ls-capability-description').textContent =
+      entry.desc;
+  }
+
+  cards.forEach((card, index) => {
+    card.addEventListener('click', () => choose(index));
+    card.addEventListener('focus', () => choose(index));
+    card.addEventListener('pointerenter', event => {
+      if (event.pointerType === 'mouse') choose(index);
+    });
+    card.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        choose(index);
+      }
+    });
+  });
+
+  choose(0);
+
+  // Existing service selector retains its own click behavior.
+  document.querySelectorAll('[data-service]').forEach(button => {
+    button.addEventListener('pointerenter', event => {
+      if (event.pointerType === 'mouse' &&
+          button.getAttribute('aria-pressed') !== 'true') {
+        button.click();
+      }
+    });
+  });
+
+  const finePointer = matchMedia(
+    '(hover:hover) and (pointer:fine)'
+  );
+
+  document.querySelectorAll('#faqs details').forEach(detail => {
+    detail.addEventListener('mouseenter', () => {
+      if (finePointer.matches) detail.open = true;
+    });
+    detail.addEventListener('mouseleave', () => {
+      if (finePointer.matches &&
+          !detail.contains(document.activeElement)) {
+        detail.open = false;
+      }
+    });
+  });
+
+  const header = document.querySelector('.ls-top');
+  if (header) {
+    let last = window.scrollY;
+    let scheduled = false;
+
+    window.addEventListener('scroll', () => {
+      if (scheduled) return;
+      scheduled = true;
+
+      requestAnimationFrame(() => {
+        const now = window.scrollY;
+        const delta = now - last;
+        const focused = header.contains(document.activeElement);
+        const menuOpen = document.querySelector('.ls-menu.open');
+
+        if (now < 95 || focused || menuOpen) {
+          header.classList.remove('ls-header-hidden');
+        } else if (Math.abs(delta) > 7) {
+          header.classList.toggle('ls-header-hidden', delta > 0);
+        }
+
+        last = now;
+        scheduled = false;
+      });
+    }, {passive:true});
+
+    header.addEventListener('focusin', () => {
+      header.classList.remove('ls-header-hidden');
+    });
+
+    header.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', () => {
+        header.classList.remove('ls-header-hidden');
+      });
+    });
+  }
+})();
+</script>
+
+
+<script is:inline>
+(() => {
+  const presets = {
+    lawn:{budget:2500,cpl:85,qualified:60,booked:45,
+          show:80,close:30,value:600},
+    design:{budget:5000,cpl:140,qualified:55,booked:50,
+            show:85,close:25,value:8500},
+    commercial:{budget:6000,cpl:200,qualified:50,booked:40,
+                show:80,close:20,value:12000}
+  };
+  const names = {
+    lawn:'LAWN CARE',
+    design:'DESIGN & BUILD',
+    commercial:'COMMERCIAL GROUNDS'
+  };
+  const keys = ['budget','cpl','qualified','booked',
+                'show','close','value'];
+  const inputs = Object.fromEntries(keys.map(k => [
+    k,document.getElementById('lp-'+k)
+  ]));
+  if (keys.some(k => !inputs[k])) return;
+
+  const put = (id,value) => {
+    const el=document.getElementById(id);
+    if(el) el.textContent=value;
+  };
+  const money = n => '$'+Math.round(n).toLocaleString('en-US');
+  const number = n => n.toLocaleString('en-US',{
+    maximumFractionDigits:1
+  });
+  let active='lawn';
+  let changed=false;
+
+  function get(k) {
+    const input=inputs[k];
+    const n=Number(input.value);
+    if(!Number.isFinite(n)) return 0;
+    return Math.min(
+      Number(input.max)||1000000,
+      Math.max(Number(input.min)||0,n)
+    );
+  }
+
+  function render() {
+    const budget=get('budget');
+    const cpl=Math.max(1,get('cpl'));
+    const q=get('qualified')/100;
+    const b=get('booked')/100;
+    const show=get('show')/100;
+    const close=get('close')/100;
+    const value=get('value');
+
+    keys.filter(k=>k!=='value').forEach(k=>{
+      const input=inputs[k];
+      const v=get(k);
+      const min=Number(input.min);
+      const max=Number(input.max);
+      const pct=max>min?100*(v-min)/(max-min):0;
+      input.style.setProperty('--progress',pct+'%');
+      put('lp-o-'+k,
+          k==='budget'||k==='cpl'?money(v):v+'%');
+    });
+
+    const leads=budget/cpl;
+    const qualified=leads*q;
+    const booked=qualified*b;
+    const shows=booked*show;
+    const won=shows*close;
+    const revenue=won*value;
+
+    put('lp-revenue',money(revenue));
+    put('lp-leads',number(leads));
+    put('lp-qual',number(qualified));
+    put('lp-books',number(booked));
+    put('lp-won',number(won));
+    put('lp-cpb',booked?money(budget/booked):'—');
+    put('lp-cpa',won?money(budget/won):'—');
+    put('lp-model',names[active]+(changed?' / CUSTOM':''));
+
+    const stages={leads,qualified,booked,shows,won};
+    Object.entries(stages).forEach(([k,v])=>{
+      const row=document.querySelector('[data-lp-stage="'+k+'"]');
+      if(!row)return;
+      row.querySelector('b').textContent=number(v);
+      row.querySelector('em').style.width=
+        (leads?Math.min(100,100*v/leads):0)+'%';
+    });
+  }
+
+  function select(name){
+    if(!presets[name])return;
+    active=name;
+    changed=false;
+    keys.forEach(k=>inputs[k].value=presets[name][k]);
+    document.querySelectorAll('[data-lp-preset]').forEach(btn=>{
+      btn.setAttribute('aria-pressed',
+        String(btn.dataset.lpPreset===name));
+    });
+    render();
+  }
+
+  document.querySelectorAll('[data-lp-preset]').forEach(btn=>{
+    btn.addEventListener('click',()=>select(btn.dataset.lpPreset));
+  });
+  keys.forEach(k=>{
+    inputs[k].addEventListener('input',()=>{
+      changed=true;
+      render();
+    });
+  });
+  document.getElementById('lp-reset')?.addEventListener(
+    'click',()=>select(active)
+  );
+  select('lawn');
+})();
+</script>
+
+</body>
+
+</html>
