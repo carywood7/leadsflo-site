@@ -1,0 +1,3919 @@
+---
+import BrandMark from "../components/BrandMark.astro";
+import "../styles/global.css";
+
+const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const canonical = "https://leadsflo.co/pest-control-lead-generation/";
+const offerings = [
+      {
+        n:"01",tag:"SEARCH",
+        name:"Google Ads for Pest Control",
+        desc:"Reach local homeowners searching for exterminators, termite inspections, rodent removal and professional pest management."
+      },
+      {
+        n:"02",tag:"DEMAND",
+        name:"Meta Ads & Creative",
+        desc:"Promote seasonal pest services, inspection offers and recurring protection plans with relevant local creative."
+      },
+      {
+        n:"03",tag:"CONVERSION",
+        name:"Websites & Funnels",
+        desc:"Convert local traffic into calls, pest inspection requests and qualified residential or commercial inquiries."
+      },
+      {
+        n:"04",tag:"FOLLOW-UP",
+        name:"CRM & Appointment Setting",
+        desc:"Route inquiries by pest type, property and location, and coordinate consultations, service visits and follow-up."
+      }
+    ];
+const stages = [
+      {
+        n:"01",label:"Attract",tag:"LOCAL DEMAND",
+        title:"Show up when customers need pest control.",
+        body:"Target relevant searches for termites, rodents, ants, cockroaches and scheduled pest management in the areas you serve.",
+        points:["Pest-specific search campaigns","Service-area targeting","Seasonal and recurring offers"],
+        outcome:"RELEVANT LOCAL DEMAND"
+      },
+      {
+        n:"02",label:"Capture",tag:"CONVERSION",
+        title:"Make inspection requests easy.",
+        body:"Give visitors a fast mobile experience with a clear call option or a short request form tailored to the pest problem.",
+        points:["Clear next steps","Mobile-friendly forms","Service-specific landing pages"],
+        outcome:"NEW SERVICE INQUIRY"
+      },
+      {
+        n:"03",label:"Qualify",tag:"SERVICE FIT",
+        title:"Understand the property and pest problem.",
+        body:"Capture location, pest category, residential or commercial property and preferred timing without implying an unverified diagnosis.",
+        points:["Location and coverage","Pest category","Property and scheduling details"],
+        outcome:"QUALIFIED REQUEST"
+      },
+      {
+        n:"04",label:"Follow up",tag:"CRM OPERATIONS",
+        title:"Keep every inquiry moving.",
+        body:"Route inspection and service requests, record contact attempts and provide clear next steps for the office or field team.",
+        points:["Lead assignment","Call and form follow-up","Customer status tracking"],
+        outcome:"ACTIVE OPPORTUNITY"
+      },
+      {
+        n:"05",label:"Book",tag:"SERVICE HANDOFF",
+        title:"Turn suitable inquiries into scheduled service.",
+        body:"Coordinate an inspection, initial service visit or consultation and keep recurring-plan follow-up visible.",
+        points:["Inspection scheduling","Confirmed next steps","Recurring service follow-up"],
+        outcome:"BOOKED SERVICE"
+      }
+    ];
+const faqs = [
+      {
+        q:"How does pest control lead generation work?",
+        a:"We connect local advertising and search demand with service-specific landing pages, qualification and CRM follow-up to generate relevant pest control inquiries and booking opportunities."
+      },
+      {
+        q:"Can you market termite and rodent services separately?",
+        a:"Yes. Termite inspections, rodent management and routine pest treatment can have distinct offers, campaigns and customer qualification requirements."
+      },
+      {
+        q:"Can you help promote recurring pest control plans?",
+        a:"Yes. Where appropriate, recurring residential or commercial programs can use dedicated messaging, inquiry flows and follow-up processes."
+      },
+      {
+        q:"Do we need to replace our existing field-service software?",
+        a:"Not necessarily. We review the systems you already use before recommending CRM, scheduling or communication integrations."
+      },
+      {
+        q:"Do you guarantee booked pest control jobs?",
+        a:"No. Results depend on competition, service territory, budget, capacity and customer response. Our goal is a measurable lead-to-booking process."
+      }
+    ];
+---
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta name="theme-color" content="#0d2435" />
+ <meta name="robots" content="index,follow" />
+ <link rel="canonical" href={canonical} />
+ <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+ <title>Pest Control Lead Generation & Marketing Agency | LeadsFlo</title>
+ <meta name="description" content="Pest control lead generation for US exterminators and pest management companies. Google Ads, Meta Ads, service funnels, CRM follow-up and inspection booking." />
+ <meta property="og:type" content="website" />
+ <meta property="og:site_name" content="LeadsFlo" />
+ <meta property="og:title" content="Pest Control Lead Generation & Marketing Agency | LeadsFlo" />
+ <meta property="og:description" content="Reach the right pest control customers through local advertising, inspection requests, lead qualification and booked service opportunities." />
+ <meta property="og:url" content={canonical} />
+ <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QE382W17N6"></script>
+ <script is:inline>
+   window.dataLayer=window.dataLayer||[];
+   function gtag(){window.dataLayer.push(arguments);}
+   gtag('js',new Date());
+   gtag('config','G-QE382W17N6');
+ </script>
+ <script is:inline defer src="/js/leadsflo-conversions.js"></script>
+ <script type="application/ld+json" set:html={JSON.stringify({"@context":"https://schema.org","@type":"Service",name:"Pest Control Lead Generation and Marketing",description:"Google Ads, Meta Ads, conversion funnels, CRM follow-up and appointment setting for Pest Control contractors.",provider:{"@type":"Organization",name:"LeadsFlo",url:"https://leadsflo.co/"},areaServed:{"@type":"Country",name:"United States"},audience:{"@type":"BusinessAudience",audienceType:"Residential and commercial pest management companies"},url:canonical})} />
+ <style>
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body.hv-page{margin:0;background:#f7fafc;color:#152d40;font-family:Inter,'Helvetica Neue',Arial,sans-serif}
+  .hv-page a{text-decoration:none}
+  .hv-page button,.hv-page input{font:inherit}
+  .hv-page button{cursor:pointer}
+  .hv-page .wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+  .hv-page .eyebrow{font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+  .hv-page .section{padding:105px 0}
+  .hv-page .heading{font-size:clamp(34px,5vw,64px);line-height:1.08;letter-spacing:-.05em;font-weight:800;margin:16px 0 20px}
+  .hv-page .bodycopy{font-size:17px;line-height:1.8;color:#526f80;max-width:690px}
+  .hv-page .cta{display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:17px 23px;background:#f2a56f;color:#132737;border-radius:6px;font-size:14px;font-weight:800;transition:transform .2s,background .2s}
+  .hv-page .cta:hover{transform:translateY(-2px);background:#ffc18c}
+  .hv-page .cta.alt{border:1px solid #759aaf;background:transparent;color:#fff}
+  .hv-page .cta.alt:hover{background:#24495e}
+  .hv-page :is(a,button,input,summary):focus-visible{outline:3px solid #ed9959;outline-offset:4px}
+  .hv-page .top{background:#0d2435;color:#fff}
+  .hv-page .nav{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:84px;border-bottom:1px solid #ffffff25}
+  .hv-page .brand{color:#fff;display:inline-flex;align-items:center}
+  .hv-page .navlinks{display:flex;align-items:center;gap:25px}
+  .hv-page .navlinks a{color:#c6dce6;font-size:13px;font-weight:700}
+  .hv-page .navlinks a:hover{color:white}
+  .hv-page .navlinks .navcta{border:1px solid #7391a2;border-radius:5px;padding:12px 14px;color:#fff}
+  .hv-page .hero{padding:100px 0 110px;overflow:hidden;background:radial-gradient(ellipse at 79% 37%,#28516c 0%,#132e44 52%,#0c2030 100%)}
+  .hv-page .herogrid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  .hv-page .hero .eyebrow{color:#9de0f0}
+  .hv-page h1{font-size:clamp(45px,5.8vw,77px);line-height:1.035;letter-spacing:-.06em;margin:22px 0;font-weight:800}
+  .hv-page h1 em{font-style:normal;color:#a3def0}
+  .hv-page .hero p{font-size:17px;line-height:1.85;color:#c5dbe5;max-width:550px}
+  .hv-page .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .hv-page .trust{margin-top:30px;display:flex;gap:10px 20px;flex-wrap:wrap;font-size:12px;font-weight:700;color:#a9cddd}
+  .hv-page .trust span::before{content:'✓ ';color:#ffbe83}
+  .hv-page .visual{border:1px solid #567e94;border-radius:21px;padding:26px;background:linear-gradient(150deg,#244c65,#10283c);box-shadow:0 32px 65px #0004;min-height:462px;overflow:hidden}
+  .hv-page .visualhead{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10px;letter-spacing:.12em;font-weight:800;color:#b4d0df}
+  .hv-page .status{color:#a4e6c1}
+  .hv-page .status::before{content:'';display:inline-block;background:#8cdeb3;border-radius:50%;width:7px;height:7px;margin-right:7px}
+  .hv-page .unit{position:relative;width:min(280px,84%);aspect-ratio:1;margin:33px auto 21px;background:linear-gradient(140deg,#346681,#17364a);border:1px solid #5e8ca1;border-radius:18px;display:grid;place-items:center;box-shadow:0 23px 35px #0003}
+  .hv-page .fan{width:73%;aspect-ratio:1;position:relative;border:12px solid #89bbce;border-radius:50%;background:#183a50;display:grid;place-items:center}
+  .hv-page .blades{position:absolute;inset:8%;border-radius:50%;background:conic-gradient(#a9d9e7 0deg 39deg,transparent 39deg 90deg,#a9d9e7 90deg 129deg,transparent 129deg 180deg,#a9d9e7 180deg 219deg,transparent 219deg 270deg,#a9d9e7 270deg 309deg,transparent 309deg);animation:hvfan 17s linear infinite}
+  .hv-page .hub{position:relative;width:30px;aspect-ratio:1;background:#285873;border:5px solid #a9d9e7;border-radius:50%}
+  .hv-page .unitlabel{position:absolute;bottom:12px;font-size:10px;letter-spacing:.12em;color:#bfdae7;font-weight:800}
+  .hv-page .flowmeters{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+  .hv-page .meter{padding:15px 11px;border:1px solid #ffffff19;background:#ffffff0b;border-radius:7px}
+  .hv-page .meter small{display:block;font-size:10px;color:#a9cbdb}
+  .hv-page .meter strong{display:block;margin-top:7px;font-size:12px;color:#fff}
+  .hv-page .band{background:#dceef8;border-bottom:1px solid #bfdbe9}
+  .hv-page .bandgrid{display:grid;grid-template-columns:repeat(4,1fr)}
+  .hv-page .bandgrid span{padding:25px 8px;text-align:center;border-right:1px solid #bfdbe9;font-size:11px;letter-spacing:.1em;font-weight:800;color:#3b6a85}
+  .hv-page .bandgrid span:last-child{border-right:0}
+  .hv-page .introgrid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px}
+  .hv-page .blue{color:#1877a2}
+  .hv-page .dark{background:#102c42;color:#fff}
+  .hv-page .dark .bodycopy{color:#b3cfde}
+  .hv-page .sectop{display:flex;justify-content:space-between;align-items:end;gap:38px;margin-bottom:38px}
+  .hv-page .sectop .bodycopy{max-width:390px}
+  .hv-page .servicegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+  .hv-page .service{min-height:315px;padding:24px 21px;background:#ffffff0b;border:1px solid #ffffff22;display:flex;flex-direction:column;transition:transform .2s,background .2s}
+  .hv-page .service:hover{transform:translateY(-4px);background:#ffffff18}
+  .hv-page .service .index{font-size:11px;color:#9bc2d5;letter-spacing:.08em;font-weight:800}
+  .hv-page .service h3{font-size:23px;line-height:1.2;letter-spacing:-.04em;margin:36px 0 14px}
+  .hv-page .service p{font-size:14px;line-height:1.8;color:#c0d3df;margin:0}
+  .hv-page .service small{margin-top:auto;padding-top:22px;color:#ffc08c;letter-spacing:.11em;font-weight:800;font-size:10px}
+  .hv-page .journey{background:#eaf4fa}
+  .hv-page .journeygrid{display:grid;grid-template-columns:280px 1fr;gap:24px}
+  .hv-page .steps{display:grid;align-content:start;gap:8px}
+  .hv-page .step{padding:18px 16px;width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:12px;background:#fff;border:1px solid #c8deeb;border-radius:6px;color:#315a74;font-weight:800}
+  .hv-page .step .num{font-size:11px;color:#7394a8}
+  .hv-page .step[aria-pressed='true']{background:#165578;color:#fff;border-color:#165578}
+  .hv-page .step[aria-pressed='true'] .num{color:#bedde9}
+  .hv-page .stagepanel{background:#fff;border:1px solid #cfe2ed;border-radius:10px;min-height:367px;padding:clamp(24px,4vw,46px);box-shadow:0 20px 30px #0d30400b}
+  .hv-page .stagelabel{font-size:11px;letter-spacing:.12em;font-weight:800;color:#26769e}
+  .hv-page .stagepanel h3{font-size:clamp(27px,3.3vw,42px);line-height:1.15;letter-spacing:-.045em;margin:20px 0}
+  .hv-page .stagepanel p{font-size:16px;line-height:1.8;color:#5e7787}
+  .hv-page .stagebottom{display:grid;grid-template-columns:1fr 1fr;gap:26px;border-top:1px solid #e1edf2;margin-top:30px;padding-top:20px}
+  .hv-page .stagebottom ul{margin:13px 0;padding-left:20px;font-size:14px;line-height:1.8;color:#48677a}
+  .hv-page .output{display:grid;place-items:center;text-align:center;padding:19px;border:1px solid #c6e0ed;border-radius:6px;background:#e9f7fd;color:#16608a;font-size:12px;letter-spacing:.08em;font-weight:800}
+  .hv-page .qualgrid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+  .hv-page .qualcard{background:#f1f8fc;border:1px solid #cce2ee;border-radius:11px;padding:29px;box-shadow:12px 12px 0 #e1eff5}
+  .hv-page .qualrow{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #d7e6ed;padding:18px 0;font-size:14px}
+  .hv-page .qualrow span{color:#667f90}
+  .hv-page .qualrow strong{text-align:right}
+  .hv-page .qualrow:last-child{border-bottom:0}
+  .hv-page .calculator{background:#dfedf7}
+  .hv-page .calcgrid{display:grid;grid-template-columns:1fr 1fr;gap:65px}
+  .hv-page .calcbox{padding:30px;background:#fff;border:1px solid #c5dce9;border-radius:11px}
+  .hv-page .range{display:block;padding:11px 0}
+  .hv-page .rangetitle{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:14px;font-weight:700;margin-bottom:12px}
+  .hv-page .rangetitle output{color:#156da0}
+  .hv-page .range input{width:100%;accent-color:#176eaa}
+  .hv-page .result{padding:25px;background:#112e44;border-radius:7px;color:white;margin-top:21px}
+  .hv-page .result small{font-size:10px;letter-spacing:.12em;color:#a9d4e7}
+  .hv-page .result strong{display:block;font-size:clamp(32px,3vw,46px);letter-spacing:-.04em;margin:9px 0}
+  .hv-page .result p{color:#c2d5e0;font-size:12px;line-height:1.7}
+  .hv-page .faqgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:75px}
+  .hv-page .faqlist details{padding:21px 0;border-bottom:1px solid #d5e5ed}
+  .hv-page .faqlist summary{font-size:17px;line-height:1.5;font-weight:750;cursor:pointer}
+  .hv-page .faqlist p{font-size:15px;line-height:1.8;color:#587282}
+  .hv-page .resources{background:#eaf4fa}
+  .hv-page .resourcegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+  .hv-page .resource{min-height:185px;padding:24px;background:#fff;border:1px solid #c9deeb;display:flex;flex-direction:column}
+  .hv-page .resource small{font-size:10px;letter-spacing:.12em;font-weight:800;color:#5685a2}
+  .hv-page .resource h3{font-size:20px;line-height:1.25;margin:auto 0 0;letter-spacing:-.03em}
+  .hv-page .closing{padding:100px 0;background:linear-gradient(125deg,#0d2436,#1b516b);text-align:center;color:#fff}
+  .hv-page .closing .heading{max-width:840px;margin:16px auto}
+  .hv-page .closing p{max-width:640px;margin:0 auto 33px;color:#c4d9e4;line-height:1.8}
+  .hv-page footer{background:#0a1d2a;color:#b4cad5;padding:40px 0}
+  .hv-page .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
+  .hv-page .footnav{display:flex;flex-wrap:wrap;gap:17px;font-size:13px}
+  .hv-page .footnav a{color:#dae9ee}
+  .hv-page .footnav a:hover{text-decoration:underline}
+  .hv-page [id]{scroll-margin-top:30px}
+  @keyframes hvfan{to{transform:rotate(360deg)}}
+  @media(max-width:1000px){.hv-page .herogrid,.hv-page .introgrid,.hv-page .qualgrid,.hv-page .calcgrid,.hv-page .faqgrid{grid-template-columns:1fr;gap:36px}.hv-page .servicegrid,.hv-page .resourcegrid{grid-template-columns:repeat(2,1fr)}.hv-page .visual{max-width:590px}.hv-page .sectop{display:block}}
+  @media(max-width:700px){.hv-page .wrap{width:min(100% - 32px,1180px)}.hv-page .section{padding:68px 0}.hv-page .navlinks a:not(.navcta){display:none}.hv-page .nav{min-height:74px}.hv-page .hero{padding:63px 0}.hv-page h1{font-size:clamp(42px,11vw,64px)}.hv-page .actions .cta{width:100%}.hv-page .visual{min-height:390px;padding:18px}.hv-page .unit{margin:26px auto 18px}.hv-page .flowmeters{gap:5px}.hv-page .meter{padding:10px 7px}.hv-page .meter strong{font-size:11px}.hv-page .bandgrid{grid-template-columns:1fr 1fr}.hv-page .bandgrid span{border-bottom:1px solid #bfdbe9}.hv-page .servicegrid,.hv-page .resourcegrid{grid-template-columns:1fr}.hv-page .service{min-height:240px}.hv-page .service h3{margin:23px 0 10px}.hv-page .journeygrid{grid-template-columns:1fr}.hv-page .steps{grid-template-columns:repeat(2,1fr)}.hv-page .step{padding:14px;font-size:13px}.hv-page .stagebottom{grid-template-columns:1fr}.hv-page .calcbox,.hv-page .qualcard{padding:20px}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hv-page .blades{animation:none}.hv-page .cta,.hv-page .service{transition:none}}
+
+/* Pest Control_HOVER_V3 */
+
+.hv-page .brand{
+  gap:12px;
+  overflow:visible;
+}
+
+.hv-page .hv-air-badge{
+  width:76px;
+  flex:0 0 76px;
+  display:inline-flex;
+  align-items:center;
+}
+
+.hv-page .hv-air-badge svg{
+  width:100%;
+  overflow:visible;
+}
+
+.hv-page .hv-air-rotor{
+  transform-origin:82px 26px;
+  animation:hvAirSpin 6s linear infinite;
+}
+
+.hv-page .hv-air-trails{
+  animation:hvAirDrift 2s ease-in-out infinite alternate;
+}
+
+.hv-page .brand:hover .hv-air-rotor{
+  animation-duration:1.4s;
+}
+
+@keyframes hvAirSpin{
+  to{transform:rotate(360deg)}
+}
+
+@keyframes hvAirDrift{
+  to{transform:translateX(5px);opacity:.55}
+}
+
+.hv-page .visual{
+  transition:transform .35s,box-shadow .35s;
+}
+
+.hv-page .visual:hover{
+  transform:translateY(-5px);
+  box-shadow:0 40px 75px #0005;
+}
+
+.hv-page .visual:hover .blades{
+  animation-duration:3s;
+}
+
+.hv-page .meter{
+  transition:transform .2s,background .2s;
+}
+
+.hv-page .meter:hover{
+  transform:translateY(-4px);
+  background:#ffffff1c;
+}
+
+/* Continuous scrolling services */
+.hv-page .hv-marquee{
+  overflow:hidden;
+  background:#d9edf7;
+  border-block:1px solid #b7d7e7;
+}
+
+.hv-page .hv-marquee-window{
+  overflow:hidden;
+  outline-offset:-3px;
+}
+
+.hv-page .hv-marquee-track{
+  display:flex;
+  width:max-content;
+  animation:hvMarquee 30s linear infinite;
+}
+
+.hv-page .hv-marquee-group{
+  display:flex;
+  flex:0 0 auto;
+}
+
+.hv-page .hv-ticker-item{
+  white-space:nowrap;
+  padding:24px 32px;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.06em;
+  color:#265d7d;
+  border-right:1px solid #b7d7e7;
+  transition:background .2s;
+}
+
+.hv-page .hv-ticker-item:hover{
+  background:#bee5f4;
+}
+
+.hv-page .hv-marquee-window:hover .hv-marquee-track,
+.hv-page .hv-marquee-window:focus-within .hv-marquee-track{
+  animation-play-state:paused;
+}
+
+@keyframes hvMarquee{
+  to{transform:translateX(-50%)}
+}
+
+/* Interactive services */
+.hv-page .service{
+  cursor:pointer;
+  outline-offset:4px;
+}
+
+.hv-page .service.is-active{
+  border-color:#92d9ed;
+  background:#ffffff1e;
+  transform:translateY(-5px);
+}
+
+.hv-page .hv-service-preview{
+  margin:18px auto 0;
+  width:min(1180px,calc(100% - 48px));
+  padding:28px 35px;
+  border:1px solid #547b94;
+  background:#183e58;
+  border-radius:12px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 220px;
+  align-items:center;
+  gap:30px;
+  color:#fff;
+}
+
+.hv-page .hv-preview-copy .eyebrow{
+  color:#eeac7a;
+}
+
+.hv-page .hv-preview-copy h3{
+  font-size:clamp(25px,3vw,38px);
+  line-height:1.2;
+  margin:13px 0;
+  letter-spacing:-.04em;
+}
+
+.hv-page .hv-preview-copy p{
+  color:#c4dce7;
+  font-size:15px;
+  line-height:1.8;
+  max-width:700px;
+  margin:0;
+}
+
+.hv-page .hv-preview-graphic{
+  position:relative;
+  min-height:160px;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+}
+
+.hv-page .hv-preview-center{
+  position:relative;
+  z-index:1;
+  width:60px;
+  height:60px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#2b6581;
+  color:#d6f6ff;
+  border:1px solid #90d8ec;
+  font-size:30px;
+}
+
+.hv-page .hv-preview-pulse{
+  position:absolute;
+  width:85px;
+  height:85px;
+  border:1px solid #9dddea;
+  border-radius:50%;
+  animation:hvPulse 3s ease-out infinite;
+}
+
+.hv-page .hv-preview-pulse-alt{
+  animation-delay:1.5s;
+}
+
+.hv-page .hv-preview-graphic small{
+  position:absolute;
+  bottom:0;
+  letter-spacing:.13em;
+  font-size:10px;
+  color:#9cc6d8;
+}
+
+@keyframes hvPulse{
+  from{transform:scale(.75);opacity:.8}
+  to{transform:scale(2);opacity:0}
+}
+
+/* Journey hover */
+.hv-page .step{
+  transition:transform .2s,border-color .2s;
+}
+
+.hv-page .step:hover,
+.hv-page .step:focus-visible{
+  transform:translateX(4px);
+  border-color:#3986b2;
+}
+
+.hv-page .step[aria-pressed="true"]{
+  box-shadow:inset 4px 0 #eea876;
+}
+
+/* FAQ hover */
+.hv-page .faqlist details{
+  transition:background .2s,padding .2s;
+  padding-inline:12px;
+  border-radius:6px;
+}
+
+.hv-page .faqlist details:hover,
+.hv-page .faqlist details[open]{
+  background:#edf7fd;
+}
+
+.hv-page .faqlist details[open]{
+  padding-block:23px;
+}
+
+@media(max-width:700px){
+  .hv-page .hv-air-badge{
+    width:55px;
+    flex-basis:55px;
+  }
+
+  .hv-page .hv-service-preview{
+    width:calc(100% - 32px);
+    grid-template-columns:1fr;
+    padding:22px;
+  }
+
+  .hv-page .hv-preview-graphic{
+    min-height:125px;
+  }
+
+  .hv-page .hv-ticker-item{
+    padding:18px 24px;
+  }
+
+  .hv-page .step:hover{
+    transform:none;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .hv-page .hv-air-rotor,
+  .hv-page .hv-air-trails,
+  .hv-page .hv-marquee-track,
+  .hv-page .hv-preview-pulse{
+    animation:none!important;
+  }
+
+  .hv-page .visual:hover .blades{
+    animation-duration:17s;
+  }
+
+  .hv-page .step,
+  .hv-page .service{
+    transition:none;
+  }
+}
+
+</style>
+
+<style is:global>
+/* Pest Control_LOGO_V4_FIXED */
+
+body.hv-page .brand {
+  gap: 0;
+}
+
+body.hv-page .brand .hv-logo-o {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+}
+
+body.hv-page .brand .hv-logo-fan {
+  position: absolute;
+  left: 50%;
+  top: 54%;
+  width: .34em;
+  height: .34em;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  border-radius: 50%;
+  background: #17384c;
+}
+
+body.hv-page .brand .hv-logo-fan svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+body.hv-page .brand .hv-logo-rotor {
+  transform-origin: 16px 16px;
+  animation: hvFanInsideO 4s linear infinite;
+}
+
+body.hv-page .brand:hover .hv-logo-rotor,
+body.hv-page .brand:focus-visible .hv-logo-rotor {
+  animation-duration: .8s;
+}
+
+/* Animate airflow along the original blue/teal logo lines. */
+body.hv-page .brand .lf-brand-v4__pulse {
+  opacity: 1;
+  stroke: #a6f1f0;
+  stroke-width: 3;
+  stroke-dasharray: 20 300;
+  animation: hvAirflowCurrent 3.5s linear infinite;
+}
+
+body.hv-page .brand:hover .lf-brand-v4__pulse,
+body.hv-page .brand:focus-visible .lf-brand-v4__pulse {
+  animation-duration: 1.1s;
+}
+
+@keyframes hvFanInsideO {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes hvAirflowCurrent {
+  from { stroke-dashoffset: 300; }
+  to { stroke-dashoffset: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.hv-page .brand .hv-logo-rotor,
+  body.hv-page .brand .lf-brand-v4__pulse {
+    animation: none !important;
+  }
+
+  body.hv-page .brand .lf-brand-v4__pulse {
+    opacity: 0;
+  }
+}
+</style>
+
+
+<style is:global>
+/* Pest Control_LOGO_POLISH_V5 */
+
+/* Recolor the original LeadsFlo logo to match the Pest Control page. */
+body.hv-page .brand .lf-brand-v4--dark {
+  --brand-text: #f7fbff;
+  --brand-flo: #a6deef;
+  --brand-period: #efa772;
+  --brand-plane: #a6deef;
+}
+
+/* Coordinate the original swish with the Pest Control color scheme. */
+body.hv-page .brand .lf-brand-v4__current1 {
+  stroke: #78c5e6;
+}
+
+body.hv-page .brand .lf-brand-v4__current2 {
+  stroke: #44b6c4;
+}
+
+body.hv-page .brand .lf-brand-v4__pulse {
+  stroke: #ddf9ff;
+  stroke-width: 2.8;
+}
+
+/* Optical centering of the miniature fan inside the final o. */
+body.hv-page .brand .hv-logo-o {
+  position: relative;
+}
+
+body.hv-page .brand .hv-logo-fan {
+  left: calc(50% + 2px);
+  top: calc(54% + 2px);
+  width: .32em;
+  height: .32em;
+  background: #173b52;
+  box-shadow: 0 0 0 1px rgba(166,222,239,.18);
+}
+
+body.hv-page .brand .hv-logo-rotor {
+  fill: #b4e9f3;
+}
+
+body.hv-page .brand:hover .hv-logo-fan,
+body.hv-page .brand:focus-visible .hv-logo-fan {
+  background: #24536d;
+  box-shadow: 0 0 8px rgba(166,222,239,.35);
+}
+
+body.hv-page .brand:hover .lf-brand-v4__current1,
+body.hv-page .brand:hover .lf-brand-v4__current2 {
+  filter: drop-shadow(0 0 3px rgba(166,222,239,.4));
+}
+</style>
+
+
+<style is:global>
+/* Pest Control_DESIGN_V6 */
+
+/* Christmas-page-level navigation readability */
+body.hv-page .navlinks {
+  gap: clamp(18px, 2vw, 32px);
+}
+
+body.hv-page .navlinks a {
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 750;
+  letter-spacing: -.015em;
+}
+
+body.hv-page .navlinks .navcta {
+  padding: 13px 20px;
+  border-color: #89b8d1;
+  transition: background .2s, border-color .2s;
+}
+
+body.hv-page .navlinks .navcta:hover {
+  background: #214963;
+  border-color: #b5e4f1;
+}
+
+@media(max-width:1000px) {
+  body.hv-page .navlinks a {
+    font-size: 14px;
+  }
+}
+
+/* Stronger premium scrolling capabilities strip */
+body.hv-page .hv-marquee {
+  background: #112c42;
+  border-top: 1px solid #456b85;
+  border-bottom: 1px solid #456b85;
+  box-shadow: inset 0 1px 0 #ffffff12;
+}
+
+body.hv-page .hv-ticker-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 80px;
+  padding: 21px 36px;
+  color: #f2faff;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: .015em;
+  border-right: 1px solid #46667b;
+  background: transparent;
+}
+
+body.hv-page .hv-ticker-item::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f0a46c;
+  margin-right: 15px;
+  box-shadow: 0 0 0 4px #f0a46c18;
+}
+
+body.hv-page .hv-ticker-item:hover {
+  background: #225270;
+  color: #fff;
+}
+
+body.hv-page .hv-marquee-track {
+  animation-duration: 36s;
+}
+
+body.hv-page .hv-marquee-window {
+  mask-image: linear-gradient(
+    90deg, transparent, black 4%, black 96%, transparent
+  );
+}
+
+/* Editorial photography */
+body.hv-page .hv-photo-section {
+  padding: 110px 0;
+  background: #f7fafc;
+}
+
+body.hv-page .hv-photo-heading {
+  display: grid;
+  grid-template-columns: 1.12fr .88fr;
+  gap: 70px;
+  align-items: end;
+  margin-bottom: 40px;
+}
+
+body.hv-page .hv-photo-heading .bodycopy {
+  margin-bottom: 14px;
+}
+
+body.hv-page .hv-photo-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr;
+  gap: 17px;
+}
+
+body.hv-page .hv-photo-card {
+  min-width: 0;
+  margin: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 1px solid #d0e1eb;
+  border-radius: 10px;
+  transition: transform .3s, box-shadow .3s, border-color .3s;
+}
+
+body.hv-page .hv-photo-card:hover {
+  transform: translateY(-6px);
+  border-color: #91bed4;
+  box-shadow: 0 20px 45px #102c4218;
+}
+
+body.hv-page .hv-photo-image {
+  aspect-ratio: 1.18;
+  overflow: hidden;
+  background: #dbeaf2;
+}
+
+body.hv-page .hv-photo-feature .hv-photo-image {
+  aspect-ratio: 1.04;
+}
+
+body.hv-page .hv-photo-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform .65s ease;
+}
+
+body.hv-page .hv-photo-card:hover img {
+  transform: scale(1.055);
+}
+
+body.hv-page .hv-photo-card figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px 24px 30px;
+}
+
+body.hv-page .hv-photo-card small {
+  font-size: 11px;
+  letter-spacing: .12em;
+  font-weight: 800;
+  color: #176d9b;
+}
+
+body.hv-page .hv-photo-card strong {
+  font-size: clamp(20px, 2vw, 29px);
+  line-height: 1.2;
+  letter-spacing: -.04em;
+  color: #132e43;
+}
+
+body.hv-page .hv-photo-card figcaption span {
+  color: #5b7586;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+body.hv-page .hv-photo-credit {
+  margin: 18px 0 0;
+  font-size: 11px;
+  color: #718898;
+}
+
+/* Premium four-column footer */
+body.hv-page .hv-footer-v6 {
+  background: #091e2f;
+  padding: 0;
+  color: #cfdfeb;
+}
+
+body.hv-page .hv-footer-main {
+  display: grid;
+  grid-template-columns: minmax(0,1.7fr) repeat(3,minmax(0,1fr));
+  gap: clamp(28px, 4vw, 65px);
+  padding-top: 85px;
+  padding-bottom: 77px;
+}
+
+body.hv-page .hv-footer-brand {
+  display: inline-flex;
+  width: max-content;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+body.hv-page .hv-footer-intro h2 {
+  margin: 0 0 17px;
+  color: #fff;
+  font-size: clamp(26px, 3vw, 39px);
+  line-height: 1.17;
+  letter-spacing: -.045em;
+}
+
+body.hv-page .hv-footer-intro h2 em {
+  font-style: normal;
+  color: #9ed9eb;
+}
+
+body.hv-page .hv-footer-intro p,
+body.hv-page .hv-footer-contact p {
+  font-size: 14px;
+  line-height: 1.85;
+  color: #a9c1d0;
+  margin-bottom: 23px;
+}
+
+body.hv-page .hv-footer-cta {
+  display: inline-flex;
+  align-items: center;
+  background: #efa773;
+  color: #142d3f;
+  border-radius: 6px;
+  padding: 15px 19px;
+  font-weight: 800;
+  font-size: 14px;
+  transition: background .2s, transform .2s;
+}
+
+body.hv-page .hv-footer-cta:hover {
+  background: #ffc291;
+  transform: translateY(-2px);
+}
+
+body.hv-page .hv-footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+body.hv-page .hv-footer-column h3 {
+  color: #9ed9eb;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 6px 0 12px;
+}
+
+body.hv-page .hv-footer-column a {
+  color: #e2edf4;
+  font-size: 14px;
+  line-height: 1.6;
+  transition: color .2s, transform .2s;
+}
+
+body.hv-page .hv-footer-column a:hover {
+  color: #efa773;
+  transform: translateX(3px);
+}
+
+body.hv-page .hv-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 17px 30px;
+  padding-top: 24px;
+  padding-bottom: 26px;
+  border-top: 1px solid #ffffff23;
+  color: #93aebf;
+  font-size: 12px;
+}
+
+body.hv-page .hv-footer-bottom nav {
+  display: flex;
+  gap: 20px;
+}
+
+body.hv-page .hv-footer-bottom a {
+  color: #bed1dd;
+  font-size: 12px;
+}
+
+body.hv-page .hv-footer-bottom a:hover {
+  color: #fff;
+}
+
+@media(max-width:1050px) {
+  body.hv-page .hv-footer-main {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  body.hv-page .hv-photo-grid {
+    grid-template-columns: repeat(2,minmax(0,1fr));
+  }
+
+  body.hv-page .hv-photo-feature {
+    grid-column: 1 / -1;
+  }
+
+  body.hv-page .hv-photo-feature .hv-photo-image {
+    aspect-ratio: 2;
+  }
+}
+
+@media(max-width:700px) {
+  body.hv-page .hv-ticker-item {
+    font-size: 14px;
+    min-height: 65px;
+    padding: 16px 23px;
+  }
+
+  body.hv-page .hv-photo-section {
+    padding: 72px 0;
+  }
+
+  body.hv-page .hv-photo-heading,
+  body.hv-page .hv-photo-grid,
+  body.hv-page .hv-footer-main {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  body.hv-page .hv-photo-feature {
+    grid-column: auto;
+  }
+
+  body.hv-page .hv-photo-feature .hv-photo-image {
+    aspect-ratio: 1.18;
+  }
+
+  body.hv-page .hv-footer-main {
+    padding-top: 65px;
+    padding-bottom: 50px;
+  }
+
+  body.hv-page .hv-footer-column {
+    padding-top: 15px;
+    border-top: 1px solid #ffffff17;
+  }
+
+  body.hv-page .hv-footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  body.hv-page .hv-photo-card,
+  body.hv-page .hv-photo-card img,
+  body.hv-page .hv-footer-cta,
+  body.hv-page .hv-footer-column a {
+    transition: none !important;
+  }
+}
+</style>
+
+
+<style is:global>
+/* Pest Control_NAV_TICKER_V7 */
+
+/* Desktop navigation — substantial, readable typography. */
+body.hv-page header nav a,
+body.hv-page .navlinks a {
+  font-size: 18px !important;
+  font-weight: 750 !important;
+  line-height: 1.35 !important;
+  letter-spacing: -.02em !important;
+  color: #e3f2fa;
+}
+
+body.hv-page header nav a:hover,
+body.hv-page header nav a:focus-visible {
+  color: #ffffff !important;
+}
+
+body.hv-page .navlinks {
+  gap: 31px !important;
+}
+
+body.hv-page .navlinks .navcta {
+  font-size: 16px !important;
+  font-weight: 800 !important;
+  padding: 15px 22px !important;
+  border-radius: 6px;
+  border: 1px solid #89b8d1 !important;
+  color: #ffffff !important;
+}
+
+body.hv-page .navlinks .navcta:hover {
+  background: #22516f !important;
+  border-color: #b7e6f1 !important;
+}
+
+/* Christmas-style card marquee with Pest Control branding. */
+body.hv-page .hv-marquee {
+  display: block;
+  overflow: hidden;
+  background: #0d3248 !important;
+  border-top: 1px solid #527b92 !important;
+  border-bottom: 3px solid #eea570 !important;
+}
+
+body.hv-page .hv-marquee-heading {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  padding: 17px 20px 14px;
+  color: #f5b78d;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: .14em;
+  font-weight: 850;
+  border-bottom: 1px solid #ffffff20;
+}
+
+body.hv-page .hv-marquee-heading span {
+  color: #b7deec;
+}
+
+body.hv-page .hv-marquee-window {
+  overflow: hidden;
+  padding: 12px 0 17px;
+  background: transparent !important;
+  mask-image: none !important;
+}
+
+body.hv-page .hv-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 0;
+  animation: hvMarquee 37s linear infinite;
+}
+
+body.hv-page .hv-marquee-group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: stretch;
+}
+
+body.hv-page .hv-ticker-item {
+  position: relative;
+  display: inline-flex !important;
+  flex: 0 0 auto;
+  align-items: center !important;
+  justify-content: center;
+  gap: 12px !important;
+  min-height: 59px !important;
+  margin: 0 6px !important;
+  padding: 13px 19px !important;
+  border: 1px solid #d9e7eb !important;
+  border-radius: 9px !important;
+  background: #fff8ee !important;
+  color: #123b50 !important;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px #061b2b21;
+  transition: background .2s, transform .2s,
+              border-color .2s, box-shadow .2s;
+}
+
+/* Remove the tiny decorative bullets from V6. */
+body.hv-page .hv-ticker-item::before,
+body.hv-page .hv-ticker-item::after {
+  content: none !important;
+  display: none !important;
+}
+
+body.hv-page .hv-ticker-icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  color: #e17750 !important;
+  font-size: 23px !important;
+  line-height: 1;
+  font-weight: 800;
+}
+
+body.hv-page .hv-ticker-label {
+  font-size: 16px !important;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -.025em;
+  color: #163b50;
+}
+
+body.hv-page .hv-ticker-item:hover {
+  background: #ffffff !important;
+  border-color: #89d4e6 !important;
+  box-shadow: 0 8px 20px #0003;
+  transform: translateY(-3px);
+}
+
+body.hv-page .hv-marquee-window:hover .hv-marquee-track,
+body.hv-page .hv-marquee-window:focus-within .hv-marquee-track {
+  animation-play-state: paused;
+}
+
+@media(max-width:1050px) {
+  body.hv-page header nav a,
+  body.hv-page .navlinks a {
+    font-size: 15px !important;
+  }
+
+  body.hv-page .navlinks {
+    gap: 17px !important;
+  }
+}
+
+@media(max-width:700px) {
+  body.hv-page .hv-marquee-heading {
+    flex-direction: column;
+    font-size: 10px;
+    gap: 3px;
+    padding: 13px 12px;
+  }
+
+  body.hv-page .hv-marquee-window {
+    padding: 10px 0 13px;
+  }
+
+  body.hv-page .hv-ticker-item {
+    min-height: 52px !important;
+    padding: 11px 15px !important;
+    margin: 0 5px !important;
+  }
+
+  body.hv-page .hv-ticker-label {
+    font-size: 14px !important;
+  }
+
+  body.hv-page .hv-ticker-icon {
+    font-size: 20px !important;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  body.hv-page .hv-marquee-track {
+    animation: none !important;
+  }
+
+  body.hv-page .hv-marquee-window {
+    overflow-x: auto;
+  }
+}
+</style>
+
+
+<style is:global>
+/* Pest Control_SEO_CLUSTER_V1 */
+body.hv-page .resource h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body.hv-page .resource:has(h3 a) {
+  position: relative;
+}
+
+body.hv-page .resource h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+body.hv-page .resource:focus-within {
+  outline: 3px solid #f0aa77;
+  outline-offset: 3px;
+}
+
+body.hv-page .resource:hover h3 a,
+body.hv-page .resource:focus-within h3 a {
+  color: #1474a2;
+}
+</style>
+
+
+<style is:global>
+/* PEST CONTROL_LANDING_V1 */
+body.hv-page .top,
+body.hv-page .hv-footer-v6 {background:#082c30}
+body.hv-page .hero {
+  background:radial-gradient(ellipse at 75% 32%,
+    #21685e 0%,#103f43 49%,#082c30 100%);
+}
+body.hv-page .hero h1 em,
+body.hv-page .hv-footer-intro h2 em {color:#a5e9d6}
+body.hv-page .cta,
+body.hv-page .hv-footer-cta {background:#e9a875;color:#17342f}
+body.hv-page .cta:hover,
+body.hv-page .hv-footer-cta:hover {background:#f6c69c}
+body.hv-page .hv-marquee {background:#082d30!important}
+body.hv-page .hv-marquee-heading {color:#eeb288}
+body.hv-page .hv-ticker-item {background:#fff7ee!important}
+body.hv-page .hv-ticker-icon {color:#bd7750!important}
+body.hv-page .hv-ticker-label {color:#12443f}
+body.hv-page .brand .lf-brand-v4--dark {
+  --brand-text:#f5fffc;
+  --brand-flo:#9fe6d5;
+  --brand-period:#e7a875;
+  --brand-plane:#a1e9dc;
+}
+body.hv-page .brand .lf-brand-v4__current1 {stroke:#79d5c4}
+body.hv-page .brand .lf-brand-v4__current2 {stroke:#e1aa80}
+body.hv-page .brand .lf-brand-v4__pulse {stroke:#d9fff0}
+body.hv-page .brand .hv-logo-fan {
+  background:#174d4a;
+  box-shadow:none;
+}
+body.hv-page .pl-logo-drop {
+  transform-origin:16px 17px;
+  animation:plDrop 2.5s ease-in-out infinite;
+}
+body.hv-page .brand:hover .pl-logo-drop {
+  animation-duration:.9s;
+}
+@keyframes plDrop {
+  0%,100% {transform:translateY(-1px) scale(.94)}
+  50% {transform:translateY(1px) scale(1.05)}
+}
+body.hv-page .pl-visual {
+  background:linear-gradient(145deg,#1d5b5c,#0a3035);
+}
+body.hv-page .pl-pipe-scene {
+  position:relative;
+  margin:26px auto 12px;
+  width:min(100%,410px);
+}
+body.hv-page .pl-pipe-scene svg {width:100%;display:block;overflow:visible}
+body.hv-page .pl-pipe-shadow {
+  stroke:#0b242b;stroke-width:36;stroke-linecap:round;
+}
+body.hv-page .pl-pipe-body {
+  stroke:url(#pl-copper);stroke-width:27;stroke-linecap:round;
+}
+body.hv-page .pl-water {
+  stroke:#a8f5e2;
+  stroke-width:5;
+  stroke-dasharray:12 30;
+  stroke-linecap:round;
+  animation:plWater 2s linear infinite;
+}
+@keyframes plWater {to{stroke-dashoffset:-84}}
+body.hv-page .pl-water-dot {fill:#e2fffa;filter:drop-shadow(0 0 5px #8ef7d2)}
+body.hv-page .pl-valve {
+  fill:#bf7a51;stroke:#f2c3a1;stroke-width:5;
+  transform-box:fill-box;
+  transform-origin:center;
+  transition:transform .6s ease;
+}
+body.hv-page .pl-visual:hover .pl-valve {transform:rotate(90deg)}
+body.hv-page .pl-svg-label {
+  fill:#b7ded7;font-size:11px;font-weight:800;letter-spacing:2px;
+}
+body.hv-page .pl-pipe-caption {
+  color:#b7e8d9;text-align:center;
+  font-size:10px;letter-spacing:.09em;font-weight:800;
+}
+@media(prefers-reduced-motion:reduce) {
+  body.hv-page .pl-water,
+  body.hv-page .pl-logo-drop {animation:none!important}
+  body.hv-page .pl-water-dot {display:none}
+}
+</style>
+
+
+<style is:global>
+/* PEST CONTROL_MOBILE_V2 */
+
+body.hv-page .pl-mobile-shortcuts,
+body.hv-page .pl-sticky-booking {
+  display: none;
+}
+
+body.hv-page {
+  overflow-x: clip;
+}
+
+body.hv-page #services,
+body.hv-page #process,
+body.hv-page #calculator,
+body.hv-page #pest control-work {
+  scroll-margin-top: 20px;
+}
+
+/* Tablet layout */
+@media (max-width: 900px) {
+  body.hv-page .herogrid,
+  body.hv-page .introgrid,
+  body.hv-page .qualgrid,
+  body.hv-page .calcgrid,
+  body.hv-page .faqgrid {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  body.hv-page .herogrid > *,
+  body.hv-page .introgrid > *,
+  body.hv-page .qualgrid > *,
+  body.hv-page .calcgrid > *,
+  body.hv-page .faqgrid > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  body.hv-page .hero h1 {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: normal;
+  }
+}
+
+/* Phones */
+@media (max-width: 700px) {
+  body.hv-page {
+    width: 100%;
+    max-width: 100%;
+    padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+  }
+
+  body.hv-page .wrap {
+    width: calc(100% - 36px) !important;
+    max-width: 100%;
+  }
+
+  /* Header */
+  body.hv-page .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 76px;
+  }
+
+  body.hv-page .nav .brand {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+
+  body.hv-page .nav .lf-brand-v4--dark {
+    font-size: clamp(28px, 8vw, 36px);
+  }
+
+  body.hv-page .navlinks {
+    display: flex !important;
+    flex: 0 0 auto;
+    gap: 0 !important;
+    align-items: center;
+  }
+
+  body.hv-page .navlinks > a:not(.navcta) {
+    display: none !important;
+  }
+
+  body.hv-page .navlinks .navcta {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px !important;
+    padding: 11px 12px !important;
+    min-height: 43px;
+    white-space: nowrap;
+  }
+
+  /* Compact page-section navigation */
+  body.hv-page .pl-mobile-shortcuts {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 18px 13px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    background: #082c30;
+    border-bottom: 1px solid #ffffff25;
+  }
+
+  body.hv-page .pl-mobile-shortcuts::-webkit-scrollbar {
+    display: none;
+  }
+
+  body.hv-page .pl-mobile-shortcuts a {
+    display: inline-flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 13px;
+    min-height: 40px;
+    color: #d6f4eb;
+    border: 1px solid #ffffff30;
+    border-radius: 999px;
+    font-size: 12px;
+    line-height: 1.25;
+    font-weight: 750;
+    white-space: nowrap;
+  }
+
+  body.hv-page .pl-mobile-shortcuts a:focus-visible,
+  body.hv-page .pl-mobile-shortcuts a:hover {
+    border-color: #b0eedc;
+    background: #ffffff18;
+    color: #fff;
+  }
+
+  /* Hero: prevent clipped headings and oversized columns */
+  body.hv-page .hero {
+    padding: 50px 0 70px !important;
+  }
+
+  body.hv-page .herogrid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 45px !important;
+  }
+
+  body.hv-page .hero .eyebrow {
+    font-size: 11px;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    max-width: 100%;
+  }
+
+  body.hv-page .hero h1 {
+    font-size: clamp(32px, 8.5vw, 43px) !important;
+    line-height: 1.12 !important;
+    letter-spacing: -.055em;
+    max-width: 100%;
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    text-wrap: balance;
+    margin: 23px 0 20px;
+  }
+
+  body.hv-page .hero h1 em {
+    display: block;
+    margin-top: 4px;
+  }
+
+  body.hv-page .hero p:not(.eyebrow) {
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 100%;
+  }
+
+  body.hv-page .hero .actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 11px;
+    margin-top: 28px;
+  }
+
+  body.hv-page .hero .actions .cta {
+    width: 100%;
+    min-width: 0;
+    min-height: 53px;
+    padding: 14px 16px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  body.hv-page .hero .trust {
+    gap: 9px 15px;
+    margin-top: 24px;
+    font-size: 11px;
+  }
+
+  /* Animated pest control visual */
+  body.hv-page .pl-visual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0;
+    padding: 18px 14px 20px !important;
+    border-radius: 15px;
+  }
+
+  body.hv-page .pl-pipe-scene {
+    width: 100%;
+    margin: 19px auto 14px;
+    overflow: hidden;
+  }
+
+  body.hv-page .pl-pipe-scene svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body.hv-page .visualhead {
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 9px;
+  }
+
+  body.hv-page .flowmeters {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+  }
+
+  body.hv-page .meter {
+    min-width: 0;
+    padding: 10px 6px;
+  }
+
+  body.hv-page .meter small {
+    font-size: 8px;
+    overflow-wrap: anywhere;
+  }
+
+  body.hv-page .meter strong {
+    font-size: 10px;
+    overflow-wrap: anywhere;
+  }
+
+  /* All content sections should fit narrow screens */
+  body.hv-page .section {
+    padding: 70px 0;
+  }
+
+  body.hv-page .heading {
+    font-size: clamp(30px, 8vw, 42px) !important;
+    line-height: 1.12;
+    overflow-wrap: break-word;
+  }
+
+  body.hv-page .bodycopy {
+    font-size: 15px;
+    line-height: 1.75;
+  }
+
+  body.hv-page .servicegrid,
+  body.hv-page .resourcegrid,
+  body.hv-page .journeygrid,
+  body.hv-page .hv-photo-grid,
+  body.hv-page .hv-photo-heading,
+  body.hv-page .hv-footer-main {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  body.hv-page .service,
+  body.hv-page .stagepanel,
+  body.hv-page .qualcard,
+  body.hv-page .calcbox,
+  body.hv-page .resource,
+  body.hv-page .hv-photo-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  body.hv-page .hv-service-preview {
+    width: calc(100% - 36px);
+    grid-template-columns: minmax(0, 1fr);
+    padding: 23px 20px;
+  }
+
+  body.hv-page .hv-preview-copy h3 {
+    font-size: clamp(23px, 7vw, 30px);
+  }
+
+  body.hv-page .stagepanel {
+    padding: 25px 20px;
+  }
+
+  body.hv-page .steps {
+    min-width: 0;
+  }
+
+  body.hv-page .hv-photo-section {
+    padding: 70px 0;
+  }
+
+  body.hv-page .hv-photo-feature {
+    grid-column: auto;
+  }
+
+  body.hv-page .hv-photo-feature .hv-photo-image {
+    aspect-ratio: 1.18;
+  }
+
+  body.hv-page .range,
+  body.hv-page .range input,
+  body.hv-page .calcbox {
+    max-width: 100%;
+  }
+
+  body.hv-page .result strong {
+    overflow-wrap: anywhere;
+  }
+
+  body.hv-page .hv-footer-main {
+    gap: 28px;
+  }
+
+  /* Persistent mobile-only CTA */
+  body.hv-page .pl-sticky-booking {
+    position: fixed;
+    display: block !important;
+    inset: auto 0 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 14px
+      calc(10px + env(safe-area-inset-bottom, 0px));
+    background: rgba(8, 36, 39, .97);
+    border-top: 1px solid rgba(169, 241, 220, .35);
+    box-shadow: 0 -12px 32px rgba(0, 0, 0, .18);
+  }
+
+  body.hv-page .pl-sticky-inner {
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+  body.hv-page .pl-sticky-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    min-height: 56px;
+    border-radius: 8px;
+    background: #eda976;
+    color: #17342f;
+    padding: 10px 17px;
+    text-decoration: none;
+    box-shadow: inset 0 1px 0 #ffffff4d;
+  }
+
+  body.hv-page .pl-sticky-cta-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+  }
+
+  body.hv-page .pl-sticky-cta strong {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 850;
+  }
+
+  body.hv-page .pl-sticky-cta small {
+    font-size: 10px;
+    line-height: 1.35;
+    opacity: .8;
+  }
+
+  body.hv-page .pl-sticky-arrow {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  body.hv-page .pl-sticky-cta:active {
+    transform: scale(.99);
+  }
+
+  body.hv-page .pl-sticky-cta:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+  }
+}
+
+@media (max-width: 370px) {
+  body.hv-page .nav .lf-brand-v4--dark {
+    font-size: 27px;
+  }
+
+  body.hv-page .navlinks .navcta {
+    font-size: 11px !important;
+    padding-inline: 9px !important;
+  }
+
+  body.hv-page .hero h1 {
+    font-size: 31px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.hv-page .pl-sticky-cta {
+    transition: none !important;
+  }
+
+  body.hv-page .pl-mobile-shortcuts {
+    scroll-behavior: auto;
+  }
+}
+</style>
+
+
+<style is:global>
+/* PEST CONTROL_HEADER_V3 */
+
+/* The entire header, including mobile shortcuts,
+   participates in the hide/reveal behavior. */
+body.hv-page .pl-scroll-header {
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  width: 100%;
+  background: #0b263a;
+  box-shadow: 0 1px 0 rgba(171, 218, 237, .2);
+  transform: translateY(0);
+  transition: transform .27s ease,
+              box-shadow .27s ease;
+  will-change: transform;
+}
+
+body.hv-page .pl-scroll-header.pl-header-hidden {
+  transform: translateY(calc(-100% - 2px));
+  box-shadow: none;
+}
+
+body.hv-page .pl-scroll-header .nav {
+  background: #0b263a;
+}
+
+body.hv-page .pl-scroll-header .navlinks a {
+  color: #dcecf5;
+}
+
+body.hv-page .pl-scroll-header .navlinks a:hover,
+body.hv-page .pl-scroll-header .navlinks a:focus-visible {
+  color: #fff;
+}
+
+body.hv-page .pl-scroll-header .navlinks .navcta {
+  border-color: #81aeca !important;
+}
+
+body.hv-page .pl-scroll-header .navlinks .navcta:hover {
+  background: #1a4660 !important;
+  border-color: #b4e2f2 !important;
+}
+
+/* Rich navy services marquee — same visual family as HVAC,
+   with cream cards and warm copper icon accents. */
+body.hv-page .hv-marquee {
+  background: #0c2d43 !important;
+  border-top: 1px solid #52768e !important;
+  border-bottom: 3px solid #e5a16f !important;
+}
+
+body.hv-page .hv-marquee-heading {
+  color: #f4bc94 !important;
+  background: #0c2d43 !important;
+  border-bottom-color: #ffffff25 !important;
+}
+
+body.hv-page .hv-marquee-heading span {
+  color: #c0e0ed !important;
+}
+
+body.hv-page .hv-marquee-window {
+  background: #0c2d43 !important;
+}
+
+body.hv-page .hv-ticker-item {
+  background: #fff8ef !important;
+  border-color: #e8ddd2 !important;
+  color: #153f56 !important;
+}
+
+body.hv-page .hv-ticker-label {
+  color: #153f56 !important;
+}
+
+body.hv-page .hv-ticker-icon {
+  color: #c37c52 !important;
+}
+
+/* When returning to a section, account for the visible header. */
+body.hv-page #services,
+body.hv-page #process,
+body.hv-page #calculator,
+body.hv-page #pest control-work,
+body.hv-page #contact,
+body.hv-page #qualification {
+  scroll-margin-top: 115px;
+}
+
+@media (max-width: 700px) {
+  /* Mobile shortcut strip uses navy rather than green. */
+  body.hv-page .pl-mobile-shortcuts {
+    background: #103149 !important;
+    border-top: 1px solid #ffffff14;
+    border-bottom: 1px solid #ffffff29 !important;
+  }
+
+  body.hv-page .pl-mobile-shortcuts a {
+    background: #173e56 !important;
+    color: #e9f5fc !important;
+    border-color: #557b91 !important;
+    border-radius: 999px;
+  }
+
+  body.hv-page .pl-mobile-shortcuts a:hover,
+  body.hv-page .pl-mobile-shortcuts a:focus-visible {
+    background: #285b75 !important;
+    color: white !important;
+    border-color: #a8d9ea !important;
+  }
+
+  body.hv-page .pl-scroll-header {
+    box-shadow: 0 3px 16px #071c2a2e;
+  }
+
+  body.hv-page #services,
+  body.hv-page #process,
+  body.hv-page #calculator,
+  body.hv-page #pest control-work,
+  body.hv-page #contact,
+  body.hv-page #qualification {
+    scroll-margin-top: 155px;
+  }
+
+  /* Keep independent mobile booking bar above the header layer. */
+  body.hv-page .pl-sticky-booking {
+    z-index: 1000;
+    background: rgba(11, 38, 58, .98) !important;
+    border-top-color: #91bfd8 !important;
+  }
+
+  body.hv-page .pl-sticky-cta {
+    background: #efa773 !important;
+    color: #183447 !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.hv-page .pl-scroll-header {
+    transition: none !important;
+    will-change: auto;
+  }
+}
+</style>
+
+
+<style is:global>
+/* PEST CONTROL_SEO_CLUSTER_V2 */
+body.hv-page .resource {
+  position: relative;
+}
+
+body.hv-page .resource h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body.hv-page .resource h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+body.hv-page .resource:hover h3 a,
+body.hv-page .resource:focus-within h3 a {
+  color: #168b82;
+}
+
+body.hv-page .resource:focus-within {
+  outline: 3px solid #efa773;
+  outline-offset: 3px;
+}
+</style>
+
+
+
+
+
+
+
+
+<style is:global>
+/* PEST_CONTROL_LANDING_V1 */
+
+/* Midnight forest / evergreen / amber */
+body.hv-page .pl-scroll-header,
+body.hv-page .pl-scroll-header .nav {
+  background:#102c30!important;
+}
+
+body.hv-page .top {
+  background:#102c30!important;
+}
+
+body.hv-page .hero {
+  background:
+    radial-gradient(ellipse at 76% 38%,
+      #286358 0%,#183f41 52%,#0d2631 100%)!important;
+}
+
+body.hv-page .hero h1 em {
+  color:#a6e9c7!important;
+}
+
+body.hv-page .hero .eyebrow {
+  color:#b2ead0!important;
+}
+
+/* Keep light-section headings legible */
+body.hv-page .blue {
+  color:#247869!important;
+}
+
+body.hv-page .cta,
+body.hv-page .pl-sticky-cta {
+  background:#efb17d!important;
+  color:#17362e!important;
+}
+
+body.hv-page .cta:hover {
+  background:#ffd09f!important;
+}
+
+/* Seamless high-contrast services marquee */
+body.hv-page .hv-marquee,
+body.hv-page .hv-marquee-heading,
+body.hv-page .hv-marquee-window {
+  background:#103c3b!important;
+}
+
+body.hv-page .hv-marquee {
+  border-top-color:#608e83!important;
+  border-bottom-color:#dca36f!important;
+}
+
+body.hv-page .hv-marquee-heading {
+  color:#f3bc8e!important;
+}
+
+body.hv-page .hv-marquee-heading span {
+  color:#d4eae0!important;
+}
+
+body.hv-page .hv-ticker-item {
+  background:#fff9ef!important;
+  border-color:#e6ddd0!important;
+}
+
+body.hv-page .hv-ticker-label {
+  color:#204c42!important;
+}
+
+body.hv-page .hv-ticker-icon {
+  color:#bc7a49!important;
+}
+
+/* Matching niche logo, both locations */
+body.hv-page .brand .lf-brand-v4--dark {
+  --brand-text:#fff;
+  --brand-flo:#a7eac7;
+  --brand-period:#e9ae7c;
+  --brand-plane:#a7eac7;
+}
+
+body.hv-page .brand .lf-brand-v4__current1 {
+  stroke:#8fe0b5!important;
+}
+
+body.hv-page .brand .lf-brand-v4__current2 {
+  stroke:#ecc294!important;
+}
+
+body.hv-page .brand .hv-logo-fan {
+  background:#1a5346;
+}
+
+body.hv-page .pc-logo-shield {
+  transform-origin:50% 50%;
+  animation:pcShield 2.5s ease-in-out infinite;
+}
+
+@keyframes pcShield {
+  0%,100% {opacity:.78;transform:scale(.94)}
+  50% {opacity:1;transform:scale(1.07)}
+}
+
+/* Animated pest-inspection dashboard */
+body.hv-page .pl-visual {
+  background:
+    linear-gradient(145deg,#23574e,#102d35)!important;
+  border-color:#638d81!important;
+}
+
+body.hv-page .pc-inspection-scene {
+  width:min(100%,420px);
+  margin:28px auto 15px;
+}
+
+body.hv-page .pc-inspection-scene svg {
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+body.hv-page .pc-route-base {
+  stroke:#487469;
+  stroke-width:11;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+body.hv-page .pc-route-active {
+  stroke:url(#pc-flow);
+  stroke-width:4;
+  stroke-dasharray:12 15;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  animation:pcRoute 1.9s linear infinite;
+}
+
+@keyframes pcRoute {
+  to {stroke-dashoffset:-54}
+}
+
+body.hv-page .pc-scan {
+  transform-origin:90px 111px;
+  animation:pcScan 7s linear infinite;
+}
+
+@keyframes pcScan {
+  to {transform:rotate(360deg)}
+}
+
+body.hv-page .pc-moving-dot {
+  filter:drop-shadow(0 0 7px #f0c38e);
+}
+
+body.hv-page .pc-svg-label {
+  font-size:11px;
+  fill:#b7e9d0;
+  font-weight:800;
+  letter-spacing:1.4px;
+}
+
+body.hv-page .pc-inspection-caption {
+  color:#c1e9d4;
+  text-align:center;
+  font-size:10px;
+  letter-spacing:.085em;
+  font-weight:800;
+}
+
+body.hv-page .hv-footer-v6 {
+  background:#102b30!important;
+}
+
+body.hv-page .hv-footer-intro h2 em {
+  color:#b3e9ca!important;
+}
+
+/* Mobile: retain all approved Plumbing V3 mechanics */
+@media(max-width:700px) {
+  body.hv-page .pl-mobile-shortcuts {
+    background:#18443f!important;
+    border-bottom-color:#5a9582!important;
+  }
+
+  body.hv-page .pl-mobile-shortcuts a {
+    background:#245549!important;
+    border-color:#7bad93!important;
+    color:#f3fff9!important;
+  }
+
+  body.hv-page .pl-mobile-shortcuts a:hover,
+  body.hv-page .pl-mobile-shortcuts a:focus-visible {
+    background:#34735e!important;
+  }
+
+  body.hv-page .pl-sticky-booking {
+    background:rgba(16,44,48,.98)!important;
+    border-top-color:#99cdb2!important;
+  }
+
+  body.hv-page .pc-inspection-scene {
+    width:100%;
+    overflow:hidden;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  body.hv-page .pc-route-active,
+  body.hv-page .pc-scan,
+  body.hv-page .pc-logo-shield {
+    animation:none!important;
+  }
+
+  body.hv-page .pc-moving-dot {
+    display:none;
+  }
+}
+</style>
+
+
+<style is:global>
+/* PEST_CONTROL_MOTION_V2 */
+
+/* Small ant trail stays behind the hero content. */
+body.hv-page .hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+body.hv-page .hero .herogrid {
+  position: relative;
+  z-index: 2;
+}
+
+body.hv-page .pc-ant-trail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  height: 39px;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+  color: #b5eac9;
+  opacity: .46;
+}
+
+body.hv-page .pc-ant-path {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25px;
+  border-top: 1px dashed rgba(183, 232, 205, .21);
+  transform: rotate(-.3deg);
+}
+
+body.hv-page .pc-ant-sprite {
+  position: absolute;
+  width: 23px;
+  height: 18px;
+  top: 14px;
+  left: 0;
+  opacity: 0;
+  animation: pcAntWalk 18s linear infinite;
+}
+
+body.hv-page .pc-ant-sprite svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+body.hv-page .pc-ant-1 { animation-delay: -1s; }
+body.hv-page .pc-ant-2 { animation-delay: -4.2s; }
+body.hv-page .pc-ant-3 { animation-delay: -7.4s; }
+body.hv-page .pc-ant-4 { animation-delay: -10.6s; }
+body.hv-page .pc-ant-5 { animation-delay: -13.8s; }
+
+@keyframes pcAntWalk {
+  0% {
+    transform: translate3d(-30px, 4px, 0);
+    opacity: 0;
+  }
+  10% { opacity: .85; }
+  84% { opacity: .85; }
+  100% {
+    transform: translate3d(105vw, -5px, 0);
+    opacity: 0;
+  }
+}
+
+/* Ant-and-shield niche logo */
+body.hv-page .brand .pc-logo-shield {
+  transform-origin: 50% 50%;
+  animation: pcShieldBreathe 3.8s ease-in-out infinite;
+}
+
+body.hv-page .brand .pc-logo-ant {
+  transform-origin: 17px 17px;
+  animation: pcLogoAntMove 3.8s ease-in-out infinite;
+}
+
+@keyframes pcShieldBreathe {
+  0%, 100% {
+    opacity: .75;
+    transform: scale(.96);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.035);
+  }
+}
+
+@keyframes pcLogoAntMove {
+  0%, 100% { transform: translateX(-.6px); }
+  50% { transform: translateX(.7px); }
+}
+
+/* Disable inherited motion on the replaced shield. */
+body.hv-page .pc-logo-shield {
+  animation: pcShieldBreathe 3.8s ease-in-out infinite;
+}
+
+/* Dashboard */
+body.hv-page .pc-detection-panel {
+  border: 1px solid rgba(180, 233, 201, .24);
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0 18px;
+  background: rgba(9, 35, 36, .57);
+  color: #e8f6ec;
+}
+
+body.hv-page .pc-detection-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+body.hv-page .pc-detection-eyebrow {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .11em;
+  color: #c2e8d2;
+}
+
+body.hv-page .pc-detection-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #b9e9cc;
+  font-size: 9px;
+  font-weight: 800;
+  white-space: nowrap;
+  letter-spacing: .07em;
+}
+
+body.hv-page .pc-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #99edb8;
+  box-shadow: 0 0 0 3px rgba(153, 237, 184, .12);
+}
+
+body.hv-page .pc-detection-status {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 57px;
+  margin-bottom: 15px;
+}
+
+body.hv-page .pc-detection-indicator {
+  position: relative;
+  width: 39px;
+  height: 39px;
+  flex: 0 0 39px;
+  display: grid;
+  place-items: center;
+}
+
+body.hv-page .pc-indicator-ring {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #9dddb7;
+  border-radius: 50%;
+  animation: pcRadarPulse 2.5s ease-out infinite;
+}
+
+body.hv-page .pc-indicator-center {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #eaba82;
+}
+
+@keyframes pcRadarPulse {
+  0% {
+    transform: scale(.72);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.15);
+    opacity: .2;
+  }
+}
+
+body.hv-page .pc-detection-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+body.hv-page .pc-detection-copy strong {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #f0f9f2;
+}
+
+body.hv-page .pc-detection-copy small {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #bbd7ca;
+}
+
+body.hv-page .pc-stage-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+}
+
+body.hv-page .pc-stage-controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 0;
+  min-height: 41px;
+  padding: 9px 7px;
+  border: 1px solid #63897a;
+  border-radius: 7px;
+  background: rgba(35, 86, 71, .38);
+  color: #c9e9d6;
+  font-size: 11px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: background .2s, border-color .2s;
+}
+
+body.hv-page .pc-stage-controls button span {
+  color: #e5b380;
+  font-size: 10px;
+}
+
+body.hv-page .pc-stage-controls button[aria-pressed="true"] {
+  background: #d5ebd8;
+  color: #1b4c3d;
+  border-color: #d5ebd8;
+}
+
+body.hv-page .pc-stage-controls button[aria-pressed="true"] span {
+  color: #946036;
+}
+
+body.hv-page .pc-stage-controls button:hover {
+  border-color: #daf1df;
+}
+
+body.hv-page .pc-stage-controls button:focus-visible {
+  outline: 3px solid #eeba87;
+  outline-offset: 3px;
+}
+
+body.hv-page .pc-detection-disclaimer {
+  color: #a4c4b7 !important;
+  font-size: 10px !important;
+  line-height: 1.5 !important;
+  margin: 12px 0 0 !important;
+}
+
+/* Stage-specific treatments */
+body.hv-page [data-pc-phase="qualify"] .pc-indicator-center {
+  background: #9be7c3;
+}
+
+body.hv-page [data-pc-phase="book"] .pc-indicator-center {
+  background: #f0c18d;
+}
+
+body.hv-page [data-pc-phase="book"] .pc-indicator-ring {
+  border-color: #f0c18d;
+}
+
+/* Premium photo hover effect */
+body.hv-page .hv-photo-image {
+  position: relative;
+  overflow: hidden;
+}
+
+body.hv-page .hv-photo-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      105deg,
+      transparent 35%,
+      rgba(171, 246, 199, .18) 49%,
+      transparent 63%
+    );
+  transform: translateX(-130%);
+  transition: transform .75s ease;
+  pointer-events: none;
+}
+
+body.hv-page .hv-photo-card:hover .hv-photo-image::after,
+body.hv-page .hv-photo-card:focus-within .hv-photo-image::after {
+  transform: translateX(130%);
+}
+
+@media (max-width: 700px) {
+  body.hv-page .pc-ant-trail {
+    height: 33px;
+    opacity: .32;
+  }
+
+  body.hv-page .pc-ant-sprite {
+    width: 19px;
+    height: 15px;
+  }
+
+  body.hv-page .pc-detection-panel {
+    padding: 13px;
+  }
+
+  body.hv-page .pc-detection-copy strong {
+    font-size: 14px;
+  }
+
+  body.hv-page .pc-stage-controls button {
+    min-height: 44px;
+    font-size: 10px;
+    gap: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.hv-page .pc-ant-sprite,
+  body.hv-page .pc-logo-shield,
+  body.hv-page .pc-logo-ant,
+  body.hv-page .pc-indicator-ring {
+    animation: none !important;
+  }
+
+  body.hv-page .pc-ant-trail {
+    display: none;
+  }
+
+  body.hv-page .hv-photo-image::after {
+    display: none;
+  }
+
+  body.hv-page .pc-stage-controls button {
+    transition: none;
+  }
+}
+</style>
+
+
+<style is:global>
+/* PEST_CONTROL_MOTION_V3 */
+
+/* Responsive grid: avoid intrinsic headline width
+   squeezing the growth-system card. */
+body.hv-page .hero .herogrid {
+  display: grid !important;
+  grid-template-columns:
+    minmax(0,1.08fr)
+    minmax(380px,.92fr) !important;
+  gap: clamp(28px,3vw,48px) !important;
+  align-items: center;
+}
+
+body.hv-page .hero .herogrid > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
+body.hv-page .hero h1 {
+  font-size: clamp(40px,4.45vw,68px) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.052em !important;
+  overflow-wrap: normal !important;
+  text-wrap: balance;
+}
+
+body.hv-page .hero .pl-visual {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  padding: 22px !important;
+  overflow: hidden;
+}
+
+body.hv-page .hero .visualhead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+body.hv-page .pc-inspection-scene {
+  width: min(100%,400px) !important;
+  margin: 23px auto 12px !important;
+}
+
+body.hv-page .pc-inspection-scene svg {
+  width: 100%;
+  height: auto;
+}
+
+body.hv-page .pc-detection-panel {
+  width: 100%;
+  min-width: 0;
+  margin: 18px 0 !important;
+  padding: 17px !important;
+}
+
+body.hv-page .pc-detection-status {
+  min-height: 62px;
+}
+
+body.hv-page .pc-stage-controls {
+  display: grid !important;
+  grid-template-columns:
+    repeat(3,minmax(0,1fr)) !important;
+  gap: 8px !important;
+}
+
+body.hv-page .pc-stage-controls button {
+  width: 100%;
+  min-width: 0;
+  min-height: 45px;
+  padding: 10px 6px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+body.hv-page .hero .flowmeters {
+  display: grid;
+  grid-template-columns:
+    repeat(3,minmax(0,1fr));
+  gap: 8px;
+}
+
+body.hv-page .hero .meter {
+  min-width: 0;
+  padding: 12px 9px;
+}
+
+body.hv-page .hero .meter small,
+body.hv-page .hero .meter strong {
+  overflow-wrap: anywhere;
+}
+
+/* Snowfall-inspired full-page insect silhouettes.
+   No pointer events; content stays fully usable. */
+body.hv-page .pc-falling-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  overflow: hidden;
+  contain: layout paint;
+}
+
+body.hv-page .pc-fall-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+body.hv-page .pc-falling-particle {
+  position: absolute;
+  top: -55px;
+  left: var(--pc-left);
+  width: var(--pc-size);
+  height: var(--pc-size);
+  display: block;
+  opacity: 0;
+  color: #5c947b;
+  animation:
+    pcFullPageFall var(--pc-duration)
+    linear var(--pc-delay) infinite;
+  will-change: transform;
+}
+
+body.hv-page .pc-falling-particle svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,.1));
+}
+
+@keyframes pcFullPageFall {
+  0% {
+    transform: translate3d(0,-25px,0)
+      rotate(-18deg);
+    opacity: 0;
+  }
+
+  8% {
+    opacity: .35;
+  }
+
+  50% {
+    transform:
+      translate3d(var(--pc-sway),52vh,0)
+      rotate(13deg);
+    opacity: .3;
+  }
+
+  90% {
+    opacity: .35;
+  }
+
+  100% {
+    transform: translate3d(0,115vh,0)
+      rotate(29deg);
+    opacity: 0;
+  }
+}
+
+/* Desktop-to-tablet switch: give the dashboard
+   its own full-width row before it gets cramped. */
+@media(max-width:1100px) {
+  body.hv-page .hero .herogrid {
+    grid-template-columns: minmax(0,1fr) !important;
+    gap: 36px !important;
+  }
+
+  body.hv-page .hero .pl-visual {
+    width: min(100%,640px) !important;
+    max-width: 640px !important;
+    justify-self: center;
+  }
+
+  body.hv-page .hero h1 {
+    font-size: clamp(40px,6vw,65px) !important;
+  }
+}
+
+@media(max-width:700px) {
+  body.hv-page .hero .herogrid {
+    grid-template-columns: minmax(0,1fr) !important;
+    gap: 34px !important;
+  }
+
+  body.hv-page .hero h1 {
+    font-size: clamp(32px,8.2vw,43px) !important;
+    line-height: 1.1 !important;
+    letter-spacing: -.045em !important;
+  }
+
+  body.hv-page .hero .pl-visual {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 16px 13px !important;
+  }
+
+  body.hv-page .pc-detection-panel {
+    padding: 13px !important;
+  }
+
+  body.hv-page .pc-stage-controls {
+    gap: 5px !important;
+  }
+
+  body.hv-page .pc-stage-controls button {
+    min-height: 44px;
+    font-size: 10px;
+    gap: 4px;
+    padding: 8px 3px;
+  }
+
+  body.hv-page .pc-detection-top {
+    flex-wrap: wrap;
+  }
+
+  body.hv-page .hero .meter {
+    padding: 10px 6px;
+  }
+
+  body.hv-page .pc-falling-particle {
+    opacity: 0;
+  }
+
+  body.hv-page .pc-falling-particle:nth-of-type(2n) {
+    display: none;
+  }
+}
+
+/* All new effects respect reduced motion. */
+@media(prefers-reduced-motion:reduce) {
+  body.hv-page .pc-falling-layer {
+    display: none !important;
+  }
+
+  body.hv-page .pc-falling-particle {
+    animation: none !important;
+  }
+}
+</style>
+
+
+<style is:global>
+/* PEST_CONTROL_GROWTH_SHIELD_V4 */
+
+/*
+  Additive enhancement:
+  Existing LeadsFlo wordmark, ant, shield
+  and flowing brand animation are retained.
+*/
+
+body.hv-page .brand .pc-logo-growth {
+  transform-origin: 21px 11px;
+}
+
+body.hv-page .brand .pc-growth-bar {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: pcGrowthBar 3.6s ease-in-out infinite;
+}
+
+body.hv-page .brand .pc-growth-bar-1 {
+  animation-delay: .1s;
+}
+
+body.hv-page .brand .pc-growth-bar-2 {
+  animation-delay: .3s;
+}
+
+body.hv-page .brand .pc-growth-bar-3 {
+  animation-delay: .5s;
+}
+
+body.hv-page .brand .pc-growth-arrow {
+  stroke-dasharray: 24;
+  stroke-dashoffset: 24;
+  animation: pcGrowthArrow 3.6s ease-in-out infinite;
+}
+
+@keyframes pcGrowthBar {
+  0%, 8% {
+    stroke-dashoffset: 10;
+    opacity: .3;
+  }
+
+  30%, 76% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    opacity: .75;
+  }
+}
+
+@keyframes pcGrowthArrow {
+  0%, 27% {
+    stroke-dashoffset: 24;
+    opacity: .3;
+  }
+
+  53%, 80% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    opacity: .75;
+  }
+}
+
+/* Slightly more activity on intentional hover. */
+body.hv-page .brand:hover .pc-growth-bar,
+body.hv-page .brand:focus-visible .pc-growth-bar {
+  animation-duration: 1.8s;
+}
+
+body.hv-page .brand:hover .pc-growth-arrow,
+body.hv-page .brand:focus-visible .pc-growth-arrow {
+  animation-duration: 1.8s;
+}
+
+/* Static, fully visible icon for reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  body.hv-page .brand .pc-growth-bar,
+  body.hv-page .brand .pc-growth-arrow {
+    animation: none !important;
+    stroke-dashoffset: 0 !important;
+    opacity: 1 !important;
+  }
+}
+</style>
+
+
+<style is:global>
+/* PEST_CONTROL_SEO_LINKS_V1 */
+body.hv-page .resource {
+  position:relative;
+}
+body.hv-page .resource h3 a {
+  color:inherit;
+  text-decoration:none;
+}
+body.hv-page .resource h3 a::after {
+  content:"";
+  position:absolute;
+  inset:0;
+}
+body.hv-page .resource:hover h3 a,
+body.hv-page .resource:focus-within h3 a {
+  color:#277c61;
+}
+body.hv-page .resource:focus-within {
+  outline:3px solid #e4ac7a;
+  outline-offset:4px;
+}
+</style>
+
+</head>
+<body class="hv-page" id="top">
+<div class="pc-falling-layer" aria-hidden="true"><svg class="pc-fall-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="pc-fall-ant" viewBox="0 0 32 24">
+  <ellipse cx="8" cy="12" rx="5" ry="4"
+           fill="currentColor"/>
+  <ellipse cx="18" cy="12" rx="3.5" ry="3"
+           fill="currentColor"/>
+  <circle cx="26" cy="12" r="3"
+          fill="currentColor"/>
+  <g stroke="currentColor" stroke-width="1.5"
+     stroke-linecap="round" fill="none">
+    <path d="M10 10 L5 5 L2 5"/>
+    <path d="M10 14 L5 19 L2 19"/>
+    <path d="M17 10 L14 5 L11 3"/>
+    <path d="M17 14 L14 19 L11 21"/>
+    <path d="M22 10 L25 5 L28 3"/>
+    <path d="M22 14 L25 19 L28 21"/>
+    <path d="M28 9 L31 6"/>
+    <path d="M28 15 L31 18"/>
+  </g>
+</symbol>
+
+<symbol id="pc-fall-beetle" viewBox="0 0 32 32">
+  <ellipse cx="16" cy="18" rx="10" ry="11"
+           fill="currentColor"/>
+  <path d="M16 8 V28"
+        stroke="#102b30"
+        stroke-width="1.4"
+        fill="none"/>
+  <circle cx="16" cy="7" r="5"
+          fill="currentColor"/>
+  <g stroke="currentColor" stroke-width="1.6"
+     stroke-linecap="round" fill="none">
+    <path d="M9 14 L3 10"/>
+    <path d="M7 21 L2 23"/>
+    <path d="M10 26 L6 31"/>
+    <path d="M23 14 L29 10"/>
+    <path d="M25 21 L30 23"/>
+    <path d="M22 26 L26 31"/>
+    <path d="M14 4 L11 1"/>
+    <path d="M18 4 L21 1"/>
+  </g>
+</symbol>
+</defs></svg><span class="pc-falling-particle" style="--pc-left:3%;--pc-size:10px;--pc-duration:24s;--pc-delay:-7s;--pc-sway:22px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-beetle"/></svg></span><span class="pc-falling-particle" style="--pc-left:9%;--pc-size:13px;--pc-duration:29s;--pc-delay:-18s;--pc-sway:-31px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-ant"/></svg></span><span class="pc-falling-particle" style="--pc-left:15%;--pc-size:11px;--pc-duration:34s;--pc-delay:-11s;--pc-sway:40px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-beetle"/></svg></span><span class="pc-falling-particle" style="--pc-left:21%;--pc-size:15px;--pc-duration:27s;--pc-delay:-24s;--pc-sway:-49px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-ant"/></svg></span><span class="pc-falling-particle" style="--pc-left:27%;--pc-size:12px;--pc-duration:32s;--pc-delay:-5s;--pc-sway:58px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-beetle"/></svg></span><span class="pc-falling-particle" style="--pc-left:33%;--pc-size:9px;--pc-duration:37s;--pc-delay:-21s;--pc-sway:-22px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-ant"/></svg></span><span class="pc-falling-particle" style="--pc-left:39%;--pc-size:14px;--pc-duration:25s;--pc-delay:-13s;--pc-sway:31px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-beetle"/></svg></span><span class="pc-falling-particle" style="--pc-left:45%;--pc-size:11px;--pc-duration:31s;--pc-delay:-29s;--pc-sway:-40px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-ant"/></svg></span><span class="pc-falling-particle" style="--pc-left:51%;--pc-size:13px;--pc-duration:36s;--pc-delay:-16s;--pc-sway:49px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-beetle"/></svg></span><span class="pc-falling-particle" style="--pc-left:57%;--pc-size:10px;--pc-duration:28s;--pc-delay:-23s;--pc-sway:-58px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-ant"/></svg></span><span class="pc-falling-particle" style="--pc-left:63%;--pc-size:15px;--pc-duration:33s;--pc-delay:-8s;--pc-sway:22px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-beetle"/></svg></span><span class="pc-falling-particle" style="--pc-left:69%;--pc-size:11px;--pc-duration:26s;--pc-delay:-20s;--pc-sway:-31px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-ant"/></svg></span><span class="pc-falling-particle" style="--pc-left:75%;--pc-size:12px;--pc-duration:35s;--pc-delay:-15s;--pc-sway:40px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-beetle"/></svg></span><span class="pc-falling-particle" style="--pc-left:81%;--pc-size:14px;--pc-duration:30s;--pc-delay:-28s;--pc-sway:-49px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-ant"/></svg></span><span class="pc-falling-particle" style="--pc-left:87%;--pc-size:10px;--pc-duration:38s;--pc-delay:-9s;--pc-sway:58px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-beetle"/></svg></span><span class="pc-falling-particle" style="--pc-left:93%;--pc-size:13px;--pc-duration:27s;--pc-delay:-17s;--pc-sway:-22px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-ant"/></svg></span><span class="pc-falling-particle" style="--pc-left:6%;--pc-size:11px;--pc-duration:33s;--pc-delay:-30s;--pc-sway:31px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-ant"/></svg></span><span class="pc-falling-particle" style="--pc-left:30%;--pc-size:13px;--pc-duration:39s;--pc-delay:-14s;--pc-sway:-40px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-beetle"/></svg></span><span class="pc-falling-particle" style="--pc-left:54%;--pc-size:10px;--pc-duration:31s;--pc-delay:-26s;--pc-sway:49px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-ant"/></svg></span><span class="pc-falling-particle" style="--pc-left:78%;--pc-size:12px;--pc-duration:36s;--pc-delay:-4s;--pc-sway:-58px"><svg viewBox="0 0 32 32" aria-hidden="true"><use href="#pc-fall-beetle"/></svg></span></div>
+ <div class="pl-scroll-header" data-pl-scroll-header>
+<header class="wrap nav">
+   <a class="brand" href="/" aria-label="LeadsFlo home"><BrandMark theme="dark" />
+
+</a>
+   <nav class="navlinks" aria-label="Pest Control landing page">
+    <a href="#services">Services</a><a href="#process">How it works</a><a href="#calculator">Estimator</a><a class="navcta" href={booking}>Book a Call ↗</a>
+   </nav>
+  </header>
+
+<nav class="pl-mobile-shortcuts"
+     aria-label="Pest Control page sections">
+  <a href="#services">Services</a>
+  <a href="#process">How it works</a>
+  <a href="#pest control-work">Our approach</a>
+  <a href="#calculator">Estimator</a>
+</nav>
+</div>
+<div class="top">
+
+  <section class="hero">
+   <div class="wrap herogrid">
+    <div>
+     <p class="eyebrow">PEST CONTROL MARKETING / LEAD GENERATION</p>
+     <h1>More pest control calls.<br/><em>More booked inspections.</em></h1>
+     <p>Google Ads, Meta Ads, pest-specific landing pages and connected follow-up for pest control companies that want qualified inquiries, inspections and booked services—not just more clicks.</p>
+     <div class="actions"><a class="cta" href={booking}>Book a Strategy Call ↗</a><a class="cta alt" href="#process">See How It Works ↓</a></div>
+     <div class="trust"><span>Local service demand</span><span>Lead qualification</span><span>Appointment follow-up</span></div>
+    </div>
+
+    <div class="visual pl-visual"
+         role="img"
+         aria-label="Animated pest inspection and lead-to-booking workflow">
+      <div class="visualhead">
+        <span>PEST CONTROL / GROWTH SYSTEM</span>
+        <span class="status">FLOW CONNECTED</span>
+      </div>
+
+
+<div class="pc-inspection-scene" aria-hidden="true">
+  <svg viewBox="0 0 420 290" fill="none"
+       xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="pc-flow"
+                      x1="38" y1="85" x2="375" y2="225"
+                      gradientUnits="userSpaceOnUse">
+        <stop stop-color="#91e5b8"/>
+        <stop offset=".5" stop-color="#75cbbb"/>
+        <stop offset="1" stop-color="#eab77c"/>
+      </linearGradient>
+      <radialGradient id="pc-glow">
+        <stop stop-color="#98f3c2" stop-opacity=".25"/>
+        <stop offset="1" stop-color="#98f3c2" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+
+    <rect x="16" y="20" width="388" height="247"
+          rx="19" fill="#102e30" stroke="#557f78"/>
+
+    <path class="pc-route-base"
+          d="M52 111 H135 Q157 111 157 133
+             V171 Q157 191 179 191
+             H250 Q275 191 275 166
+             V123 Q275 103 297 103 H370"/>
+
+    <path class="pc-route-active"
+          d="M52 111 H135 Q157 111 157 133
+             V171 Q157 191 179 191
+             H250 Q275 191 275 166
+             V123 Q275 103 297 103 H370"/>
+
+    <circle cx="90" cy="111" r="43" fill="url(#pc-glow)"/>
+    <circle cx="90" cy="111" r="29"
+            stroke="#9bdcbc" stroke-width="2"
+            fill="#17463f"/>
+
+    <g class="pc-scan">
+      <circle cx="90" cy="111" r="21"
+              stroke="#8de9b5" stroke-width="1.6"
+              stroke-dasharray="4 6"/>
+      <path d="M90 90 V132 M69 111 H111"
+            stroke="#e9c18e" stroke-width="1.8"
+            stroke-linecap="round"/>
+      <circle cx="90" cy="111" r="6"
+              fill="#ecbd7d"/>
+    </g>
+
+    <circle cx="212" cy="191" r="24"
+            fill="#19483f" stroke="#91deb6"
+            stroke-width="2.5"/>
+    <path d="M201 191 L208 198 L223 183"
+          stroke="#bbf3d3" stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <path d="M346 79 L365 88 V109
+             Q365 125 346 138
+             Q327 125 327 109 V88 Z"
+          fill="#255449" stroke="#d8b083"
+          stroke-width="2.5"/>
+    <path d="M337 108 L343 115 L355 100"
+          stroke="#c2f4d9" stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+
+    <circle class="pc-moving-dot" r="5"
+            fill="#ffe0a8">
+      <animateMotion dur="5.4s"
+                     repeatCount="indefinite"
+                     path="M52 111 H135 Q157 111 157 133 V171 Q157 191 179 191 H250 Q275 191 275 166 V123 Q275 103 297 103 H370"/>
+    </circle>
+
+    <text x="53" y="173" class="pc-svg-label">
+      IDENTIFY
+    </text>
+    <text x="178" y="242" class="pc-svg-label">
+      QUALIFY
+    </text>
+    <text x="315" y="172" class="pc-svg-label">
+      BOOK
+    </text>
+  </svg>
+
+  <div class="pc-inspection-caption">
+    LOCAL SEARCH → PEST INQUIRY → BOOKED INSPECTION
+  </div>
+</div>
+
+
+<div class="pc-detection-panel"
+     data-pc-scanner
+     data-pc-phase="detect">
+
+  <div class="pc-detection-top">
+    <span class="pc-detection-eyebrow">
+      PEST ACTIVITY MONITOR
+    </span>
+    <span class="pc-detection-live">
+      <span class="pc-live-dot"></span>
+      SYSTEM ACTIVE
+    </span>
+  </div>
+
+  <div class="pc-detection-status"
+       aria-live="off">
+    <div class="pc-detection-indicator"
+         aria-hidden="true">
+      <span class="pc-indicator-ring"></span>
+      <span class="pc-indicator-center"></span>
+    </div>
+
+    <div class="pc-detection-copy">
+      <strong data-pc-phase-title>
+        Activity detected
+      </strong>
+      <small data-pc-phase-description>
+        Relevant local pest control inquiry
+      </small>
+    </div>
+  </div>
+
+  <div class="pc-stage-controls"
+       role="group"
+       aria-label="Explore the illustrative pest lead workflow">
+    <button type="button"
+            data-pc-stage="detect"
+            aria-pressed="true">
+      <span>01</span> Detect
+    </button>
+
+    <button type="button"
+            data-pc-stage="qualify"
+            aria-pressed="false">
+      <span>02</span> Qualify
+    </button>
+
+    <button type="button"
+            data-pc-stage="book"
+            aria-pressed="false">
+      <span>03</span> Book
+    </button>
+  </div>
+
+  <p class="pc-detection-disclaimer">
+    Interactive lead-flow illustration, not live customer data.
+  </p>
+</div>
+
+<div class="flowmeters">
+        <div class="meter"><small>01 / ATTRACT</small><strong>Local search</strong></div>
+        <div class="meter"><small>02 / CAPTURE</small><strong>Service request</strong></div>
+        <div class="meter"><small>03 / BOOK</small><strong>Next action</strong></div>
+      </div>
+    </div>
+
+   </div>
+
+</section>
+ </div>
+ <div class="hv-marquee" aria-label="Pest Control marketing capabilities">
+  <div class="hv-marquee-heading">
+    FROM LOCAL SEARCH TO BOOKED SERVICE
+    <span>ONE CONNECTED PEST CONTROL GROWTH SYSTEM</span>
+  </div>
+<div class="hv-marquee-window" tabindex="0"><div class="hv-marquee-track"><div class="hv-marquee-group"><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◉</span><strong class="hv-ticker-label">Google Ads</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">∞</span><strong class="hv-ticker-label">Meta Ads</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◎</span><strong class="hv-ticker-label">Pest Control Landing Pages</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">↗</span><strong class="hv-ticker-label">Lead Qualification</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">✳</span><strong class="hv-ticker-label">CRM Automation</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◈</span><strong class="hv-ticker-label">Appointment Setting</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">❄</span><strong class="hv-ticker-label">Termite Inspection Campaigns</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◌</span><strong class="hv-ticker-label">Rodent & Recurring Services</strong></span></div><div class="hv-marquee-group" aria-hidden="true"><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◉</span><strong class="hv-ticker-label">Google Ads</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">∞</span><strong class="hv-ticker-label">Meta Ads</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◎</span><strong class="hv-ticker-label">Pest Control Landing Pages</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">↗</span><strong class="hv-ticker-label">Lead Qualification</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">✳</span><strong class="hv-ticker-label">CRM Automation</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◈</span><strong class="hv-ticker-label">Appointment Setting</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">❄</span><strong class="hv-ticker-label">Termite Inspection Campaigns</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◌</span><strong class="hv-ticker-label">Rodent & Recurring Services</strong></span></div></div></div></div>
+ <main>
+
+
+
+<section class="section" id="challenge">
+  <div class="wrap introgrid">
+    <div>
+      <span class="eyebrow blue">THE REAL CHALLENGE</span>
+      <h2 class="heading">
+        Not every pest inquiry needs the same response.
+      </h2>
+    </div>
+    <div>
+      <p class="bodycopy">
+        A termite inspection, rodent problem, ant infestation
+        and commercial pest management inquiry involve different
+        customer concerns, services and buying timelines.
+      </p>
+      <p class="bodycopy">
+        Your marketing should attract the right service requests,
+        identify useful details and give customers a clear,
+        professional next step.
+      </p>
+      <p class="bodycopy">
+        LeadsFlo connects campaigns, landing pages, inquiry
+        qualification and appointment follow-up.
+      </p>
+    </div>
+  </div>
+</section>
+  <section class="section dark" id="services"><div class="wrap"><div class="sectop"><div><span class="eyebrow" style="color:#9bd7e9">WHAT WE BUILD</span><h2 class="heading">From local search to booked inspections.</h2></div><p class="bodycopy">Four connected capabilities for local pest control demand, qualified inquiries and appointment follow-up.</p></div><div class="servicegrid">{offerings.map(item=><article class="service" tabindex="0" role="button" data-hv-service={item.n} aria-label={`Explore ${item.name}`}><span class="index">{item.n} / {item.tag}</span><h3>{item.name}</h3><p>{item.desc}</p><small>LEADSFLO / Pest Control</small></article>)}</div></div>
+<div class="hv-service-preview" data-hv-preview aria-live="polite">
+  <div class="hv-preview-copy">
+    <span class="eyebrow">
+      HOVER TO EXPLORE /
+      <span data-hv-preview-number>01</span>
+    </span>
+    <h3 data-hv-preview-name>Google Ads for Pest Control</h3>
+    <p data-hv-preview-desc>
+      Reach local searches for termite inspections,
+      rodent control and professional pest services.
+    </p>
+  </div>
+  <div class="hv-preview-graphic" aria-hidden="true">
+    <span class="hv-preview-pulse"></span>
+    <span class="hv-preview-pulse hv-preview-pulse-alt"></span>
+    <span class="hv-preview-center">↗</span>
+    <small>LEAD FLOW / ACTIVE</small>
+  </div>
+</div>
+</section>
+  <section class="section journey" id="process"><div class="wrap"><span class="eyebrow blue">THE INTERACTIVE PROCESS</span><h2 class="heading">Five steps. One connected journey.</h2><p class="bodycopy" style="margin-bottom:33px">Select each stage to see how a pest control inquiry moves from search to a booked inspection or service visit.</p><div class="journeygrid" data-hv-journey><div class="steps" role="group" aria-label="Pest Control lead journey">{stages.map((stage,index)=><button class="step" type="button" data-hv-step={index} aria-pressed={index===0?'true':'false'}><span class="num">{stage.n}</span><span>{stage.label}</span><span aria-hidden="true">↗</span></button>)}</div><div class="stagepanel" aria-live="polite"><span class="stagelabel" data-hv-tag>{stages[0].tag}</span><h3 data-hv-title>{stages[0].title}</h3><p data-hv-body>{stages[0].body}</p><div class="stagebottom"><div><span class="eyebrow blue">WHAT HAPPENS HERE</span><ul data-hv-points>{stages[0].points.map(point=><li>{point}</li>)}</ul></div><div class="output" data-hv-outcome>{stages[0].outcome}</div></div></div></div></div></section>
+
+
+
+<section class="section" id="qualification">
+  <div class="wrap qualgrid">
+    <div>
+      <span class="eyebrow blue">
+        QUALIFICATION MATTERS
+      </span>
+      <h2 class="heading">
+        Know the property and pest concern.
+      </h2>
+      <p class="bodycopy">
+        A termite inspection, recurring residential plan
+        and commercial pest-management contract require
+        different intake and follow-up.
+      </p>
+      <p class="bodycopy">
+        Ask for useful details without claiming a diagnosis,
+        treatment recommendation or price before professional
+        assessment.
+      </p>
+    </div>
+
+    <div class="qualcard">
+      <div class="qualrow">
+        <span>ILLUSTRATIVE LEAD PROFILE</span>
+        <strong>01 / 05</strong>
+      </div>
+      <div class="qualrow">
+        <span>Service</span>
+        <strong>Termite Inspection</strong>
+      </div>
+      <div class="qualrow">
+        <span>Property</span>
+        <strong>Residential</strong>
+      </div>
+      <div class="qualrow">
+        <span>Service area</span>
+        <strong>Within coverage</strong>
+      </div>
+      <div class="qualrow">
+        <span>Timing</span>
+        <strong>Next available visit</strong>
+      </div>
+      <div class="qualrow">
+        <span>Next step</span>
+        <strong>Inspection scheduling</strong>
+      </div>
+      <p style="font-size:12px;line-height:1.7;color:#617f92">
+        Illustration only; not a real customer inquiry.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="hv-photo-section" id="pest-control-work">
+  <div class="wrap">
+    <div class="hv-photo-heading">
+      <div>
+        <span class="eyebrow blue">
+          BUILT AROUND REAL PEST CONTROL WORK
+        </span>
+        <h2 class="heading">
+          Different pests.<br/>Different service needs.
+        </h2>
+      </div>
+      <p class="bodycopy">
+        Residential treatments, termite inspections and
+        commercial pest management need distinct offers,
+        intake processes and customer follow-up.
+      </p>
+    </div>
+
+    <div class="hv-photo-grid">
+      <figure class="hv-photo-card hv-photo-feature">
+        <div class="hv-photo-image">
+          <img src="/images/pest-control/pest-control-service.jpg"
+               alt="Pest control specialist performing outdoor treatment"
+               loading="lazy" decoding="async"
+               width="1200" height="800"/>
+        </div>
+        <figcaption>
+          <small>01 / RESIDENTIAL PEST CONTROL</small>
+          <strong>
+            Connect households with professional pest services.
+          </strong>
+          <span>
+            Local demand, service qualification and
+            inspection booking.
+          </span>
+        </figcaption>
+      </figure>
+
+      <figure class="hv-photo-card">
+        <div class="hv-photo-image">
+          <img src="/images/pest-control/termite-inspection.jpg"
+               alt="Close-up of a termite on wood"
+               loading="lazy" decoding="async"
+               width="1200" height="800"/>
+        </div>
+        <figcaption>
+          <small>02 / TERMITE SERVICES</small>
+          <strong>
+            Make termite inspection requests easier.
+          </strong>
+          <span>
+            Service-specific campaigns and clear
+            appointment next steps.
+          </span>
+        </figcaption>
+      </figure>
+
+      <figure class="hv-photo-card">
+        <div class="hv-photo-image">
+          <img src="/images/pest-control/commercial-pest-control.jpg"
+               alt="Professional pest control treatment in a warehouse"
+               loading="lazy" decoding="async"
+               width="1200" height="800"/>
+        </div>
+        <figcaption>
+          <small>03 / COMMERCIAL PEST MANAGEMENT</small>
+          <strong>
+            Reach businesses seeking pest management services.
+          </strong>
+          <span>
+            Qualify property type, coverage and
+            service requirements.
+          </span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <p class="hv-photo-credit">
+      Illustrative pest control stock photography,
+      not LeadsFlo client projects.
+    </p>
+  </div>
+</section>
+
+
+<section class="section calculator" id="calculator">
+  <div class="wrap calcgrid">
+    <div>
+      <span class="eyebrow blue">
+        CAMPAIGN SCENARIO TOOL
+      </span>
+      <h2 class="heading">
+        What could more booked pest control jobs mean?
+      </h2>
+      <p class="bodycopy">
+        Adjust the sliders to explore a hypothetical
+        scenario using monthly inquiries, appointment
+        booking rate, close rate and average initial-job revenue.
+      </p>
+      <p class="bodycopy">
+        <strong>Important:</strong>
+        These are assumptions, not LeadsFlo results,
+        forecasts or guarantees. Revenue is not profit
+        and excludes advertising and service costs.
+        Recurring-plan revenue is not included.
+      </p>
+    </div>
+
+    <div class="calcbox" data-hv-calc>
+      <label class="range">
+        <span class="rangetitle">
+          Monthly inquiries
+          <output data-hv-value="leads">60</output>
+        </span>
+        <input data-hv-range="leads" type="range"
+               min="10" max="250" step="10" value="60"/>
+      </label>
+
+      <label class="range">
+        <span class="rangetitle">
+          Appointment booking rate
+          <output data-hv-value="book">35%</output>
+        </span>
+        <input data-hv-range="book" type="range"
+               min="5" max="90" step="5" value="35"/>
+      </label>
+
+      <label class="range">
+        <span class="rangetitle">
+          Close rate
+          <output data-hv-value="close">25%</output>
+        </span>
+        <input data-hv-range="close" type="range"
+               min="5" max="80" step="5" value="25"/>
+      </label>
+
+      <label class="range">
+        <span class="rangetitle">
+          Average initial-job revenue
+          <output data-hv-value="job">$500</output>
+        </span>
+        <input data-hv-range="job" type="range"
+               min="100" max="5000" step="100" value="500"/>
+      </label>
+
+      <div class="result">
+        <small>ILLUSTRATIVE MONTHLY GROSS REVENUE</small>
+        <strong data-hv-revenue>$2,625</strong>
+        <p data-hv-breakdown>
+          21.0 potential bookings · 5.3 expected jobs
+        </p>
+        <p>
+          Scenario only. Not a revenue prediction
+          or performance claim.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="section" id="faq"><div class="wrap faqgrid"><div><span class="eyebrow blue">COMMON QUESTIONS</span><h2 class="heading">Before we get started.</h2><p class="bodycopy">Common questions about pest control marketing, qualification and appointment setting.</p></div><div class="faqlist">{faqs.map((item,index)=><details open={index===0}><summary>{item.q}</summary><p>{item.a}</p></details>)}</div></div></section>
+
+
+
+<section class="section resources" id="resources">
+  <div class="wrap">
+    <span class="eyebrow blue">
+      PEST CONTROL MARKETING INSIGHTS
+    </span>
+    <h2 class="heading">
+      Build a stronger pest control pipeline.
+    </h2>
+    <p class="bodycopy" style="margin-bottom:34px">
+      Four practical guides for pest control companies.
+    </p>
+
+    <div class="resourcegrid">
+      <article class="resource">
+        <small>GUIDE / 01</small>
+        <h3><a href="/insights/pest-control-lead-generation/">Pest Control Lead Generation</a></h3>
+      </article>
+      <article class="resource">
+        <small>GUIDE / 02</small>
+        <h3><a href="/insights/google-ads-for-pest-control/">Google Ads for Pest Control</a></h3>
+      </article>
+      <article class="resource">
+        <small>GUIDE / 03</small>
+        <h3><a href="/insights/pest-control-marketing-strategies/">Pest Control Marketing Strategies</a></h3>
+      </article>
+      <article class="resource">
+        <small>GUIDE / 04</small>
+        <h3><a href="/insights/pest-control-lead-costs/">Pest Control Lead Costs</a></h3>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="closing" id="contact">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#c1f0d6">
+      LET'S TALK ABOUT YOUR MARKET
+    </span>
+    <h2 class="heading">
+      Turn pest inquiries into booked service opportunities.
+    </h2>
+    <p>
+      Let's review your services, coverage area,
+      inspection process and how your team
+      follows up with new customers.
+    </p>
+    <a class="cta" href={booking}>
+      Book a Strategy Call ↗
+    </a>
+  </div>
+</section>
+ </main>
+
+<footer class="hv-footer-v6">
+  <div class="wrap hv-footer-main">
+    <div class="hv-footer-intro">
+      <a class="brand hv-footer-brand" href="/"
+         aria-label="LeadsFlo home">
+        <BrandMark theme="dark" />
+      </a>
+
+      <h2>Better pest control leads.<br />
+        <em>Better follow-through.</em>
+      </h2>
+
+      <p>
+        Advertising, conversion funnels, qualification and
+        appointment setting working together to help pest control
+        businesses turn inquiries into conversations.
+      </p>
+
+      <a class="hv-footer-cta" href={booking}>
+        Discuss Your Pest Control Growth ↗
+      </a>
+    </div>
+
+    <nav class="hv-footer-column"
+         aria-label="Pest Control marketing services">
+      <h3>What we do</h3>
+      <a href="#services">Google & Meta Ads</a>
+      <a href="#services">Pest Control Landing Pages</a>
+      <a href="#qualification">Lead Qualification</a>
+      <a href="#process">CRM & Follow-up</a>
+      <a href="#calculator">Revenue Scenario</a>
+    </nav>
+
+    <nav class="hv-footer-column"
+         aria-label="Explore LeadsFlo">
+      <h3>Explore</h3>
+      <a href="/">Home</a>
+      <a href="/industries/">Industries</a>
+      <a href="/insights/">Insights</a>
+      <a href="/work/">Our Work</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+
+    <div class="hv-footer-column hv-footer-contact">
+      <h3>Ready to grow?</h3>
+      <p>
+        Tell us what you offer, where you operate
+        and what you want to improve.
+      </p>
+      <a href={booking}>Book a Strategy Call ↗</a>
+    </div>
+  </div>
+
+  <div class="wrap hv-footer-bottom">
+    <span>© {new Date().getFullYear()} LeadsFlo</span>
+    <span>More leads. Less guesswork.</span>
+    <nav aria-label="Legal information">
+      <a href="/privacy-policy/">Privacy Policy</a>
+      <a href="/terms-and-conditions/">Terms & Conditions</a>
+    </nav>
+    <a href="#top" class="hv-back-top">Back to top ↑</a>
+  </div>
+</footer>
+
+ <script define:vars={{stages,offerings}}>
+  const root=document.querySelector('[data-hv-journey]');
+  if(root){
+   const buttons=[...root.querySelectorAll('[data-hv-step]')];
+   function choose(index){
+    const s=stages[index];if(!s)return;
+    buttons.forEach((b,i)=>b.setAttribute('aria-pressed',String(i===index)));
+    function put(sel,text){const el=root.querySelector(sel);if(el)el.textContent=text;}
+    put('[data-hv-tag]',s.tag);put('[data-hv-title]',s.title);put('[data-hv-body]',s.body);put('[data-hv-outcome]',s.outcome);
+    const list=root.querySelector('[data-hv-points]');
+    if(list){list.replaceChildren();s.points.forEach(p=>{const li=document.createElement('li');li.textContent=p;list.append(li);});}
+   }
+
+   buttons.forEach((b,i)=>{
+    b.addEventListener('click',()=>choose(i));
+    b.addEventListener('focus',()=>choose(i));
+    b.addEventListener('pointerenter',e=>{
+      if(e.pointerType==='mouse'||e.pointerType==='pen'){
+        choose(i);
+      }
+    });
+   });
+
+  }
+
+  // Interactive service cards.
+  const cards = [
+    ...document.querySelectorAll('[data-hv-service]')
+  ];
+
+  const preview = document.querySelector('[data-hv-preview]');
+
+  if (preview && cards.length === offerings.length) {
+    function pick(index) {
+      const item = offerings[index];
+      if (!item) return;
+
+      cards.forEach((card, i) => {
+        card.classList.toggle('is-active', i === index);
+        card.setAttribute('aria-pressed', String(i === index));
+      });
+
+      preview.querySelector(
+        '[data-hv-preview-number]'
+      ).textContent = item.n;
+
+      preview.querySelector(
+        '[data-hv-preview-name]'
+      ).textContent = item.name;
+
+      preview.querySelector(
+        '[data-hv-preview-desc]'
+      ).textContent = item.desc;
+    }
+
+    cards.forEach((card, index) => {
+      card.addEventListener('click', () => pick(index));
+      card.addEventListener('focus', () => pick(index));
+
+      card.addEventListener('pointerenter', event => {
+        if (event.pointerType === 'mouse' ||
+            event.pointerType === 'pen') {
+          pick(index);
+        }
+      });
+
+      card.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          pick(index);
+        }
+      });
+    });
+
+    pick(0);
+  }
+
+  // Native tap and keyboard support remains intact.
+  // Mouse hover opens the relevant FAQ.
+  const faq = [
+    ...document.querySelectorAll('.faqlist details')
+  ];
+
+  faq.forEach(item => {
+    item.addEventListener('pointerenter', event => {
+      if (event.pointerType !== 'mouse' &&
+          event.pointerType !== 'pen') return;
+
+      faq.forEach(other => {
+        other.open = (other === item);
+      });
+    });
+  });
+
+  const box=document.querySelector('[data-hv-calc]');
+  if(box){
+   const money=n=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n);
+   const get=k=>Number(box.querySelector(`[data-hv-range="${k}"]`)?.value||0);
+   function calc(){
+    const leads=get('leads'),book=get('book'),close=get('close'),job=get('job');
+    const bookings=leads*book/100,won=bookings*close/100;
+    const outputs={leads:String(leads),book:book+'%',close:close+'%',job:money(job)};
+    Object.entries(outputs).forEach(([key,val])=>{const el=box.querySelector(`[data-hv-value="${key}"]`);if(el)el.textContent=val;});
+    box.querySelector('[data-hv-revenue]').textContent=money(won*job);
+    box.querySelector('[data-hv-breakdown]').textContent=bookings.toFixed(1)+' potential bookings · '+won.toFixed(1)+' expected jobs';
+   }
+   box.querySelectorAll('[data-hv-range]').forEach(input=>input.addEventListener('input',calc));calc();
+  }
+ </script>
+
+
+<script is:inline>
+/* Pest Control_LOGO_V4_FIXED — header and footer */
+(function () {
+  const logos = document.querySelectorAll(
+    'body.hv-page .brand .lf-brand-v4__text > span'
+  );
+
+  logos.forEach(word => {
+    if (word.textContent.trim() !== 'flo') return;
+    if (word.querySelector('.hv-logo-o')) return;
+
+    const letter = document.createElement('span');
+    letter.className = 'hv-logo-o';
+    letter.textContent = 'o';
+
+    const fan = document.createElement('span');
+    fan.className = 'hv-logo-fan';
+    fan.setAttribute('aria-hidden', 'true');
+
+    fan.innerHTML = `
+      <svg viewBox="0 0 32 32" fill="none"
+           xmlns="http://www.w3.org/2000/svg" focusable="false">
+
+<path class="pc-logo-shield"
+      d="M16 3 L27 7 V15
+         C27 23 22 27 16 30
+         C10 27 5 23 5 15 V7 Z"
+      fill="#a7eac7"
+      fill-opacity=".16"
+      stroke="#a7eac7"
+      stroke-width="1.9"
+      stroke-linejoin="round"/>
+
+<g class="pc-logo-ant" fill="#eeb782">
+  <ellipse cx="12.4" cy="17.5"
+           rx="4" ry="3.5"/>
+  <ellipse cx="18.3" cy="17.5"
+           rx="2.6" ry="2.7"/>
+  <circle cx="23" cy="17.5" r="2.5"/>
+</g>
+
+<g stroke="#eeb782" stroke-width="1.5"
+   stroke-linecap="round">
+  <path d="M16 15 L13 11 M16 20 L13 24"/>
+  <path d="M20 15 L22 11 M20 20 L22 24"/>
+  <path d="M11 15 L8 12 M11 20 L8 23"/>
+  <path d="M24 15 L26 12 M24 20 L26 23"/>
+</g>
+
+
+
+<g class="pc-logo-growth"
+   aria-hidden="true"
+   fill="none"
+   stroke-linecap="round"
+   stroke-linejoin="round">
+
+  <path class="pc-growth-bar pc-growth-bar-1"
+        d="M18 11 V14"
+        stroke="#f0c08b"
+        stroke-width="1.8"/>
+
+  <path class="pc-growth-bar pc-growth-bar-2"
+        d="M21 9.5 V14"
+        stroke="#f0c08b"
+        stroke-width="1.8"/>
+
+  <path class="pc-growth-bar pc-growth-bar-3"
+        d="M24 7.5 V14"
+        stroke="#f0c08b"
+        stroke-width="1.8"/>
+
+  <path class="pc-growth-arrow"
+        d="M17 10.5 L20 8.5 L22 9 L25 5.5
+           M22.6 5.5 H25 V8"
+        stroke="#b3f0cb"
+        stroke-width="1.25"/>
+</g>
+
+</svg>
+    `;
+
+    letter.appendChild(fan);
+    word.textContent = 'fl';
+    word.appendChild(letter);
+  });
+})();
+</script>
+
+
+
+<div class="pl-sticky-booking"
+     aria-label="Book a pest control marketing consultation">
+  <div class="pl-sticky-inner">
+    <a href={booking}
+       class="pl-sticky-cta"
+       aria-label="Book a strategy call with LeadsFlo">
+      <span class="pl-sticky-cta-copy">
+        <strong>Book a Strategy Call</strong>
+        <small>Discuss your pest control lead generation</small>
+      </span>
+      <span class="pl-sticky-arrow" aria-hidden="true">↗</span>
+    </a>
+  </div>
+</div>
+
+
+<script is:inline>
+/* PEST CONTROL_HEADER_V3 */
+(() => {
+  const header = document.querySelector(
+    '[data-pl-scroll-header]'
+  );
+
+  if (!header) return;
+
+  let previousY = Math.max(0, window.scrollY);
+  let directionDistance = 0;
+  let lastDirection = 0;
+  let ticking = false;
+
+  const reveal = () => {
+    header.classList.remove('pl-header-hidden');
+  };
+
+  function update() {
+    const y = Math.max(0, window.scrollY);
+    const difference = y - previousY;
+
+    previousY = y;
+    ticking = false;
+
+    if (
+      y <= 100 ||
+      document.activeElement &&
+      header.contains(document.activeElement)
+    ) {
+      reveal();
+      directionDistance = 0;
+      lastDirection = 0;
+      return;
+    }
+
+    // Ignore small scroll jitter and rubber-band bounce.
+    if (Math.abs(difference) < 2) return;
+
+    const direction = difference > 0 ? 1 : -1;
+
+    if (direction !== lastDirection) {
+      directionDistance = 0;
+      lastDirection = direction;
+    }
+
+    directionDistance += Math.abs(difference);
+
+    if (directionDistance < 16) return;
+
+    if (direction > 0) {
+      header.classList.add('pl-header-hidden');
+    } else {
+      reveal();
+    }
+
+    directionDistance = 0;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(update);
+  }, { passive: true });
+
+  header.addEventListener('focusin', reveal);
+
+  // Anchor navigation should reveal its destination cleanly.
+  header.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', reveal);
+  });
+
+  window.addEventListener('pageshow', () => {
+    previousY = Math.max(0, window.scrollY);
+    reveal();
+  });
+
+  reveal();
+})();
+</script>
+
+
+<script is:inline>
+/* Pest Control interactive inspection demonstration */
+(() => {
+  const panel = document.querySelector('[data-pc-scanner]');
+  if (!panel) return;
+
+  const title = panel.querySelector('[data-pc-phase-title]');
+  const description = panel.querySelector(
+    '[data-pc-phase-description]'
+  );
+  const buttons = Array.from(
+    panel.querySelectorAll('[data-pc-stage]')
+  );
+
+  const phases = [
+    {
+      id: 'detect',
+      title: 'Activity detected',
+      description: 'Relevant local pest control inquiry'
+    },
+    {
+      id: 'qualify',
+      title: 'Lead qualified',
+      description: 'Pest category, property and service area checked'
+    },
+    {
+      id: 'book',
+      title: 'Ready to schedule',
+      description: 'Inspection or service appointment next step'
+    }
+  ];
+
+  const reduced = window.matchMedia(
+    '(prefers-reduced-motion: reduce)'
+  );
+
+  let index = 0;
+  let interval = null;
+
+  const show = next => {
+    index = next;
+    const phase = phases[index];
+
+    panel.dataset.pcPhase = phase.id;
+    title.textContent = phase.title;
+    description.textContent = phase.description;
+
+    buttons.forEach(button => {
+      button.setAttribute(
+        'aria-pressed',
+        String(button.dataset.pcStage === phase.id)
+      );
+    });
+  };
+
+  const stop = () => {
+    if (interval !== null) {
+      window.clearInterval(interval);
+      interval = null;
+    }
+  };
+
+  const start = () => {
+    stop();
+
+    if (
+      reduced.matches ||
+      document.hidden ||
+      panel.matches(':hover') ||
+      panel.contains(document.activeElement)
+    ) return;
+
+    interval = window.setInterval(() => {
+      show((index + 1) % phases.length);
+    }, 3900);
+  };
+
+  buttons.forEach((button, next) => {
+    button.addEventListener('click', () => {
+      show(next);
+      stop();
+    });
+
+    button.addEventListener('focus', stop);
+  });
+
+  panel.addEventListener('mouseenter', stop);
+  panel.addEventListener('mouseleave', start);
+  panel.addEventListener('focusin', stop);
+  panel.addEventListener('focusout', () => {
+    window.requestAnimationFrame(start);
+  });
+
+  document.addEventListener('visibilitychange', start);
+
+  if (reduced.addEventListener) {
+    reduced.addEventListener('change', start);
+  }
+
+  show(0);
+  start();
+})();
+</script>
+
+</body>
+</html>
