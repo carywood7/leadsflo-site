@@ -30,3 +30,6 @@ pnpm-debug.log*
 dist/
 .astro/
 node_modules/
+
+# Local industry screenshot originals
+/public/images/industry-screenshots/

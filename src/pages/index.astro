@@ -103,6 +103,186 @@ import "../styles/content-upgrade.css";
   })} />
 
   <script is:inline defer src="/js/leadsflo-conversions.js"></script>
+
+<style is:global>
+/* LEADSFLO_INDUSTRY_HUB_V1 */
+.lf-industry-index {
+  padding:clamp(70px,8vw,112px) 0;
+  background:#edf3ee;
+  border-top:1px solid #d6e2da;
+  border-bottom:1px solid #d6e2da;
+}
+
+.lf-industry-index-heading {
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr);
+  gap:30px;
+  align-items:end;
+  margin-bottom:35px;
+}
+
+.lf-industry-index-heading h2 {
+  max-width:780px;
+  font-size:clamp(31px,4vw,54px);
+  line-height:1.12;
+  letter-spacing:-.045em;
+  color:#162d34;
+  margin:12px 0 0;
+}
+
+.lf-industry-index-heading > p {
+  color:#49636a;
+  font-size:15px;
+  line-height:1.8;
+  margin:0;
+}
+
+.lf-industry-index-grid {
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:11px;
+}
+
+.lf-industry-index-card {
+  position:relative;
+  min-width:0;
+  min-height:210px;
+  padding:23px 18px 20px;
+  border:1px solid #cbdcd0;
+  background:#fff;
+  color:#19323a;
+  text-decoration:none;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  border-radius:9px;
+  transition:
+    transform .2s ease,
+    border-color .2s ease,
+    box-shadow .2s ease;
+}
+
+.lf-industry-index-card:hover {
+  transform:translateY(-4px);
+  border-color:#6eae90;
+  box-shadow:0 15px 30px rgba(18,63,51,.10);
+}
+
+.lf-industry-index-card:focus-visible {
+  outline:3px solid #257b5e;
+  outline-offset:3px;
+}
+
+.lf-industry-index-number {
+  font-size:10px;
+  letter-spacing:.11em;
+  color:#608578;
+  font-weight:800;
+}
+
+.lf-industry-index-card strong {
+  display:block;
+  font-size:19px;
+  line-height:1.25;
+  letter-spacing:-.025em;
+}
+
+.lf-industry-index-description {
+  color:#5a7376;
+  font-size:12px;
+  line-height:1.65;
+  padding-right:6px;
+}
+
+.lf-industry-index-arrow {
+  display:block;
+  color:#277f61;
+  font-size:22px;
+  font-weight:750;
+  margin-top:auto;
+}
+
+.lf-industry-index-bottom {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  margin-top:28px;
+}
+
+.lf-industry-index-bottom p {
+  font-size:13px;
+  line-height:1.8;
+  color:#516c6d;
+  margin:0;
+}
+
+.lf-industry-index-bottom a {
+  color:#226f55;
+  font-weight:800;
+}
+
+.lf-industry-index-all {
+  white-space:nowrap;
+}
+
+@media(max-width:1100px) {
+  .lf-industry-index-grid {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
+
+@media(max-width:700px) {
+  .lf-industry-index-heading {
+    grid-template-columns:minmax(0,1fr);
+    gap:16px;
+  }
+
+  .lf-industry-index-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+  .lf-industry-index-card {
+    min-height:195px;
+    padding:18px 14px;
+  }
+
+  .lf-industry-index-card strong {
+    font-size:17px;
+  }
+
+  .lf-industry-index-bottom {
+    flex-direction:column;
+    align-items:flex-start;
+    gap:13px;
+  }
+
+  .lf-industry-index-all {
+    white-space:normal;
+  }
+}
+
+@media(max-width:360px) {
+  .lf-industry-index-grid {
+    grid-template-columns:1fr;
+  }
+
+  .lf-industry-index-card {
+    min-height:145px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .lf-industry-index-card {
+    transition:none;
+  }
+
+  .lf-industry-index-card:hover {
+    transform:none;
+  }
+}
+</style>
+
 </head>
 <body id="top">
   <Header currentPath="/" />
@@ -171,6 +351,179 @@ import "../styles/content-upgrade.css";
     </section>
 
 <WorkShowcase variant="home" />
+
+<!-- LEADSFLO_INDUSTRY_HUB_V1 -->
+<section class="lf-industry-index"
+         aria-labelledby="lf-industry-index-heading">
+  <div class="container">
+    <div class="lf-industry-index-heading">
+      <div>
+        <p class="section-kicker">
+          INDUSTRY-SPECIFIC LEAD GENERATION
+        </p>
+        <h2 id="lf-industry-index-heading">
+          Your industry. A better way to grow.
+        </h2>
+      </div>
+      <p>
+        Different services need different campaigns,
+        qualification and follow-up. Explore how
+        we adapt the approach to your market.
+      </p>
+    </div>
+
+    <div class="lf-industry-index-grid">
+
+      <a class="lf-industry-index-card"
+         href="/christmas-lighting-leads/">
+        <span class="lf-industry-index-number">
+          01 / INDUSTRY
+        </span>
+        <strong>Christmas Lighting</strong>
+        <span class="lf-industry-index-description">
+          Seasonal campaigns, installation quote funnels and booked estimates.
+        </span>
+        <span class="lf-industry-index-arrow"
+              aria-hidden="true">↗</span>
+      </a>
+
+      <a class="lf-industry-index-card"
+         href="/roofing-lead-generation/">
+        <span class="lf-industry-index-number">
+          02 / INDUSTRY
+        </span>
+        <strong>Roofing</strong>
+        <span class="lf-industry-index-description">
+          Residential and commercial roofing inquiries and inspections.
+        </span>
+        <span class="lf-industry-index-arrow"
+              aria-hidden="true">↗</span>
+      </a>
+
+      <a class="lf-industry-index-card"
+         href="/med-spa-lead-generation/">
+        <span class="lf-industry-index-number">
+          03 / INDUSTRY
+        </span>
+        <strong>Med Spa</strong>
+        <span class="lf-industry-index-description">
+          Consultation leads, visual advertising and appointment follow-up.
+        </span>
+        <span class="lf-industry-index-arrow"
+              aria-hidden="true">↗</span>
+      </a>
+
+      <a class="lf-industry-index-card"
+         href="/msp-lead-generation/">
+        <span class="lf-industry-index-number">
+          04 / INDUSTRY
+        </span>
+        <strong>Managed IT / MSP</strong>
+        <span class="lf-industry-index-description">
+          Qualified business leads and discovery meetings for MSPs.
+        </span>
+        <span class="lf-industry-index-arrow"
+              aria-hidden="true">↗</span>
+      </a>
+
+      <a class="lf-industry-index-card"
+         href="/cybersecurity-marketing-agency/">
+        <span class="lf-industry-index-number">
+          05 / INDUSTRY
+        </span>
+        <strong>Cybersecurity</strong>
+        <span class="lf-industry-index-description">
+          Lead generation for cybersecurity firms and managed security providers.
+        </span>
+        <span class="lf-industry-index-arrow"
+              aria-hidden="true">↗</span>
+      </a>
+
+      <a class="lf-industry-index-card"
+         href="/it-services-lead-generation/">
+        <span class="lf-industry-index-number">
+          06 / INDUSTRY
+        </span>
+        <strong>IT Services</strong>
+        <span class="lf-industry-index-description">
+          B2B project inquiries and qualified IT consultations.
+        </span>
+        <span class="lf-industry-index-arrow"
+              aria-hidden="true">↗</span>
+      </a>
+
+      <a class="lf-industry-index-card"
+         href="/hvac-lead-generation/">
+        <span class="lf-industry-index-number">
+          07 / INDUSTRY
+        </span>
+        <strong>HVAC</strong>
+        <span class="lf-industry-index-description">
+          Repair calls, replacement estimates and seasonal service demand.
+        </span>
+        <span class="lf-industry-index-arrow"
+              aria-hidden="true">↗</span>
+      </a>
+
+      <a class="lf-industry-index-card"
+         href="/plumbing-lead-generation/">
+        <span class="lf-industry-index-number">
+          08 / INDUSTRY
+        </span>
+        <strong>Plumbing</strong>
+        <span class="lf-industry-index-description">
+          Local service calls, quote requests and appointment booking.
+        </span>
+        <span class="lf-industry-index-arrow"
+              aria-hidden="true">↗</span>
+      </a>
+
+      <a class="lf-industry-index-card"
+         href="/electrician-lead-generation/">
+        <span class="lf-industry-index-number">
+          09 / INDUSTRY
+        </span>
+        <strong>Electricians</strong>
+        <span class="lf-industry-index-description">
+          Electrical service inquiries, project qualification and estimates.
+        </span>
+        <span class="lf-industry-index-arrow"
+              aria-hidden="true">↗</span>
+      </a>
+
+      <a class="lf-industry-index-card"
+         href="/pest-control-lead-generation/">
+        <span class="lf-industry-index-number">
+          10 / INDUSTRY
+        </span>
+        <strong>Pest Control</strong>
+        <span class="lf-industry-index-description">
+          Pest-specific inquiries, inspections and recurring-service opportunities.
+        </span>
+        <span class="lf-industry-index-arrow"
+              aria-hidden="true">↗</span>
+      </a>
+
+    </div>
+
+    <div class="lf-industry-index-bottom">
+      <p>
+        Looking for a connected marketing system?
+        Explore our
+        <a href="/performance-marketing/">paid advertising</a>,
+        <a href="/websites-funnels/">conversion funnels</a>
+        and
+        <a href="/crm-automation/">CRM automation</a>.
+      </p>
+      <a class="lf-industry-index-all"
+         href="/industries/">
+        Explore all industries ↗
+      </a>
+    </div>
+  </div>
+</section>
+<!-- /LEADSFLO_INDUSTRY_HUB_V1 -->
+
 
 <section class="process-section section-pad" id="approach">
       <div class="container">
