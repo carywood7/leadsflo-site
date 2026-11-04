@@ -281,6 +281,87 @@ import "../styles/content-upgrade.css";
     transform:none;
   }
 }
+
+/* LEADSFLO_HOMEPAGE_BALANCED_GRID_FINAL */
+
+/* Six balanced cards: three columns, two rows. */
+.lf-industry-index .lf-industry-index-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+}
+
+.lf-industry-index .lf-industry-index-card {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:12px;
+  min-width:0;
+  min-height:225px;
+  padding:28px;
+  border-radius:12px;
+}
+
+.lf-industry-index .lf-industry-index-card strong {
+  font-size:clamp(20px,2vw,24px);
+  line-height:1.2;
+  letter-spacing:-.035em;
+}
+
+.lf-industry-index .lf-industry-index-description {
+  font-size:14px;
+  line-height:1.65;
+  max-width:36ch;
+}
+
+.lf-industry-index .lf-industry-index-number {
+  font-size:11px;
+}
+
+.lf-industry-index .lf-industry-index-arrow {
+  margin-top:auto;
+  padding-top:12px;
+  font-size:24px;
+}
+
+@media(max-width:900px) {
+  .lf-industry-index .lf-industry-index-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:14px;
+  }
+
+  .lf-industry-index .lf-industry-index-card {
+    min-height:205px;
+    padding:24px;
+  }
+}
+
+@media(max-width:600px) {
+  .lf-industry-index .lf-industry-index-grid {
+    grid-template-columns:minmax(0,1fr);
+    gap:13px;
+  }
+
+  .lf-industry-index .lf-industry-index-card {
+    min-height:160px;
+    padding:22px;
+    gap:9px;
+  }
+
+  .lf-industry-index .lf-industry-index-card strong {
+    font-size:21px;
+  }
+
+  .lf-industry-index .lf-industry-index-description {
+    font-size:14px;
+    max-width:none;
+  }
+
+  .lf-industry-index .lf-industry-index-arrow {
+    padding-top:4px;
+  }
+}
+
 </style>
 
 </head>
@@ -372,146 +453,45 @@ import "../styles/content-upgrade.css";
       </p>
     </div>
 
+        <!-- LEADSFLO_CURATED_HOMEPAGE_INDUSTRIES_V1 -->
     <div class="lf-industry-index-grid">
-
-      <a class="lf-industry-index-card"
-         href="/christmas-lighting-leads/">
-        <span class="lf-industry-index-number">
-          01 / INDUSTRY
-        </span>
+      <a class="lf-industry-index-card" href="/christmas-lighting-leads/">
+        <span class="lf-industry-index-number">01 / INDUSTRY</span>
         <strong>Christmas Lighting</strong>
-        <span class="lf-industry-index-description">
-          Seasonal campaigns, installation quote funnels and booked estimates.
-        </span>
-        <span class="lf-industry-index-arrow"
-              aria-hidden="true">↗</span>
-      </a>
-
-      <a class="lf-industry-index-card"
-         href="/roofing-lead-generation/">
-        <span class="lf-industry-index-number">
-          02 / INDUSTRY
-        </span>
-        <strong>Roofing</strong>
-        <span class="lf-industry-index-description">
-          Residential and commercial roofing inquiries and inspections.
-        </span>
-        <span class="lf-industry-index-arrow"
-              aria-hidden="true">↗</span>
-      </a>
-
-      <a class="lf-industry-index-card"
-         href="/med-spa-lead-generation/">
-        <span class="lf-industry-index-number">
-          03 / INDUSTRY
-        </span>
-        <strong>Med Spa</strong>
-        <span class="lf-industry-index-description">
-          Consultation leads, visual advertising and appointment follow-up.
-        </span>
-        <span class="lf-industry-index-arrow"
-              aria-hidden="true">↗</span>
-      </a>
-
-      <a class="lf-industry-index-card"
-         href="/msp-lead-generation/">
-        <span class="lf-industry-index-number">
-          04 / INDUSTRY
-        </span>
-        <strong>Managed IT / MSP</strong>
-        <span class="lf-industry-index-description">
-          Qualified business leads and discovery meetings for MSPs.
-        </span>
-        <span class="lf-industry-index-arrow"
-              aria-hidden="true">↗</span>
-      </a>
-
-      <a class="lf-industry-index-card"
-         href="/cybersecurity-marketing-agency/">
-        <span class="lf-industry-index-number">
-          05 / INDUSTRY
-        </span>
-        <strong>Cybersecurity</strong>
-        <span class="lf-industry-index-description">
-          Lead generation for cybersecurity firms and managed security providers.
-        </span>
-        <span class="lf-industry-index-arrow"
-              aria-hidden="true">↗</span>
-      </a>
-
-      <a class="lf-industry-index-card"
-         href="/it-services-lead-generation/">
-        <span class="lf-industry-index-number">
-          06 / INDUSTRY
-        </span>
-        <strong>IT Services</strong>
-        <span class="lf-industry-index-description">
-          B2B project inquiries and qualified IT consultations.
-        </span>
-        <span class="lf-industry-index-arrow"
-              aria-hidden="true">↗</span>
-      </a>
-
-      <a class="lf-industry-index-card"
-         href="/hvac-lead-generation/">
-        <span class="lf-industry-index-number">
-          07 / INDUSTRY
-        </span>
-        <strong>HVAC</strong>
-        <span class="lf-industry-index-description">
-          Repair calls, replacement estimates and seasonal service demand.
-        </span>
-        <span class="lf-industry-index-arrow"
-              aria-hidden="true">↗</span>
-      </a>
-
-      <a class="lf-industry-index-card"
-         href="/plumbing-lead-generation/">
-        <span class="lf-industry-index-number">
-          08 / INDUSTRY
-        </span>
-        <strong>Plumbing</strong>
-        <span class="lf-industry-index-description">
-          Local service calls, quote requests and appointment booking.
-        </span>
-        <span class="lf-industry-index-arrow"
-              aria-hidden="true">↗</span>
-      </a>
-
-      <a class="lf-industry-index-card"
-         href="/electrician-lead-generation/">
-        <span class="lf-industry-index-number">
-          09 / INDUSTRY
-        </span>
-        <strong>Electricians</strong>
-        <span class="lf-industry-index-description">
-          Electrical service inquiries, project qualification and estimates.
-        </span>
-        <span class="lf-industry-index-arrow"
-              aria-hidden="true">↗</span>
-      </a>
-
-      <a class="lf-industry-index-card"
-         href="/pest-control-lead-generation/">
-        <span class="lf-industry-index-number">
-          10 / INDUSTRY
-        </span>
-        <strong>Pest Control</strong>
-        <span class="lf-industry-index-description">
-          Pest-specific inquiries, inspections and recurring-service opportunities.
-        </span>
-        <span class="lf-industry-index-arrow"
-              aria-hidden="true">↗</span>
-      </a>
-
-    </div>
-
-      <a class="lf-industry-index-card" href="/landscaping-lead-generation/">
-        <span class="lf-industry-index-number">11 / INDUSTRY</span>
-        <strong>Landscaping &amp; Lawn Care</strong>
-        <span class="lf-industry-index-description">Local landscaping leads, lawn maintenance inquiries and booked project estimates.</span>
+        <span class="lf-industry-index-description">Seasonal campaigns, installation quotes and booked estimates.</span>
         <span class="lf-industry-index-arrow" aria-hidden="true">↗</span>
       </a>
+      <a class="lf-industry-index-card" href="/roofing-lead-generation/">
+        <span class="lf-industry-index-number">02 / INDUSTRY</span>
+        <strong>Roofing</strong>
+        <span class="lf-industry-index-description">Residential and commercial roofing inquiries and inspections.</span>
+        <span class="lf-industry-index-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="lf-industry-index-card" href="/med-spa-lead-generation/">
+        <span class="lf-industry-index-number">03 / INDUSTRY</span>
+        <strong>Med Spa</strong>
+        <span class="lf-industry-index-description">Consultation inquiries, visual advertising and appointment follow-up.</span>
+        <span class="lf-industry-index-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="lf-industry-index-card" href="/msp-lead-generation/">
+        <span class="lf-industry-index-number">04 / INDUSTRY</span>
+        <strong>Managed IT / MSP</strong>
+        <span class="lf-industry-index-description">Qualified business inquiries and managed IT discovery meetings.</span>
+        <span class="lf-industry-index-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="lf-industry-index-card" href="/hvac-lead-generation/">
+        <span class="lf-industry-index-number">05 / INDUSTRY</span>
+        <strong>HVAC</strong>
+        <span class="lf-industry-index-description">Repair calls, replacement estimates and seasonal service demand.</span>
+        <span class="lf-industry-index-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="lf-industry-index-card" href="/landscaping-lead-generation/">
+        <span class="lf-industry-index-number">06 / INDUSTRY</span>
+        <strong>Landscaping &amp; Lawn Care</strong>
+        <span class="lf-industry-index-description">Local service inquiries, recurring maintenance and design estimates.</span>
+        <span class="lf-industry-index-arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
 
     <div class="lf-industry-index-bottom">
       <p>

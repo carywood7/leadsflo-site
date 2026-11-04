@@ -287,3 +287,35 @@ was removed. Only the larger hamburger is retained.
 - [ ] Reuse approved Industries screenshots.
 - [ ] Remove temporary assets only after a reference check.
 - [ ] Require final visual approval before deployment.
+
+## Homepage industry curation — approved rule
+
+- [ ] Do not add every niche page to the homepage.
+- [ ] Showcase approximately 4–6 selected industries.
+- [ ] Prefer established campaign experience and core positioning.
+- [ ] Keep every homepage industry card inside the actual grid.
+- [ ] Ensure consistent card dimensions and responsive alignment.
+- [ ] Keep a clear Explore all industries link to /industries/.
+- [ ] New niche pages belong in Industries and Insights by default.
+- [ ] Replace a homepage card only when a stronger niche is approved.
+- [ ] Distinguish direct lead-generation experience from website-only work.
+- [ ] Do not describe unverified niches as proven client case studies.
+
+Initial curated set: Christmas Lighting, Roofing, Med Spa,
+Managed IT / MSP, HVAC, Landscaping & Lawn Care.
+
+Future priority industries based on documented experience:
+Dental, Real Estate, Education & Training, Beauty Services.
+
+## Homepage featured industry layout — approved standard
+
+- [ ] Feature approximately six selected industries.
+- [ ] Use three columns and two balanced rows on desktop.
+- [ ] Use two columns on tablet.
+- [ ] Use one column on mobile.
+- [ ] Keep every card inside the industry grid.
+- [ ] Avoid stranded or accidentally full-width cards.
+- [ ] Use generous spacing and readable typography.
+- [ ] Keep the Explore all industries link.
+- [ ] Do not add new niches automatically to the homepage.
+- [ ] Inspect real desktop and mobile appearance before publishing.
