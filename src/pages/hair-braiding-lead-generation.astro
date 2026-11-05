@@ -1,0 +1,801 @@
+---
+import BrandMark from "../components/BrandMark.astro";
+import "../styles/global.css";
+const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const schema = {"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://leadsflo.co/#organization", "name": "LeadsFlo", "url": "https://leadsflo.co/"}, {"@type": "WebPage", "@id": "https://leadsflo.co/hair-braiding-lead-generation/#webpage", "name": "Hair Braiding Lead Generation & Salon Marketing | LeadsFlo", "url": "https://leadsflo.co/hair-braiding-lead-generation/", "inLanguage": "en-US"}, {"@type": "Service", "@id": "https://leadsflo.co/hair-braiding-lead-generation/#service", "name": "Hair Braiding Marketing and Lead Generation", "serviceType": "Local hair salon marketing and booking lead generation", "provider": {"@id": "https://leadsflo.co/#organization"}, "areaServed": {"@type": "Country", "name": "United States"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://leadsflo.co/"}, {"@type": "ListItem", "position": 2, "name": "Industries", "item": "https://leadsflo.co/industries/"}, {"@type": "ListItem", "position": 3, "name": "Hair Braiding", "item": "https://leadsflo.co/hair-braiding-lead-generation/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How can a braiding salon get more bookings?", "acceptedAnswer": {"@type": "Answer", "text": "Promote the services the salon actually offers, communicate location and booking expectations clearly, and connect inquiries to responsive follow-up and real calendar availability."}}, {"@type": "Question", "name": "Can you market knotless, boho and box braids separately?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Each service can have its own creative, landing-page message and qualification questions based on the salon's offerings."}}, {"@type": "Question", "name": "Can an AI receptionist answer salon calls?", "acceptedAnswer": {"@type": "Answer", "text": "A clearly identified AI call assistant can answer approved questions, collect style and timing preferences, and arrange transfer or callback when supported."}}, {"@type": "Question", "name": "Can a chatbot handle appointment questions?", "acceptedAnswer": {"@type": "Answer", "text": "A website chatbot can explain published services, hours, preparation and booking policies. Staff should handle complex styling decisions and confirm appointments."}}, {"@type": "Question", "name": "Can you connect leads to our existing booking system?", "acceptedAnswer": {"@type": "Answer", "text": "We review the salon's booking software and CRM first, then plan supported integrations and follow-up workflows."}}, {"@type": "Question", "name": "Do you guarantee fully booked calendars?", "acceptedAnswer": {"@type": "Answer", "text": "No. Booking outcomes depend on demand, pricing, location, capacity, availability, customer experience and consistent follow-up."}}]}]};
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#21152a"/>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+<link rel="canonical" href="https://leadsflo.co/hair-braiding-lead-generation/"/>
+<title>Hair Braiding Lead Generation & Salon Marketing | LeadsFlo</title>
+<meta name="description" content="Hair braiding marketing and lead generation for US salons. Meta and Google Ads, hairstyle campaigns, booking funnels, AI calls, chatbots and CRM follow-up."/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="LeadsFlo"/>
+<meta property="og:title" content="Hair Braiding Lead Generation & Salon Marketing | LeadsFlo"/>
+<meta property="og:description" content="From style inquiries to confirmed salon bookings. Connected advertising, funnels and follow-up."/>
+<meta property="og:url" content="https://leadsflo.co/hair-braiding-lead-generation/"/>
+<meta name="twitter:card" content="summary"/>
+<script type="application/ld+json" set:html={JSON.stringify(schema)}/>
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QE382W17N6"></script>
+<script is:inline>
+window.dataLayer=window.dataLayer||[];
+function gtag(){window.dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','G-QE382W17N6');
+</script>
+<style is:global>
+:root{--hb-ink:#26172e;--hb-berry:#6c395f;--hb-rose:#e3b9b1;--hb-champagne:#e6ca9d;--hb-paper:#faf6f3;--hb-muted:#716674}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body.hb{margin:0;background:var(--hb-paper);color:var(--hb-ink);font-family:Inter,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.hb a{color:inherit}.hb button,.hb input{font:inherit}.hb button{cursor:pointer}.hb :focus-visible{outline:3px solid #b87976;outline-offset:4px}
+.hb-wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+.hb-header{position:sticky;top:0;z-index:90;background:#fffbf7ec;border-bottom:1px solid #e9dadc;backdrop-filter:blur(16px);transition:transform .25s}
+.hb-header.hide{transform:translateY(-110%)}
+.hb-nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.hb-logo{text-decoration:none!important;display:inline-flex;align-items:center;position:relative}
+.hb-logo .lf-brand-v4{--brand-text:#281a31;--brand-flo:#9c537d;--brand-period:#c59668;--brand-plane:#9c537d;font-size:31px}
+.hb-logo .lf-brand-v4__current1{stroke:#9c537d}.hb-logo .lf-brand-v4__current2{stroke:#c89c77}
+.hb-logo:hover .lf-brand-v4__plane{transform:rotate(-9deg) translate(3px,-2px)}
+.hb-links{display:flex;align-items:center;gap:23px}
+.hb-links a:not(.hb-cta){text-decoration:none;font-size:13px;font-weight:800}
+.hb-cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:49px;padding:13px 22px;border-radius:6px;background:#512a4d;color:#fff!important;text-decoration:none!important;font-size:13px;font-weight:800;transition:transform .2s,background .2s}
+.hb-cta:hover{background:#7b476b;transform:translateY(-2px)}
+.hb-menu{display:none;width:52px;height:52px;border:1px solid #e0cbd2;border-radius:8px;background:white;align-items:center;justify-content:center}
+.hb-menu span{display:grid;gap:6px}.hb-menu i{display:block;width:28px;height:3px;background:#512a4d;border-radius:4px}
+.hb-hero{position:relative;overflow:hidden;background:linear-gradient(125deg,#fbf4ed,#f5e5e7 68%,#e8d9e7);padding:105px 0 110px}
+.hb-hero:before,.hb-section:before{content:"";position:absolute;pointer-events:none;inset:0;background:repeating-linear-gradient(128deg,transparent 0 92px,#8f57720d 93px 95px,transparent 96px 170px);opacity:.7}
+.hb-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:56px;position:relative}
+.hb-kicker{display:inline-flex;gap:12px;align-items:center;text-transform:uppercase;color:#8a4d72;font-size:11px;font-weight:850;letter-spacing:.17em}
+.hb-kicker:before{content:"";width:26px;height:2px;background:#cb9a70}
+.hb h1{font-size:clamp(45px,6vw,76px);letter-spacing:-.07em;line-height:1.06;margin:20px 0 25px}
+.hb h1 em{font-style:normal;color:#a05b82}.hb-lede{font-size:18px;line-height:1.82;color:#6b5b6d;max-width:640px}
+.hb-actions{display:flex;flex-wrap:wrap;gap:13px;margin:32px 0}
+.hb-outline{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border:1px solid #b58eaa;border-radius:6px;color:#522d4d;text-decoration:none;font-size:13px;font-weight:800}
+.hb-tags{display:flex;gap:10px;flex-wrap:wrap}.hb-tags span{padding:9px 13px;background:#fff9;border:1px solid #dfc9d2;border-radius:22px;font-size:12px;font-weight:750;color:#795672}
+.hb-art{min-height:500px;border:10px solid #fff9;border-radius:24px;position:relative;overflow:hidden;background:radial-gradient(circle at 75% 20%,#cc99a7,#6e4267 65%,#382438);box-shadow:0 30px 70px #63385440}
+.hb-art svg{width:100%;height:100%;position:absolute;inset:0}.hb-art-label{position:absolute;bottom:25px;left:25px;right:25px;background:#f9f1e8ed;padding:20px;border-radius:12px;display:grid;gap:4px}
+.hb-art-label strong{font-size:20px}.hb-art-label small{font-size:12px;color:#755e6e}
+.hb-band{background:#301d38;color:#f9e4e5;padding:21px 0;overflow:hidden}
+.hb-band-track{display:flex;gap:12px;width:max-content;animation:hb-slide 34s linear infinite}
+.hb-band-track span{white-space:nowrap;padding:11px 19px;border:1px solid #805b7b;border-radius:7px;font-size:12px;font-weight:800}
+.hb-band-track span:before{content:"✦";color:#e8c48f;margin-right:13px}
+.hb-section{position:relative;padding:95px 0;overflow:hidden}.hb-section>*{position:relative}
+.hb-section.soft{background:#f4eaed}.hb-section.dark{background:#301d38;color:#fff}
+.hb-section h2{font-size:clamp(34px,4.5vw,55px);line-height:1.13;letter-spacing:-.055em;margin:16px 0 18px;max-width:850px}
+.hb-intro{color:#746477;font-size:16px;line-height:1.8;max-width:770px}
+.hb-section.dark .hb-intro{color:#d7c1d5}
+.hb-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:34px}
+.hb-tile{background:#fff;border:1px solid #e7d4dd;border-radius:12px;padding:27px;min-height:210px;transition:transform .2s,box-shadow .2s}
+.hb-tile:hover{transform:translateY(-4px);box-shadow:0 16px 32px #57384d17}
+.hb-tile small{font-size:11px;letter-spacing:.13em;color:#9a607e;font-weight:850}
+.hb-tile h3{font-size:23px;letter-spacing:-.04em;margin:28px 0 9px}
+.hb-tile p{color:#746879;line-height:1.75;font-size:14px}
+.hb-select-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px;margin-top:38px}
+.hb-options{display:grid;align-content:start;gap:10px}
+.hb-select{border:1px solid #decbd5;background:#fff;text-align:left;border-radius:9px;padding:20px;min-height:65px;display:flex;justify-content:space-between;gap:14px;align-items:center;color:#4f2f4c;font-weight:800;transition:transform .2s,background .2s}
+.hb-select:hover,.hb-select:focus-visible,.hb-select.active{background:#673858;color:#fff;border-color:#673858;transform:translateX(3px)}
+.hb-panel{background:#482a47;color:white;border-radius:15px;padding:32px;min-height:445px;display:flex;flex-direction:column}
+.hb-panel small{color:#e5bf8e;letter-spacing:.13em;font-size:11px;font-weight:850}
+.hb-panel h3{font-size:clamp(26px,3vw,38px);line-height:1.16;letter-spacing:-.045em;margin:22px 0 15px}
+.hb-panel p{line-height:1.8;color:#eddfe9}.hb-panel-foot{border-top:1px solid #886584;padding-top:21px;margin-top:auto}
+.hb-braid{height:160px;border-radius:10px;overflow:hidden;background:radial-gradient(circle at center,#734664,#382138);margin:15px 0}
+.hb-braid svg{width:100%;height:100%}
+.hb-flow{display:flex;flex-wrap:wrap;gap:9px;margin-top:17px}.hb-flow span{padding:10px;border:1px solid #946f8b;background:#64405d;border-radius:5px;font-size:11px;font-weight:750}
+.hb-quote{background:#fff2;border:1px solid #997593;border-radius:12px;padding:21px;margin:19px 0}
+.hb-quote small{color:#e4c18f}.hb-quote p{font-size:15px;line-height:1.75;color:#fff;margin-bottom:0}
+.hb-journey{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-top:35px}
+.hb-step{min-height:180px;background:#573653;color:#fff;border:1px solid #805b7b;border-radius:10px;padding:22px;text-align:left;transition:transform .2s}
+.hb-step:hover,.hb-step.active{background:#764d6d;transform:translateY(-3px)}
+.hb-step small{display:block;color:#efcc9d;font-size:11px;letter-spacing:.1em;margin-bottom:27px}
+.hb-step strong{font-size:20px}.hb-step-detail{margin-top:13px;background:#f5e9ee;border-radius:10px;padding:24px;color:#4b2d49}
+.hb-step-detail p{color:#755d71;line-height:1.75}
+.hb-planner{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:34px}
+.hb-fields,.hb-results{border-radius:12px;padding:30px;border:1px solid #e7d1dc;background:white}
+.hb-fields label{display:flex;justify-content:space-between;font-size:14px;font-weight:800;margin:15px 0 10px;gap:12px}
+.hb-fields input{width:100%;accent-color:#865378}.hb-fields output{color:#9d527a}
+.hb-results{background:#42263e;color:#fff;border-color:#42263e}
+.hb-results small{letter-spacing:.12em;font-size:11px;color:#e8c48f}
+.hb-result{display:flex;justify-content:space-between;align-items:center;padding:19px 0;border-bottom:1px solid #866681;gap:15px}
+.hb-result strong{font-size:32px}.hb-result span{font-size:13px;color:#dfc9da}
+.hb-disclaimer{font-size:12px!important;line-height:1.8!important;color:#dfccdc!important}
+.hb-faqs{display:grid;gap:11px;margin-top:30px}
+.hb-faqs details{background:#fff;border:1px solid #e3d5dd;border-radius:9px;padding:19px 22px}
+.hb-faqs details:hover,.hb-faqs details[open]{border-color:#b685a6}
+.hb-faqs summary{cursor:pointer;font-weight:800;font-size:16px}
+.hb-faqs p{color:#756676;line-height:1.85}
+.hb-guide{display:flex;flex-direction:column;gap:16px;padding:27px;background:white;border:1px solid #e2cfda;border-radius:12px;text-decoration:none;min-height:265px}
+.hb-guide:hover{border-color:#a36e91;transform:translateY(-3px)}
+.hb-guide small{font-size:11px;letter-spacing:.1em;color:#9a587c;font-weight:850}
+.hb-guide strong{font-size:22px;line-height:1.2;letter-spacing:-.035em}
+.hb-guide span{font-size:13px;color:#746777;line-height:1.75}.hb-guide b{margin-top:auto;color:#7f486d;font-size:12px}
+.hb-close{background:linear-gradient(130deg,#42273e,#784767);color:#fff;padding:90px 0}.hb-close h2{font-size:clamp(38px,5vw,62px);line-height:1.13;letter-spacing:-.06em;max-width:860px}
+.hb-close p{font-size:17px;color:#efdeea;line-height:1.8;max-width:690px}
+.hb-footer{background:#25172d;color:#f5e7ed;padding:66px 0 35px}
+.hb-footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:38px}
+.hb-footer nav{display:flex;flex-direction:column;gap:14px}
+.hb-footer nav a{font-size:14px;text-decoration:none;color:#f5e7ed}
+.hb-footer h3{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#e6c89f}
+.hb-footer p{font-size:14px;line-height:1.85;color:#d4bfd0;max-width:520px}
+.hb-footer .hb-logo .lf-brand-v4{--brand-text:#f7e8ec;--brand-flo:#e5b4cb;--brand-period:#d9b68a;--brand-plane:#d9b68a;font-size:37px}
+.hb-footer .hb-logo .lf-brand-v4__current1{stroke:#d9adc9}
+.hb-footer .hb-logo .lf-brand-v4__current2{stroke:#e8c999}
+.hb-foot-bottom{margin-top:50px;padding-top:25px;border-top:1px solid #715269;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#ccb6c8;font-size:12px}
+.hb-sticky{display:none}
+@keyframes hb-slide{to{transform:translateX(-50%)}}
+@media(max-width:900px){.hb-hero-grid{gap:25px}.hb-art{min-height:380px}.hb-links{gap:12px}.hb-journey{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){
+.hb-nav{min-height:73px}.hb-menu{display:flex}
+.hb-links{display:none;position:absolute;top:100%;left:0;right:0;background:#fffaf8;padding:15px 24px 26px;box-shadow:0 18px 32px #39233433;flex-direction:column;align-items:stretch}
+.hb-links.open{display:flex}
+.hb-links a{padding:11px 0}
+.hb-hero{padding:70px 0}.hb-hero-grid,.hb-select-layout,.hb-planner{grid-template-columns:1fr}
+.hb-section{padding:70px 0}.hb-grid{grid-template-columns:repeat(2,1fr)}
+.hb-art{min-height:360px}.hb-footer-grid{grid-template-columns:1fr 1fr}
+.hb-footer-grid>div{grid-column:1/-1}
+.hb-sticky{display:block;position:fixed;z-index:100;bottom:0;left:0;right:0;padding:10px 15px calc(10px + env(safe-area-inset-bottom));background:#fffaf8f0;backdrop-filter:blur(14px);border-top:1px solid #e0ccd7}
+.hb-sticky .hb-cta{width:100%}body.hb{padding-bottom:calc(70px + env(safe-area-inset-bottom))}
+}
+@media(max-width:520px){.hb-wrap{width:calc(100% - 30px)}.hb h1{font-size:clamp(40px,10vw,55px)}.hb-art{min-height:310px}.hb-grid,.hb-journey,.hb-footer-grid{grid-template-columns:1fr}.hb-footer-grid>div{grid-column:auto}.hb-step{min-height:125px}.hb-step small{margin-bottom:13px}.hb-panel{padding:23px;min-height:410px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hb-band-track{animation:none}.hb-cta,.hb-tile,.hb-select,.hb-step,.hb-guide{transition:none}}
+
+
+/* LEADSFLO_HAIR_BRAIDING_VISUAL_V2 */
+
+/* Retain the original LeadsFlo logo with a subtle braided detail. */
+.hb-logo-weave{
+  position:absolute;
+  right:-31px;
+  top:52%;
+  width:38px;
+  height:15px;
+  fill:none;
+  stroke:#b77996;
+  stroke-width:2.7;
+  stroke-linecap:round;
+  pointer-events:none;
+  opacity:.9;
+  transition:transform .35s ease;
+}
+.hb-logo-weave path:nth-child(2){stroke:#e1b78d}
+.hb-logo-weave path:nth-child(3){stroke:#c68ca7}
+.hb-logo:hover .hb-logo-weave{
+  transform:translate(4px,-2px) rotate(-7deg);
+}
+.hb-footer .hb-logo-weave{
+  opacity:1;
+}
+
+/* Woven patterns instead of snow or floating decorative particles. */
+.hb-section::after{
+  content:"";
+  position:absolute;
+  right:-160px;
+  bottom:-140px;
+  width:450px;
+  height:450px;
+  background:
+    repeating-radial-gradient(
+      ellipse at center,
+      transparent 0 21px,
+      #a96e8a 22px 23px,
+      transparent 24px 44px
+    );
+  border-radius:50%;
+  transform:rotate(-22deg);
+  opacity:.09;
+  pointer-events:none;
+}
+.hb-section:nth-of-type(even)::after{
+  right:auto;
+  left:-170px;
+  transform:rotate(20deg);
+}
+.hb-section.dark::after{
+  opacity:.12;
+  filter:brightness(1.8);
+}
+.hb-section .hb-wrap{
+  position:relative;
+  z-index:1;
+}
+.hb-braid svg{
+  display:block;
+  width:100%;
+  height:100%;
+}
+.hb-select.active{
+  box-shadow:inset 4px 0 0 #e8c299;
+}
+
+/* Expanded style categories. */
+.hb-service-list{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:11px;
+  margin-top:35px;
+}
+.hb-service-list span{
+  background:white;
+  border:1px solid #e5d2dc;
+  border-radius:9px;
+  padding:20px 16px;
+  color:#573652;
+  font-size:13px;
+  font-weight:800;
+  transition:transform .2s,background .2s;
+}
+.hb-service-list span:hover{
+  background:#f9f0f3;
+  transform:translateY(-3px);
+}
+
+/* Prominent genuine LeadsFlo project reference. */
+.hb-case{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:25px;
+  padding:35px;
+  margin-top:35px;
+  background:#40263f;
+  border-radius:15px;
+  color:#fff;
+}
+.hb-case small{
+  color:#eac79b;
+  font-weight:850;
+  letter-spacing:.12em;
+}
+.hb-case h3{
+  font-size:clamp(26px,3vw,36px);
+  letter-spacing:-.05em;
+  margin:16px 0;
+}
+.hb-case p{
+  font-size:15px;
+  color:#ecd8e4;
+  line-height:1.85;
+}
+.hb-case a{
+  display:inline-flex;
+  text-decoration:none;
+  padding:13px 18px;
+  background:#f5e7eb;
+  color:#482943;
+  border-radius:6px;
+  font-weight:850;
+  font-size:13px;
+  margin-top:15px;
+}
+.hb-case-art{
+  position:relative;
+  min-height:230px;
+  overflow:hidden;
+  border:1px solid #9e7597;
+  border-radius:12px;
+}
+.hb-case-art svg{
+  display:block;
+  width:100%;
+  height:100%;
+}
+.hb-case-art strong{
+  position:absolute;
+  left:20px;
+  bottom:20px;
+  color:white;
+  font-size:24px;
+  letter-spacing:-.05em;
+}
+@media(max-width:900px){
+  .hb-service-list{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
+@media(max-width:760px){
+  .hb-case{
+    grid-template-columns:1fr;
+  }
+  .hb-logo-weave{
+    width:30px;
+    right:-24px;
+  }
+}
+@media(max-width:520px){
+  .hb-service-list{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  .hb-service-list span{
+    padding:16px 12px;
+  }
+  .hb-case{
+    padding:24px;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .hb-logo-weave,
+  .hb-service-list span{
+    transition:none;
+  }
+}
+
+
+/* LEADSFLO_HAIR_PROFILE_LEFT_V5 */
+.hb-logo {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+  overflow: visible;
+}
+
+.hb-logo-profile {
+  display: block;
+  position: relative;
+  flex: 0 0 37px;
+  width: 37px;
+  height: 47px;
+  margin: 0;
+  transform-origin: center bottom;
+  transition: transform .3s ease;
+}
+
+.hb-logo:hover .hb-logo-profile {
+  transform: translateY(-2px);
+}
+
+.hb-logo .lf-brand-v4 {
+  flex-shrink: 0;
+}
+
+.hb-logo-weave {
+  display: none !important;
+}
+
+.hb-footer .hb-logo {
+  gap: 8px;
+}
+
+.hb-footer .hb-logo-profile {
+  flex-basis: 44px;
+  width: 44px;
+  height: 54px;
+}
+
+@media (max-width: 520px) {
+  .hb-logo { gap: 5px; }
+  .hb-logo-profile {
+    flex-basis: 31px;
+    width: 31px;
+    height: 40px;
+  }
+  .hb-footer .hb-logo-profile {
+    flex-basis: 39px;
+    width: 39px;
+    height: 48px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hb-logo-profile { transition: none; }
+}
+
+
+/* LEADSFLO_SONYA_REAL_IMAGE_V1 */
+.hb-case-photo {
+  min-height: 230px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #52344d;
+}
+.hb-case-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 230px;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform .35s ease;
+}
+.hb-case:hover .hb-case-photo img {
+  transform: scale(1.025);
+}
+@media(prefers-reduced-motion:reduce) {
+  .hb-case-photo img { transition: none; }
+}
+</style>
+</head>
+<body class="hb" id="top">
+<header class="hb-header"><div class="hb-wrap hb-nav">
+<a class="hb-logo" href="/" aria-label="LeadsFlo home">
+<svg class="hb-logo-profile"
+     viewBox="0 0 60 76"
+     xmlns="http://www.w3.org/2000/svg"
+     aria-hidden="true"
+     focusable="false">
+  <path d="M27 10 C40 3 53 14 54 30
+           C56 43 50 54 57 71 L43 71
+           C39 59 43 49 37 37
+           C34 30 26 26 23 22Z"
+        fill="#6c395f"/>
+  <path d="M28 20 C22 23 20 29 19 35
+           L12 42 Q11 45 17 46
+           L19 46 L18 51 Q18 54 22 55
+           Q22 61 28 64 Q36 66 40 57
+           L42 40 Q42 27 28 20Z"
+        fill="#dcae9f"/>
+  <path d="M19 38 Q22 36 26 38"
+        fill="none" stroke="#75465a"
+        stroke-width="1.5" stroke-linecap="round"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M40 25 C52 39 40 57 52 73"
+          stroke="#9c6587" stroke-width="6"/>
+    <path d="M45 27 C57 43 47 61 58 74"
+          stroke="#d9b18d" stroke-width="3"/>
+    <path d="M41 35 Q49 42 42 49 Q51 56 45 63"
+          stroke="#f0c7b8" stroke-width="2"/>
+  </g>
+</svg>
+<BrandMark theme="light"/>
+
+</a>
+<button class="hb-menu" aria-label="Open navigation" aria-controls="hb-links" aria-expanded="false" type="button"><span><i></i><i></i><i></i></span></button>
+<nav class="hb-links" id="hb-links" aria-label="Braiding marketing navigation">
+<a href="#styles">Hairstyles</a><a href="#system">Lead system</a><a href="#automation">AI &amp; Automation</a>
+<a href="#planner">Growth planner</a><a href="#guides">Guides</a>
+<a class="hb-cta" href={booking} target="_blank" rel="noopener noreferrer">Let's Talk ↗</a>
+</nav></div></header>
+<main>
+<section class="hb-hero"><div class="hb-wrap hb-hero-grid">
+<div><span class="hb-kicker">LEADSFLO / BRAIDING SALON GROWTH</span>
+<h1>More style inquiries. <em>More real bookings.</em></h1>
+<p class="hb-lede">Marketing and lead generation for hair braiding salons that want the right local customers, clearer booking requests and better follow-up—from the first ad to the confirmed appointment.</p>
+<div class="hb-actions">
+<a class="hb-cta" href={booking} target="_blank" rel="noopener noreferrer">Discuss your salon ↗</a>
+<a class="hb-outline" href="#styles">Explore the approach</a>
+</div>
+<div class="hb-tags"><span>Google + Meta</span><span>Service-specific Creative</span><span>AI Calls + Chat</span><span>Booking + CRM</span></div></div>
+<div class="hb-art" role="img" aria-label="Original illustration of flowing interwoven braid patterns in blush and plum">
+<svg viewBox="0 0 540 540" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+<defs><linearGradient id="hb-strand" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#efc8bb"/><stop offset="1" stop-color="#d6a18f"/></linearGradient></defs>
+<g fill="none" stroke-linecap="round">
+<path d="M130 -40C30 120 310 165 150 320S170 510 85 580" stroke="#f0c6b4" stroke-width="33"/>
+<path d="M290 -40C385 140 115 185 310 335S240 485 330 580" stroke="#db9ca8" stroke-width="33"/>
+<path d="M445 -30C230 160 525 250 395 360S480 520 380 590" stroke="url(#hb-strand)" stroke-width="33"/>
+<path d="M115 -50C15 140 292 176 141 328S150 514 76 585" stroke="#fff4e1" stroke-width="3" opacity=".65"/>
+<path d="M305 -50C390 148 120 193 314 344S239 495 335 585" stroke="#ffe2d7" stroke-width="3" opacity=".55"/>
+</g>
+<circle cx="410" cy="115" r="130" fill="none" stroke="#efddc740" stroke-width="2" stroke-dasharray="5 9"/>
+<circle cx="410" cy="115" r="165" fill="none" stroke="#efddc728" stroke-width="2"/>
+</svg>
+<div class="hb-art-label"><strong>From interest to appointment.</strong><small>Creative → inquiry → follow-up → confirmed booking</small></div>
+</div></div></section>
+
+<div class="hb-band"><div class="hb-band-track">
+{Array.from({length:2}).map(()=>["Knotless Braids","Boho Braids","Box Braids","Cornrows","Loc Styles","Google Search","Meta Creative","AI Call Handling","CRM Follow-Up","Appointment Booking"].map(x=><span>{x}</span>))}
+</div></div>
+
+<section class="hb-section" id="styles"><div class="hb-wrap">
+<span class="hb-kicker">DIFFERENT STYLES / DIFFERENT INTENT</span>
+<h2>The service matters as much as the ad.</h2>
+<p class="hb-intro">Someone searching for knotless braids may have different timing, budget and style questions from someone looking for loc services. Campaigns should reflect what the salon actually offers.</p>
+<div class="hb-select-layout">
+<div class="hb-options" role="group" aria-label="Braiding service campaign examples">
+<button class="hb-select active" type="button" data-style="knotless" aria-pressed="true">Knotless Braids<span aria-hidden="true">↗</span></button>
+<button class="hb-select" type="button" data-style="boho" aria-pressed="false">Boho Braids<span aria-hidden="true">↗</span></button>
+<button class="hb-select" type="button" data-style="box" aria-pressed="false">Box Braids<span aria-hidden="true">↗</span></button>
+<button class="hb-select" type="button" data-style="cornrows" aria-pressed="false">Cornrows<span aria-hidden="true">↗</span></button>
+<button class="hb-select" type="button" data-style="locs" aria-pressed="false">Loc Styles<span aria-hidden="true">↗</span></button>
+</div>
+<div class="hb-panel" aria-live="polite">
+<small id="hb-style-kicker">STYLE / KNOTLESS</small>
+<div class="hb-braid" aria-hidden="true"><svg viewBox="0 0 600 180" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><rect width="600" height="180" fill="#3b233a"/><path d="M75 -10 Q60 30 82 55 Q103 82 75 111 Q57 140 83 195" fill="none" stroke="#e8bbab" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" /><path d="M65 42 L86 57" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M65 77 L86 92" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M65 112 L86 127" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M65 142 L86 157" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M160 -10 Q145 30 167 55 Q188 82 160 111 Q142 140 168 195" fill="none" stroke="#c98fa0" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" /><path d="M150 42 L171 57" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M150 77 L171 92" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M150 112 L171 127" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M150 142 L171 157" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M245 -10 Q230 30 252 55 Q273 82 245 111 Q227 140 253 195" fill="none" stroke="#efd0a4" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" /><path d="M235 42 L256 57" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M235 77 L256 92" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M235 112 L256 127" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M235 142 L256 157" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M330 -10 Q315 30 337 55 Q358 82 330 111 Q312 140 338 195" fill="none" stroke="#e8bbab" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" /><path d="M320 42 L341 57" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M320 77 L341 92" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M320 112 L341 127" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M320 142 L341 157" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M415 -10 Q400 30 422 55 Q443 82 415 111 Q397 140 423 195" fill="none" stroke="#c98fa0" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" /><path d="M405 42 L426 57" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M405 77 L426 92" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M405 112 L426 127" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M405 142 L426 157" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M500 -10 Q485 30 507 55 Q528 82 500 111 Q482 140 508 195" fill="none" stroke="#efd0a4" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" /><path d="M490 42 L511 57" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M490 77 L511 92" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M490 112 L511 127" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /><path d="M490 142 L511 157" fill="none" stroke="#fae8d5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+<h3 id="hb-style-title">Show the style. Capture the appointment intent.</h3>
+<p id="hb-style-description">Use genuine finished-style photos and clarify size, length, preferred date and any salon preparation requirements.</p>
+<div class="hb-panel-foot"><small>CAMPAIGN GOAL</small><p>Relevant local inquiries and clear booking requests—not unsupported booking guarantees.</p></div>
+</div></div></div></section>
+
+
+<section class="hb-section soft" id="salon-services">
+  <div class="hb-wrap">
+    <span class="hb-kicker">SERVICES WE CAN MARKET</span>
+    <h2>Every style has its own audience.</h2>
+    <p class="hb-intro">
+      We can build different creative, search campaigns,
+      qualification questions and booking workflows for the
+      services your salon actually provides.
+    </p>
+
+    <div class="hb-service-list">
+    <span>Knotless Braids</span>
+<span>Box Braids</span>
+<span>Boho &amp; Bohemian Braids</span>
+<span>Cornrows</span>
+<span>Feed-in &amp; Stitch Braids</span>
+<span>Fulani &amp; Goddess Braids</span>
+<span>Senegalese &amp; Passion Twists</span>
+<span>Crochet Braids</span>
+<span>Faux &amp; Butterfly Locs</span>
+<span>Men&#x27;s Braids</span>
+<span>Kids&#x27; Braids</span>
+<span>Loc Maintenance</span>
+    </div>
+
+    <p class="hb-intro" style="font-size:13px">
+      These are potential campaign categories.
+      Actual services, prices and appointment availability
+      depend on each salon.
+    </p>
+  </div>
+</section>
+
+<section class="hb-section dark" id="system"><div class="hb-wrap">
+<span class="hb-kicker">FROM AD TO APPOINTMENT</span>
+<h2>What happens after someone asks about a style?</h2>
+<p class="hb-intro">A salon can receive plenty of leads and still have empty appointments. Every inquiry needs a clear next step and an accountable person or workflow.</p>
+<div class="hb-journey">
+<button class="hb-step active" data-step="0" aria-pressed="true"><small>01 / ATTRACT</small><strong>Relevant local demand</strong></button>
+<button class="hb-step" data-step="1" aria-pressed="false"><small>02 / QUALIFY</small><strong>Style + booking intent</strong></button>
+<button class="hb-step" data-step="2" aria-pressed="false"><small>03 / RESPOND</small><strong>Calls, chat &amp; follow-up</strong></button>
+<button class="hb-step" data-step="3" aria-pressed="false"><small>04 / CONFIRM</small><strong>Real appointments</strong></button>
+</div>
+<div class="hb-step-detail" aria-live="polite"><h3 id="hb-step-title">Reach the right local customer.</h3><p id="hb-step-description">Match creative and search intent to the salon's location, genuine style portfolio and appointment capacity.</p></div>
+</div></section>
+
+<section class="hb-section soft"><div class="hb-wrap">
+<span class="hb-kicker">CONNECTED SALON GROWTH</span>
+<h2>Everything between the ad and the booking.</h2>
+<div class="hb-grid">
+<article class="hb-tile"><small>01 / DEMAND</small><h3>Google &amp; Meta Ads</h3><p>Local search campaigns and visually compelling ads built around genuine salon services and availability.</p></article>
+<article class="hb-tile"><small>02 / CREATIVE</small><h3>Style-led Content</h3><p>Service-specific imagery, short videos and clear promotional messaging using approved examples of actual work.</p></article>
+<article class="hb-tile"><small>03 / CONVERSION</small><h3>Booking Funnels</h3><p>Useful inquiry pages, clear preparation requirements and links to the salon's booking process.</p></article>
+<article class="hb-tile"><small>04 / CONVERSATION</small><h3>AI Calls &amp; Chatbots</h3><p>Clearly identified assistants that answer routine questions, collect style preferences and arrange human follow-up.</p></article>
+<article class="hb-tile"><small>05 / AUTOMATION</small><h3>CRM &amp; Follow-Up</h3><p>Missed-call recovery, SMS/email workflows, contact assignments, reminders and opt-out management.</p></article>
+<article class="hb-tile"><small>06 / MEASUREMENT</small><h3>Verified Bookings</h3><p>Separate inquiries, reached customers, booking requests, confirmed appointments and attended visits.</p></article>
+</div></div></section>
+
+<section class="hb-section dark" id="automation"><div class="hb-wrap">
+<span class="hb-kicker">AI / CALLS / CHAT / FOLLOW-UP</span>
+<h2>When the stylist is busy, the conversation doesn't have to stop.</h2>
+<p class="hb-intro">Natural, context-aware responses can help with routine questions and follow-up, while the salon remains responsible for styling advice, final pricing and confirmed appointments.</p>
+<div class="hb-select-layout">
+<div class="hb-options" role="group" aria-label="AI and automation examples">
+<button class="hb-select active" type="button" data-workflow="voice" aria-pressed="true">AI Call Receptionist<span aria-hidden="true">↗</span></button>
+<button class="hb-select" type="button" data-workflow="chat" aria-pressed="false">Website Chatbot<span aria-hidden="true">↗</span></button>
+<button class="hb-select" type="button" data-workflow="missed" aria-pressed="false">Missed-Call Recovery<span aria-hidden="true">↗</span></button>
+<button class="hb-select" type="button" data-workflow="nurture" aria-pressed="false">Automated Follow-Up<span aria-hidden="true">↗</span></button>
+<button class="hb-select" type="button" data-workflow="booking" aria-pressed="false">Booking &amp; Reminders<span aria-hidden="true">↗</span></button>
+</div>
+<div class="hb-panel" aria-live="polite">
+<small id="hb-ai-kicker">INCOMING CALL</small>
+<h3 id="hb-ai-title">A customer calls about knotless braids.</h3>
+<div class="hb-quote"><small>AUTOMATED RESPONSE / EXAMPLE</small>
+<p id="hb-ai-response">Hi, I'm the salon's automated assistant. I can help with booking questions. Which style and date were you considering?</p></div>
+<div class="hb-panel-foot"><small>WORKFLOW</small><p id="hb-ai-flow">Incoming call → style request → details recorded → staff callback</p></div>
+<p style="font-size:12px;color:#d8c3d4;line-height:1.8;margin-top:25px">Illustrative conversation, not a live AI assistant. Automated interactions should be disclosed appropriately, with consent-aware messaging and human escalation.</p>
+</div></div></div></section>
+
+<section class="hb-section" id="planner"><div class="hb-wrap">
+<span class="hb-kicker">BOOKING FUNNEL / SCENARIO PLANNER</span>
+<h2>How many inquiries become real bookings?</h2>
+<p class="hb-intro">Adjust the assumptions to see the difference between generating leads and getting appointments confirmed. These are hypothetical inputs, not projected campaign results.</p>
+<div class="hb-planner">
+<div class="hb-fields">
+<label for="hb-leads">Valid monthly inquiries <output id="hb-leads-out">80</output></label>
+<input id="hb-leads" type="range" min="10" max="300" step="5" value="80"/>
+<label for="hb-contact">Reached customers <output id="hb-contact-out">60%</output></label>
+<input id="hb-contact" type="range" min="5" max="100" step="5" value="60"/>
+<label for="hb-fit">Relevant styling requests <output id="hb-fit-out">65%</output></label>
+<input id="hb-fit" type="range" min="5" max="100" step="5" value="65"/>
+<label for="hb-confirm">Appointments confirmed <output id="hb-confirm-out">45%</output></label>
+<input id="hb-confirm" type="range" min="5" max="100" step="5" value="45"/>
+</div>
+<div class="hb-results"><small>ILLUSTRATIVE MONTHLY OUTCOMES</small>
+<div class="hb-result"><span>Customers reached</span><strong id="hb-reached">48</strong></div>
+<div class="hb-result"><span>Relevant conversations</span><strong id="hb-conversations">31</strong></div>
+<div class="hb-result"><span>Potential confirmed appointments</span><strong id="hb-appointments">14</strong></div>
+<p class="hb-disclaimer">Actual confirmation must be verified in the booking system. Results depend on service availability, pricing, contact rates, demand and salon operations.</p>
+<a class="hb-cta" style="background:#f4e7e9;color:#4f294a!important" href={booking} target="_blank" rel="noopener noreferrer">Discuss your booking process ↗</a>
+</div></div></div></section>
+
+<section class="hb-section soft" id="faq"><div class="hb-wrap">
+<span class="hb-kicker">SALON MARKETING / ANSWERS</span><h2>Questions salon owners actually ask.</h2>
+<div class="hb-faqs"><details><summary>How can a braiding salon get more bookings?</summary><p>Promote the services the salon actually offers, communicate location and booking expectations clearly, and connect inquiries to responsive follow-up and real calendar availability.</p></details>
+<details><summary>Can you market knotless, boho and box braids separately?</summary><p>Yes. Each service can have its own creative, landing-page message and qualification questions based on the salon&#x27;s offerings.</p></details>
+<details><summary>Can an AI receptionist answer salon calls?</summary><p>A clearly identified AI call assistant can answer approved questions, collect style and timing preferences, and arrange transfer or callback when supported.</p></details>
+<details><summary>Can a chatbot handle appointment questions?</summary><p>A website chatbot can explain published services, hours, preparation and booking policies. Staff should handle complex styling decisions and confirm appointments.</p></details>
+<details><summary>Can you connect leads to our existing booking system?</summary><p>We review the salon&#x27;s booking software and CRM first, then plan supported integrations and follow-up workflows.</p></details>
+<details><summary>Do you guarantee fully booked calendars?</summary><p>No. Booking outcomes depend on demand, pricing, location, capacity, availability, customer experience and consistent follow-up.</p></details></div>
+</div></section>
+
+<section class="hb-section" id="guides"><div class="hb-wrap">
+<span class="hb-kicker">LEADSFLO / SALON GROWTH GUIDES</span><h2>Better marketing. Better follow-through.</h2>
+<p class="hb-intro">Practical guidance for local demand, Meta advertising and the booking workflows that follow an inquiry.</p>
+<div class="hb-grid"><a class="hb-guide" href="/insights/hair-braiding-lead-generation/"><small>LEADSFLO / BEAUTY</small><strong>Hair Braiding Lead Generation: From Inquiry to Booking</strong><span>A practical guide to salon lead generation, hairstyle-specific campaigns, inquiry qualification, deposits, reminders and confirmed appointments.</span><b>READ GUIDE ↗</b></a>
+<a class="hb-guide" href="/insights/facebook-ads-for-hair-salons/"><small>LEADSFLO / BEAUTY</small><strong>Facebook and Instagram Ads for Hair Salons</strong><span>How to build Meta ads for braiding salons and hair stylists using strong service visuals, local targeting, helpful offers and booking follow-up.</span><b>READ GUIDE ↗</b></a>
+<a class="hb-guide" href="/insights/hair-salon-appointment-booking/"><small>LEADSFLO / BEAUTY</small><strong>Hair Salon Appointment Booking and AI Follow-Up</strong><span>How salons can improve bookings through AI call handling, chatbots, missed-call recovery, CRM automation and customer-friendly reminders.</span><b>READ GUIDE ↗</b></a></div>
+</div></section>
+
+
+<section class="hb-section" id="sonya-case-study">
+  <div class="hb-wrap">
+    <span class="hb-kicker">REAL PROJECT / NEW YORK CITY</span>
+    <h2>We know what happens after the ad.</h2>
+    <p class="hb-intro">
+      Our work with Sonya Hair Braiding involved generating
+      salon inquiries and building booking journeys.
+      It also demonstrated why contact rates and operational
+      follow-up matter just as much as lead volume.
+    </p>
+
+    <div class="hb-case">
+      <div>
+        <small>LEADSFLO / CASE STUDY</small>
+        <h3>Sonya Hair Braiding</h3>
+        <p>
+          Explore a real braiding salon project involving
+          advertising, lead generation, booking funnels
+          and the challenges of connecting with customers.
+        </p>
+        <a href="/work/sonya-hair-braiding/">
+          View the case study ↗
+        </a>
+      </div>
+
+      <div class="hb-case-art hb-case-photo">
+  <img
+    src="/work/sonya-hair-braiding.webp"
+    alt="Sonya Hair Braiding project screenshot"
+    loading="lazy"
+    decoding="async"
+  />
+</div>
+    </div>
+  </div>
+</section>
+
+<section class="hb-close"><div class="hb-wrap">
+<span class="hb-kicker" style="color:#edcf9e">LEADSFLO / HAIR BRAIDING</span>
+<h2>Let's make your next inquiry easier to turn into a booking.</h2>
+<p>Tell us your services, location and current booking process. We'll discuss what marketing and follow-up might improve.</p>
+<a class="hb-cta" style="background:#fff0eb;color:#4f294a!important" href={booking} target="_blank" rel="noopener noreferrer">Book a salon growth conversation ↗</a>
+</div></section>
+</main>
+<footer class="hb-footer"><div class="hb-wrap">
+<div class="hb-footer-grid">
+<div><a class="hb-logo" href="/" aria-label="LeadsFlo home">
+<svg class="hb-logo-profile"
+     viewBox="0 0 60 76"
+     xmlns="http://www.w3.org/2000/svg"
+     aria-hidden="true"
+     focusable="false">
+  <path d="M27 10 C40 3 53 14 54 30
+           C56 43 50 54 57 71 L43 71
+           C39 59 43 49 37 37
+           C34 30 26 26 23 22Z"
+        fill="#6c395f"/>
+  <path d="M28 20 C22 23 20 29 19 35
+           L12 42 Q11 45 17 46
+           L19 46 L18 51 Q18 54 22 55
+           Q22 61 28 64 Q36 66 40 57
+           L42 40 Q42 27 28 20Z"
+        fill="#dcae9f"/>
+  <path d="M19 38 Q22 36 26 38"
+        fill="none" stroke="#75465a"
+        stroke-width="1.5" stroke-linecap="round"/>
+  <g fill="none" stroke-linecap="round">
+    <path d="M40 25 C52 39 40 57 52 73"
+          stroke="#9c6587" stroke-width="6"/>
+    <path d="M45 27 C57 43 47 61 58 74"
+          stroke="#d9b18d" stroke-width="3"/>
+    <path d="M41 35 Q49 42 42 49 Q51 56 45 63"
+          stroke="#f0c7b8" stroke-width="2"/>
+  </g>
+</svg>
+<BrandMark theme="light"/>
+
+</a><p>Lead generation, creative, booking funnels, AI conversations and CRM workflows for businesses that want meaningful customer inquiries.</p><a class="hb-cta" style="background:#fff0eb;color:#4f294a!important" href={booking} target="_blank" rel="noopener noreferrer">Let's Talk ↗</a></div>
+<nav aria-label="Services"><h3>Services</h3><a href="/performance-marketing/">Performance Marketing</a><a href="/ad-creatives-content/">Ad Creatives &amp; Content</a><a href="/websites-funnels/">Websites &amp; Funnels</a><a href="/crm-automation/">CRM &amp; Automation</a></nav>
+<nav aria-label="Explore"><h3>Explore</h3><a href="/industries/">All Industries</a><a href="/work/sonya-hair-braiding/">Sonya Hair Braiding Case Study</a><a href="/insights/">Insights</a><a href="/contact/">Contact</a></nav>
+</div>
+<div class="hb-foot-bottom"><span>© {new Date().getFullYear()} LeadsFlo. All rights reserved.</span><span><a href="/privacy-policy/">Privacy</a> · <a href="/terms-and-conditions/">Terms</a> · <a href="#top">Back to top ↑</a></span></div>
+</div></footer>
+<div class="hb-sticky"><a class="hb-cta" href={booking} target="_blank" rel="noopener noreferrer">Discuss salon lead generation ↗</a></div>
+<script is:inline defer src="/js/leadsflo-conversions.js"></script>
+<script is:inline>
+(()=>{
+const header=document.querySelector('.hb-header'),menu=document.querySelector('.hb-menu'),nav=document.getElementById('hb-links');
+const close=()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation')};
+menu.addEventListener('click',()=>{const on=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(on));menu.setAttribute('aria-label',on?'Close navigation':'Open navigation')});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+document.addEventListener('click',e=>{if(nav.classList.contains('open')&&!header.contains(e.target))close()});
+let previous=window.scrollY;
+window.addEventListener('scroll',()=>{const y=window.scrollY,delta=y-previous;if(y<90||header.contains(document.activeElement)||nav.classList.contains('open'))header.classList.remove('hide');else if(Math.abs(delta)>7)header.classList.toggle('hide',delta>0);previous=y},{passive:true});
+const styles={"knotless": ["STYLE / KNOTLESS", "Show the style. Capture the appointment intent.", "Use genuine finished-style photos and clarify size, length, preferred date and any salon preparation requirements."], "boho": ["STYLE / BOHO", "Create demand around a distinct look.", "Demonstrate actual boho work, explain relevant style options and route inquiries into the salon's booking process."], "box": ["STYLE / BOX BRAIDS", "Make the service and next step clear.", "Focus on published service options, length and size preferences, preparation and the customer's desired appointment timing."], "cornrows": ["STYLE / CORNROWS", "A focused service campaign, not a generic salon ad.", "Use real portfolio imagery and service-specific copy. Confirm the intended pattern and appointment requirements with the stylist."], "locs": ["STYLE / LOCS", "Connect specialist interest with the right stylist.", "Explain which loc-related services the salon actually offers and pass style questions requiring expertise to a human stylist."]};
+const workflows={"voice": ["INCOMING CALL", "A customer calls about knotless braids.", "Hi, I'm the salon's automated assistant. I can help with booking questions. Which style and date were you considering?", "Incoming call \u2192 style request \u2192 details recorded \u2192 staff callback"], "chat": ["WEBSITE CHAT", "A visitor asks about boho braid appointments.", "I can share the salon's published booking information. Are you looking for a specific date, or would you like the stylist to review your request?", "Website question \u2192 approved FAQ \u2192 booking request \u2192 stylist"], "missed": ["CALL FOLLOW-UP", "The stylist is busy with a customer and misses a call.", "This is an automated message from the salon. We missed your call. Would you prefer to send your hairstyle request or receive a callback?", "Missed call \u2192 permission check \u2192 acknowledgement \u2192 callback task"], "nurture": ["SMS + EMAIL", "A prospective customer has asked about availability.", "Thanks for your interest in the salon. Would you like us to review your preferred style and appointment date?", "Inquiry \u2192 relevant follow-up \u2192 response \u2192 human confirmation"], "booking": ["CALENDAR", "A customer requests an appointment.", "I can help start your booking request. The salon will confirm the service details and available appointment time.", "Request \u2192 calendar review \u2192 confirmed booking \u2192 reminder"]};
+function activate(selector,id,data,fields){
+const value=data[id];if(!value)return;
+document.querySelectorAll(selector).forEach(b=>{
+const active=(b.dataset.style||b.dataset.workflow)===id;
+b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))
+});
+fields.forEach(([element,index])=>{document.getElementById(element).textContent=value[index]});
+}
+document.querySelectorAll('[data-style]').forEach(b=>{
+const go=()=>activate('[data-style]',b.dataset.style,styles,[['hb-style-kicker',0],['hb-style-title',1],['hb-style-description',2]]);
+b.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')go()});
+b.addEventListener('focus',go);b.addEventListener('click',go)
+});
+document.querySelectorAll('[data-workflow]').forEach(b=>{
+const go=()=>activate('[data-workflow]',b.dataset.workflow,workflows,[['hb-ai-kicker',0],['hb-ai-title',1],['hb-ai-response',2],['hb-ai-flow',3]]);
+b.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')go()});
+b.addEventListener('focus',go);b.addEventListener('click',go)
+});
+const stages=[
+['Reach the right local customer.','Match creative and search intent to the salon location, genuine style portfolio and appointment capacity.'],
+['Capture useful booking context.','Understand the requested style, preferred date and relevant preparation requirements without making the form unnecessarily long.'],
+['Make follow-up accountable.','Route calls, forms and messages to staff or an appropriately disclosed AI assistant, then record what happened.'],
+['Verify the real appointment.','Only count a booking as confirmed when the salon or connected calendar has verified it.']
+];
+function activateStage(button){
+const x=stages[Number(button.dataset.step)];if(!x)return;
+document.querySelectorAll('[data-step]').forEach(b=>{const on=b===button;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});
+document.getElementById('hb-step-title').textContent=x[0];document.getElementById('hb-step-description').textContent=x[1]
+}
+document.querySelectorAll('[data-step]').forEach(b=>{
+b.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')activateStage(b)});
+b.addEventListener('focus',()=>activateStage(b));
+b.addEventListener('click',()=>activateStage(b))
+});
+document.querySelectorAll('.hb-faqs details').forEach(d=>{
+d.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')d.open=true});
+d.addEventListener('pointerleave',e=>{if((e.pointerType==='mouse'||e.pointerType==='pen')&&!d.contains(document.activeElement))d.open=false});
+d.addEventListener('focusin',()=>{d.open=true})
+});
+const value=id=>Number(document.getElementById(id).value);
+function recalc(){
+const n=value('hb-leads'),c=value('hb-contact'),f=value('hb-fit'),a=value('hb-confirm');
+for(const [id,v] of [['hb-leads-out',n],['hb-contact-out',c+'%'],['hb-fit-out',f+'%'],['hb-confirm-out',a+'%']])document.getElementById(id).textContent=v;
+document.getElementById('hb-reached').textContent=Math.round(n*c/100);
+document.getElementById('hb-conversations').textContent=Math.round(n*c*f/10000);
+document.getElementById('hb-appointments').textContent=Math.round(n*c*f*a/1000000)
+}
+['hb-leads','hb-contact','hb-fit','hb-confirm'].forEach(id=>document.getElementById(id).addEventListener('input',recalc));recalc()
+})();
+</script>
+
+<script is:inline>
+/* LEADSFLO_HAIR_BRAIDING_VISUAL_V2 */
+(()=>{
+  const diagrams = {"knotless":"<svg viewBox=\"0 0 600 180\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\"><rect width=\"600\" height=\"180\" fill=\"#3b233a\"/><path d=\"M75 -10 Q60 30 82 55 Q103 82 75 111 Q57 140 83 195\" fill=\"none\" stroke=\"#e8bbab\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M65 42 L86 57\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M65 77 L86 92\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M65 112 L86 127\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M65 142 L86 157\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M160 -10 Q145 30 167 55 Q188 82 160 111 Q142 140 168 195\" fill=\"none\" stroke=\"#c98fa0\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M150 42 L171 57\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M150 77 L171 92\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M150 112 L171 127\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M150 142 L171 157\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M245 -10 Q230 30 252 55 Q273 82 245 111 Q227 140 253 195\" fill=\"none\" stroke=\"#efd0a4\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M235 42 L256 57\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M235 77 L256 92\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M235 112 L256 127\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M235 142 L256 157\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M330 -10 Q315 30 337 55 Q358 82 330 111 Q312 140 338 195\" fill=\"none\" stroke=\"#e8bbab\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M320 42 L341 57\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M320 77 L341 92\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M320 112 L341 127\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M320 142 L341 157\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M415 -10 Q400 30 422 55 Q443 82 415 111 Q397 140 423 195\" fill=\"none\" stroke=\"#c98fa0\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M405 42 L426 57\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M405 77 L426 92\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M405 112 L426 127\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M405 142 L426 157\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M500 -10 Q485 30 507 55 Q528 82 500 111 Q482 140 508 195\" fill=\"none\" stroke=\"#efd0a4\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M490 42 L511 57\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M490 77 L511 92\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M490 112 L511 127\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M490 142 L511 157\" fill=\"none\" stroke=\"#fae8d5\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /></svg>","boho":"<svg viewBox=\"0 0 600 180\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\"><rect width=\"600\" height=\"180\" fill=\"#3b233a\"/><path d=\"M90 -20 C50 40 115 90 S55 155 100 200\" fill=\"none\" stroke=\"#d6a1ae\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M114 -20 C190 25 40 65 125 105 S180 160 110 210\" fill=\"none\" stroke=\"#edc69f\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M230 -20 C190 40 255 90 S195 155 240 200\" fill=\"none\" stroke=\"#d6a1ae\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M254 -20 C330 25 180 65 265 105 S320 160 250 210\" fill=\"none\" stroke=\"#edc69f\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M370 -20 C330 40 395 90 S335 155 380 200\" fill=\"none\" stroke=\"#d6a1ae\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M394 -20 C470 25 320 65 405 105 S460 160 390 210\" fill=\"none\" stroke=\"#edc69f\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M510 -20 C470 40 535 90 S475 155 520 200\" fill=\"none\" stroke=\"#d6a1ae\" stroke-width=\"12\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M534 -20 C610 25 460 65 545 105 S600 160 530 210\" fill=\"none\" stroke=\"#edc69f\" stroke-width=\"4\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /></svg>","box":"<svg viewBox=\"0 0 600 180\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\"><rect width=\"600\" height=\"180\" fill=\"#3b233a\"/><g fill=\"none\" stroke=\"#a57691\" stroke-width=\"2\" opacity=\".65\"><path d=\"M30 8V172\"/><path d=\"M95 8V172\"/><path d=\"M160 8V172\"/><path d=\"M225 8V172\"/><path d=\"M290 8V172\"/><path d=\"M355 8V172\"/><path d=\"M420 8V172\"/><path d=\"M485 8V172\"/><path d=\"M550 8V172\"/><path d=\"M30 8H600\"/><path d=\"M30 49H600\"/><path d=\"M30 90H600\"/><path d=\"M30 131H600\"/><path d=\"M30 172H600\"/></g><path d=\"M65 16 Q45 42 65 70 Q85 100 65 130 Q45 155 65 190\" fill=\"none\" stroke=\"#eac0ad\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M130 16 Q110 42 130 70 Q150 100 130 130 Q110 155 130 190\" fill=\"none\" stroke=\"#eac0ad\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M195 16 Q175 42 195 70 Q215 100 195 130 Q175 155 195 190\" fill=\"none\" stroke=\"#eac0ad\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M260 16 Q240 42 260 70 Q280 100 260 130 Q240 155 260 190\" fill=\"none\" stroke=\"#eac0ad\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M325 16 Q305 42 325 70 Q345 100 325 130 Q305 155 325 190\" fill=\"none\" stroke=\"#eac0ad\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M390 16 Q370 42 390 70 Q410 100 390 130 Q370 155 390 190\" fill=\"none\" stroke=\"#eac0ad\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M455 16 Q435 42 455 70 Q475 100 455 130 Q435 155 455 190\" fill=\"none\" stroke=\"#eac0ad\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M520 16 Q500 42 520 70 Q540 100 520 130 Q500 155 520 190\" fill=\"none\" stroke=\"#eac0ad\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M585 16 Q565 42 585 70 Q605 100 585 130 Q565 155 585 190\" fill=\"none\" stroke=\"#eac0ad\" stroke-width=\"10\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /></svg>","cornrows":"<svg viewBox=\"0 0 600 180\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\"><rect width=\"600\" height=\"180\" fill=\"#3b233a\"/><path d=\"M-30 29 C120 -21 245 48 365 15 S520 -10 640 27\" fill=\"none\" stroke=\"#e6b9a9\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M-30 50 C120 0 245 69 365 36 S520 11 640 48\" fill=\"none\" stroke=\"#cd90a2\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M-30 71 C120 21 245 90 365 57 S520 32 640 69\" fill=\"none\" stroke=\"#e5c49e\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M-30 92 C120 42 245 111 365 78 S520 53 640 90\" fill=\"none\" stroke=\"#e6b9a9\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M-30 113 C120 63 245 132 365 99 S520 74 640 111\" fill=\"none\" stroke=\"#cd90a2\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M-30 134 C120 84 245 153 365 120 S520 95 640 132\" fill=\"none\" stroke=\"#e5c49e\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M-30 155 C120 105 245 174 365 141 S520 116 640 153\" fill=\"none\" stroke=\"#e6b9a9\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M-30 176 C120 126 245 195 365 162 S520 137 640 174\" fill=\"none\" stroke=\"#cd90a2\" stroke-width=\"8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /></svg>","locs":"<svg viewBox=\"0 0 600 180\" xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"true\" focusable=\"false\"><rect width=\"600\" height=\"180\" fill=\"#3b233a\"/><path d=\"M65 -25 C15 40 110 78 61 205\" fill=\"none\" stroke=\"#c4879c\" stroke-width=\"24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M69 -5 Q40 36 77 72 T63 137 T71 190\" fill=\"none\" stroke=\"#fae8d7\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M160 -25 C110 40 205 78 156 205\" fill=\"none\" stroke=\"#e4b9a8\" stroke-width=\"24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M164 -5 Q135 36 172 72 T158 137 T166 190\" fill=\"none\" stroke=\"#fae8d7\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M255 -25 C205 40 300 78 251 205\" fill=\"none\" stroke=\"#e5c497\" stroke-width=\"24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M259 -5 Q230 36 267 72 T253 137 T261 190\" fill=\"none\" stroke=\"#fae8d7\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M350 -25 C300 40 395 78 346 205\" fill=\"none\" stroke=\"#c4879c\" stroke-width=\"24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M354 -5 Q325 36 362 72 T348 137 T356 190\" fill=\"none\" stroke=\"#fae8d7\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M445 -25 C395 40 490 78 441 205\" fill=\"none\" stroke=\"#e4b9a8\" stroke-width=\"24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M449 -5 Q420 36 457 72 T443 137 T451 190\" fill=\"none\" stroke=\"#fae8d7\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M540 -25 C490 40 585 78 536 205\" fill=\"none\" stroke=\"#e5c497\" stroke-width=\"24\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /><path d=\"M544 -5 Q515 36 552 72 T538 137 T546 190\" fill=\"none\" stroke=\"#fae8d7\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\" /></svg>"};
+  const illustration = document.querySelector('.hb-braid');
+  if (!illustration) return;
+
+  const update = (key) => {
+    if (!diagrams[key]) return;
+    illustration.innerHTML = diagrams[key];
+  };
+
+  document.querySelectorAll('[data-style]').forEach(button=>{
+    const key = button.dataset.style;
+
+    button.addEventListener('pointerenter', event=>{
+      if(event.pointerType === 'mouse' || event.pointerType === 'pen'){
+        update(key);
+      }
+    });
+
+    button.addEventListener('focus', ()=>update(key));
+    button.addEventListener('click', ()=>update(key));
+  });
+})();
+</script>
+
+</body>
+</html>

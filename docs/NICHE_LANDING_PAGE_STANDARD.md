@@ -441,3 +441,40 @@ Verification
 - [ ] Keep human agent escalation, consent and transparency explicit.
 - [ ] Avoid unsupported AI capabilities and fabricated campaign results.
 - [ ] Maintain the six featured industries on the homepage.
+
+
+## Hair Braiding & Beauty — initial niche QA
+
+- [ ] Target US salon owners, not consumers searching for braids.
+- [ ] Separate commercial agency keywords from consumer service keywords.
+- [ ] Use service-specific campaigns with honest visual examples.
+- [ ] Confirm local geography and appointment capacity.
+- [ ] Provide AI calls, chatbot, missed-call and follow-up workflows.
+- [ ] Clearly disclose automated interaction and consent requirements.
+- [ ] Keep booking-request clicks separate from confirmed appointments.
+- [ ] Use natural hover, focus and tap interactions.
+- [ ] Keep only one accessible mobile hamburger menu.
+- [ ] Theme both official LeadsFlo logos without editing BrandMark.
+- [ ] Retain SEO, GEO and AEO with direct answers and useful articles.
+- [ ] Do not invent a client result, review, quotation or metric.
+- [ ] Keep homepage at six featured industry cards.
+- [ ] Replace the Industries illustration with an approved page screenshot.
+- [ ] Review desktop/mobile layout and confirm tracking before release.
+
+
+## Hair Braiding V2 — visual and content requirements
+
+- Five distinct hairstyle illustrations, changing on
+  mouse hover, keyboard focus and touch/click.
+- Official LeadsFlo logo preserved in header and footer.
+- Small braided logo accent with appropriate brand colors.
+- Subtle woven patterns throughout the page.
+- Twelve representative braiding service categories.
+- Prominent Sonya Hair Braiding case study reference.
+- No fabricated salon metrics or implied guaranteed results.
+- Separate agency-owner search intent from consumer
+  hairstyle and local appointment searches.
+- Maintain responsive layout and reduced-motion support.
+- Preserve existing AI calls, chatbot, CRM and follow-up.
+- Do not alter the six featured homepage industries.
+- Review at desktop, tablet and mobile sizes.
