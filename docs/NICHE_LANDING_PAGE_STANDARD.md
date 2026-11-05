@@ -331,3 +331,38 @@ Dental, Real Estate, Education & Training, Beauty Services.
 - All illustrations are conceptual design assets, never actual patient results or client case studies.
 - Review 320px, 375px, 390px, 430px, 768px and desktop before approval.
 - Do not commit or deploy until the user approves the release.
+
+## SEO + GEO + AEO — required for every niche
+
+SEO (search engine optimization)
+- [ ] Research commercial keywords in the target market.
+- [ ] Use one clear primary search intent per landing page.
+- [ ] Write unique titles, meta descriptions and H1s.
+- [ ] Maintain canonical URLs, sitemaps and internal links.
+- [ ] Publish substantive supporting articles.
+- [ ] Validate crawlability and mobile usability.
+
+GEO (generative engine optimization)
+- [ ] Identify LeadsFlo consistently as the service provider.
+- [ ] Use accurate Organization, WebPage and Service data.
+- [ ] Clearly explain who the services are for and what they do.
+- [ ] Include genuine examples and original insights where available.
+- [ ] Make important information available as visible HTML text.
+- [ ] Avoid invented statistics, credentials and success stories.
+- [ ] Avoid special AI-search files unless they serve a real purpose.
+
+AEO (answer engine optimization)
+- [ ] Answer the main visitor questions directly and concisely.
+- [ ] Use descriptive headings and clearly written explanations.
+- [ ] Include relevant visible FAQs.
+- [ ] Keep FAQ structured data consistent with visible answers.
+- [ ] Connect related guides to the relevant landing page.
+- [ ] Clearly distinguish service claims from clinical or legal claims.
+
+Verification
+- [ ] Structured data matches visible content.
+- [ ] No fabricated reviews, testimonials or LocalBusiness addresses.
+- [ ] No implication that SEO, GEO or AEO guarantees rankings.
+- [ ] No invented publication dates or AI citations.
+- [ ] Run production build and sitewide SEO audit.
+- [ ] Review the visual design before deployment.
