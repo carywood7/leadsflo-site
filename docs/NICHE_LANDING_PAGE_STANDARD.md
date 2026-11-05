@@ -366,3 +366,78 @@ Verification
 - [ ] No invented publication dates or AI citations.
 - [ ] Run production build and sitewide SEO audit.
 - [ ] Review the visual design before deployment.
+
+
+## Real Estate — SEO, GEO, AEO and campaign compliance
+
+- [ ] Target real estate agents, brokerages and teams, not consumers.
+- [ ] Separate buyer, seller and listing campaign journeys.
+- [ ] Use original visual concepts; do not invent listings or client results.
+- [ ] Apply Meta housing Special Ad Category restrictions as applicable.
+- [ ] Review fair housing compliance and listing asset permissions.
+- [ ] Use actual US keyword research before final metadata approval.
+- [ ] Keep direct answers, visible FAQs and accurate structured data.
+- [ ] Maintain Organization, Service, WebPage and breadcrumb entities.
+- [ ] Link landing page to three distinct supporting guides.
+- [ ] Track calendar CTA clicks as intent, not confirmed meetings.
+- [ ] Keep one accessible hamburger menu on mobile.
+- [ ] Check 320, 375, 390, 430, 768 and desktop widths.
+- [ ] Do not add a seventh homepage industry card.
+- [ ] No deployment without final visual approval.
+
+
+## Real Estate V2 — required review
+
+- [ ] Lead journey responds to hover, focus and tap.
+- [ ] FAQs expand on hover; keyboard and tap still work.
+- [ ] Property explorer covers residential, commercial, rentals,
+      management, luxury and land/development.
+- [ ] Commercial property campaigns distinguish office, retail
+      and industrial requirements.
+- [ ] Property owners and rental tenants use separate lead flows.
+- [ ] Support SEO, GEO and AEO with direct answers and useful guides.
+- [ ] Review housing-ad restrictions and fair housing requirements.
+- [ ] Keep homepage at six featured industries.
+- [ ] Inspect responsive layout before deployment.
+
+## Niche footer branding and industry screenshots
+
+- [ ] Use the actual LeadsFlo BrandMark in header and footer.
+- [ ] Adapt logo colors for the niche without editing shared branding.
+- [ ] Keep both logos readable against their backgrounds.
+- [ ] Use approved screenshots for Industries directory thumbnails.
+- [ ] Ensure screenshots display at consistent sizes and proportions.
+- [ ] Keep hover and keyboard-focus effects.
+- [ ] Verify screenshots are included in Git before deployment.
+- [ ] Inspect footer and Industries page on desktop and mobile.
+
+- [ ] Avoid instructional microcopy such as 'hover to explore' or 'tap on mobile'; make interactions self-evident.
+
+## AI, voice, chat and automation — niche page standard
+
+- [ ] Show AI call-answering or voice reception where relevant.
+- [ ] Explain website chatbots and conversational AI capabilities.
+- [ ] Include practical examples of SMS and email follow-up.
+- [ ] Show missed-call recovery and intelligent lead qualification.
+- [ ] Include CRM lead routing, tasks and escalation workflows.
+- [ ] Explain appointment assistance and calendar integration.
+- [ ] Make interactive showcases work on hover, focus and tap.
+- [ ] Write natural, professional dialogue examples.
+- [ ] Clearly identify automated conversations as AI or automation.
+- [ ] Provide human handoff and appropriate consent controls.
+- [ ] Do not claim a demo is live or that an AI has completed a booking.
+- [ ] Do not fabricate call recordings, client results or success rates.
+
+## Real Estate design and AI editorial standard
+
+- [ ] Preserve the official LeadsFlo wordmark and flow artwork.
+- [ ] Use page-scoped architectural accents in header and footer.
+- [ ] Add subtle building outlines and shadow effects throughout.
+- [ ] Keep decorative artwork behind content and non-interactive.
+- [ ] Disable decorative animation for reduced-motion preferences.
+- [ ] Include relevant AI voice, chatbot and automation content
+      in the supporting articles, not only the landing page.
+- [ ] Adapt AI workflow examples to each specific property market.
+- [ ] Keep human agent escalation, consent and transparency explicit.
+- [ ] Avoid unsupported AI capabilities and fabricated campaign results.
+- [ ] Maintain the six featured industries on the homepage.

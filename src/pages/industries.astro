@@ -465,6 +465,23 @@ import IndustryCreativeExamples from "../components/IndustryCreativeExamples.ast
       <a class="lf-industry-v2-image" href="/dental-lead-generation/" aria-label="Explore Dental Clinic lead generation"><img src="/images/industry-screenshots/dentist-marketing.png" alt="LeadsFlo dental marketing landing page preview featuring dental lead generation and consultation workflows" loading="lazy" decoding="async" /><span class="lf-industry-v2-image-action">EXPLORE PAGE ↗</span></a>
       <div class="lf-industry-v2-content"><span class="lf-industry-v2-label">12 / HEALTH &amp; BEAUTY</span><h3><a href="/dental-lead-generation/">Dental Clinics &amp; Implants</a></h3><p>Dental consultation requests, relevant local inquiries and front-desk follow-up.</p><div class="lf-industry-v2-links"><a class="lf-industry-v2-primary" href="/dental-lead-generation/">Explore industry ↗</a><a class="lf-industry-v2-guide" href="/insights/dental-lead-generation/">Read guide ↗</a></div></div>
     </article>
+
+    <!-- LEADSFLO_REAL_ESTATE_CARD_V1 -->
+    <article class="lf-industry-v2-card">
+      <a class="lf-industry-v2-image" href="/real-estate-lead-generation/" aria-label="Explore Real Estate lead generation">
+        <img class="lf-realestate-preview" src="/images/industry-screenshots/real-estate-marketing.png" alt="Preview of LeadsFlo real estate lead generation landing page, featuring property marketing and buyer and seller campaign workflows" loading="lazy" decoding="async" />
+        <span class="lf-industry-v2-image-action">EXPLORE PAGE ↗</span>
+      </a>
+      <div class="lf-industry-v2-content">
+        <span class="lf-industry-v2-label">13 / REAL ESTATE</span>
+        <h3><a href="/real-estate-lead-generation/">Real Estate &amp; Realtors</a></h3>
+        <p>Qualified buyer and seller inquiries, listing campaigns, CRM follow-up and booked conversations.</p>
+        <div class="lf-industry-v2-links">
+          <a class="lf-industry-v2-primary" href="/real-estate-lead-generation/">Explore industry ↗</a>
+          <a class="lf-industry-v2-guide" href="/insights/real-estate-lead-generation/">Read guide ↗</a>
+        </div>
+      </div>
+    </article>
     </div>
 
     <div class="lf-industry-v2-bottom">
@@ -732,6 +749,35 @@ import IndustryCreativeExamples from "../components/IndustryCreativeExamples.ast
     transform:none;
   }
 }
+
+/* LEADSFLO_REAL_ESTATE_CARD_V1 */
+.lf-realestate-card-visual{position:relative;background:#dbe8dd;width:100%;height:100%;min-height:175px;overflow:hidden}
+.lf-realestate-card-visual svg{width:100%;height:100%;position:absolute;inset:0}
+.lf-realestate-card-caption{position:absolute;left:14px;bottom:12px;padding:7px 10px;border-radius:4px;background:#153d33;color:#fff;font-size:10px;font-weight:800;letter-spacing:.1em}
+
+
+/* Real Estate industry screenshot */
+.lf-industry-v2-image .lf-realestate-preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 175px;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform .35s ease;
+}
+
+.lf-industry-v2-card:hover .lf-realestate-preview,
+.lf-industry-v2-card:focus-within .lf-realestate-preview {
+  transform: scale(1.035);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lf-industry-v2-image .lf-realestate-preview {
+    transition: none;
+  }
+}
+
 </style>
 
 <style is:global>.lf-dental-card-visual{height:100%;min-height:180px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;background:radial-gradient(circle at 60% 20%,#b4e7df,transparent 50%),linear-gradient(120deg,#0e4156,#147e84);color:#e1f6f2;overflow:hidden}.lf-dental-card-visual svg{width:116px;height:116px;filter:drop-shadow(0 10px 14px #04303d66)}.lf-dental-card-visual span{font-weight:850;font-size:12px;letter-spacing:.17em}</style>
