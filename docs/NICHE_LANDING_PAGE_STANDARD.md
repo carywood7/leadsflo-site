@@ -478,3 +478,20 @@ Verification
 - Preserve existing AI calls, chatbot, CRM and follow-up.
 - Do not alter the six featured homepage industries.
 - Review at desktop, tablet and mobile sizes.
+
+## Education & Training — V1 review checklist
+
+- Primary US search intent: education marketing agency.
+- Support program-specific student enrollment and lead generation.
+- Separate universities, coding bootcamps, vocational and online education.
+- Interactive program selector and six-stage admissions journey.
+- Functional hypothetical funnel planner; no fabricated enrollment forecasts.
+- AI admissions demonstration clearly labeled as illustrative.
+- No unsupported job placement, accreditation or admissions guarantees.
+- Le Wagon Bangalore experience described only in its actual context.
+- Four substantive educational articles and corresponding internal links.
+- Official LeadsFlo BrandMark retained in header and footer.
+- Education-specific cap accent, midnight blue, cyan and gold identity.
+- One accessible mobile hamburger and mobile CTA.
+- No seventh homepage industry card; homepage remains unchanged.
+- No commit, push or deployment before design approval.
