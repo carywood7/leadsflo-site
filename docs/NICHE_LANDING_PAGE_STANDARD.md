@@ -319,3 +319,15 @@ Dental, Real Estate, Education & Training, Beauty Services.
 - [ ] Keep the Explore all industries link.
 - [ ] Do not add new niches automatically to the homepage.
 - [ ] Inspect real desktop and mobile appearance before publishing.
+
+## Dental release notes — initial integrated build
+
+- Dental is a separate Industries-directory niche; do not add a seventh homepage card.
+- Use one mobile hamburger; no second horizontal navigation strip.
+- Keep marketing qualification separate from clinical treatment eligibility.
+- Do not forward sensitive medical information to advertising or analytics platforms.
+- Show consultation booking intent separately from verified clinic appointments.
+- Dental landing page, three articles, internal links, tracking and SEO are one package.
+- All illustrations are conceptual design assets, never actual patient results or client case studies.
+- Review 320px, 375px, 390px, 430px, 768px and desktop before approval.
+- Do not commit or deploy until the user approves the release.
