@@ -2,7 +2,7 @@
 import BrandMark from "../components/BrandMark.astro";
 import "../styles/global.css";
 
-const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const booking = "https://calendar.app.google/gJscT3C474Xt4Nqh7";
 const canonical = "https://leadsflo.co/electrician-lead-generation/";
 const offerings = [
       {n:"01",tag:"SEARCH",name:"Google Ads for Electricians",
@@ -2193,19 +2193,43 @@ body.hv-page .resource:focus-within{
  <main>
 
 
-<section class="section" id="challenge">
-  <div class="wrap introgrid">
-    <div>
+
+<section class="section el-challenge-refined" id="challenge">
+  <div class="wrap el-challenge-grid">
+    <div class="el-challenge-copy">
       <span class="eyebrow blue">THE REAL CHALLENGE</span>
-      <h2 class="heading">Not every electrical inquiry is the same.</h2>
+      <h2 class="heading">Different electrical projects.
+        <em>Different opportunities.</em></h2>
+      <p class="el-lede">A repair call, panel upgrade,
+        EV charger installation and commercial wiring
+        project shouldn't follow the same sales journey.</p>
+      <p>Some customers need immediate service.
+        Others need consultations, inspections or
+        detailed estimates. Your marketing should
+        recognize those differences.</p>
+      <div class="el-challenge-insight">
+        <small>THE OBJECTIVE</small>
+        <strong>Better project fit.
+          More organized estimate requests.</strong>
+        <p>Connect campaigns, service pages,
+          qualification, lead routing and follow-up.</p>
+      </div>
+      <a class="cta" href={booking}>
+        Discuss your electrical lead quality ↗
+      </a>
     </div>
-    <div>
-      <p class="bodycopy">A repair call, panel upgrade, EV charger installation and commercial wiring project require different qualification and scheduling.</p>
-      <p class="bodycopy">Some customers need service. Others need a project consultation, inspection or detailed estimate.</p>
-      <p class="bodycopy">LeadsFlo connects relevant campaigns, service pages, lead routing and appointment follow-up.</p>
-    </div>
+    <figure class="el-challenge-photo">
+      <img src="/images/electrical/electrical-panel.jpg"
+        alt="Electrical service panel installation"
+        width="1200" height="800" loading="lazy" />
+      <figcaption>
+        <small>ELECTRICAL / PROJECT QUALIFICATION</small>
+        <strong>From first inquiry to estimate.</strong>
+      </figcaption>
+    </figure>
   </div>
 </section>
+
   <section class="section dark" id="services"><div class="wrap"><div class="sectop"><div><span class="eyebrow" style="color:#9bd7e9">WHAT WE BUILD</span><h2 class="heading">From local search to booked estimates.</h2></div><p class="bodycopy">Four connected capabilities to attract the right electrical customers, qualify projects and support estimates.</p></div><div class="servicegrid">{offerings.map(item=><article class="service" tabindex="0" role="button" data-hv-service={item.n} aria-label={`Explore ${item.name}`}><span class="index">{item.n} / {item.tag}</span><h3>{item.name}</h3><p>{item.desc}</p><small>LEADSFLO / Electrical</small></article>)}</div></div>
 <div class="hv-service-preview" data-hv-preview aria-live="polite">
   <div class="hv-preview-copy">
@@ -2226,6 +2250,8 @@ body.hv-page .resource:focus-within{
     <small>LEAD FLOW / ACTIVE</small>
   </div>
 </div>
+
+<div class="wrap el-booking-row"><a class="cta" href={booking}>Plan your electrical marketing system ↗</a></div>
 </section>
   <section class="section journey" id="process"><div class="wrap"><span class="eyebrow blue">THE INTERACTIVE PROCESS</span><h2 class="heading">Five steps. One connected journey.</h2><p class="bodycopy" style="margin-bottom:33px">Select each stage to see how a electrical inquiry moves from search to a scheduled conversation.</p><div class="journeygrid" data-hv-journey><div class="steps" role="group" aria-label="Electrical lead journey">{stages.map((stage,index)=><button class="step" type="button" data-hv-step={index} aria-pressed={index===0?'true':'false'}><span class="num">{stage.n}</span><span>{stage.label}</span><span aria-hidden="true">↗</span></button>)}</div><div class="stagepanel" aria-live="polite"><span class="stagelabel" data-hv-tag>{stages[0].tag}</span><h3 data-hv-title>{stages[0].title}</h3><p data-hv-body>{stages[0].body}</p><div class="stagebottom"><div><span class="eyebrow blue">WHAT HAPPENS HERE</span><ul data-hv-points>{stages[0].points.map(point=><li>{point}</li>)}</ul></div><div class="output" data-hv-outcome>{stages[0].outcome}</div></div></div></div></div></section>
 
@@ -2249,6 +2275,8 @@ body.hv-page .resource:focus-within{
       <p style="font-size:12px;line-height:1.7;color:#617f92">Illustration only; not a real customer inquiry.</p>
     </div>
   </div>
+
+<div class="wrap el-booking-row"><a class="cta" href={booking}>Improve electrical lead qualification ↗</a></div>
 </section>
 
 
@@ -2307,11 +2335,13 @@ body.hv-page .resource:focus-within{
       </figure>
     </div>
 
-    <p class="hv-photo-credit">Illustrative electrical industry stock photography, not LeadsFlo client projects.</p>
+
   </div>
+
+<div class="wrap el-booking-row"><a class="cta" href={booking}>Discuss your electrical services ↗</a></div>
 </section>
 
-<section class="section calculator" id="calculator"><div class="wrap calcgrid"><div><span class="eyebrow blue">CAMPAIGN SCENARIO TOOL</span><h2 class="heading">What could more booked electrical estimates mean?</h2><p class="bodycopy">Adjust the sliders to explore a hypothetical scenario based on monthly inquiries, appointment rate, close rate and average completed electrical-job revenue.</p><p class="bodycopy"><strong>Important:</strong> These are assumptions, not LeadsFlo results, forecasts or guarantees. Revenue is not profit and excludes marketing and delivery costs.</p></div><div class="calcbox" data-hv-calc><label class="range"><span class="rangetitle">Monthly inquiries <output data-hv-value="leads">60</output></span><input data-hv-range="leads" type="range" min="10" max="250" step="10" value="60" /></label><label class="range"><span class="rangetitle">Appointment booking rate <output data-hv-value="book">35%</output></span><input data-hv-range="book" type="range" min="5" max="90" step="5" value="35" /></label><label class="range"><span class="rangetitle">Close rate <output data-hv-value="close">25%</output></span><input data-hv-range="close" type="range" min="5" max="80" step="5" value="25" /></label><label class="range"><span class="rangetitle">Average completed-job revenue <output data-hv-value="job">$3,500</output></span><input data-hv-range="job" type="range" min="250" max="15000" step="250" value="3500" /></label><div class="result"><small>ILLUSTRATIVE MONTHLY GROSS REVENUE</small><strong data-hv-revenue>$18,375</strong><p data-hv-breakdown>21.0 potential bookings · 5.3 expected jobs</p><p>Scenario only. Not a revenue prediction or performance claim.</p></div></div></div></section>
+<section class="section calculator" id="calculator"><div class="wrap calcgrid"><div><span class="eyebrow blue">CAMPAIGN SCENARIO TOOL</span><h2 class="heading">What could more booked electrical estimates mean?</h2><p class="bodycopy">Adjust the sliders to explore a hypothetical scenario based on monthly inquiries, appointment rate, close rate and average completed electrical-job revenue.</p><p class="bodycopy"><strong>Important:</strong> These are assumptions, not LeadsFlo results, forecasts or guarantees. Revenue is not profit and excludes marketing and delivery costs.</p><div class="el-calc-booking"><a class="cta" href={booking}>Discuss your electrical growth targets ↗</a></div></div><div class="calcbox" data-hv-calc><label class="range"><span class="rangetitle">Monthly inquiries <output data-hv-value="leads">60</output></span><input data-hv-range="leads" type="range" min="10" max="250" step="10" value="60" /></label><label class="range"><span class="rangetitle">Appointment booking rate <output data-hv-value="book">35%</output></span><input data-hv-range="book" type="range" min="5" max="90" step="5" value="35" /></label><label class="range"><span class="rangetitle">Close rate <output data-hv-value="close">25%</output></span><input data-hv-range="close" type="range" min="5" max="80" step="5" value="25" /></label><label class="range"><span class="rangetitle">Average completed-job revenue <output data-hv-value="job">$3,500</output></span><input data-hv-range="job" type="range" min="250" max="15000" step="250" value="3500" /></label><div class="result"><small>ILLUSTRATIVE MONTHLY GROSS REVENUE</small><strong data-hv-revenue>$18,375</strong><p data-hv-breakdown>21.0 potential bookings · 5.3 expected jobs</p><p>Scenario only. Not a revenue prediction or performance claim.</p></div></div></div></section>
   <section class="section" id="faq"><div class="wrap faqgrid"><div><span class="eyebrow blue">COMMON QUESTIONS</span><h2 class="heading">Before we get started.</h2><p class="bodycopy">Common questions about electrical campaigns, appointment setting and qualification.</p></div><div class="faqlist">{faqs.map((item,index)=><details open={index===0}><summary>{item.q}</summary><p>{item.a}</p></details>)}</div></div></section>
 
 
@@ -2338,71 +2368,65 @@ body.hv-page .resource:focus-within{
     <a class="cta" href={booking}>Book a Strategy Call ↗</a>
   </div>
 </section>
- </main>
+ <!-- ELECTRICAL_BOOKING_CTAS_V1 -->
+</main>
 
-<footer class="hv-footer-v6">
-  <div class="wrap hv-footer-main">
-    <div class="hv-footer-intro">
-      <a class="brand hv-footer-brand" href="/"
-         aria-label="LeadsFlo home">
-        <BrandMark theme="dark" />
-      </a>
 
-      <h2>Better electrician leads.<br />
-        <em>Better follow-through.</em>
-      </h2>
+<footer class="el-footer-refined">
+  <div class="wrap">
+    <div class="el-footer-grid">
+      <div class="el-footer-brand">
+        <a href="/" class="brand" aria-label="LeadsFlo home">
+          <BrandMark theme="dark" />
+        </a>
+        <p>Qualified electrical inquiries,
+          better project conversations and
+          dependable appointment follow-up.</p>
+        <small>Marketing built around your electrical services.</small>
+      </div>
 
-      <p>
-        Advertising, conversion funnels, qualification and
-        appointment setting working together to help electrical
-        businesses turn inquiries into conversations.
-      </p>
+      <nav class="el-footer-column" aria-label="Explore Electrical">
+        <h3>Explore</h3>
+        <a href="#challenge">The challenge</a>
+        <a href="#services">Our services</a>
+        <a href="#process">How it works</a>
+        <a href="#qualification">Lead qualification</a>
+        <a href="#calculator">Revenue calculator</a>
+        <a href="#faq">FAQs</a>
+        <a href="#top">Back to top ↑</a>
+      </nav>
 
-      <a class="hv-footer-cta" href={booking}>
-        Discuss Your Electrical Growth ↗
-      </a>
+      <nav class="el-footer-column" aria-label="Electrical resources">
+        <h3>Electrical Resources</h3>
+        <a href="/insights/electrician-lead-generation/">
+          Lead generation</a>
+        <a href="/insights/google-ads-for-electricians/">
+          Google Ads</a>
+        <a href="/insights/electrician-marketing-strategies/">
+          Marketing strategies</a>
+        <a href="/insights/electrician-lead-costs/">
+          Lead costs</a>
+      </nav>
+
+      <div class="el-footer-column">
+        <h3>Get Started</h3>
+        <p>Ready to generate better-fit electrical inquiries?</p>
+        <a class="cta" href={booking}>Book a strategy call ↗</a>
+        <a href="/contact/">Contact LeadsFlo</a>
+      </div>
     </div>
 
-    <nav class="hv-footer-column"
-         aria-label="Electrical marketing services">
-      <h3>What we do</h3>
-      <a href="#services">Google & Meta Ads</a>
-      <a href="#services">Electrical Service Funnels</a>
-      <a href="#qualification">Lead Qualification</a>
-      <a href="#process">CRM & Follow-up</a>
-      <a href="#calculator">Revenue Scenario</a>
-    </nav>
-
-    <nav class="hv-footer-column"
-         aria-label="Explore LeadsFlo">
-      <h3>Explore</h3>
-      <a href="/">Home</a>
-      <a href="/industries/">Industries</a>
-      <a href="/insights/">Insights</a>
-      <a href="/work/">Our Work</a>
-      <a href="/contact/">Contact</a>
-    </nav>
-
-    <div class="hv-footer-column hv-footer-contact">
-      <h3>Ready to grow?</h3>
-      <p>
-        Tell us what you offer, where you operate
-        and what you want to improve.
-      </p>
-      <a href={booking}>Book a Strategy Call ↗</a>
+    <div class="el-footer-bottom">
+      <span>© {new Date().getFullYear()} LeadsFlo</span>
+      <nav aria-label="Legal">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-and-conditions/">
+          Terms &amp; Conditions</a>
+      </nav>
     </div>
-  </div>
-
-  <div class="wrap hv-footer-bottom">
-    <span>© {new Date().getFullYear()} LeadsFlo</span>
-    <span>More leads. Less guesswork.</span>
-    <nav aria-label="Legal information">
-      <a href="/privacy-policy/">Privacy Policy</a>
-      <a href="/terms-and-conditions/">Terms & Conditions</a>
-    </nav>
-    <a href="#top" class="hv-back-top">Back to top ↑</a>
   </div>
 </footer>
+
 
  <script define:vars={{stages,offerings}}>
   const root=document.querySelector('[data-hv-journey]');
@@ -2652,3 +2676,207 @@ body.hv-page .resource:focus-within{
 
 </body>
 </html>
+
+<!-- ELECTRICAL_CONVERSION_POLISH_V1 -->
+<style is:global>
+body.hv-page .el-challenge-refined {
+  background:#f1f7fb;
+}
+body.hv-page .el-challenge-grid {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,.95fr);
+  gap:clamp(36px,6vw,85px);
+  align-items:center;
+}
+body.hv-page .el-challenge-copy h2 {
+  font-size:clamp(39px,4.4vw,65px);
+  letter-spacing:-.045em;
+  line-height:1.13;
+}
+body.hv-page .el-challenge-copy em {
+  color:#1877a2;
+  font-style:normal;
+}
+body.hv-page .el-challenge-copy>p {
+  max-width:540px;
+  color:#526f80;
+  font-size:16px;
+  line-height:1.8;
+}
+body.hv-page .el-challenge-copy .el-lede {
+  color:#152d40;
+  font-size:19px;
+  font-weight:600;
+}
+body.hv-page .el-challenge-insight {
+  border-left:3px solid #eea16f;
+  padding:18px 22px;
+  margin:28px 0;
+  background:linear-gradient(90deg,#dfebf2,transparent);
+}
+body.hv-page .el-challenge-insight small {
+  display:block;
+  color:#1877a2;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.14em;
+  margin-bottom:10px;
+}
+body.hv-page .el-challenge-insight strong {
+  display:block;
+  color:#152d40;
+  font-size:19px;
+  line-height:1.4;
+}
+body.hv-page .el-challenge-insight p {
+  color:#526f80;
+  font-size:14px;
+  line-height:1.7;
+  margin:9px 0 0;
+}
+body.hv-page .el-challenge-photo {
+  margin:0;
+  overflow:hidden;
+  border-radius:10px;
+  background:#102c42;
+}
+body.hv-page .el-challenge-photo img {
+  display:block;
+  width:100%;
+  height:clamp(375px,42vw,555px);
+  object-fit:cover;
+}
+body.hv-page .el-challenge-photo figcaption {
+  padding:23px 25px;
+  color:white;
+}
+body.hv-page .el-challenge-photo small {
+  display:block;
+  color:#ffc18c;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.12em;
+  margin-bottom:9px;
+}
+body.hv-page .el-challenge-photo strong {
+  font-size:19px;
+  line-height:1.4;
+}
+body.hv-page .el-booking-row {
+  display:flex;
+  margin-top:0;
+  padding-top:40px;
+}
+body.hv-page .el-booking-row .cta {
+  max-width:100%;
+  margin:0;
+  text-align:center;
+}
+body.hv-page .el-calc-booking {
+  margin-top:30px;
+}
+body.hv-page .el-calc-booking .cta {
+  max-width:100%;
+  text-align:center;
+  line-height:1.5;
+}
+body.hv-page .el-footer-refined {
+  background:#0c2435;
+  color:#f2f7fb;
+  padding:75px 0 28px;
+  border-top:1px solid #54768b;
+}
+body.hv-page .el-footer-grid {
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1.15fr 1.1fr;
+  gap:clamp(24px,3vw,50px);
+  padding-bottom:58px;
+}
+body.hv-page .el-footer-brand p {
+  margin:22px 0 12px;
+  color:#d7e6ef;
+  font-size:15px;
+  line-height:1.8;
+}
+body.hv-page .el-footer-brand small {
+  color:#b7ccda;
+  font-size:13px;
+  line-height:1.7;
+}
+body.hv-page .el-footer-column {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:15px;
+  min-width:0;
+}
+body.hv-page .el-footer-column h3 {
+  margin:0 0 10px;
+  color:#ffbd89;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+body.hv-page .el-footer-column>a {
+  color:#eff7fb;
+  font-size:14px;
+  font-weight:650;
+  line-height:1.55;
+}
+body.hv-page .el-footer-column>a:hover {
+  color:#ffbd89;
+}
+body.hv-page .el-footer-column>p {
+  margin:0;
+  color:#d7e6ef;
+  font-size:15px;
+  line-height:1.7;
+}
+body.hv-page .el-footer-column>a.cta {
+  color:#132737;
+  padding:14px 16px;
+  font-size:12px;
+  text-align:center;
+  margin:5px 0;
+}
+body.hv-page .el-footer-bottom {
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding-top:25px;
+  border-top:1px solid #54768b;
+  color:#b7ccda;
+  font-size:12px;
+}
+body.hv-page .el-footer-bottom nav {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+body.hv-page .el-footer-bottom a {
+  color:#e8f2f7;
+}
+@media(max-width:950px) {
+  body.hv-page .el-footer-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:800px) {
+  body.hv-page .el-challenge-grid {
+    grid-template-columns:1fr;
+  }
+}
+@media(max-width:550px) {
+  body.hv-page .el-footer-grid {
+    grid-template-columns:1fr;
+  }
+  body.hv-page .el-footer-bottom {
+    flex-direction:column;
+  }
+  body.hv-page .el-booking-row .cta,
+  body.hv-page .el-calc-booking .cta {
+    width:100%;
+  }
+}
+</style>

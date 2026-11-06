@@ -3,7 +3,7 @@ import BrandMark from "../components/BrandMark.astro";
 import "../styles/global.css";
 import "../styles/navigation.css";
 
-const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const booking = "https://calendar.app.google/gJscT3C474Xt4Nqh7";
 
 const faq = [
   {
@@ -238,6 +238,7 @@ gtag('config','G-QE382W17N6');
       <div class="ed-stage-metric"><span>WHAT TO REVIEW</span><strong id="ed-stage-metric">Relevant visits and program interest</strong></div>
     </div>
   </div>
+<div class="ed-booking-row"><a class="ed-btn ed-btn-gold" href={booking}>Improve your admissions follow-up ↗</a></div>
 </div>
 </section>
 
@@ -258,6 +259,7 @@ gtag('config','G-QE382W17N6');
     <div class="ed-chat"><p class="ed-chat-user">I'm interested in a coding bootcamp. Can I join from another city?</p><p class="ed-chat-bot">That depends on the course format. Is the program you're considering in person, online or hybrid? I can help you find the right admissions contact.</p></div>
     <p>Example conversation only. No live chatbot or admission decision is being represented here.</p>
   </div>
+<div class="ed-booking-row"><a class="ed-btn ed-btn-gold" href={booking}>Discuss admissions automation ↗</a></div>
 </div>
 </section>
 
@@ -309,6 +311,7 @@ gtag('config','G-QE382W17N6');
     <div class="ed-experience-number">09 <small>WEEK FORMAT / PROJECT CONTEXT</small></div>
     <div><h3>Lessons from education campaign work</h3><p>LeadsFlo's founder has worked on Google Ads for Le Wagon Bangalore's nine-week, in-person web development bootcamp. That experience highlighted practical admissions issues: physical attendance requirements, geographic targeting, course affordability and the difference between generating inquiries and reaching suitable applicants.</p><p>That is experience from an India-based program—not a US enrollment result or a claim of verified student admissions. We use those lessons to ask better qualification questions.</p></div>
   </div>
+<div class="ed-booking-row"><a class="ed-btn ed-btn-gold" href={booking}>Plan your student acquisition strategy ↗</a></div>
 </div>
 </section>
 
@@ -360,12 +363,15 @@ gtag('config','G-QE382W17N6');
     <a class="ed-btn ed-btn-gold" href={booking} target="_blank" rel="noopener noreferrer">Book an education growth conversation ↗</a>
   </div>
 </section>
+<!-- EDUCATION_CONVERSION_CTAS_V1 -->
 </main>
 
-<footer class="ed-footer">
-<div class="ed-wrap ed-footer-grid">
-  <div>
-    <a class="ed-brand ed-footer-brand" href="/" aria-label="LeadsFlo home">
+
+<footer class="ed-footer ed-footer-refined">
+  <div class="ed-wrap">
+    <div class="ed-footer-grid">
+      <div class="ed-footer-intro">
+        <a class="ed-brand ed-footer-brand" href="/" aria-label="LeadsFlo home">
       <svg class="ed-cap" viewBox="0 0 54 48" aria-hidden="true">
         <path d="M3 17 27 6 51 17 27 28Z" fill="#efc684"/>
         <path d="M12 23v12q15 13 30 0V23" fill="none" stroke="#53cbe0" stroke-width="4" stroke-linecap="round"/>
@@ -374,14 +380,56 @@ gtag('config','G-QE382W17N6');
       </svg>
       <BrandMark theme="light"/>
     </a>
-    <p>Paid advertising, conversion funnels, AI conversations and CRM workflows for businesses that need meaningful inquiries.</p>
-    <a href={booking} target="_blank" rel="noopener noreferrer">Let's Talk ↗</a>
+        <p>Student lead generation, enrollment funnels,
+          CRM automation and organized admissions follow-up.</p>
+        <small>Marketing built around your programs
+          and prospective students.</small>
+      </div>
+
+      <nav class="ed-footer-column" aria-label="Explore Education">
+        <strong>EXPLORE</strong>
+        <a href="#programs">Program types</a>
+        <a href="#enrollment">Enrollment journey</a>
+        <a href="#automation">AI &amp; CRM</a>
+        <a href="#planner">Growth planner</a>
+        <a href="#faq">FAQs</a>
+        <a href="#top">Back to top ↑</a>
+      </nav>
+
+      <nav class="ed-footer-column" aria-label="Education resources">
+        <strong>EDUCATION RESOURCES</strong>
+        <a href="/insights/education-lead-generation/">
+          Education lead generation</a>
+        <a href="/insights/google-ads-for-education/">
+          Google Ads for education</a>
+        <a href="/insights/student-enrollment-marketing/">
+          Student enrollment strategies</a>
+        <a href="/insights/ai-admissions-assistants/">
+          AI admissions assistants</a>
+      </nav>
+
+      <div class="ed-footer-column ed-footer-contact">
+        <strong>GET STARTED</strong>
+        <p>Ready for more qualified student inquiries
+          and a clearer admissions process?</p>
+        <a class="ed-btn ed-btn-gold" href={booking}>
+          Book a strategy call ↗
+        </a>
+        <a href="/contact/">Contact LeadsFlo</a>
+      </div>
+    </div>
+
+    <div class="ed-footer-bottom">
+      <span>© {new Date().getFullYear()} LeadsFlo</span>
+      <nav aria-label="Legal">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-and-conditions/">
+          Terms &amp; Conditions</a>
+      </nav>
+    </div>
   </div>
-  <div><strong>SERVICES</strong><a href="/performance-marketing/">Performance Marketing</a><a href="/websites-funnels/">Websites &amp; Funnels</a><a href="/crm-automation/">CRM &amp; Automation</a><a href="/appointment-setting/">Appointment Setting</a></div>
-  <div><strong>EXPLORE</strong><a href="/industries/">All Industries</a><a href="/insights/">Insights</a><a href="/our-approach/">Our Approach</a><a href="/contact/">Contact</a></div>
-</div>
-<div class="ed-wrap ed-footer-bottom"><span>© {new Date().getFullYear()} LeadsFlo</span><span><a href="/privacy-policy/">Privacy</a> · <a href="/terms-and-conditions/">Terms</a></span></div>
 </footer>
+
 
 <a class="ed-mobile-cta" href={booking} target="_blank" rel="noopener noreferrer">Discuss student enrollment ↗</a>
 
@@ -815,3 +863,110 @@ gtag('config','G-QE382W17N6');
 </style>
 </body>
 </html>
+
+<!-- EDUCATION_CONVERSION_STYLES_V1 -->
+<style is:global>
+body.ed-page .ed-booking-row {
+  display:flex;
+  align-items:center;
+  padding-top:40px;
+}
+body.ed-page .ed-booking-row .ed-btn {
+  max-width:100%;
+  width:auto;
+  text-align:center;
+  line-height:1.5;
+}
+body.ed-page .ed-footer-refined {
+  background:#0b1d33;
+  color:#f0f6fb;
+  padding:75px 0 28px;
+}
+body.ed-page .ed-footer-refined .ed-footer-grid {
+  display:grid;
+  grid-template-columns:1.45fr 1fr 1.2fr 1.1fr;
+  gap:clamp(24px,3vw,48px);
+  align-items:start;
+}
+body.ed-page .ed-footer-intro p {
+  margin:24px 0 12px;
+  color:#cfdeeb;
+  font-size:15px;
+  line-height:1.8;
+}
+body.ed-page .ed-footer-intro small {
+  color:#a9bfd0;
+  font-size:13px;
+  line-height:1.7;
+}
+body.ed-page .ed-footer-column {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:15px;
+  min-width:0;
+}
+body.ed-page .ed-footer-column strong {
+  color:#f0c785;
+  font-size:11px;
+  font-weight:850;
+  letter-spacing:.12em;
+  margin-bottom:10px;
+}
+body.ed-page .ed-footer-column>a:not(.ed-btn) {
+  margin:0;
+  color:#e7f1f9;
+  font-size:14px;
+  font-weight:650;
+  line-height:1.6;
+}
+body.ed-page .ed-footer-column>a:not(.ed-btn):hover {
+  color:#f0c785;
+}
+body.ed-page .ed-footer-contact p {
+  margin:0;
+  color:#cfdeeb;
+  font-size:15px;
+  line-height:1.75;
+}
+body.ed-page .ed-footer-contact .ed-btn {
+  color:#183048;
+  margin:6px 0;
+  padding:14px 17px;
+  font-size:12px;
+  line-height:1.5;
+  text-align:center;
+}
+body.ed-page .ed-footer-refined .ed-footer-bottom {
+  border-top:1px solid #41566b;
+  padding-top:25px;
+  margin-top:55px;
+}
+body.ed-page .ed-footer-bottom nav {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+body.ed-page .ed-footer-bottom nav a {
+  margin:0;
+  color:#d0e1ed;
+}
+@media(max-width:950px) {
+  body.ed-page .ed-footer-refined .ed-footer-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:600px) {
+  body.ed-page .ed-footer-refined .ed-footer-grid {
+    grid-template-columns:1fr;
+  }
+  body.ed-page .ed-footer-bottom {
+    flex-direction:column;
+  }
+  body.ed-page .ed-booking-row .ed-btn,
+  body.ed-page .ed-footer-contact .ed-btn {
+    width:100%;
+    white-space:normal;
+  }
+}
+</style>

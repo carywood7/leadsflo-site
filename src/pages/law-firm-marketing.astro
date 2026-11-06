@@ -3,7 +3,7 @@ import BrandMark from "../components/BrandMark.astro";
 import "../styles/global.css";
 import "../styles/navigation.css";
 
-const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const booking = "https://calendar.app.google/gJscT3C474Xt4Nqh7";
 
 const faq = [
   {q:"What does a law firm marketing agency do?",a:"A law firm marketing agency helps attorneys get found, attract relevant leads and turn calls or form submissions into organized consultation opportunities using search marketing, landing pages and intake workflows."},
@@ -141,6 +141,8 @@ gtag('config','G-QE382W17N6');
     <article tabindex="0"><span class="ed-capability-icon">▣</span><h3>CRM &amp; automation</h3><p>Lead source, response status, staff handoff and consent-based follow-up.</p></article>
     <article tabindex="0"><span class="ed-capability-icon">◈</span><h3>Tracking &amp; optimization</h3><p>Understand qualified leads and consultation progress without exposing confidential details.</p></article>
   </div>
+
+<div class="law-booking-row"><a class="ed-btn ed-btn-gold" href={booking}>Discuss your firm's marketing strategy ↗</a></div>
 </div>
 </section>
 
@@ -193,6 +195,8 @@ gtag('config','G-QE382W17N6');
       <div class="ed-stage-metric"><span>WHAT TO REVIEW</span><strong id="ed-stage-metric">Relevant visits, calls and qualified search intent</strong></div>
     </div>
   </div>
+
+<div class="law-booking-row"><a class="ed-btn ed-btn-gold" href={booking}>Improve your legal lead intake ↗</a></div>
 </div>
 </section>
 
@@ -210,6 +214,8 @@ gtag('config','G-QE382W17N6');
     <div class="ed-chat"><p class="ed-chat-user">Does your firm handle estate planning? I'd like someone to call me.</p><p class="ed-chat-bot">I can help request a callback from the team. May I have your preferred contact method? I can't provide legal advice or confirm representation.</p></div>
     <p>Example only. No live AI agent, legal advice, consultation booking or attorney-client relationship is represented.</p>
   </div>
+
+<div class="law-booking-row"><a class="ed-btn ed-btn-gold" href={booking}>Discuss law firm intake automation ↗</a></div>
 </div>
 </section>
 
@@ -248,6 +254,8 @@ gtag('config','G-QE382W17N6');
     <div class="ed-experience-number" aria-hidden="true">01 <small>CONNECTED LEAD JOURNEY</small></div>
     <div><h3>Professional marketing. Responsible legal intake.</h3><p>LeadsFlo combines search visibility, paid ads, landing pages and CRM workflows. Your staff retain control of conflict checks, suitability, client confidentiality, legal advice and representation decisions.</p><p>Advertising and intake must follow applicable state attorney-advertising requirements. We do not claim legal specialization, past legal client results or guaranteed signed cases.</p></div>
   </div>
+
+<div class="law-booking-row"><a class="ed-btn ed-btn-gold" href={booking}>Plan your law firm growth strategy ↗</a></div>
 </div>
 </section>
 
@@ -302,12 +310,15 @@ gtag('config','G-QE382W17N6');
     <a class="ed-btn ed-btn-gold" href={booking} target="_blank" rel="noopener noreferrer">Book a law firm growth conversation ↗</a>
   </div>
 </section>
+<!-- LAW_FIRM_BOOKING_CTAS_V1 -->
 </main>
 
-<footer class="ed-footer">
-<div class="ed-wrap ed-footer-grid">
-  <div>
-    <a class="ed-brand ed-footer-brand" href="/" aria-label="LeadsFlo home">
+
+<footer class="ed-footer law-footer-refined">
+  <div class="ed-wrap">
+    <div class="law-footer-grid">
+      <div class="law-footer-brand">
+        <a class="ed-brand ed-footer-brand" href="/" aria-label="LeadsFlo home">
       <svg class="ed-cap" viewBox="0 0 54 48" aria-hidden="true">
         <path d="M27 5v34M14 12h26M27 5l-5 6h10Z" fill="none" stroke="#b99055" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M14 12 6 28h16L14 12ZM40 12 32 28h16L40 12Z" fill="#dfbd82" stroke="#b99055" stroke-width="1.5" stroke-linejoin="round"/>
@@ -315,14 +326,57 @@ gtag('config','G-QE382W17N6');
       </svg>
       <BrandMark theme="light"/>
     </a>
-    <p>Search visibility, paid advertising, intake-focused websites and responsible lead follow-up for law firms that need better qualified leads.</p>
-    <a href={booking} target="_blank" rel="noopener noreferrer">Let's Talk ↗</a>
+        <p>Law firm marketing that connects
+          search visibility, qualified inquiries,
+          responsible intake and consultation follow-up.</p>
+        <small>Built around your practice areas and market.</small>
+      </div>
+
+      <nav class="law-footer-column" aria-label="Explore Law Firm">
+        <strong>EXPLORE</strong>
+        <a href="#services">Marketing services</a>
+        <a href="#practices">Practice areas</a>
+        <a href="#intake">Client intake</a>
+        <a href="#automation">Intake automation</a>
+        <a href="#planner">Consultation planner</a>
+        <a href="#faq">FAQs</a>
+        <a href="#top">Back to top ↑</a>
+      </nav>
+
+      <nav class="law-footer-column" aria-label="Legal marketing guides">
+        <strong>LEGAL MARKETING GUIDES</strong>
+        <a href="/insights/law-firm-seo/">Law firm SEO</a>
+        <a href="/insights/google-ads-for-law-firms/">
+          Google Ads for law firms</a>
+        <a href="/insights/law-firm-lead-generation/">
+          Legal lead generation</a>
+        <a href="/insights/ai-receptionist-for-law-firms/">
+          AI receptionist for law firms</a>
+        <a href="/insights/law-firm-marketing-strategies/">
+          Law firm marketing strategies</a>
+      </nav>
+
+      <div class="law-footer-column law-footer-contact">
+        <strong>GET STARTED</strong>
+        <p>Ready to improve your firm's
+          lead generation and intake process?</p>
+        <a class="ed-btn ed-btn-gold" href={booking}>
+          Book a strategy call ↗</a>
+        <a href="/contact/">Contact LeadsFlo</a>
+      </div>
+    </div>
+
+    <div class="law-footer-bottom">
+      <span>© {new Date().getFullYear()} LeadsFlo</span>
+      <nav aria-label="Legal">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-and-conditions/">
+          Terms &amp; Conditions</a>
+      </nav>
+    </div>
   </div>
-  <div><strong>SERVICES</strong><a href="/performance-marketing/">Performance Marketing</a><a href="/websites-funnels/">Websites &amp; Funnels</a><a href="/crm-automation/">CRM &amp; Automation</a><a href="/appointment-setting/">Appointment Setting</a></div>
-  <div><strong>EXPLORE</strong><a href="/industries/">All Industries</a><a href="/insights/">Insights</a><a href="/our-approach/">Our Approach</a><a href="/contact/">Contact</a></div>
-</div>
-<div class="ed-wrap ed-footer-bottom"><span>© {new Date().getFullYear()} LeadsFlo</span><span><a href="/privacy-policy/">Privacy</a> · <a href="/terms-and-conditions/">Terms</a></span></div>
 </footer>
+
 
 <a class="ed-mobile-cta" href={booking} target="_blank" rel="noopener noreferrer">Discuss legal lead generation ↗</a>
 
@@ -1058,3 +1112,117 @@ gtag('config','G-QE382W17N6');
 </style>
 </body>
 </html>
+
+<!-- LAW_FIRM_CONVERSION_STYLES_V1 -->
+<style is:global>
+body.law-page .law-booking-row {
+  display:flex;
+  align-items:center;
+  padding-top:40px;
+}
+body.law-page .law-booking-row .ed-btn {
+  width:auto;
+  max-width:100%;
+  text-align:center;
+  line-height:1.5;
+}
+body.law-page .law-footer-refined {
+  background:#0b1d33;
+  color:#f0f6fb;
+  padding:75px 0 28px;
+}
+body.law-page .law-footer-grid {
+  display:grid;
+  grid-template-columns:1.45fr 1fr 1.2fr 1.1fr;
+  gap:clamp(24px,3vw,48px);
+  align-items:start;
+}
+body.law-page .law-footer-brand p {
+  margin:24px 0 12px;
+  color:#cfdeeb;
+  font-size:15px;
+  line-height:1.8;
+}
+body.law-page .law-footer-brand small {
+  color:#a9bfd0;
+  font-size:13px;
+  line-height:1.7;
+}
+body.law-page .law-footer-column {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:15px;
+  min-width:0;
+}
+body.law-page .law-footer-column strong {
+  color:#f0c785;
+  font-size:11px;
+  font-weight:850;
+  letter-spacing:.12em;
+  margin-bottom:10px;
+}
+body.law-page .law-footer-column>a:not(.ed-btn) {
+  margin:0;
+  color:#e7f1f9;
+  font-size:14px;
+  font-weight:650;
+  line-height:1.6;
+  text-decoration:none;
+}
+body.law-page .law-footer-column>a:not(.ed-btn):hover {
+  color:#f0c785;
+}
+body.law-page .law-footer-contact p {
+  margin:0;
+  color:#cfdeeb;
+  font-size:15px;
+  line-height:1.75;
+}
+body.law-page .law-footer-contact .ed-btn {
+  color:#183048;
+  margin:6px 0;
+  padding:14px 17px;
+  font-size:12px;
+  line-height:1.5;
+  text-align:center;
+}
+body.law-page .law-footer-bottom {
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  border-top:1px solid #41566b;
+  padding-top:25px;
+  margin-top:55px;
+  font-size:12px;
+  color:#b9ccda;
+}
+body.law-page .law-footer-bottom nav {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+body.law-page .law-footer-bottom nav a {
+  margin:0;
+  color:#d0e1ed;
+  text-decoration:none;
+}
+@media(max-width:950px) {
+  body.law-page .law-footer-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:600px) {
+  body.law-page .law-footer-grid {
+    grid-template-columns:1fr;
+  }
+  body.law-page .law-footer-bottom {
+    flex-direction:column;
+  }
+  body.law-page .law-booking-row .ed-btn,
+  body.law-page .law-footer-contact .ed-btn {
+    width:100%;
+    white-space:normal;
+  }
+}
+</style>

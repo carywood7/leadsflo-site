@@ -2,7 +2,7 @@
 import BrandMark from "../components/BrandMark.astro";
 import "../styles/global.css";
 
-const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const booking = "https://calendar.app.google/gJscT3C474Xt4Nqh7";
 const canonical = "https://leadsflo.co/plumbing-lead-generation/";
 const offerings = [
       {n:"01",tag:"SEARCH",name:"Google Ads for Plumbers",
@@ -1967,19 +1967,41 @@ body.hv-page .resource:focus-within {
 <div class="hv-marquee-window" tabindex="0"><div class="hv-marquee-track"><div class="hv-marquee-group"><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◉</span><strong class="hv-ticker-label">Google Ads</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">∞</span><strong class="hv-ticker-label">Meta Ads</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◎</span><strong class="hv-ticker-label">Plumbing Landing Pages</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">↗</span><strong class="hv-ticker-label">Lead Qualification</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">✳</span><strong class="hv-ticker-label">CRM Automation</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◈</span><strong class="hv-ticker-label">Appointment Setting</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">❄</span><strong class="hv-ticker-label">Plumbing Repair Campaigns</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◌</span><strong class="hv-ticker-label">Installation Estimates</strong></span></div><div class="hv-marquee-group" aria-hidden="true"><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◉</span><strong class="hv-ticker-label">Google Ads</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">∞</span><strong class="hv-ticker-label">Meta Ads</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◎</span><strong class="hv-ticker-label">Plumbing Landing Pages</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">↗</span><strong class="hv-ticker-label">Lead Qualification</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">✳</span><strong class="hv-ticker-label">CRM Automation</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◈</span><strong class="hv-ticker-label">Appointment Setting</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">❄</span><strong class="hv-ticker-label">Plumbing Repair Campaigns</strong></span><span class="hv-ticker-item"><span class="hv-ticker-icon" aria-hidden="true">◌</span><strong class="hv-ticker-label">Installation Estimates</strong></span></div></div></div></div>
  <main>
 
-    <section class="section" id="challenge">
-      <div class="wrap introgrid">
-        <div>
-          <span class="eyebrow blue">THE REAL CHALLENGE</span>
-          <h2 class="heading">Not every plumbing inquiry is the same.</h2>
-        </div>
-        <div>
-          <p class="bodycopy">A burst pipe, clogged drain, water heater replacement and commercial installation involve different levels of urgency, qualification and service capacity.</p>
-          <p class="bodycopy">Your marketing should help customers find the right service and give your team enough information to respond appropriately.</p>
-          <p class="bodycopy">LeadsFlo connects advertising, service pages, CRM routing and appointment follow-up into one process.</p>
-        </div>
+
+<section class="section pl-challenge-refined" id="challenge">
+  <div class="wrap pl-challenge-layout">
+    <div class="pl-challenge-copy">
+      <span class="eyebrow blue">THE REAL CHALLENGE</span>
+      <h2 class="heading">Not every plumbing inquiry
+        <em>is the same.</em></h2>
+      <p class="pl-lede">A burst pipe, clogged drain and
+        water heater replacement need different responses.</p>
+      <p>Good plumbing marketing helps customers find the
+        right service, captures useful job details and gives
+        your team a clear next step.</p>
+      <div class="pl-challenge-insight">
+        <small>THE OBJECTIVE</small>
+        <strong>Better service inquiries.
+          Less missed opportunity.</strong>
+        <p>Connect advertising, service pages,
+          qualification, CRM routing and follow-up.</p>
       </div>
-    </section>
+      <a class="cta" href={booking}>
+        Discuss your plumbing lead quality ↗
+      </a>
+    </div>
+    <figure class="pl-challenge-photo">
+      <img src="/images/plumbing/plumbing-repair.jpg"
+        alt="Plumber working on a pipe with a wrench"
+        width="1200" height="800" loading="lazy" />
+      <figcaption>
+        <small>PLUMBING / LEAD QUALIFICATION</small>
+        <strong>From service request to booked job.</strong>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
   <section class="section dark" id="services"><div class="wrap"><div class="sectop"><div><span class="eyebrow" style="color:#9bd7e9">WHAT WE BUILD</span><h2 class="heading">From search to scheduled service.</h2></div><p class="bodycopy">Four connected capabilities for local plumbing demand, useful qualification and timely follow-up.</p></div><div class="servicegrid">{offerings.map(item=><article class="service" tabindex="0" role="button" data-hv-service={item.n} aria-label={`Explore ${item.name}`}><span class="index">{item.n} / {item.tag}</span><h3>{item.name}</h3><p>{item.desc}</p><small>LEADSFLO / Plumbing</small></article>)}</div></div>
 <div class="hv-service-preview" data-hv-preview aria-live="polite">
   <div class="hv-preview-copy">
@@ -2000,6 +2022,8 @@ body.hv-page .resource:focus-within {
     <small>LEAD FLOW / ACTIVE</small>
   </div>
 </div>
+
+<div class="wrap pl-booking-row"><a class="cta" href={booking}>Plan your plumbing marketing system ↗</a></div>
 </section>
   <section class="section journey" id="process"><div class="wrap"><span class="eyebrow blue">THE INTERACTIVE PROCESS</span><h2 class="heading">Five steps. One connected journey.</h2><p class="bodycopy" style="margin-bottom:33px">Select each stage to see how a plumbing inquiry moves from search to a scheduled conversation.</p><div class="journeygrid" data-hv-journey><div class="steps" role="group" aria-label="Plumbing lead journey">{stages.map((stage,index)=><button class="step" type="button" data-hv-step={index} aria-pressed={index===0?'true':'false'}><span class="num">{stage.n}</span><span>{stage.label}</span><span aria-hidden="true">↗</span></button>)}</div><div class="stagepanel" aria-live="polite"><span class="stagelabel" data-hv-tag>{stages[0].tag}</span><h3 data-hv-title>{stages[0].title}</h3><p data-hv-body>{stages[0].body}</p><div class="stagebottom"><div><span class="eyebrow blue">WHAT HAPPENS HERE</span><ul data-hv-points>{stages[0].points.map(point=><li>{point}</li>)}</ul></div><div class="output" data-hv-outcome>{stages[0].outcome}</div></div></div></div></div></section>
 
@@ -2021,7 +2045,9 @@ body.hv-page .resource:focus-within {
           <p style="font-size:12px;line-height:1.7;color:#617f92">Illustration only; not a real customer inquiry.</p>
         </div>
       </div>
-    </section>
+
+<div class="wrap pl-booking-row"><a class="cta" href={booking}>Improve plumbing lead qualification ↗</a></div>
+</section>
 
 
     <section class="hv-photo-section" id="plumbing-work">
@@ -2071,11 +2097,13 @@ body.hv-page .resource:focus-within {
             </figcaption>
           </figure>
         </div>
-        <p class="hv-photo-credit">Illustrative plumbing stock photography, not LeadsFlo client projects.</p>
-      </div>
-    </section>
 
-<section class="section calculator" id="calculator"><div class="wrap calcgrid"><div><span class="eyebrow blue">CAMPAIGN SCENARIO TOOL</span><h2 class="heading">What could more booked plumbing jobs mean?</h2><p class="bodycopy">Adjust the sliders to explore a hypothetical scenario based on monthly inquiries, appointment rate, close rate and average completed plumbing-job revenue.</p><p class="bodycopy"><strong>Important:</strong> These are assumptions, not LeadsFlo results, forecasts or guarantees. Revenue is not profit and excludes marketing and delivery costs.</p></div><div class="calcbox" data-hv-calc><label class="range"><span class="rangetitle">Monthly inquiries <output data-hv-value="leads">60</output></span><input data-hv-range="leads" type="range" min="10" max="250" step="10" value="60" /></label><label class="range"><span class="rangetitle">Appointment booking rate <output data-hv-value="book">35%</output></span><input data-hv-range="book" type="range" min="5" max="90" step="5" value="35" /></label><label class="range"><span class="rangetitle">Close rate <output data-hv-value="close">25%</output></span><input data-hv-range="close" type="range" min="5" max="80" step="5" value="25" /></label><label class="range"><span class="rangetitle">Average completed-job revenue <output data-hv-value="job">$3,500</output></span><input data-hv-range="job" type="range" min="250" max="15000" step="250" value="3500" /></label><div class="result"><small>ILLUSTRATIVE MONTHLY GROSS REVENUE</small><strong data-hv-revenue>$18,375</strong><p data-hv-breakdown>21.0 potential bookings · 5.3 expected jobs</p><p>Scenario only. Not a revenue prediction or performance claim.</p></div></div></div></section>
+      </div>
+
+<div class="wrap pl-booking-row"><a class="cta" href={booking}>Discuss your plumbing services ↗</a></div>
+</section>
+
+<section class="section calculator" id="calculator"><div class="wrap calcgrid"><div><span class="eyebrow blue">CAMPAIGN SCENARIO TOOL</span><h2 class="heading">What could more booked plumbing jobs mean?</h2><p class="bodycopy">Adjust the sliders to explore a hypothetical scenario based on monthly inquiries, appointment rate, close rate and average completed plumbing-job revenue.</p><p class="bodycopy"><strong>Important:</strong> These are assumptions, not LeadsFlo results, forecasts or guarantees. Revenue is not profit and excludes marketing and delivery costs.</p><div class="pl-calc-booking"><a class="cta" href={booking}>Discuss your plumbing growth targets ↗</a></div></div><div class="calcbox" data-hv-calc><label class="range"><span class="rangetitle">Monthly inquiries <output data-hv-value="leads">60</output></span><input data-hv-range="leads" type="range" min="10" max="250" step="10" value="60" /></label><label class="range"><span class="rangetitle">Appointment booking rate <output data-hv-value="book">35%</output></span><input data-hv-range="book" type="range" min="5" max="90" step="5" value="35" /></label><label class="range"><span class="rangetitle">Close rate <output data-hv-value="close">25%</output></span><input data-hv-range="close" type="range" min="5" max="80" step="5" value="25" /></label><label class="range"><span class="rangetitle">Average completed-job revenue <output data-hv-value="job">$3,500</output></span><input data-hv-range="job" type="range" min="250" max="15000" step="250" value="3500" /></label><div class="result"><small>ILLUSTRATIVE MONTHLY GROSS REVENUE</small><strong data-hv-revenue>$18,375</strong><p data-hv-breakdown>21.0 potential bookings · 5.3 expected jobs</p><p>Scenario only. Not a revenue prediction or performance claim.</p></div></div></div></section>
   <section class="section" id="faq"><div class="wrap faqgrid"><div><span class="eyebrow blue">COMMON QUESTIONS</span><h2 class="heading">Before we get started.</h2><p class="bodycopy">Common questions about plumbing campaigns, appointment setting and qualification.</p></div><div class="faqlist">{faqs.map((item,index)=><details open={index===0}><summary>{item.q}</summary><p>{item.a}</p></details>)}</div></div></section>
 
     <section class="section resources" id="resources">
@@ -2100,71 +2128,64 @@ body.hv-page .resource:focus-within {
         <a class="cta" href={booking}>Book a Strategy Call ↗</a>
       </div>
     </section>
- </main>
+ <!-- PLUMBING_BOOKING_CTAS_V1 -->
+</main>
 
-<footer class="hv-footer-v6">
-  <div class="wrap hv-footer-main">
-    <div class="hv-footer-intro">
-      <a class="brand hv-footer-brand" href="/"
-         aria-label="LeadsFlo home">
-        <BrandMark theme="dark" />
-      </a>
 
-      <h2>Better plumbing leads.<br />
-        <em>Better follow-through.</em>
-      </h2>
+<footer class="pl-footer-refined">
+  <div class="wrap">
+    <div class="pl-footer-grid">
+      <div class="pl-footer-brand">
+        <a href="/" class="brand" aria-label="LeadsFlo home">
+          <BrandMark theme="dark" />
+        </a>
+        <p>Better plumbing leads, organized job
+          inquiries and dependable follow-up.</p>
+        <small>Marketing built around the work you deliver.</small>
+      </div>
 
-      <p>
-        Advertising, conversion funnels, qualification and
-        appointment setting working together to help plumbing
-        businesses turn inquiries into conversations.
-      </p>
+      <nav class="pl-footer-column" aria-label="Explore Plumbing">
+        <h3>Explore</h3>
+        <a href="#challenge">The challenge</a>
+        <a href="#services">Our services</a>
+        <a href="#process">How it works</a>
+        <a href="#qualification">Lead qualification</a>
+        <a href="#calculator">Revenue calculator</a>
+        <a href="#faq">FAQs</a>
+        <a href="#top">Back to top ↑</a>
+      </nav>
 
-      <a class="hv-footer-cta" href={booking}>
-        Discuss Your Plumbing Growth ↗
-      </a>
+      <nav class="pl-footer-column" aria-label="Plumbing resources">
+        <h3>Plumbing Resources</h3>
+        <a href="/insights/plumbing-lead-generation/">
+          Lead generation</a>
+        <a href="/insights/google-ads-for-plumbers/">
+          Google Ads</a>
+        <a href="/insights/plumbing-marketing-strategies/">
+          Marketing strategies</a>
+        <a href="/insights/plumbing-lead-costs/">
+          Lead costs</a>
+      </nav>
+
+      <div class="pl-footer-column">
+        <h3>Get Started</h3>
+        <p>Ready to turn more inquiries into booked jobs?</p>
+        <a class="cta" href={booking}>Book a strategy call ↗</a>
+        <a href="/contact/">Contact LeadsFlo</a>
+      </div>
     </div>
 
-    <nav class="hv-footer-column"
-         aria-label="Plumbing marketing services">
-      <h3>What we do</h3>
-      <a href="#services">Google & Meta Ads</a>
-      <a href="#services">Plumbing Landing Pages</a>
-      <a href="#qualification">Lead Qualification</a>
-      <a href="#process">CRM & Follow-up</a>
-      <a href="#calculator">Revenue Scenario</a>
-    </nav>
-
-    <nav class="hv-footer-column"
-         aria-label="Explore LeadsFlo">
-      <h3>Explore</h3>
-      <a href="/">Home</a>
-      <a href="/industries/">Industries</a>
-      <a href="/insights/">Insights</a>
-      <a href="/work/">Our Work</a>
-      <a href="/contact/">Contact</a>
-    </nav>
-
-    <div class="hv-footer-column hv-footer-contact">
-      <h3>Ready to grow?</h3>
-      <p>
-        Tell us what you offer, where you operate
-        and what you want to improve.
-      </p>
-      <a href={booking}>Book a Strategy Call ↗</a>
+    <div class="pl-footer-bottom">
+      <span>© {new Date().getFullYear()} LeadsFlo</span>
+      <nav aria-label="Legal">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-and-conditions/">
+          Terms &amp; Conditions</a>
+      </nav>
     </div>
-  </div>
-
-  <div class="wrap hv-footer-bottom">
-    <span>© {new Date().getFullYear()} LeadsFlo</span>
-    <span>More leads. Less guesswork.</span>
-    <nav aria-label="Legal information">
-      <a href="/privacy-policy/">Privacy Policy</a>
-      <a href="/terms-and-conditions/">Terms & Conditions</a>
-    </nav>
-    <a href="#top" class="hv-back-top">Back to top ↑</a>
   </div>
 </footer>
+
 
  <script define:vars={{stages,offerings}}>
   const root=document.querySelector('[data-hv-journey]');
@@ -2416,3 +2437,210 @@ body.hv-page .resource:focus-within {
 
 </body>
 </html>
+
+<!-- PLUMBING_CONVERSION_POLISH_V1 -->
+<style is:global>
+body.hv-page #challenge.pl-challenge-refined {
+  background:#f1f7f8;
+}
+body.hv-page .pl-challenge-layout {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,.95fr);
+  align-items:center;
+  gap:clamp(36px,6vw,85px);
+}
+body.hv-page .pl-challenge-copy h2 {
+  font-size:clamp(39px,4.4vw,65px);
+  letter-spacing:-.045em;
+  line-height:1.13;
+}
+body.hv-page .pl-challenge-copy em {
+  color:#b76c45;
+  font-style:normal;
+}
+body.hv-page .pl-challenge-copy>p {
+  font-size:16px;
+  line-height:1.8;
+  color:#526f80;
+  max-width:540px;
+}
+body.hv-page .pl-challenge-copy .pl-lede {
+  color:#152d40;
+  font-size:19px;
+  font-weight:600;
+}
+body.hv-page .pl-challenge-insight {
+  margin:27px 0;
+  padding:18px 22px;
+  border-left:3px solid #c78253;
+  background:linear-gradient(90deg,#e2ebec,transparent);
+}
+body.hv-page .pl-challenge-insight small {
+  display:block;
+  margin-bottom:10px;
+  color:#9c613b;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.14em;
+}
+body.hv-page .pl-challenge-insight strong {
+  display:block;
+  color:#152d40;
+  font-size:19px;
+  line-height:1.4;
+}
+body.hv-page .pl-challenge-insight p {
+  color:#526f80;
+  font-size:14px;
+  line-height:1.7;
+  margin:9px 0 0;
+}
+body.hv-page .pl-challenge-photo {
+  margin:0;
+  overflow:hidden;
+  border-radius:9px;
+  background:#102c42;
+}
+body.hv-page .pl-challenge-photo img {
+  display:block;
+  width:100%;
+  height:clamp(375px,42vw,555px);
+  object-fit:cover;
+}
+body.hv-page .pl-challenge-photo figcaption {
+  padding:22px 25px;
+  color:#fff;
+}
+body.hv-page .pl-challenge-photo small {
+  display:block;
+  color:#edb58c;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.12em;
+  margin-bottom:9px;
+}
+body.hv-page .pl-booking-row {
+  display:flex;
+  margin-top:42px;
+}
+body.hv-page .pl-booking-row .cta {
+  max-width:100%;
+  text-align:center;
+}
+body.hv-page .pl-calc-booking {
+  margin-top:28px;
+}
+body.hv-page .pl-footer-refined {
+  background:#0c2433;
+  color:#f3f8f9;
+  padding:75px 0 28px;
+  border-top:1px solid #527083;
+}
+body.hv-page .pl-footer-grid {
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1.15fr 1.1fr;
+  gap:clamp(24px,3vw,50px);
+  padding-bottom:58px;
+}
+body.hv-page .pl-footer-brand p {
+  color:#d5e4eb;
+  font-size:15px;
+  line-height:1.8;
+  margin:22px 0 12px;
+}
+body.hv-page .pl-footer-brand small {
+  color:#b8cbd5;
+  font-size:13px;
+  line-height:1.7;
+}
+body.hv-page .pl-footer-column {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:15px;
+  min-width:0;
+}
+body.hv-page .pl-footer-column h3 {
+  margin:0 0 10px;
+  color:#efb184;
+  font-size:12px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+}
+body.hv-page .pl-footer-column>a {
+  color:#f0f7fa;
+  font-size:14px;
+  font-weight:650;
+  line-height:1.55;
+}
+body.hv-page .pl-footer-column>a:hover {
+  color:#efb184;
+}
+body.hv-page .pl-footer-column>p {
+  margin:0;
+  color:#d5e4eb;
+  font-size:15px;
+  line-height:1.7;
+}
+body.hv-page .pl-footer-column>a.cta {
+  color:#132737;
+  padding:14px 16px;
+  font-size:12px;
+  text-align:center;
+  margin:5px 0;
+}
+body.hv-page .pl-footer-bottom {
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding-top:25px;
+  border-top:1px solid #527083;
+  color:#b8cbd5;
+  font-size:12px;
+}
+body.hv-page .pl-footer-bottom nav {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+body.hv-page .pl-footer-bottom a {
+  color:#e5f0f4;
+}
+@media(max-width:950px) {
+  body.hv-page .pl-footer-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:800px) {
+  body.hv-page .pl-challenge-layout {
+    grid-template-columns:1fr;
+  }
+}
+@media(max-width:550px) {
+  body.hv-page .pl-footer-grid {
+    grid-template-columns:1fr;
+  }
+  body.hv-page .pl-footer-bottom {
+    flex-direction:column;
+  }
+  body.hv-page .pl-booking-row .cta,
+  body.hv-page .pl-calc-booking .cta {
+    width:100%;
+  }
+}
+</style>
+
+<!-- PLUMBING_CTA_SPACING_V2 -->
+<style is:global>
+body.hv-page #services .pl-booking-row,
+body.hv-page #plumbing-work .pl-booking-row {
+  margin-top: 0;
+  padding-top: 40px;
+}
+
+body.hv-page #services .pl-booking-row .cta,
+body.hv-page #plumbing-work .pl-booking-row .cta {
+  margin: 0;
+}
+</style>

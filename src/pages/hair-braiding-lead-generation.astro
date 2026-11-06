@@ -1,7 +1,7 @@
 ---
 import BrandMark from "../components/BrandMark.astro";
 import "../styles/global.css";
-const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const booking = "https://calendar.app.google/gJscT3C474Xt4Nqh7";
 const schema = {"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://leadsflo.co/#organization", "name": "LeadsFlo", "url": "https://leadsflo.co/"}, {"@type": "WebPage", "@id": "https://leadsflo.co/hair-braiding-lead-generation/#webpage", "name": "Hair Braiding Lead Generation & Salon Marketing | LeadsFlo", "url": "https://leadsflo.co/hair-braiding-lead-generation/", "inLanguage": "en-US"}, {"@type": "Service", "@id": "https://leadsflo.co/hair-braiding-lead-generation/#service", "name": "Hair Braiding Marketing and Lead Generation", "serviceType": "Local hair salon marketing and booking lead generation", "provider": {"@id": "https://leadsflo.co/#organization"}, "areaServed": {"@type": "Country", "name": "United States"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://leadsflo.co/"}, {"@type": "ListItem", "position": 2, "name": "Industries", "item": "https://leadsflo.co/industries/"}, {"@type": "ListItem", "position": 3, "name": "Hair Braiding", "item": "https://leadsflo.co/hair-braiding-lead-generation/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How can a braiding salon get more bookings?", "acceptedAnswer": {"@type": "Answer", "text": "Promote the services the salon actually offers, communicate location and booking expectations clearly, and connect inquiries to responsive follow-up and real calendar availability."}}, {"@type": "Question", "name": "Can you market knotless, boho and box braids separately?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Each service can have its own creative, landing-page message and qualification questions based on the salon's offerings."}}, {"@type": "Question", "name": "Can an AI receptionist answer salon calls?", "acceptedAnswer": {"@type": "Answer", "text": "A clearly identified AI call assistant can answer approved questions, collect style and timing preferences, and arrange transfer or callback when supported."}}, {"@type": "Question", "name": "Can a chatbot handle appointment questions?", "acceptedAnswer": {"@type": "Answer", "text": "A website chatbot can explain published services, hours, preparation and booking policies. Staff should handle complex styling decisions and confirm appointments."}}, {"@type": "Question", "name": "Can you connect leads to our existing booking system?", "acceptedAnswer": {"@type": "Answer", "text": "We review the salon's booking software and CRM first, then plan supported integrations and follow-up workflows."}}, {"@type": "Question", "name": "Do you guarantee fully booked calendars?", "acceptedAnswer": {"@type": "Answer", "text": "No. Booking outcomes depend on demand, pricing, location, capacity, availability, customer experience and consistent follow-up."}}]}]};
 ---
 <!doctype html>
@@ -531,7 +531,9 @@ body.hb{margin:0;background:var(--hb-paper);color:var(--hb-ink);font-family:Inte
       Actual services, prices and appointment availability
       depend on each salon.
     </p>
-  </div>
+
+<div class="hb-booking-row"><a class="hb-cta" href={booking}>Discuss your salon's marketing strategy ↗</a></div>
+</div>
 </section>
 
 <section class="hb-section dark" id="system"><div class="hb-wrap">
@@ -545,6 +547,8 @@ body.hb{margin:0;background:var(--hb-paper);color:var(--hb-ink);font-family:Inte
 <button class="hb-step" data-step="3" aria-pressed="false"><small>04 / CONFIRM</small><strong>Real appointments</strong></button>
 </div>
 <div class="hb-step-detail" aria-live="polite"><h3 id="hb-step-title">Reach the right local customer.</h3><p id="hb-step-description">Match creative and search intent to the salon's location, genuine style portfolio and appointment capacity.</p></div>
+
+<div class="hb-booking-row"><a class="hb-cta light" href={booking}>Improve your salon booking process ↗</a></div>
 </div></section>
 
 <section class="hb-section soft"><div class="hb-wrap">
@@ -557,7 +561,9 @@ body.hb{margin:0;background:var(--hb-paper);color:var(--hb-ink);font-family:Inte
 <article class="hb-tile"><small>04 / CONVERSATION</small><h3>AI Calls &amp; Chatbots</h3><p>Clearly identified assistants that answer routine questions, collect style preferences and arrange human follow-up.</p></article>
 <article class="hb-tile"><small>05 / AUTOMATION</small><h3>CRM &amp; Follow-Up</h3><p>Missed-call recovery, SMS/email workflows, contact assignments, reminders and opt-out management.</p></article>
 <article class="hb-tile"><small>06 / MEASUREMENT</small><h3>Verified Bookings</h3><p>Separate inquiries, reached customers, booking requests, confirmed appointments and attended visits.</p></article>
-</div></div></section>
+</div>
+<div class="hb-booking-row"><a class="hb-cta" href={booking}>Build your salon lead generation system ↗</a></div>
+</div></section>
 
 <section class="hb-section dark" id="automation"><div class="hb-wrap">
 <span class="hb-kicker">AI / CALLS / CHAT / FOLLOW-UP</span>
@@ -578,7 +584,9 @@ body.hb{margin:0;background:var(--hb-paper);color:var(--hb-ink);font-family:Inte
 <p id="hb-ai-response">Hi, I'm the salon's automated assistant. I can help with booking questions. Which style and date were you considering?</p></div>
 <div class="hb-panel-foot"><small>WORKFLOW</small><p id="hb-ai-flow">Incoming call → style request → details recorded → staff callback</p></div>
 <p style="font-size:12px;color:#d8c3d4;line-height:1.8;margin-top:25px">Illustrative conversation, not a live AI assistant. Automated interactions should be disclosed appropriately, with consent-aware messaging and human escalation.</p>
-</div></div></div></section>
+</div></div>
+<div class="hb-booking-row"><a class="hb-cta light" href={booking}>Discuss AI follow-up for your salon ↗</a></div>
+</div></section>
 
 <section class="hb-section" id="planner"><div class="hb-wrap">
 <span class="hb-kicker">BOOKING FUNNEL / SCENARIO PLANNER</span>
@@ -665,10 +673,14 @@ body.hb{margin:0;background:var(--hb-paper);color:var(--hb-ink);font-family:Inte
 <p>Tell us your services, location and current booking process. We'll discuss what marketing and follow-up might improve.</p>
 <a class="hb-cta" style="background:#fff0eb;color:#4f294a!important" href={booking} target="_blank" rel="noopener noreferrer">Book a salon growth conversation ↗</a>
 </div></section>
+<!-- HAIR_BRAIDING_CONVERSION_V1 -->
 </main>
-<footer class="hb-footer"><div class="hb-wrap">
-<div class="hb-footer-grid">
-<div><a class="hb-logo" href="/" aria-label="LeadsFlo home">
+
+<footer class="hb-footer hb-footer-refined">
+  <div class="hb-wrap">
+    <div class="hb-footer-grid">
+      <div class="hb-footer-brand">
+        <a class="hb-logo" href="/" aria-label="LeadsFlo home">
 <svg class="hb-logo-profile"
      viewBox="0 0 60 76"
      xmlns="http://www.w3.org/2000/svg"
@@ -699,12 +711,56 @@ body.hb{margin:0;background:var(--hb-paper);color:var(--hb-ink);font-family:Inte
 </svg>
 <BrandMark theme="light"/>
 
-</a><p>Lead generation, creative, booking funnels, AI conversations and CRM workflows for businesses that want meaningful customer inquiries.</p><a class="hb-cta" style="background:#fff0eb;color:#4f294a!important" href={booking} target="_blank" rel="noopener noreferrer">Let's Talk ↗</a></div>
-<nav aria-label="Services"><h3>Services</h3><a href="/performance-marketing/">Performance Marketing</a><a href="/ad-creatives-content/">Ad Creatives &amp; Content</a><a href="/websites-funnels/">Websites &amp; Funnels</a><a href="/crm-automation/">CRM &amp; Automation</a></nav>
-<nav aria-label="Explore"><h3>Explore</h3><a href="/industries/">All Industries</a><a href="/work/sonya-hair-braiding/">Sonya Hair Braiding Case Study</a><a href="/insights/">Insights</a><a href="/contact/">Contact</a></nav>
-</div>
-<div class="hb-foot-bottom"><span>© {new Date().getFullYear()} LeadsFlo. All rights reserved.</span><span><a href="/privacy-policy/">Privacy</a> · <a href="/terms-and-conditions/">Terms</a> · <a href="#top">Back to top ↑</a></span></div>
-</div></footer>
+</a>
+        <p>Style-specific salon marketing,
+          qualified inquiries, booking funnels
+          and dependable follow-up.</p>
+        <small>Built around the services your salon offers.</small>
+      </div>
+
+      <nav aria-label="Explore Hair Braiding">
+        <h3>Explore</h3>
+        <a href="#styles">Hairstyle campaigns</a>
+        <a href="#salon-services">Salon services</a>
+        <a href="#system">Booking journey</a>
+        <a href="#automation">AI &amp; automation</a>
+        <a href="#planner">Booking planner</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+
+      <nav aria-label="Hair Braiding resources">
+        <h3>Salon Resources</h3>
+        <a href="/insights/hair-braiding-lead-generation/">
+          Hair braiding lead generation</a>
+        <a href="/insights/facebook-ads-for-hair-salons/">
+          Facebook &amp; Instagram Ads</a>
+        <a href="/insights/hair-salon-appointment-booking/">
+          Salon appointment booking</a>
+        <a href="/work/sonya-hair-braiding/">
+          Sonya Hair Braiding case study</a>
+      </nav>
+
+      <div class="hb-footer-contact">
+        <h3>Get Started</h3>
+        <p>Ready to turn more salon inquiries
+          into appointment conversations?</p>
+        <a class="hb-cta" href={booking}>
+          Book a strategy call ↗</a>
+        <a href="/contact/">Contact LeadsFlo</a>
+      </div>
+    </div>
+
+    <div class="hb-foot-bottom">
+      <span>© {new Date().getFullYear()} LeadsFlo</span>
+      <div>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
 <div class="hb-sticky"><a class="hb-cta" href={booking} target="_blank" rel="noopener noreferrer">Discuss salon lead generation ↗</a></div>
 <script is:inline defer src="/js/leadsflo-conversions.js"></script>
 <script is:inline>
@@ -799,3 +855,136 @@ document.getElementById('hb-appointments').textContent=Math.round(n*c*f*a/100000
 
 </body>
 </html>
+
+<!-- HAIR_BRAIDING_CONVERSION_STYLES_V1 -->
+<style is:global>
+body.hb .hb-booking-row {
+  display:flex;
+  align-items:center;
+  padding-top:40px;
+}
+body.hb .hb-booking-row .hb-cta {
+  margin:0;
+  max-width:100%;
+  text-align:center;
+  line-height:1.5;
+}
+body.hb .hb-section.dark .hb-booking-row .hb-cta.light {
+  background:#f3d9c5;
+  color:#45263f!important;
+}
+body.hb .hb-section.dark .hb-booking-row .hb-cta.light:hover {
+  background:#fff0df;
+}
+
+body.hb .hb-footer-refined {
+  background:#2d1d35;
+  color:#f9eef2;
+  padding:75px 0 28px;
+}
+body.hb .hb-footer-refined .hb-footer-grid {
+  display:grid;
+  grid-template-columns:1.45fr 1fr 1.2fr 1.1fr;
+  gap:clamp(24px,3vw,48px);
+  align-items:start;
+}
+body.hb .hb-footer-refined .hb-footer-brand .hb-logo {
+  display:inline-flex;
+  align-items:center;
+}
+body.hb .hb-footer-refined .hb-footer-brand .lf-brand-v4 {
+  --brand-text:#fff3f4;
+  --brand-flo:#edb7c9;
+  --brand-plane:#edb7c9;
+  --brand-period:#e6ca9d;
+}
+body.hb .hb-footer-refined .hb-footer-brand p {
+  color:#ead7e4;
+  margin:23px 0 12px;
+  font-size:15px;
+  line-height:1.8;
+}
+body.hb .hb-footer-refined .hb-footer-brand small {
+  color:#d1b9cc;
+  font-size:13px;
+  line-height:1.7;
+}
+body.hb .hb-footer-refined nav,
+body.hb .hb-footer-contact {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:15px;
+  min-width:0;
+}
+body.hb .hb-footer-refined h3 {
+  margin:0 0 10px;
+  color:#e6ca9d;
+  font-size:12px;
+  font-weight:850;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+body.hb .hb-footer-refined nav a,
+body.hb .hb-footer-contact>a:not(.hb-cta) {
+  color:#f2e6ee;
+  font-size:14px;
+  font-weight:650;
+  line-height:1.55;
+  text-decoration:none;
+}
+body.hb .hb-footer-refined nav a:hover,
+body.hb .hb-footer-contact>a:not(.hb-cta):hover {
+  color:#e6ca9d;
+}
+body.hb .hb-footer-contact p {
+  margin:0;
+  color:#ead7e4;
+  font-size:15px;
+  line-height:1.75;
+}
+body.hb .hb-footer-contact .hb-cta {
+  margin:6px 0;
+  background:#f3d9c5;
+  color:#45263f!important;
+  font-size:12px;
+  padding:14px 17px;
+  text-align:center;
+}
+body.hb .hb-footer-refined .hb-foot-bottom {
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  border-top:1px solid #72576d;
+  padding-top:25px;
+  margin-top:55px;
+  color:#d1b9cc;
+}
+body.hb .hb-footer-refined .hb-foot-bottom div {
+  display:flex;
+  flex-wrap:wrap;
+  gap:19px;
+}
+body.hb .hb-footer-refined .hb-foot-bottom a {
+  color:#ead7e4;
+  text-decoration:none;
+}
+@media(max-width:950px) {
+  body.hb .hb-footer-refined .hb-footer-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:600px) {
+  body.hb .hb-footer-refined .hb-footer-grid {
+    grid-template-columns:1fr;
+  }
+  body.hb .hb-footer-refined .hb-foot-bottom {
+    flex-direction:column;
+  }
+  body.hb .hb-booking-row .hb-cta,
+  body.hb .hb-footer-contact .hb-cta {
+    width:100%;
+    white-space:normal;
+  }
+}
+</style>

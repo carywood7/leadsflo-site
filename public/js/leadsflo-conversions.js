@@ -48,3 +48,10 @@
     });
   }, true);
 })();
+
+/* LEADSFLO_UNIFIED_BOOKING_LOADER_V1 */
+(function () {
+  var script = document.createElement("script");
+  script.src = "/js/leadsflo-booking-modal.js";
+  document.head.appendChild(script);
+})();
