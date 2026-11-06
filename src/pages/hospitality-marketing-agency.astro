@@ -1,0 +1,694 @@
+---
+import BrandMark from "../components/BrandMark.astro";
+import "../styles/global.css";
+import "../styles/navigation.css";
+const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const faq = [{"q": "How can hotel marketing generate more direct bookings?", "a": "Hotels can connect search visibility, paid campaigns, relevant landing pages and a booking-friendly website. Conversion tracking should distinguish booking-engine visits from confirmed reservations; no campaign can guarantee bookings."}, {"q": "What is the difference between hotel SEO and hotel PPC?", "a": "SEO improves useful organic visibility over time, while paid search can reach relevant guest intent through carefully managed campaigns. Both should lead to pages that explain the property and make availability or booking easy to find."}, {"q": "Can LeadsFlo help boutique hotels and independent properties?", "a": "Yes. Messaging, property photography, guest segments and seasonal campaigns can be tailored to smaller independent properties as well as larger resorts, within each property’s available resources."}, {"q": "How should hotels measure their marketing?", "a": "Useful metrics include qualified property inquiries, booking-engine starts, confirmed direct reservations where attribution is available, and repeat-guest engagement. Traffic and clicks alone do not show business value."}, {"q": "Do you replace our property management system or booking engine?", "a": "No. We focus on marketing and conversion workflows. Integration with an existing booking engine, PMS or CRM depends on supported capabilities, access and appropriate data protection."}, {"q": "Do you guarantee occupancy, direct bookings or revenue?", "a": "No. Results depend on market demand, location, rates, availability, seasonality, property experience, marketing budget and competition. The calculator is an illustrative scenario, not a forecast."}];
+const schema = {"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://leadsflo.co/#organization", "name": "LeadsFlo", "url": "https://leadsflo.co/"}, {"@type": "WebPage", "@id": "https://leadsflo.co/hospitality-marketing-agency/#webpage", "url": "https://leadsflo.co/hospitality-marketing-agency/", "name": "Hospitality Marketing Agency | Hotel SEO & Direct Bookings | LeadsFlo", "description": "Digital marketing, SEO, Google Ads, direct-booking websites and guest follow-up for US independent hotels, boutique properties and resorts."}, {"@type": "Service", "name": "Hospitality and Hotel Digital Marketing", "serviceType": "Hotel SEO, paid search, direct-booking conversion and CRM follow-up", "provider": {"@id": "https://leadsflo.co/#organization"}, "areaServed": {"@type": "Country", "name": "United States"}, "url": "https://leadsflo.co/hospitality-marketing-agency/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How can hotel marketing generate more direct bookings?", "acceptedAnswer": {"@type": "Answer", "text": "Hotels can connect search visibility, paid campaigns, relevant landing pages and a booking-friendly website. Conversion tracking should distinguish booking-engine visits from confirmed reservations; no campaign can guarantee bookings."}}, {"@type": "Question", "name": "What is the difference between hotel SEO and hotel PPC?", "acceptedAnswer": {"@type": "Answer", "text": "SEO improves useful organic visibility over time, while paid search can reach relevant guest intent through carefully managed campaigns. Both should lead to pages that explain the property and make availability or booking easy to find."}}, {"@type": "Question", "name": "Can LeadsFlo help boutique hotels and independent properties?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Messaging, property photography, guest segments and seasonal campaigns can be tailored to smaller independent properties as well as larger resorts, within each property’s available resources."}}, {"@type": "Question", "name": "How should hotels measure their marketing?", "acceptedAnswer": {"@type": "Answer", "text": "Useful metrics include qualified property inquiries, booking-engine starts, confirmed direct reservations where attribution is available, and repeat-guest engagement. Traffic and clicks alone do not show business value."}}, {"@type": "Question", "name": "Do you replace our property management system or booking engine?", "acceptedAnswer": {"@type": "Answer", "text": "No. We focus on marketing and conversion workflows. Integration with an existing booking engine, PMS or CRM depends on supported capabilities, access and appropriate data protection."}}, {"@type": "Question", "name": "Do you guarantee occupancy, direct bookings or revenue?", "acceptedAnswer": {"@type": "Answer", "text": "No. Results depend on market demand, location, rates, availability, seasonality, property experience, marketing budget and competition. The calculator is an illustrative scenario, not a forecast."}}]}]};
+const guides = [["hotel-seo", "Hotel SEO", "Search visibility and direct booking opportunities"], ["hotel-digital-marketing", "Hotel digital marketing", "A practical strategy for independent properties"], ["google-ads-for-hotels", "Google Ads for hotels", "Campaign structure, booking intent and conversion quality"], ["boutique-hotel-marketing", "Boutique hotel marketing", "Brand positioning and attracting the right guests"], ["hotel-direct-booking-strategies", "Hotel direct booking strategies", "From guest discovery to a confirmed reservation"]];
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#173b40"/>
+<title>Hospitality Marketing Agency | Hotel SEO &amp; Direct Bookings | LeadsFlo</title>
+<meta name="description" content="Hospitality marketing for US hotels, resorts and boutique properties. Hotel SEO, Google Ads, booking funnels and guest CRM follow-up."/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://leadsflo.co/hospitality-marketing-agency/"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Hospitality Marketing Agency | Hotel Direct Bookings | LeadsFlo"/>
+<meta property="og:description" content="Hotel SEO, paid acquisition and direct-booking conversion for independent hotels and resorts."/>
+<meta property="og:url" content="https://leadsflo.co/hospitality-marketing-agency/"/>
+<script type="application/ld+json" set:html={JSON.stringify(schema)}/>
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QE382W17N6"></script>
+<script is:inline>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','G-QE382W17N6');
+</script>
+<script is:inline defer src="/js/leadsflo-conversions.js"></script>
+</head>
+
+<body class="ed-page hospitality-page" id="top">
+<header class="ed-header" id="ed-header">
+  <div class="ed-wrap ed-nav">
+    <a class="ed-brand" href="/" aria-label="LeadsFlo home">
+      <svg class="ed-cap hospitality-monogram" viewBox="0 0 60 60" aria-hidden="true" focusable="false">
+  <path d="M9 53V21L30 8l21 13v32" fill="none" stroke="#bd8b48" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M5 22 30 5l25 17" fill="none" stroke="#bd8b48" stroke-width="2.7" stroke-linecap="round"/>
+  <path d="M15 53h30M21 53V38q0-9 9-9t9 9v15" fill="none" stroke="#bd8b48" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M30 30v23" stroke="#bd8b48" stroke-width="1.8"/>
+  <rect x="15" y="24" width="7" height="7" rx="1" fill="#1b7779"/>
+  <rect x="38" y="24" width="7" height="7" rx="1" fill="#1b7779"/>
+  <path d="M30 14v8M26 18h8" stroke="#1b7779" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M11 56h38" stroke="#bd8b48" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
+      <BrandMark theme="light"/>
+    </a>
+    <nav class="ed-navlinks" id="ed-menu" aria-label="Hospitality marketing page"><a href="#practices">Property types</a><a href="#intake">Guest journey</a><a href="#automation">Guest CRM</a><a href="#planner">Booking planner</a><a href="#guides">Guides</a><a class="ed-navcta" href={booking} target="_blank" rel="noopener noreferrer">Let's Talk ↗</a></nav>
+    <button class="ed-menu-btn" id="ed-menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="ed-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="ed-hero"><div class="ed-wrap ed-hero-grid"><div class="ed-hero-copy"><p class="ed-kicker"><span></span> LEADSFLO / HOSPITALITY MARKETING</p><h1>More direct bookings. <em>Better guest acquisition.</em></h1><p>Hotel SEO, Google Ads, conversion-focused websites and connected guest follow-up for US independent hotels, boutique properties and resorts. Build a stronger path from discovery to direct reservations.</p><div class="ed-actions"><a class="ed-btn ed-btn-gold" href={booking} target="_blank" rel="noopener noreferrer">Discuss your hospitality growth ↗</a><a class="ed-link" href="#intake">Explore the guest journey ↓</a></div><div class="ed-hero-note">The goal isn't just more visitors to your website—it's more useful guest intent and better booking opportunities.</div></div><div class="ed-campus" aria-label="Illustrative boutique hotel and direct-booking journey"><div class="ed-campus-top"><span>GUEST JOURNEY / DIRECT BOOKING</span><span class="ed-live"><i></i> CONCEPT VISUAL</span></div>
+<svg viewBox="0 0 620 430" role="img" aria-label="Architectural illustration of an illuminated boutique hotel showing guest discovery through direct reservation"><defs><linearGradient id="hospitalityNight" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#234f55"/><stop offset="1" stop-color="#102e37"/></linearGradient><linearGradient id="hotelWindow" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f5d9a4"/><stop offset="1" stop-color="#c89a61"/></linearGradient></defs><rect width="620" height="430" fill="url(#hospitalityNight)"/><circle cx="500" cy="75" r="75" fill="#f7ce8a" opacity=".09"/><g stroke="#e3b989" stroke-opacity=".12"><path d="M0 90H620M0 180H620M0 270H620M0 360H620"/><path d="M70 0V430M160 0V430M250 0V430M340 0V430M430 0V430M520 0V430"/></g><path d="M96 315V148L305 71 514 148V315Z" fill="#c6b094" stroke="#efd3a7" stroke-width="4"/><path d="M74 151 305 58 536 151" fill="none" stroke="#edc994" stroke-width="13" stroke-linejoin="round"/><path d="M96 315H514M73 327H537" stroke="#e1bd8a" stroke-width="7"/><g fill="url(#hotelWindow)" stroke="#725c47" stroke-width="4"><rect x="145" y="162" width="58" height="66" rx="3"/><rect x="233" y="162" width="58" height="66" rx="3"/><rect x="330" y="162" width="58" height="66" rx="3"/><rect x="418" y="162" width="58" height="66" rx="3"/><rect x="146" y="244" width="57" height="59" rx="3"/><rect x="418" y="244" width="57" height="59" rx="3"/></g><g stroke="#795b43" stroke-width="3"><path d="M174 162v66M262 162v66M359 162v66M447 162v66M174 244v59M447 244v59"/></g><path d="M244 315v-55q0-55 61-55t61 55v55Z" fill="#244a4d" stroke="#e9c692" stroke-width="5"/><path d="M305 208v105" stroke="#e9c692" stroke-width="3"/><path d="M238 256h134" stroke="#d0a46e" stroke-width="4"/><path d="M0 335H620" stroke="#c59a67" stroke-width="3"/><path class="ed-route" d="M42 372Q155 344 258 367T451 360Q524 348 580 372" fill="none" stroke="#e7c58e" stroke-width="4" stroke-dasharray="9 12"/><circle cx="42" cy="372" r="7" fill="#f1d3a1"/><circle cx="580" cy="372" r="7" fill="#f1d3a1"/><g fill="#f8e8cf" font-family="sans-serif" font-size="11" font-weight="700"><text x="22" y="409">DISCOVERY</text><text x="465" y="409">DIRECT BOOKING</text></g></svg>
+<div class="ed-campus-bottom"><span>SEARCH → PROPERTY PAGE → BOOKING ENGINE → RESERVATION</span><span>LF / HOTEL—01</span></div></div></div></section>
+
+<div class="ed-marquee" aria-label="Hospitality marketing capabilities"><div class="ed-marquee-track" aria-hidden="true">{Array.from({length:6},()=>(<div class="ed-marquee-group"><span>◆ Hotel SEO</span><span>✦ Google Ads &amp; PPC</span><span>◇ Direct Booking Pages</span><span>✳ Boutique Hotel Marketing</span><span>◎ Guest CRM &amp; Follow-Up</span><span>↗ Reservation Measurement</span></div>))}</div></div>
+<section class="ed-section ed-cream" id="services"><div class="ed-wrap"><div class="ed-heading"><div><p class="ed-eyebrow">THE CONNECTED GUEST ACQUISITION SYSTEM</p><h2>More than traffic. A clearer path to direct bookings.</h2></div><p>Connect guest intent, persuasive property pages and booking-friendly experiences—with measurement that distinguishes interest from confirmed reservations.</p></div><div class="ed-automation-grid saas-services"><button type="button" class="saas-service" data-service="0" aria-pressed="true"><span class="ed-capability-icon">⌕</span><h3>Hotel SEO</h3><p>Reach guests researching destinations, property types and stays.</p><span class="saas-service-more">Explore capability ↗</span></button>
+<button type="button" class="saas-service" data-service="1" aria-pressed="false"><span class="ed-capability-icon">↗</span><h3>Paid Search</h3><p>Intent-led Google Ads for stays, packages and seasonal demand.</p><span class="saas-service-more">Explore capability ↗</span></button>
+<button type="button" class="saas-service" data-service="2" aria-pressed="false"><span class="ed-capability-icon">◇</span><h3>Direct Booking Pages</h3><p>Make room information, availability and booking steps clear.</p><span class="saas-service-more">Explore capability ↗</span></button>
+<button type="button" class="saas-service" data-service="3" aria-pressed="false"><span class="ed-capability-icon">✦</span><h3>Property Storytelling</h3><p>Communicate your experience with accurate content and visuals.</p><span class="saas-service-more">Explore capability ↗</span></button>
+<button type="button" class="saas-service" data-service="4" aria-pressed="false"><span class="ed-capability-icon">▣</span><h3>Guest CRM & Follow-Up</h3><p>Connect inquiries, opt-in guest communications and booking journeys.</p><span class="saas-service-more">Explore capability ↗</span></button>
+<button type="button" class="saas-service" data-service="5" aria-pressed="false"><span class="ed-capability-icon">◈</span><h3>Booking Measurement</h3><p>Distinguish browsing, booking starts and confirmed reservations.</p><span class="saas-service-more">Explore capability ↗</span></button></div><div class="saas-service-panel" aria-live="polite"><div><span id="saas-service-label">CAPABILITY 01 / HOTEL SEO</span><h3 id="saas-service-title">Be discoverable for the stays you actually offer.</h3><p id="saas-service-body">Create useful property and destination pages that answer guest questions and make the next booking step obvious.</p></div><a href={booking} target="_blank" rel="noopener noreferrer">Discuss this capability ↗</a></div></div></section>
+
+<section class="ed-section ed-light" id="practices"><div class="ed-wrap"><div class="ed-heading"><div><p class="ed-eyebrow">01 / PROPERTY FIT</p><h2>Different properties. Different guest journeys.</h2></div><p>From distinctive boutique stays to group inquiries, property type changes messaging, conversion paths and what counts as a valuable lead.</p></div><div class="ed-program-grid"><div class="ed-program-options" role="group" aria-label="Hospitality property types"><button class="ed-program active" data-program="independent" aria-pressed="true"><span>01 / INDEPENDENT HOTEL</span><strong>Independent Hotels</strong><small>Drive direct reservation interest</small></button>
+<button class="ed-program " data-program="boutique" aria-pressed="false"><span>02 / BOUTIQUE PROPERTY</span><strong>Boutique Hotels</strong><small>Distinctive stays and right-fit guests</small></button>
+<button class="ed-program " data-program="resort" aria-pressed="false"><span>03 / RESORT & LEISURE</span><strong>Resorts</strong><small>Packages, experiences and seasonal demand</small></button>
+<button class="ed-program " data-program="extended" aria-pressed="false"><span>04 / LONGER STAYS</span><strong>Extended-Stay Properties</strong><small>Suitability and longer booking windows</small></button>
+<button class="ed-program " data-program="luxury" aria-pressed="false"><span>05 / PREMIUM EXPERIENCE</span><strong>Luxury & Design Hotels</strong><small>Experience-led qualified demand</small></button>
+<button class="ed-program " data-program="group" aria-pressed="false"><span>06 / GROUPS & EVENTS</span><strong>Groups & Events</strong><small>Qualified venue and room-block inquiries</small></button></div><div class="ed-program-detail" aria-live="polite"><p class="ed-eyebrow">GUEST ACQUISITION BLUEPRINT / <span id="ed-program-number">01</span></p><div class="ed-program-symbol" id="ed-program-symbol" aria-hidden="true">⌂</div><h3 id="ed-program-title">Independent Hotels</h3><p id="ed-program-description">Help potential guests understand the property and book directly.</p><div class="ed-detail-line"><span>CHANNEL STRATEGY</span><strong id="ed-program-ads">Hotel SEO, local searches and booking-focused pages</strong></div><div class="ed-detail-line"><span>GUEST FIT</span><strong id="ed-program-fit">Location, travel dates and suitable room types</strong></div><div class="ed-detail-line"><span>NEXT STEP</span><strong id="ed-program-action">Guide guests to verified availability and rates</strong></div><a href={booking} target="_blank" rel="noopener noreferrer">Discuss your property strategy ↗</a></div></div></div></section>
+
+<section class="ed-section ed-navy" id="intake"><div class="ed-wrap"><div class="ed-heading"><div><p class="ed-eyebrow">02 / GUEST-TO-RESERVATION JOURNEY</p><h2>A website visit isn't a confirmed booking.</h2></div><p>Explore six stages of a practical direct-booking experience, from guest discovery through repeat stays.</p></div><div class="ed-journey"><div class="ed-steps" role="group" aria-label="Guest reservation journey"><button class="ed-step active" data-stage="0" aria-pressed="true"><span>01</span><strong>Discover</strong></button><button class="ed-step " data-stage="1" aria-pressed="false"><span>02</span><strong>Explore</strong></button><button class="ed-step " data-stage="2" aria-pressed="false"><span>03</span><strong>Check</strong></button><button class="ed-step " data-stage="3" aria-pressed="false"><span>04</span><strong>Consider</strong></button><button class="ed-step " data-stage="4" aria-pressed="false"><span>05</span><strong>Reserve</strong></button><button class="ed-step " data-stage="5" aria-pressed="false"><span>06</span><strong>Return</strong></button></div><div class="ed-stage-detail" aria-live="polite"><span id="ed-stage-kicker">STAGE 01 / DISCOVER</span><h3 id="ed-stage-title">Help the right travelers find your property.</h3><p id="ed-stage-body">Hotel SEO, relevant paid search and useful destination content bring qualified guest intent.</p><div class="ed-stage-metric"><span>WHAT TO REVIEW</span><strong id="ed-stage-metric">Relevant discovery and site visits</strong></div></div></div></div></section>
+
+<section class="ed-section ed-cream" id="automation"><div class="ed-wrap"><div class="ed-heading"><div><p class="ed-eyebrow">03 / GUEST EXPERIENCE &amp; FOLLOW-UP</p><h2>Make it easier to book—and easier to return.</h2></div><p>A clear guest journey combines the property website, booking engine, helpful responses and thoughtful post-stay communications.</p></div><div class="ed-automation-grid"><article tabindex="0"><span class="ed-capability-icon">◎</span><h3>Guest Questions</h3><p>Help guests find room details, check-in information, amenities and human assistance.</p></article><article tabindex="0"><span class="ed-capability-icon">◇</span><h3>Availability Paths</h3><p>Connect room and package pages to the property's existing booking engine.</p></article><article tabindex="0"><span class="ed-capability-icon">↺</span><h3>Consented Follow-Up</h3><p>Handle relevant inquiries and opt-in guest communication without excessive messaging.</p></article><article tabindex="0"><span class="ed-capability-icon">▣</span><h3>Booking Measurement</h3><p>Separate browsing and booking starts from verified direct reservations.</p></article></div><div class="ed-automation-demo"><div class="ed-demo-top"><span>GUEST INQUIRY / CONCEPT DEMO</span><i>ILLUSTRATIVE</i></div><div class="ed-chat"><p class="ed-chat-user">Do you have rooms for a long weekend, and is breakfast included?</p><p class="ed-chat-bot">You can review room availability and the property's current breakfast options on its official booking page. For specific requests, the hotel team can help.</p></div><p>Illustrative exchange only. No live booking integration, room availability or reservation is represented.</p></div></div></section>
+
+<section class="ed-section ed-light" id="planner"><div class="ed-wrap ed-planner-grid"><div><p class="ed-eyebrow">04 / DIRECT BOOKING PLANNER</p><h2>Explore how guest intent could translate into booking opportunities.</h2><p class="ed-muted">Adjust hypothetical stages of your website-to-booking journey. These values are illustrative, not actual hotel benchmarks, revenue forecasts or guarantees.</p><div class="ed-controls"><label for="ed-inquiries">Monthly relevant site visits <output id="ed-inquiries-label">500</output></label><input id="ed-inquiries" type="range" min="50" max="1000" step="25" value="500"/><label for="ed-qualified">Engaged property visitors <output id="ed-qualified-label">40%</output></label><input id="ed-qualified" type="range" min="10" max="90" step="5" value="40"/><label for="ed-contacted">Engaged visitors checking availability <output id="ed-contacted-label">35%</output></label><input id="ed-contacted" type="range" min="10" max="90" step="5" value="35"/><label for="ed-applications">Availability checks completing a reservation <output id="ed-applications-label">25%</output></label><input id="ed-applications" type="range" min="5" max="80" step="5" value="25"/></div></div><div class="ed-planner-result" aria-live="polite"><span>HYPOTHETICAL MONTHLY SCENARIO</span><div><small>Relevant visits</small><strong id="ed-out-inquiries">500</strong></div><div><small>Engaged visitors</small><strong id="ed-out-qualified">200</strong></div><div><small>Availability checks</small><strong id="ed-out-reached">70</strong></div><div class="ed-result-highlight"><small>Potential direct reservations</small><strong id="ed-out-applications">18</strong></div><p>Illustrative mathematical scenario only; actual confirmation requires booking-engine data. This does not represent expected bookings, occupancy or revenue.</p></div></div></section>
+
+<section class="ed-section ed-navy ed-principles"><div class="ed-wrap"><div class="ed-heading"><div><p class="ed-eyebrow">05 / BUILT FOR HOSPITALITY</p><h2>Your property experience comes first. Marketing should reflect it.</h2></div></div><div class="ed-experience"><div class="ed-experience-number" aria-hidden="true">01 <small>CONNECTED GUEST JOURNEY</small></div><div><h3>Guest acquisition, booking paths and follow-up—connected.</h3><p>LeadsFlo works across search campaigns, landing pages, the guest journey and available CRM workflows. Your property team controls availability, rate decisions, guest service and the actual stay.</p><p>We don't imply access to live room inventory, invent property results or guarantee increased occupancy, reservations or revenue. Integrations are subject to actual supported capabilities and privacy requirements.</p></div></div></div></section>
+
+<section class="ed-section ed-cream" id="guides"><div class="ed-wrap"><div class="ed-heading"><div><p class="ed-eyebrow">06 / HOSPITALITY INSIGHTS</p><h2>Practical guides to better guest acquisition.</h2></div><p>Hotel SEO, paid acquisition, boutique hotel positioning and strategies for more meaningful direct-booking opportunities.</p></div><div class="ed-guides">{guides.map(([slug,title,description],i)=>(<a class="ed-guide" href={`/insights/${slug}/`} aria-label={`Read ${title}`}><span>0{i+1} / HOSPITALITY GUIDE</span><h3>{title}</h3><p>{description}</p><strong>Read the guide ↗</strong></a>))}</div></div></section>
+
+<section class="ed-section ed-light" id="faq"><div class="ed-wrap ed-faq-grid"><div><p class="ed-eyebrow">07 / COMMON QUESTIONS</p><h2>What hospitality teams ask us.</h2></div><div class="ed-faqs">{faq.map(item=>(<details><summary>{item.q}</summary><p>{item.a}</p></details>))}</div></div></section>
+
+<section class="ed-close"><div class="ed-wrap"><p class="ed-eyebrow">LEADSFLO / HOSPITALITY MARKETING</p><h2>Help more of the right guests discover—and book—your property.</h2><p>Tell us about your property, guest segments, booking experience and current acquisition channels.</p><a class="ed-btn ed-btn-gold" href={booking} target="_blank" rel="noopener noreferrer">Book a hospitality growth conversation ↗</a></div></section>
+</main>
+
+<footer class="ed-footer"><div class="ed-wrap ed-footer-grid"><div><a class="ed-brand ed-footer-brand" href="/" aria-label="LeadsFlo home"><svg class="ed-cap hospitality-monogram" viewBox="0 0 60 60" aria-hidden="true" focusable="false">
+  <path d="M9 53V21L30 8l21 13v32" fill="none" stroke="#bd8b48" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M5 22 30 5l25 17" fill="none" stroke="#bd8b48" stroke-width="2.7" stroke-linecap="round"/>
+  <path d="M15 53h30M21 53V38q0-9 9-9t9 9v15" fill="none" stroke="#bd8b48" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M30 30v23" stroke="#bd8b48" stroke-width="1.8"/>
+  <rect x="15" y="24" width="7" height="7" rx="1" fill="#1b7779"/>
+  <rect x="38" y="24" width="7" height="7" rx="1" fill="#1b7779"/>
+  <path d="M30 14v8M26 18h8" stroke="#1b7779" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M11 56h38" stroke="#bd8b48" stroke-width="2.5" stroke-linecap="round"/>
+</svg><BrandMark theme="light"/></a><p>Hotel SEO, digital marketing, direct-booking conversion and guest follow-up for US independent hotels and resorts.</p><a href={booking} target="_blank" rel="noopener noreferrer">Let's Talk ↗</a></div><div><strong>SERVICES</strong><a href="/performance-marketing/">Performance Marketing</a><a href="/websites-funnels/">Websites &amp; Funnels</a><a href="/crm-automation/">CRM &amp; Automation</a><a href="/appointment-setting/">Appointment Setting</a></div><div><strong>EXPLORE</strong><a href="/industries/">All Industries</a><a href="/insights/">Insights</a><a href="/our-approach/">Our Approach</a><a href="/contact/">Contact</a></div></div><div class="ed-wrap ed-footer-bottom"><span>© {new Date().getFullYear()} LeadsFlo</span><span><a href="/privacy-policy/">Privacy</a> · <a href="/terms-and-conditions/">Terms</a></span></div></footer>
+
+<a class="ed-mobile-cta" href={booking} target="_blank" rel="noopener noreferrer">Discuss hotel marketing ↗</a>
+
+<script is:inline>
+(()=>{
+ const header=document.getElementById('ed-header');
+ const menuBtn=document.getElementById('ed-menu-btn');
+ const menu=document.getElementById('ed-menu');
+ menuBtn?.addEventListener('click',()=>{
+   const open=menu.classList.toggle('open');
+   menuBtn.setAttribute('aria-expanded',String(open));
+   menuBtn.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+ });
+ menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+   menu.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false');
+   menuBtn.setAttribute('aria-label','Open navigation');
+ }));
+ document.addEventListener('keydown',e=>{
+   if(e.key==='Escape'){menu?.classList.remove('open');menuBtn?.setAttribute('aria-expanded','false')}
+ });
+ let last=window.scrollY;
+ window.addEventListener('scroll',()=>{
+   const now=window.scrollY;
+   if(now<65 || header.contains(document.activeElement) || Math.abs(now-last)<9){if(now<65)header.classList.remove('hidden');last=now;return}
+   header.classList.toggle('hidden',now>last);last=now;
+ },{passive:true});
+
+  const programs={"independent": ["01", "⌂", "Independent Hotels", "Help potential guests understand the property and book directly.", "Hotel SEO, local searches and booking-focused pages", "Location, travel dates and suitable room types", "Guide guests to verified availability and rates"], "boutique": ["02", "✧", "Boutique Hotels", "Lead with a unique guest experience rather than competing only on room price.", "Experience-led content, property photography and paid search", "Trip purpose, guest preferences and availability", "Progress from property story to booking engine"], "resort": ["03", "◈", "Resorts", "Reach travelers researching extended stays and on-property experiences.", "Destination SEO, seasonal campaigns and package pages", "Travel window, guest count and relevant packages", "Match guest interests to the right offer"], "extended": ["04", "▥", "Extended-Stay Properties", "Reach guests assessing convenience, amenities and longer stays.", "Location and need-based pages with appropriate ads", "Stay duration, room configuration and availability", "Support inquiries and direct booking pathways"], "luxury": ["05", "◇", "Luxury & Design Hotels", "Communicate what makes the property worth considering.", "Visual storytelling and high-intent brand/category search", "Guest expectations, stay intent and room options", "Make personal assistance and direct booking clear"], "group": ["06", "▣", "Groups & Events", "Handle event or group inquiries separately from individual stays.", "Group-specific pages, search campaigns and inquiry forms", "Dates, guest count, venue needs and capacity", "Route inquiries to the right hospitality team"]};
+ const pids=['ed-program-number','ed-program-symbol','ed-program-title','ed-program-description','ed-program-ads','ed-program-fit','ed-program-action'];
+ function setProgram(key){
+   if(!programs[key])return;
+   programs[key].forEach((v,i)=>document.getElementById(pids[i]).textContent=v);
+   document.querySelectorAll('[data-program]').forEach(btn=>{
+     const selected=btn.dataset.program===key;
+     btn.classList.toggle('active',selected);btn.setAttribute('aria-pressed',String(selected));
+   });
+ }
+ document.querySelectorAll('[data-program]').forEach(btn=>{
+   btn.addEventListener('click',()=>setProgram(btn.dataset.program));
+   btn.addEventListener('focus',()=>setProgram(btn.dataset.program));
+   btn.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')setProgram(btn.dataset.program)});
+ });
+
+  const stages=[["STAGE 01 / DISCOVER", "Help the right travelers find your property.", "Hotel SEO, relevant paid search and useful destination content bring qualified guest intent.", "Relevant discovery and site visits"], ["STAGE 02 / EXPLORE", "Make the stay and experience easy to understand.", "Present honest property photography, room options, amenities, location and policies.", "Engaged property-page visits"], ["STAGE 03 / CHECK", "Make the route to availability clear.", "Give guests a visible, reliable path to dates, room types and available rates.", "Booking engine entries"], ["STAGE 04 / CONSIDER", "Reduce uncertainty before the reservation.", "Keep rates, inclusions and key booking terms clear; offer helpful human support when needed.", "Useful booking interactions"], ["STAGE 05 / RESERVE", "Measure confirmed direct reservations accurately.", "Coordinate marketing attribution with supported booking-engine confirmation data.", "Confirmed direct bookings where measurable"], ["STAGE 06 / RETURN", "Support loyalty without overwhelming guests.", "Use opt-in post-stay messages and useful future-stay offers where appropriate.", "Repeat guests and consented engagement"]];
+ function setStage(n){
+   const s=stages[n];if(!s)return;
+   ['ed-stage-kicker','ed-stage-title','ed-stage-body','ed-stage-metric'].forEach((id,i)=>document.getElementById(id).textContent=s[i]);
+   document.querySelectorAll('[data-stage]').forEach(btn=>{
+     const active=Number(btn.dataset.stage)===n;
+     btn.classList.toggle('active',active);btn.setAttribute('aria-pressed',String(active));
+   });
+ }
+ document.querySelectorAll('[data-stage]').forEach(btn=>{
+   btn.addEventListener('click',()=>setStage(Number(btn.dataset.stage)));
+   btn.addEventListener('focus',()=>setStage(Number(btn.dataset.stage)));
+   btn.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')setStage(Number(btn.dataset.stage))});
+ });
+
+
+ const capabilities = [["CAPABILITY 01 / HOTEL SEO", "Be discoverable for the stays you actually offer.", "Create useful property and destination pages answering guest questions, with honest room details and a clear booking path."], ["CAPABILITY 02 / PAID SEARCH", "Bring high-intent guest searches to the right offer.", "Build Google Ads around destination, property and booking intent, aligned with rates, availability and seasonal capacity."], ["CAPABILITY 03 / DIRECT BOOKING PAGES", "Reduce the distance between interest and availability.", "Make key amenities, rates, policies and booking links easy to find without pretending inquiries are reservations."], ["CAPABILITY 04 / PROPERTY STORYTELLING", "Give guests a reason to choose your experience.", "Use accurate property photography, useful content and clear audience-specific messages—not unsupported luxury claims."], ["CAPABILITY 05 / GUEST FOLLOW-UP", "Connect guest communications without creating friction.", "Coordinate inquiry routing, opt-in messaging and appropriate post-stay offers where supported by the hotel’s systems."], ["CAPABILITY 06 / BOOKING MEASUREMENT", "Know which steps lead to real reservations.", "Separate ad clicks, booking engine starts and confirmed direct reservations using reliable integrations when available."]];
+ function setCapability(i){
+  const v=capabilities[i]; if(!v)return;
+  ['saas-service-label','saas-service-title','saas-service-body'].forEach((id,j)=>document.getElementById(id).textContent=v[j]);
+  document.querySelectorAll('[data-service]').forEach(btn=>{const on=Number(btn.dataset.service)===i;btn.classList.toggle('active',on);btn.setAttribute('aria-pressed',String(on));});
+ }
+ document.querySelectorAll('[data-service]').forEach(btn=>{
+  const choose=()=>setCapability(Number(btn.dataset.service));
+  btn.addEventListener('click',choose);btn.addEventListener('focus',choose);
+  btn.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')choose()});
+ });
+
+ const ids=['ed-inquiries','ed-qualified','ed-contacted','ed-applications'];
+ function updatePlanner(){
+   const [a,b,c,d]=ids.map(id=>Number(document.getElementById(id).value));
+   ids.forEach((id,i)=>{
+     document.getElementById(id+'-label').textContent=[a,b+'%',c+'%',d+'%'][i];
+   });
+   const qualified=Math.round(a*b/100), reached=Math.round(qualified*c/100), applications=Math.round(reached*d/100);
+   document.getElementById('ed-out-inquiries').textContent=a.toLocaleString();
+   document.getElementById('ed-out-qualified').textContent=qualified.toLocaleString();
+   document.getElementById('ed-out-reached').textContent=reached.toLocaleString();
+   document.getElementById('ed-out-applications').textContent=applications.toLocaleString();
+ }
+ ids.forEach(id=>document.getElementById(id)?.addEventListener('input',updatePlanner));
+ updatePlanner();
+
+ document.querySelectorAll('.ed-faqs details').forEach(el=>{
+   el.addEventListener('pointerenter',e=>{
+     if(e.pointerType==='mouse')el.open=true;
+   });
+  el.addEventListener('pointerleave',e=>{
+    if(e.pointerType==='mouse')el.open=false;
+  });
+ });
+})();
+
+</script>
+
+<style is:global>
+:root{scroll-behavior:smooth}
+.ed-page{margin:0;background:#f8f9fb;color:#112744;font-family:Inter,"Plus Jakarta Sans",sans-serif}
+.ed-page *{box-sizing:border-box}
+.ed-page a{transition:color .2s ease,background .2s ease,transform .2s ease}
+.ed-page button,.ed-page input{font:inherit}
+.ed-page button{cursor:pointer}
+.ed-page :is(a,button,input,summary):focus-visible{outline:3px solid #19b9db;outline-offset:4px}
+.ed-wrap{width:min(1160px,calc(100% - 44px));margin-inline:auto}
+.ed-header{position:sticky;top:0;z-index:100;background:#fffaf3;border-bottom:1px solid #eadfcf;transition:transform .28s ease}
+.ed-header.hidden{transform:translateY(-110%)}
+.ed-nav{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.ed-brand{display:inline-flex;align-items:center;gap:7px;position:relative;flex-shrink:0;text-decoration:none}
+.ed-brand .ed-cap{
+ position:absolute;
+ left:calc(99px * var(--ed-logo-scale));
+ top:calc(-1px * var(--ed-logo-scale));
+ width:calc(28px * var(--ed-logo-scale));
+ height:calc(26px * var(--ed-logo-scale));
+ z-index:2;
+ transform-origin:50% 85%;
+ transform:rotate(6deg);
+ transition:transform .35s ease;
+}
+.ed-brand{--ed-logo-scale:1;padding-top:calc(12px * var(--ed-logo-scale))}
+.ed-brand .lf-brand-v4{
+ --brand-text:#142d49;
+ --brand-flo:#147f9d;
+ --brand-period:#d6a45b;
+ --brand-plane:#147f9d;
+ font-size:calc(35px * var(--ed-logo-scale));
+}
+.ed-brand .lf-brand-v4__current1{stroke:#147f9d}
+.ed-brand .lf-brand-v4__current2{stroke:#d6a45b}
+.ed-brand .lf-brand-v4__pulse{stroke:#67d9e8}
+.ed-footer-brand .lf-brand-v4{
+ --brand-text:#f5f7fa;
+ --brand-flo:#91dfed;
+ --brand-period:#f0c785;
+ --brand-plane:#91dfed;
+}
+.ed-footer-brand .lf-brand-v4__current1{stroke:#91dfed}
+.ed-footer-brand .lf-brand-v4__current2{stroke:#f0c785}
+.ed-footer-brand .lf-brand-v4__pulse{stroke:#67d9e8}
+.ed-brand:hover .ed-cap,.ed-brand:focus-visible .ed-cap{transform:rotate(0deg)}
+.ed-brand :is(svg:not(.ed-cap),.lf-brand-v4){max-width:176px}
+.ed-navlinks{display:flex;align-items:center;gap:23px}
+.ed-navlinks>a{font-size:13px;color:#20354c;font-weight:800;text-decoration:none;white-space:nowrap}
+.ed-navlinks>a:hover{color:#147c9a}
+.ed-navlinks .ed-navcta{background:#102845;color:#fff;padding:15px 18px;border-radius:6px}
+.ed-menu-btn{display:none;background:none;border:0;width:48px;height:48px;padding:12px;flex-direction:column;justify-content:space-around}
+.ed-menu-btn span{height:3px;background:#102845;width:100%;border-radius:4px}
+.ed-hero{background:linear-gradient(135deg,#08172e,#123357);color:#f9fbff;padding:clamp(70px,8vw,122px) 0;overflow:hidden;position:relative}
+.ed-hero:before{content:"";position:absolute;width:650px;height:650px;right:-350px;top:-230px;border:1px solid #80cee331;border-radius:50%;box-shadow:0 0 0 65px #80cee30a,0 0 0 145px #80cee308;pointer-events:none}
+.ed-hero-grid{position:relative;display:grid;grid-template-columns:1.06fr .94fr;align-items:center;gap:48px}
+.ed-kicker,.ed-eyebrow{font-size:11px;letter-spacing:.18em;font-weight:850;color:#c18c43}
+.ed-kicker{color:#f1cd91}.ed-kicker span{display:inline-block;width:18px;height:2px;background:#f0c17a;vertical-align:middle}
+.ed-hero h1{font-family:"Plus Jakarta Sans",sans-serif;font-size:clamp(38px,4.6vw,67px);line-height:1.09;letter-spacing:-.06em;margin:23px 0}
+.ed-hero h1 em{color:#91ddec;font-style:normal}
+.ed-hero-copy>p:not(.ed-kicker){font-size:17px;line-height:1.85;color:#c9d9e9;max-width:610px}
+.ed-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:33px}
+.ed-btn{display:inline-flex;align-items:center;justify-content:center;padding:17px 23px;border-radius:6px;font-size:13px;font-weight:850;text-decoration:none}
+.ed-btn-gold{background:#f0c785;color:#183048}
+.ed-btn-gold:hover{background:#ffe2aa;transform:translateY(-2px)}
+.ed-link{color:#e7f6ff;font-weight:800;font-size:13px;text-decoration:none}
+.ed-hero-note{font-size:12px;color:#a9c4d8;margin-top:27px}
+.ed-campus{border-radius:16px;border:1px solid #5e849c;background:#102e4d;overflow:hidden;box-shadow:0 40px 80px #020d2340;transform:perspective(1300px) rotateY(-3deg)}
+.ed-campus>svg{display:block;width:100%;height:auto}
+.ed-campus-top,.ed-campus-bottom{display:flex;justify-content:space-between;gap:12px;padding:17px 20px;background:#09223e;color:#a7d8e7;font-size:10px;font-weight:800;letter-spacing:.1em}
+.ed-live{color:#f4d19a}.ed-live i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#67dccd;margin-right:5px}
+.ed-route{animation:edRoute 8s linear infinite}
+.ed-pulse{transform-origin:310px 306px;animation:edPulse 2.4s ease-in-out infinite}
+@keyframes edRoute{to{stroke-dashoffset:-144}}
+@keyframes edPulse{50%{transform:scale(1.55);opacity:.12}}
+.ed-marquee{overflow:hidden;background:#0c2541;padding:19px 0;border-block:1px solid #24536a}
+.ed-marquee-track{display:flex;width:max-content;animation:edScroll 34s linear infinite}
+.ed-marquee-group{display:flex;gap:12px;flex-shrink:0;padding-right:12px}
+.ed-marquee-group span{background:#fff4df;border:1px solid #e9cba0;border-radius:7px;color:#213c55;padding:14px 22px;font-size:15px;font-weight:850;white-space:nowrap}
+.ed-marquee:hover .ed-marquee-track,.ed-marquee:focus-within .ed-marquee-track{animation-play-state:paused}
+@keyframes edScroll{to{transform:translateX(-16.6666667%)}}
+.ed-section{padding:clamp(72px,8vw,120px) 0;position:relative;scroll-margin-top:90px}
+.ed-light{background:#f8fafc}.ed-cream{background:#f8f2e9}.ed-navy{background:#0a1e38;color:#fff}
+.ed-heading{display:grid;grid-template-columns:1.15fr .65fr;align-items:end;gap:44px;margin-bottom:43px}
+.ed-heading h2,.ed-section h2,.ed-close h2{font-family:"Plus Jakarta Sans",sans-serif;font-size:clamp(31px,4vw,52px);line-height:1.13;letter-spacing:-.052em;margin:14px 0 0;max-width:800px}
+.ed-heading>p{font-size:15px;line-height:1.85;color:#596b7c;margin:0}
+.ed-navy .ed-heading>p{color:#b4cadb}
+.ed-program-grid{display:grid;grid-template-columns:.93fr 1.07fr;gap:22px}
+.ed-program-options{display:grid;gap:12px}
+.ed-program{display:flex;flex-direction:column;text-align:left;gap:8px;padding:24px 26px;background:#fff;color:#17304a;border:1px solid #dce3eb;border-radius:11px;transition:background .2s,border-color .2s,transform .2s}
+.ed-program:hover,.ed-program.active{border-color:#167ea2;background:#eaf7fa;transform:translateX(4px)}
+.ed-program span{color:#1485a3;font-size:10px;font-weight:850;letter-spacing:.12em}
+.ed-program strong{font-size:21px;letter-spacing:-.035em}
+.ed-program small{font-size:13px;color:#5d7484}
+.ed-program-detail{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;background:#113957;color:#fff;padding:clamp(26px,4vw,54px);border-radius:15px;min-height:515px}
+.ed-program-detail .ed-eyebrow{color:#c6f0f6}
+.ed-program-symbol{font-size:83px;color:#efc683;margin:19px 0 4px}
+.ed-program-detail h3{font-size:clamp(29px,3vw,40px);letter-spacing:-.045em;line-height:1.14;margin:12px 0}
+.ed-program-detail>p:not(.ed-eyebrow){color:#cbdbe5;font-size:15px;line-height:1.8}
+.ed-detail-line{display:grid;grid-template-columns:125px 1fr;gap:15px;border-top:1px solid #ffffff30;padding:19px 0;width:100%}
+.ed-detail-line span,.ed-stage-metric span{color:#a0d4e3;letter-spacing:.1em;font-size:10px;font-weight:850}
+.ed-detail-line strong{font-size:13px;line-height:1.6;font-weight:650}
+.ed-program-detail>a{margin-top:auto;color:#f5d194;font-size:13px;font-weight:850}
+.ed-steps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}
+.ed-step{display:flex;flex-direction:column;align-items:flex-start;gap:17px;border:1px solid #386081;background:#14344e;color:#dce9f0;text-align:left;border-radius:9px;padding:21px 13px;transition:background .2s,border-color .2s}
+.ed-step span{font-size:12px;color:#94c7d4}
+.ed-step strong{font-size:14px}
+.ed-step:hover,.ed-step.active{background:#e8c890;color:#17304a;border-color:#e8c890}
+.ed-step.active span,.ed-step:hover span{color:#37516a}
+.ed-stage-detail{margin-top:18px;background:#102e4c;border:1px solid #2e5876;padding:clamp(27px,4vw,47px);border-radius:12px;min-height:260px}
+.ed-stage-detail>span{font-size:11px;color:#e9c48b;font-weight:850;letter-spacing:.12em}
+.ed-stage-detail h3{font-size:clamp(25px,2.7vw,35px);line-height:1.2;letter-spacing:-.045em;max-width:790px;margin:16px 0}
+.ed-stage-detail>p{color:#c5d8e5;line-height:1.8;max-width:790px}
+.ed-stage-metric{border-top:1px solid #45647a;margin-top:25px;padding-top:17px;display:flex;gap:20px;flex-wrap:wrap}
+.ed-stage-metric strong{color:#f1d29d;font-size:14px}
+.ed-automation-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.ed-automation-grid article{border:1px solid #e0d4c4;border-radius:12px;background:#fffcf7;padding:25px}
+.ed-capability-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:12px;background:#e0f5f7;color:#187d98;font-size:26px}
+.ed-automation-grid h3{color:#162f49;font-size:20px;letter-spacing:-.035em}
+.ed-automation-grid p{font-size:13px;line-height:1.8;color:#5b6979}
+.ed-automation-demo{margin-top:26px;background:#132e49;padding:28px;border-radius:13px;color:#fff}
+.ed-demo-top{display:flex;justify-content:space-between;gap:15px;font-size:11px;letter-spacing:.1em;font-weight:850;color:#f0cb92}
+.ed-demo-top i{font-style:normal;color:#a8c5d6}
+.ed-chat{display:grid;gap:13px;max-width:750px;margin-top:25px}
+.ed-chat p{padding:20px;border-radius:13px;line-height:1.8;font-size:14px;margin:0}
+.ed-chat-user{background:#e6f1f6;color:#19344f;justify-self:end;max-width:75%}
+.ed-chat-bot{background:#294d67;color:#fff;justify-self:start;max-width:85%}
+.ed-automation-demo>p{font-size:11px;color:#b6cadb;margin-top:23px}
+.ed-planner-grid{display:grid;grid-template-columns:1fr .85fr;gap:70px;align-items:center}
+.ed-muted{color:#647489;line-height:1.85;margin:25px 0}
+.ed-controls{display:grid;gap:14px;margin-top:34px}
+.ed-controls label{display:flex;justify-content:space-between;font-size:14px;font-weight:750}
+.ed-controls output{color:#127e97;font-weight:850}
+.ed-controls input{width:100%;accent-color:#127f9c;margin-bottom:13px}
+.ed-planner-result{background:#0d2946;color:#fff;padding:32px;border-radius:14px;box-shadow:0 25px 55px #082e4a26}
+.ed-planner-result>span{font-size:11px;font-weight:850;color:#cdeaf0;letter-spacing:.12em}
+.ed-planner-result>div{display:flex;justify-content:space-between;align-items:center;padding:21px 0;border-bottom:1px solid #456177}
+.ed-planner-result small{font-size:13px;color:#bed3df}
+.ed-planner-result strong{font-size:32px;color:#f0c785;letter-spacing:-.04em}
+.ed-planner-result .ed-result-highlight{background:#20445f;padding:18px;margin:10px -12px;border-radius:8px;border:none}
+.ed-planner-result .ed-result-highlight strong{font-size:47px}
+.ed-planner-result>p{color:#a9c3d5;font-size:12px;line-height:1.75}
+.ed-experience{display:grid;grid-template-columns:.34fr 1fr;gap:50px;border-top:1px solid #38617e;padding-top:34px;align-items:start}
+.ed-experience-number{font-size:clamp(80px,11vw,170px);font-weight:850;letter-spacing:-.08em;color:#f0c785;line-height:1}
+.ed-experience-number small{display:block;font-size:10px;letter-spacing:.12em;line-height:1.8;color:#b3d7e3}
+.ed-experience h3{font-size:28px;margin:0 0 17px}
+.ed-experience p{color:#bdcedb;line-height:1.9;max-width:700px}
+.ed-guides{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.ed-guide{display:flex;flex-direction:column;gap:12px;background:#fff;border:1px solid #e5d9c8;border-radius:12px;padding:27px;text-decoration:none;color:#18354f;min-height:260px;transition:transform .2s,border-color .2s}
+.ed-guide:hover{transform:translateY(-5px);border-color:#c68d47}
+.ed-guide span{font-size:10px;letter-spacing:.12em;color:#a2773e;font-weight:850}
+.ed-guide h3{font-size:23px;line-height:1.25;letter-spacing:-.04em;margin:8px 0 0}
+.ed-guide p{font-size:13px;line-height:1.75;color:#68788a}
+.ed-guide strong{font-size:12px;color:#177e97;margin-top:auto}
+.ed-faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px}
+.ed-faqs details{border-bottom:1px solid #dae3eb;padding:20px 5px}
+.ed-faqs summary{cursor:pointer;list-style:none;font-size:17px;font-weight:800;color:#172f47;display:flex;justify-content:space-between;gap:18px}
+.ed-faqs summary:after{content:"+";font-size:25px;color:#1686a3;font-weight:500}
+.ed-faqs details[open] summary:after{content:"−"}
+.ed-faqs details p{color:#576c7b;font-size:14px;line-height:1.85;margin:16px 0 0}
+.ed-close{background:linear-gradient(135deg,#143d5e,#0a203a);color:#fff;padding:95px 0}
+.ed-close h2{max-width:850px}
+.ed-close>div>p:not(.ed-eyebrow){color:#c6d7e3;line-height:1.8;max-width:700px;margin:30px 0}
+.ed-footer{background:#071628;padding:65px 0 25px;color:#dde8ef}
+.ed-footer-grid{display:grid;grid-template-columns:1.5fr .7fr .7fr;gap:60px}
+.ed-footer-brand{margin-bottom:20px}
+.ed-footer p{color:#aabccc;font-size:13px;line-height:1.9;max-width:400px}
+.ed-footer a{display:block;text-decoration:none;color:#dbe9ef;font-size:13px;margin-top:13px}
+.ed-footer .ed-brand{display:inline-flex}
+.ed-footer strong{color:#f0c785;font-size:11px;letter-spacing:.1em}
+.ed-footer-bottom{border-top:1px solid #2e4258;margin-top:45px;padding-top:23px;display:flex;justify-content:space-between;gap:20px;color:#a9bdce;font-size:12px}
+.ed-footer-bottom a{display:inline;color:#afc9d7}
+.ed-mobile-cta{display:none}
+@media(max-width:1050px){
+ .ed-navlinks{gap:12px}
+ .ed-navlinks>a{font-size:12px}
+ .ed-hero-grid{gap:28px}
+ .ed-automation-grid,.ed-guides{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:850px){
+ .ed-menu-btn{display:flex}
+ .ed-navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:#fffaf3;padding:20px 24px;border-bottom:1px solid #e6d8c5;box-shadow:0 25px 35px #081c2930;flex-direction:column;align-items:stretch;gap:0}
+ .ed-navlinks.open{display:flex}
+ .ed-navlinks>a{font-size:16px;padding:15px;border-bottom:1px solid #efe3d5}
+ .ed-navlinks .ed-navcta{text-align:center;margin-top:10px}
+ .ed-hero-grid,.ed-heading,.ed-program-grid,.ed-planner-grid,.ed-faq-grid{grid-template-columns:1fr}
+ .ed-heading{gap:15px}
+ .ed-campus{max-width:670px;transform:none}
+ .ed-steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .ed-planner-grid{gap:34px}
+ .ed-experience{grid-template-columns:1fr;gap:20px}
+ .ed-program-detail{min-height:unset}
+ .ed-footer-grid{grid-template-columns:1.3fr 1fr;gap:35px}
+}
+@media(max-width:560px){
+ .ed-wrap{width:calc(100% - 30px)}
+ .ed-nav{min-height:73px}
+ .ed-brand{--ed-logo-scale:.82}
+ .ed-brand :is(svg:not(.ed-cap),.lf-brand-v4){max-width:143px}
+ .ed-hero{padding:58px 0 65px}
+ .ed-hero h1{font-size:clamp(35px,9vw,44px)}
+ .ed-hero-copy>p:not(.ed-kicker){font-size:15px}
+ .ed-actions{align-items:stretch;flex-direction:column;gap:17px}
+ .ed-btn{width:100%}
+ .ed-campus-top,.ed-campus-bottom{font-size:8px;padding:12px}
+ .ed-section{padding:68px 0}
+ .ed-program{padding:20px}
+ .ed-detail-line{grid-template-columns:1fr;gap:6px}
+ .ed-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .ed-step{padding:14px;gap:8px}
+ .ed-automation-grid,.ed-guides,.ed-footer-grid{grid-template-columns:1fr}
+ .ed-automation-demo{padding:20px}
+ .ed-chat-user,.ed-chat-bot{max-width:100%}
+ .ed-planner-result{padding:23px}
+ .ed-experience-number{font-size:95px}
+ .ed-footer{padding-bottom:90px}
+ .ed-footer-bottom{flex-direction:column}
+ .ed-mobile-cta{display:flex;align-items:center;justify-content:center;position:fixed;z-index:90;bottom:0;left:0;right:0;min-height:60px;padding:12px 18px calc(12px + env(safe-area-inset-bottom));background:#f0c785;color:#17314b;text-align:center;text-decoration:none;font-weight:850;font-size:14px;box-shadow:0 -10px 30px #03182f2c}
+ .ed-page{padding-bottom:60px}
+}
+@media(prefers-reduced-motion:reduce){
+ :root{scroll-behavior:auto}
+ .ed-page *{animation:none!important;transition:none!important}
+}
+
+/* SAAS_MARKETING_V1 — midnight navy / electric blue / teal / pearl */
+.hospitality-page{background:#f5f8fc;color:#17314a}
+.hospitality-page .ed-header{background:#f8fbff;border-color:#d7e4f0}
+.hospitality-page .ed-navlinks>a{color:#203b56;font-size:15px}
+.hospitality-page .ed-navlinks .ed-navcta{background:#14395e;color:#fff}
+.hospitality-page .ed-hero{background:radial-gradient(ellipse at 80% 20%,#2766a24d,transparent 52%),linear-gradient(125deg,#07182e,#142f52)}
+.hospitality-page .ed-hero h1 em{color:#6de1db}
+.hospitality-page .ed-kicker,.hospitality-page .ed-eyebrow{color:#267faf}
+.hospitality-page .ed-hero .ed-kicker{color:#8ce5e2}
+.hospitality-page .ed-btn-gold,.hospitality-page .ed-mobile-cta{background:#75e0d9;color:#102d47}
+.hospitality-page .ed-btn-gold:hover{background:#a0eee9}
+.hospitality-page .ed-marquee{background:#0b2747;border-color:#315b85}
+.hospitality-page .ed-marquee-group span{background:#edf9ff;border-color:#bed8ec;color:#173955}
+.hospitality-page .ed-light{background:#f6f9fd}
+.hospitality-page .ed-cream{background:#edf4fb}
+.hospitality-page .ed-navy{background:#102b4c}
+.hospitality-page .ed-program:hover,.hospitality-page .ed-program.active{background:#e2f7f7;border-color:#50b8c5}
+.hospitality-page .ed-program-detail{background:#153d61}
+.hospitality-page .ed-program-symbol{color:#70e3df}
+.hospitality-page .ed-step:hover,.hospitality-page .ed-step.active{background:#83e1de;border-color:#83e1de}
+.hospitality-page .ed-capability-icon{background:#dff3fb;color:#1b75a7}
+.hospitality-page .ed-planner-result{background:#113557}
+.hospitality-page .ed-controls input{accent-color:#167ab4}
+.hospitality-page .ed-footer{background:#0a1d34}
+.hospitality-page .ed-close{background:radial-gradient(ellipse at 85% 60%,#217da34a,transparent 55%),linear-gradient(125deg,#173c65,#091b35)}
+.hospitality-page .ed-brand{display:inline-flex;align-items:center;gap:6px;padding:0!important}
+.hospitality-page .ed-brand .ed-cap{position:static!important;inset:auto!important;transform:none!important;width:43px!important;height:43px!important;flex:0 0 43px}
+.hospitality-page .ed-brand .lf-brand-v4{--brand-text:#173853;--brand-flo:#317fc6;--brand-period:#25afa9;--brand-plane:#317fc6}
+.hospitality-page .ed-footer-brand .lf-brand-v4{--brand-text:#f8fcff;--brand-flo:#7fe0df;--brand-period:#7fe0df;--brand-plane:#a8d7f3}
+.hospitality-page .ed-brand .lf-brand-v4__current1{stroke:#388dcc}.hospitality-page .ed-brand .lf-brand-v4__current2{stroke:#49c8bf}
+.hospitality-page .ed-footer-brand .lf-brand-v4__current1{stroke:#82e6dc}.hospitality-page .ed-footer-brand .lf-brand-v4__current2{stroke:#8ecdf0}
+.hospitality-page .saas-services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.hospitality-page .saas-service{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:4px;width:100%;padding:25px;border:1px solid #caddeb;border-radius:12px;background:#fff;color:#183950;transition:transform .25s,border-color .25s,box-shadow .25s}
+.hospitality-page .saas-service h3{font-size:20px;letter-spacing:-.035em;margin:14px 0 4px}
+.hospitality-page .saas-service p{font-size:13px;line-height:1.8;color:#546b7b;margin:0}
+.hospitality-page .saas-service-more{font-size:11px;color:#236eaa;font-weight:800;margin-top:auto;padding-top:12px}
+.hospitality-page .saas-service:is(:hover,:focus-visible,.active){transform:translateY(-4px);border-color:#53b6d6;box-shadow:0 15px 30px #1135571d;background:#f9feff}
+.hospitality-page .saas-service-panel{display:flex;align-items:center;justify-content:space-between;gap:25px;background:linear-gradient(120deg,#12365b,#1a5170);color:#fff;margin-top:20px;padding:26px 30px;border:1px solid #518ba2;border-radius:13px}
+.hospitality-page .saas-service-panel>div{max-width:700px}
+.hospitality-page .saas-service-panel span{font-size:11px;letter-spacing:.12em;font-weight:800;color:#8ae7df}
+.hospitality-page .saas-service-panel h3{font-size:23px;letter-spacing:-.03em;margin:12px 0}
+.hospitality-page .saas-service-panel p{color:#c4dce9;line-height:1.7;font-size:14px;margin:0}
+.hospitality-page .saas-service-panel>a{font-size:13px;font-weight:800;color:#9aebe5;flex-shrink:0}
+.hospitality-page #automation article{transition:transform .25s,box-shadow .25s,border-color .25s}
+.hospitality-page #automation article:is(:hover,:focus-visible),.hospitality-page :is(.ed-automation-demo,.ed-planner-result):hover{transform:translateY(-5px);box-shadow:0 18px 40px #11355728;border-color:#59b5cf}
+.hospitality-page .ed-guides{grid-template-columns:repeat(3,minmax(0,1fr))}
+.hospitality-page .ed-guide{min-height:230px}.hospitality-page .ed-guide strong{color:#237fa4}
+.hospitality-page main section{position:relative;isolation:isolate;overflow:hidden}
+.hospitality-page main section>.ed-wrap{position:relative;z-index:2}
+.hospitality-page #practices:before,.hospitality-page #planner:before,.hospitality-page #guides:before{content:"";position:absolute;pointer-events:none;right:-100px;top:35px;width:370px;height:370px;border:1px solid #3d9dc340;border-radius:50%;box-shadow:0 0 0 55px #3d9dc30d,0 0 0 110px #3d9dc308;animation:saasBreathe 12s ease-in-out infinite alternate}
+.hospitality-page #planner:before{top:auto;bottom:0;right:-140px}
+@keyframes saasBreathe{to{transform:translate(-12px,9px) scale(1.04)}}
+@media(max-width:1050px){.hospitality-page .saas-services,.hospitality-page .ed-guides{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:850px){.hospitality-page .saas-service-panel{flex-direction:column;align-items:flex-start}.hospitality-page .ed-navlinks>a{font-size:16px}}
+@media(max-width:560px){.hospitality-page .saas-services,.hospitality-page .ed-guides{grid-template-columns:1fr}.hospitality-page .ed-brand .ed-cap{width:30px!important;height:30px!important;flex-basis:30px}.hospitality-page .saas-service-panel{padding:22px}.hospitality-page #practices:before,.hospitality-page #planner:before,.hospitality-page #guides:before{opacity:.24}}
+@media(prefers-reduced-motion:reduce){.hospitality-page #practices:before,.hospitality-page #planner:before,.hospitality-page #guides:before{animation:none!important}.hospitality-page .saas-service{transform:none!important}}
+
+/* SAAS_CONNECTED_ICON_V1 — icon-only refinement; BrandMark remains unchanged */
+.hospitality-page .ed-brand .saas-connected-icon{color:#247cb8;overflow:visible;transition:transform .3s ease,color .3s ease}
+.hospitality-page .ed-brand .saas-icon-node{fill:#f7fbff;stroke:#31bdb8;stroke-width:2.5;transition:fill .3s ease}
+.hospitality-page .ed-brand .saas-icon-chrome{fill:#31bdb8}
+.hospitality-page .ed-brand:hover .saas-connected-icon,.hospitality-page .ed-brand:focus-visible .saas-connected-icon{color:#0d628e;transform:translateY(-2px)!important}
+.hospitality-page .ed-brand:hover .saas-icon-node,.hospitality-page .ed-brand:focus-visible .saas-icon-node{fill:#83eae1}
+.hospitality-page .ed-footer-brand .saas-connected-icon{color:#a0d9fa}
+.hospitality-page .ed-footer-brand .saas-icon-node{fill:#0a1d34;stroke:#76e2dc}
+.hospitality-page .ed-footer-brand .saas-icon-chrome{fill:#76e2dc}
+@media(prefers-reduced-motion:reduce){.hospitality-page .ed-brand .saas-connected-icon,.hospitality-page .ed-brand .saas-icon-node{transition:none!important}.hospitality-page .ed-brand:hover .saas-connected-icon{transform:none!important}}
+
+/* SAAS_ICON_ALIGNMENT_V2 */
+/* Keep the original LeadsFlo wordmark; align only the niche icon. */
+.hospitality-page .ed-brand{gap:3px!important;align-items:center}
+.hospitality-page .ed-brand .ed-cap.saas-connected-icon{
+  width:52px!important;height:52px!important;flex:0 0 52px!important;
+  display:block;position:static!important;margin:0!important;
+  vertical-align:middle;transform:none!important;
+}
+.hospitality-page .ed-brand:hover .ed-cap.saas-connected-icon,
+.hospitality-page .ed-brand:focus-visible .ed-cap.saas-connected-icon{
+  transform:translateY(-2px)!important;
+}
+@media(max-width:560px){
+  .hospitality-page .ed-brand{gap:3px!important}
+  .hospitality-page .ed-brand .ed-cap.saas-connected-icon{
+    width:39px!important;height:39px!important;flex-basis:39px!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .hospitality-page .ed-brand:hover .ed-cap.saas-connected-icon,
+  .hospitality-page .ed-brand:focus-visible .ed-cap.saas-connected-icon{transform:none!important}
+}
+
+
+/* HOSPITALITY_MARKETING_V1 — midnight teal / champagne / ivory */
+.hospitality-page{background:#faf8f2;color:#263f42}
+.hospitality-page .ed-header{background:#fcfaf6;border-color:#e4ddce}
+.hospitality-page .ed-navlinks>a{color:#28454a;font-size:15px}
+.hospitality-page .ed-navlinks .ed-navcta{background:#1a484b;color:#fff}
+.hospitality-page .ed-hero{background:radial-gradient(ellipse at 83% 20%,#c8a26a30,transparent 48%),linear-gradient(125deg,#102c32,#245055)}
+.hospitality-page .ed-hero h1 em{color:#eccb91}
+.hospitality-page .ed-kicker,.hospitality-page .ed-eyebrow{color:#a47c4a}
+.hospitality-page .ed-hero .ed-kicker{color:#e6be7d}
+.hospitality-page .ed-btn-gold,.hospitality-page .ed-mobile-cta{background:#efca90;color:#193638}
+.hospitality-page .ed-btn-gold:hover{background:#f8ddaf}
+.hospitality-page .ed-marquee{background:#173d40;border-color:#637766}
+.hospitality-page .ed-marquee-group span{background:#f9efe0;border-color:#dfc69e;color:#23464a}
+.hospitality-page .ed-light{background:#fafaf6}
+.hospitality-page .ed-cream{background:#f2eee4}
+.hospitality-page .ed-navy{background:#173c42}
+.hospitality-page .ed-program:hover,.hospitality-page .ed-program.active{background:#f5ead9;border-color:#be9760}
+.hospitality-page .ed-program-detail{background:#235054}
+.hospitality-page .ed-program-symbol{color:#f0c78a}
+.hospitality-page .ed-step:hover,.hospitality-page .ed-step.active{background:#e8c58d;border-color:#e8c58d}
+.hospitality-page .ed-capability-icon{background:#f2e6d3;color:#926d3d}
+.hospitality-page .ed-planner-result{background:#204c50}
+.hospitality-page .ed-controls input{accent-color:#a47c4a}
+.hospitality-page .ed-footer{background:#102c31}
+.hospitality-page .ed-close{background:radial-gradient(ellipse at 88% 60%,#b48d4d26,transparent 55%),linear-gradient(125deg,#24545a,#102e34)}
+.hospitality-page .ed-brand{gap:5px}
+.hospitality-page .ed-brand .ed-cap{stroke:#b88b54;max-height:42px}
+.hospitality-page .ed-brand .lf-brand-v4{--brand-text:#244344;--brand-flo:#ad8751;--brand-period:#b88b54;--brand-plane:#467b7c}
+.hospitality-page .ed-footer-brand .lf-brand-v4{--brand-text:#fbf4ea;--brand-flo:#edd1a4;--brand-period:#edd1a4;--brand-plane:#8dcac3}
+.hospitality-page .ed-brand .lf-brand-v4__current1{stroke:#4e8786}
+.hospitality-page .ed-brand .lf-brand-v4__current2{stroke:#b88b54}
+.hospitality-page .ed-footer-brand .lf-brand-v4__current1{stroke:#e2c28e}
+.hospitality-page .ed-footer-brand .lf-brand-v4__current2{stroke:#8cc6bd}
+.hospitality-page .saas-service{border-color:#e0d6c5;background:#fffefa;color:#254447}
+.hospitality-page .saas-service:is(:hover,:focus-visible,.active){background:#fffcf5;border-color:#c19a60;box-shadow:0 15px 30px #244b4b20}
+.hospitality-page .saas-service-more{color:#9d6e35}
+.hospitality-page .saas-service-panel{background:linear-gradient(120deg,#1a4247,#316267);border-color:#a88f6b}
+.hospitality-page .saas-service-panel span,.hospitality-page .saas-service-panel>a{color:#efd09b}
+.hospitality-page .ed-guide{background:#fffdfa;border-color:#e4d5bc}
+.hospitality-page .ed-guide strong{color:#a07842}
+.hospitality-page .ed-guide:hover{border-color:#b98c4f}
+.hospitality-page main section{position:relative;isolation:isolate;overflow:hidden}
+.hospitality-page main section>.ed-wrap{position:relative;z-index:2}
+.hospitality-page #services{background-image:radial-gradient(circle at 94% 20%,#c99a5b18,transparent 35%)}
+.hospitality-page #practices{background-image:repeating-linear-gradient(90deg,transparent 0 70px,#c8ae8514 71px 72px),radial-gradient(circle at 9% 77%,#83a7a517,transparent 45%)}
+.hospitality-page #intake{background-image:radial-gradient(circle at 88% 23%,#f4d3a01b,transparent 42%),linear-gradient(130deg,#102d36,#24515a)}
+.hospitality-page #automation{background-image:linear-gradient(145deg,#f8f2e9,#f0ece2)}
+.hospitality-page #planner{background-image:radial-gradient(circle at 85% 55%,#c5a06f26,transparent 46%)}
+.hospitality-page #guides{background-image:linear-gradient(#a7875d0b 1px,transparent 1px),linear-gradient(90deg,#a7875d0b 1px,transparent 1px);background-size:70px 70px}
+.hospitality-page #services:after,.hospitality-page #intake:after,.hospitality-page #guides:after{content:"";position:absolute;pointer-events:none;z-index:0;right:-80px;bottom:15px;width:320px;height:240px;opacity:.22;border:1px solid #b89a6c70;border-radius:50% 50% 0 0;transform:rotate(-9deg);animation:hospitalityDrift 16s ease-in-out infinite alternate}
+.hospitality-page #intake:after{border-color:#e9c9986b;opacity:.12;right:auto;left:-75px}
+.hospitality-page #guides:after{width:250px;height:200px;opacity:.15}
+@keyframes hospitalityDrift{to{transform:translate(-8px,-16px) rotate(-4deg)}}
+@media(max-width:700px){.hospitality-page main section:after{opacity:.07!important}}
+@media(prefers-reduced-motion:reduce){.hospitality-page main section:after{animation:none!important}}
+
+.hospitality-page a.ed-guide{text-decoration:none;color:inherit;display:block}
+
+
+/* HOSPITALITY_VISIBLE_V2 — distinctive hotel architecture, clear contrast, considered motion */
+.hospitality-page .ed-brand{display:flex;align-items:center;gap:7px}
+.hospitality-page .ed-brand .hospitality-monogram{
+  width:52px;height:52px;min-width:52px;max-height:none;display:block;flex-shrink:0;
+  filter:drop-shadow(0 2px 2px #a57b3e21);
+}
+.hospitality-page .ed-footer-brand .hospitality-monogram{width:52px;height:52px}
+.hospitality-page main section{position:relative;isolation:isolate;overflow:hidden}
+.hospitality-page main section>.ed-wrap{position:relative;z-index:2}
+.hospitality-page main section::before,
+.hospitality-page main section::after{content:"";position:absolute;z-index:0;pointer-events:none}
+
+/* Services: very visible left-side decorative lobby arch and light strip */
+.hospitality-page #services{background:
+  linear-gradient(110deg,#f2e8d8 0%,#f8f4ec 58%,#efe4d1 100%)}
+.hospitality-page #services::before{
+  width:250px;height:350px;right:-85px;top:45px;
+  border:14px solid #c39a634c;border-bottom:0;
+  border-radius:150px 150px 0 0;
+  box-shadow:inset 0 0 0 11px #fff3dd,0 0 0 14px #c89c5e27;
+  background:linear-gradient(145deg,#d9b78330,#ffffff03 60%);
+  animation:hotelArch 11s ease-in-out infinite alternate;
+}
+.hospitality-page #services::after{
+  width:280px;height:8px;right:0;bottom:48px;
+  background:linear-gradient(90deg,transparent,#c29663a8,transparent);
+  transform:rotate(-38deg);
+}
+/* Property types: architectural elevation lines (not another set of circles) */
+.hospitality-page #practices{background:
+ linear-gradient(120deg,#f9f8f3,#f0f1e8)}
+.hospitality-page #practices::before{
+ right:-30px;top:30px;width:255px;height:390px;opacity:.67;
+ background:
+  linear-gradient(90deg,#8bb6aa61 3px,transparent 3px) 0 0/53px 100%,
+  linear-gradient(#b6926766 3px,transparent 3px) 0 0/100% 66px;
+ border:2px solid #b692676b;clip-path:polygon(0 7%,50% 0,100% 7%,100% 100%,0 100%);
+}
+.hospitality-page #practices::after{
+ width:210px;height:210px;left:-85px;bottom:-85px;
+ border:3px dashed #b9915e70;transform:rotate(24deg);border-radius:28px;
+}
+/* Guest journey: recognizable illuminated hotel-window pattern + flowing booking route */
+.hospitality-page #intake{background:linear-gradient(125deg,#0d3036,#1f5053 65%,#173e45)}
+.hospitality-page #intake::before{
+ right:-12px;top:5%;width:255px;height:440px;opacity:.55;
+ background:
+ linear-gradient(90deg,transparent 22%,#f0cc8b9c 22% 76%,transparent 76%) 0 0/66px 84px,
+ linear-gradient(#e5c48e4d,#e5c48e4d) 0 0/100% 1px;
+ mask-image:repeating-linear-gradient(180deg,#000 0 56px,transparent 57px 84px);
+}
+.hospitality-page #intake::after{
+ left:-5%;bottom:9%;width:44%;height:65px;border-bottom:3px dashed #e6bc79a6;
+ border-radius:0 0 50% 50%;transform:rotate(-7deg);opacity:.8;
+ animation:hotelRoute 6s ease-in-out infinite alternate;
+}
+/* CRM: oversized guest key-card motif */
+.hospitality-page #automation{background:linear-gradient(120deg,#eee5d4,#faf6ee 70%)}
+.hospitality-page #automation::before{
+ width:245px;height:150px;right:-50px;top:56px;
+ border:9px solid #b79461a1;border-radius:23px;
+ box-shadow:0 17px 0 #bd966239,0 36px 0 #bd96621e;
+ background:linear-gradient(135deg,#e9c78f75 0 34%,transparent 34%);
+ transform:rotate(15deg);
+ animation:hotelKey 12s ease-in-out infinite alternate;
+}
+.hospitality-page #automation::after{
+ right:40px;top:107px;width:76px;height:12px;background:#16777b99;
+ border-radius:10px;transform:rotate(15deg);
+}
+/* Planner: readable geometric floor-plan grid, positioned behind right edge */
+.hospitality-page #planner{background:
+ linear-gradient(#b8915b20 1px,transparent 1px),
+ linear-gradient(90deg,#b8915b20 1px,transparent 1px),#fbf9f3;
+ background-size:56px 56px}
+.hospitality-page #planner::before{
+ right:-130px;bottom:-125px;width:395px;height:395px;
+ border:22px double #b78b568c;border-radius:50%;opacity:.62;
+ box-shadow:0 0 0 23px #ccae7c24;
+ animation:hotelArch 15s ease-in-out infinite alternate;
+}
+/* Guide cards: editorial travel-postcard detailing, warmer than SaaS grids */
+.hospitality-page #guides{background:linear-gradient(135deg,#ece6d9,#f9f5ec)}
+.hospitality-page #guides::before{
+ width:225px;height:225px;right:-65px;top:30px;opacity:.7;
+ border:7px solid #b88c556b;outline:2px dashed #b88c5580;outline-offset:12px;
+ transform:rotate(14deg);border-radius:14px;
+}
+.hospitality-page #guides::after{
+ left:-45px;bottom:25px;width:320px;height:3px;
+ background:repeating-linear-gradient(90deg,#c39358 0 18px,transparent 18px 29px);opacity:.7;
+}
+/* Final invitation: distinct arch-shaped glow, not repeated across every section */
+.hospitality-page .ed-close::after{
+ width:380px;height:430px;right:-105px;bottom:-160px;
+ border:11px solid #f0c98d63;border-bottom:0;border-radius:200px 200px 0 0;
+ box-shadow:inset 0 0 0 16px #e6bf8521;
+}
+@keyframes hotelArch{to{transform:translateY(-14px);opacity:.82}}
+@keyframes hotelRoute{to{transform:rotate(-4deg) translateX(15px)}}
+@keyframes hotelKey{to{transform:rotate(10deg) translateY(-10px)}}
+@media(max-width:900px){
+ .hospitality-page .ed-brand .hospitality-monogram{width:41px;height:41px;min-width:41px}
+ .hospitality-page #services::before,.hospitality-page #practices::before,
+ .hospitality-page #intake::before,.hospitality-page #automation::before,
+ .hospitality-page #planner::before,.hospitality-page #guides::before{opacity:.19}
+}
+@media(prefers-reduced-motion:reduce){
+ .hospitality-page main section::before,.hospitality-page main section::after{animation:none!important}
+}
+
+</style>
+
+
+
+</body>
+</html>
