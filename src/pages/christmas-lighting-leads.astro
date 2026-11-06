@@ -1,7 +1,7 @@
 ---
 import BrandMark from "../components/BrandMark.astro";
 import "../styles/global.css";
-const book = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const book = "https://calendar.app.google/gJscT3C474Xt4Nqh7";
 const funnel = "https://cypresschristmaslight.com/";
 const nav = [
   {label:"The problem",href:"#challenge"},
@@ -95,6 +95,12 @@ const features = [
       <div class="lp-copy">
         <p>During the Christmas rush, teams are on ladders and at installations—not sitting behind a CRM. Prospects may request pricing, put off booking, or need more information before they're ready.</p><p>Without a process, even interested inquiries can end up scattered across forms, texts and inboxes.</p><p><strong>We built the follow-through before scaling the traffic.</strong></p>
       </div>
+      <div class="lp-actions" style="margin-top:40px">
+        <a class="lp-button lp-track-demo" href={book}
+           target="_blank" rel="noopener noreferrer">
+          See how we turn inquiries into booked jobs ↗
+        </a>
+      </div>
     </div>
 
     <figure class="lp-editorial-visual">
@@ -115,7 +121,13 @@ const features = [
 
     <section class="lp-section lp-soft" id="system"><div class="lp-container"><p class="lp-eyebrow">THE SYSTEM</p><h2>One connected conversion path.</h2><p class="lp-section-lead">A clear experience for the prospect, and useful information for the business.</p><div class="lp-flow" aria-label="Interactive connected lead acquisition journey">{steps.map((s,i) => <button type="button" class="lp-flow-step" data-step={i} aria-pressed={i===0?'true':'false'}><span>{String(i+1).padStart(2,"0")}</span><strong>{s}</strong><small>Explore step ↗</small></button>)}</div><div id="lp-step-detail" class="lp-explorer" role="status" aria-live="polite"><strong>01 / Meta Ads &amp; creative</strong><p>Creative angles and campaign architecture were prepared for Cypress before paid acquisition launches.</p></div><div class="lp-actions"><a href={book} class="lp-button lp-track-demo" target="_blank" rel="noopener noreferrer">See this system in a 15-minute demo ↗</a></div></div></section>
     <section class="lp-section" id="details"><div class="lp-container"><p class="lp-eyebrow">BUILT FOR THE FOLLOW-THROUGH</p><h2>The pieces work together—not as separate services.</h2><div class="lp-feature-grid">{features.map(([n,title,description]) => <details class="lp-feature"><summary><span>{n} / SYSTEM COMPONENT</span><h3>{title}</h3><b aria-hidden="true">+</b></summary><p>{description}</p></details>)}</div><p class="lp-hint">Tap a component to see what it does.</p></div></section>
-    <section class="lp-section lp-soft"><div class="lp-container lp-two"><div><p class="lp-eyebrow">LEAD PRIORITIZATION</p><h2>Not every lead needs the same follow-up.</h2><p class="lp-section-lead">The Cypress configuration tags quote inquiries by stated budget so the team can identify higher-value opportunities and nurture prospects not yet ready.</p></div><div><div class="lp-tiers">{tiers.map(([price,status],i) => <button type="button" data-tier={i} aria-pressed={i===2?'true':'false'}><strong>{price}</strong><span>{status}</span></button>)}</div><p id="lp-tier-detail" class="lp-explorer lp-tier-explanation" aria-live="polite">$1,200–$2,000 · Good fit: an inquiry in this range can be prioritized for a timely quote conversation.</p></div></div></section>
+    <section class="lp-section lp-soft"><div class="lp-container lp-two"><div><p class="lp-eyebrow">LEAD PRIORITIZATION</p><h2>Not every lead needs the same follow-up.</h2><p class="lp-section-lead">The Cypress configuration tags quote inquiries by stated budget so the team can identify higher-value opportunities and nurture prospects not yet ready.</p>
+<div class="lp-actions" style="margin-top:40px">
+  <a class="lp-button lp-track-demo" href={book}
+     target="_blank" rel="noopener noreferrer">
+    See how we qualify Christmas lighting leads ↗
+  </a>
+</div></div><div><div class="lp-tiers">{tiers.map(([price,status],i) => <button type="button" data-tier={i} aria-pressed={i===2?'true':'false'}><strong>{price}</strong><span>{status}</span></button>)}</div><p id="lp-tier-detail" class="lp-explorer lp-tier-explanation" aria-live="polite">$1,200–$2,000 · Good fit: an inquiry in this range can be prioritized for a timely quote conversation.</p></div></div></section>
     <section class="lp-section"><div class="lp-container"><p class="lp-eyebrow">TWO WAYS TO CONVERT</p><h2>Some prospects want a visit. Others just want a quote.</h2><div class="lp-paths"><article class="lp-select-path" tabindex="0" role="button" aria-pressed="true" data-path="0"><span>PATH A</span><h3>Book a design visit</h3><p>Qualified prospects select an available time. Their details carry forward, booking confirmations can go out, and the pipeline reflects the appointment.</p></article><article class="lp-select-path" tabindex="0" role="button" aria-pressed="false" data-path="1"><span>PATH B</span><h3>Request a quote without a visit</h3><p>A prospect can request a remote quote with information already captured. The CRM records the request and alerts the team for property review or additional photos.</p></article></div><p class="lp-callout" id="lp-path-detail" aria-live="polite">Design visit selected: qualification details carry into booking and the CRM, with confirmation and reminder logic.</p><p class="lp-hint">Choose either path to explore how the journey changes.</p></div></section>
     <section class="lp-section lp-ink"><div class="lp-container lp-two"><div><p class="lp-eyebrow">AUTOMATION + TRACKING</p><h2>A next step for every inquiry.</h2><p>Immediate email confirmation, conditional follow-ups, booking stop rules and different messaging for lower-budget prospects were configured for Cypress. SMS sequences were built but await required A2P registration and activation.</p><a href={book} class="lp-button lp-track-demo" target="_blank" rel="noopener noreferrer">Walk through the CRM & automations ↗</a></div><div class="lp-dark-stack"><div><span>01</span>New lead → budget and project qualification</div><div><span>02</span>Design visit or remote quote request</div><div><span>03</span>CRM stages, owner assignment and follow-up</div><div><span>04</span>UTMs and Meta campaign/ad identifiers captured</div></div></div></section>
     <section class="lp-section" id="proof"><div class="lp-container lp-two lp-proof"><div><p class="lp-eyebrow">REAL CLIENT IMPLEMENTATION</p><h2>See what we built for Cypress X-Mas Lights.</h2><p>Cypress, Texas · Residential and commercial holiday lighting.</p><p>The live project demonstrates the custom landing page, quote-qualification experience and booking paths. Meta campaign architecture and creative testing were prepared; this page does not claim unverified CPL, booked appointments or revenue.</p><div class="lp-actions"><a href={funnel} class="lp-text-link lp-track-funnel" target="_blank" rel="noopener noreferrer">Open live Cypress funnel ↗</a><a href={book} class="lp-button lp-track-demo" target="_blank" rel="noopener noreferrer">Book my demo ↗</a></div></div><figure class="lp-project-img"><img src="/work/cypress-christmas-lights.webp" alt="Cypress X-Mas Lights live project screenshot" loading="lazy" decoding="async" /></figure></div></section>
@@ -132,7 +144,7 @@ const features = [
  <article class="lp-seasonal-feature"><span>03 / PLAN FOR THE SEASON</span><h3>Fill the calendar before the rush.</h3><p>Early-booking campaigns, commercial and HOA outreach, and reactivation of past customers can complement new lead acquisition. Timing follows your crew capacity and market.</p></article>
  </div>
  <div class="lp-seasonal-proof"><div><span>REAL PROJECT: CYPRESS X-MAS LIGHTS</span><strong>See the actual quote funnel, CRM and follow-up setup.</strong><p>Campaign concepts and creative were prepared; we don't claim unverified advertising results or present pending SMS approval as live.</p></div>
- <a class="lp-button lp-track-demo" href="https://calendar.app.google/1fpawLr6fgP7Hmoi7" target="_blank" rel="noopener noreferrer">Book a 15-minute demo ↗</a></div>
+ <a class="lp-button lp-track-demo" href="https://calendar.app.google/gJscT3C474Xt4Nqh7" target="_blank" rel="noopener noreferrer">Book a 15-minute demo ↗</a></div>
  </div></section>
 
 
@@ -251,8 +263,70 @@ const features = [
     }
   }
 </style>
+<!-- CHRISTMAS_FOOTER_REFINEMENT_V1 -->
+<!-- CHRISTMAS_CONTEXTUAL_CTAS_V1 -->
 </main>
-  <footer class="lp-footer"><div class="lp-container lp-footer-inner"><div class="lp-footer-brand"><a class="lp-footer-logo-link lp-brand" href="#top" aria-label="LeadsFlo — back to top"><BrandMark /></a><p>Lead generation and follow-through systems for service businesses.</p></div><nav aria-label="Landing page footer sections"><a href="#challenge">The problem</a><a href="#system">The system</a><a href="#details">How it works</a><a href="#proof">Real example</a><a href="#book">Book a demo</a></nav><div class="lp-footer-meta"><span>© {new Date().getFullYear()} LeadsFlo</span><a href="/privacy-policy/">Privacy</a></div></div></footer>
+
+<footer class="lp-footer lp-footer-refined">
+  <div class="lp-container">
+    <div class="lp-footer-four">
+      <div class="lp-footer-brand">
+        <a class="lp-footer-logo-link lp-brand" href="#top" aria-label="LeadsFlo — back to top"><BrandMark /></a>
+        <p>Christmas lighting lead generation,
+          quote funnels, CRM qualification
+          and dependable follow-up.</p>
+        <small>Real systems for seasonal installers.</small>
+      </div>
+
+      <nav aria-label="Explore Christmas lighting">
+        <h3>Explore</h3>
+        <a href="#challenge">The challenge</a>
+        <a href="#system">The system</a>
+        <a href="#details">How it works</a>
+        <a href="#proof">Cypress project</a>
+        <a href="#marketing-strategy">Marketing strategy</a>
+        <a href="#questions">FAQs</a>
+      </nav>
+
+      <nav aria-label="Christmas lighting resources">
+        <h3>Installer Resources</h3>
+        <a href="/insights/christmas-light-installation-marketing/">
+          Installation marketing</a>
+        <a href="/insights/google-ads-for-christmas-lights/">
+          Google Ads</a>
+        <a href="/insights/facebook-ads-for-christmas-lights/">
+          Facebook &amp; Instagram Ads</a>
+        <a href="/insights/lead-generation-for-christmas-lights/">
+          Christmas lighting leads</a>
+        <a href="/insights/christmas-lighting-marketing-calendar/">
+          Seasonal marketing calendar</a>
+      </nav>
+
+      <div class="lp-footer-contact">
+        <h3>Get Started</h3>
+        <p>See the real Cypress system in a
+          focused 15-minute walkthrough.</p>
+        <a class="lp-button lp-track-demo" href={book}>
+          Book a 15-minute demo ↗</a>
+        <a href="/contact/">Contact LeadsFlo</a>
+        <a href={funnel} target="_blank"
+           rel="noopener noreferrer">
+          View the live Cypress funnel ↗</a>
+      </div>
+    </div>
+
+    <div class="lp-footer-bottom">
+      <span>© {new Date().getFullYear()} LeadsFlo</span>
+      <div>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-and-conditions/">
+          Terms &amp; Conditions</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
   <a class="lp-mobile-cta lp-track-demo" href={book} target="_blank" rel="noopener noreferrer">Book a 15-min demo ↗</a>
   <dialog id="lp-book-dialog" class="lp-book-dialog" aria-labelledby="lp-book-heading"><div class="lp-book-shell"><header><div><span class="lp-modal-eyebrow">CHRISTMAS LIGHTING LEAD GEN &amp; AUTOMATION</span><h2 id="lp-book-heading">Book your 15-minute demo</h2></div><button class="lp-modal-close" type="button" aria-label="Close booking calendar">×</button></header><div class="lp-calendar-container"><iframe title="Google Calendar — Christmas Lighting Demo" data-src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0VnOAytUM-31S2nb6WehVDQqrQti-mjJTQJ5oOFlN1ctyMnZNBpPLxihgQ5cjsP3kZDz3F5BXo?gv=true" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><footer><span>Select an available slot in the calendar above.</span><a href={book} target="_blank" rel="noopener noreferrer">Calendar not loading? Open booking page ↗</a></footer></div></dialog>
   <script>
@@ -1166,4 +1240,110 @@ body .lp-footer-logo-link.lp-brand:focus-visible::after {
   .lp-flow-step{width:100%;text-align:left;color:#17233d;cursor:pointer;font:inherit;transition:transform .2s,box-shadow .2s,border-color .2s}.lp-flow-step:hover,.lp-flow-step[aria-pressed="true"]{border-color:#315bfa;box-shadow:0 8px 26px #315bfa19;transform:translateY(-3px)}.lp-flow-step small{display:block;margin-top:14px;font-size:11px;color:#315bfa}.lp-explorer{background:#fff;border-left:4px solid #315bfa;border-radius:8px;padding:20px 24px;min-height:94px}.lp-explorer strong{font-family:var(--font-head);font-size:16px}.lp-explorer p{margin:8px 0 0!important;font-size:13px!important}.lp-feature summary{list-style:none;cursor:pointer;position:relative;padding-right:30px}.lp-feature summary::-webkit-details-marker{display:none}.lp-feature summary b{position:absolute;right:0;top:0;font-size:22px;color:#315bfa}.lp-feature[open] summary b{transform:rotate(45deg)}.lp-feature[open]{border-color:#315bfa;box-shadow:0 8px 32px #315bfa14}.lp-feature p{margin-top:14px}.lp-hint{font-size:12px!important;color:#61718a!important;margin-top:14px}.lp-tiers button{background:#fff;display:flex;justify-content:space-between;gap:15px;padding:17px 20px;border:1px solid transparent;border-left:4px solid #315bfa;border-radius:4px;font:inherit;font-size:13px;text-align:left;cursor:pointer;color:#17233d;width:100%}.lp-tiers button:hover,.lp-tiers button[aria-pressed="true"]{background:#eff4ff;border-color:#315bfa}.lp-tiers button span{color:#465673}.lp-tier-explanation{margin-top:14px;font-size:13px;min-height:76px}.lp-select-path{cursor:pointer;transition:transform .2s,border-color .2s}.lp-select-path:hover,.lp-select-path[aria-pressed="true"]{border-color:#315bfa;transform:translateY(-3px)}.lp-book-dialog{border:0;padding:0;border-radius:16px;background:#f7f7f2;color:#17233d;box-shadow:0 30px 100px #0b163e83;width:min(960px,calc(100% - 24px));max-height:min(92dvh,950px);overflow:auto}.lp-book-dialog::backdrop{background:#08142ccc;backdrop-filter:blur(5px)}.lp-book-shell>header{display:flex;justify-content:space-between;align-items:start;gap:12px;padding:21px 23px 15px;border-bottom:1px solid #dfe5ee}.lp-modal-eyebrow{font-size:10px;letter-spacing:.12em;font-weight:850;color:#315bfa}.lp-book-shell h2{font-size:clamp(19px,3vw,27px);margin:5px 0 0}.lp-modal-close{width:40px;height:40px;border:1px solid #d1dbea;border-radius:50%;cursor:pointer;font-size:26px;background:#fff}.lp-calendar-container{height:min(660px,63dvh);min-height:380px}.lp-calendar-container iframe{display:block;width:100%;height:100%;border:0;background:#fff}.lp-book-shell>footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 23px 20px;font-size:12px;color:#53627e}.lp-book-shell>footer a{color:#315bfa;text-decoration:underline}.lp-book-dialog:focus-visible{outline:0}
   @media(max-width:690px){.lp-lights{height:14px}.lp-lights span{width:6px;height:10px;margin-top:2px}.lp-book-shell>header{padding:14px}.lp-book-shell>footer{padding:12px 14px}.lp-calendar-container{min-height:420px;height:67dvh}.lp-book-dialog{max-height:96dvh}.lp-flow-step:hover,.lp-select-path:hover{transform:none}}
   @media(prefers-reduced-motion:reduce){.lp-lights span,.lp-snowfall i{animation:none}.lp-select-path,.lp-flow-step{transition:none}}
+</style>
+
+<!-- CHRISTMAS_FOOTER_STYLES_V1 -->
+<style is:global>
+.lp-footer.lp-footer-refined {
+  background:#eee8d8;
+  padding:75px 0 28px;
+  border-top:1px solid #d4cfbd;
+}
+.lp-footer-refined .lp-footer-four {
+  display:grid;
+  grid-template-columns:1.45fr 1fr 1.2fr 1.1fr;
+  gap:clamp(24px,3vw,48px);
+  align-items:start;
+}
+.lp-footer-refined .lp-footer-brand p {
+  max-width:320px;
+  margin:24px 0 12px;
+  color:#315c50;
+  font-size:15px;
+  line-height:1.8;
+}
+.lp-footer-refined .lp-footer-brand small {
+  color:#57796a;
+  font-size:13px;
+  line-height:1.7;
+}
+.lp-footer-refined .lp-footer-four nav,
+.lp-footer-refined .lp-footer-contact {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:15px;
+  min-width:0;
+}
+.lp-footer-refined .lp-footer-four h3 {
+  color:#a02a38;
+  font-size:12px;
+  font-weight:850;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin:0 0 10px;
+}
+.lp-footer-refined .lp-footer-four nav a,
+.lp-footer-refined .lp-footer-contact>a:not(.lp-button) {
+  color:#185347!important;
+  font-size:14px;
+  font-weight:650;
+  line-height:1.6;
+  text-decoration:none;
+}
+.lp-footer-refined .lp-footer-four nav a:hover,
+.lp-footer-refined .lp-footer-contact>a:not(.lp-button):hover {
+  color:#bd3042!important;
+  text-decoration:underline;
+}
+.lp-footer-refined .lp-footer-contact p {
+  color:#315c50;
+  font-size:15px;
+  line-height:1.75;
+  margin:0;
+}
+.lp-footer-refined .lp-footer-contact .lp-button {
+  margin:6px 0;
+  padding:14px 16px;
+  font-size:12px;
+  text-align:center;
+  width:auto;
+  min-height:48px;
+  white-space:normal;
+}
+.lp-footer-refined .lp-footer-bottom {
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  border-top:1px solid #d0c5aa;
+  margin-top:55px;
+  padding-top:25px;
+  color:#527466;
+  font-size:13px;
+}
+.lp-footer-refined .lp-footer-bottom div {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+.lp-footer-refined .lp-footer-bottom a {
+  color:#315c50;
+  text-decoration:none;
+}
+@media(max-width:950px) {
+  .lp-footer-refined .lp-footer-four {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:600px) {
+  .lp-footer-refined .lp-footer-four {
+    grid-template-columns:1fr;
+  }
+  .lp-footer-refined .lp-footer-bottom {
+    flex-direction:column;
+  }
+  .lp-footer-refined .lp-footer-contact .lp-button {
+    width:100%;
+  }
+}
 </style>

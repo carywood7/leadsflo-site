@@ -2,7 +2,7 @@
 import BrandMark from "../components/BrandMark.astro";
 import "../styles/global.css";
 
-const booking = "https:" + "//calendar.app.google/1fpawLr6fgP7Hmoi7";
+const booking = "https:" + "//calendar.app.google/gJscT3C474Xt4Nqh7";
 
 const stages = [
   {
@@ -62,6 +62,7 @@ const roofServices = [
 
 ---
 
+<!-- LEADSFLO_ROOFING_SECTION_CTAS_V1 -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -107,7 +108,7 @@ const roofServices = [
   <script is:inline defer src="/js/leadsflo-conversions.js"></script>
 </head>
 
-<body class="roofing-page">
+<body class="roofing-page" id="top">
   <header class="rf-header">
     <div class="rf-wrap rf-nav">
       <a href="/" class="rf-brand" aria-label="LeadsFlo homepage">
@@ -129,7 +130,7 @@ const roofServices = [
                 stroke-linejoin="round"/>
         </svg>
       </a>
-      
+
       <!-- RF_COMPACT_MOBILE_HEADER_V2 -->
       <button
         type="button"
@@ -244,28 +245,42 @@ const roofServices = [
       </div>
     </section>
 
-    <section id="challenge" class="rf-section">
-      <div class="rf-wrap rf-two">
-        <div>
-          <p class="rf-eyebrow">01 / THE CHALLENGE</p>
-          <h2>Not every roofing lead is <em>a roofing opportunity.</em></h2>
-        </div>
-        <div class="rf-copy">
-          <p>Your estimators don't need more inquiries from the wrong service areas, poor-fit projects, or people who never respond.</p>
-          <p>They need the right project details, a clear next step, and a reliable process for following up.</p>
-          <div class="rf-rule">
-            <strong>The objective</strong>
-            <p>Turn relevant roofing inquiries into actual sales conversations, rather than optimizing only for form submissions.</p>
-          </div>
-          <figure class="rf-work-photo">
-            <img src="/images/roofing/replacement.jpg"
-                 alt="Roofing contractor working on a residential roof"
-                 loading="lazy" width="900" height="1200" />
-            <figcaption>Real roofing work. Better-qualified project inquiries.</figcaption>
-          </figure>
-        </div>
+
+<section id="challenge" class="rf-section rf-challenge-rebuilt">
+  <div class="rf-wrap rf-challenge-layout">
+    <div class="rf-challenge-copy">
+      <p class="rf-eyebrow">01 / THE CHALLENGE</p>
+      <h2>Not every roofing lead is
+        <em>a roofing opportunity.</em></h2>
+      <p class="rf-challenge-lede">Your estimators need more
+        than names and phone numbers. They need relevant
+        roofing projects and a clear next step.</p>
+      <p>Wrong service areas, poor-fit projects and inquiries
+        that go unanswered all waste valuable sales time.
+        The right qualification and follow-up process
+        changes that.</p>
+      <div class="rf-challenge-insight">
+        <span>THE OBJECTIVE</span>
+        <strong>Better project fit. Better sales conversations.</strong>
+        <p>Connect your campaigns, property details,
+          lead qualification and inspection scheduling.</p>
       </div>
-    </section>
+      <a class="rf-button" href={booking}>
+        Discuss your roofing lead quality ↗
+      </a>
+    </div>
+    <figure class="rf-challenge-visual">
+      <img src="/images/roofing/replacement.jpg"
+        alt="Roofing contractor installing a residential roof"
+        loading="lazy" width="900" height="1200" />
+      <figcaption>
+        <span>ROOFING / LEAD QUALIFICATION</span>
+        <strong>From inquiry to inspection.</strong>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
 
     <section id="system" class="rf-section rf-dark">
       <div class="rf-wrap">
@@ -291,8 +306,9 @@ const roofServices = [
           <h3 id="rf-stage-title">{stages[0].title}</h3>
           <p id="rf-stage-description">{stages[0].detail}</p>
         </div>
-      </div>
-    </section>
+      <div class="rf-section-booking"><a class="rf-button" href={booking}>Plan your roofing lead generation ↗</a></div>
+</div>
+</section>
 
 
     <!-- ROOFING_HOVER_V3 -->
@@ -344,15 +360,16 @@ const roofServices = [
         <p class="rf-demo-disclosure">
           Illustrative qualification experience — not actual roofing client results.
         </p>
-      </div>
-    </section>
+      <div class="rf-section-booking"><a class="rf-button" href={booking}>Improve your roofing lead qualification ↗</a></div>
+</div>
+</section>
 
     <section id="calculator" class="rf-section rf-calculator-section">
       <div class="rf-wrap rf-two">
         <div>
           <p class="rf-eyebrow">03 / THE NUMBERS</p>
           <h2>What could better conversion mean <em>for your business?</em></h2>
-          <p class="rf-copy">Explore different lead volumes, project values, and close rates. The figures are hypothetical, not performance forecasts.</p>
+          <p class="rf-copy">Explore different lead volumes, project values, and close rates. The figures are hypothetical, not performance forecasts.</p><div class="rf-section-booking"><a class="rf-button" href={booking}>Discuss your roofing growth targets ↗</a></div>
         </div>
         <div class="rf-calculator">
           <span class="rf-calculator-label">INTERACTIVE REVENUE SCENARIO</span>
@@ -373,7 +390,7 @@ const roofServices = [
           <p class="rf-fineprint">Illustrative gross sales only. Excludes expenses and does not represent expected results, profit, or a revenue guarantee.</p>
         </div>
       </div>
-    </section>
+</section>
 
     <section class="rf-section">
       <div class="rf-wrap">
@@ -387,76 +404,70 @@ const roofServices = [
       </div>
     </section>
 
-    
+
 <!-- RF_FINAL_ROOFING_SEO_V3 -->
-<section
-  id="roofing-lead-generation-company"
-  class="rf-section rf-commercial-intent"
-  aria-labelledby="rf-commercial-heading"
->
+
+<!-- RF_COMMERCIAL_REDESIGN_V2 -->
+<section id="roofing-lead-generation-company"
+  class="rf-section rf-commercial-intent">
   <div class="rf-wrap">
-    <p class="rf-eyebrow">
-      ROOFING LEAD GENERATION SERVICES
-    </p>
+    <div class="rf-commercial-head">
+      <p class="rf-eyebrow">ROOFING LEAD GENERATION SERVICES</p>
+      <h2>A roofing lead generation company should
+        <em>do more than deliver names.</em></h2>
+      <p>Better roofing marketing connects the right campaigns
+        with qualified inquiries, inspection booking and
+        consistent follow-up.</p>
+    </div>
 
-    <h2 id="rf-commercial-heading">
-      A roofing lead generation company should
-      do more than deliver names.
-    </h2>
+    <div class="rf-commercial-grid">
+      <article class="rf-commercial-card">
+        <span>01 / THE RIGHT PROJECTS</span>
+        <h3>Residential and commercial roofing</h3>
+        <p>Residential replacements, repairs and commercial
+          roofing projects involve different buyers, budgets
+          and decision-making timelines.</p>
+        <p>Campaigns should reflect your service area,
+          roofing systems, project requirements and
+          the customers your team wants to reach.</p>
+        <div class="rf-commercial-note">
+          <strong>What matters</strong>
+          <p>Project type, service area, property details
+            and a relevant next step.</p>
+        </div>
+      </article>
 
-    <p>
-      LeadsFlo helps established U.S. roofing contractors
-      attract qualified roofing inquiries using Google Ads,
-      Facebook and Instagram advertising, roofing quote
-      funnels, CRM automation and inspection booking.
-    </p>
+      <article class="rf-commercial-card">
+        <span>02 / BETTER QUALIFICATION</span>
+        <h3>Qualified leads, not just form fills</h3>
+        <p>LeadsFlo connects Google Ads, Meta advertising,
+          roofing quote funnels, CRM automation and
+          inspection-booking workflows.</p>
+        <p>Good qualification gives estimators useful
+          information before they contact a prospect.
+          It improves the handoff without guaranteeing
+          a booking or sale.</p>
+        <div class="rf-commercial-note">
+          <strong>The objective</strong>
+          <p>Turn relevant inquiries into organized
+            roofing sales conversations.</p>
+        </div>
+      </article>
+    </div>
 
-    <p>
-      Rather than simply buying shared roofing leads for sale,
-      contractors can build a connected acquisition and
-      follow-up system tailored to their service area
-      and preferred roofing projects.
-    </p>
-
-    <h3>Residential and commercial roofing lead generation</h3>
-
-    <p>
-      Residential replacements, repairs and commercial
-      roofing projects involve different buyers.
-      Commercial roofing lead generation can require
-      building information, roofing system details,
-      project scope, decision-maker and timeline.
-    </p>
-
-    <p>
-      Campaigns and qualification rules should match
-      the roofing services a contractor actually offers.
-      The objective is to provide useful project context
-      before an estimator contacts the prospect.
-    </p>
-
-    <h3>What are qualified roofing leads?</h3>
-
-    <p>
-      Qualified roofing leads meet agreed criteria such as
-      service area, project type, property details,
-      timing and contactability. Qualification improves
-      the handoff to your sales team but cannot guarantee
-      a booking or sale.
-    </p>
-
-    <p>
-      Read our
-      <a href="/insights/roofing-lead-generation/">
-        roofing lead generation guide
+    <div class="rf-commercial-bottom">
+      <div>
+        <strong>Want a better roofing lead pipeline?</strong>
+        <p>Let's review your campaigns, qualification
+          process and follow-up.</p>
+      </div>
+      <a class="rf-button" href={booking}>
+        Review your roofing marketing strategy ↗
       </a>
-      and our guide to
-      <a href="/insights/roofing-lead-costs/">
-        roofing lead costs
-      </a>.
-    </p>
+    </div>
   </div>
 </section>
+
 
 <section class="rf-section rf-faq" id="questions">
       <div class="rf-wrap rf-two">
@@ -472,7 +483,7 @@ const roofServices = [
       </div>
     </section>
 
-    
+
     <section class="rf-section rf-resource-preview" id="resources">
       <div class="rf-wrap">
         <p class="rf-eyebrow">FREE ROOFING MARKETING RESOURCES</p>
@@ -485,7 +496,7 @@ const roofServices = [
           </div>
           <span aria-hidden="true">↗</span>
         </a>
-      
+
         <div class="rf-resource-grid">
 <a class="rf-resource-card"
            href="/insights/google-ads-for-roofing-contractors/">
@@ -495,7 +506,7 @@ const roofServices = [
           </div>
           <span aria-hidden="true">↗</span>
         </a>
-    
+
 
         <a class="rf-resource-card"
            href="/insights/facebook-ads-for-roofers/">
@@ -505,7 +516,7 @@ const roofServices = [
           </div>
           <span aria-hidden="true">↗</span>
         </a>
-    
+
 
       <a class="rf-resource-card"
          href="/insights/roofing-marketing-strategy/">
@@ -515,7 +526,7 @@ const roofServices = [
         </div>
         <span aria-hidden="true">↗</span>
       </a>
-    
+
 
       <a class="rf-resource-card"
          href="/insights/roofing-lead-costs/">
@@ -526,7 +537,7 @@ const roofServices = [
         <span aria-hidden="true">↗</span>
       </a>
 </div>
-    
+
 </div>
     </section>
 
@@ -538,47 +549,65 @@ const roofServices = [
     </section>
   </main>
 
-  <footer class="rf-footer">
-    <div class="rf-wrap rf-footer-layout">
-      <div class="rf-footer-brand">
-        <a href="/" class="rf-brand rf-footer-logo" aria-label="LeadsFlo homepage">
-        <BrandMark />
-        <!-- RF_ROOF_LOGO_V1 -->
-        <svg class="rf-logo-roof" viewBox="0 0 58 30"
-             aria-hidden="true" focusable="false">
-          <path d="M4 23 L29 5 L54 23"
-                fill="none"
-                stroke="#263746"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"/>
-          <path d="M9 23 L29 9 L49 23"
-                fill="none"
-                stroke="#C66A3D"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"/>
-        </svg>
-      </a>
-        <p>More qualified roofing opportunities.<br />
-        Less manual follow-up.</p>
+
+<footer class="rf-footer rf-footer-clean">
+  <div class="rf-wrap">
+    <div class="rf-footer-clean-grid">
+      <div class="rf-footer-clean-brand">
+        <a href="/" class="rf-brand" aria-label="LeadsFlo home">
+          <BrandMark />
+          <svg class="rf-logo-roof" viewBox="0 0 58 30"
+            aria-hidden="true" focusable="false">
+            <path d="M4 23 L29 5 L54 23" fill="none"
+              stroke="#263746" stroke-width="3"
+              stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 23 L29 9 L49 23" fill="none"
+              stroke="#C66A3D" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <p>Qualified roofing leads, better project
+          conversations and dependable follow-up.</p>
+        <small>Marketing built around your roofing business.</small>
       </div>
 
-      <nav class="rf-footer-nav" aria-label="Footer navigation">
-        <a href="#challenge">The problem</a>
-        <a href="#system">The system</a>
-        <a href="#qualification">Qualification</a>
-        <a href="#calculator">Revenue Calculator</a>
+      <nav class="rf-footer-clean-column" aria-label="Explore">
+        <h3>Explore</h3>
+        <a href="#challenge">The challenge</a>
+        <a href="#system">Our system</a>
+        <a href="#qualification">Lead qualification</a>
+        <a href="#calculator">Revenue calculator</a>
         <a href="#questions">FAQs</a>
-        <a href="#book">Book a call</a>
+        <a href="#top">Back to top ↑</a>
       </nav>
 
-      <div class="rf-footer-meta">
-        <span>© {new Date().getFullYear()} LeadsFlo</span>
-        <a href="/privacy-policy/">Privacy</a>
+      <nav class="rf-footer-clean-column" aria-label="Roofing resources">
+        <h3>Roofing Resources</h3>
+        <a href="/insights/roofing-lead-generation/">Lead generation</a>
+        <a href="/insights/google-ads-for-roofing-contractors/">Google Ads</a>
+        <a href="/insights/facebook-ads-for-roofers/">Facebook Ads</a>
+        <a href="/insights/roofing-marketing-strategy/">Marketing strategy</a>
+        <a href="/insights/roofing-lead-costs/">Lead costs &amp; ROI</a>
+      </nav>
+
+      <div class="rf-footer-clean-column">
+        <h3>Get Started</h3>
+        <p>Ready to build a better roofing lead pipeline?</p>
+        <a class="rf-button" href={booking}>Book a strategy call ↗</a>
+        <a href="/contact/">Contact LeadsFlo</a>
       </div>
     </div>
-  </footer>
+
+    <div class="rf-footer-clean-bottom">
+      <span>© {new Date().getFullYear()} LeadsFlo</span>
+      <div>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
   <script define:vars={{ stages }}>
     const buttons = document.querySelectorAll(".rf-stage");
@@ -1743,4 +1772,539 @@ body.roofing-page .rf-header.rf-header-hidden {
   }
 }
 
+</style>
+
+<!-- LEADSFLO_ROOFING_CTA_POLISH_V1 -->
+<style is:global>
+.roofing-page .rf-section-booking {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.roofing-page .rf-section-booking .rf-button {
+  max-width: 100%;
+  min-height: 52px;
+  padding: 15px 22px;
+  text-align: center;
+  line-height: 1.45;
+}
+
+.roofing-page .rf-commercial-intent h2 {
+  max-width: 1080px;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: 1.2;
+  letter-spacing: -.035em;
+}
+
+.roofing-page .rf-commercial-intent h3 {
+  font-size: clamp(23px, 2.3vw, 29px);
+  line-height: 1.3;
+  letter-spacing: -.025em;
+  margin-top: 34px;
+}
+
+.roofing-page .rf-commercial-intent p {
+  max-width: 85ch;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #52626b;
+  margin-top: 16px;
+}
+
+@media(max-width:600px) {
+  .roofing-page .rf-section-booking .rf-button {
+    width: 100%;
+    white-space: normal;
+  }
+}
+</style>
+
+<!-- LEADSFLO_ROOFING_FOOTER_POLISH_V1 -->
+<style is:global>
+.roofing-page .rf-footer {
+  background: #263746;
+  color: #f3f0e9;
+  padding: 75px 0 40px;
+  border-top: 4px solid #c66a3d;
+}
+
+.roofing-page .rf-footer-layout {
+  grid-template-columns: 1.2fr 1fr 1.3fr;
+  gap: 42px;
+  align-items: start;
+}
+
+.roofing-page .rf-footer-brand p,
+.roofing-page .rf-footer-contact p {
+  color: #c6d0d4;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.roofing-page .rf-footer-logo .lf-brand-v4 {
+  --brand-text: #f3f0e9;
+  --brand-flo: #e7a07c;
+  --brand-plane: #e7a07c;
+}
+
+.roofing-page .rf-footer-logo .rf-logo-roof {
+  filter: brightness(1.6);
+}
+
+.roofing-page .rf-footer-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  justify-content: start;
+  font-size: 13px;
+}
+
+.roofing-page .rf-footer-nav a,
+.roofing-page .rf-footer-meta a {
+  color: #d6dfe2;
+}
+
+.roofing-page .rf-footer-contact span {
+  color: #e7a07c;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .15em;
+}
+
+.roofing-page .rf-footer-contact h3 {
+  margin: 13px 0;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: -.025em;
+}
+
+.roofing-page .rf-footer-contact .rf-button {
+  margin-top: 18px;
+  min-height: 48px;
+  padding: 13px 18px;
+}
+
+.roofing-page .rf-footer-meta {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 26px;
+  border-top: 1px solid #52626b;
+  color: #c6d0d4;
+}
+
+@media(max-width:900px) {
+  .roofing-page .rf-footer-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+  .roofing-page .rf-footer-contact {
+    grid-column: 1 / -1;
+  }
+}
+
+@media(max-width:600px) {
+  .roofing-page .rf-footer-layout {
+    grid-template-columns: 1fr;
+  }
+  .roofing-page .rf-footer-contact {
+    grid-column: auto;
+  }
+}
+</style>
+
+<!-- RF_COMMERCIAL_REDESIGN_STYLES_V2 -->
+<style is:global>
+.roofing-page .rf-commercial-intent {
+  background:#f3f0e9;
+}
+.roofing-page .rf-commercial-head {
+  max-width:950px;
+  margin-bottom:48px;
+}
+.roofing-page .rf-commercial-head h2 {
+  font-size:clamp(38px,4.5vw,62px);
+  line-height:1.14;
+  letter-spacing:-.04em;
+  max-width:950px;
+}
+.roofing-page .rf-commercial-head>p:last-child {
+  max-width:680px;
+  font-size:17px;
+  line-height:1.8;
+  margin-top:25px;
+}
+.roofing-page .rf-commercial-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+}
+.roofing-page .rf-commercial-card {
+  display:flex;
+  flex-direction:column;
+  padding:clamp(25px,3vw,42px);
+  background:#fffcf6;
+  border-top:4px solid #c66a3d;
+  min-width:0;
+}
+.roofing-page .rf-commercial-card>span {
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.14em;
+  color:#b65c35;
+}
+.roofing-page .rf-commercial-card h3 {
+  margin:22px 0 10px;
+  font-size:clamp(24px,2.4vw,32px);
+  letter-spacing:-.035em;
+  line-height:1.25;
+}
+.roofing-page .rf-commercial-card p {
+  margin:12px 0 0;
+  font-size:15px;
+  line-height:1.8;
+}
+.roofing-page .rf-commercial-note {
+  margin-top:auto;
+  padding-top:24px;
+  border-top:1px solid #dfd8ce;
+}
+.roofing-page .rf-commercial-note strong {
+  color:#263746;
+  font-size:13px;
+}
+.roofing-page .rf-commercial-note p {
+  margin-top:8px;
+  font-size:13px;
+}
+.roofing-page .rf-commercial-bottom {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+  padding:32px 0 0;
+}
+.roofing-page .rf-commercial-bottom strong {
+  font-size:21px;
+  color:#263746;
+}
+.roofing-page .rf-commercial-bottom p {
+  margin:8px 0 0;
+  font-size:14px;
+}
+.roofing-page .rf-commercial-bottom .rf-button {
+  flex-shrink:0;
+}
+@media(max-width:760px) {
+  .roofing-page .rf-commercial-grid {
+    grid-template-columns:1fr;
+  }
+  .roofing-page .rf-commercial-bottom {
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .roofing-page .rf-commercial-bottom .rf-button {
+    white-space:normal;
+  }
+}
+</style>
+
+<!-- RF_FOOTER_GUIDES_STYLES_V1 -->
+<style is:global>
+.roofing-page .rf-footer-guides {
+  grid-column:1 / -1;
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:40px;
+  padding:36px 0;
+  border-top:1px solid #52626b;
+}
+.roofing-page .rf-footer-guides span {
+  display:block;
+  color:#e7a07c;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.15em;
+}
+.roofing-page .rf-footer-guides h3 {
+  margin:12px 0;
+  font-size:23px;
+  letter-spacing:-.025em;
+}
+.roofing-page .rf-footer-guides p {
+  color:#bfcbd1;
+  font-size:13px;
+  line-height:1.7;
+}
+.roofing-page .rf-footer-guide-links {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px 25px;
+  align-content:start;
+}
+.roofing-page .rf-footer-guide-links a {
+  color:#dce4e7;
+  font-size:13px;
+  font-weight:600;
+  line-height:1.6;
+}
+.roofing-page .rf-footer-guide-links a:hover {
+  color:#e7a07c;
+}
+@media(max-width:760px) {
+  .roofing-page .rf-footer-guides {
+    grid-template-columns:1fr;
+    gap:24px;
+  }
+}
+@media(max-width:480px) {
+  .roofing-page .rf-footer-guide-links {
+    grid-template-columns:1fr;
+  }
+}
+</style>
+
+<!-- RF_CHALLENGE_EDITORIAL_POLISH_V1 -->
+<style is:global>
+body.roofing-page #challenge {
+  background:#f3f0e9;
+}
+
+body.roofing-page #challenge .rf-two {
+  grid-template-columns:minmax(0,1fr) minmax(0,1.06fr);
+  gap:clamp(35px,5vw,80px);
+  align-items:start;
+}
+
+body.roofing-page #challenge h2 {
+  max-width:590px;
+  font-size:clamp(40px,4.2vw,64px);
+  letter-spacing:-.045em;
+  line-height:1.16;
+}
+
+body.roofing-page #challenge .rf-copy {
+  background:#fffcf6;
+  padding:clamp(24px,3vw,42px);
+  border-top:4px solid #c66a3d;
+  box-shadow:0 18px 45px #2637460a;
+}
+
+body.roofing-page #challenge .rf-copy>p:first-child {
+  margin-top:0;
+}
+
+body.roofing-page #challenge .rf-rule {
+  border-top:1px solid #d9d2c8;
+}
+
+body.roofing-page #challenge .rf-work-photo {
+  margin-top:28px;
+}
+
+body.roofing-page #challenge .rf-work-photo img {
+  height:clamp(220px,25vw,320px);
+}
+
+body.roofing-page #challenge .rf-section-booking {
+  margin:25px 0 0;
+}
+
+@media(max-width:800px) {
+  body.roofing-page #challenge .rf-two {
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+}
+</style>
+
+<!-- RF_CHALLENGE_FOOTER_REBUILD_V3 -->
+<style is:global>
+body.roofing-page #challenge.rf-challenge-rebuilt {
+  background:#f3f0e9;
+  padding:clamp(75px,8vw,125px) 0;
+}
+body.roofing-page #challenge .rf-challenge-layout {
+  display:grid;
+  grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);
+  gap:clamp(40px,6vw,95px);
+  align-items:center;
+}
+body.roofing-page #challenge .rf-challenge-copy {
+  min-width:0;
+}
+body.roofing-page #challenge .rf-challenge-copy h2 {
+  font-size:clamp(38px,4.1vw,63px);
+  line-height:1.12;
+  letter-spacing:-.043em;
+  margin:0 0 26px;
+}
+body.roofing-page #challenge .rf-challenge-copy>p:not(.rf-eyebrow) {
+  color:#52626b;
+  font-size:16px;
+  line-height:1.8;
+  max-width:550px;
+  margin:0 0 18px;
+}
+body.roofing-page #challenge .rf-challenge-copy .rf-challenge-lede {
+  font-size:19px!important;
+  color:#263746!important;
+  font-weight:600;
+}
+body.roofing-page #challenge .rf-challenge-insight {
+  margin:28px 0;
+  padding:23px 0 23px 22px;
+  border-left:3px solid #c66a3d;
+  background:linear-gradient(90deg,#e9e3d9 0%,transparent 95%);
+}
+body.roofing-page #challenge .rf-challenge-insight span {
+  display:block;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.14em;
+  color:#b25a35;
+  margin-bottom:10px;
+}
+body.roofing-page #challenge .rf-challenge-insight strong {
+  display:block;
+  font:800 18px/1.4 "Plus Jakarta Sans",sans-serif;
+  color:#263746;
+}
+body.roofing-page #challenge .rf-challenge-insight p {
+  margin:9px 0 0;
+  color:#52626b;
+  font-size:14px;
+  line-height:1.7;
+}
+body.roofing-page #challenge .rf-challenge-visual {
+  min-width:0;
+  margin:0;
+  overflow:hidden;
+  background:#263746;
+}
+body.roofing-page #challenge .rf-challenge-visual img {
+  width:100%;
+  height:clamp(390px,43vw,600px);
+  object-fit:cover;
+  display:block;
+}
+body.roofing-page #challenge .rf-challenge-visual figcaption {
+  padding:23px 27px;
+  color:#fff;
+}
+body.roofing-page #challenge .rf-challenge-visual figcaption span {
+  display:block;
+  color:#e7a07c;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.12em;
+  margin-bottom:9px;
+}
+body.roofing-page #challenge .rf-challenge-visual figcaption strong {
+  font:750 21px/1.35 "Plus Jakarta Sans",sans-serif;
+}
+body.roofing-page .rf-footer.rf-footer-clean {
+  background:#f3f0e9;
+  color:#263746;
+  border-top:1px solid #d9d2c8;
+  padding:70px 0 25px;
+}
+body.roofing-page .rf-footer-clean-grid {
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1.12fr 1.12fr;
+  align-items:start;
+  gap:clamp(22px,3vw,50px);
+  padding-bottom:58px;
+}
+body.roofing-page .rf-footer-clean-brand .lf-brand-v4 {
+  --brand-text:#263746;
+  --brand-flo:#c66a3d;
+  --brand-plane:#c66a3d;
+}
+body.roofing-page .rf-footer-clean-brand p {
+  color:#52626b;
+  font-size:15px;
+  line-height:1.75;
+  margin:24px 0 14px;
+}
+body.roofing-page .rf-footer-clean-brand small {
+  color:#98745f;
+  font-size:13px;
+  line-height:1.65;
+}
+body.roofing-page .rf-footer-clean-column {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:14px;
+  min-width:0;
+}
+body.roofing-page .rf-footer-clean-column h3 {
+  color:#b65c35;
+  font:800 12px/1.4 Inter,sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  margin:0 0 10px;
+}
+body.roofing-page .rf-footer-clean-column>a {
+  color:#263746;
+  font-size:14px;
+  font-weight:650;
+  line-height:1.5;
+}
+body.roofing-page .rf-footer-clean-column>a:hover {
+  color:#b65c35;
+}
+body.roofing-page .rf-footer-clean-column>p {
+  font-size:15px;
+  color:#52626b;
+  line-height:1.7;
+  margin:0;
+}
+body.roofing-page .rf-footer-clean-column>a.rf-button {
+  color:#fff;
+  margin:6px 0;
+  padding:14px 17px;
+  min-height:48px;
+  font-size:12px;
+  text-align:center;
+}
+body.roofing-page .rf-footer-clean-bottom {
+  border-top:1px solid #d9d2c8;
+  padding-top:24px;
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  color:#697681;
+  font-size:12px;
+}
+body.roofing-page .rf-footer-clean-bottom div {
+  display:flex;
+  flex-wrap:wrap;
+  gap:19px;
+}
+body.roofing-page .rf-footer-clean-bottom a {
+  color:#52626b;
+}
+@media(max-width:950px) {
+  body.roofing-page .rf-footer-clean-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:800px) {
+  body.roofing-page #challenge .rf-challenge-layout {
+    grid-template-columns:1fr;
+  }
+  body.roofing-page #challenge .rf-challenge-visual img {
+    height:380px;
+  }
+}
+@media(max-width:550px) {
+  body.roofing-page .rf-footer-clean-grid {
+    grid-template-columns:1fr;
+  }
+  body.roofing-page .rf-footer-clean-bottom {
+    flex-direction:column;
+  }
+}
 </style>

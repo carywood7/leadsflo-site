@@ -2,7 +2,7 @@
 import BrandMark from "../components/BrandMark.astro";
 import "../styles/global.css";
 
-const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const booking = "https://calendar.app.google/gJscT3C474Xt4Nqh7";
 const canonical = "https://leadsflo.co/pest-control-lead-generation/";
 const offerings = [
       {
@@ -3122,32 +3122,43 @@ body.hv-page .resource:focus-within {
 
 
 
-<section class="section" id="challenge">
-  <div class="wrap introgrid">
-    <div>
+
+<section class="section pc-challenge-refined" id="challenge">
+  <div class="wrap pc-challenge-grid">
+    <div class="pc-challenge-copy">
       <span class="eyebrow blue">THE REAL CHALLENGE</span>
-      <h2 class="heading">
-        Not every pest inquiry needs the same response.
-      </h2>
+      <h2 class="heading">Different pest problems.
+        <em>Different customer needs.</em></h2>
+      <p class="pc-lede">A termite inspection, rodent problem
+        and commercial pest management contract
+        require different sales conversations.</p>
+      <p>Customers need relevant services, clear next steps
+        and timely responses. Your marketing should
+        recognize the type of problem before
+        handing off the inquiry.</p>
+      <div class="pc-challenge-insight">
+        <small>THE OBJECTIVE</small>
+        <strong>Better service inquiries.
+          More organized booking opportunities.</strong>
+        <p>Connect campaigns, qualification,
+          inspection scheduling and CRM follow-up.</p>
+      </div>
+      <a class="cta" href={booking}>
+        Discuss your pest control lead quality ↗
+      </a>
     </div>
-    <div>
-      <p class="bodycopy">
-        A termite inspection, rodent problem, ant infestation
-        and commercial pest management inquiry involve different
-        customer concerns, services and buying timelines.
-      </p>
-      <p class="bodycopy">
-        Your marketing should attract the right service requests,
-        identify useful details and give customers a clear,
-        professional next step.
-      </p>
-      <p class="bodycopy">
-        LeadsFlo connects campaigns, landing pages, inquiry
-        qualification and appointment follow-up.
-      </p>
-    </div>
+    <figure class="pc-challenge-photo">
+      <img src="/images/pest-control/pest-control-service.jpg"
+        alt="Pest control specialist performing outdoor treatment"
+        loading="lazy" width="1200" height="800" />
+      <figcaption>
+        <small>PEST CONTROL / LEAD QUALIFICATION</small>
+        <strong>From service inquiry to booked inspection.</strong>
+      </figcaption>
+    </figure>
   </div>
 </section>
+
   <section class="section dark" id="services"><div class="wrap"><div class="sectop"><div><span class="eyebrow" style="color:#9bd7e9">WHAT WE BUILD</span><h2 class="heading">From local search to booked inspections.</h2></div><p class="bodycopy">Four connected capabilities for local pest control demand, qualified inquiries and appointment follow-up.</p></div><div class="servicegrid">{offerings.map(item=><article class="service" tabindex="0" role="button" data-hv-service={item.n} aria-label={`Explore ${item.name}`}><span class="index">{item.n} / {item.tag}</span><h3>{item.name}</h3><p>{item.desc}</p><small>LEADSFLO / Pest Control</small></article>)}</div></div>
 <div class="hv-service-preview" data-hv-preview aria-live="polite">
   <div class="hv-preview-copy">
@@ -3168,6 +3179,8 @@ body.hv-page .resource:focus-within {
     <small>LEAD FLOW / ACTIVE</small>
   </div>
 </div>
+
+<div class="wrap pc-booking-row"><a class="cta" href={booking}>Plan your pest control marketing system ↗</a></div>
 </section>
   <section class="section journey" id="process"><div class="wrap"><span class="eyebrow blue">THE INTERACTIVE PROCESS</span><h2 class="heading">Five steps. One connected journey.</h2><p class="bodycopy" style="margin-bottom:33px">Select each stage to see how a pest control inquiry moves from search to a booked inspection or service visit.</p><div class="journeygrid" data-hv-journey><div class="steps" role="group" aria-label="Pest Control lead journey">{stages.map((stage,index)=><button class="step" type="button" data-hv-step={index} aria-pressed={index===0?'true':'false'}><span class="num">{stage.n}</span><span>{stage.label}</span><span aria-hidden="true">↗</span></button>)}</div><div class="stagepanel" aria-live="polite"><span class="stagelabel" data-hv-tag>{stages[0].tag}</span><h3 data-hv-title>{stages[0].title}</h3><p data-hv-body>{stages[0].body}</p><div class="stagebottom"><div><span class="eyebrow blue">WHAT HAPPENS HERE</span><ul data-hv-points>{stages[0].points.map(point=><li>{point}</li>)}</ul></div><div class="output" data-hv-outcome>{stages[0].outcome}</div></div></div></div></div></section>
 
@@ -3224,6 +3237,8 @@ body.hv-page .resource:focus-within {
       </p>
     </div>
   </div>
+
+<div class="wrap pc-booking-row"><a class="cta" href={booking}>Improve pest control lead qualification ↗</a></div>
 </section>
 
 
@@ -3306,11 +3321,10 @@ body.hv-page .resource:focus-within {
       </figure>
     </div>
 
-    <p class="hv-photo-credit">
-      Illustrative pest control stock photography,
-      not LeadsFlo client projects.
-    </p>
+
   </div>
+
+<div class="wrap pc-booking-row"><a class="cta" href={booking}>Discuss your pest control services ↗</a></div>
 </section>
 
 
@@ -3335,6 +3349,11 @@ body.hv-page .resource:focus-within {
         and excludes advertising and service costs.
         Recurring-plan revenue is not included.
       </p>
+      <div class="pc-calc-booking">
+        <a class="cta" href={booking}>
+          Discuss your pest control growth targets ↗
+        </a>
+      </div>
     </div>
 
     <div class="calcbox" data-hv-calc>
@@ -3445,71 +3464,66 @@ body.hv-page .resource:focus-within {
     </a>
   </div>
 </section>
- </main>
+ <!-- PEST_CONTROL_BOOKING_CTAS_V1 -->
+</main>
 
-<footer class="hv-footer-v6">
-  <div class="wrap hv-footer-main">
-    <div class="hv-footer-intro">
-      <a class="brand hv-footer-brand" href="/"
-         aria-label="LeadsFlo home">
-        <BrandMark theme="dark" />
-      </a>
 
-      <h2>Better pest control leads.<br />
-        <em>Better follow-through.</em>
-      </h2>
+<footer class="pc-footer-refined">
+  <div class="wrap">
+    <div class="pc-footer-grid">
+      <div class="pc-footer-brand">
+        <a href="/" class="brand" aria-label="LeadsFlo home">
+          <BrandMark theme="dark" />
+        </a>
+        <p>Qualified pest control inquiries,
+          better inspection opportunities and
+          dependable follow-up.</p>
+        <small>Marketing built around your service areas
+          and treatment offerings.</small>
+      </div>
 
-      <p>
-        Advertising, conversion funnels, qualification and
-        appointment setting working together to help pest control
-        businesses turn inquiries into conversations.
-      </p>
+      <nav class="pc-footer-column" aria-label="Explore Pest Control">
+        <h3>Explore</h3>
+        <a href="#challenge">The challenge</a>
+        <a href="#services">Our services</a>
+        <a href="#process">How it works</a>
+        <a href="#qualification">Lead qualification</a>
+        <a href="#calculator">Revenue calculator</a>
+        <a href="#faq">FAQs</a>
+        <a href="#top">Back to top ↑</a>
+      </nav>
 
-      <a class="hv-footer-cta" href={booking}>
-        Discuss Your Pest Control Growth ↗
-      </a>
+      <nav class="pc-footer-column" aria-label="Pest Control resources">
+        <h3>Pest Control Resources</h3>
+        <a href="/insights/pest-control-lead-generation/">
+          Lead generation</a>
+        <a href="/insights/google-ads-for-pest-control/">
+          Google Ads</a>
+        <a href="/insights/pest-control-marketing-strategies/">
+          Marketing strategies</a>
+        <a href="/insights/pest-control-lead-costs/">
+          Lead costs</a>
+      </nav>
+
+      <div class="pc-footer-column">
+        <h3>Get Started</h3>
+        <p>Ready for better-fit pest control inquiries?</p>
+        <a class="cta" href={booking}>Book a strategy call ↗</a>
+        <a href="/contact/">Contact LeadsFlo</a>
+      </div>
     </div>
 
-    <nav class="hv-footer-column"
-         aria-label="Pest Control marketing services">
-      <h3>What we do</h3>
-      <a href="#services">Google & Meta Ads</a>
-      <a href="#services">Pest Control Landing Pages</a>
-      <a href="#qualification">Lead Qualification</a>
-      <a href="#process">CRM & Follow-up</a>
-      <a href="#calculator">Revenue Scenario</a>
-    </nav>
-
-    <nav class="hv-footer-column"
-         aria-label="Explore LeadsFlo">
-      <h3>Explore</h3>
-      <a href="/">Home</a>
-      <a href="/industries/">Industries</a>
-      <a href="/insights/">Insights</a>
-      <a href="/work/">Our Work</a>
-      <a href="/contact/">Contact</a>
-    </nav>
-
-    <div class="hv-footer-column hv-footer-contact">
-      <h3>Ready to grow?</h3>
-      <p>
-        Tell us what you offer, where you operate
-        and what you want to improve.
-      </p>
-      <a href={booking}>Book a Strategy Call ↗</a>
+    <div class="pc-footer-bottom">
+      <span>© {new Date().getFullYear()} LeadsFlo</span>
+      <nav aria-label="Legal">
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms-and-conditions/">
+          Terms &amp; Conditions</a>
+      </nav>
     </div>
-  </div>
-
-  <div class="wrap hv-footer-bottom">
-    <span>© {new Date().getFullYear()} LeadsFlo</span>
-    <span>More leads. Less guesswork.</span>
-    <nav aria-label="Legal information">
-      <a href="/privacy-policy/">Privacy Policy</a>
-      <a href="/terms-and-conditions/">Terms & Conditions</a>
-    </nav>
-    <a href="#top" class="hv-back-top">Back to top ↑</a>
   </div>
 </footer>
+
 
  <script define:vars={{stages,offerings}}>
   const root=document.querySelector('[data-hv-journey]');
@@ -3917,3 +3931,207 @@ body.hv-page .resource:focus-within {
 
 </body>
 </html>
+
+<!-- PEST_CONTROL_CONVERSION_POLISH_V1 -->
+<style is:global>
+body.hv-page .pc-challenge-refined {
+  background:#f0f6f7;
+}
+body.hv-page .pc-challenge-grid {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,.95fr);
+  gap:clamp(36px,6vw,85px);
+  align-items:center;
+}
+body.hv-page .pc-challenge-copy h2 {
+  font-size:clamp(39px,4.4vw,65px);
+  letter-spacing:-.045em;
+  line-height:1.13;
+}
+body.hv-page .pc-challenge-copy em {
+  color:#247e84;
+  font-style:normal;
+}
+body.hv-page .pc-challenge-copy>p {
+  color:#526f80;
+  font-size:16px;
+  line-height:1.8;
+  max-width:540px;
+}
+body.hv-page .pc-challenge-copy .pc-lede {
+  color:#152d40;
+  font-size:19px;
+  font-weight:600;
+}
+body.hv-page .pc-challenge-insight {
+  border-left:3px solid #e6a073;
+  padding:18px 22px;
+  margin:28px 0;
+  background:linear-gradient(90deg,#dcebea,transparent);
+}
+body.hv-page .pc-challenge-insight small {
+  display:block;
+  color:#247e84;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.14em;
+  margin-bottom:10px;
+}
+body.hv-page .pc-challenge-insight strong {
+  display:block;
+  color:#152d40;
+  font-size:19px;
+  line-height:1.4;
+}
+body.hv-page .pc-challenge-insight p {
+  color:#526f80;
+  font-size:14px;
+  line-height:1.7;
+  margin:9px 0 0;
+}
+body.hv-page .pc-challenge-photo {
+  margin:0;
+  overflow:hidden;
+  border-radius:10px;
+  background:#102c42;
+}
+body.hv-page .pc-challenge-photo img {
+  display:block;
+  width:100%;
+  height:clamp(375px,42vw,555px);
+  object-fit:cover;
+}
+body.hv-page .pc-challenge-photo figcaption {
+  padding:23px 25px;
+  color:#fff;
+}
+body.hv-page .pc-challenge-photo small {
+  display:block;
+  color:#ffbf91;
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:.12em;
+  margin-bottom:9px;
+}
+body.hv-page .pc-challenge-photo strong {
+  font-size:19px;
+  line-height:1.4;
+}
+body.hv-page .pc-booking-row {
+  display:flex;
+  margin-top:0;
+  padding-top:40px;
+}
+body.hv-page .pc-booking-row .cta {
+  max-width:100%;
+  margin:0;
+  text-align:center;
+}
+body.hv-page .pc-calc-booking {
+  margin-top:30px;
+}
+body.hv-page .pc-calc-booking .cta {
+  max-width:100%;
+  text-align:center;
+  line-height:1.5;
+}
+body.hv-page .pc-footer-refined {
+  background:#0c2530;
+  color:#f3f9fa;
+  padding:75px 0 28px;
+  border-top:1px solid #527783;
+}
+body.hv-page .pc-footer-grid {
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1.15fr 1.1fr;
+  gap:clamp(24px,3vw,50px);
+  padding-bottom:58px;
+}
+body.hv-page .pc-footer-brand p {
+  margin:22px 0 12px;
+  color:#d5e8eb;
+  font-size:15px;
+  line-height:1.8;
+}
+body.hv-page .pc-footer-brand small {
+  color:#b7d1d5;
+  font-size:13px;
+  line-height:1.7;
+}
+body.hv-page .pc-footer-column {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  gap:15px;
+  min-width:0;
+}
+body.hv-page .pc-footer-column h3 {
+  margin:0 0 10px;
+  color:#ffbf91;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+body.hv-page .pc-footer-column>a {
+  color:#f0f8fa;
+  font-size:14px;
+  font-weight:650;
+  line-height:1.55;
+}
+body.hv-page .pc-footer-column>a:hover {
+  color:#ffbf91;
+}
+body.hv-page .pc-footer-column>p {
+  margin:0;
+  color:#d5e8eb;
+  font-size:15px;
+  line-height:1.7;
+}
+body.hv-page .pc-footer-column>a.cta {
+  color:#132737;
+  padding:14px 16px;
+  font-size:12px;
+  text-align:center;
+  margin:5px 0;
+}
+body.hv-page .pc-footer-bottom {
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding-top:25px;
+  border-top:1px solid #527783;
+  color:#b7d1d5;
+  font-size:12px;
+}
+body.hv-page .pc-footer-bottom nav {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+body.hv-page .pc-footer-bottom a {
+  color:#e7f3f5;
+}
+@media(max-width:950px) {
+  body.hv-page .pc-footer-grid {
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:800px) {
+  body.hv-page .pc-challenge-grid {
+    grid-template-columns:1fr;
+  }
+}
+@media(max-width:550px) {
+  body.hv-page .pc-footer-grid {
+    grid-template-columns:1fr;
+  }
+  body.hv-page .pc-footer-bottom {
+    flex-direction:column;
+  }
+  body.hv-page .pc-booking-row .cta,
+  body.hv-page .pc-calc-booking .cta {
+    width:100%;
+  }
+}
+</style>

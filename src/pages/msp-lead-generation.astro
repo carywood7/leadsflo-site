@@ -2,7 +2,7 @@
 import BrandMark from "../components/BrandMark.astro";
 import "../styles/global.css";
 
-const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const booking = "https://calendar.app.google/gJscT3C474Xt4Nqh7";
 const canonical = "https://leadsflo.co/msp-lead-generation/";
 
 const services = [
@@ -125,7 +125,7 @@ const questions = [
         <a href="#founder">Who you work with</a>
         <a href="#faq">FAQs</a>
       </nav>
-      <a class="mp-header-cta" href={booking} target="_blank" rel="noopener noreferrer">Book a strategy call ↗</a>
+      <a class="mp-header-cta lf-booking-attention" href={booking} target="_blank" rel="noopener noreferrer">Book a strategy call ↗</a>
     </div>
   </header>
 
@@ -137,7 +137,7 @@ const questions = [
           <h1>More MSP sales meetings.<br /><em>Less chasing leads.</em></h1>
           <p class="mp-lede">Win the right business conversations with targeted marketing, better lead qualification and a connected follow-up process designed around how managed IT providers actually sell.</p>
           <div class="mp-actions">
-            <a class="mp-button mp-button-primary" href={booking} target="_blank" rel="noopener noreferrer">Talk about your MSP <span aria-hidden="true">↗</span></a>
+            <a class="mp-button mp-button-primary lf-booking-attention" href={booking} target="_blank" rel="noopener noreferrer">Talk about your MSP <span aria-hidden="true">↗</span></a>
             <a class="mp-text-link" href="#workflow">Explore the revenue workflow ↓</a>
           </div>
           <div class="mp-proof"><span>GOOGLE & LINKEDIN</span><span>CRM & PSA AWARE</span><span>APPOINTMENT SETTING</span></div>
@@ -182,7 +182,9 @@ const questions = [
           <h3>{item.title}</h3><p>{item.description}</p>
           <span class="mp-service-arrow" aria-hidden="true">↗</span>
         </article>)}</div>
-      </div>
+
+<div class="mp-booking-row"><a class="mp-booking-button lf-booking-attention" href={booking}>Discuss your MSP growth strategy ↗</a></div>
+</div>
     </section>
 
     <section class="mp-gallery">
@@ -214,7 +216,9 @@ const questions = [
             <small class="mp-demo-disclaimer">Illustrative process, not a live CRM or PSA integration.</small>
           </div>
         </div>
-      </div>
+
+<div class="mp-booking-row"><a class="mp-booking-button lf-booking-attention" href={booking}>Improve your MSP sales pipeline ↗</a></div>
+</div>
     </section>
 
     <section class="mp-fit mp-container">
@@ -268,7 +272,7 @@ const questions = [
           <p>I'm Cary Wood. My background spans more than 13 years in sales and marketing, alongside full-stack development, CRM integrations and MSP-specific automation.</p>
           <p>I've worked on lead-generation campaigns, conversion funnels and sales workflows, and built MSP-focused software—including MSP VOC and MSP Automate, with more than 100 prebuilt automations and Ansible-related capabilities.</p>
           <p>That mix matters. MSP marketing isn't just about clicks. It's about qualified opportunities, sales handoffs, operational context and what happens after a prospect says yes.</p>
-          <div class="mp-founder-links"><a href="https://mspautomations.co/" target="_blank" rel="noopener noreferrer">Explore MSP Automations ↗</a><a href={booking} target="_blank" rel="noopener noreferrer">Speak with me ↗</a></div>
+          <div class="mp-founder-links"><a href="https://mspautomations.co/" target="_blank" rel="noopener noreferrer">Explore MSP Automations ↗</a><a class="lf-booking-attention" href={booking} target="_blank" rel="noopener noreferrer">Speak with me ↗</a></div>
           <p class="mp-founder-footnote">MSP Automations is separate from LeadsFlo. Product capabilities are not presented as included in every marketing engagement.</p>
         </div>
       </div>
@@ -293,9 +297,11 @@ const questions = [
     </section>
 
     <section class="mp-final">
-      <div class="mp-container"><p class="mp-kicker">LET'S TALK ABOUT YOUR PIPELINE</p><h2>Build the system that turns interest into opportunity.</h2><p>Bring your current marketing, sales process and MSP tech stack. We'll identify the gaps worth fixing.</p><a class="mp-button mp-button-light" href={booking} target="_blank" rel="noopener noreferrer">Book an MSP strategy call ↗</a></div>
+      <div class="mp-container"><p class="mp-kicker">LET'S TALK ABOUT YOUR PIPELINE</p><h2>Build the system that turns interest into opportunity.</h2><p>Bring your current marketing, sales process and MSP tech stack. We'll identify the gaps worth fixing.</p><a class="mp-button mp-button-light lf-booking-attention" href={booking} target="_blank" rel="noopener noreferrer">Book an MSP strategy call ↗</a></div>
     </section>
-  </main>
+  <!-- MSP_CONVERSION_REFINEMENT_V1 -->
+<!-- MSP_MODAL_AND_HOVER_FIX_V1 -->
+</main>
 
   <footer class="mp-footer">
     <div class="mp-container">
@@ -344,13 +350,27 @@ const questions = [
           <p>Marketing, qualification and revenue workflows designed around how managed IT providers grow.</p>
         </div>
         <nav aria-label="Explore MSP page"><h3>Explore</h3><a href="#approach">Our approach</a><a href="#workflow">Revenue workflow</a><a href="#founder">Meet the founder</a><a href="#calculator">MRR calculator</a><a href="#faq">FAQs</a></nav>
-        <nav aria-label="Related services"><h3>Services</h3><a href="/performance-marketing/">Performance marketing</a><a href="/websites-funnels/">Websites & funnels</a><a href="/crm-automation/">CRM & automation</a><a href="/appointment-setting/">Appointment setting</a><a href="https://mspautomations.co/" target="_blank" rel="noopener noreferrer">MSP Automations ↗</a></nav>
-        <div class="mp-footer-contact"><h3>Get started</h3><p>Want a more connected MSP sales pipeline?</p><a class="mp-footer-button" href={booking} target="_blank" rel="noopener noreferrer">Book a call ↗</a><a href="/contact/">Contact LeadsFlo</a></div>
+        <nav aria-label="MSP marketing resources">
+  <h3>MSP Resources</h3>
+  <a href="/insights/how-to-get-more-msp-clients/">
+    Getting more MSP clients</a>
+  <a href="/insights/msp-marketing-strategies/">
+    MSP marketing strategies</a>
+  <a href="/insights/msp-inbound-vs-outbound/">
+    Inbound vs. outbound</a>
+  <a href="/insights/google-ads-for-msps/">
+    Google Ads for MSPs</a>
+  <a href="/insights/local-seo-for-msps/">
+    Local SEO for MSPs</a>
+  <a href="/insights/msp-lead-generation-costs/">
+    MSP lead generation costs</a>
+</nav>
+        <div class="mp-footer-contact"><h3>Get started</h3><p>Want a more connected MSP sales pipeline?</p><a class="mp-footer-button lf-booking-attention" href={booking} target="_blank" rel="noopener noreferrer">Book a call ↗</a><a href="/contact/">Contact LeadsFlo</a></div>
       </div>
       <div class="mp-footer-bottom"><span>© {new Date().getFullYear()} LeadsFlo</span><div><a href="/privacy-policy/">Privacy Policy</a><a href="/terms-and-conditions/">Terms & Conditions</a><a href="#top">Back to top ↑</a></div></div>
     </div>
   </footer>
-  <div class="mp-mobile-cta"><a href={booking} target="_blank" rel="noopener noreferrer">Book an MSP strategy call ↗</a></div>
+  <div class="mp-mobile-cta"><a class="lf-booking-attention" href={booking} target="_blank" rel="noopener noreferrer">Book an MSP strategy call ↗</a></div>
 
   <script define:vars={{stages}} is:inline>
     (() => {
@@ -459,8 +479,8 @@ const questions = [
   body.msp-page *{box-sizing:border-box}
   body.msp-page a{text-decoration:none}
   body.msp-page button{font:inherit}
-  body.msp-page h1,body.msp-page h2,body.msp-page h3{font-family:Manrope,sans-serif;letter-spacing:-.055em}
-  body.msp-page h2{font-size:clamp(36px,3.8vw,57px);line-height:1.12;margin:0}
+  body.msp-page main h1,body.msp-page main h2,body.msp-page main h3{font-family:Manrope,sans-serif;letter-spacing:-.055em}
+  body.msp-page main h2{font-size:clamp(36px,3.8vw,57px);line-height:1.12;margin:0}
   body.msp-page em{font-style:normal;color:#2563eb}
   body.msp-page .mp-container{width:min(1180px,calc(100% - 52px));margin:auto}
   body.msp-page .mp-kicker{display:flex;align-items:center;gap:10px;font:800 12px Manrope,sans-serif;letter-spacing:.12em;color:#36778e;text-transform:uppercase;margin:0 0 25px}
@@ -603,7 +623,7 @@ const questions = [
   body.msp-page .mp-founder-copy .mp-founder-footnote{font-size:13px!important;color:#6f8292!important}
   body.msp-page .mp-resources{padding:112px 0;background:white}
   body.msp-page .mp-resource-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
-  body.msp-page .mp-resource-grid article{background:#eef4f8;padding:30px;display:flex;flex-direction:column;min-height:250px;border:1px solid #dbe7edposition:relative;overflow:hidden;transition:transform .23s,background .23s,box-shadow .23s,border-color .23s;}
+  body.msp-page .mp-resource-grid article{background:#eef4f8;padding:30px;display:flex;flex-direction:column;min-height:250px;border:1px solid #dbe7ed;position:relative;overflow:hidden;transition:transform .23s,background .23s,box-shadow .23s,border-color .23s;}
   body.msp-page .mp-resource-grid article span{font:800 11px Manrope,sans-serif;color:#2463b6;letter-spacing:.07em}
   body.msp-page .mp-resource-grid article h3{font-size:23px;line-height:1.3;margin:24px 0 12px}
   body.msp-page .mp-resource-grid article p{font-size:16px;color:#557186;line-height:1.7;margin:0}
@@ -660,7 +680,7 @@ const questions = [
     body.msp-page .mp-hero{padding:48px 0 70px}
     body.msp-page .mp-hero-grid,body.msp-page .mp-calc-grid,body.msp-page .mp-founder-grid,body.msp-page .mp-workflow-layout{grid-template-columns:1fr;gap:40px}
     body.msp-page h1{font-size:clamp(42px,10.5vw,64px)}
-    body.msp-page h2{font-size:clamp(34px,8vw,47px)}
+    body.msp-page main h2{font-size:clamp(34px,8vw,47px)}
     body.msp-page .mp-lede{font-size:18px}
     body.msp-page .mp-hero-visual{height:480px}
     body.msp-page .mp-signal{right:9px;top:40%}
@@ -1024,4 +1044,60 @@ body.msp-page .mp-logo:focus-visible .mp-network-shield{
   body.msp-page .mp-resource-grid article a:focus-visible{
     outline:3px solid #10b8a7;
   }
+</style>
+
+<!-- MSP_CONVERSION_STYLES_V1 -->
+<style is:global>
+body.msp-page .mp-booking-row {
+  display:flex;
+  align-items:center;
+  padding-top:40px;
+}
+body.msp-page .mp-booking-button {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:52px;
+  padding:15px 23px;
+  background:#75e0d2;
+  color:#10263a;
+  font-size:15px;
+  font-weight:850;
+  line-height:1.5;
+  text-decoration:none;
+  text-align:center;
+  max-width:100%;
+  transition:background .2s ease,transform .2s ease;
+}
+body.msp-page .mp-booking-button:hover {
+  background:#a2f2e7;
+}
+body.msp-page .mp-footer-grid
+  nav[aria-label="MSP marketing resources"] a {
+  font-size:14px;
+  line-height:1.65;
+}
+@media(max-width:600px) {
+  body.msp-page .mp-booking-button {
+    width:100%;
+    white-space:normal;
+  }
+}
+</style>
+
+<!-- MSP_CTA_HOVER_FIX_V2 -->
+<style is:global>
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+  body.msp-page a.mp-button-primary:hover,
+  body.msp-page a.mp-header-cta:hover,
+  body.msp-page a.mp-booking-button:hover,
+  body.msp-page a.mp-footer-button:hover,
+  body.msp-page .mp-mobile-cta a:hover,
+  body.msp-page .mp-founder-links a[href*="calendar.app.google"]:hover {
+    animation:none!important;
+    transform:translateY(-4px) scale(1.025)!important;
+    filter:brightness(1.1)!important;
+    box-shadow:0 12px 26px rgba(0,0,0,.18)!important;
+  }
+}
 </style>
