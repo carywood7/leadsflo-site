@@ -1,0 +1,880 @@
+---
+import BrandMark from "../components/BrandMark.astro";
+import "../styles/global.css";
+import "../styles/navigation.css";
+const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const faq = [{"q": "What does a financial services marketing agency do?", "a": "We help financial businesses attract relevant inquiries through search visibility, campaigns, useful websites, lead qualification and CRM follow-up. Every strategy should account for the client’s audience, approvals and applicable marketing rules."}, {"q": "Can you generate qualified leads for financial advisors?", "a": "We can plan searches, landing pages and inquiry forms around the services an advisor is authorized to offer. Qualification criteria, consent, messaging and review processes should be agreed with the firm."}, {"q": "Do you work with fintech and accounting firms?", "a": "Yes. Acquisition journeys differ: fintech may prioritize appropriate product signups or demos, while accounting practices may prioritize fit-qualified consultations. Each requires different measurement."}, {"q": "How do you handle SEC and other advertising requirements?", "a": "Financial advertising may require compliance review, substantiated claims, disclosures and recordkeeping depending on the firm and jurisdiction. LeadsFlo supports client review workflows but does not provide legal or regulatory certification."}, {"q": "Can LeadsFlo connect forms to our CRM?", "a": "Where supported and authorized, we can help connect forms, inquiry routing and follow-up to existing CRM systems. Sensitive financial information should not be requested in a general marketing lead form."}, {"q": "Do you guarantee investment clients, assets under management or revenue?", "a": "No. The interactive planner illustrates scenarios only. Actual outcomes depend on targeting, suitability, budgets, market conditions, firm processes and appropriate approvals."}];
+const schema = {"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://leadsflo.co/#organization", "name": "LeadsFlo", "url": "https://leadsflo.co/"}, {"@type": "WebPage", "@id": "https://leadsflo.co/financial-services-marketing-agency/#webpage", "url": "https://leadsflo.co/financial-services-marketing-agency/", "name": "Financial Services Marketing Agency | Lead Generation & SEO | LeadsFlo", "description": "SEO, paid search, conversion pages and CRM follow-up for US financial advisors, wealth managers, accounting firms and fintech."}, {"@type": "Service", "name": "Financial Services Marketing and Lead Generation", "serviceType": "Financial advisor lead generation, financial services SEO, fintech PPC and CRM automation", "provider": {"@id": "https://leadsflo.co/#organization"}, "areaServed": {"@type": "Country", "name": "United States"}, "url": "https://leadsflo.co/financial-services-marketing-agency/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does a financial services marketing agency do?", "acceptedAnswer": {"@type": "Answer", "text": "We help financial businesses attract relevant inquiries through search visibility, campaigns, useful websites, lead qualification and CRM follow-up. Every strategy should account for the client’s audience, approvals and applicable marketing rules."}}, {"@type": "Question", "name": "Can you generate qualified leads for financial advisors?", "acceptedAnswer": {"@type": "Answer", "text": "We can plan searches, landing pages and inquiry forms around the services an advisor is authorized to offer. Qualification criteria, consent, messaging and review processes should be agreed with the firm."}}, {"@type": "Question", "name": "Do you work with fintech and accounting firms?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Acquisition journeys differ: fintech may prioritize appropriate product signups or demos, while accounting practices may prioritize fit-qualified consultations. Each requires different measurement."}}, {"@type": "Question", "name": "How do you handle SEC and other advertising requirements?", "acceptedAnswer": {"@type": "Answer", "text": "Financial advertising may require compliance review, substantiated claims, disclosures and recordkeeping depending on the firm and jurisdiction. LeadsFlo supports client review workflows but does not provide legal or regulatory certification."}}, {"@type": "Question", "name": "Can LeadsFlo connect forms to our CRM?", "acceptedAnswer": {"@type": "Answer", "text": "Where supported and authorized, we can help connect forms, inquiry routing and follow-up to existing CRM systems. Sensitive financial information should not be requested in a general marketing lead form."}}, {"@type": "Question", "name": "Do you guarantee investment clients, assets under management or revenue?", "acceptedAnswer": {"@type": "Answer", "text": "No. The interactive planner illustrates scenarios only. Actual outcomes depend on targeting, suitability, budgets, market conditions, firm processes and appropriate approvals."}}]}]};
+const guides = [["financial-services-seo", "Financial services SEO", "Trust-focused organic discovery and qualified client inquiries"], ["financial-advisor-lead-generation", "Financial advisor lead generation", "Better-fit prospects, careful qualification and consultations"], ["fintech-marketing-strategy", "Fintech marketing strategy", "Search, paid acquisition, conversion and onboarding"], ["accounting-firm-marketing", "Accounting firm marketing", "Local visibility and relevant business-client inquiries"], ["financial-services-digital-marketing", "Financial services digital marketing", "Campaign measurement, responsible content and CRM follow-up"]];
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#12243c"/>
+<title>Financial Services Marketing Agency | SEO &amp; Lead Generation | LeadsFlo</title>
+<meta name="description" content="Financial services marketing for US advisors, wealth firms, accounting practices and fintech. Qualified lead generation, SEO, Google Ads and connected CRM."/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://leadsflo.co/financial-services-marketing-agency/"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Financial Services Marketing Agency | LeadsFlo"/>
+<meta property="og:description" content="Qualified financial-service inquiries, responsible campaigns, fintech acquisition and CRM follow-up."/>
+<meta property="og:url" content="https://leadsflo.co/financial-services-marketing-agency/"/>
+<script type="application/ld+json" set:html={JSON.stringify(schema)}/>
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QE382W17N6"></script>
+<script is:inline>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','G-QE382W17N6');
+</script>
+<script is:inline defer src="/js/leadsflo-conversions.js"></script>
+</head>
+
+<body class="ed-page finance-page" id="top">
+<header class="ed-header" id="ed-header">
+  <div class="ed-wrap ed-nav">
+    <a class="ed-brand" href="/" aria-label="LeadsFlo home">
+      <svg class="ed-cap finance-emblem" viewBox="0 0 52 52" aria-hidden="true" focusable="false"><rect x="5" y="5" width="42" height="42" rx="11" fill="none" stroke="#bc9556" stroke-width="2.3"/><path d="M12 35h28M15 23h5v12h-5zm9-7h5v19h-5zm9-10v29h5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/><path d="M12 15 24 9l9 3 8-7" fill="none" stroke="#32a7a0" stroke-width="2" stroke-linecap="round"/></svg>
+      <BrandMark theme="light"/>
+    </a>
+    <nav class="ed-navlinks" id="ed-menu" aria-label="Financial services marketing page"><a href="#practices">Who we serve</a><a href="#intake">Client journey</a><a href="#automation">CRM &amp; follow-up</a><a href="#planner">Lead planner</a><a href="#guides">Guides</a><a class="ed-navcta" href={booking} target="_blank" rel="noopener noreferrer">Let's Talk ↗</a></nav>
+    <button class="ed-menu-btn" id="ed-menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="ed-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="ed-hero"><div class="ed-wrap ed-hero-grid"><div class="ed-hero-copy"><p class="ed-kicker"><span></span> LEADSFLO / FINANCIAL SERVICES MARKETING</p><h1>More qualified financial leads. <em>Stronger client relationships.</em></h1><p>SEO, Google Ads, conversion-focused pages and connected CRM workflows for US financial advisors, wealth management firms, accounting practices and fintech teams. Built for trust, fit and considered decisions.</p><div class="ed-actions"><a class="ed-btn ed-btn-gold" href={booking} target="_blank" rel="noopener noreferrer">Discuss your acquisition strategy ↗</a><a class="ed-link" href="#intake">Explore the client journey ↓</a></div><div class="ed-hero-note">Measure qualified conversations—not inflated lead counts or invented financial returns.</div></div><div class="ed-campus" aria-label="Conceptual financial services client acquisition dashboard"><div class="ed-campus-top"><span>CLIENT ACQUISITION / WORKFLOW</span><span class="ed-live"><i></i> ILLUSTRATIVE</span></div><svg viewBox="0 0 620 430" role="img" aria-label="Illustrative financial services inquiry journey from search to qualified consultation, not real campaign results"><defs><linearGradient id="finDash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#132f4c"/><stop offset="1" stop-color="#08192e"/></linearGradient><linearGradient id="finLine" x1="0" y1="0" x2="1"><stop stop-color="#d1ad70"/><stop offset="1" stop-color="#56c7bd"/></linearGradient></defs><rect width="620" height="430" fill="url(#finDash)"/><g opacity=".13" stroke="#bad5df"><path d="M0 90H620M0 180H620M0 270H620M0 360H620M80 0V430M180 0V430M280 0V430M380 0V430M480 0V430M580 0V430"/></g><text x="36" y="56" font-size="15" fill="#d9bd86" letter-spacing="3">CLIENT ACQUISITION</text><text x="36" y="89" font-size="22" font-weight="700" fill="#f5f8f8">From discovery to conversation</text><g fill="#173b56" stroke="#57798e" stroke-width="1.5"><rect x="32" y="131" width="160" height="112" rx="13"/><rect x="230" y="131" width="160" height="112" rx="13"/><rect x="428" y="131" width="160" height="112" rx="13"/></g><g font-size="12" letter-spacing="1" fill="#a5c1cb"><text x="49" y="162">DISCOVERY</text><text x="247" y="162">QUALIFICATION</text><text x="445" y="162">CONSULTATION</text></g><g font-size="21" font-weight="700" fill="#ffffff"><text x="49" y="207">Buyer intent</text><text x="247" y="207">Fit + consent</text><text x="445" y="207">Next step</text></g><g fill="none" stroke="url(#finLine)" stroke-width="4" stroke-linecap="round"><path d="M192 188H230"/><path d="M390 188H428"/><path d="M43 322C126 292 171 338 242 303S361 310 419 285 508 313 576 272"/></g><g fill="#eccb95"><circle cx="192" cy="188" r="5"/><circle cx="390" cy="188" r="5"/><circle cx="576" cy="272" r="6"/></g><text x="37" y="375" font-size="15" fill="#dbeaf0">SEO • Paid search • Landing pages • CRM</text><text x="37" y="404" font-size="12" fill="#89adb8">Conceptual flow · no financial results or performance claims</text></svg><div class="ed-campus-bottom"><span>DISCOVERY → QUALIFICATION → FOLLOW-UP → CONSULTATION</span><span>LF / FIN—01</span></div></div></div></section>
+
+<div class="ed-marquee" aria-label="Financial services marketing capabilities"><div class="ed-marquee-track" aria-hidden="true">{Array.from({length:6},()=>(<div class="ed-marquee-group"><span>◆ Financial SEO</span><span>✦ Google Ads &amp; PPC</span><span>◇ Qualified Consultations</span><span>✧ Fintech Acquisition</span><span>▣ CRM &amp; Lead Routing</span><span>◈ Compliance-aware Content</span></div>))}</div></div>
+<section class="ed-section ed-cream" id="services"><div class="ed-wrap"><div class="ed-heading"><div><p class="ed-eyebrow">THE CONNECTED CLIENT ACQUISITION SYSTEM</p><h2>Not just more leads. More relevant conversations.</h2></div><p>Combine clear positioning, search demand, useful content and a thoughtful path from inquiry to consultation. All messaging remains subject to client review and applicable rules.</p></div><div class="saas-services"><button type="button" class="saas-service" data-service="0" aria-pressed="true"><span class="ed-capability-icon">⌕</span><h3>Financial Services SEO</h3><p>Reach relevant prospects researching services and qualifications.</p><span class="saas-service-more">Explore capability ↗</span></button>
+<button type="button" class="saas-service" data-service="1" aria-pressed="false"><span class="ed-capability-icon">↗</span><h3>Google Ads & PPC</h3><p>Connect intent-led searches with accurate, reviewed landing pages.</p><span class="saas-service-more">Explore capability ↗</span></button>
+<button type="button" class="saas-service" data-service="2" aria-pressed="false"><span class="ed-capability-icon">◇</span><h3>Conversion Pages</h3><p>Make expertise, services and next steps clear without overpromising.</p><span class="saas-service-more">Explore capability ↗</span></button>
+<button type="button" class="saas-service" data-service="3" aria-pressed="false"><span class="ed-capability-icon">▣</span><h3>Fintech Acquisition</h3><p>Align product signups, demos and onboarding with buyer needs.</p><span class="saas-service-more">Explore capability ↗</span></button>
+<button type="button" class="saas-service" data-service="4" aria-pressed="false"><span class="ed-capability-icon">⟳</span><h3>CRM & Follow-up</h3><p>Route consented inquiries and manage longer consideration cycles.</p><span class="saas-service-more">Explore capability ↗</span></button>
+<button type="button" class="saas-service" data-service="5" aria-pressed="false"><span class="ed-capability-icon">◎</span><h3>Lead Quality Measurement</h3><p>Track fit-qualified inquiries and completed consultations.</p><span class="saas-service-more">Explore capability ↗</span></button></div><div class="saas-service-panel" id="service-detail" aria-live="polite"><span id="service-eyebrow">CAPABILITY 01 / FINANCIAL SEO</span><h3 id="service-title">Get found by the right prospective clients.</h3><p id="service-copy">Build useful pages for services, locations and buyer questions with transparent information and an appropriate contact path.</p><a href={booking} target="_blank" rel="noopener noreferrer">Discuss this capability ↗</a></div></div></section>
+
+<section class="ed-section ed-light" id="practices"><div class="ed-wrap"><div class="ed-heading"><div><p class="ed-eyebrow">01 / BUSINESS MODEL FIT</p><h2>Different firms. Different client decisions.</h2></div><p>Select a financial business type to explore a relevant acquisition approach. All messaging must fit approved services and qualifications.</p></div><div class="ed-program-grid"><div class="ed-program-options" role="group" aria-label="Financial service business types"><button class="ed-program active" data-program="advisor" aria-pressed="true"><span>01 / INDEPENDENT ADVISORS</span><strong>Financial Advisors & RIAs</strong><small>Qualified introductory conversations</small></button>
+<button class="ed-program " data-program="wealth" aria-pressed="false"><span>02 / PRIVATE WEALTH</span><strong>Wealth Management Firms</strong><small>Relationship-focused inquiries</small></button>
+<button class="ed-program " data-program="fintech" aria-pressed="false"><span>03 / FINANCIAL TECHNOLOGY</span><strong>Fintech Companies</strong><small>Relevant users, trials and demos</small></button>
+<button class="ed-program " data-program="accounting" aria-pressed="false"><span>04 / TAX & ACCOUNTING</span><strong>Accounting & CPA Firms</strong><small>More fit-qualified business inquiries</small></button>
+<button class="ed-program " data-program="lending" aria-pressed="false"><span>05 / LENDING SERVICES</span><strong>Lending & Mortgage Providers</strong><small>Appropriate eligible inquiries</small></button>
+<button class="ed-program " data-program="insurance" aria-pressed="false"><span>06 / RISK & PROTECTION</span><strong>Insurance Professionals</strong><small>Relevant coverage conversations</small></button></div><div class="ed-program-detail" aria-live="polite"><p class="ed-eyebrow">CLIENT ACQUISITION BLUEPRINT / <span id="ed-program-number">01</span></p><div class="ed-program-symbol" id="ed-program-symbol" aria-hidden="true">▥</div><h3 id="ed-program-title">Financial Advisors &amp; RIAs</h3><p id="ed-program-description">Reach people looking for advice your firm is authorized to provide.</p><div class="ed-detail-line"><span>CHANNEL STRATEGY</span><strong id="ed-program-ads">Location and expertise pages, relevant search and trust-first content</strong></div><div class="ed-detail-line"><span>LEAD FIT</span><strong id="ed-program-fit">Service fit, location and inquiry purpose</strong></div><div class="ed-detail-line"><span>NEXT STEP</span><strong id="ed-program-action">Route consented inquiries to appropriate staff</strong></div><a href={booking} target="_blank" rel="noopener noreferrer">Discuss your firm’s strategy ↗</a></div></div></div></section>
+
+<section class="ed-section ed-navy" id="intake"><div class="ed-wrap"><div class="ed-heading"><div><p class="ed-eyebrow">02 / PROSPECT-TO-CONSULTATION JOURNEY</p><h2>Not every click is a qualified prospect.</h2></div><p>Explore the six stages of a considered client-acquisition journey. Review, suitability and consent matter along the way.</p></div><div class="ed-journey"><div class="ed-steps" role="group" aria-label="Financial prospect journey"><button class="ed-step active" data-stage="0" aria-pressed="true"><span>01</span><strong>Discover</strong></button><button class="ed-step " data-stage="1" aria-pressed="false"><span>02</span><strong>Evaluate</strong></button><button class="ed-step " data-stage="2" aria-pressed="false"><span>03</span><strong>Inquire</strong></button><button class="ed-step " data-stage="3" aria-pressed="false"><span>04</span><strong>Qualify</strong></button><button class="ed-step " data-stage="4" aria-pressed="false"><span>05</span><strong>Consult</strong></button><button class="ed-step " data-stage="5" aria-pressed="false"><span>06</span><strong>Nurture</strong></button></div><div class="ed-stage-detail" aria-live="polite"><span id="ed-stage-kicker">STAGE 01 / DISCOVER</span><h3 id="ed-stage-title">Reach people researching a relevant financial service.</h3><p id="ed-stage-body">Service-specific SEO and properly targeted search campaigns help qualified prospects find you.</p><div class="ed-stage-metric"><span>WHAT TO REVIEW</span><strong id="ed-stage-metric">Relevant search and qualified site traffic</strong></div></div></div></div></section>
+
+<section class="ed-section ed-cream" id="automation"><div class="ed-wrap"><div class="ed-heading"><div><p class="ed-eyebrow">03 / RESPONSIBLE CRM &amp; FOLLOW-UP</p><h2>A stronger handoff from inquiry to your team.</h2></div><p>Keep marketing intake focused on contact and service fit. Sensitive financial details belong in approved secure processes, not general lead forms.</p></div><div class="ed-automation-grid"><article tabindex="0"><span class="ed-capability-icon">◎</span><h3>Appropriate inquiry</h3><p>Clear service interest, basic contact information and relevant consent.</p></article><article tabindex="0"><span class="ed-capability-icon">◇</span><h3>Reviewed qualification</h3><p>Route inquiries based on firm-defined criteria and services.</p></article><article tabindex="0"><span class="ed-capability-icon">↺</span><h3>Consented follow-up</h3><p>Coordinate human conversations and permission-based reminders.</p></article><article tabindex="0"><span class="ed-capability-icon">▣</span><h3>Meaningful measurement</h3><p>Distinguish clicks from appropriate consultations and customers.</p></article></div><div class="ed-automation-demo"><div class="ed-demo-top"><span>FINANCIAL INQUIRY / CONCEPT DEMO</span><i>ILLUSTRATIVE</i></div><div class="ed-chat"><p class="ed-chat-user">I'd like to learn whether your firm can help with business financial planning.</p><p class="ed-chat-bot">Our team can explain the services offered and arrange an introductory conversation. Please avoid sharing sensitive financial information in this chat.</p></div><p>Illustrative exchange only. No live client data, advisory recommendation or CRM integration is represented.</p></div></div></section>
+
+<section class="ed-section ed-light" id="planner"><div class="ed-wrap ed-planner-grid"><div><p class="ed-eyebrow">04 / QUALIFIED LEAD PLANNER</p><h2>Explore an illustrative path from interest to conversation.</h2><p class="ed-muted">Adjust hypothetical acquisition-stage assumptions. These are not benchmarks, projections of client acquisition, returns, revenue or assets under management.</p><div class="ed-controls"><label for="ed-inquiries">Monthly relevant site visits <output id="ed-inquiries-label">500</output></label><input id="ed-inquiries" type="range" min="50" max="1000" step="25" value="500"/><label for="ed-qualified">Visitors making an inquiry <output id="ed-qualified-label">40%</output></label><input id="ed-qualified" type="range" min="5" max="90" step="5" value="40"/><label for="ed-contacted">Inquiries meeting your fit criteria <output id="ed-contacted-label">35%</output></label><input id="ed-contacted" type="range" min="5" max="90" step="5" value="35"/><label for="ed-applications">Qualified prospects completing consultation <output id="ed-applications-label">25%</output></label><input id="ed-applications" type="range" min="5" max="80" step="5" value="25"/></div></div><div class="ed-planner-result" aria-live="polite"><span>HYPOTHETICAL MONTHLY SCENARIO</span><div><small>Relevant visits</small><strong id="ed-out-inquiries">500</strong></div><div><small>Inquiry forms</small><strong id="ed-out-qualified">200</strong></div><div><small>Fit-qualified prospects</small><strong id="ed-out-reached">70</strong></div><div class="ed-result-highlight"><small>Potential completed consultations</small><strong id="ed-out-applications">18</strong></div><p>Illustrative arithmetic only; no lead, client, investment outcome or revenue guarantees.</p></div></div></section>
+
+<section class="ed-section ed-navy ed-principles"><div class="ed-wrap"><div class="ed-heading"><div><p class="ed-eyebrow">05 / BUILT FOR TRUST</p><h2>Responsible marketing is part of the client journey.</h2></div></div><div class="ed-experience"><div class="ed-experience-number" aria-hidden="true">01 <small>REVIEWED ACQUISITION</small></div><div><h3>Clear information. Considered inquiries. Human accountability.</h3><p>LeadsFlo connects search, paid acquisition, landing pages and appropriate follow-up. Financial firms control service eligibility, claims, compliance approvals, advice, sales and client onboarding.</p><p>We don't promise investments, clients, assets or revenue, provide legal compliance certification, or present illustrative calculator values as real results. Content and integrations are subject to client policies and applicable requirements.</p></div></div></div></section>
+
+<section class="ed-section ed-cream" id="guides"><div class="ed-wrap"><div class="ed-heading"><div><p class="ed-eyebrow">06 / FINANCIAL MARKETING INSIGHTS</p><h2>Practical guides to responsible client acquisition.</h2></div><p>Advisor lead generation, financial SEO, fintech acquisition, accounting marketing and helpful CRM follow-up.</p></div><div class="ed-guides"><a class="ed-guide" href="/insights/financial-services-seo/"><span>01 / FINANCIAL SERVICES GUIDE</span><h3>Financial Services SEO: How to Attract Qualified Clients</h3><p>A practical SEO strategy for financial services, including search intent, useful service pages, trust signals and qualified inquiry measurement.</p><strong>Read the guide ↗</strong></a><a class="ed-guide" href="/insights/financial-advisor-lead-generation/"><span>02 / FINANCIAL SERVICES GUIDE</span><h3>Financial Advisor Lead Generation: Better Prospects and Consultations</h3><p>How financial advisors can connect relevant search demand, consultation forms, qualification and responsible CRM follow-up.</p><strong>Read the guide ↗</strong></a><a class="ed-guide" href="/insights/fintech-marketing-strategy/"><span>03 / FINANCIAL SERVICES GUIDE</span><h3>Fintech Marketing Strategy: SEO, PPC and Customer Acquisition</h3><p>A fintech marketing framework for positioning, search, paid acquisition, onboarding conversion and consent-aware lifecycle measurement.</p><strong>Read the guide ↗</strong></a><a class="ed-guide" href="/insights/accounting-firm-marketing/"><span>04 / FINANCIAL SERVICES GUIDE</span><h3>Accounting Firm Marketing: Generate More Qualified Client Inquiries</h3><p>Marketing for CPA and accounting firms: service positioning, local SEO, business-client inquiries and consultation workflows.</p><strong>Read the guide ↗</strong></a><a class="ed-guide" href="/insights/financial-services-digital-marketing/"><span>05 / FINANCIAL SERVICES GUIDE</span><h3>Financial Services Digital Marketing: Building Trust and Conversions</h3><p>How financial firms can combine paid media, SEO, landing pages and CRM processes with appropriate approvals and trustworthy reporting.</p><strong>Read the guide ↗</strong></a></div></div></section>
+
+<section class="ed-section ed-light" id="faq"><div class="ed-wrap ed-faq-grid"><div><p class="ed-eyebrow">07 / COMMON QUESTIONS</p><h2>What financial-services teams ask us.</h2></div><div class="ed-faqs">{faq.map(item=>(<details><summary>{item.q}</summary><p>{item.a}</p></details>))}</div></div></section>
+
+<section class="ed-close"><div class="ed-wrap"><p class="ed-eyebrow">LEADSFLO / FINANCIAL SERVICES</p><h2>Turn relevant interest into qualified financial conversations.</h2><p>Tell us about your service area, audience, qualification requirements and approval workflow.</p><a class="ed-btn ed-btn-gold" href={booking} target="_blank" rel="noopener noreferrer">Book a financial marketing conversation ↗</a></div></section>
+</main>
+
+<footer class="ed-footer"><div class="ed-wrap ed-footer-grid"><div><a class="ed-brand ed-footer-brand" href="/" aria-label="LeadsFlo home"><svg class="ed-cap finance-emblem" viewBox="0 0 52 52" aria-hidden="true" focusable="false"><rect x="5" y="5" width="42" height="42" rx="11" fill="none" stroke="#bc9556" stroke-width="2.3"/><path d="M12 35h28M15 23h5v12h-5zm9-7h5v19h-5zm9-10v29h5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linejoin="round"/><path d="M12 15 24 9l9 3 8-7" fill="none" stroke="#32a7a0" stroke-width="2" stroke-linecap="round"/></svg><BrandMark theme="light"/></a><p>Search visibility, qualified financial-service inquiries, conversion and responsible CRM follow-up for US businesses.</p><a href={booking} target="_blank" rel="noopener noreferrer">Let's Talk ↗</a></div><div><strong>SERVICES</strong><a href="/performance-marketing/">Performance Marketing</a><a href="/websites-funnels/">Websites &amp; Funnels</a><a href="/crm-automation/">CRM &amp; Automation</a><a href="/appointment-setting/">Appointment Setting</a></div><div><strong>EXPLORE</strong><a href="/industries/">All Industries</a><a href="/insights/">Insights</a><a href="/our-approach/">Our Approach</a><a href="/contact/">Contact</a></div></div><div class="ed-wrap ed-footer-bottom"><span>© {new Date().getFullYear()} LeadsFlo</span><span><a href="/privacy-policy/">Privacy</a> · <a href="/terms-and-conditions/">Terms</a></span></div></footer>
+
+<a class="ed-mobile-cta" href={booking} target="_blank" rel="noopener noreferrer">Discuss financial marketing ↗</a>
+
+<script is:inline>
+(()=>{
+ const header=document.getElementById('ed-header');
+ const menuBtn=document.getElementById('ed-menu-btn');
+ const menu=document.getElementById('ed-menu');
+ menuBtn?.addEventListener('click',()=>{
+   const open=menu.classList.toggle('open');
+   menuBtn.setAttribute('aria-expanded',String(open));
+   menuBtn.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+ });
+ menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+   menu.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false');
+   menuBtn.setAttribute('aria-label','Open navigation');
+ }));
+ document.addEventListener('keydown',e=>{
+   if(e.key==='Escape'){menu?.classList.remove('open');menuBtn?.setAttribute('aria-expanded','false')}
+ });
+ let last=window.scrollY;
+ window.addEventListener('scroll',()=>{
+   const now=window.scrollY;
+   if(now<65 || header.contains(document.activeElement) || Math.abs(now-last)<9){if(now<65)header.classList.remove('hidden');last=now;return}
+   header.classList.toggle('hidden',now>last);last=now;
+ },{passive:true});
+
+  const programs={"advisor": ["01", "▥", "Financial Advisors & RIAs", "Reach people looking for the advice your firm is authorized to provide.", "Location and expertise pages, relevant search and trust-first content", "Service fit, location and inquiry purpose", "Route consented inquiries to appropriate staff", "Completed appropriate consultations"], "wealth": ["02", "◇", "Wealth Management Firms", "Support a longer consideration journey with clear positioning and documented claims.", "Educational content, relevant search and firm-specific landing pages", "Service eligibility, needs and appropriate next steps", "Human review and scheduled introductions", "Qualified first meetings"], "fintech": ["03", "◈", "Fintech Companies", "Match acquisition goals to what your financial product actually does.", "Product/category SEO and intent-led paid acquisition", "Product use case, eligibility and readiness", "Opt-in onboarding and qualified demo routing", "Qualified signups or accepted demos"], "accounting": ["04", "▣", "Accounting & CPA Firms", "Help individuals and businesses find the right accounting practice.", "Local SEO, service pages and seasonal search campaigns", "Entity type, service needs and deadlines", "Responsive consultation scheduling", "Completed qualified consultations"], "lending": ["05", "⌂", "Lending & Mortgage Providers", "Build clear information journeys without implying guaranteed approval.", "Relevant paid search and educational landing pages", "Service area, stated needs and appropriate eligibility", "Secure handoff to authorized staff", "Suitable inquiry handoffs"], "insurance": ["06", "◎", "Insurance Professionals", "Help prospects research options and request suitable conversations.", "Coverage-topic content, search and contact-page clarity", "Needs, area served and next-step suitability", "Consented inquiry routing and follow-up", "Completed appropriate consultations"]};
+ const pids=['ed-program-number','ed-program-symbol','ed-program-title','ed-program-description','ed-program-ads','ed-program-fit','ed-program-action'];
+ function setProgram(key){
+   if(!programs[key])return;
+   programs[key].forEach((v,i)=>document.getElementById(pids[i]).textContent=v);
+   document.querySelectorAll('[data-program]').forEach(btn=>{
+     const selected=btn.dataset.program===key;
+     btn.classList.toggle('active',selected);btn.setAttribute('aria-pressed',String(selected));
+   });
+ }
+ document.querySelectorAll('[data-program]').forEach(btn=>{
+   btn.addEventListener('click',()=>setProgram(btn.dataset.program));
+   btn.addEventListener('focus',()=>setProgram(btn.dataset.program));
+   btn.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')setProgram(btn.dataset.program)});
+ });
+
+  const stages=[["STAGE 01 / DISCOVER", "Reach people researching a relevant financial service.", "Service-specific SEO and properly targeted search campaigns help qualified prospects find you.", "Relevant search and qualified site traffic"], ["STAGE 02 / EVALUATE", "Establish clarity and credibility before an inquiry.", "Explain services, qualifications and material considerations using reviewed, accurate messaging.", "Engagement with relevant service content"], ["STAGE 03 / INQUIRE", "Make the next step clear without collecting unnecessary data.", "Use short, consent-aware inquiry paths and direct prospects to approved staff.", "Relevant contact submissions"], ["STAGE 04 / QUALIFY", "Determine whether the request fits your service.", "Route the inquiry based on stated needs, service area and firm-defined qualification criteria.", "Fit-qualified inquiries"], ["STAGE 05 / CONSULT", "Connect prospects to the appropriate conversation.", "Coordinate scheduling and human follow-up rather than assuming every inquiry becomes a client.", "Completed qualified consultations"], ["STAGE 06 / NURTURE", "Stay useful through the longer decision process.", "Use appropriate opt-in education and reviewable communications.", "Consented engagement and next steps"]];
+ function setStage(n){
+   const s=stages[n];if(!s)return;
+   ['ed-stage-kicker','ed-stage-title','ed-stage-body','ed-stage-metric'].forEach((id,i)=>document.getElementById(id).textContent=s[i]);
+   document.querySelectorAll('[data-stage]').forEach(btn=>{
+     const active=Number(btn.dataset.stage)===n;
+     btn.classList.toggle('active',active);btn.setAttribute('aria-pressed',String(active));
+   });
+ }
+ document.querySelectorAll('[data-stage]').forEach(btn=>{
+   btn.addEventListener('click',()=>setStage(Number(btn.dataset.stage)));
+   btn.addEventListener('focus',()=>setStage(Number(btn.dataset.stage)));
+   btn.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')setStage(Number(btn.dataset.stage))});
+ });
+
+
+ const capabilities = [["CAPABILITY 01 / FINANCIAL SEO", "Get found by relevant prospective clients.", "Build reviewed pages about actual services, geographic reach and useful buyer questions, with an appropriate consultation path."], ["CAPABILITY 02 / PAID SEARCH", "Bring relevant searches to accurate offers.", "Use carefully structured search campaigns, negatives and client-approved copy with clear disclosures when required."], ["CAPABILITY 03 / CONVERSION PAGES", "Make it easy to request the right next step.", "Explain services and credentials, offer accessible inquiry routes and avoid collecting sensitive financial data."], ["CAPABILITY 04 / FINTECH ACQUISITION", "Connect product discovery to the correct action.", "Match search and landing-page content to real product use cases, eligibility and authorized onboarding."], ["CAPABILITY 05 / CRM FOLLOW-UP", "Keep inquiries moving responsibly.", "Route consented inquiries to qualified staff and send appropriate reminders or educational follow-up."], ["CAPABILITY 06 / QUALITY MEASUREMENT", "Measure fit, not vanity metrics.", "Separate clicks and form fills from qualified conversations and verifiable outcomes where available."]];
+ function setCapability(i){
+  const v=capabilities[i]; if(!v)return;
+  ['saas-service-label','saas-service-title','saas-service-body'].forEach((id,j)=>document.getElementById(id).textContent=v[j]);
+  document.querySelectorAll('[data-service]').forEach(btn=>{const on=Number(btn.dataset.service)===i;btn.classList.toggle('active',on);btn.setAttribute('aria-pressed',String(on));});
+ }
+ document.querySelectorAll('[data-service]').forEach(btn=>{
+  const choose=()=>setCapability(Number(btn.dataset.service));
+  btn.addEventListener('click',choose);btn.addEventListener('focus',choose);
+  btn.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')choose()});
+ });
+
+ const ids=['ed-inquiries','ed-qualified','ed-contacted','ed-applications'];
+ function updatePlanner(){
+   const [a,b,c,d]=ids.map(id=>Number(document.getElementById(id).value));
+   ids.forEach((id,i)=>{
+     document.getElementById(id+'-label').textContent=[a,b+'%',c+'%',d+'%'][i];
+   });
+   const qualified=Math.round(a*b/100), reached=Math.round(qualified*c/100), applications=Math.round(reached*d/100);
+   document.getElementById('ed-out-inquiries').textContent=a.toLocaleString();
+   document.getElementById('ed-out-qualified').textContent=qualified.toLocaleString();
+   document.getElementById('ed-out-reached').textContent=reached.toLocaleString();
+   document.getElementById('ed-out-applications').textContent=applications.toLocaleString();
+ }
+ ids.forEach(id=>document.getElementById(id)?.addEventListener('input',updatePlanner));
+ updatePlanner();
+
+ document.querySelectorAll('.ed-faqs details').forEach(el=>{
+   el.addEventListener('pointerenter',e=>{
+     if(e.pointerType==='mouse')el.open=true;
+   });
+  el.addEventListener('pointerleave',e=>{
+    if(e.pointerType==='mouse')el.open=false;
+  });
+ });
+})();
+
+</script>
+
+<style is:global>
+:root{scroll-behavior:smooth}
+.ed-page{margin:0;background:#f8f9fb;color:#112744;font-family:Inter,"Plus Jakarta Sans",sans-serif}
+.ed-page *{box-sizing:border-box}
+.ed-page a{transition:color .2s ease,background .2s ease,transform .2s ease}
+.ed-page button,.ed-page input{font:inherit}
+.ed-page button{cursor:pointer}
+.ed-page :is(a,button,input,summary):focus-visible{outline:3px solid #19b9db;outline-offset:4px}
+.ed-wrap{width:min(1160px,calc(100% - 44px));margin-inline:auto}
+.ed-header{position:sticky;top:0;z-index:100;background:#fffaf3;border-bottom:1px solid #eadfcf;transition:transform .28s ease}
+.ed-header.hidden{transform:translateY(-110%)}
+.ed-nav{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.ed-brand{display:inline-flex;align-items:center;gap:7px;position:relative;flex-shrink:0;text-decoration:none}
+.ed-brand .ed-cap{
+ position:absolute;
+ left:calc(99px * var(--ed-logo-scale));
+ top:calc(-1px * var(--ed-logo-scale));
+ width:calc(28px * var(--ed-logo-scale));
+ height:calc(26px * var(--ed-logo-scale));
+ z-index:2;
+ transform-origin:50% 85%;
+ transform:rotate(6deg);
+ transition:transform .35s ease;
+}
+.ed-brand{--ed-logo-scale:1;padding-top:calc(12px * var(--ed-logo-scale))}
+.ed-brand .lf-brand-v4{
+ --brand-text:#142d49;
+ --brand-flo:#147f9d;
+ --brand-period:#d6a45b;
+ --brand-plane:#147f9d;
+ font-size:calc(35px * var(--ed-logo-scale));
+}
+.ed-brand .lf-brand-v4__current1{stroke:#147f9d}
+.ed-brand .lf-brand-v4__current2{stroke:#d6a45b}
+.ed-brand .lf-brand-v4__pulse{stroke:#67d9e8}
+.ed-footer-brand .lf-brand-v4{
+ --brand-text:#f5f7fa;
+ --brand-flo:#91dfed;
+ --brand-period:#f0c785;
+ --brand-plane:#91dfed;
+}
+.ed-footer-brand .lf-brand-v4__current1{stroke:#91dfed}
+.ed-footer-brand .lf-brand-v4__current2{stroke:#f0c785}
+.ed-footer-brand .lf-brand-v4__pulse{stroke:#67d9e8}
+.ed-brand:hover .ed-cap,.ed-brand:focus-visible .ed-cap{transform:rotate(0deg)}
+.ed-brand :is(svg:not(.ed-cap),.lf-brand-v4){max-width:176px}
+.ed-navlinks{display:flex;align-items:center;gap:23px}
+.ed-navlinks>a{font-size:13px;color:#20354c;font-weight:800;text-decoration:none;white-space:nowrap}
+.ed-navlinks>a:hover{color:#147c9a}
+.ed-navlinks .ed-navcta{background:#102845;color:#fff;padding:15px 18px;border-radius:6px}
+.ed-menu-btn{display:none;background:none;border:0;width:48px;height:48px;padding:12px;flex-direction:column;justify-content:space-around}
+.ed-menu-btn span{height:3px;background:#102845;width:100%;border-radius:4px}
+.ed-hero{background:linear-gradient(135deg,#08172e,#123357);color:#f9fbff;padding:clamp(70px,8vw,122px) 0;overflow:hidden;position:relative}
+.ed-hero:before{content:"";position:absolute;width:650px;height:650px;right:-350px;top:-230px;border:1px solid #80cee331;border-radius:50%;box-shadow:0 0 0 65px #80cee30a,0 0 0 145px #80cee308;pointer-events:none}
+.ed-hero-grid{position:relative;display:grid;grid-template-columns:1.06fr .94fr;align-items:center;gap:48px}
+.ed-kicker,.ed-eyebrow{font-size:11px;letter-spacing:.18em;font-weight:850;color:#c18c43}
+.ed-kicker{color:#f1cd91}.ed-kicker span{display:inline-block;width:18px;height:2px;background:#f0c17a;vertical-align:middle}
+.ed-hero h1{font-family:"Plus Jakarta Sans",sans-serif;font-size:clamp(38px,4.6vw,67px);line-height:1.09;letter-spacing:-.06em;margin:23px 0}
+.ed-hero h1 em{color:#91ddec;font-style:normal}
+.ed-hero-copy>p:not(.ed-kicker){font-size:17px;line-height:1.85;color:#c9d9e9;max-width:610px}
+.ed-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:33px}
+.ed-btn{display:inline-flex;align-items:center;justify-content:center;padding:17px 23px;border-radius:6px;font-size:13px;font-weight:850;text-decoration:none}
+.ed-btn-gold{background:#f0c785;color:#183048}
+.ed-btn-gold:hover{background:#ffe2aa;transform:translateY(-2px)}
+.ed-link{color:#e7f6ff;font-weight:800;font-size:13px;text-decoration:none}
+.ed-hero-note{font-size:12px;color:#a9c4d8;margin-top:27px}
+.ed-campus{border-radius:16px;border:1px solid #5e849c;background:#102e4d;overflow:hidden;box-shadow:0 40px 80px #020d2340;transform:perspective(1300px) rotateY(-3deg)}
+.ed-campus>svg{display:block;width:100%;height:auto}
+.ed-campus-top,.ed-campus-bottom{display:flex;justify-content:space-between;gap:12px;padding:17px 20px;background:#09223e;color:#a7d8e7;font-size:10px;font-weight:800;letter-spacing:.1em}
+.ed-live{color:#f4d19a}.ed-live i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#67dccd;margin-right:5px}
+.ed-route{animation:edRoute 8s linear infinite}
+.ed-pulse{transform-origin:310px 306px;animation:edPulse 2.4s ease-in-out infinite}
+@keyframes edRoute{to{stroke-dashoffset:-144}}
+@keyframes edPulse{50%{transform:scale(1.55);opacity:.12}}
+.ed-marquee{overflow:hidden;background:#0c2541;padding:19px 0;border-block:1px solid #24536a}
+.ed-marquee-track{display:flex;width:max-content;animation:edScroll 34s linear infinite}
+.ed-marquee-group{display:flex;gap:12px;flex-shrink:0;padding-right:12px}
+.ed-marquee-group span{background:#fff4df;border:1px solid #e9cba0;border-radius:7px;color:#213c55;padding:14px 22px;font-size:15px;font-weight:850;white-space:nowrap}
+.ed-marquee:hover .ed-marquee-track,.ed-marquee:focus-within .ed-marquee-track{animation-play-state:paused}
+@keyframes edScroll{to{transform:translateX(-16.6666667%)}}
+.ed-section{padding:clamp(72px,8vw,120px) 0;position:relative;scroll-margin-top:90px}
+.ed-light{background:#f8fafc}.ed-cream{background:#f8f2e9}.ed-navy{background:#0a1e38;color:#fff}
+.ed-heading{display:grid;grid-template-columns:1.15fr .65fr;align-items:end;gap:44px;margin-bottom:43px}
+.ed-heading h2,.ed-section h2,.ed-close h2{font-family:"Plus Jakarta Sans",sans-serif;font-size:clamp(31px,4vw,52px);line-height:1.13;letter-spacing:-.052em;margin:14px 0 0;max-width:800px}
+.ed-heading>p{font-size:15px;line-height:1.85;color:#596b7c;margin:0}
+.ed-navy .ed-heading>p{color:#b4cadb}
+.ed-program-grid{display:grid;grid-template-columns:.93fr 1.07fr;gap:22px}
+.ed-program-options{display:grid;gap:12px}
+.ed-program{display:flex;flex-direction:column;text-align:left;gap:8px;padding:24px 26px;background:#fff;color:#17304a;border:1px solid #dce3eb;border-radius:11px;transition:background .2s,border-color .2s,transform .2s}
+.ed-program:hover,.ed-program.active{border-color:#167ea2;background:#eaf7fa;transform:translateX(4px)}
+.ed-program span{color:#1485a3;font-size:10px;font-weight:850;letter-spacing:.12em}
+.ed-program strong{font-size:21px;letter-spacing:-.035em}
+.ed-program small{font-size:13px;color:#5d7484}
+.ed-program-detail{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;background:#113957;color:#fff;padding:clamp(26px,4vw,54px);border-radius:15px;min-height:515px}
+.ed-program-detail .ed-eyebrow{color:#c6f0f6}
+.ed-program-symbol{font-size:83px;color:#efc683;margin:19px 0 4px}
+.ed-program-detail h3{font-size:clamp(29px,3vw,40px);letter-spacing:-.045em;line-height:1.14;margin:12px 0}
+.ed-program-detail>p:not(.ed-eyebrow){color:#cbdbe5;font-size:15px;line-height:1.8}
+.ed-detail-line{display:grid;grid-template-columns:125px 1fr;gap:15px;border-top:1px solid #ffffff30;padding:19px 0;width:100%}
+.ed-detail-line span,.ed-stage-metric span{color:#a0d4e3;letter-spacing:.1em;font-size:10px;font-weight:850}
+.ed-detail-line strong{font-size:13px;line-height:1.6;font-weight:650}
+.ed-program-detail>a{margin-top:auto;color:#f5d194;font-size:13px;font-weight:850}
+.ed-steps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}
+.ed-step{display:flex;flex-direction:column;align-items:flex-start;gap:17px;border:1px solid #386081;background:#14344e;color:#dce9f0;text-align:left;border-radius:9px;padding:21px 13px;transition:background .2s,border-color .2s}
+.ed-step span{font-size:12px;color:#94c7d4}
+.ed-step strong{font-size:14px}
+.ed-step:hover,.ed-step.active{background:#e8c890;color:#17304a;border-color:#e8c890}
+.ed-step.active span,.ed-step:hover span{color:#37516a}
+.ed-stage-detail{margin-top:18px;background:#102e4c;border:1px solid #2e5876;padding:clamp(27px,4vw,47px);border-radius:12px;min-height:260px}
+.ed-stage-detail>span{font-size:11px;color:#e9c48b;font-weight:850;letter-spacing:.12em}
+.ed-stage-detail h3{font-size:clamp(25px,2.7vw,35px);line-height:1.2;letter-spacing:-.045em;max-width:790px;margin:16px 0}
+.ed-stage-detail>p{color:#c5d8e5;line-height:1.8;max-width:790px}
+.ed-stage-metric{border-top:1px solid #45647a;margin-top:25px;padding-top:17px;display:flex;gap:20px;flex-wrap:wrap}
+.ed-stage-metric strong{color:#f1d29d;font-size:14px}
+.ed-automation-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.ed-automation-grid article{border:1px solid #e0d4c4;border-radius:12px;background:#fffcf7;padding:25px}
+.ed-capability-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:12px;background:#e0f5f7;color:#187d98;font-size:26px}
+.ed-automation-grid h3{color:#162f49;font-size:20px;letter-spacing:-.035em}
+.ed-automation-grid p{font-size:13px;line-height:1.8;color:#5b6979}
+.ed-automation-demo{margin-top:26px;background:#132e49;padding:28px;border-radius:13px;color:#fff}
+.ed-demo-top{display:flex;justify-content:space-between;gap:15px;font-size:11px;letter-spacing:.1em;font-weight:850;color:#f0cb92}
+.ed-demo-top i{font-style:normal;color:#a8c5d6}
+.ed-chat{display:grid;gap:13px;max-width:750px;margin-top:25px}
+.ed-chat p{padding:20px;border-radius:13px;line-height:1.8;font-size:14px;margin:0}
+.ed-chat-user{background:#e6f1f6;color:#19344f;justify-self:end;max-width:75%}
+.ed-chat-bot{background:#294d67;color:#fff;justify-self:start;max-width:85%}
+.ed-automation-demo>p{font-size:11px;color:#b6cadb;margin-top:23px}
+.ed-planner-grid{display:grid;grid-template-columns:1fr .85fr;gap:70px;align-items:center}
+.ed-muted{color:#647489;line-height:1.85;margin:25px 0}
+.ed-controls{display:grid;gap:14px;margin-top:34px}
+.ed-controls label{display:flex;justify-content:space-between;font-size:14px;font-weight:750}
+.ed-controls output{color:#127e97;font-weight:850}
+.ed-controls input{width:100%;accent-color:#127f9c;margin-bottom:13px}
+.ed-planner-result{background:#0d2946;color:#fff;padding:32px;border-radius:14px;box-shadow:0 25px 55px #082e4a26}
+.ed-planner-result>span{font-size:11px;font-weight:850;color:#cdeaf0;letter-spacing:.12em}
+.ed-planner-result>div{display:flex;justify-content:space-between;align-items:center;padding:21px 0;border-bottom:1px solid #456177}
+.ed-planner-result small{font-size:13px;color:#bed3df}
+.ed-planner-result strong{font-size:32px;color:#f0c785;letter-spacing:-.04em}
+.ed-planner-result .ed-result-highlight{background:#20445f;padding:18px;margin:10px -12px;border-radius:8px;border:none}
+.ed-planner-result .ed-result-highlight strong{font-size:47px}
+.ed-planner-result>p{color:#a9c3d5;font-size:12px;line-height:1.75}
+.ed-experience{display:grid;grid-template-columns:.34fr 1fr;gap:50px;border-top:1px solid #38617e;padding-top:34px;align-items:start}
+.ed-experience-number{font-size:clamp(80px,11vw,170px);font-weight:850;letter-spacing:-.08em;color:#f0c785;line-height:1}
+.ed-experience-number small{display:block;font-size:10px;letter-spacing:.12em;line-height:1.8;color:#b3d7e3}
+.ed-experience h3{font-size:28px;margin:0 0 17px}
+.ed-experience p{color:#bdcedb;line-height:1.9;max-width:700px}
+.ed-guides{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.ed-guide{display:flex;flex-direction:column;gap:12px;background:#fff;border:1px solid #e5d9c8;border-radius:12px;padding:27px;text-decoration:none;color:#18354f;min-height:260px;transition:transform .2s,border-color .2s}
+.ed-guide:hover{transform:translateY(-5px);border-color:#c68d47}
+.ed-guide span{font-size:10px;letter-spacing:.12em;color:#a2773e;font-weight:850}
+.ed-guide h3{font-size:23px;line-height:1.25;letter-spacing:-.04em;margin:8px 0 0}
+.ed-guide p{font-size:13px;line-height:1.75;color:#68788a}
+.ed-guide strong{font-size:12px;color:#177e97;margin-top:auto}
+.ed-faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px}
+.ed-faqs details{border-bottom:1px solid #dae3eb;padding:20px 5px}
+.ed-faqs summary{cursor:pointer;list-style:none;font-size:17px;font-weight:800;color:#172f47;display:flex;justify-content:space-between;gap:18px}
+.ed-faqs summary:after{content:"+";font-size:25px;color:#1686a3;font-weight:500}
+.ed-faqs details[open] summary:after{content:"−"}
+.ed-faqs details p{color:#576c7b;font-size:14px;line-height:1.85;margin:16px 0 0}
+.ed-close{background:linear-gradient(135deg,#143d5e,#0a203a);color:#fff;padding:95px 0}
+.ed-close h2{max-width:850px}
+.ed-close>div>p:not(.ed-eyebrow){color:#c6d7e3;line-height:1.8;max-width:700px;margin:30px 0}
+.ed-footer{background:#071628;padding:65px 0 25px;color:#dde8ef}
+.ed-footer-grid{display:grid;grid-template-columns:1.5fr .7fr .7fr;gap:60px}
+.ed-footer-brand{margin-bottom:20px}
+.ed-footer p{color:#aabccc;font-size:13px;line-height:1.9;max-width:400px}
+.ed-footer a{display:block;text-decoration:none;color:#dbe9ef;font-size:13px;margin-top:13px}
+.ed-footer .ed-brand{display:inline-flex}
+.ed-footer strong{color:#f0c785;font-size:11px;letter-spacing:.1em}
+.ed-footer-bottom{border-top:1px solid #2e4258;margin-top:45px;padding-top:23px;display:flex;justify-content:space-between;gap:20px;color:#a9bdce;font-size:12px}
+.ed-footer-bottom a{display:inline;color:#afc9d7}
+.ed-mobile-cta{display:none}
+@media(max-width:1050px){
+ .ed-navlinks{gap:12px}
+ .ed-navlinks>a{font-size:12px}
+ .ed-hero-grid{gap:28px}
+ .ed-automation-grid,.ed-guides{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:850px){
+ .ed-menu-btn{display:flex}
+ .ed-navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:#fffaf3;padding:20px 24px;border-bottom:1px solid #e6d8c5;box-shadow:0 25px 35px #081c2930;flex-direction:column;align-items:stretch;gap:0}
+ .ed-navlinks.open{display:flex}
+ .ed-navlinks>a{font-size:16px;padding:15px;border-bottom:1px solid #efe3d5}
+ .ed-navlinks .ed-navcta{text-align:center;margin-top:10px}
+ .ed-hero-grid,.ed-heading,.ed-program-grid,.ed-planner-grid,.ed-faq-grid{grid-template-columns:1fr}
+ .ed-heading{gap:15px}
+ .ed-campus{max-width:670px;transform:none}
+ .ed-steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .ed-planner-grid{gap:34px}
+ .ed-experience{grid-template-columns:1fr;gap:20px}
+ .ed-program-detail{min-height:unset}
+ .ed-footer-grid{grid-template-columns:1.3fr 1fr;gap:35px}
+}
+@media(max-width:560px){
+ .ed-wrap{width:calc(100% - 30px)}
+ .ed-nav{min-height:73px}
+ .ed-brand{--ed-logo-scale:.82}
+ .ed-brand :is(svg:not(.ed-cap),.lf-brand-v4){max-width:143px}
+ .ed-hero{padding:58px 0 65px}
+ .ed-hero h1{font-size:clamp(35px,9vw,44px)}
+ .ed-hero-copy>p:not(.ed-kicker){font-size:15px}
+ .ed-actions{align-items:stretch;flex-direction:column;gap:17px}
+ .ed-btn{width:100%}
+ .ed-campus-top,.ed-campus-bottom{font-size:8px;padding:12px}
+ .ed-section{padding:68px 0}
+ .ed-program{padding:20px}
+ .ed-detail-line{grid-template-columns:1fr;gap:6px}
+ .ed-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .ed-step{padding:14px;gap:8px}
+ .ed-automation-grid,.ed-guides,.ed-footer-grid{grid-template-columns:1fr}
+ .ed-automation-demo{padding:20px}
+ .ed-chat-user,.ed-chat-bot{max-width:100%}
+ .ed-planner-result{padding:23px}
+ .ed-experience-number{font-size:95px}
+ .ed-footer{padding-bottom:90px}
+ .ed-footer-bottom{flex-direction:column}
+ .ed-mobile-cta{display:flex;align-items:center;justify-content:center;position:fixed;z-index:90;bottom:0;left:0;right:0;min-height:60px;padding:12px 18px calc(12px + env(safe-area-inset-bottom));background:#f0c785;color:#17314b;text-align:center;text-decoration:none;font-weight:850;font-size:14px;box-shadow:0 -10px 30px #03182f2c}
+ .ed-page{padding-bottom:60px}
+}
+@media(prefers-reduced-motion:reduce){
+ :root{scroll-behavior:auto}
+ .ed-page *{animation:none!important;transition:none!important}
+}
+
+/* SAAS_MARKETING_V1 — midnight navy / electric blue / teal / pearl */
+.finance-page{background:#f5f8fc;color:#17314a}
+.finance-page .ed-header{background:#f8fbff;border-color:#d7e4f0}
+.finance-page .ed-navlinks>a{color:#203b56;font-size:15px}
+.finance-page .ed-navlinks .ed-navcta{background:#14395e;color:#fff}
+.finance-page .ed-hero{background:radial-gradient(ellipse at 80% 20%,#2766a24d,transparent 52%),linear-gradient(125deg,#07182e,#142f52)}
+.finance-page .ed-hero h1 em{color:#6de1db}
+.finance-page .ed-kicker,.finance-page .ed-eyebrow{color:#267faf}
+.finance-page .ed-hero .ed-kicker{color:#8ce5e2}
+.finance-page .ed-btn-gold,.finance-page .ed-mobile-cta{background:#75e0d9;color:#102d47}
+.finance-page .ed-btn-gold:hover{background:#a0eee9}
+.finance-page .ed-marquee{background:#0b2747;border-color:#315b85}
+.finance-page .ed-marquee-group span{background:#edf9ff;border-color:#bed8ec;color:#173955}
+.finance-page .ed-light{background:#f6f9fd}
+.finance-page .ed-cream{background:#edf4fb}
+.finance-page .ed-navy{background:#102b4c}
+.finance-page .ed-program:hover,.finance-page .ed-program.active{background:#e2f7f7;border-color:#50b8c5}
+.finance-page .ed-program-detail{background:#153d61}
+.finance-page .ed-program-symbol{color:#70e3df}
+.finance-page .ed-step:hover,.finance-page .ed-step.active{background:#83e1de;border-color:#83e1de}
+.finance-page .ed-capability-icon{background:#dff3fb;color:#1b75a7}
+.finance-page .ed-planner-result{background:#113557}
+.finance-page .ed-controls input{accent-color:#167ab4}
+.finance-page .ed-footer{background:#0a1d34}
+.finance-page .ed-close{background:radial-gradient(ellipse at 85% 60%,#217da34a,transparent 55%),linear-gradient(125deg,#173c65,#091b35)}
+.finance-page .ed-brand{display:inline-flex;align-items:center;gap:6px;padding:0!important}
+.finance-page .ed-brand .ed-cap{position:static!important;inset:auto!important;transform:none!important;width:43px!important;height:43px!important;flex:0 0 43px}
+.finance-page .ed-brand .lf-brand-v4{--brand-text:#173853;--brand-flo:#317fc6;--brand-period:#25afa9;--brand-plane:#317fc6}
+.finance-page .ed-footer-brand .lf-brand-v4{--brand-text:#f8fcff;--brand-flo:#7fe0df;--brand-period:#7fe0df;--brand-plane:#a8d7f3}
+.finance-page .ed-brand .lf-brand-v4__current1{stroke:#388dcc}.finance-page .ed-brand .lf-brand-v4__current2{stroke:#49c8bf}
+.finance-page .ed-footer-brand .lf-brand-v4__current1{stroke:#82e6dc}.finance-page .ed-footer-brand .lf-brand-v4__current2{stroke:#8ecdf0}
+.finance-page .saas-services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.finance-page .saas-service{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:4px;width:100%;padding:25px;border:1px solid #caddeb;border-radius:12px;background:#fff;color:#183950;transition:transform .25s,border-color .25s,box-shadow .25s}
+.finance-page .saas-service h3{font-size:20px;letter-spacing:-.035em;margin:14px 0 4px}
+.finance-page .saas-service p{font-size:13px;line-height:1.8;color:#546b7b;margin:0}
+.finance-page .saas-service-more{font-size:11px;color:#236eaa;font-weight:800;margin-top:auto;padding-top:12px}
+.finance-page .saas-service:is(:hover,:focus-visible,.active){transform:translateY(-4px);border-color:#53b6d6;box-shadow:0 15px 30px #1135571d;background:#f9feff}
+.finance-page .saas-service-panel{display:flex;align-items:center;justify-content:space-between;gap:25px;background:linear-gradient(120deg,#12365b,#1a5170);color:#fff;margin-top:20px;padding:26px 30px;border:1px solid #518ba2;border-radius:13px}
+.finance-page .saas-service-panel>div{max-width:700px}
+.finance-page .saas-service-panel span{font-size:11px;letter-spacing:.12em;font-weight:800;color:#8ae7df}
+.finance-page .saas-service-panel h3{font-size:23px;letter-spacing:-.03em;margin:12px 0}
+.finance-page .saas-service-panel p{color:#c4dce9;line-height:1.7;font-size:14px;margin:0}
+.finance-page .saas-service-panel>a{font-size:13px;font-weight:800;color:#9aebe5;flex-shrink:0}
+.finance-page #automation article{transition:transform .25s,box-shadow .25s,border-color .25s}
+.finance-page #automation article:is(:hover,:focus-visible),.finance-page :is(.ed-automation-demo,.ed-planner-result):hover{transform:translateY(-5px);box-shadow:0 18px 40px #11355728;border-color:#59b5cf}
+.finance-page .ed-guides{grid-template-columns:repeat(3,minmax(0,1fr))}
+.finance-page .ed-guide{min-height:230px}.finance-page .ed-guide strong{color:#237fa4}
+.finance-page main section{position:relative;isolation:isolate;overflow:hidden}
+.finance-page main section>.ed-wrap{position:relative;z-index:2}
+.finance-page #practices:before,.finance-page #planner:before,.finance-page #guides:before{content:"";position:absolute;pointer-events:none;right:-100px;top:35px;width:370px;height:370px;border:1px solid #3d9dc340;border-radius:50%;box-shadow:0 0 0 55px #3d9dc30d,0 0 0 110px #3d9dc308;animation:saasBreathe 12s ease-in-out infinite alternate}
+.finance-page #planner:before{top:auto;bottom:0;right:-140px}
+@keyframes saasBreathe{to{transform:translate(-12px,9px) scale(1.04)}}
+@media(max-width:1050px){.finance-page .saas-services,.finance-page .ed-guides{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:850px){.finance-page .saas-service-panel{flex-direction:column;align-items:flex-start}.finance-page .ed-navlinks>a{font-size:16px}}
+@media(max-width:560px){.finance-page .saas-services,.finance-page .ed-guides{grid-template-columns:1fr}.finance-page .ed-brand .ed-cap{width:30px!important;height:30px!important;flex-basis:30px}.finance-page .saas-service-panel{padding:22px}.finance-page #practices:before,.finance-page #planner:before,.finance-page #guides:before{opacity:.24}}
+@media(prefers-reduced-motion:reduce){.finance-page #practices:before,.finance-page #planner:before,.finance-page #guides:before{animation:none!important}.finance-page .saas-service{transform:none!important}}
+
+/* SAAS_CONNECTED_ICON_V1 — icon-only refinement; BrandMark remains unchanged */
+.finance-page .ed-brand .saas-connected-icon{color:#247cb8;overflow:visible;transition:transform .3s ease,color .3s ease}
+.finance-page .ed-brand .saas-icon-node{fill:#f7fbff;stroke:#31bdb8;stroke-width:2.5;transition:fill .3s ease}
+.finance-page .ed-brand .saas-icon-chrome{fill:#31bdb8}
+.finance-page .ed-brand:hover .saas-connected-icon,.finance-page .ed-brand:focus-visible .saas-connected-icon{color:#0d628e;transform:translateY(-2px)!important}
+.finance-page .ed-brand:hover .saas-icon-node,.finance-page .ed-brand:focus-visible .saas-icon-node{fill:#83eae1}
+.finance-page .ed-footer-brand .saas-connected-icon{color:#a0d9fa}
+.finance-page .ed-footer-brand .saas-icon-node{fill:#0a1d34;stroke:#76e2dc}
+.finance-page .ed-footer-brand .saas-icon-chrome{fill:#76e2dc}
+@media(prefers-reduced-motion:reduce){.finance-page .ed-brand .saas-connected-icon,.finance-page .ed-brand .saas-icon-node{transition:none!important}.finance-page .ed-brand:hover .saas-connected-icon{transform:none!important}}
+
+/* SAAS_ICON_ALIGNMENT_V2 */
+/* Keep the original LeadsFlo wordmark; align only the niche icon. */
+.finance-page .ed-brand{gap:3px!important;align-items:center}
+.finance-page .ed-brand .ed-cap.saas-connected-icon{
+  width:52px!important;height:52px!important;flex:0 0 52px!important;
+  display:block;position:static!important;margin:0!important;
+  vertical-align:middle;transform:none!important;
+}
+.finance-page .ed-brand:hover .ed-cap.saas-connected-icon,
+.finance-page .ed-brand:focus-visible .ed-cap.saas-connected-icon{
+  transform:translateY(-2px)!important;
+}
+@media(max-width:560px){
+  .finance-page .ed-brand{gap:3px!important}
+  .finance-page .ed-brand .ed-cap.saas-connected-icon{
+    width:39px!important;height:39px!important;flex-basis:39px!important;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .finance-page .ed-brand:hover .ed-cap.saas-connected-icon,
+  .finance-page .ed-brand:focus-visible .ed-cap.saas-connected-icon{transform:none!important}
+}
+
+
+/* HOSPITALITY_MARKETING_V1 — midnight teal / champagne / ivory */
+.finance-page{background:#faf8f2;color:#263f42}
+.finance-page .ed-header{background:#fcfaf6;border-color:#e4ddce}
+.finance-page .ed-navlinks>a{color:#28454a;font-size:15px}
+.finance-page .ed-navlinks .ed-navcta{background:#1a484b;color:#fff}
+.finance-page .ed-hero{background:radial-gradient(ellipse at 83% 20%,#c8a26a30,transparent 48%),linear-gradient(125deg,#102c32,#245055)}
+.finance-page .ed-hero h1 em{color:#eccb91}
+.finance-page .ed-kicker,.finance-page .ed-eyebrow{color:#a47c4a}
+.finance-page .ed-hero .ed-kicker{color:#e6be7d}
+.finance-page .ed-btn-gold,.finance-page .ed-mobile-cta{background:#efca90;color:#193638}
+.finance-page .ed-btn-gold:hover{background:#f8ddaf}
+.finance-page .ed-marquee{background:#173d40;border-color:#637766}
+.finance-page .ed-marquee-group span{background:#f9efe0;border-color:#dfc69e;color:#23464a}
+.finance-page .ed-light{background:#fafaf6}
+.finance-page .ed-cream{background:#f2eee4}
+.finance-page .ed-navy{background:#173c42}
+.finance-page .ed-program:hover,.finance-page .ed-program.active{background:#f5ead9;border-color:#be9760}
+.finance-page .ed-program-detail{background:#235054}
+.finance-page .ed-program-symbol{color:#f0c78a}
+.finance-page .ed-step:hover,.finance-page .ed-step.active{background:#e8c58d;border-color:#e8c58d}
+.finance-page .ed-capability-icon{background:#f2e6d3;color:#926d3d}
+.finance-page .ed-planner-result{background:#204c50}
+.finance-page .ed-controls input{accent-color:#a47c4a}
+.finance-page .ed-footer{background:#102c31}
+.finance-page .ed-close{background:radial-gradient(ellipse at 88% 60%,#b48d4d26,transparent 55%),linear-gradient(125deg,#24545a,#102e34)}
+.finance-page .ed-brand{gap:5px}
+.finance-page .ed-brand .ed-cap{stroke:#b88b54;max-height:42px}
+.finance-page .ed-brand .lf-brand-v4{--brand-text:#244344;--brand-flo:#ad8751;--brand-period:#b88b54;--brand-plane:#467b7c}
+.finance-page .ed-footer-brand .lf-brand-v4{--brand-text:#fbf4ea;--brand-flo:#edd1a4;--brand-period:#edd1a4;--brand-plane:#8dcac3}
+.finance-page .ed-brand .lf-brand-v4__current1{stroke:#4e8786}
+.finance-page .ed-brand .lf-brand-v4__current2{stroke:#b88b54}
+.finance-page .ed-footer-brand .lf-brand-v4__current1{stroke:#e2c28e}
+.finance-page .ed-footer-brand .lf-brand-v4__current2{stroke:#8cc6bd}
+.finance-page .saas-service{border-color:#e0d6c5;background:#fffefa;color:#254447}
+.finance-page .saas-service:is(:hover,:focus-visible,.active){background:#fffcf5;border-color:#c19a60;box-shadow:0 15px 30px #244b4b20}
+.finance-page .saas-service-more{color:#9d6e35}
+.finance-page .saas-service-panel{background:linear-gradient(120deg,#1a4247,#316267);border-color:#a88f6b}
+.finance-page .saas-service-panel span,.finance-page .saas-service-panel>a{color:#efd09b}
+.finance-page .ed-guide{background:#fffdfa;border-color:#e4d5bc}
+.finance-page .ed-guide strong{color:#a07842}
+.finance-page .ed-guide:hover{border-color:#b98c4f}
+.finance-page main section{position:relative;isolation:isolate;overflow:hidden}
+.finance-page main section>.ed-wrap{position:relative;z-index:2}
+.finance-page #services{background-image:radial-gradient(circle at 94% 20%,#c99a5b18,transparent 35%)}
+.finance-page #practices{background-image:repeating-linear-gradient(90deg,transparent 0 70px,#c8ae8514 71px 72px),radial-gradient(circle at 9% 77%,#83a7a517,transparent 45%)}
+.finance-page #intake{background-image:radial-gradient(circle at 88% 23%,#f4d3a01b,transparent 42%),linear-gradient(130deg,#102d36,#24515a)}
+.finance-page #automation{background-image:linear-gradient(145deg,#f8f2e9,#f0ece2)}
+.finance-page #planner{background-image:radial-gradient(circle at 85% 55%,#c5a06f26,transparent 46%)}
+.finance-page #guides{background-image:linear-gradient(#a7875d0b 1px,transparent 1px),linear-gradient(90deg,#a7875d0b 1px,transparent 1px);background-size:70px 70px}
+.finance-page #services:after,.finance-page #intake:after,.finance-page #guides:after{content:"";position:absolute;pointer-events:none;z-index:0;right:-80px;bottom:15px;width:320px;height:240px;opacity:.22;border:1px solid #b89a6c70;border-radius:50% 50% 0 0;transform:rotate(-9deg);animation:hospitalityDrift 16s ease-in-out infinite alternate}
+.finance-page #intake:after{border-color:#e9c9986b;opacity:.12;right:auto;left:-75px}
+.finance-page #guides:after{width:250px;height:200px;opacity:.15}
+@keyframes hospitalityDrift{to{transform:translate(-8px,-16px) rotate(-4deg)}}
+@media(max-width:700px){.finance-page main section:after{opacity:.07!important}}
+@media(prefers-reduced-motion:reduce){.finance-page main section:after{animation:none!important}}
+
+
+/* FINANCIAL_SERVICES_V1 — navy, brushed gold, ivory, restrained teal */
+.finance-page{background:#f5f5f1;color:#1b3044}
+.finance-page .ed-header{background:#fbfaf7;border-color:#dddcd4}
+.finance-page .ed-navlinks>a{color:#1a3348}
+.finance-page .ed-navlinks .ed-navcta{background:#162f4a;color:#fff}
+.finance-page .ed-hero{background:radial-gradient(ellipse at 83% 25%,#ba94442a,transparent 45%),linear-gradient(126deg,#07192e,#183b57)}
+.finance-page .ed-hero h1 em{color:#e6c48f}
+.finance-page .ed-kicker,.finance-page .ed-eyebrow{color:#9c7845}
+.finance-page .ed-hero .ed-kicker{color:#eac98f}
+.finance-page .ed-btn-gold,.finance-page .ed-mobile-cta{background:#e7c48c;color:#132b40}
+.finance-page .ed-btn-gold:hover{background:#f5dcae}
+.finance-page .ed-marquee{background:#112c46;border-color:#4e6e85}
+.finance-page .ed-marquee-group span{background:#f9f3e7;border-color:#d9bc8a;color:#1b3c53}
+.finance-page .ed-light{background:#fafaf8}
+.finance-page .ed-cream{background:#f0efe9}
+.finance-page .ed-navy{background:#142d47}
+.finance-page .ed-program:hover,.finance-page .ed-program.active{background:#f7eee0;border-color:#bc9556}
+.finance-page .ed-program-detail,.finance-page .ed-planner-result{background:#183c57}
+.finance-page .ed-program-symbol{color:#e8c58c}
+.finance-page .ed-step:hover,.finance-page .ed-step.active{background:#e8c58d;border-color:#e8c58d;color:#142d47}
+.finance-page .ed-capability-icon{background:#e6ecee;color:#1c5d70}
+.finance-page .ed-controls input{accent-color:#ba9153}
+.finance-page .ed-footer{background:#0c2033}
+.finance-page .ed-close{background:radial-gradient(ellipse at 87% 60%,#af904b29,transparent 52%),linear-gradient(125deg,#183c57,#07192e)}
+.finance-page .ed-brand{display:inline-flex;align-items:center;gap:4px;padding:0!important}
+.finance-page .ed-brand .ed-cap.finance-emblem{width:47px!important;height:47px!important;flex:0 0 47px!important;position:static!important;inset:auto!important;transform:none!important;color:#d1ad70}
+.finance-page .ed-brand .lf-brand-v4{--brand-text:#142c43;--brand-flo:#bc9556;--brand-period:#bc9556;--brand-plane:#1e7d83}
+.finance-page .ed-footer-brand .lf-brand-v4{--brand-text:#f8f4e9;--brand-flo:#e6c58d;--brand-period:#e6c58d;--brand-plane:#8fc9c8}
+.finance-page .ed-brand .lf-brand-v4__current1{stroke:#2a8b8e}
+.finance-page .ed-brand .lf-brand-v4__current2{stroke:#c7a16c}
+.finance-page .ed-footer-brand .lf-brand-v4__current1{stroke:#b8dedc}
+.finance-page .ed-footer-brand .lf-brand-v4__current2{stroke:#e3bf88}
+.finance-page .saas-service{background:#fffefa;border-color:#dedbd0;color:#1c3347}
+.finance-page .saas-service:is(:hover,:focus-visible,.active){background:#fffdf6;border-color:#ba9355;box-shadow:0 14px 30px #1d355025}
+.finance-page .saas-service-panel{background:linear-gradient(120deg,#122f49,#24546b);border-color:#94794e}
+.finance-page .saas-service-panel span,.finance-page .saas-service-panel>a{color:#eacb98}
+.finance-page .ed-guide{background:#fffdfa;border-color:#e3dbca}
+.finance-page .ed-guide strong{color:#9d783f}
+.finance-page .ed-guide:hover{border-color:#b18a4c}
+.finance-page main section{position:relative;isolation:isolate;overflow:hidden}
+.finance-page main section>.ed-wrap{position:relative;z-index:2}
+.finance-page #services{background-image:linear-gradient(90deg,#c8b38813 1px,transparent 1px),radial-gradient(circle at 95% 25%,#bda36a16,transparent 37%);background-size:76px 76px,auto}
+.finance-page #practices{background-image:linear-gradient(145deg,#fafaf8,#eff2f1)}
+.finance-page #intake{background-image:radial-gradient(circle at 88% 23%,#cbaa7525,transparent 43%),linear-gradient(135deg,#0e253e,#1f4660)}
+.finance-page #automation{background-image:repeating-linear-gradient(90deg,transparent 0 85px,#9eafbb12 86px 87px)}
+.finance-page #planner{background-image:radial-gradient(circle at 87% 55%,#bba06820,transparent 45%)}
+.finance-page #guides{background-image:linear-gradient(#8f9fa30b 1px,transparent 1px),linear-gradient(90deg,#8f9fa30b 1px,transparent 1px);background-size:64px 64px}
+.finance-page #services::after,.finance-page #intake::after,.finance-page #guides::after{content:"";position:absolute;pointer-events:none;z-index:0;right:-120px;top:8%;width:340px;height:340px;border:2px solid #bc98566b;border-radius:20px;transform:rotate(35deg);opacity:.26;animation:finDrift 18s ease-in-out infinite alternate}
+.finance-page #intake::after{border-color:#e5c48475;opacity:.18;left:-130px;right:auto;top:25%}
+.finance-page #guides::after{width:220px;height:220px;border-width:1px;opacity:.14}
+@keyframes finDrift{to{transform:translate(-12px,14px) rotate(43deg)}}
+@media(max-width:700px){.finance-page .ed-brand .ed-cap.finance-emblem{width:36px!important;height:36px!important;flex-basis:36px!important}.finance-page main section::after{opacity:.08!important}}
+@media(prefers-reduced-motion:reduce){.finance-page main section::after{animation:none!important}}
+
+
+/* FINANCIAL_VISIBLE_V2 — stronger finance atmosphere, safer cards, tighter logo */
+:is(.finance-page,.financial-page) .ed-brand{
+  display:flex;
+  align-items:center;
+  gap:6px !important;
+}
+:is(.finance-page,.financial-page) .ed-brand :is(.ed-cap,.finance-monogram,.financial-monogram){
+  width:44px !important;
+  height:44px !important;
+  min-width:44px !important;
+  max-height:44px !important;
+  flex:0 0 44px !important;
+  transform:none !important;
+  margin-right:1px !important;
+}
+:is(.finance-page,.financial-page) .ed-footer .ed-brand :is(.ed-cap,.finance-monogram,.financial-monogram){
+  width:44px !important;
+  height:44px !important;
+  min-width:44px !important;
+  max-height:44px !important;
+}
+@media (max-width:560px){
+  :is(.finance-page,.financial-page) .ed-brand{
+    gap:5px !important;
+  }
+  :is(.finance-page,.financial-page) .ed-brand :is(.ed-cap,.finance-monogram,.financial-monogram){
+    width:33px !important;
+    height:33px !important;
+    min-width:33px !important;
+    flex-basis:33px !important;
+  }
+}
+
+/* keep text from spilling out of cards/panels */
+:is(.finance-page,.financial-page) main :is(article,[class*="card"],[class*="panel"],[class*="tile"],[class*="stat"]){
+  min-width:0;
+  overflow:hidden;
+}
+:is(.finance-page,.financial-page) main :is(article,[class*="card"],[class*="panel"],[class*="tile"],[class*="stat"]) :is(h2,h3,h4,p,a,span,strong,small){
+  overflow-wrap:anywhere;
+}
+:is(.finance-page,.financial-page) main :is([class*="grid"],[class*="row"],[class*="wrap"]) > *{
+  min-width:0;
+}
+
+/* finance atmosphere across the whole page */
+:is(.finance-page,.financial-page) main > section{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+}
+:is(.finance-page,.financial-page) main > section::before,
+:is(.finance-page,.financial-page) main > section::after{
+  content:"";
+  position:absolute;
+  pointer-events:none;
+  z-index:0;
+}
+:is(.finance-page,.financial-page) main > section > *{
+  position:relative;
+  z-index:1;
+}
+
+/* hero */
+:is(.finance-page,.financial-page) main > section:nth-of-type(1)::before{
+  right:-100px;
+  top:30px;
+  width:460px;
+  height:460px;
+  border-radius:50%;
+  background:
+    radial-gradient(circle at center, rgba(214,170,92,.12) 0 26%, transparent 26% 42%, rgba(52,126,201,.12) 42% 43%, transparent 43% 100%),
+    conic-gradient(from 205deg, transparent 0 52%, rgba(214,170,92,.15) 52% 74%, transparent 74% 100%);
+  animation: financeFloat 9s ease-in-out infinite;
+}
+:is(.finance-page,.financial-page) main > section:nth-of-type(1)::after{
+  left:4%;
+  bottom:7%;
+  width:220px;
+  height:120px;
+  opacity:.18;
+  background:
+    linear-gradient(140deg, transparent 0 8%, rgba(214,170,92,.55) 8% 9%, transparent 9% 100%),
+    linear-gradient(125deg, transparent 0 29%, rgba(214,170,92,.55) 29% 30%, transparent 30% 100%),
+    linear-gradient(112deg, transparent 0 53%, rgba(214,170,92,.55) 53% 54%, transparent 54% 100%),
+    linear-gradient(97deg, transparent 0 77%, rgba(214,170,92,.55) 77% 78%, transparent 78% 100%);
+  filter:drop-shadow(0 0 14px rgba(214,170,92,.18));
+  animation: financeDrift 11s ease-in-out infinite;
+}
+
+/* section 2 */
+:is(.finance-page,.financial-page) main > section:nth-of-type(2)::before{
+  left:3%;
+  bottom:10%;
+  width:260px;
+  height:180px;
+  opacity:.12;
+  background:
+    linear-gradient(to top, rgba(52,126,201,.48) 0 100%) left 10px bottom 0/22px 70px no-repeat,
+    linear-gradient(to top, rgba(214,170,92,.58) 0 100%) left 48px bottom 0/22px 120px no-repeat,
+    linear-gradient(to top, rgba(52,126,201,.48) 0 100%) left 86px bottom 0/22px 94px no-repeat,
+    linear-gradient(to top, rgba(214,170,92,.58) 0 100%) left 124px bottom 0/22px 148px no-repeat,
+    linear-gradient(to top, rgba(52,126,201,.48) 0 100%) left 162px bottom 0/22px 110px no-repeat,
+    linear-gradient(to top, rgba(214,170,92,.58) 0 100%) left 200px bottom 0/22px 78px no-repeat;
+  animation: financePulse 8s ease-in-out infinite;
+}
+:is(.finance-page,.financial-page) main > section:nth-of-type(2)::after{
+  right:4%;
+  top:14%;
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  border:1px solid rgba(52,126,201,.16);
+  box-shadow:0 0 0 22px rgba(52,126,201,.05), 0 0 0 44px rgba(214,170,92,.05);
+  opacity:.7;
+  animation: financeOrbit 13s linear infinite;
+}
+
+/* section 3 */
+:is(.finance-page,.financial-page) main > section:nth-of-type(3)::before{
+  right:6%;
+  bottom:12%;
+  width:240px;
+  height:160px;
+  opacity:.14;
+  background:
+    radial-gradient(circle at 8% 82%, rgba(214,170,92,.95) 0 4px, transparent 5px),
+    radial-gradient(circle at 34% 58%, rgba(52,126,201,.95) 0 4px, transparent 5px),
+    radial-gradient(circle at 62% 68%, rgba(214,170,92,.95) 0 4px, transparent 5px),
+    radial-gradient(circle at 86% 28%, rgba(52,126,201,.95) 0 4px, transparent 5px),
+    linear-gradient(140deg, transparent 0 16%, rgba(214,170,92,.5) 16% 17%, transparent 17% 100%),
+    linear-gradient(120deg, transparent 0 46%, rgba(52,126,201,.45) 46% 47%, transparent 47% 100%),
+    linear-gradient(82deg, transparent 0 74%, rgba(214,170,92,.5) 74% 75%, transparent 75% 100%);
+  animation: financeDrift 12s ease-in-out infinite;
+}
+:is(.finance-page,.financial-page) main > section:nth-of-type(3)::after{
+  left:-40px;
+  top:18%;
+  width:220px;
+  height:220px;
+  border-radius:28px;
+  background:
+    linear-gradient(90deg, rgba(52,126,201,.06) 0 1px, transparent 1px 100%),
+    linear-gradient(0deg, rgba(52,126,201,.06) 0 1px, transparent 1px 100%);
+  background-size:24px 24px;
+  transform:rotate(8deg);
+  opacity:.6;
+}
+
+/* section 4 */
+:is(.finance-page,.financial-page) main > section:nth-of-type(4)::before{
+  left:5%;
+  top:18%;
+  width:250px;
+  height:170px;
+  opacity:.15;
+  background:
+    linear-gradient(to right, transparent 0 16px, rgba(214,170,92,.5) 16px 19px, transparent 19px 45px, rgba(52,126,201,.45) 45px 48px, transparent 48px 78px, rgba(214,170,92,.5) 78px 81px, transparent 81px 112px, rgba(52,126,201,.45) 112px 115px, transparent 115px 146px, rgba(214,170,92,.5) 146px 149px, transparent 149px 100%),
+    linear-gradient(to top, transparent 0 18%, rgba(214,170,92,.48) 18% 58%, transparent 58% 100%),
+    linear-gradient(to top, transparent 0 34%, rgba(52,126,201,.42) 34% 70%, transparent 70% 100%);
+  background-size:100% 100%, 36px 100%, 36px 100%;
+  background-position:0 0, 32px 0, 126px 0;
+  background-repeat:no-repeat;
+  animation: financeFloat 10s ease-in-out infinite;
+}
+:is(.finance-page,.financial-page) main > section:nth-of-type(4)::after{
+  right:3%;
+  bottom:10%;
+  width:210px;
+  height:130px;
+  opacity:.14;
+  background:
+    linear-gradient(rgba(214,170,92,.45), rgba(214,170,92,.45)) left 0 bottom 0/100% 2px no-repeat,
+    linear-gradient(140deg, transparent 0 14%, rgba(52,126,201,.55) 14% 15%, transparent 15% 100%),
+    linear-gradient(124deg, transparent 0 41%, rgba(214,170,92,.55) 41% 42%, transparent 42% 100%),
+    linear-gradient(105deg, transparent 0 67%, rgba(52,126,201,.55) 67% 68%, transparent 68% 100%),
+    linear-gradient(85deg, transparent 0 88%, rgba(214,170,92,.55) 88% 89%, transparent 89% 100%);
+}
+
+/* section 5 */
+:is(.finance-page,.financial-page) main > section:nth-of-type(5)::before{
+  right:3%;
+  top:12%;
+  width:210px;
+  height:250px;
+  border-radius:22px;
+  background:
+    linear-gradient(#0000 0 18px, rgba(52,126,201,.13) 18px 19px, #0000 19px 100%),
+    linear-gradient(#0000 0 52px, rgba(52,126,201,.13) 52px 53px, #0000 53px 100%),
+    linear-gradient(#0000 0 86px, rgba(52,126,201,.13) 86px 87px, #0000 87px 100%),
+    linear-gradient(#0000 0 120px, rgba(52,126,201,.13) 120px 121px, #0000 121px 100%),
+    linear-gradient(#0000 0 154px, rgba(52,126,201,.13) 154px 155px, #0000 155px 100%),
+    radial-gradient(circle at 76% 82%, rgba(214,170,92,.22) 0 28px, transparent 29px);
+  outline:1px solid rgba(214,170,92,.16);
+  opacity:.7;
+  animation: financeDrift 12s ease-in-out infinite;
+}
+:is(.finance-page,.financial-page) main > section:nth-of-type(5)::after{
+  left:2%;
+  bottom:14%;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(214,170,92,.16) 0 22%, transparent 22% 44%, rgba(52,126,201,.14) 44% 45%, transparent 45% 100%);
+  opacity:.8;
+}
+
+/* later sections */
+:is(.finance-page,.financial-page) main > section:nth-of-type(n+6)::before{
+  left:-30px;
+  top:14%;
+  width:240px;
+  height:180px;
+  opacity:.12;
+  background:
+    linear-gradient(90deg, rgba(52,126,201,.16) 0 1px, transparent 1px 100%),
+    linear-gradient(0deg, rgba(52,126,201,.16) 0 1px, transparent 1px 100%);
+  background-size:22px 22px;
+}
+:is(.finance-page,.financial-page) main > section:nth-of-type(n+6)::after{
+  right:2%;
+  bottom:14%;
+  width:200px;
+  height:90px;
+  opacity:.12;
+  background:
+    linear-gradient(180deg, transparent 0 48%, rgba(214,170,92,.45) 48% 50%, transparent 50% 100%),
+    linear-gradient(90deg, transparent 0 8%, rgba(52,126,201,.55) 8% 9%, transparent 9% 100%),
+    linear-gradient(90deg, transparent 0 29%, rgba(214,170,92,.55) 29% 30%, transparent 30% 100%),
+    linear-gradient(90deg, transparent 0 53%, rgba(52,126,201,.55) 53% 54%, transparent 54% 100%),
+    linear-gradient(90deg, transparent 0 76%, rgba(214,170,92,.55) 76% 77%, transparent 77% 100%);
+}
+
+:is(.finance-page,.financial-page) :is(article,[class*="card"],[class*="panel"],[class*="tile"],[class*="stat"]):hover{
+  transform:translateY(-2px);
+}
+
+@keyframes financeFloat{
+  0%,100%{transform:translateY(0)}
+  50%{transform:translateY(-10px)}
+}
+@keyframes financeDrift{
+  0%,100%{transform:translate3d(0,0,0)}
+  50%{transform:translate3d(8px,-8px,0)}
+}
+@keyframes financePulse{
+  0%,100%{opacity:.10}
+  50%{opacity:.18}
+}
+@keyframes financeOrbit{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+
+@media (prefers-reduced-motion: reduce){
+  :is(.finance-page,.financial-page) main > section::before,
+  :is(.finance-page,.financial-page) main > section::after{
+    animation:none !important;
+  }
+  :is(.finance-page,.financial-page) :is(article,[class*="card"],[class*="panel"],[class*="tile"],[class*="stat"]):hover{
+    transform:none;
+  }
+}
+
+</style>
+
+
+
+</body>
+</html>
