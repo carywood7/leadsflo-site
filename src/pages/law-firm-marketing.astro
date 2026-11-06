@@ -1,0 +1,1060 @@
+---
+import BrandMark from "../components/BrandMark.astro";
+import "../styles/global.css";
+import "../styles/navigation.css";
+
+const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+
+const faq = [
+  {q:"What does a law firm marketing agency do?",a:"A law firm marketing agency helps attorneys get found, attract relevant leads and turn calls or form submissions into organized consultation opportunities using search marketing, landing pages and intake workflows."},
+  {q:"How does LeadsFlo generate leads for lawyers?",a:"We tailor local SEO, Google Ads, landing pages and follow-up to a firm's actual practice areas, service geography and intake process. Campaign results and client suitability depend on the firm and market."},
+  {q:"Can you market personal injury, family law and immigration practices?",a:"We can tailor campaigns for different practice areas, including personal injury, family law, immigration, criminal defense, estate planning and business law, subject to jurisdiction-specific advertising review."},
+  {q:"Can AI answer calls and qualify legal leads?",a:"AI can handle approved routine information and callback requests, but sensitive case details, conflict checks, legal advice and representation decisions must stay with authorized law firm personnel."},
+  {q:"Do you guarantee leads or signed cases?",a:"No. We focus on relevant traffic, clear lead capture and accountable intake reporting. Lead volume, case acceptance and signed clients depend on many factors beyond marketing."},
+  {q:"What should a law firm measure beyond cost per lead?",a:"Measure eligible leads, reached contacts, consultation requests, completed consultations and firm-verified new-client matters when appropriate. Keep ad-platform events separate from confidential intake records."}
+];
+
+const schema = {
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"Organization","@id":"https://leadsflo.co/#organization","name":"LeadsFlo","url":"https://leadsflo.co/"},
+    {"@type":"WebPage","@id":"https://leadsflo.co/law-firm-marketing/#webpage","url":"https://leadsflo.co/law-firm-marketing/","name":"Law Firm Marketing Agency | LeadsFlo","description":"SEO, Google Ads, legal lead generation, conversion-focused landing pages and responsible intake automation for US law firms."},
+    {"@type":"Service","name":"Law Firm Marketing and Lead Generation","serviceType":"SEO, local search, paid advertising, websites, legal intake workflows and CRM follow-up","provider":{"@id":"https://leadsflo.co/#organization"},"areaServed":{"@type":"Country","name":"United States"},"url":"https://leadsflo.co/law-firm-marketing/"},
+    {"@type":"FAQPage","mainEntity":faq.map(x=>({"@type":"Question","name":x.q,"acceptedAnswer":{"@type":"Answer","text":x.a}}))}
+  ]
+};
+
+const guides = [
+  ["law-firm-seo","Law firm SEO","Local visibility, practice-area content and search intent"],
+  ["google-ads-for-law-firms","Google Ads for law firms","Campaign structure, geography and lead quality"],
+  ["law-firm-lead-generation","Law firm lead generation","From lead capture to qualified consultations"],
+  ["ai-receptionist-for-law-firms","AI receptionist for law firms","Responsible call handling and staff handoffs"],
+  ["law-firm-marketing-strategies","Law firm marketing strategies","SEO, paid campaigns and client acquisition"]
+];
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#14283b"/>
+<title>Law Firm Marketing Agency | SEO, Google Ads &amp; Lead Generation | LeadsFlo</title>
+<meta name="description" content="Law firm marketing agency for US attorneys. SEO, Google Ads, legal lead generation, landing pages and responsible intake automation built around your practice."/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://leadsflo.co/law-firm-marketing/"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Law Firm Marketing &amp; Lead Generation | LeadsFlo"/>
+<meta property="og:description" content="SEO, Google Ads, lead generation and intake automation for US law firms."/>
+<meta property="og:url" content="https://leadsflo.co/law-firm-marketing/"/>
+<script type="application/ld+json" set:html={JSON.stringify(schema)}/>
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QE382W17N6"></script>
+<script is:inline>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','G-QE382W17N6');
+</script>
+<script is:inline defer src="/js/leadsflo-conversions.js"></script>
+</head>
+
+<body class="ed-page law-page" id="top">
+<header class="ed-header" id="ed-header">
+  <div class="ed-wrap ed-nav">
+    <a class="ed-brand" href="/" aria-label="LeadsFlo home">
+      <svg class="ed-cap" viewBox="0 0 54 48" aria-hidden="true">
+        <path d="M27 5v34M14 12h26M27 5l-5 6h10Z" fill="none" stroke="#b99055" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 12 6 28h16L14 12ZM40 12 32 28h16L40 12Z" fill="#dfbd82" stroke="#b99055" stroke-width="1.5" stroke-linejoin="round"/>
+        <path d="M15 41h24M21 37h12" fill="none" stroke="#b99055" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <BrandMark theme="light"/>
+    </a>
+    <nav class="ed-navlinks" id="ed-menu" aria-label="Law firm marketing page">
+      <a href="#practices">Practice areas</a>
+      <a href="#intake">Lead journey</a>
+      <a href="#automation">Intake &amp; CRM</a>
+      <a href="#planner">Planner</a>
+      <a href="#guides">Guides</a>
+      <a class="ed-navcta" href={booking} target="_blank" rel="noopener noreferrer">Let's Talk ↗</a>
+    </nav>
+    <button class="ed-menu-btn" id="ed-menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="ed-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="ed-hero">
+<div class="ed-wrap ed-hero-grid">
+  <div class="ed-hero-copy">
+    <p class="ed-kicker"><span></span> LEADSFLO / LAW FIRM MARKETING</p>
+    <h1>More qualified legal leads. <em>A clearer path to consultation.</em></h1>
+    <p>SEO, local search, Google Ads, conversion-focused landing pages and responsible intake automation for US law firms. Built around your practice areas, locations and capacity.</p>
+    <div class="ed-actions">
+      <a class="ed-btn ed-btn-gold" href={booking} target="_blank" rel="noopener noreferrer">Discuss your firm's lead generation ↗</a>
+      <a class="ed-link" href="#intake">Explore the lead journey ↓</a>
+    </div>
+    <div class="ed-hero-note">More than traffic: a connected path from first contact to staff-reviewed consultations.</div>
+  </div>
+  <div class="ed-campus" aria-label="Illustration of a law firm lead moving through marketing and intake steps">
+    <div class="ed-campus-top"><span>LEGAL CLIENT ACQUISITION</span><span class="ed-live"><i></i> ILLUSTRATIVE MODEL</span></div>
+    <svg viewBox="0 0 620 430" role="img" aria-label="Architectural legal columns and a connected route from discovery to consultation">
+      <defs><linearGradient id="lawSky" x2="1" y2="1"><stop stop-color="#243f58"/><stop offset="1" stop-color="#102639"/></linearGradient></defs>
+      <rect width="620" height="430" fill="url(#lawSky)"/>
+      <g stroke="#dfbd82" stroke-opacity=".13"><path d="M0 65H620M0 130H620M0 195H620M0 260H620M0 325H620M0 390H620"/><path d="M75 0V430M150 0V430M225 0V430M300 0V430M375 0V430M450 0V430M525 0V430"/></g>
+      <path d="M105 135 310 54 515 135Z" fill="#b99055" stroke="#f1d8a8" stroke-width="4"/>
+      <path d="M122 150H498M132 170H488" stroke="#ebd4aa" stroke-width="9"/>
+      <g fill="#456274" stroke="#a6bdc1" stroke-width="3"><rect x="150" y="170" width="42" height="168"/><rect x="242" y="170" width="42" height="168"/><rect x="334" y="170" width="42" height="168"/><rect x="426" y="170" width="42" height="168"/></g>
+      <path d="M115 351H505M95 370H525" stroke="#d9b679" stroke-width="10"/>
+      <path class="ed-route" d="M40 390Q150 355 240 380T420 370Q510 350 580 390" fill="none" stroke="#f1cc87" stroke-width="4" stroke-dasharray="8 12"/>
+      <circle cx="40" cy="390" r="8" fill="#f1cc87"/><circle cx="580" cy="390" r="8" fill="#f1cc87"/><circle class="ed-pulse" cx="310" cy="372" r="12" fill="#c7e4e3"/>
+      <g font-size="12" font-weight="700" fill="#f9f3e9" font-family="sans-serif"><text x="22" y="418">01 / FOUND</text><text x="468" y="418">06 / CONSULT</text></g>
+    </svg>
+    <div class="ed-campus-bottom"><span>SEARCH → LEAD → INTAKE → CONSULTATION</span><span>LF / LEGAL—01</span></div>
+  </div>
+</div>
+</section>
+
+<div class="ed-marquee" aria-label="Law firm marketing capabilities">
+  <div class="ed-marquee-track" aria-hidden="true">
+    {Array.from({length:6},()=>(
+      <div class="ed-marquee-group">
+        <span>◆ Law Firm SEO</span><span>✦ Google Ads &amp; PPC</span>
+        <span>◇ Practice-Area Landing Pages</span><span>✳ AI Call Reception</span>
+        <span>◎ Legal Intake &amp; CRM</span><span>↗ Consultation Booking</span>
+      </div>
+    ))}
+  </div>
+</div>
+
+<section class="ed-section ed-cream" id="services">
+<div class="ed-wrap">
+  <div class="ed-heading">
+    <div><p class="ed-eyebrow">THE CONNECTED SYSTEM</p><h2>Law firm marketing that goes beyond getting clicks.</h2></div>
+    <p>Each service has a job to do—from generating legal leads to helping your staff act on them. The strategy depends on your practice areas, service region and intake capacity.</p>
+  </div>
+  <div class="ed-automation-grid law-service-grid">
+    <article tabindex="0"><span class="ed-capability-icon">⌕</span><h3>Law firm SEO</h3><p>Practice-area content, technical foundations and local visibility for relevant searches.</p></article>
+    <article tabindex="0"><span class="ed-capability-icon">↗</span><h3>Google Ads &amp; PPC</h3><p>High-intent campaigns with geographic and service relevance, supported by lead-quality feedback.</p></article>
+    <article tabindex="0"><span class="ed-capability-icon">◇</span><h3>Landing pages &amp; funnels</h3><p>Clear legal-service pages, conversion-focused forms and appropriate contact options.</p></article>
+    <article tabindex="0"><span class="ed-capability-icon">◎</span><h3>AI reception</h3><p>Approved routine answers, callback collection and escalation to authorized staff.</p></article>
+    <article tabindex="0"><span class="ed-capability-icon">▣</span><h3>CRM &amp; automation</h3><p>Lead source, response status, staff handoff and consent-based follow-up.</p></article>
+    <article tabindex="0"><span class="ed-capability-icon">◈</span><h3>Tracking &amp; optimization</h3><p>Understand qualified leads and consultation progress without exposing confidential details.</p></article>
+  </div>
+</div>
+</section>
+
+<section class="ed-section ed-light" id="practices">
+<svg class="ed-atmosphere ed-atmosphere-program" viewBox="0 0 320 320" aria-hidden="true"><g class="ed-atmosphere-drift" fill="none" stroke="currentColor"><circle cx="160" cy="160" r="115"/><circle cx="160" cy="160" r="78"/><path d="M160 18V302M18 160H302M88 70L232 250M232 70L88 250"/><path d="M160 40V280M90 110H230M100 113 75 162h50Z M220 113 195 162h50Z"/></g></svg>
+<div class="ed-wrap">
+  <div class="ed-heading">
+    <div><p class="ed-eyebrow">01 / PRACTICE AREA FIT</p><h2>Different practice areas. Different lead strategies.</h2></div>
+    <p>Personal injury, family law and estate planning clients do not search or make decisions the same way. Explore how campaigns and intake can change for your firm.</p>
+  </div>
+  <div class="ed-program-grid">
+    <div class="ed-program-options" role="group" aria-label="Legal practice areas">
+      <button class="ed-program active" data-program="injury" aria-pressed="true"><span>01 / TIME-SENSITIVE</span><strong>Personal Injury</strong><small>Urgent searches, calls and responsive intake</small></button>
+      <button class="ed-program" data-program="family" aria-pressed="false"><span>02 / SENSITIVE NEEDS</span><strong>Family Law</strong><small>Confidentiality, clear expectations and consultations</small></button>
+      <button class="ed-program" data-program="immigration" aria-pressed="false"><span>03 / SERVICE FIT</span><strong>Immigration Law</strong><small>Language, location and case-type clarity</small></button>
+      <button class="ed-program" data-program="defense" aria-pressed="false"><span>04 / RESPONSIVE INTAKE</span><strong>Criminal Defense</strong><small>Accessible calls and prompt staff review</small></button>
+      <button class="ed-program" data-program="estate" aria-pressed="false"><span>05 / TRUST &amp; PLANNING</span><strong>Estate Planning</strong><small>Useful education and local consultation demand</small></button>
+      <button class="ed-program" data-program="business" aria-pressed="false"><span>06 / BUSINESS CLIENTS</span><strong>Business Law</strong><small>Consultative search intent and longer sales cycles</small></button>
+    </div>
+    <div class="ed-program-detail" aria-live="polite">
+      <p class="ed-eyebrow">CAMPAIGN BLUEPRINT / <span id="ed-program-number">01</span></p>
+      <div class="ed-program-symbol" id="ed-program-symbol" aria-hidden="true">⚖</div>
+      <h3 id="ed-program-title">Personal Injury</h3>
+      <p id="ed-program-description">Reach people searching for the practice areas your firm actually handles and make it easy to request a call.</p>
+      <div class="ed-detail-line"><span>SEARCH STRATEGY</span><strong id="ed-program-ads">Local practice-area SEO and targeted high-intent search</strong></div>
+      <div class="ed-detail-line"><span>LEAD SCREENING</span><strong id="ed-program-fit">Service area, matter category and callback details only</strong></div>
+      <div class="ed-detail-line"><span>NEXT STEP</span><strong id="ed-program-action">Prompt review by an authorized intake professional</strong></div>
+      <a href={booking} target="_blank" rel="noopener noreferrer">Talk about this practice area ↗</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="ed-section ed-navy" id="intake">
+<div class="ed-wrap">
+  <div class="ed-heading"><div><p class="ed-eyebrow">02 / THE CLIENT ACQUISITION JOURNEY</p><h2>A new lead isn't a signed client.</h2></div><p>Explore how search traffic, lead capture and a responsible intake process work together.</p></div>
+  <div class="ed-journey">
+    <div class="ed-steps" role="group" aria-label="Legal lead journey">
+      <button class="ed-step active" data-stage="0" aria-pressed="true"><span>01</span><strong>Attract</strong></button>
+      <button class="ed-step" data-stage="1" aria-pressed="false"><span>02</span><strong>Capture</strong></button>
+      <button class="ed-step" data-stage="2" aria-pressed="false"><span>03</span><strong>Screen</strong></button>
+      <button class="ed-step" data-stage="3" aria-pressed="false"><span>04</span><strong>Respond</strong></button>
+      <button class="ed-step" data-stage="4" aria-pressed="false"><span>05</span><strong>Consult</strong></button>
+      <button class="ed-step" data-stage="5" aria-pressed="false"><span>06</span><strong>Review</strong></button>
+    </div>
+    <div class="ed-stage-detail" aria-live="polite">
+      <span id="ed-stage-kicker">STAGE 01 / ATTRACT</span>
+      <h3 id="ed-stage-title">Get found for the legal services your firm actually provides.</h3>
+      <p id="ed-stage-body">Local SEO, practice-area pages and carefully targeted search ads make it easier for potential clients to find relevant information.</p>
+      <div class="ed-stage-metric"><span>WHAT TO REVIEW</span><strong id="ed-stage-metric">Relevant visits, calls and qualified search intent</strong></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="ed-section ed-cream" id="automation">
+<div class="ed-wrap">
+  <div class="ed-heading"><div><p class="ed-eyebrow">03 / INTAKE &amp; FOLLOW-UP</p><h2>Don't lose a qualified lead between the call and the consultation.</h2></div><p>Connect advertising and the website to a practical intake workflow without automating legal judgments.</p></div>
+  <div class="ed-automation-grid">
+    <article tabindex="0"><span class="ed-capability-icon">◉</span><h3>AI call reception</h3><p>Handle approved routine questions and callback requests. Escalate sensitive or complex matters to firm staff.</p></article>
+    <article tabindex="0"><span class="ed-capability-icon">⌘</span><h3>Website chat &amp; forms</h3><p>Help visitors find practice-area information and request contact, with clear automated-interaction disclosure.</p></article>
+    <article tabindex="0"><span class="ed-capability-icon">↺</span><h3>Missed-call follow-up</h3><p>Route unanswered calls to an authorized team and coordinate consent-based reminders without making legal promises.</p></article>
+    <article tabindex="0"><span class="ed-capability-icon">▣</span><h3>CRM &amp; intake routing</h3><p>Track lead source, response and consultation status. Keep confidential case information out of ad tracking.</p></article>
+  </div>
+  <div class="ed-automation-demo">
+    <div class="ed-demo-top"><span>LEGAL INTAKE / CONCEPT DEMO</span><i>ILLUSTRATIVE</i></div>
+    <div class="ed-chat"><p class="ed-chat-user">Does your firm handle estate planning? I'd like someone to call me.</p><p class="ed-chat-bot">I can help request a callback from the team. May I have your preferred contact method? I can't provide legal advice or confirm representation.</p></div>
+    <p>Example only. No live AI agent, legal advice, consultation booking or attorney-client relationship is represented.</p>
+  </div>
+</div>
+</section>
+
+<section class="ed-section ed-light" id="planner">
+<svg class="ed-atmosphere ed-atmosphere-planner" viewBox="0 0 420 260" aria-hidden="true"><g class="ed-atmosphere-drift" fill="none" stroke="currentColor"><path d="M20 220H400M40 20V240"/><path d="M40 180L120 146L200 166L285 78L380 46" stroke-width="2.5"/><circle cx="40" cy="180" r="6"/><circle cx="120" cy="146" r="6"/><circle cx="200" cy="166" r="6"/><circle cx="285" cy="78" r="6"/><circle cx="380" cy="46" r="6"/></g></svg>
+<div class="ed-wrap ed-planner-grid">
+  <div>
+    <p class="ed-eyebrow">04 / LEAD-TO-CONSULTATION PLANNER</p><h2>Model qualified leads, not just clicks and form fills.</h2>
+    <p class="ed-muted">Adjust hypothetical assumptions to see how screening, responses and consultation rates interact. This is not a forecast, case-volume claim or industry benchmark.</p>
+    <div class="ed-controls">
+      <label for="ed-inquiries">Monthly leads <output id="ed-inquiries-label">200</output></label>
+      <input id="ed-inquiries" type="range" min="50" max="1000" step="25" value="200"/>
+      <label for="ed-qualified">Relevant leads <output id="ed-qualified-label">40%</output></label>
+      <input id="ed-qualified" type="range" min="10" max="90" step="5" value="40"/>
+      <label for="ed-contacted">Relevant leads reached <output id="ed-contacted-label">60%</output></label>
+      <input id="ed-contacted" type="range" min="10" max="100" step="5" value="60"/>
+      <label for="ed-applications">Reached leads who consult <output id="ed-applications-label">25%</output></label>
+      <input id="ed-applications" type="range" min="5" max="80" step="5" value="25"/>
+    </div>
+  </div>
+  <div class="ed-planner-result" aria-live="polite">
+    <span>HYPOTHETICAL MONTHLY MODEL</span>
+    <div><small>New leads</small><strong id="ed-out-inquiries">200</strong></div>
+    <div><small>Relevant leads</small><strong id="ed-out-qualified">80</strong></div>
+    <div><small>Reached relevant leads</small><strong id="ed-out-reached">48</strong></div>
+    <div class="ed-result-highlight"><small>Potential consultations</small><strong id="ed-out-applications">12</strong></div>
+    <p>Consultations do not equal signed clients, case acceptance or guaranteed legal outcomes.</p>
+  </div>
+</div>
+</section>
+
+<section class="ed-section ed-navy ed-principles">
+<div class="ed-wrap">
+  <div class="ed-heading"><div><p class="ed-eyebrow">05 / BUILT FOR TRUST</p><h2>Marketing brings the lead. Your firm makes the legal decisions.</h2></div></div>
+  <div class="ed-experience">
+    <div class="ed-experience-number" aria-hidden="true">01 <small>CONNECTED LEAD JOURNEY</small></div>
+    <div><h3>Professional marketing. Responsible legal intake.</h3><p>LeadsFlo combines search visibility, paid ads, landing pages and CRM workflows. Your staff retain control of conflict checks, suitability, client confidentiality, legal advice and representation decisions.</p><p>Advertising and intake must follow applicable state attorney-advertising requirements. We do not claim legal specialization, past legal client results or guaranteed signed cases.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="ed-section ed-cream" id="guides">
+<div class="ed-wrap">
+  <div class="ed-heading"><div><p class="ed-eyebrow">06 / INSIGHTS</p><h2>Practical guides for law firm growth.</h2></div><p>Search visibility, paid advertising, lead qualification and technology—designed around your firm's needs.</p></div>
+  <div class="ed-guides">
+    {guides.map(([slug,title,description],i)=>(
+      <a class="ed-guide" href={`/insights/${slug}/`} aria-label={`Read ${title}`}>
+        <span>0{i+1} / LAW FIRM GUIDE</span>
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <strong>Read the guide ↗</strong>
+      </a>
+    ))}
+  </div>
+</div>
+</section>
+
+<section class="ed-section ed-light" id="faq">
+<div class="ed-wrap ed-faq-grid">
+  <div><p class="ed-eyebrow">07 / COMMON QUESTIONS</p><h2>A few things worth knowing.</h2></div>
+  <div class="ed-faqs">
+    {faq.map(item=>(
+      <details>
+        <summary>{item.q}</summary>
+        <p>{item.a}</p>
+      </details>
+    ))}
+  </div>
+</div>
+</section>
+
+<section class="ed-close">
+<svg class="ed-atmosphere ed-atmosphere-campus" viewBox="0 0 600 300" aria-hidden="true" focusable="false">
+  <g class="ed-atmosphere-drift" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M30 120L300 25L570 120"/>
+    <path d="M65 132H535M85 154H515"/>
+    <path d="M105 154V255M495 154V255"/>
+    <path d="M85 255H515M55 275H545"/>
+    <path d="M145 160V245M180 160V245M215 160V245"/>
+    <path d="M385 160V245M420 160V245M455 160V245"/>
+    <path d="M265 255V193Q300 163 335 193V255"/>
+    <circle cx="300" cy="99" r="22"/>
+    <path d="M300 77V121M278 99H322"/>
+  </g>
+</svg>
+  <div class="ed-wrap">
+    <p class="ed-eyebrow">LEADSFLO / LEGAL MARKETING</p>
+    <h2>Let's make your next qualified lead easier to turn into a consultation.</h2>
+    <p>Tell us about your practice areas, locations, growth priorities and how your team handles new leads.</p>
+    <a class="ed-btn ed-btn-gold" href={booking} target="_blank" rel="noopener noreferrer">Book a law firm growth conversation ↗</a>
+  </div>
+</section>
+</main>
+
+<footer class="ed-footer">
+<div class="ed-wrap ed-footer-grid">
+  <div>
+    <a class="ed-brand ed-footer-brand" href="/" aria-label="LeadsFlo home">
+      <svg class="ed-cap" viewBox="0 0 54 48" aria-hidden="true">
+        <path d="M27 5v34M14 12h26M27 5l-5 6h10Z" fill="none" stroke="#b99055" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14 12 6 28h16L14 12ZM40 12 32 28h16L40 12Z" fill="#dfbd82" stroke="#b99055" stroke-width="1.5" stroke-linejoin="round"/>
+        <path d="M15 41h24M21 37h12" fill="none" stroke="#b99055" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <BrandMark theme="light"/>
+    </a>
+    <p>Search visibility, paid advertising, intake-focused websites and responsible lead follow-up for law firms that need better qualified leads.</p>
+    <a href={booking} target="_blank" rel="noopener noreferrer">Let's Talk ↗</a>
+  </div>
+  <div><strong>SERVICES</strong><a href="/performance-marketing/">Performance Marketing</a><a href="/websites-funnels/">Websites &amp; Funnels</a><a href="/crm-automation/">CRM &amp; Automation</a><a href="/appointment-setting/">Appointment Setting</a></div>
+  <div><strong>EXPLORE</strong><a href="/industries/">All Industries</a><a href="/insights/">Insights</a><a href="/our-approach/">Our Approach</a><a href="/contact/">Contact</a></div>
+</div>
+<div class="ed-wrap ed-footer-bottom"><span>© {new Date().getFullYear()} LeadsFlo</span><span><a href="/privacy-policy/">Privacy</a> · <a href="/terms-and-conditions/">Terms</a></span></div>
+</footer>
+
+<a class="ed-mobile-cta" href={booking} target="_blank" rel="noopener noreferrer">Discuss legal lead generation ↗</a>
+
+<script is:inline>
+(()=>{
+ const header=document.getElementById('ed-header');
+ const menuBtn=document.getElementById('ed-menu-btn');
+ const menu=document.getElementById('ed-menu');
+ menuBtn?.addEventListener('click',()=>{
+   const open=menu.classList.toggle('open');
+   menuBtn.setAttribute('aria-expanded',String(open));
+   menuBtn.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+ });
+ menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+   menu.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false');
+   menuBtn.setAttribute('aria-label','Open navigation');
+ }));
+ document.addEventListener('keydown',e=>{
+   if(e.key==='Escape'){menu?.classList.remove('open');menuBtn?.setAttribute('aria-expanded','false')}
+ });
+ let last=window.scrollY;
+ window.addEventListener('scroll',()=>{
+   const now=window.scrollY;
+   if(now<65 || header.contains(document.activeElement) || Math.abs(now-last)<9){if(now<65)header.classList.remove('hidden');last=now;return}
+   header.classList.toggle('hidden',now>last);last=now;
+ },{passive:true});
+
+  const programs={
+    injury:['01','⚖','Personal Injury','Reach people searching for matters your firm handles and make it easy to connect with intake staff.','Local practice-area pages, relevant search campaigns and eligible local ad options','Location, matter category and preferred callback details','Authorized staff reviews the lead and determines next steps'],
+    family:['02','◇','Family Law','Present clear, respectful information to people looking for family-law services.','Local SEO, practice-area search ads and clear consultation pages','Service area, type of legal help sought and safe contact preferences','Private consultation request routed to a designated staff member'],
+    immigration:['03','◎','Immigration Law','Help prospective clients understand which services your firm offers and how to contact staff.','Service-specific search intent, language-appropriate creative when supported','Service type, location and preferred language where appropriate','Staff-reviewed inquiry with clear next-step communication'],
+    defense:['04','◆','Criminal Defense','Offer accessible contact options for people researching relevant legal assistance.','High-intent geographic search, clear phone-first contact paths','Practice area, service region and urgency without sensitive details in analytics','Timely human escalation for intake review'],
+    estate:['05','✧','Estate Planning','Build trust with clear educational content and relevant consultation pathways.','Local SEO, topic-led content and focused consultation pages','Service interest, geographic fit and preferred appointment window','Staff-led planning consultation request'],
+    business:['06','▣','Business Law','Connect decision-makers with relevant advisory and commercial legal services.','Business-service content, intent-led search and considered follow-up','Organization needs, general service category and contact details','Consultative discovery call with authorized firm personnel']
+  };
+ const pids=['ed-program-number','ed-program-symbol','ed-program-title','ed-program-description','ed-program-ads','ed-program-fit','ed-program-action'];
+ function setProgram(key){
+   if(!programs[key])return;
+   programs[key].forEach((v,i)=>document.getElementById(pids[i]).textContent=v);
+   document.querySelectorAll('[data-program]').forEach(btn=>{
+     const selected=btn.dataset.program===key;
+     btn.classList.toggle('active',selected);btn.setAttribute('aria-pressed',String(selected));
+   });
+ }
+ document.querySelectorAll('[data-program]').forEach(btn=>{
+   btn.addEventListener('click',()=>setProgram(btn.dataset.program));
+   btn.addEventListener('focus',()=>setProgram(btn.dataset.program));
+   btn.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')setProgram(btn.dataset.program)});
+ });
+
+  const stages=[
+    ['STAGE 01 / ATTRACT','Get found for the legal services your firm actually provides.','Local SEO, practice-area pages and carefully targeted search ads help potential clients discover relevant information.','Relevant visits, calls and qualified search intent'],
+    ['STAGE 02 / CAPTURE','Give interested visitors a clear way to contact your firm.','Use helpful service pages, simple forms and accessible call options. Request only essential lead details at this stage.','New leads with source attribution'],
+    ['STAGE 03 / SCREEN','Separate general interest from relevant leads.','Authorized staff assess geography, practice area, conflicts and other suitability questions through approved processes.','Leads eligible for further staff review'],
+    ['STAGE 04 / RESPOND','Follow up without compromising client confidentiality.','Create CRM tasks, route missed calls and send consent-based acknowledgments without putting confidential case details into advertising platforms.','Response time and reached contacts'],
+    ['STAGE 05 / CONSULT','Turn appropriate leads into consultation opportunities.',"The law firm's team explains next steps and schedules suitable consultations based on attorney availability and procedures.",'Consultations requested and completed'],
+    ['STAGE 06 / REVIEW','Measure results beyond the initial lead.','Use firm-approved intake reporting to understand qualified leads and consultations while protecting sensitive legal information.','Verified consultation and intake outcomes']
+  ];
+ function setStage(n){
+   const s=stages[n];if(!s)return;
+   ['ed-stage-kicker','ed-stage-title','ed-stage-body','ed-stage-metric'].forEach((id,i)=>document.getElementById(id).textContent=s[i]);
+   document.querySelectorAll('[data-stage]').forEach(btn=>{
+     const active=Number(btn.dataset.stage)===n;
+     btn.classList.toggle('active',active);btn.setAttribute('aria-pressed',String(active));
+   });
+ }
+ document.querySelectorAll('[data-stage]').forEach(btn=>{
+   btn.addEventListener('click',()=>setStage(Number(btn.dataset.stage)));
+   btn.addEventListener('focus',()=>setStage(Number(btn.dataset.stage)));
+   btn.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')setStage(Number(btn.dataset.stage))});
+ });
+
+ const ids=['ed-inquiries','ed-qualified','ed-contacted','ed-applications'];
+ function updatePlanner(){
+   const [a,b,c,d]=ids.map(id=>Number(document.getElementById(id).value));
+   ids.forEach((id,i)=>{
+     document.getElementById(id+'-label').textContent=[a,b+'%',c+'%',d+'%'][i];
+   });
+   const qualified=Math.round(a*b/100), reached=Math.round(qualified*c/100), applications=Math.round(reached*d/100);
+   document.getElementById('ed-out-inquiries').textContent=a.toLocaleString();
+   document.getElementById('ed-out-qualified').textContent=qualified.toLocaleString();
+   document.getElementById('ed-out-reached').textContent=reached.toLocaleString();
+   document.getElementById('ed-out-applications').textContent=applications.toLocaleString();
+ }
+ ids.forEach(id=>document.getElementById(id)?.addEventListener('input',updatePlanner));
+ updatePlanner();
+
+ document.querySelectorAll('.ed-faqs details').forEach(el=>{
+   el.addEventListener('pointerenter',e=>{
+     if(e.pointerType==='mouse')el.open=true;
+   });
+  el.addEventListener('pointerleave',e=>{
+    if(e.pointerType==='mouse')el.open=false;
+  });
+ });
+})();
+
+</script>
+
+<style is:global>
+:root{scroll-behavior:smooth}
+.ed-page{margin:0;background:#f8f9fb;color:#112744;font-family:Inter,"Plus Jakarta Sans",sans-serif}
+.ed-page *{box-sizing:border-box}
+.ed-page a{transition:color .2s ease,background .2s ease,transform .2s ease}
+.ed-page button,.ed-page input{font:inherit}
+.ed-page button{cursor:pointer}
+.ed-page :is(a,button,input,summary):focus-visible{outline:3px solid #19b9db;outline-offset:4px}
+.ed-wrap{width:min(1160px,calc(100% - 44px));margin-inline:auto}
+.ed-header{position:sticky;top:0;z-index:100;background:#fffaf3;border-bottom:1px solid #eadfcf;transition:transform .28s ease}
+.ed-header.hidden{transform:translateY(-110%)}
+.ed-nav{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.ed-brand{display:inline-flex;align-items:center;gap:7px;position:relative;flex-shrink:0;text-decoration:none}
+.ed-brand .ed-cap{
+ position:absolute;
+ left:calc(99px * var(--ed-logo-scale));
+ top:calc(-1px * var(--ed-logo-scale));
+ width:calc(28px * var(--ed-logo-scale));
+ height:calc(26px * var(--ed-logo-scale));
+ z-index:2;
+ transform-origin:50% 85%;
+ transform:rotate(6deg);
+ transition:transform .35s ease;
+}
+.ed-brand{--ed-logo-scale:1;padding-top:calc(12px * var(--ed-logo-scale))}
+.ed-brand .lf-brand-v4{
+ --brand-text:#142d49;
+ --brand-flo:#147f9d;
+ --brand-period:#d6a45b;
+ --brand-plane:#147f9d;
+ font-size:calc(35px * var(--ed-logo-scale));
+}
+.ed-brand .lf-brand-v4__current1{stroke:#147f9d}
+.ed-brand .lf-brand-v4__current2{stroke:#d6a45b}
+.ed-brand .lf-brand-v4__pulse{stroke:#67d9e8}
+.ed-footer-brand .lf-brand-v4{
+ --brand-text:#f5f7fa;
+ --brand-flo:#91dfed;
+ --brand-period:#f0c785;
+ --brand-plane:#91dfed;
+}
+.ed-footer-brand .lf-brand-v4__current1{stroke:#91dfed}
+.ed-footer-brand .lf-brand-v4__current2{stroke:#f0c785}
+.ed-footer-brand .lf-brand-v4__pulse{stroke:#67d9e8}
+.ed-brand:hover .ed-cap,.ed-brand:focus-visible .ed-cap{transform:rotate(0deg)}
+.ed-brand :is(svg:not(.ed-cap),.lf-brand-v4){max-width:176px}
+.ed-navlinks{display:flex;align-items:center;gap:23px}
+.ed-navlinks>a{font-size:13px;color:#20354c;font-weight:800;text-decoration:none;white-space:nowrap}
+.ed-navlinks>a:hover{color:#147c9a}
+.ed-navlinks .ed-navcta{background:#102845;color:#fff;padding:15px 18px;border-radius:6px}
+.ed-menu-btn{display:none;background:none;border:0;width:48px;height:48px;padding:12px;flex-direction:column;justify-content:space-around}
+.ed-menu-btn span{height:3px;background:#102845;width:100%;border-radius:4px}
+.ed-hero{background:linear-gradient(135deg,#08172e,#123357);color:#f9fbff;padding:clamp(70px,8vw,122px) 0;overflow:hidden;position:relative}
+.ed-hero:before{content:"";position:absolute;width:650px;height:650px;right:-350px;top:-230px;border:1px solid #80cee331;border-radius:50%;box-shadow:0 0 0 65px #80cee30a,0 0 0 145px #80cee308;pointer-events:none}
+.ed-hero-grid{position:relative;display:grid;grid-template-columns:1.06fr .94fr;align-items:center;gap:48px}
+.ed-kicker,.ed-eyebrow{font-size:11px;letter-spacing:.18em;font-weight:850;color:#c18c43}
+.ed-kicker{color:#f1cd91}.ed-kicker span{display:inline-block;width:18px;height:2px;background:#f0c17a;vertical-align:middle}
+.ed-hero h1{font-family:"Plus Jakarta Sans",sans-serif;font-size:clamp(38px,4.6vw,67px);line-height:1.09;letter-spacing:-.06em;margin:23px 0}
+.ed-hero h1 em{color:#91ddec;font-style:normal}
+.ed-hero-copy>p:not(.ed-kicker){font-size:17px;line-height:1.85;color:#c9d9e9;max-width:610px}
+.ed-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:33px}
+.ed-btn{display:inline-flex;align-items:center;justify-content:center;padding:17px 23px;border-radius:6px;font-size:13px;font-weight:850;text-decoration:none}
+.ed-btn-gold{background:#f0c785;color:#183048}
+.ed-btn-gold:hover{background:#ffe2aa;transform:translateY(-2px)}
+.ed-link{color:#e7f6ff;font-weight:800;font-size:13px;text-decoration:none}
+.ed-hero-note{font-size:12px;color:#a9c4d8;margin-top:27px}
+.ed-campus{border-radius:16px;border:1px solid #5e849c;background:#102e4d;overflow:hidden;box-shadow:0 40px 80px #020d2340;transform:perspective(1300px) rotateY(-3deg)}
+.ed-campus>svg{display:block;width:100%;height:auto}
+.ed-campus-top,.ed-campus-bottom{display:flex;justify-content:space-between;gap:12px;padding:17px 20px;background:#09223e;color:#a7d8e7;font-size:10px;font-weight:800;letter-spacing:.1em}
+.ed-live{color:#f4d19a}.ed-live i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#67dccd;margin-right:5px}
+.ed-route{animation:edRoute 8s linear infinite}
+.ed-pulse{transform-origin:310px 306px;animation:edPulse 2.4s ease-in-out infinite}
+@keyframes edRoute{to{stroke-dashoffset:-144}}
+@keyframes edPulse{50%{transform:scale(1.55);opacity:.12}}
+.ed-marquee{overflow:hidden;background:#0c2541;padding:19px 0;border-block:1px solid #24536a}
+.ed-marquee-track{display:flex;width:max-content;animation:edScroll 34s linear infinite}
+.ed-marquee-group{display:flex;gap:12px;flex-shrink:0;padding-right:12px}
+.ed-marquee-group span{background:#fff4df;border:1px solid #e9cba0;border-radius:7px;color:#213c55;padding:14px 22px;font-size:15px;font-weight:850;white-space:nowrap}
+.ed-marquee:hover .ed-marquee-track,.ed-marquee:focus-within .ed-marquee-track{animation-play-state:paused}
+@keyframes edScroll{to{transform:translateX(-16.6666667%)}}
+.ed-section{padding:clamp(72px,8vw,120px) 0;position:relative;scroll-margin-top:90px}
+.ed-light{background:#f8fafc}.ed-cream{background:#f8f2e9}.ed-navy{background:#0a1e38;color:#fff}
+.ed-heading{display:grid;grid-template-columns:1.15fr .65fr;align-items:end;gap:44px;margin-bottom:43px}
+.ed-heading h2,.ed-section h2,.ed-close h2{font-family:"Plus Jakarta Sans",sans-serif;font-size:clamp(31px,4vw,52px);line-height:1.13;letter-spacing:-.052em;margin:14px 0 0;max-width:800px}
+.ed-heading>p{font-size:15px;line-height:1.85;color:#596b7c;margin:0}
+.ed-navy .ed-heading>p{color:#b4cadb}
+.ed-program-grid{display:grid;grid-template-columns:.93fr 1.07fr;gap:22px}
+.ed-program-options{display:grid;gap:12px}
+.ed-program{display:flex;flex-direction:column;text-align:left;gap:8px;padding:24px 26px;background:#fff;color:#17304a;border:1px solid #dce3eb;border-radius:11px;transition:background .2s,border-color .2s,transform .2s}
+.ed-program:hover,.ed-program.active{border-color:#167ea2;background:#eaf7fa;transform:translateX(4px)}
+.ed-program span{color:#1485a3;font-size:10px;font-weight:850;letter-spacing:.12em}
+.ed-program strong{font-size:21px;letter-spacing:-.035em}
+.ed-program small{font-size:13px;color:#5d7484}
+.ed-program-detail{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;background:#113957;color:#fff;padding:clamp(26px,4vw,54px);border-radius:15px;min-height:515px}
+.ed-program-detail .ed-eyebrow{color:#c6f0f6}
+.ed-program-symbol{font-size:83px;color:#efc683;margin:19px 0 4px}
+.ed-program-detail h3{font-size:clamp(29px,3vw,40px);letter-spacing:-.045em;line-height:1.14;margin:12px 0}
+.ed-program-detail>p:not(.ed-eyebrow){color:#cbdbe5;font-size:15px;line-height:1.8}
+.ed-detail-line{display:grid;grid-template-columns:125px 1fr;gap:15px;border-top:1px solid #ffffff30;padding:19px 0;width:100%}
+.ed-detail-line span,.ed-stage-metric span{color:#a0d4e3;letter-spacing:.1em;font-size:10px;font-weight:850}
+.ed-detail-line strong{font-size:13px;line-height:1.6;font-weight:650}
+.ed-program-detail>a{margin-top:auto;color:#f5d194;font-size:13px;font-weight:850}
+.ed-steps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}
+.ed-step{display:flex;flex-direction:column;align-items:flex-start;gap:17px;border:1px solid #386081;background:#14344e;color:#dce9f0;text-align:left;border-radius:9px;padding:21px 13px;transition:background .2s,border-color .2s}
+.ed-step span{font-size:12px;color:#94c7d4}
+.ed-step strong{font-size:14px}
+.ed-step:hover,.ed-step.active{background:#e8c890;color:#17304a;border-color:#e8c890}
+.ed-step.active span,.ed-step:hover span{color:#37516a}
+.ed-stage-detail{margin-top:18px;background:#102e4c;border:1px solid #2e5876;padding:clamp(27px,4vw,47px);border-radius:12px;min-height:260px}
+.ed-stage-detail>span{font-size:11px;color:#e9c48b;font-weight:850;letter-spacing:.12em}
+.ed-stage-detail h3{font-size:clamp(25px,2.7vw,35px);line-height:1.2;letter-spacing:-.045em;max-width:790px;margin:16px 0}
+.ed-stage-detail>p{color:#c5d8e5;line-height:1.8;max-width:790px}
+.ed-stage-metric{border-top:1px solid #45647a;margin-top:25px;padding-top:17px;display:flex;gap:20px;flex-wrap:wrap}
+.ed-stage-metric strong{color:#f1d29d;font-size:14px}
+.ed-automation-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.ed-automation-grid article{border:1px solid #e0d4c4;border-radius:12px;background:#fffcf7;padding:25px}
+.ed-capability-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:12px;background:#e0f5f7;color:#187d98;font-size:26px}
+.ed-automation-grid h3{color:#162f49;font-size:20px;letter-spacing:-.035em}
+.ed-automation-grid p{font-size:13px;line-height:1.8;color:#5b6979}
+.ed-automation-demo{margin-top:26px;background:#132e49;padding:28px;border-radius:13px;color:#fff}
+.ed-demo-top{display:flex;justify-content:space-between;gap:15px;font-size:11px;letter-spacing:.1em;font-weight:850;color:#f0cb92}
+.ed-demo-top i{font-style:normal;color:#a8c5d6}
+.ed-chat{display:grid;gap:13px;max-width:750px;margin-top:25px}
+.ed-chat p{padding:20px;border-radius:13px;line-height:1.8;font-size:14px;margin:0}
+.ed-chat-user{background:#e6f1f6;color:#19344f;justify-self:end;max-width:75%}
+.ed-chat-bot{background:#294d67;color:#fff;justify-self:start;max-width:85%}
+.ed-automation-demo>p{font-size:11px;color:#b6cadb;margin-top:23px}
+.ed-planner-grid{display:grid;grid-template-columns:1fr .85fr;gap:70px;align-items:center}
+.ed-muted{color:#647489;line-height:1.85;margin:25px 0}
+.ed-controls{display:grid;gap:14px;margin-top:34px}
+.ed-controls label{display:flex;justify-content:space-between;font-size:14px;font-weight:750}
+.ed-controls output{color:#127e97;font-weight:850}
+.ed-controls input{width:100%;accent-color:#127f9c;margin-bottom:13px}
+.ed-planner-result{background:#0d2946;color:#fff;padding:32px;border-radius:14px;box-shadow:0 25px 55px #082e4a26}
+.ed-planner-result>span{font-size:11px;font-weight:850;color:#cdeaf0;letter-spacing:.12em}
+.ed-planner-result>div{display:flex;justify-content:space-between;align-items:center;padding:21px 0;border-bottom:1px solid #456177}
+.ed-planner-result small{font-size:13px;color:#bed3df}
+.ed-planner-result strong{font-size:32px;color:#f0c785;letter-spacing:-.04em}
+.ed-planner-result .ed-result-highlight{background:#20445f;padding:18px;margin:10px -12px;border-radius:8px;border:none}
+.ed-planner-result .ed-result-highlight strong{font-size:47px}
+.ed-planner-result>p{color:#a9c3d5;font-size:12px;line-height:1.75}
+.ed-experience{display:grid;grid-template-columns:.34fr 1fr;gap:50px;border-top:1px solid #38617e;padding-top:34px;align-items:start}
+.ed-experience-number{font-size:clamp(80px,11vw,170px);font-weight:850;letter-spacing:-.08em;color:#f0c785;line-height:1}
+.ed-experience-number small{display:block;font-size:10px;letter-spacing:.12em;line-height:1.8;color:#b3d7e3}
+.ed-experience h3{font-size:28px;margin:0 0 17px}
+.ed-experience p{color:#bdcedb;line-height:1.9;max-width:700px}
+.ed-guides{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.ed-guide{display:flex;flex-direction:column;gap:12px;background:#fff;border:1px solid #e5d9c8;border-radius:12px;padding:27px;text-decoration:none;color:#18354f;min-height:260px;transition:transform .2s,border-color .2s}
+.ed-guide:hover{transform:translateY(-5px);border-color:#c68d47}
+.ed-guide span{font-size:10px;letter-spacing:.12em;color:#a2773e;font-weight:850}
+.ed-guide h3{font-size:23px;line-height:1.25;letter-spacing:-.04em;margin:8px 0 0}
+.ed-guide p{font-size:13px;line-height:1.75;color:#68788a}
+.ed-guide strong{font-size:12px;color:#177e97;margin-top:auto}
+.ed-faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px}
+.ed-faqs details{border-bottom:1px solid #dae3eb;padding:20px 5px}
+.ed-faqs summary{cursor:pointer;list-style:none;font-size:17px;font-weight:800;color:#172f47;display:flex;justify-content:space-between;gap:18px}
+.ed-faqs summary:after{content:"+";font-size:25px;color:#1686a3;font-weight:500}
+.ed-faqs details[open] summary:after{content:"−"}
+.ed-faqs details p{color:#576c7b;font-size:14px;line-height:1.85;margin:16px 0 0}
+.ed-close{background:linear-gradient(135deg,#143d5e,#0a203a);color:#fff;padding:95px 0}
+.ed-close h2{max-width:850px}
+.ed-close>div>p:not(.ed-eyebrow){color:#c6d7e3;line-height:1.8;max-width:700px;margin:30px 0}
+.ed-footer{background:#071628;padding:65px 0 25px;color:#dde8ef}
+.ed-footer-grid{display:grid;grid-template-columns:1.5fr .7fr .7fr;gap:60px}
+.ed-footer-brand{margin-bottom:20px}
+.ed-footer p{color:#aabccc;font-size:13px;line-height:1.9;max-width:400px}
+.ed-footer a{display:block;text-decoration:none;color:#dbe9ef;font-size:13px;margin-top:13px}
+.ed-footer .ed-brand{display:inline-flex}
+.ed-footer strong{color:#f0c785;font-size:11px;letter-spacing:.1em}
+.ed-footer-bottom{border-top:1px solid #2e4258;margin-top:45px;padding-top:23px;display:flex;justify-content:space-between;gap:20px;color:#a9bdce;font-size:12px}
+.ed-footer-bottom a{display:inline;color:#afc9d7}
+.ed-mobile-cta{display:none}
+@media(max-width:1050px){
+ .ed-navlinks{gap:12px}
+ .ed-navlinks>a{font-size:12px}
+ .ed-hero-grid{gap:28px}
+ .ed-automation-grid,.ed-guides{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:850px){
+ .ed-menu-btn{display:flex}
+ .ed-navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:#fffaf3;padding:20px 24px;border-bottom:1px solid #e6d8c5;box-shadow:0 25px 35px #081c2930;flex-direction:column;align-items:stretch;gap:0}
+ .ed-navlinks.open{display:flex}
+ .ed-navlinks>a{font-size:16px;padding:15px;border-bottom:1px solid #efe3d5}
+ .ed-navlinks .ed-navcta{text-align:center;margin-top:10px}
+ .ed-hero-grid,.ed-heading,.ed-program-grid,.ed-planner-grid,.ed-faq-grid{grid-template-columns:1fr}
+ .ed-heading{gap:15px}
+ .ed-campus{max-width:670px;transform:none}
+ .ed-steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .ed-planner-grid{gap:34px}
+ .ed-experience{grid-template-columns:1fr;gap:20px}
+ .ed-program-detail{min-height:unset}
+ .ed-footer-grid{grid-template-columns:1.3fr 1fr;gap:35px}
+}
+@media(max-width:560px){
+ .ed-wrap{width:calc(100% - 30px)}
+ .ed-nav{min-height:73px}
+ .ed-brand{--ed-logo-scale:.82}
+ .ed-brand :is(svg:not(.ed-cap),.lf-brand-v4){max-width:143px}
+ .ed-hero{padding:58px 0 65px}
+ .ed-hero h1{font-size:clamp(35px,9vw,44px)}
+ .ed-hero-copy>p:not(.ed-kicker){font-size:15px}
+ .ed-actions{align-items:stretch;flex-direction:column;gap:17px}
+ .ed-btn{width:100%}
+ .ed-campus-top,.ed-campus-bottom{font-size:8px;padding:12px}
+ .ed-section{padding:68px 0}
+ .ed-program{padding:20px}
+ .ed-detail-line{grid-template-columns:1fr;gap:6px}
+ .ed-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .ed-step{padding:14px;gap:8px}
+ .ed-automation-grid,.ed-guides,.ed-footer-grid{grid-template-columns:1fr}
+ .ed-automation-demo{padding:20px}
+ .ed-chat-user,.ed-chat-bot{max-width:100%}
+ .ed-planner-result{padding:23px}
+ .ed-experience-number{font-size:95px}
+ .ed-footer{padding-bottom:90px}
+ .ed-footer-bottom{flex-direction:column}
+ .ed-mobile-cta{display:flex;align-items:center;justify-content:center;position:fixed;z-index:90;bottom:0;left:0;right:0;min-height:60px;padding:12px 18px calc(12px + env(safe-area-inset-bottom));background:#f0c785;color:#17314b;text-align:center;text-decoration:none;font-weight:850;font-size:14px;box-shadow:0 -10px 30px #03182f2c}
+ .ed-page{padding-bottom:60px}
+}
+@media(prefers-reduced-motion:reduce){
+ :root{scroll-behavior:auto}
+ .ed-page *{animation:none!important;transition:none!important}
+}
+
+/* LEGAL_ATMOSPHERE_V1 — subtle architectural environment */
+#practices,#planner,.ed-close{
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+}
+
+#practices>.ed-wrap,
+#planner>.ed-wrap,
+.ed-close>.ed-wrap{
+  position:relative;
+  z-index:2;
+}
+
+#practices{
+  background-color:#f8fafc;
+  background-image:
+    linear-gradient(#167e9910 1px,transparent 1px),
+    linear-gradient(90deg,#167e9910 1px,transparent 1px);
+  background-size:56px 56px;
+}
+
+#planner{
+  background-image:
+    radial-gradient(circle at 95% 15%,#a9dfed25,transparent 35%),
+    linear-gradient(#167e990b 1px,transparent 1px),
+    linear-gradient(90deg,#167e990b 1px,transparent 1px);
+  background-size:auto,48px 48px,48px 48px;
+}
+
+.ed-atmosphere{
+  position:absolute;
+  display:block;
+  pointer-events:none;
+  user-select:none;
+  z-index:0;
+  transition:opacity .7s ease,translate 1.4s ease;
+}
+
+.ed-atmosphere-drift{
+  transform-origin:center;
+  animation:edAcademicBreathe 18s ease-in-out infinite alternate;
+}
+
+.ed-atmosphere-program{
+  width:min(28vw,320px);
+  right:-75px;
+  top:8%;
+  color:#167f9c;
+  opacity:.12;
+}
+
+.ed-atmosphere-planner{
+  width:min(33vw,400px);
+  right:-110px;
+  bottom:1%;
+  color:#2487a2;
+  opacity:.10;
+}
+
+.ed-close{
+  background:
+    radial-gradient(ellipse at 82% 55%,#3a75912b,transparent 48%),
+    linear-gradient(135deg,#143d5e,#0a203a);
+}
+
+.ed-atmosphere-campus{
+  width:min(43vw,520px);
+  right:-45px;
+  bottom:0;
+  color:#9bd9e5;
+  opacity:.13;
+}
+
+#practices:hover .ed-atmosphere-program{
+  translate:-8px -4px;
+  opacity:.18;
+}
+
+#planner:hover .ed-atmosphere-planner{
+  translate:-8px -5px;
+  opacity:.15;
+}
+
+.ed-close:hover .ed-atmosphere-campus{
+  translate:-8px 0;
+  opacity:.19;
+}
+
+@keyframes edAcademicBreathe{
+  from{transform:translateY(0) rotate(0deg)}
+  to{transform:translateY(-9px) rotate(2deg)}
+}
+
+@media(max-width:850px){
+  .ed-atmosphere-program{width:200px;right:-85px;opacity:.08}
+  .ed-atmosphere-planner{width:230px;right:-100px;opacity:.07}
+  .ed-atmosphere-campus{width:280px;right:-90px;opacity:.08}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .ed-atmosphere,
+  .ed-atmosphere-drift{
+    animation:none!important;
+    transition:none!important;
+    translate:none!important;
+    transform:none!important;
+  }
+}
+
+/* LAW_FIRM_THEME_V1 — brass / slate / ivory; scoped to Legal page */
+.law-page{background:#f8f6f1;color:#1a3042}
+.law-page .ed-header{background:#f8f5ee;border-color:#e4d8c5}
+.law-page .ed-hero{background:linear-gradient(130deg,#0c1e30,#203f58)}
+.law-page .ed-hero h1 em{color:#e4bf84}
+.law-page .ed-kicker,.law-page .ed-eyebrow{color:#a77e44}
+.law-page .ed-hero .ed-kicker{color:#e2bd80}
+.law-page .ed-btn-gold,.law-page .ed-mobile-cta{background:#e8c58d;color:#1a3042}
+.law-page .ed-marquee{background:#193348;border-color:#8a785e}
+.law-page .ed-marquee-group span{background:#fbf5e9;border-color:#c8ab7e;color:#24384a}
+.law-page .ed-light{background-color:#f8f6f1}
+.law-page .ed-cream{background:#f1ede5}
+.law-page .ed-navy{background:#132a3d}
+.law-page .ed-program:hover,.law-page .ed-program.active{background:#f4ead7;border-color:#b99055}
+.law-page .ed-program span,.law-page .ed-guide strong{color:#916a38}
+.law-page .ed-program-detail{background:#203e55}
+.law-page .ed-program-symbol{color:#d6b276}
+.law-page .ed-step:hover,.law-page .ed-step.active{background:#dfbd82;border-color:#dfbd82}
+.law-page .ed-capability-icon{background:#efe0c8;color:#715430}
+.law-page .ed-close{background:linear-gradient(135deg,#24465f,#0b1d30)}
+.law-page .ed-footer{background:#0b1b2b}
+.law-page .ed-atmosphere{color:#b99055}
+.law-page .ed-brand .lf-brand-v4{--brand-text:#20364b;--brand-flo:#8f734d;--brand-period:#bc9256;--brand-plane:#8f734d}
+.law-page .ed-brand .lf-brand-v4__current1{stroke:#8f734d}
+.law-page .ed-brand .lf-brand-v4__current2{stroke:#c7a36b}
+.law-page .ed-footer-brand .lf-brand-v4{--brand-text:#f6f2e9;--brand-flo:#e6c58b;--brand-period:#e6c58b;--brand-plane:#e6c58b}
+.law-page .ed-footer-brand .lf-brand-v4__current1{stroke:#e6c58b}
+.law-page .ed-footer-brand .lf-brand-v4__current2{stroke:#f5e2c2}
+.law-page .ed-brand .ed-cap{left:calc(99px * var(--ed-logo-scale));top:calc(-1px * var(--ed-logo-scale));width:calc(28px * var(--ed-logo-scale));height:calc(26px * var(--ed-logo-scale))}
+.law-page .ed-program-grid{align-items:start}
+.law-page .ed-guide{min-height:235px}
+.law-page .law-service-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.law-page .ed-brand .ed-cap{transform:rotate(0deg)}
+@media(max-width:850px){.law-page .law-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.law-page .law-service-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.law-page .ed-program-detail{min-height:unset}}
+
+
+
+/* LAW FIRM V4 FIXED */
+
+/* Legal emblem before the official wordmark */
+.law-page .ed-brand{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+  padding:0 !important;
+  flex-shrink:0;
+}
+
+.law-page .ed-brand .ed-cap{
+  position:static !important;
+  inset:auto !important;
+  width:34px !important;
+  height:34px !important;
+  flex:0 0 34px;
+  margin:0;
+  transform:rotate(-4deg);
+  transition:transform .3s ease,filter .3s ease;
+  filter:none;
+}
+
+.law-page .ed-brand:hover .ed-cap,
+.law-page .ed-brand:focus-visible .ed-cap{
+  transform:rotate(0deg);
+  filter:drop-shadow(0 2px 6px #b9905570);
+}
+
+.law-page .ed-brand .lf-brand-v4{
+  flex:0 0 auto;
+}
+
+/* Verified service and intake card selectors */
+.law-page #services .ed-automation-grid article,
+.law-page #automation .ed-automation-grid article,
+.law-page .ed-automation-demo,
+.law-page .ed-planner-result{
+  position:relative;
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease,
+    background-color .3s ease;
+  border:1px solid rgba(168,128,68,.25);
+}
+
+.law-page #services .ed-automation-grid article:is(:hover,:focus-visible),
+.law-page #automation .ed-automation-grid article:is(:hover,:focus-visible),
+.law-page .ed-automation-demo:is(:hover,:focus-within),
+.law-page .ed-planner-result:is(:hover,:focus-within){
+  transform:translateY(-7px);
+  border-color:#c39a60;
+  box-shadow:
+    0 22px 48px rgba(9,30,48,.2),
+    0 0 0 2px rgba(192,145,75,.13);
+}
+
+.law-page #services article:hover,
+.law-page #services article:focus-visible,
+.law-page #automation article:hover,
+.law-page #automation article:focus-visible{
+  background:#fff8eb;
+}
+
+.law-page .ed-capability-icon{
+  transition:transform .3s ease,background .3s ease;
+}
+
+.law-page .ed-automation-grid article:hover .ed-capability-icon,
+.law-page .ed-automation-grid article:focus-visible .ed-capability-icon{
+  transform:translateY(-3px) scale(1.08);
+  background:#e8c99b;
+}
+
+.law-page .ed-automation-demo:hover,
+.law-page .ed-planner-result:hover{
+  background-color:#193d5a;
+}
+
+.law-page .ed-automation-demo .ed-chat p{
+  transition:transform .3s ease;
+}
+
+.law-page .ed-automation-demo:hover .ed-chat-user{
+  transform:translateX(-5px);
+}
+
+.law-page .ed-automation-demo:hover .ed-chat-bot{
+  transform:translateX(5px);
+}
+
+/* Legal atmosphere across the actual sections */
+.law-page main section{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+}
+
+.law-page main section > .ed-wrap{
+  position:relative;
+  z-index:2;
+}
+
+.law-page main section::before{
+  content:"";
+  position:absolute;
+  width:clamp(240px,35vw,500px);
+  height:clamp(240px,35vw,500px);
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  pointer-events:none;
+  z-index:0;
+  right:-8%;
+  bottom:0;
+  opacity:.30;
+  animation:lawV4Drift 18s ease-in-out infinite alternate;
+  transition:opacity .4s ease;
+}
+
+.law-page main section:hover::before{opacity:.43}
+
+.law-page #services::before{
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20380%20380%22%3E%0A%3Cg%20fill%3D%22none%22%20stroke%3D%22%23a37c46%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%0A%3Cpath%20d%3D%22M190%2045v270M92%20118h196M190%2051l-8%2013h16Z%22%2F%3E%0A%3Cpath%20d%3D%22m92%20118-46%20104h92Zm196%200-46%20104h92Z%22%2F%3E%0A%3Cpath%20d%3D%22M144%20318h92M115%20341h150%22%2F%3E%0A%3Cpath%20d%3D%22m92%20111%2098-36%2098%2036%22%2F%3E%0A%3Ccircle%20cx%3D%22190%22%20cy%3D%22188%22%20r%3D%22165%22%20stroke-dasharray%3D%222%2017%22%20opacity%3D%22.4%22%2F%3E%0A%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+.law-page #practices::before{
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20400%22%3E%0A%3Cg%20fill%3D%22none%22%20stroke%3D%22%23a37c46%22%20stroke-width%3D%223%22%3E%0A%3Cpath%20d%3D%22M35%20125%20250%2030%20465%20125M55%20145h390M80%20165h340%22%2F%3E%0A%3Cpath%20d%3D%22M95%20180v155m62-155v155m62-155v155m62-155v155m62-155v155m62-155v155%22%2F%3E%0A%3Cpath%20d%3D%22M72%20335h356M50%20360h400M30%20385h440%22%2F%3E%0A%3Cpath%20d%3D%22M218%20335v-67a32%2032%200%200%201%2064%200v67%22%2F%3E%0A%3Ccircle%20cx%3D%22250%22%20cy%3D%22109%22%20r%3D%2219%22%2F%3E%0A%3C%2Fg%3E%3C%2Fsvg%3E");
+  right:auto;
+  left:-12%;
+}
+
+.law-page #intake::before{
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20360%20400%22%3E%0A%3Cg%20fill%3D%22none%22%20stroke%3D%22%23a37c46%22%20stroke-width%3D%223%22%3E%0A%3Cpath%20d%3D%22M74%2028h150l58%2058v275H74Z%22%2F%3E%0A%3Cpath%20d%3D%22M224%2028v58h58M108%20140h140M108%20184h140M108%20228h140M108%20272h100%22%2F%3E%0A%3Ccircle%20cx%3D%22232%22%20cy%3D%22314%22%20r%3D%2228%22%2F%3E%0A%3C%2Fg%3E%3C%2Fsvg%3E");
+  opacity:.20;
+}
+
+.law-page #automation::before{
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20380%20380%22%3E%0A%3Cg%20fill%3D%22none%22%20stroke%3D%22%23a37c46%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%0A%3Cpath%20d%3D%22M190%2045v270M92%20118h196M190%2051l-8%2013h16Z%22%2F%3E%0A%3Cpath%20d%3D%22m92%20118-46%20104h92Zm196%200-46%20104h92Z%22%2F%3E%0A%3Cpath%20d%3D%22M144%20318h92M115%20341h150%22%2F%3E%0A%3Cpath%20d%3D%22m92%20111%2098-36%2098%2036%22%2F%3E%0A%3Ccircle%20cx%3D%22190%22%20cy%3D%22188%22%20r%3D%22165%22%20stroke-dasharray%3D%222%2017%22%20opacity%3D%22.4%22%2F%3E%0A%3C%2Fg%3E%3C%2Fsvg%3E");
+  right:auto;
+  left:-11%;
+}
+
+.law-page #planner::before{
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20400%22%3E%0A%3Cg%20fill%3D%22none%22%20stroke%3D%22%23a37c46%22%20stroke-width%3D%223%22%3E%0A%3Cpath%20d%3D%22M35%20125%20250%2030%20465%20125M55%20145h390M80%20165h340%22%2F%3E%0A%3Cpath%20d%3D%22M95%20180v155m62-155v155m62-155v155m62-155v155m62-155v155m62-155v155%22%2F%3E%0A%3Cpath%20d%3D%22M72%20335h356M50%20360h400M30%20385h440%22%2F%3E%0A%3Cpath%20d%3D%22M218%20335v-67a32%2032%200%200%201%2064%200v67%22%2F%3E%0A%3Ccircle%20cx%3D%22250%22%20cy%3D%22109%22%20r%3D%2219%22%2F%3E%0A%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+.law-page #guides::before{
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20360%20400%22%3E%0A%3Cg%20fill%3D%22none%22%20stroke%3D%22%23a37c46%22%20stroke-width%3D%223%22%3E%0A%3Cpath%20d%3D%22M74%2028h150l58%2058v275H74Z%22%2F%3E%0A%3Cpath%20d%3D%22M224%2028v58h58M108%20140h140M108%20184h140M108%20228h140M108%20272h100%22%2F%3E%0A%3Ccircle%20cx%3D%22232%22%20cy%3D%22314%22%20r%3D%2228%22%2F%3E%0A%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+.law-page #faq::before{
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20380%20380%22%3E%0A%3Cg%20fill%3D%22none%22%20stroke%3D%22%23a37c46%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22round%22%3E%0A%3Cpath%20d%3D%22M190%2045v270M92%20118h196M190%2051l-8%2013h16Z%22%2F%3E%0A%3Cpath%20d%3D%22m92%20118-46%20104h92Zm196%200-46%20104h92Z%22%2F%3E%0A%3Cpath%20d%3D%22M144%20318h92M115%20341h150%22%2F%3E%0A%3Cpath%20d%3D%22m92%20111%2098-36%2098%2036%22%2F%3E%0A%3Ccircle%20cx%3D%22190%22%20cy%3D%22188%22%20r%3D%22165%22%20stroke-dasharray%3D%222%2017%22%20opacity%3D%22.4%22%2F%3E%0A%3C%2Fg%3E%3C%2Fsvg%3E");
+  right:auto;
+  left:-10%;
+}
+
+.law-page .ed-close::before{
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20400%22%3E%0A%3Cg%20fill%3D%22none%22%20stroke%3D%22%23a37c46%22%20stroke-width%3D%223%22%3E%0A%3Cpath%20d%3D%22M35%20125%20250%2030%20465%20125M55%20145h390M80%20165h340%22%2F%3E%0A%3Cpath%20d%3D%22M95%20180v155m62-155v155m62-155v155m62-155v155m62-155v155m62-155v155%22%2F%3E%0A%3Cpath%20d%3D%22M72%20335h356M50%20360h400M30%20385h440%22%2F%3E%0A%3Cpath%20d%3D%22M218%20335v-67a32%2032%200%200%201%2064%200v67%22%2F%3E%0A%3Ccircle%20cx%3D%22250%22%20cy%3D%22109%22%20r%3D%2219%22%2F%3E%0A%3C%2Fg%3E%3C%2Fsvg%3E");
+  opacity:.20;
+}
+
+@keyframes lawV4Drift{
+  from{transform:translate(0,0)}
+  to{transform:translate(-14px,-12px)}
+}
+
+@media(max-width:850px){
+  .law-page .ed-brand .ed-cap{
+    width:28px !important;
+    height:28px !important;
+    flex-basis:28px;
+  }
+  .law-page main section::before{
+    width:240px;
+    height:240px;
+    opacity:.14;
+  }
+}
+
+@media(max-width:560px){
+  .law-page .ed-brand{gap:5px}
+  .law-page .ed-brand .ed-cap{
+    width:24px !important;
+    height:24px !important;
+    flex-basis:24px;
+  }
+  .law-page main section::before{
+    width:190px;
+    height:190px;
+    opacity:.10;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .law-page main section::before{
+    animation:none !important;
+    transition:none !important;
+  }
+  .law-page .ed-brand .ed-cap,
+  .law-page #services .ed-automation-grid article,
+  .law-page #automation .ed-automation-grid article,
+  .law-page .ed-automation-demo,
+  .law-page .ed-planner-result{
+    transform:none !important;
+    transition:none !important;
+  }
+}
+
+
+/* LAW FIRM LOGO FINAL ALIGNMENT */
+@media(min-width:851px){
+  .law-page .ed-brand{gap:4px !important}
+  .law-page .ed-brand .ed-cap{
+    width:43px !important;
+    height:43px !important;
+    flex-basis:43px !important;
+  }
+}
+
+@media(min-width:561px) and (max-width:850px){
+  .law-page .ed-brand{gap:4px !important}
+  .law-page .ed-brand .ed-cap{
+    width:36px !important;
+    height:36px !important;
+    flex-basis:36px !important;
+  }
+}
+
+@media(max-width:560px){
+  .law-page .ed-brand{gap:3px !important}
+  .law-page .ed-brand .ed-cap{
+    width:30px !important;
+    height:30px !important;
+    flex-basis:30px !important;
+  }
+}
+
+
+/* LAW GUIDES LINKED V1 */
+@media(min-width:1101px){
+  .law-page .ed-guides{
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+}
+.law-page .ed-guide{
+  cursor:pointer;
+}
+.law-page .ed-guide:hover,
+.law-page .ed-guide:focus-visible{
+  transform:translateY(-6px);
+  border-color:#b99055;
+  box-shadow:0 18px 40px rgba(15,36,52,.14);
+}
+.law-page .ed-guide:focus-visible{
+  outline:2px solid #b99055;
+  outline-offset:3px;
+}
+
+</style>
+</body>
+</html>
