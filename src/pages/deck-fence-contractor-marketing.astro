@@ -1,0 +1,598 @@
+---
+import BrandMark from "../components/BrandMark.astro";
+import "../styles/global.css";
+import "../styles/navigation.css";
+
+const booking = "https://calendar.app.google/1fpawLr6fgP7Hmoi7";
+const faq = [{"q": "How do deck builders get more qualified leads?", "a": "A practical approach combines local SEO, intent-driven Google Ads, project-specific landing pages and timely estimate follow-up. Results depend on your location, capacity and competition."}, {"q": "How can fence companies market residential and commercial work?", "a": "Use separate campaigns and landing pages for privacy fences, replacements and commercial fencing, with different qualification questions for each audience."}, {"q": "Can you target wood decks and composite decks separately?", "a": "Yes. Material-specific campaigns can help attract people researching different options, budgets and installation requirements."}, {"q": "How do you qualify an estimate inquiry?", "a": "Common screening questions include service ZIP code, project type, approximate dimensions, preferred materials, timing and whether the customer is ready for a site visit."}, {"q": "Can CRM automation help with missed calls and estimate scheduling?", "a": "Yes. Connected forms, call routing, follow-up reminders and scheduling workflows can help your team respond faster, subject to appropriate communication consent."}, {"q": "Do you guarantee leads or signed construction jobs?", "a": "No. Lead volume, lead quality, estimate requests and signed projects depend on local demand, campaign execution and your sales and delivery process."}];
+const schema = {
+ "@context":"https://schema.org",
+ "@graph":[
+  {"@type":"Organization","@id":"https://leadsflo.co/#organization","name":"LeadsFlo","url":"https://leadsflo.co/"},
+  {"@type":"WebPage","@id":"https://leadsflo.co/deck-fence-contractor-marketing/#webpage","url":"https://leadsflo.co/deck-fence-contractor-marketing/","name":"Deck & Fence Contractor Marketing | LeadsFlo","description":"Lead generation, Google Ads, local SEO and estimate scheduling for US deck builders and fencing contractors."},
+  {"@type":"Service","name":"Deck and Fence Contractor Marketing and Lead Generation","serviceType":"Google Ads, local SEO, project landing pages and CRM follow-up","provider":{"@id":"https://leadsflo.co/#organization"},"areaServed":{"@type":"Country","name":"United States"},"url":"https://leadsflo.co/deck-fence-contractor-marketing/"},
+  {"@type":"FAQPage","mainEntity":faq.map(x=>({"@type":"Question","name":x.q,"acceptedAnswer":{"@type":"Answer","text":x.a}}))}
+ ]
+};
+const guides = [["contractor-lead-generation-decks-fences", "Contractor lead generation", "How to attract relevant deck and fence project leads"], ["fence-company-marketing", "Fence company marketing", "Local visibility, paid advertising and project inquiries"], ["google-ads-deck-fence-contractors", "Google Ads for deck and fence contractors", "Paid search campaigns and lead quality"], ["local-seo-deck-fence-contractors", "Local SEO for deck and fence contractors", "Service-area searches and useful project content"], ["more-deck-fence-estimates", "How to get more deck and fence estimates", "Qualification, response and booking workflows"]];
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="theme-color" content="#14283b"/>
+<title>Deck &amp; Fence Contractor Marketing | LeadsFlo</title>
+<meta name="description" content="Lead generation for US deck builders and fence contractors. Google Ads, local SEO, landing pages, estimate scheduling and CRM follow-up."/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://leadsflo.co/deck-fence-contractor-marketing/"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Deck &amp; Fence Contractor Marketing | LeadsFlo"/>
+<meta property="og:description" content="Google Ads, local SEO and qualified project leads for US deck and fence contractors."/>
+<meta property="og:url" content="https://leadsflo.co/deck-fence-contractor-marketing/"/>
+<script type="application/ld+json" set:html={JSON.stringify(schema)}/>
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QE382W17N6"></script>
+<script is:inline>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());
+gtag('config','G-QE382W17N6');
+</script>
+<script is:inline defer src="/js/leadsflo-conversions.js"></script>
+</head>
+
+<body class="ed-page deck-page" id="top">
+<header class="ed-header" id="ed-header">
+  <div class="ed-wrap ed-nav">
+    <a class="ed-brand" href="/" aria-label="LeadsFlo home">
+      <svg class="ed-cap" viewBox="0 0 50 50" aria-hidden="true"><g fill="none" stroke="#af8051" stroke-width="2.8" stroke-linejoin="round"><path d="M7 13 25 5 43 13v25L25 46 7 38Z"/><path d="M7 23 25 31 43 23M7 33 25 41 43 33"/></g></svg>
+      <BrandMark theme="light"/>
+    </a>
+    <nav class="ed-navlinks" id="ed-menu" aria-label="Deck and fence marketing page">
+      <a href="#practices">Project types</a>
+      <a href="#intake">Estimate journey</a>
+      <a href="#automation">Follow-up &amp; CRM</a>
+      <a href="#planner">Planner</a>
+      <a href="#guides">Guides</a>
+      <a class="ed-navcta" href={booking} target="_blank" rel="noopener noreferrer">Let's Talk ↗</a>
+    </nav>
+    <button class="ed-menu-btn" id="ed-menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="ed-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="ed-hero">
+<div class="ed-wrap ed-hero-grid">
+  <div class="ed-hero-copy">
+    <p class="ed-kicker"><span></span> LEADSFLO / DECKS &amp; FENCES</p>
+    <h1>More qualified deck &amp; fence leads. <em>More booked estimates.</em></h1>
+    <p>Google Ads, local SEO, project-specific landing pages and lead follow-up for US deck builders and fence companies. Built around the jobs you want to win.</p>
+    <div class="ed-actions">
+      <a class="ed-btn ed-btn-gold" href={booking} target="_blank" rel="noopener noreferrer">Discuss your contractor lead generation ↗</a>
+      <a class="ed-link" href="#intake">Explore the estimate journey ↓</a>
+    </div>
+    <div class="ed-hero-note">From first inquiry to a qualified estimate visit—not just clicks and form fills.</div>
+  </div>
+  <div class="ed-campus" aria-label="Illustration of timber decking, a fence and a project inquiry journey">
+    <div class="ed-campus-top"><span>PROJECT LEAD GENERATION</span><span class="ed-live"><i></i> ILLUSTRATIVE MODEL</span></div>
+    <svg viewBox="0 0 620 430" role="img" aria-label="Architectural deck and privacy fence illustration with lead-to-estimate route">
+<defs><linearGradient id="deckSky" x2="1" y2="1"><stop stop-color="#32594b"/><stop offset="1" stop-color="#102c25"/></linearGradient></defs>
+<rect width="620" height="430" fill="url(#deckSky)"/>
+<g stroke="#cba979" stroke-opacity=".17"><path d="M0 70H620M0 140H620M0 210H620M0 280H620M0 350H620"/><path d="M70 0V430M140 0V430M210 0V430M280 0V430M350 0V430M420 0V430M490 0V430M560 0V430"/></g>
+<g fill="#b27c50" stroke="#f0c68f" stroke-width="3"><path d="M65 215 292 122 525 215 299 311Z"/><path d="M65 241 299 337 525 241 525 216 299 311 65 216Z"/></g>
+<g stroke="#efd2a7" stroke-width="3"><path d="M122 196 355 290M185 169 417 264M245 146 475 238"/></g>
+<g stroke="#dec092" stroke-width="8"><path d="M105 237v123M485 239v121M295 315v62"/></g>
+<g stroke="#d6b584" stroke-width="7"><path d="M410 72v120M450 72v120M490 72v120M530 72v120"/></g>
+<path d="M390 68H552M390 194H552" stroke="#f0d8aa" stroke-width="5"/>
+<path class="ed-route" d="M34 387Q152 349 248 381T451 371Q522 351 585 387" fill="none" stroke="#eecb8a" stroke-width="4" stroke-dasharray="9 13"/>
+<circle cx="34" cy="387" r="7" fill="#eecb8a"/><circle cx="585" cy="387" r="7" fill="#eecb8a"/>
+<g fill="#fbefdc" font-size="12" font-weight="700" font-family="sans-serif"><text x="19" y="416">01 / DISCOVERY</text><text x="470" y="416">06 / ESTIMATE</text></g>
+</svg>
+    <div class="ed-campus-bottom"><span>SEARCH → LEAD → ESTIMATE → PROJECT</span><span>LF / BUILD—01</span></div>
+  </div>
+</div>
+</section>
+
+<div class="ed-marquee" aria-label="Deck and fence marketing services">
+  <div class="ed-marquee-track" aria-hidden="true">
+    {Array.from({length:6},()=>(
+      <div class="ed-marquee-group">
+        <span>◆ Contractor Local SEO</span><span>✦ Google Ads &amp; PPC</span>
+        <span>◇ Deck &amp; Fence Funnels</span><span>✳ Missed-Call Recovery</span>
+        <span>◎ Lead Follow-Up &amp; CRM</span><span>↗ Estimate Booking</span>
+      </div>
+    ))}
+  </div>
+</div>
+
+<section class="ed-section ed-cream" id="services"><div class="ed-wrap">
+<div class="ed-heading"><div><p class="ed-eyebrow">THE CONNECTED SYSTEM</p><h2>Contractor lead generation that goes beyond clicks.</h2></div><p>Attract relevant projects, qualify inquiries and help your team respond before opportunities go cold.</p></div>
+<div class="ed-automation-grid deck-services"><article tabindex="0"><span class="ed-capability-icon">⌕</span><h3>Local SEO</h3><p>Get found for relevant deck and fence searches across your service area.</p></article><article tabindex="0"><span class="ed-capability-icon">↗</span><h3>Google Ads</h3><p>Reach buyers searching for installations, repairs and replacements.</p></article><article tabindex="0"><span class="ed-capability-icon">◇</span><h3>Project Landing Pages</h3><p>Turn project-specific search interest into estimate inquiries.</p></article><article tabindex="0"><span class="ed-capability-icon">◎</span><h3>AI Call Reception</h3><p>Capture routine calls and callback requests with human handoff.</p></article><article tabindex="0"><span class="ed-capability-icon">▣</span><h3>CRM & Automation</h3><p>Track project-fit leads, response times and booked estimates.</p></article><article tabindex="0"><span class="ed-capability-icon">◈</span><h3>Lead Quality Reporting</h3><p>Review qualified inquiries, site visits and verified outcomes.</p></article></div></div></section>
+
+<section class="ed-section ed-light" id="practices"><div class="ed-wrap">
+<div class="ed-heading"><div><p class="ed-eyebrow">01 / PROJECT FIT</p><h2>Different projects. Different lead strategies.</h2></div><p>Wood decks, composite decking and commercial fencing attract different buyers. Explore how each campaign can be tailored.</p></div>
+<div class="ed-program-grid"><div class="ed-program-options" role="group" aria-label="Deck and fence project categories"><button class="ed-program active" data-program="wood" aria-pressed="true"><span>01 / OUTDOOR LIVING</span><strong>Wood Decks</strong><small>New backyard construction</small></button><button class="ed-program" data-program="composite" aria-pressed="false"><span>02 / PREMIUM PROJECTS</span><strong>Composite Decking</strong><small>Low-maintenance outdoor living</small></button><button class="ed-program" data-program="privacy" aria-pressed="false"><span>03 / RESIDENTIAL</span><strong>Privacy Fences</strong><small>Homeowner privacy upgrades</small></button><button class="ed-program" data-program="commercial" aria-pressed="false"><span>04 / B2B / PROPERTY</span><strong>Commercial Fencing</strong><small>Business and facility work</small></button><button class="ed-program" data-program="repair" aria-pressed="false"><span>05 / RENOVATIONS</span><strong>Deck Repairs</strong><small>Structural and cosmetic repairs</small></button><button class="ed-program" data-program="fence" aria-pressed="false"><span>06 / INSTALLATION</span><strong>Fence Installation</strong><small>Wood, vinyl and metal fencing</small></button></div><div class="ed-program-detail" aria-live="polite">
+<p class="ed-eyebrow">CAMPAIGN BLUEPRINT / <span id="ed-program-number">01</span></p><div class="ed-program-symbol" id="ed-program-symbol" aria-hidden="true">▤</div>
+<h3 id="ed-program-title">Wood Decks</h3><p id="ed-program-description">Reach homeowners planning outdoor wood decks.</p>
+<div class="ed-detail-line"><span>SEARCH STRATEGY</span><strong id="ed-program-ads">Local deck builder searches and project pages</strong></div>
+<div class="ed-detail-line"><span>LEAD SCREENING</span><strong id="ed-program-fit">ZIP code, approximate size and wood preference</strong></div>
+<div class="ed-detail-line"><span>NEXT STEP</span><strong id="ed-program-action">Arrange a project estimate</strong></div>
+<a href={booking} target="_blank" rel="noopener noreferrer">Discuss these project leads ↗</a></div></div></div></section>
+
+<section class="ed-section ed-navy" id="intake"><div class="ed-wrap">
+<div class="ed-heading"><div><p class="ed-eyebrow">02 / LEAD-TO-ESTIMATE JOURNEY</p><h2>A new lead isn't a booked project.</h2></div><p>See how search interest becomes a qualified estimate opportunity.</p></div>
+<div class="ed-journey"><div class="ed-steps" role="group" aria-label="Project acquisition stages"><button class="ed-step active" data-stage="0" aria-pressed="true"><span>01</span><strong>Attract</strong></button><button class="ed-step" data-stage="1" aria-pressed="false"><span>02</span><strong>Capture</strong></button><button class="ed-step" data-stage="2" aria-pressed="false"><span>03</span><strong>Qualify</strong></button><button class="ed-step" data-stage="3" aria-pressed="false"><span>04</span><strong>Respond</strong></button><button class="ed-step" data-stage="4" aria-pressed="false"><span>05</span><strong>Visit</strong></button><button class="ed-step" data-stage="5" aria-pressed="false"><span>06</span><strong>Propose</strong></button></div><div class="ed-stage-detail" aria-live="polite">
+<span id="ed-stage-kicker">STAGE 01 / ATTRACT</span><h3 id="ed-stage-title">Get found for the deck and fence work you want.</h3><p id="ed-stage-body">Local SEO and Google Ads bring relevant buyers to project pages.</p>
+<div class="ed-stage-metric"><span>WHAT TO REVIEW</span><strong id="ed-stage-metric">Relevant visits and calls</strong></div></div></div></div></section>
+
+<section class="ed-section ed-cream" id="automation"><div class="ed-wrap">
+<div class="ed-heading"><div><p class="ed-eyebrow">03 / FOLLOW-UP &amp; ESTIMATES</p><h2>Don't lose a good lead before the site visit.</h2></div><p>Connect your campaigns to calls, qualification, CRM and scheduling.</p></div>
+<div class="ed-automation-grid">
+<article tabindex="0"><span class="ed-capability-icon">◉</span><h3>AI Call Reception</h3><p>Capture routine project questions and callback requests with human handoff.</p></article>
+<article tabindex="0"><span class="ed-capability-icon">⌘</span><h3>Project Forms</h3><p>Collect ZIP code, approximate dimensions, materials and timing.</p></article>
+<article tabindex="0"><span class="ed-capability-icon">↺</span><h3>Missed-Call Follow-Up</h3><p>Route unanswered inquiries and follow up with appropriate consent.</p></article>
+<article tabindex="0"><span class="ed-capability-icon">▣</span><h3>CRM &amp; Estimates</h3><p>Track lead sources, contact status and scheduled visits.</p></article></div>
+<div class="ed-automation-demo"><div class="ed-demo-top"><span>PROJECT INTAKE / CONCEPT DEMO</span><i>ILLUSTRATIVE</i></div>
+<div class="ed-chat"><p class="ed-chat-user">I'd like an estimate for a six-foot privacy fence.</p><p class="ed-chat-bot">What ZIP code is the property in, and approximately how long is the fence? I can help request a callback.</p></div>
+<p>Illustrative example only. No live AI agent, booked appointment or project result is represented.</p></div></div></section>
+
+<section class="ed-section ed-light" id="planner">
+
+<div class="ed-wrap ed-planner-grid">
+  <div>
+    <p class="ed-eyebrow">04 / LEAD-TO-ESTIMATE PLANNER</p><h2>Model qualified leads and potential estimate visits.</h2>
+    <p class="ed-muted">Adjust hypothetical lead qualification, contact and booking rates. These are examples, not forecasts or industry benchmarks.</p>
+    <div class="ed-controls">
+      <label for="ed-inquiries">Monthly leads <output id="ed-inquiries-label">200</output></label>
+      <input id="ed-inquiries" type="range" min="50" max="1000" step="25" value="200"/>
+      <label for="ed-qualified">Relevant leads <output id="ed-qualified-label">40%</output></label>
+      <input id="ed-qualified" type="range" min="10" max="90" step="5" value="40"/>
+      <label for="ed-contacted">Qualified leads contacted <output id="ed-contacted-label">60%</output></label>
+      <input id="ed-contacted" type="range" min="10" max="100" step="5" value="60"/>
+      <label for="ed-applications">Contacted leads booking estimates <output id="ed-applications-label">25%</output></label>
+      <input id="ed-applications" type="range" min="5" max="80" step="5" value="25"/>
+    </div>
+  </div>
+  <div class="ed-planner-result" aria-live="polite">
+    <span>HYPOTHETICAL MONTHLY MODEL</span>
+    <div><small>New leads</small><strong id="ed-out-inquiries">200</strong></div>
+    <div><small>Relevant leads</small><strong id="ed-out-qualified">80</strong></div>
+    <div><small>Reached relevant leads</small><strong id="ed-out-reached">48</strong></div>
+    <div class="ed-result-highlight"><small>Potential estimate visits</small><strong id="ed-out-applications">12</strong></div>
+    <p>Estimate visits do not guarantee accepted proposals or completed jobs.</p>
+  </div>
+</div>
+</section>
+
+<section class="ed-section ed-navy ed-principles">
+<div class="ed-wrap">
+  <div class="ed-heading"><div><p class="ed-eyebrow">05 / BUILT FOR CONTRACTORS</p><h2>Marketing brings the lead. Your team wins the project.</h2></div></div>
+  <div class="ed-experience">
+    <div class="ed-experience-number" aria-hidden="true">01 <small>CONNECTED ESTIMATE JOURNEY</small></div>
+    <div><h3>From first click to a stronger estimate pipeline.</h3><p>LeadsFlo connects search, paid advertising, landing pages and CRM follow-up. Your team handles project assessment, pricing, proposals and delivery.</p><p>Campaigns should reflect your actual services, licensing, service areas and capacity. We do not promise a fixed number of leads or signed projects.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="ed-section ed-cream" id="guides">
+<div class="ed-wrap">
+  <div class="ed-heading"><div><p class="ed-eyebrow">06 / INSIGHTS</p><h2>Practical guides for deck and fence contractors.</h2></div><p>Local SEO, Google Ads, lead qualification and estimate follow-up for contractors.</p></div>
+  <div class="ed-guides">
+    {guides.map(([slug,title,description],i)=>(
+      <a class="ed-guide" href={`/insights/${slug}/`} aria-label={`Read ${title}`}>
+        <span>0{i+1} / CONTRACTOR GUIDE</span>
+        <h3>{title}</h3><p>{description}</p>
+        <strong>Read the guide ↗</strong>
+      </a>
+    ))}
+  </div>
+</div>
+</section>
+
+<section class="ed-section ed-light" id="faq">
+<div class="ed-wrap ed-faq-grid">
+  <div><p class="ed-eyebrow">07 / COMMON QUESTIONS</p><h2>Questions contractors often ask.</h2></div>
+  <div class="ed-faqs">
+    {faq.map(item=>(
+      <details>
+        <summary>{item.q}</summary>
+        <p>{item.a}</p>
+      </details>
+    ))}
+  </div>
+</div>
+</section>
+
+<section class="ed-close">
+
+  <div class="ed-wrap">
+    <p class="ed-eyebrow">LEADSFLO / CONTRACTOR MARKETING</p>
+    <h2>Turn more relevant project leads into estimate conversations.</h2>
+    <p>Tell us about your service areas, project types and estimate capacity.</p>
+    <a class="ed-btn ed-btn-gold" href={booking} target="_blank" rel="noopener noreferrer">Book a contractor growth conversation ↗</a>
+  </div>
+</section>
+</main>
+
+<footer class="ed-footer">
+<div class="ed-wrap ed-footer-grid">
+  <div>
+    <a class="ed-brand ed-footer-brand" href="/" aria-label="LeadsFlo home">
+      <svg class="ed-cap" viewBox="0 0 50 50" aria-hidden="true"><g fill="none" stroke="#af8051" stroke-width="2.8" stroke-linejoin="round"><path d="M7 13 25 5 43 13v25L25 46 7 38Z"/><path d="M7 23 25 31 43 23M7 33 25 41 43 33"/></g></svg>
+      <BrandMark theme="light"/>
+    </a>
+    <p>Lead generation, local SEO and estimate follow-up for US deck builders and fencing contractors.</p>
+    <a href={booking} target="_blank" rel="noopener noreferrer">Let's Talk ↗</a>
+  </div>
+  <div><strong>SERVICES</strong><a href="/performance-marketing/">Performance Marketing</a><a href="/websites-funnels/">Websites &amp; Funnels</a><a href="/crm-automation/">CRM &amp; Automation</a><a href="/appointment-setting/">Appointment Setting</a></div>
+  <div><strong>EXPLORE</strong><a href="/industries/">All Industries</a><a href="/insights/">Insights</a><a href="/our-approach/">Our Approach</a><a href="/contact/">Contact</a></div>
+</div>
+<div class="ed-wrap ed-footer-bottom"><span>© {new Date().getFullYear()} LeadsFlo</span><span><a href="/privacy-policy/">Privacy</a> · <a href="/terms-and-conditions/">Terms</a></span></div>
+</footer>
+
+<a class="ed-mobile-cta" href={booking} target="_blank" rel="noopener noreferrer">Discuss contractor lead generation ↗</a>
+
+<script is:inline>
+(()=>{
+ const header=document.getElementById('ed-header');
+ const menuBtn=document.getElementById('ed-menu-btn');
+ const menu=document.getElementById('ed-menu');
+ menuBtn?.addEventListener('click',()=>{
+   const open=menu.classList.toggle('open');
+   menuBtn.setAttribute('aria-expanded',String(open));
+   menuBtn.setAttribute('aria-label',open?'Close navigation':'Open navigation');
+ });
+ menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+   menu.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false');
+   menuBtn.setAttribute('aria-label','Open navigation');
+ }));
+ document.addEventListener('keydown',e=>{
+   if(e.key==='Escape'){menu?.classList.remove('open');menuBtn?.setAttribute('aria-expanded','false')}
+ });
+ let last=window.scrollY;
+ window.addEventListener('scroll',()=>{
+   const now=window.scrollY;
+   if(now<65 || header.contains(document.activeElement) || Math.abs(now-last)<9){if(now<65)header.classList.remove('hidden');last=now;return}
+   header.classList.toggle('hidden',now>last);last=now;
+ },{passive:true});
+
+  const programs={"wood": ["01", "▤", "Wood Decks", "Reach homeowners planning outdoor wood decks.", "Local deck builder searches and project pages", "ZIP code, approximate size and wood preference", "Arrange a project estimate"], "composite": ["02", "▥", "Composite Decking", "Reach homeowners researching composite decking.", "Composite deck installation searches", "Service area, approximate size and material interest", "Discuss a site visit"], "privacy": ["03", "▦", "Privacy Fences", "Capture residential privacy-fence installation demand.", "Local privacy-fence campaigns", "Fence length, height, material and ZIP code", "Book a fence estimate"], "commercial": ["04", "▧", "Commercial Fencing", "Connect with property managers and commercial buyers.", "Commercial fencing and property searches", "Site type, scope, geography and timing", "Route to commercial estimating"], "repair": ["05", "⌁", "Deck Repairs", "Attract repair work that fits your crew’s service offering.", "Deck repair searches and service-area content", "Existing condition, location and approximate scope", "Check suitability for site inspection"], "fence": ["06", "▤", "Fence Installation", "Connect with homeowners installing or replacing fences.", "Fence installation and material-specific search", "Material, linear footage, gates and timeline", "Book installation estimate"]};
+ const pids=['ed-program-number','ed-program-symbol','ed-program-title','ed-program-description','ed-program-ads','ed-program-fit','ed-program-action'];
+ function setProgram(key){
+   if(!programs[key])return;
+   programs[key].forEach((v,i)=>document.getElementById(pids[i]).textContent=v);
+   document.querySelectorAll('[data-program]').forEach(btn=>{
+     const selected=btn.dataset.program===key;
+     btn.classList.toggle('active',selected);btn.setAttribute('aria-pressed',String(selected));
+   });
+ }
+ document.querySelectorAll('[data-program]').forEach(btn=>{
+   btn.addEventListener('click',()=>setProgram(btn.dataset.program));
+   btn.addEventListener('focus',()=>setProgram(btn.dataset.program));
+   btn.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')setProgram(btn.dataset.program)});
+ });
+
+  const stages=[["STAGE 01 / ATTRACT", "Get found for the deck and fence work you want.", "Local SEO and Google Ads bring relevant buyers to project pages.", "Relevant visits and calls"], ["STAGE 02 / CAPTURE", "Make it easy to request an estimate.", "Short forms and clear contact options capture new inquiries.", "New project inquiries"], ["STAGE 03 / QUALIFY", "Confirm that a project fits the crew.", "Review location, materials, scope and timing before booking.", "Suitable project leads"], ["STAGE 04 / RESPOND", "Follow up while the project is top of mind.", "Route forms, missed calls and follow-up messages appropriately.", "Reached leads"], ["STAGE 05 / VISIT", "Arrange an estimate or site inspection.", "Coordinate availability and confirm site details with the customer.", "Booked estimate visits"], ["STAGE 06 / PROPOSE", "Track project outcomes beyond the inquiry.", "Review proposals and verified projects won where attribution exists.", "Estimates and project outcomes"]];
+ function setStage(n){
+   const s=stages[n];if(!s)return;
+   ['ed-stage-kicker','ed-stage-title','ed-stage-body','ed-stage-metric'].forEach((id,i)=>document.getElementById(id).textContent=s[i]);
+   document.querySelectorAll('[data-stage]').forEach(btn=>{
+     const active=Number(btn.dataset.stage)===n;
+     btn.classList.toggle('active',active);btn.setAttribute('aria-pressed',String(active));
+   });
+ }
+ document.querySelectorAll('[data-stage]').forEach(btn=>{
+   btn.addEventListener('click',()=>setStage(Number(btn.dataset.stage)));
+   btn.addEventListener('focus',()=>setStage(Number(btn.dataset.stage)));
+   btn.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse'||e.pointerType==='pen')setStage(Number(btn.dataset.stage))});
+ });
+
+ const ids=['ed-inquiries','ed-qualified','ed-contacted','ed-applications'];
+ function updatePlanner(){
+   const [a,b,c,d]=ids.map(id=>Number(document.getElementById(id).value));
+   ids.forEach((id,i)=>{
+     document.getElementById(id+'-label').textContent=[a,b+'%',c+'%',d+'%'][i];
+   });
+   const qualified=Math.round(a*b/100), reached=Math.round(qualified*c/100), applications=Math.round(reached*d/100);
+   document.getElementById('ed-out-inquiries').textContent=a.toLocaleString();
+   document.getElementById('ed-out-qualified').textContent=qualified.toLocaleString();
+   document.getElementById('ed-out-reached').textContent=reached.toLocaleString();
+   document.getElementById('ed-out-applications').textContent=applications.toLocaleString();
+ }
+ ids.forEach(id=>document.getElementById(id)?.addEventListener('input',updatePlanner));
+ updatePlanner();
+
+ document.querySelectorAll('.ed-faqs details').forEach(el=>{
+   el.addEventListener('pointerenter',e=>{
+     if(e.pointerType==='mouse')el.open=true;
+   });
+  el.addEventListener('pointerleave',e=>{
+    if(e.pointerType==='mouse')el.open=false;
+  });
+ });
+})();
+
+</script>
+
+<style is:global>
+:root{scroll-behavior:smooth}
+.ed-page{margin:0;background:#f8f9fb;color:#112744;font-family:Inter,"Plus Jakarta Sans",sans-serif}
+.ed-page *{box-sizing:border-box}
+.ed-page a{transition:color .2s ease,background .2s ease,transform .2s ease}
+.ed-page button,.ed-page input{font:inherit}
+.ed-page button{cursor:pointer}
+.ed-page :is(a,button,input,summary):focus-visible{outline:3px solid #19b9db;outline-offset:4px}
+.ed-wrap{width:min(1160px,calc(100% - 44px));margin-inline:auto}
+.ed-header{position:sticky;top:0;z-index:100;background:#fffaf3;border-bottom:1px solid #eadfcf;transition:transform .28s ease}
+.ed-header.hidden{transform:translateY(-110%)}
+.ed-nav{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.ed-brand{display:inline-flex;align-items:center;gap:7px;position:relative;flex-shrink:0;text-decoration:none}
+.ed-brand .ed-cap{
+ position:absolute;
+ left:calc(99px * var(--ed-logo-scale));
+ top:calc(-1px * var(--ed-logo-scale));
+ width:calc(28px * var(--ed-logo-scale));
+ height:calc(26px * var(--ed-logo-scale));
+ z-index:2;
+ transform-origin:50% 85%;
+ transform:rotate(6deg);
+ transition:transform .35s ease;
+}
+.ed-brand{--ed-logo-scale:1;padding-top:calc(12px * var(--ed-logo-scale))}
+.ed-brand .lf-brand-v4{
+ --brand-text:#142d49;
+ --brand-flo:#147f9d;
+ --brand-period:#d6a45b;
+ --brand-plane:#147f9d;
+ font-size:calc(35px * var(--ed-logo-scale));
+}
+.ed-brand .lf-brand-v4__current1{stroke:#147f9d}
+.ed-brand .lf-brand-v4__current2{stroke:#d6a45b}
+.ed-brand .lf-brand-v4__pulse{stroke:#67d9e8}
+.ed-footer-brand .lf-brand-v4{
+ --brand-text:#f5f7fa;
+ --brand-flo:#91dfed;
+ --brand-period:#f0c785;
+ --brand-plane:#91dfed;
+}
+.ed-footer-brand .lf-brand-v4__current1{stroke:#91dfed}
+.ed-footer-brand .lf-brand-v4__current2{stroke:#f0c785}
+.ed-footer-brand .lf-brand-v4__pulse{stroke:#67d9e8}
+.ed-brand:hover .ed-cap,.ed-brand:focus-visible .ed-cap{transform:rotate(0deg)}
+.ed-brand :is(svg:not(.ed-cap),.lf-brand-v4){max-width:176px}
+.ed-navlinks{display:flex;align-items:center;gap:23px}
+.ed-navlinks>a{font-size:13px;color:#20354c;font-weight:800;text-decoration:none;white-space:nowrap}
+.ed-navlinks>a:hover{color:#147c9a}
+.ed-navlinks .ed-navcta{background:#102845;color:#fff;padding:15px 18px;border-radius:6px}
+.ed-menu-btn{display:none;background:none;border:0;width:48px;height:48px;padding:12px;flex-direction:column;justify-content:space-around}
+.ed-menu-btn span{height:3px;background:#102845;width:100%;border-radius:4px}
+.ed-hero{background:linear-gradient(135deg,#08172e,#123357);color:#f9fbff;padding:clamp(70px,8vw,122px) 0;overflow:hidden;position:relative}
+.ed-hero:before{content:"";position:absolute;width:650px;height:650px;right:-350px;top:-230px;border:1px solid #80cee331;border-radius:50%;box-shadow:0 0 0 65px #80cee30a,0 0 0 145px #80cee308;pointer-events:none}
+.ed-hero-grid{position:relative;display:grid;grid-template-columns:1.06fr .94fr;align-items:center;gap:48px}
+.ed-kicker,.ed-eyebrow{font-size:11px;letter-spacing:.18em;font-weight:850;color:#c18c43}
+.ed-kicker{color:#f1cd91}.ed-kicker span{display:inline-block;width:18px;height:2px;background:#f0c17a;vertical-align:middle}
+.ed-hero h1{font-family:"Plus Jakarta Sans",sans-serif;font-size:clamp(38px,4.6vw,67px);line-height:1.09;letter-spacing:-.06em;margin:23px 0}
+.ed-hero h1 em{color:#91ddec;font-style:normal}
+.ed-hero-copy>p:not(.ed-kicker){font-size:17px;line-height:1.85;color:#c9d9e9;max-width:610px}
+.ed-actions{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:33px}
+.ed-btn{display:inline-flex;align-items:center;justify-content:center;padding:17px 23px;border-radius:6px;font-size:13px;font-weight:850;text-decoration:none}
+.ed-btn-gold{background:#f0c785;color:#183048}
+.ed-btn-gold:hover{background:#ffe2aa;transform:translateY(-2px)}
+.ed-link{color:#e7f6ff;font-weight:800;font-size:13px;text-decoration:none}
+.ed-hero-note{font-size:12px;color:#a9c4d8;margin-top:27px}
+.ed-campus{border-radius:16px;border:1px solid #5e849c;background:#102e4d;overflow:hidden;box-shadow:0 40px 80px #020d2340;transform:perspective(1300px) rotateY(-3deg)}
+.ed-campus>svg{display:block;width:100%;height:auto}
+.ed-campus-top,.ed-campus-bottom{display:flex;justify-content:space-between;gap:12px;padding:17px 20px;background:#09223e;color:#a7d8e7;font-size:10px;font-weight:800;letter-spacing:.1em}
+.ed-live{color:#f4d19a}.ed-live i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#67dccd;margin-right:5px}
+.ed-route{animation:edRoute 8s linear infinite}
+.ed-pulse{transform-origin:310px 306px;animation:edPulse 2.4s ease-in-out infinite}
+@keyframes edRoute{to{stroke-dashoffset:-144}}
+@keyframes edPulse{50%{transform:scale(1.55);opacity:.12}}
+.ed-marquee{overflow:hidden;background:#0c2541;padding:19px 0;border-block:1px solid #24536a}
+.ed-marquee-track{display:flex;width:max-content;animation:edScroll 34s linear infinite}
+.ed-marquee-group{display:flex;gap:12px;flex-shrink:0;padding-right:12px}
+.ed-marquee-group span{background:#fff4df;border:1px solid #e9cba0;border-radius:7px;color:#213c55;padding:14px 22px;font-size:15px;font-weight:850;white-space:nowrap}
+.ed-marquee:hover .ed-marquee-track,.ed-marquee:focus-within .ed-marquee-track{animation-play-state:paused}
+@keyframes edScroll{to{transform:translateX(-16.6666667%)}}
+.ed-section{padding:clamp(72px,8vw,120px) 0;position:relative;scroll-margin-top:90px}
+.ed-light{background:#f8fafc}.ed-cream{background:#f8f2e9}.ed-navy{background:#0a1e38;color:#fff}
+.ed-heading{display:grid;grid-template-columns:1.15fr .65fr;align-items:end;gap:44px;margin-bottom:43px}
+.ed-heading h2,.ed-section h2,.ed-close h2{font-family:"Plus Jakarta Sans",sans-serif;font-size:clamp(31px,4vw,52px);line-height:1.13;letter-spacing:-.052em;margin:14px 0 0;max-width:800px}
+.ed-heading>p{font-size:15px;line-height:1.85;color:#596b7c;margin:0}
+.ed-navy .ed-heading>p{color:#b4cadb}
+.ed-program-grid{display:grid;grid-template-columns:.93fr 1.07fr;gap:22px}
+.ed-program-options{display:grid;gap:12px}
+.ed-program{display:flex;flex-direction:column;text-align:left;gap:8px;padding:24px 26px;background:#fff;color:#17304a;border:1px solid #dce3eb;border-radius:11px;transition:background .2s,border-color .2s,transform .2s}
+.ed-program:hover,.ed-program.active{border-color:#167ea2;background:#eaf7fa;transform:translateX(4px)}
+.ed-program span{color:#1485a3;font-size:10px;font-weight:850;letter-spacing:.12em}
+.ed-program strong{font-size:21px;letter-spacing:-.035em}
+.ed-program small{font-size:13px;color:#5d7484}
+.ed-program-detail{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;background:#113957;color:#fff;padding:clamp(26px,4vw,54px);border-radius:15px;min-height:515px}
+.ed-program-detail .ed-eyebrow{color:#c6f0f6}
+.ed-program-symbol{font-size:83px;color:#efc683;margin:19px 0 4px}
+.ed-program-detail h3{font-size:clamp(29px,3vw,40px);letter-spacing:-.045em;line-height:1.14;margin:12px 0}
+.ed-program-detail>p:not(.ed-eyebrow){color:#cbdbe5;font-size:15px;line-height:1.8}
+.ed-detail-line{display:grid;grid-template-columns:125px 1fr;gap:15px;border-top:1px solid #ffffff30;padding:19px 0;width:100%}
+.ed-detail-line span,.ed-stage-metric span{color:#a0d4e3;letter-spacing:.1em;font-size:10px;font-weight:850}
+.ed-detail-line strong{font-size:13px;line-height:1.6;font-weight:650}
+.ed-program-detail>a{margin-top:auto;color:#f5d194;font-size:13px;font-weight:850}
+.ed-steps{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}
+.ed-step{display:flex;flex-direction:column;align-items:flex-start;gap:17px;border:1px solid #386081;background:#14344e;color:#dce9f0;text-align:left;border-radius:9px;padding:21px 13px;transition:background .2s,border-color .2s}
+.ed-step span{font-size:12px;color:#94c7d4}
+.ed-step strong{font-size:14px}
+.ed-step:hover,.ed-step.active{background:#e8c890;color:#17304a;border-color:#e8c890}
+.ed-step.active span,.ed-step:hover span{color:#37516a}
+.ed-stage-detail{margin-top:18px;background:#102e4c;border:1px solid #2e5876;padding:clamp(27px,4vw,47px);border-radius:12px;min-height:260px}
+.ed-stage-detail>span{font-size:11px;color:#e9c48b;font-weight:850;letter-spacing:.12em}
+.ed-stage-detail h3{font-size:clamp(25px,2.7vw,35px);line-height:1.2;letter-spacing:-.045em;max-width:790px;margin:16px 0}
+.ed-stage-detail>p{color:#c5d8e5;line-height:1.8;max-width:790px}
+.ed-stage-metric{border-top:1px solid #45647a;margin-top:25px;padding-top:17px;display:flex;gap:20px;flex-wrap:wrap}
+.ed-stage-metric strong{color:#f1d29d;font-size:14px}
+.ed-automation-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.ed-automation-grid article{border:1px solid #e0d4c4;border-radius:12px;background:#fffcf7;padding:25px}
+.ed-capability-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:12px;background:#e0f5f7;color:#187d98;font-size:26px}
+.ed-automation-grid h3{color:#162f49;font-size:20px;letter-spacing:-.035em}
+.ed-automation-grid p{font-size:13px;line-height:1.8;color:#5b6979}
+.ed-automation-demo{margin-top:26px;background:#132e49;padding:28px;border-radius:13px;color:#fff}
+.ed-demo-top{display:flex;justify-content:space-between;gap:15px;font-size:11px;letter-spacing:.1em;font-weight:850;color:#f0cb92}
+.ed-demo-top i{font-style:normal;color:#a8c5d6}
+.ed-chat{display:grid;gap:13px;max-width:750px;margin-top:25px}
+.ed-chat p{padding:20px;border-radius:13px;line-height:1.8;font-size:14px;margin:0}
+.ed-chat-user{background:#e6f1f6;color:#19344f;justify-self:end;max-width:75%}
+.ed-chat-bot{background:#294d67;color:#fff;justify-self:start;max-width:85%}
+.ed-automation-demo>p{font-size:11px;color:#b6cadb;margin-top:23px}
+.ed-planner-grid{display:grid;grid-template-columns:1fr .85fr;gap:70px;align-items:center}
+.ed-muted{color:#647489;line-height:1.85;margin:25px 0}
+.ed-controls{display:grid;gap:14px;margin-top:34px}
+.ed-controls label{display:flex;justify-content:space-between;font-size:14px;font-weight:750}
+.ed-controls output{color:#127e97;font-weight:850}
+.ed-controls input{width:100%;accent-color:#127f9c;margin-bottom:13px}
+.ed-planner-result{background:#0d2946;color:#fff;padding:32px;border-radius:14px;box-shadow:0 25px 55px #082e4a26}
+.ed-planner-result>span{font-size:11px;font-weight:850;color:#cdeaf0;letter-spacing:.12em}
+.ed-planner-result>div{display:flex;justify-content:space-between;align-items:center;padding:21px 0;border-bottom:1px solid #456177}
+.ed-planner-result small{font-size:13px;color:#bed3df}
+.ed-planner-result strong{font-size:32px;color:#f0c785;letter-spacing:-.04em}
+.ed-planner-result .ed-result-highlight{background:#20445f;padding:18px;margin:10px -12px;border-radius:8px;border:none}
+.ed-planner-result .ed-result-highlight strong{font-size:47px}
+.ed-planner-result>p{color:#a9c3d5;font-size:12px;line-height:1.75}
+.ed-experience{display:grid;grid-template-columns:.34fr 1fr;gap:50px;border-top:1px solid #38617e;padding-top:34px;align-items:start}
+.ed-experience-number{font-size:clamp(80px,11vw,170px);font-weight:850;letter-spacing:-.08em;color:#f0c785;line-height:1}
+.ed-experience-number small{display:block;font-size:10px;letter-spacing:.12em;line-height:1.8;color:#b3d7e3}
+.ed-experience h3{font-size:28px;margin:0 0 17px}
+.ed-experience p{color:#bdcedb;line-height:1.9;max-width:700px}
+.ed-guides{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.ed-guide{display:flex;flex-direction:column;gap:12px;background:#fff;border:1px solid #e5d9c8;border-radius:12px;padding:27px;text-decoration:none;color:#18354f;min-height:260px;transition:transform .2s,border-color .2s}
+.ed-guide:hover{transform:translateY(-5px);border-color:#c68d47}
+.ed-guide span{font-size:10px;letter-spacing:.12em;color:#a2773e;font-weight:850}
+.ed-guide h3{font-size:23px;line-height:1.25;letter-spacing:-.04em;margin:8px 0 0}
+.ed-guide p{font-size:13px;line-height:1.75;color:#68788a}
+.ed-guide strong{font-size:12px;color:#177e97;margin-top:auto}
+.ed-faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:70px}
+.ed-faqs details{border-bottom:1px solid #dae3eb;padding:20px 5px}
+.ed-faqs summary{cursor:pointer;list-style:none;font-size:17px;font-weight:800;color:#172f47;display:flex;justify-content:space-between;gap:18px}
+.ed-faqs summary:after{content:"+";font-size:25px;color:#1686a3;font-weight:500}
+.ed-faqs details[open] summary:after{content:"−"}
+.ed-faqs details p{color:#576c7b;font-size:14px;line-height:1.85;margin:16px 0 0}
+.ed-close{background:linear-gradient(135deg,#143d5e,#0a203a);color:#fff;padding:95px 0}
+.ed-close h2{max-width:850px}
+.ed-close>div>p:not(.ed-eyebrow){color:#c6d7e3;line-height:1.8;max-width:700px;margin:30px 0}
+.ed-footer{background:#071628;padding:65px 0 25px;color:#dde8ef}
+.ed-footer-grid{display:grid;grid-template-columns:1.5fr .7fr .7fr;gap:60px}
+.ed-footer-brand{margin-bottom:20px}
+.ed-footer p{color:#aabccc;font-size:13px;line-height:1.9;max-width:400px}
+.ed-footer a{display:block;text-decoration:none;color:#dbe9ef;font-size:13px;margin-top:13px}
+.ed-footer .ed-brand{display:inline-flex}
+.ed-footer strong{color:#f0c785;font-size:11px;letter-spacing:.1em}
+.ed-footer-bottom{border-top:1px solid #2e4258;margin-top:45px;padding-top:23px;display:flex;justify-content:space-between;gap:20px;color:#a9bdce;font-size:12px}
+.ed-footer-bottom a{display:inline;color:#afc9d7}
+.ed-mobile-cta{display:none}
+@media(max-width:1050px){
+ .ed-navlinks{gap:12px}
+ .ed-navlinks>a{font-size:12px}
+ .ed-hero-grid{gap:28px}
+ .ed-automation-grid,.ed-guides{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:850px){
+ .ed-menu-btn{display:flex}
+ .ed-navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:#fffaf3;padding:20px 24px;border-bottom:1px solid #e6d8c5;box-shadow:0 25px 35px #081c2930;flex-direction:column;align-items:stretch;gap:0}
+ .ed-navlinks.open{display:flex}
+ .ed-navlinks>a{font-size:16px;padding:15px;border-bottom:1px solid #efe3d5}
+ .ed-navlinks .ed-navcta{text-align:center;margin-top:10px}
+ .ed-hero-grid,.ed-heading,.ed-program-grid,.ed-planner-grid,.ed-faq-grid{grid-template-columns:1fr}
+ .ed-heading{gap:15px}
+ .ed-campus{max-width:670px;transform:none}
+ .ed-steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .ed-planner-grid{gap:34px}
+ .ed-experience{grid-template-columns:1fr;gap:20px}
+ .ed-program-detail{min-height:unset}
+ .ed-footer-grid{grid-template-columns:1.3fr 1fr;gap:35px}
+}
+@media(max-width:560px){
+ .ed-wrap{width:calc(100% - 30px)}
+ .ed-nav{min-height:73px}
+ .ed-brand{--ed-logo-scale:.82}
+ .ed-brand :is(svg:not(.ed-cap),.lf-brand-v4){max-width:143px}
+ .ed-hero{padding:58px 0 65px}
+ .ed-hero h1{font-size:clamp(35px,9vw,44px)}
+ .ed-hero-copy>p:not(.ed-kicker){font-size:15px}
+ .ed-actions{align-items:stretch;flex-direction:column;gap:17px}
+ .ed-btn{width:100%}
+ .ed-campus-top,.ed-campus-bottom{font-size:8px;padding:12px}
+ .ed-section{padding:68px 0}
+ .ed-program{padding:20px}
+ .ed-detail-line{grid-template-columns:1fr;gap:6px}
+ .ed-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .ed-step{padding:14px;gap:8px}
+ .ed-automation-grid,.ed-guides,.ed-footer-grid{grid-template-columns:1fr}
+ .ed-automation-demo{padding:20px}
+ .ed-chat-user,.ed-chat-bot{max-width:100%}
+ .ed-planner-result{padding:23px}
+ .ed-experience-number{font-size:95px}
+ .ed-footer{padding-bottom:90px}
+ .ed-footer-bottom{flex-direction:column}
+ .ed-mobile-cta{display:flex;align-items:center;justify-content:center;position:fixed;z-index:90;bottom:0;left:0;right:0;min-height:60px;padding:12px 18px calc(12px + env(safe-area-inset-bottom));background:#f0c785;color:#17314b;text-align:center;text-decoration:none;font-weight:850;font-size:14px;box-shadow:0 -10px 30px #03182f2c}
+ .ed-page{padding-bottom:60px}
+}
+@media(prefers-reduced-motion:reduce){
+ :root{scroll-behavior:auto}
+ .ed-page *{animation:none!important;transition:none!important}
+}
+
+/* DECK_COMPLETE_V3 — forest green / cedar / ivory */
+.deck-page{background:#f8f7f1;color:#233e31}
+.deck-page .ed-header{background:#faf8ef;border-color:#ddd4bf}
+.deck-page .ed-navlinks>a{color:#294638;font-size:15px}
+.deck-page .ed-navlinks .ed-navcta{background:#21483a;color:#fff}
+.deck-page .ed-hero{background:linear-gradient(125deg,#102d27,#2b5547)}
+.deck-page .ed-hero h1 em{color:#efcb91}
+.deck-page .ed-kicker,.deck-page .ed-eyebrow{color:#9d713f}
+.deck-page .ed-hero .ed-kicker{color:#e9c48a}
+.deck-page .ed-btn-gold,.deck-page .ed-mobile-cta{background:#e9c389;color:#20392d}
+.deck-page .ed-marquee{background:#193b33;border-color:#54735f}
+.deck-page .ed-marquee-group span{background:#fbf0da;border-color:#d6b589;color:#284638}
+.deck-page .ed-light{background:#f6f8f3}
+.deck-page .ed-cream{background:#f2ede1}
+.deck-page .ed-navy{background:#16392f}
+.deck-page .ed-program:hover,.deck-page .ed-program.active{background:#e7f0e3;border-color:#678c6e}
+.deck-page .ed-program-detail{background:#244a3e}
+.deck-page .ed-program-symbol{color:#e1be85}
+.deck-page .ed-step:hover,.deck-page .ed-step.active{background:#e3c18d;border-color:#e3c18d}
+.deck-page .ed-capability-icon{background:#e8edde;color:#496849}
+.deck-page .ed-planner-result{background:#214638}
+.deck-page .ed-controls input{accent-color:#477b56}
+.deck-page .ed-footer{background:#10271f}
+.deck-page .ed-close{background:linear-gradient(125deg,#285241,#102e26)}
+.deck-page .ed-brand{display:inline-flex;align-items:center;gap:6px;padding:0!important}
+.deck-page .ed-brand .ed-cap{position:static!important;inset:auto!important;transform:none!important;width:43px!important;height:43px!important;flex:0 0 43px}
+.deck-page .ed-brand .lf-brand-v4{--brand-text:#244235;--brand-flo:#a16d39;--brand-period:#b88143;--brand-plane:#456b52}
+.deck-page .ed-footer-brand .lf-brand-v4{--brand-text:#f8f2e5;--brand-flo:#e8c18b;--brand-period:#e8c18b;--brand-plane:#a6cfb3}
+.deck-page .ed-brand .lf-brand-v4__current1{stroke:#547b60}
+.deck-page .ed-brand .lf-brand-v4__current2{stroke:#c69c61}
+.deck-page .ed-footer-brand .lf-brand-v4__current1{stroke:#e8c18b}
+.deck-page .ed-footer-brand .lf-brand-v4__current2{stroke:#a6cfb3}
+.deck-page .deck-services{grid-template-columns:repeat(3,minmax(0,1fr))}
+.deck-page .ed-guides{grid-template-columns:repeat(3,minmax(0,1fr))}
+.deck-page .ed-guide{min-height:230px}
+.deck-page .ed-guide strong{margin-top:auto;color:#3b7752}
+.deck-page :is(#services article,#automation article,.ed-automation-demo,.ed-planner-result){transition:transform .25s,border-color .25s,box-shadow .25s}
+.deck-page :is(#services article,#automation article):is(:hover,:focus-visible),.deck-page :is(.ed-automation-demo,.ed-planner-result):hover{transform:translateY(-5px);border-color:#b58a53;box-shadow:0 18px 40px #15392d24}
+.deck-page main section{position:relative;isolation:isolate;overflow:hidden}
+.deck-page main section>.ed-wrap{position:relative;z-index:2}
+.deck-page main section:before{content:"";position:absolute;z-index:0;pointer-events:none;width:350px;height:245px;right:-100px;bottom:25px;border:2px solid #b2875255;background:repeating-linear-gradient(90deg,transparent 0 30px,#b2875242 31px 33px,transparent 34px 62px);transform:skewY(-6deg);opacity:.32;animation:deckDrift 14s ease-in-out infinite alternate}
+.deck-page #practices:before,.deck-page #automation:before,.deck-page #faq:before{left:-120px;right:auto}
+.deck-page #intake:before,.deck-page .ed-close:before{opacity:.14}
+@keyframes deckDrift{to{transform:translate(-9px,-12px) skewY(-6deg)}}
+@media(max-width:850px){.deck-page .deck-services,.deck-page .ed-guides{grid-template-columns:repeat(2,minmax(0,1fr))}.deck-page main section:before{opacity:.15}}
+@media(max-width:560px){.deck-page .deck-services,.deck-page .ed-guides{grid-template-columns:1fr}.deck-page .ed-brand .ed-cap{width:30px!important;height:30px!important;flex-basis:30px}.deck-page main section:before{opacity:.08}}
+@media(prefers-reduced-motion:reduce){.deck-page main section:before{animation:none!important}}
+/* DECK_FENCE_ARTICLE_LINKS_V1 */
+.deck-page .ed-guide{cursor:pointer;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.deck-page .ed-guide:hover,.deck-page .ed-guide:focus-visible{transform:translateY(-6px);border-color:#b7905b;box-shadow:0 17px 38px #173b3025}
+.deck-page .ed-guide:focus-visible{outline:3px solid #b7905b;outline-offset:3px}
+</style>
+</body>
+</html>
