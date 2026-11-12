@@ -57,83 +57,62 @@ import ContactBrief from "../components/ContactBrief.astro";
 
 <script>
   const form = document.querySelector<HTMLFormElement>('.lf-contact-form');
+
   if (form) {
     const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
     const status = document.createElement('p');
     status.setAttribute('role', 'status');
     form.append(status);
 
-    let pendingToken = '';
-    let timer = 0;
-    let frame: HTMLIFrameElement | undefined;
+    let sending = false;
 
-    function finish(message: string) {
-      window.clearTimeout(timer);
-      pendingToken = '';
-      frame?.remove();
-      frame = undefined;
-      form!.removeAttribute('target');
-      form!.querySelector('[name="submission_token"]')?.remove();
-      if (button) button.disabled = false;
-      status.textContent = message;
-    }
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (sending) return;
 
-    function isSubmissionFrame(source: MessageEventSource | null) {
-      const submittedFrame = frame?.contentWindow;
-      if (!submittedFrame || !source || !('parent' in source)) return false;
-
-      let sender = source as Window;
-      while (sender !== window) {
-        if (sender === submittedFrame) return true;
-        const parent = sender.parent;
-        if (parent === sender) return false;
-        sender = parent;
-      }
-      return false;
-    }
-
-    window.addEventListener('message', (event) => {
-      const result = event.data;
-      if (
-        !pendingToken ||
-        !isSubmissionFrame(event.source) ||
-        result?.type !== 'leadsflo-inquiry-result' ||
-        result.token !== pendingToken
-      ) return;
-
-      if (result.received === true) {
-        window.clearTimeout(timer);
-        window.location.assign('/thank-you/');
-      } else {
-        finish('We could not save your inquiry. Please check your entries and try again.');
-      }
-    });
-
-    form.addEventListener('submit', (event) => {
-      if (pendingToken) {
-        event.preventDefault();
-        return;
-      }
-
-      pendingToken = crypto.randomUUID();
-      frame = document.createElement('iframe');
-      frame.name = `leadsflo-inquiry-${pendingToken}`;
-      frame.title = 'Inquiry submission';
-      frame.hidden = true;
-      document.body.append(frame);
-      form.target = frame.name;
-
-      const token = document.createElement('input');
-      token.type = 'hidden';
-      token.name = 'submission_token';
-      token.value = pendingToken;
-      form.append(token);
-
+      sending = true;
       if (button) button.disabled = true;
       status.textContent = 'Sending your inquiry…';
-      timer = window.setTimeout(() => {
-        finish('We could not confirm receipt. Your inquiry may have been saved.');
-      }, 45000);
+
+      const controller = new AbortController();
+      const timeout = window.setTimeout(() => controller.abort(), 45000);
+
+      try {
+        const body = new URLSearchParams();
+        for (const [name, value] of new FormData(form)) {
+          if (typeof value === 'string') body.append(name, value);
+        }
+
+        const response = await fetch(form.action, {
+          method: 'POST',
+          credentials: 'omit',
+          body,
+          signal: controller.signal,
+        });
+
+        if (!response.ok) throw new Error('Unexpected response');
+
+        const result = await response.json();
+
+        if (result.received === true) {
+          window.location.assign('/thank-you/');
+          return;
+        }
+
+        if (result.received !== false || typeof result.message !== 'string') {
+          throw new Error('Invalid confirmation');
+        }
+
+        status.textContent = result.message;
+      } catch {
+        status.textContent =
+          'We could not confirm receipt. Your inquiry may already have been saved.';
+      } finally {
+        window.clearTimeout(timeout);
+      }
+
+      sending = false;
+      if (button) button.disabled = false;
     });
   }
 </script>
