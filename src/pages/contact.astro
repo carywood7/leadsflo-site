@@ -78,11 +78,25 @@ import ContactBrief from "../components/ContactBrief.astro";
       status.textContent = message;
     }
 
+    function isSubmissionFrame(source: MessageEventSource | null) {
+      const submittedFrame = frame?.contentWindow;
+      if (!submittedFrame || !source || !('parent' in source)) return false;
+
+      let sender = source as Window;
+      while (sender !== window) {
+        if (sender === submittedFrame) return true;
+        const parent = sender.parent;
+        if (parent === sender) return false;
+        sender = parent;
+      }
+      return false;
+    }
+
     window.addEventListener('message', (event) => {
       const result = event.data;
       if (
         !pendingToken ||
-        !/^https:\/\/(?:[a-z0-9-]+[.-])?script\.googleusercontent\.com$/.test(event.origin) ||
+        !isSubmissionFrame(event.source) ||
         result?.type !== 'leadsflo-inquiry-result' ||
         result.token !== pendingToken
       ) return;
