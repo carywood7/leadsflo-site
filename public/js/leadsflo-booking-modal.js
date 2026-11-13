@@ -4,8 +4,8 @@
 
   if (document.getElementById("lp-book-dialog")) return;
 
-  const bookingURL = "https:" + "//calendar.app.google/1fpawLr6fgP7Hmoi7";
-  const embedURL = "https:" + "//calendar.google.com/calendar/appointments/schedules/" + "AcZssZ0VnOAytUM-31S2nb6WehVDQqrQti-mjJTQJ5oOFlN1ctyMnZNBpPLxihgQ5cjsP3kZDz3F5BXo?gv=true";
+  const bookingURL = "https:" + "//calendar.app.google/vmGynoLG6hJAo24P6";
+  const embedURL = "https:" + "//calendar.google.com/calendar/appointments/schedules/" + "AcZssZ0f6mk_u3c2aXnVmPGsxD6fLF8mNgvLm-Jia9HiBwBnLZMrBsUhpoOkPxHGZkC3tOdC5ZhXqeMZ?gv=true";
 
   const css = document.createElement("style");
   css.textContent = `
